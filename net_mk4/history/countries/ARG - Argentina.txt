@@ -22,24 +22,28 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 120
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 78
-    fascism = 5
-    communism = 12
-    neutrality = 5
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 ###
 create_country_leader = {
 	name = "오스카 알렌데"
 	desc = "POLITICS_ARG_Oscar_Alende_DESC"
-	picture = "Portrait_ARG_Oscar_Alende.dds"
+	picture = "POLITICS_ARG_Oscar_Alende.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -48,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "라울 알폰신"
 	desc = "POLITICS_ARG_Raul_Alfonsin_DESC"
-	picture = "Portrait_ARG_Raul_Alfonsin.dds"
+	picture = "POLITICS_ARG_Raul_Alfonsin.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -57,7 +61,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "카를로스 메넴"
 	desc = "POLITICS_ARG_Carlos_Saul_Menem_DESC"
-	picture = "Portrait_ARG_Carlos_Saul_Menem.dds"
+	picture = "POLITICS_ARG_Carlos_Saul_Menem.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -66,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "레이날도 베니토 비그노네"
 	desc = "POLITICS_ARG_Reynaldo_Bignone_DESC"
-	picture = "Portrait_ARG_Reynaldo_Bignone.dds"
+	picture = "POLITICS_ARG_Reynaldo_Bignone.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

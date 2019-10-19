@@ -29,17 +29,21 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 2
-    fascism = 0
-    communism = 0
-    neutrality = 98
+    communism = 40
+	socialism = 15
+	social_democracy = 15
+	social_liberalism = 10
+	market_liberalism = 10
+	social_conservatism = 10
+	authoritarianism = 0
+	fascism = 0
 }
 set_stability = 0.6
 
 create_country_leader = {
 	name = "베젤린 주라노비치"
 	desc = "POLITICS_YUG_Veselin_Duranovic_DESC"
-	picture = "Portrait_YUG_Veselin_Duranovic.dds"
+	picture = "POLITICS_YUG_Veselin_Duranovic.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {

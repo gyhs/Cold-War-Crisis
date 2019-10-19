@@ -27,24 +27,28 @@ set_convoys = 40
 give_guarantee = PRK
 
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 0
-    neutrality = 100
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 ###
 create_country_leader = {
 	name = "쟝펭쳰"
 	desc = "POLITICS_CHI_Chiang_Peng_chien_DESC"
-	picture = "Portrait_CHI_Chiang_Peng_chien.dds"
+	picture = "POLITICS_CHI_Chiang_Peng_chien.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -53,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "리덩후이"
 	desc = "POLITICS_CHI_Lee_Teng_hui_DESC"
-	picture = "Portrait_CHI_Lee_Teng_hui.dds"
+	picture = "POLITICS_CHI_Lee_Teng_hui.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -62,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "장징궈"
 	desc = "POLITICS_CHI_Chiang_Ching_kuo_DESC"
-	picture = "Portrait_CHI_Chiang_Ching_kuo.dds"
+	picture = "POLITICS_CHI_Chiang_Ching_kuo.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -71,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "리후앙"
 	desc = "POLITICS_CHI_Li_Huang_DESC"
-	picture = "Portrait_CHI_Li_Huang.dds"
+	picture = "POLITICS_CHI_Li_Huang.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

@@ -10,22 +10,27 @@ set_war_support = 0.1
 set_convoys = 20
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 10
-    fascism = 2
-    communism = 88
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
 	name = "José Agripino Barnet"
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
-	picture = "GFX_portrait_cuba_jose_barnet"
+	picture = "GFX_POLITICS_cuba_jose_barnet"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

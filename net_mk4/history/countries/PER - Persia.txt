@@ -20,23 +20,27 @@ add_ideas = {
 
 set_convoys = 10
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 0
-    neutrality = 100
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Reza Shah Pahlavi"
 	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
-	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
+	picture = "POLITICS_Iran_Reza_Shah_Pahlavi.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -48,7 +52,7 @@ create_country_leader = {
 #create_country_leader = {
 #	name = "Mohammad Reza Pahlavi"
 #	desc = "POLITICS_MOHAMMAD_REZA_PAHLAVI_DESC"
-#	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+#	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_3.dds"
 #	expire = "1965.1.1"
 #	ideology = despotism
 #	traits = {
@@ -59,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Soleyman Mirza Eskandari"
 	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = anarchist_communism
 	traits = {
@@ -69,7 +73,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Hasan Arfa"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
 	traits = {  desert_fox }
 	skill = 3
 	attack_skill = 3

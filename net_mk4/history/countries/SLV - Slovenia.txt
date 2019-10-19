@@ -10,9 +10,14 @@ set_technology = {
 set_politics = {}
 
 set_popularities = {
-    fascism = 33
-    neutrality = 33
-    communism = 34
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 

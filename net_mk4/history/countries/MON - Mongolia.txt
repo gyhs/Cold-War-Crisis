@@ -18,15 +18,20 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 100
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
 	name = "Anandyn Amar"
 	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
+	picture = GFX_POLITICS_mon_anandyn_amar
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {

@@ -44,16 +44,21 @@ if = {
 
 set_convoys = 25
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 75
-    fascism = 20
     communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 
@@ -93,7 +98,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pixley Ka Isaka Seme"
 	desc = "POLITICS_PIXLEY_SEME_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	picture = "gfx/leaders/Africa/POLITICS_Africa_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {

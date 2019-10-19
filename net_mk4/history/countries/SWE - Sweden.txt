@@ -13,17 +13,21 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 75
-    neutrality = 14
-    communism = 8
-    fascism = 3
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 set_convoys = 25
@@ -35,7 +39,7 @@ set_stability = 0.9
 create_country_leader = {
 	name = "Per Albin Hansson"
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	picture = "POLITICS_Sweden_Per_Albin_Hansson.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -46,7 +50,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sven Olov Lindholm"
 	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -57,7 +61,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sven Linderot"
 	desc = "POLITICS_SVEN_LINDEROT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -68,7 +72,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Axel Pehrsson-Bramstorp"
 	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -78,7 +82,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Folke Högberg"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
 	traits = { commando }
 	skill = 3
 
@@ -90,7 +94,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Erik af Edholm"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	traits = {  hill_fighter }
 	skill = 4
 
@@ -102,7 +106,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Claes Lindström"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_2.dds"
 	traits = { battleship_adherent blockade_runner }
 	skill = 4
 	attack_skill = 3

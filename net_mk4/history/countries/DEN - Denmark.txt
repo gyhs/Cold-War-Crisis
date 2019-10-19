@@ -10,16 +10,21 @@ set_technology = {
 
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1935.10.22"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 97
-    fascism = 1
-    communism = 2
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 set_convoys = 40
@@ -27,7 +32,7 @@ set_convoys = 40
 create_country_leader = {
 	name = "Thorvald Stauning"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	picture = "POLITICS_Denmark_Thorvald_Stauning.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -38,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Frits Clausen"
 	desc = "POLITICS_FRITS_CLAUSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -49,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aksel Larsen"
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -60,7 +65,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Peter Rochegune Munch"
 	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -71,7 +76,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Wilhelm Wain Prior"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
 	traits = { trickster }
 	skill = 3
 	attack_skill = 2

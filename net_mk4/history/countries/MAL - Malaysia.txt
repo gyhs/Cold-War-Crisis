@@ -17,22 +17,27 @@ if = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	fascism = 15
-	communism = 10
-	neutrality = 75
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Onn Jaafar"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_democracy.dds"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
@@ -43,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Shenton Thomas"
 	desc = ""
-	picture = "GFX_portrait_malaya_shenton_thomas"
+	picture = "GFX_POLITICS_malaya_shenton_thomas"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
@@ -54,7 +59,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lai Teck"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_1.dds"
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
@@ -65,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ibrahim Hj Yaacob" #this guy supported Japanese during the war, and was imprisoned for it, could be made fascist?
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_fascism.dds"
 	expire = "1953.3.1"
 	ideology = moderatism
 	traits = {

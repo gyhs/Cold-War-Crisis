@@ -11,16 +11,21 @@ set_technology = {
 
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 83
-    fascism = 11
-    communism = 6
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 set_convoys = 80
@@ -29,7 +34,7 @@ set_stability = 0.75
 create_country_leader = {
 	name = "Hubert Pierlot"
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	picture = "POLITICS_Belgium_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -40,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Joseph Jacquemotte"
 	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = anarchist_communism
 	traits = {
@@ -51,7 +56,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Léon Degrelle"
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = rexism
 	traits = {
@@ -61,7 +66,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "M.C.L. Keyaerts"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
 	traits = { trait_mountaineer hill_fighter }
 	skill = 4
 	attack_skill = 3
@@ -72,7 +77,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Georges Timmermans"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_3.dds"
 	traits = { bold }
 	skill = 4
 	attack_skill = 4

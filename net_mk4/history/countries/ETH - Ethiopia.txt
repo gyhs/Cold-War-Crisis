@@ -8,23 +8,27 @@ set_technology = {
 
 set_convoys = 5
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 0
-    neutrality = 100
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
 	name = "Haile Selassie"
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "POLITICS_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -35,7 +39,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fitawrari Yeebio Woldai"
 	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "POLITICS_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -45,7 +49,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Seyoum Mengesha"
-	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	POLITICS_path = "gfx/leaders/Africa/POLITICS_Africa_Generic_land_3.dds"
 	traits = {  desert_fox }
 	skill = 2
 	attack_skill = 2

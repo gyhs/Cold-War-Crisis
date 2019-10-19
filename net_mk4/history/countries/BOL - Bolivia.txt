@@ -8,23 +8,27 @@ set_technology = {
 set_country_flag = monroe_doctrine
 
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 0
-    neutrality = 100
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "José Luis Tejada Sorzano"
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
-	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
+	picture = "POLITICS_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
 	expire = "1965.1.1"
 	ideology = despotism # liberalism, personally, but puppet for military
 	traits = {
@@ -35,7 +39,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Óscar Únzaga de la Vega"
 	desc = "POLITICS_OSCAR_UNZAGA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {

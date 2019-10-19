@@ -14,22 +14,26 @@ set_convoys = 10
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1926.5.8"
 	election_frequency = 120
 	elections_allowed = no
 }
 set_popularities = {
-	democratic =  30
-	fascism = 15
-	communism = 15
-	neutrality = 50
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Antanas Smetona"
 	desc = "POLITICS_ANTANAS_SMETONA_DESC"
-	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	picture = "GFX_POLITICS_lithuania_antanas_smetona"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -40,7 +44,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Antanas Snieckus"
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
@@ -51,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Augustinas Voldemaras"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

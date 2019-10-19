@@ -18,10 +18,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 2
-    fascism = 0
-    communism = 98
-    neutrality = 0
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 #Start Horty as neutral if DOD
@@ -32,7 +36,7 @@ if = {
 	create_country_leader = {
 		name = "Miklós Horthy"
 		desc = "POLITICS_MIKLOS_HORTHY_DESC"
-		picture = "Portrait_Hungary_Miklos_Horthy.dds"
+		picture = "POLITICS_Hungary_Miklos_Horthy.dds"
 		expire = "1965.1.1"
 		ideology = oligarchism
 		traits = {
@@ -45,14 +49,14 @@ if = {
 		create_country_leader = {
 			name = "Miklós Horthy"
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
+			picture = "POLITICS_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
 			ideology = despotism
 		}
 		create_country_leader = {
 			name = "Miklós Horthy"
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
+			picture = "POLITICS_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
 			ideology = fascism_ideology
 		}
@@ -62,7 +66,7 @@ if = {
 create_country_leader = {
 	name = "Mátyás Rákosi"
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
-	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
+	picture = "POLITICS_Hungary_Matyas_Rakoski.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
@@ -73,7 +77,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Árpád Szakasits"
 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -84,7 +88,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Géza Lakatos"
-	gfx = GFX_Portrait_hungary_geza_lakatos
+	gfx = GFX_POLITICS_hungary_geza_lakatos
 	traits = {  }
 	skill = 3
 	attack_skill = 3
@@ -95,7 +99,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
+	gfx = GFX_POLITICS_hungary_ivan_hindy
 	traits = {  trickster }
 	skill = 4
 	attack_skill = 3
@@ -106,7 +110,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Károly Beregfy"
-	gfx = GFX_Portrait_hungary_karoly_beregfy
+	gfx = GFX_POLITICS_hungary_karoly_beregfy
 	traits = { }
 	skill = 1
 	attack_skill = 1
@@ -117,7 +121,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Lajos Veress"
-	gfx = GFX_Portrait_hungary_lajos_veress
+	gfx = GFX_POLITICS_hungary_lajos_veress
 	traits = { armor_officer }
 	skill = 2
 	attack_skill = 2
@@ -128,7 +132,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Ferenc Feketehalmy-Czeydner"
-	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
+	gfx = GFX_POLITICS_hungary_ferenc_feketehalmy_czeydner
 	traits = { }
 	skill = 2
 	attack_skill = 2

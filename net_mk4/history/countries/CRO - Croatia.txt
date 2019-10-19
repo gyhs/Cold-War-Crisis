@@ -16,15 +16,20 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 15
-    fascism = 75
-    communism = 10
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Ante Pavelic"
 	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
+	picture = "POLITICS_Croatia_Ante_Pavelic.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -17,7 +17,7 @@ bookmarks = {
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -25,7 +25,7 @@ bookmarks = {
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -33,7 +33,7 @@ bookmarks = {
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_liberalism
 			ideas = {
 			}	
 			focuses = {
@@ -50,6 +50,7 @@ bookmarks = {
 		"PRC"={
 			history = "PRC_GATHERING_STORM_DESC"
 			ideology = communism
+			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
 			}
 			focuses = {
@@ -76,7 +77,7 @@ bookmarks = {
 		"FIN"={
 			minor = yes
 			history = "FIN_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = social_conservatism
 			ideas = {
 				
 			}
@@ -96,7 +97,7 @@ bookmarks = {
 		"MUJ"={
 			minor = yes
 			history = "MUJ_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = social_conservatism
 			ideas = {
 				
 			}
@@ -106,7 +107,7 @@ bookmarks = {
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = communism
 			ideas = {
 				
 			}
@@ -116,7 +117,7 @@ bookmarks = {
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -125,7 +126,7 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -134,7 +135,7 @@ bookmarks = {
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = market_liberalism
 			ideas = {
 				
 			}
@@ -144,7 +145,7 @@ bookmarks = {
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -153,7 +154,7 @@ bookmarks = {
 		"RAJ"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -162,7 +163,7 @@ bookmarks = {
 		"CZE"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = communism
 			ideas = {
 			}
 			focuses = {
@@ -172,7 +173,7 @@ bookmarks = {
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = communism
 			ideas = {
 			}
 			focuses = {
@@ -182,7 +183,7 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = communism
 			ideas = {
 			}
 			focuses = {
@@ -191,7 +192,7 @@ bookmarks = {
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -209,7 +210,7 @@ bookmarks = {
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -219,7 +220,7 @@ bookmarks = {
 		"GXC"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -228,7 +229,7 @@ bookmarks = {
 		"YUN"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -237,7 +238,7 @@ bookmarks = {
 		"SHX"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -246,7 +247,7 @@ bookmarks = {
 		"XSM"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -255,7 +256,7 @@ bookmarks = {
 		"SIK"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -264,7 +265,7 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = market_liberalism
 			ideas = {
 			}
 			focuses = {

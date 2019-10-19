@@ -10,22 +10,27 @@ set_war_support = 0.1
 set_convoys = 10
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1932.10.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 100
-    fascism = 0
-    communism = 0
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Tiburcio Carías Andino"
 	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
-	picture = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
+	picture = "GFX_POLITICS_honduras_POLITICS_tiburcio_carias_andino"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

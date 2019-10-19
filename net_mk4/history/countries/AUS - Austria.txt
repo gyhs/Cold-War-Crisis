@@ -20,17 +20,21 @@ add_ideas = {
 }
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = social_conservatism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    neutrality = 47
-    fascism = 2
-    democratic = 50
-    communism = 1
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 set_stability = 0.50
@@ -39,7 +43,7 @@ set_stability = 0.50
 create_country_leader = {
 	name = "커트 슈타이라"
 	desc = "POLITICS_AUS_Kurt_Steyrer_DESC"
-	picture = "Portrait_AUS_Kurt_Steyrer.dds"
+	picture = "POLITICS_AUS_Kurt_Steyrer.dds"
 	expire = "2100.3.1"
 	ideology = socialism
 	traits = {
@@ -50,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "프란츠 뮐리"
 	desc = "POLITICS_AUS_Franz_Muhri_DESC"
-	picture = "Portrait_AUS_Franz_Muhri.dds"
+	picture = "POLITICS_AUS_Franz_Muhri.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -61,9 +65,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "쿠르트 발트하임"
 	desc = "POLITICS_AUS_Kurt_Waldheim_DESC"
-	picture = "Portrait_AUS_Kurt_Waldheim.dds"
+	picture = "POLITICS_AUS_Kurt_Waldheim.dds"
 	expire = "2100.3.1"
-	ideology = conservatism
+	ideology = despotism
 	traits = {
 		
 	}
@@ -72,7 +76,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "오토 스크린지"
 	desc = "POLITICS_AUS_Otto_Scrinzi_DESC"
-	picture = "Portrait_AUS_Otto_Scrinzi.dds"
+	picture = "POLITICS_AUS_Otto_Scrinzi.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

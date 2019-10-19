@@ -9,23 +9,27 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 0
-    neutrality = 100
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Yan Xishan"
 	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "GFX_portrait_shanxi_portrait_yan_xishan"
+	picture = "GFX_POLITICS_shanxi_POLITICS_yan_xishan"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -35,7 +39,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Wang Jingguo"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	POLITICS_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_2.dds"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 2

@@ -10,17 +10,21 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 35
-    fascism = 15
-    communism = 15
-    neutrality = 35
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
@@ -28,7 +32,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Phan Bôi Châu" 
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_warlord2.dds"
 	expire = "1953.3.1"
 	ideology = fascism_ideology 
 	traits = {
@@ -39,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ho Chí Minh" 
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_communism.dds"
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
@@ -50,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ngô Đình Diêm"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_2.dds"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
@@ -61,7 +65,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nguyen Tuong Tam"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_3.dds"
 	expire = "1953.3.1"
 	ideology = moderatism
 	traits = {

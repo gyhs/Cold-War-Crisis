@@ -17,15 +17,20 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 100
-    communism = 0
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Rafael Trujillo"
 	desc = "POLITICS_RAFAEL_TRUJILLO_DESC"
-	picture = "GFX_portrait_dominca_rafael_trujillo"
+	picture = "GFX_POLITICS_dominca_rafael_trujillo"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

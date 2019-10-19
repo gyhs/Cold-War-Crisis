@@ -1,19 +1,20 @@
-state={
+state=
+{
 	id=797
 	name="STATE_797"
-
-	history={
+	manpower = 1304481
+	
+	state_category = town
+	history=
+	{
 		owner = PRK
+
 		add_core_of = KOR
 		add_core_of = PRK
 		add_claim_by = KOR
 
 	}
-
 	provinces={
-		4004 9981 11958 
+		11958 4004 9981 848
 	}
-	manpower=1304481
-	buildings_max_level_factor=1.000
-	state_category=town
 }

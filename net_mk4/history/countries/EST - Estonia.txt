@@ -13,23 +13,27 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    democratic = 20
-    fascism = 15
     communism = 5
-    neutrality = 60
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "GFX_Portrait_estonia_konstantin_pats"
+	picture = "GFX_POLITICS_estonia_konstantin_pats"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

@@ -9,24 +9,28 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    democratic = 17
-    fascism = 2
-    communism = 1
-    neutrality = 80
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 
 create_country_leader = {
 	name = "Qazi Muhammad Essa"
 	
-	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+	picture = "gfx/leaders/RAJ/POLITICS_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
 	ideology = centrism
 	traits = {
@@ -37,7 +41,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Muhammad Ali Jinnah"
 	
-	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+	picture = "gfx/leaders/RAJ/POLITICS_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
 	ideology = liberalism
 	traits = {
@@ -48,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Haji Mohammad Danesh"
 	
-	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+	picture = "gfx/leaders/RAJ/POLITICS_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
 	ideology = marxism
 	traits = {
@@ -58,7 +62,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Muhammad Zia-ul-Haq"
-	portrait_path = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+	POLITICS_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic.dds"
 	traits = {  }
 	skill = 2
 	
@@ -70,7 +74,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Iftikhar Khan Janjua"
-	portrait_path = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+	POLITICS_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic_2.dds"
 	traits = {  }
 	skill = 3
 	
@@ -81,7 +85,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Akbar Khan"
-	portrait_path = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+	POLITICS_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic.dds"
 	traits = { trickster }
 	skill = 3
 	

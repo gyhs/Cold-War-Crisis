@@ -11,22 +11,26 @@ set_technology = {
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = social_conservatism
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
 }
 set_popularities = {
-	democratic =  30
-	fascism = 10
-	communism = 10
-	neutrality = 50
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Souphanouvong"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_4.dds"
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
@@ -37,7 +41,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sisavang Vong"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_3.dds"
 	expire = "1953.3.1"
 	ideology = despotism
 	traits = {
@@ -48,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kou Voragong" 
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_2.dds"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {

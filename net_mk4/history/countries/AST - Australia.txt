@@ -187,22 +187,27 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1984.12.1"
 	election_frequency = 32
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 98
-    fascism = 0
-    communism = 2
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "밥 호크"
 	desc = "POLITICS_AST_Bob_Hawke_DESC"
-	picture = "Portrait_AST_Bob_Hawke.dds"
+	picture = "POLITICS_AST_Bob_Hawke.dds"
 	expire = "2100.1.1"
 	ideology = socialism
 	traits = {
@@ -246,7 +251,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rod Hull"
 	desc = ""
-	picture = "Portrait_Australia_Rod_Hull.dds"
+	picture = "POLITICS_Australia_Rod_Hull.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

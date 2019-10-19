@@ -10,22 +10,27 @@ set_country_flag = monroe_doctrine
 set_convoys = 5
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1934.4.19"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic = 97
-    fascism = 0
-    communism = 3
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Gabriel Terra"
 	desc = "POLITICS_GABRIEL_TERRA_DESC"
-	picture = "GFX_portrait_uruguay_portrait_gabriel_terra"
+	picture = "GFX_POLITICS_uruguay_POLITICS_gabriel_terra"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

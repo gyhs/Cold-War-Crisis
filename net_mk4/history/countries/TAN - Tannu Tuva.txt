@@ -17,15 +17,20 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 100
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
 	name = "Salchak Toka"
 	desc = "POLITICS_SALCHAK_TOKA_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {

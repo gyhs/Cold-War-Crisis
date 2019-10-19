@@ -1,13 +1,16 @@
 
 state={
 	id=773
-	name="STATE_773"
+	name="STATE_773" # Cameroon
+	manpower = 2945782
+	
+	state_category = rural
 
 	history={
 		owner = CMR
 		add_core_of = CMR
 		victory_points = {
-			2080 1 
+			2080 1
 		}
 		buildings = {
 			infrastructure = 3
@@ -15,17 +18,12 @@ state={
 			air_base = 1
 			6039 = {
 				naval_base = 1
-
 			}
-
 		}
 
 	}
 
 	provinces={
-		2080 5036 5054 6039 7963 9137 11194 13261 
+		2080 5036 5054 6039 7963 9137 11194 
 	}
-	manpower=2945782
-	buildings_max_level_factor=1.000
-	state_category=rural
 }
