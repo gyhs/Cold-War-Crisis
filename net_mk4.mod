@@ -1,7 +1,8 @@
 ﻿name="net_mk4"
 path="mod/net_mk4/"
+replace_path="map"
 dependencies={
-	"한국어 모드(Korean Translation)"
+    "한국어 모드(Korean Translation)"
 }
 tags={
 	"Alternative History"
