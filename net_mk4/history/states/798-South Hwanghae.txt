@@ -1,20 +1,19 @@
-state=
-{
+state={
 	id=798
 	name="STATE_798"
-	manpower = 2010953
-	
-	state_category = town
-	history=
-	{
-		owner = PRK
 
+	history={
+		owner = PRK
 		add_core_of = KOR
 		add_core_of = PRK
 		add_claim_by = KOR
 
 	}
+
 	provinces={
-		1003 4107 7155
+		1003 4107 7155 12040 
 	}
+	manpower=2010953
+	buildings_max_level_factor=1.000
+	state_category=town
 }

@@ -1,22 +1,22 @@
 
 state={
-	id=775
-	name="STATE_775"
+	id=674
+	name="STATE_674"
 
 	history={
-		owner = CHA
-		add_core_of = CHA
+		owner = AST
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 
 		}
+		add_core_of = AST
 
 	}
 
 	provinces={
-		1057 4902 5136 10893 
+		2205 5138 7623 8206 12906 
 	}
-	manpower=18744
+	manpower=30000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 }
