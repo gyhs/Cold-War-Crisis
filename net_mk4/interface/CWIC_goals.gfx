@@ -1,0 +1,233 @@
+spriteTypes = {
+	
+	SpriteType = {
+		name = "GFX_focus_attack_belgium"
+		texturefile = "gfx/interface/goals/focus_attack_belgium.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_denmark"
+		texturefile = "gfx/interface/goals/focus_attack_denmark.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_holand"
+		texturefile = "gfx/interface/goals/focus_attack_holand.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_ireland"
+		texturefile = "gfx/interface/goals/focus_attack_ireland.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_korea"
+		texturefile = "gfx/interface/goals/focus_attack_korea.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_norway"
+		texturefile = "gfx/interface/goals/focus_attack_norway.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_poland"
+		texturefile = "gfx/interface/goals/focus_attack_poland.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_prc"
+		texturefile = "gfx/interface/goals/focus_attack_prc.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_spain"
+		texturefile = "gfx/interface/goals/focus_attack_spain.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_sweden"
+		texturefile = "gfx/interface/goals/focus_attack_sweden.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_attack_yugoslavia"
+		texturefile = "gfx/interface/goals/focus_attack_yugoslavia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_belgium"
+		texturefile = "gfx/interface/goals/focus_friend_belgium.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_czech"
+		texturefile = "gfx/interface/goals/focus_friend_czech.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_denmark"
+		texturefile = "gfx/interface/goals/focus_friend_denmark.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_finland"
+		texturefile = "gfx/interface/goals/focus_friend_finland.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_india"
+		texturefile = "gfx/interface/goals/focus_friend_india.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_ireland"
+		texturefile = "gfx/interface/goals/focus_friend_ireland.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_italy"
+		texturefile = "gfx/interface/goals/focus_friend_italy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_korea"
+		texturefile = "gfx/interface/goals/focus_friend_korea.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_netherlands"
+		texturefile = "gfx/interface/goals/focus_friend_netherlands.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_norway"
+		texturefile = "gfx/interface/goals/focus_friend_norway.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_poland"
+		texturefile = "gfx/interface/goals/focus_friend_poland.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_friend_spain"
+		texturefile = "gfx/interface/goals/focus_friend_spain.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_sweden"
+		texturefile = "gfx/interface/goals/focus_friend_sweden.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_turkey"
+		texturefile = "gfx/interface/goals/focus_friend_turkey.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_yugoslavia"
+		texturefile = "gfx/interface/goals/focus_friend_yugoslavia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_attack_ddr"
+		texturefile = "gfx/interface/goals/goal_attack_ddr.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_friend_ddr"
+		texturefile = "gfx/interface/goals/goal_friend_ddr.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_dpk"
+		texturefile = "gfx/interface/goals/focus_attack_dpk.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_dpk"
+		texturefile = "gfx/interface/goals/focus_friend_dpk.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_romania"
+		texturefile = "gfx/interface/goals/focus_friend_romania.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_romania"
+		texturefile = "gfx/interface/goals/focus_attack_romania.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_czechslovakia"
+		texturefile = "gfx/interface/goals/focus_attack_czechslovakia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_portugal"
+		texturefile = "gfx/interface/goals/focus_attack_portugal.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_portugal"
+		texturefile = "gfx/interface/goals/focus_friend_portugal.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_bulgaria"
+		texturefile = "gfx/interface/goals/focus_friend_bulgaria.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_bulgaria"
+		texturefile = "gfx/interface/goals/focus_attack_bulgaria.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_albania"
+		texturefile = "gfx/interface/goals/focus_attack_albania.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_albania"
+		texturefile = "gfx/interface/goals/focus_friend_albania.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_turkey"
+		texturefile = "gfx/interface/goals/focus_attack_turkey.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_israel"
+		texturefile = "gfx/interface/goals/focus_attack_israel.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_iraq"
+		texturefile = "gfx/interface/goals/focus_attack_iraq.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_attack_syria"
+		texturefile = "gfx/interface/goals/focus_attack_syria.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_canada"
+		texturefile = "gfx/interface/goals/focus_friend_canada.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_israel"
+		texturefile = "gfx/interface/goals/focus_friend_israel.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_egypt"
+		texturefile = "gfx/interface/goals/focus_friend_egypt.dds"
+	}
+
+}
