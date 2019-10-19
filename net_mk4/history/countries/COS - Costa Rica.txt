@@ -10,27 +10,22 @@ set_war_support = 0.1
 set_convoys = 10
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1932.2.14"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 98
+    fascism = 2
+    communism = 0
 }
 
 create_country_leader = {
 	name = "Ricardo Jiménez Oreamuno"
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
-	picture = "GFX_POLITICS_costa_rica_ricardo_jiminez_oreamuno"
+	picture = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

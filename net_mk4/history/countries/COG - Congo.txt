@@ -8,27 +8,23 @@ set_technology = {
 
 set_convoys = 5
 set_politics = {	
-	ruling_party = social_conservatism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 0
+    fascism = 0
+    communism = 0
+    neutrality = 100
 }
 
 create_country_leader = {
 	
 	name = "François Tolenga"
-	picture = "gfx//leaders//Africa//POLITICS_Africa_Generic_2.dds"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -38,7 +34,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Lumumba Lomendja"
-	picture = "gfx//leaders//Africa//POLITICS_Africa_Generic_1.dds"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -49,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "David Manera"
-	picture = "gfx//leaders//Africa//POLITICS_Africa_Generic_Land_3.dds"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_Land_3.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

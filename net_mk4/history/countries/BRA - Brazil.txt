@@ -22,28 +22,24 @@ add_ideas = {
 set_country_flag = monroe_doctrine
 
 set_politics = {	
-	ruling_party = social_conservatism	
+	ruling_party = neutrality	
 	last_election = "1990.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 1
+    fascism = 38
+    communism = 1
+    neutrality = 60
 }
 
 ###
 create_country_leader = {
 	name = "루이스 이나시우 룰라 다 시우바"
 	desc = "POLITICS_BRA_Luiz_Inacio_Lula_da_Silva_DESC"
-	picture = "POLITICS_BRA_Luiz_Inacio_Lula_da_Silva.dds"
+	picture = "Portrait_BRA_Luiz_Inacio_Lula_da_Silva.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -52,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "페르난두 콜로르 지 멜루"
 	desc = "POLITICS_BRA_Fernando_Collor_de_Mello_DESC"
-	picture = "POLITICS_BRA_Fernando_Collor_de_Mello.dds"
+	picture = "Portrait_BRA_Fernando_Collor_de_Mello.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -61,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "조제 사르네이"
 	desc = "POLITICS_BRA_Jose_Sarney_DESC"
-	picture = "POLITICS_BRA_Jose_Sarney.dds"
+	picture = "Portrait_BRA_Jose_Sarney.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -70,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "에네스 카네이로"
 	desc = "POLITICS_BRA_Eneas_Ferreira_Carneiro_DESC"
-	picture = "POLITICS_BRA_Eneas_Ferreira_Carneiro.dds"
+	picture = "Portrait_BRA_Eneas_Ferreira_Carneiro.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

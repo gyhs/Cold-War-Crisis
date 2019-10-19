@@ -44,21 +44,17 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 90
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 0
-	market_liberalism = 0
-	social_conservatism = 0
-	authoritarianism = 0
-	fascism = 0
+    democratic = 2
+    fascism = 0
+    communism = 98
+    neutrality = 0
 }
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
 create_country_leader = {
 	name = "바브락 카르말"
 	desc = "POLITICS_AFG_Babrak_Karmal_DESC"
-	picture = "POLITICS_AFG_Babrak_Karmal.dds"
+	picture = "Portrait_AFG_Babrak_Karmal.dds"
 	expire = "1985.1.1"
 	ideology = Marxism
 	traits = {

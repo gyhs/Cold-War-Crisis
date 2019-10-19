@@ -25,26 +25,22 @@ add_to_faction = SYR
 
 
 set_politics = {
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+	democratic =  50
+	fascism = 10
+	communism = 10
+	neutrality = 30
 }
 
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
-	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_3.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -54,7 +50,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pierre Gemayel"
 	desc = ""
-	picture = "gfx/leaders/SAU/POLITICS_Europe_Generic_fascism1.dds"
+	picture = "gfx/leaders/SAU/Portrait_Europe_Generic_fascism1.dds"
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -64,7 +60,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Melick Yarad"
 	desc = ""
-	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_land_3.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
 	ideology = despotism
 	traits = {
 		#
@@ -74,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rami Sarraff"
 	desc = ""
-	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_land_2.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
 	ideology = leninism
 	traits = {
 		#

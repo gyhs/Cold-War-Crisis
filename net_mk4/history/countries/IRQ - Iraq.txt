@@ -29,26 +29,22 @@ set_convoys = 5
 
 set_politics = {
 	
-	ruling_party = social_conservatism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+	democratic =  20
+	fascism = 10
+	communism = 10
+	neutrality = 60
 }
 
 create_country_leader = {
 	name = "Ghazi I"
 	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_POLITICS_iraq_ghazi"
+	picture = "GFX_portrait_iraq_ghazi"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -59,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rashid Ali al-Gaylani"
 	desc = ""
-	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_fascism1.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -70,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Yusuf Salman Yusuf"
 	desc = ""
-	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_navy_3.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {

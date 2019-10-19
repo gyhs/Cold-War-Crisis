@@ -12,27 +12,22 @@ set_convoys = 10
 
 set_convoys = 5
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 99
+    fascism = 0
+    communism = 1
 }
 
 create_country_leader = {
 	name = "Alfonso López Pumarejo"
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "GFX_POLITICS_columbia_alfonso_lopez"
+	picture = "GFX_Portrait_columbia_alfonso_lopez"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -43,7 +38,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mariano Ospina Pérez"
 	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_2.dds"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -54,7 +49,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Gustavo Rojas Pinilla"
-	POLITICS_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	traits = {  trickster urban_assault_specialist }
 	skill = 3
 	attack_skill = 3

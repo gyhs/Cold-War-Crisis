@@ -15,20 +15,16 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 90
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 0
-	market_liberalism = 0
-	social_conservatism = 0
-	authoritarianism = 0
-	fascism = 0
+    democratic = 2
+    fascism = 0
+    communism = 98
+    neutrality = 0
 }
 
 create_country_leader = {
 	name = "Edvard Beneš"
 	desc = "POLITICS_EDVARD_BENES_DESC"
-	picture = "POLITICS_Czech_Edvard_Benes.dds"
+	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -39,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jaroslav Krejčí"
 	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
-	picture = "POLITICS_Czech_Jaroslav_Krejci.dds"
+	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -50,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Klement Gottwald"
 	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "POLITICS_Czech_Klement_Gottwald.dds"
+	picture = "Portrait_Czech_Klement_Gottwald.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
@@ -60,7 +56,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Vojtěch Luža"
-	gfx = "GFX_POLITICS_czechoslovakia_vojtech_luza"
+	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
 	traits = { fast_planner offensive_doctrine }
 	skill = 3
     attack_skill = 4
@@ -71,7 +67,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Josef Šnejdárek"
-	gfx = "GFX_POLITICS_czechoslovakia_josef_snejdarek"
+	gfx = "GFX_Portrait_czechoslovakia_josef_snejdarek"
 	traits = { thorough_planner defensive_doctrine }
 	skill = 3
     attack_skill = 3
@@ -82,7 +78,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Richard Tesařík"
-	gfx = "GFX_POLITICS_czechoslovakia_richard_tesarik"
+	gfx = "GFX_Portrait_czechoslovakia_richard_tesarik"
 	traits = { armor_officer }
 	skill = 2
     attack_skill = 4
@@ -93,7 +89,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Sergej Vojcechovský"
-	gfx = "GFX_POLITICS_czechoslovakia_sergej_vojcechovsky"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
 	traits = { winter_specialist }
 	skill = 3
     attack_skill = 4

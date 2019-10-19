@@ -10,28 +10,24 @@ set_stability = 0.8
 
 set_politics = {
 	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+	democratic =  92
+	fascism = 3
+	communism = 5
+	neutrality = 2
 }
 
 #Pierre Dupong from 37
 create_country_leader = {
 	name = "Joseph Bech"
 	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "GFX_POLITICS_luxembourg_joseph_bech"
+	picture = "GFX_portrait_luxembourg_joseph_bech"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
