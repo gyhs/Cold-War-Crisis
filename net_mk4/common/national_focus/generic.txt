@@ -1,0 +1,6379 @@
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 20 y = 1600 }
+
+
+	####### 정치 국가중점
+	focus = {
+		id = political_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 0
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	######이념 1차 선택
+	focus = {
+		id = NF_Gen_collectivist_ethos
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = political_effort }
+		mutually_exclusive = { focus = NF_Gen_liberty_ethos}
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+		}
+		x = 5
+		y = 1
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_government = neutrality
+					}
+					has_idea = neutrality_idea
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = collectivist_ethos_focus
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_5
+				add_idea = NS_Gen_mafia_4				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_5
+				add_idea = NS_Gen_government_crisis_4				
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_liberty_ethos
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = political_effort }
+		mutually_exclusive = { focus = NF_Gen_collectivist_ethos }
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		x = 11
+		y = 1
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 95
+			modifier = {
+				factor = 0.1
+				any_neighbor_country = {
+					is_major = yes
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+				NOT = {
+					any_neighbor_country = {
+						is_major = yes
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_5
+				add_idea = NS_Gen_government_crisis_4				
+			}
+		}
+	}
+	######이념 2차 선택
+
+	focus = {
+		id = NF_Gen_authoritarianism_ideologie
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = NF_Gen_collectivist_ethos }
+		#mutually_exclusive = { focus = NF_Gen_liberty_ethos}
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 2
+		y = 2
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_government = neutrality
+					}
+					has_idea = neutrality_idea
+				}
+			}
+		}
+
+		completion_reward = {
+			country_event = {
+							id = generic.nf.1
+							days = 1
+							}
+			#add_ideas = NS_Gen_authoritarianism_ideologie
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_4
+				add_idea = NS_Gen_mafia_3				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_4
+				add_idea = NS_Gen_government_crisis_3				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_socialism_ideologie
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = {focus = NF_Gen_collectivist_ethos 
+						focus = NF_Gen_liberty_ethos
+		}
+		#mutually_exclusive = { focus = NF_Gen_liberty_ethos}
+		available = {
+			OR = {
+				has_government = communism
+			}
+		}
+		x = 8
+		y = 2
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_government = neutrality
+					}
+					has_idea = neutrality_idea
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = NS_Gen_socialism_ideologie
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_4
+				add_idea = NS_Gen_mafia_3				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_4
+				add_idea = NS_Gen_government_crisis_3				
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_liberalism_ideologie
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = NF_Gen_liberty_ethos }
+		mutually_exclusive = { focus = NF_Gen_collectivist_ethos }
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		x = 14
+		y = 2
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 95
+			modifier = {
+				factor = 0.1
+				any_neighbor_country = {
+					is_major = yes
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+				NOT = {
+					any_neighbor_country = {
+						is_major = yes
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = NS_Gen_liberalism_ideologie
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_5
+				add_idea = NS_Gen_mafia_4				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_4
+				add_idea = NS_Gen_government_crisis_3				
+			}
+		}
+	}
+	
+	####### 왕정제 국가주의 중점
+	focus = {
+		id = NF_Gen_monarchy_nationalism
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = NF_Gen_authoritarianism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_statism }
+		mutually_exclusive = { focus = NF_Gen_authority_nationalism }
+		available = {
+			has_idea = NS_Gen_authoritarianism_monarchy
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 0
+		y = 3
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			remove_ideas = NS_Gen_government_crisis_3
+			swap_ideas = {
+				remove_idea = NS_Gen_authoritarianism_monarchy
+				add_idea = NS_Gen_monarchy_nationalism_monarchy				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_3
+				add_idea = NS_Gen_mafia_2				
+			}
+			swap_ideas = {
+				remove_idea = Gen_cartel
+				add_idea = Gen_cartel_collusion				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_monarchy_nationalism_all_political_party_end
+		icon = GFX_focus_rom_parties_end
+		prerequisite = { focus = NF_Gen_monarchy_nationalism }
+		x = 0
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas  = NS_Gen_monarchy_nationalism_all_political_party_end	
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_2
+				add_idea = NS_Gen_mafia_political				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_monarchy_nationalism_guard_extend
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = NF_Gen_monarchy_nationalism_all_political_party_end }
+		x = 0
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_political
+				add_idea = NS_Gen_monarchy_nationalism_guard_extend				
+			}
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	focus = {
+		id = NF_Gen_monarchy_nationalism_Paramilitary_expand
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		prerequisite = { focus = NF_Gen_monarchy_nationalism_guard_extend }
+		x = 0
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_monarchy_nationalism_Paramilitary_expand
+		}
+	}
+
+	####### 파시즘 중점
+	focus = {
+		id = NF_Gen_statism
+		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = NF_Gen_authoritarianism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_monarchy_nationalism }
+		mutually_exclusive = { focus = NF_Gen_authority_nationalism }
+		available = {
+			OR = {
+				has_idea = NS_Gen_authoritarianism_monarchy
+				has_idea = NS_Gen_authoritarianism_republic
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 2
+		y = 3
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+						has_idea = NS_Gen_authoritarianism_monarchy
+				}
+				remove_ideas = NS_Gen_government_crisis_3
+				swap_ideas = {
+					remove_idea = NS_Gen_authoritarianism_monarchy
+					add_idea = NS_Gen_statism_monarchy				
+				}	
+				}
+			if = {
+				limit = {
+						has_idea = NS_Gen_authoritarianism_republic
+				}
+				remove_ideas = NS_Gen_government_crisis_3
+				swap_ideas = {
+					remove_idea = NS_Gen_authoritarianism_republic
+					add_idea = NS_Gen_statism_republic				
+				}	
+				}
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_3
+				add_idea = NS_Gen_mafia_2				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_statism_state_socialism
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = NF_Gen_statism }
+		x = 2
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}			
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_2
+				add_idea = NS_Gen_mafia_political				
+			}
+			add_ideas = NS_Gen_statism_state_socialism
+		}
+	}
+
+	focus = {
+		id = NF_Gen_statism_guard_extend
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = NF_Gen_statism_state_socialism }
+		x = 2
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_political
+				add_idea = NS_Gen_statism_guard_extend				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_statism_our_empire
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = NF_Gen_statism_guard_extend }
+		x = 2
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_statism_our_empire
+		}
+	}
+
+	####### 국가주의 중점
+	focus = {
+		id = NF_Gen_authority_nationalism
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = NF_Gen_authoritarianism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_monarchy_nationalism }
+		mutually_exclusive = { focus = NF_Gen_statism }
+		available = {
+			OR = {
+				has_idea = NS_Gen_authoritarianism_monarchy
+				has_idea = NS_Gen_authoritarianism_republic
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 4
+		y = 3
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+						has_idea = NS_Gen_authoritarianism_monarchy
+				}
+				swap_ideas = {
+					remove_idea = NS_Gen_government_crisis_3
+					add_idea = NS_Gen_authority_nationalism_monarchy				
+				}	
+				}
+			if = {
+				limit = {
+						has_idea = NS_Gen_authoritarianism_republic
+				}
+				swap_ideas = {
+					remove_idea = NS_Gen_government_crisis_3
+					add_idea = NS_Gen_authority_nationalism_republic				
+				}	
+				}
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_3
+				add_idea = NS_Gen_mafia_2				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_nationalism_social_control
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = NF_Gen_authority_nationalism }
+		x = 4
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_2
+				add_idea = NS_Gen_mafia_1				
+			}
+			add_ideas = NS_Gen_authority_nationalism_social_control
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_nationalism_military_extend
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = NF_Gen_authority_nationalism_social_control }
+		x = 4
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+			add_ideas = NS_Gen_authority_nationalism_military_extend
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_nationalism_discontent_outside
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = NF_Gen_authority_nationalism_military_extend }
+		x = 4
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_1
+				add_idea = NS_Gen_mafia_political				
+			}
+			add_ideas = NS_Gen_authority_nationalism_discontent_outside
+		}
+	}
+	#### 권위주의 세부중점
+
+	focus = {
+		id = NF_Gen_authority_military_youth
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = {focus = NF_Gen_monarchy_nationalism_Paramilitary_expand 
+						focus = NF_Gen_statism_our_empire 
+						focus = NF_Gen_authority_nationalism_discontent_outside 
+		}
+		x = 2
+		y = 7
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_authority_military_youth
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_expansionist_policy
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = NF_Gen_authority_military_youth }
+		mutually_exclusive = { focus = NF_Gen_authority_defense_strategy }
+		x = 1
+		y = 8
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			add_ideas = NS_Gen_authority_expansionist_policy
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_defense_strategy
+		icon = GFX_goal_generic_defence
+		prerequisite = {focus = NF_Gen_authority_military_youth }
+		mutually_exclusive = { focus = NF_Gen_authority_expansionist_policy }
+		x = 3
+		y = 8
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_authority_defense_strategy
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_mobilization_order
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = {focus = NF_Gen_authority_expansionist_policy 
+						focus = NF_Gen_authority_defense_strategy 
+		}
+		x = 2
+		y = 9
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_authority_mobilization_order
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_for_the_empire
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = {focus = NF_Gen_monarchy_nationalism_Paramilitary_expand 
+		}
+		x = 0
+		y = 7
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_authority_for_the_empire
+			hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+		}
+	}
+
+	focus = {
+		id = NF_Gen_authority_army_private_organization
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus = NF_Gen_authority_nationalism_discontent_outside 
+		}
+		x = 4
+		y = 7
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_authority_army_private_organization
+		}
+	}
+	
+
+	####### 사회주의
+	#### 마르크스-레닌주의 marxism–leninism
+	focus = {
+		id = NF_Gen_marxism_leninism
+		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = NF_Gen_socialism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_maoism }
+		mutually_exclusive = { focus = NF_Gen_democratic_socialism }
+		x = 6
+		y = 3
+		cost = 10
+		
+		available = {
+			if = {
+				limit = { original_tag = CHI }
+				has_government = communism
+				else = {
+					OR = {
+						has_government = communism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = communism }
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_3
+					}
+					swap_ideas = {
+						remove_idea = NS_Gen_government_crisis_3
+						add_idea = NS_Gen_government_crisis_2				
+					}
+				}
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_2
+					}
+					swap_ideas = {
+						remove_idea = NS_Gen_government_crisis_2
+						add_idea = NS_Gen_government_crisis_1				
+					}
+				}
+			swap_ideas = {
+				remove_idea = NS_Gen_socialism_ideologie
+				add_idea = NS_Gen_marxism_leninism				
+			}
+			swap_ideas = {
+				remove_idea = Gen_cartel
+				add_idea = Gen_cartel_nationalize				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_3
+				add_idea = NS_Gen_mafia_2				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_marxism_leninism_soviet_leadership
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = NF_Gen_marxism_leninism }
+		x = 6
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_marxism_leninism_soviet_leadership
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_2
+					}
+						remove_ideas = NS_Gen_government_crisis_2	
+				}
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_1
+					}
+						remove_ideas = NS_Gen_government_crisis_1	
+				}
+			remove_ideas = NS_Gen_mafia_2
+		}
+	}	
+
+	focus = {
+		id = NF_Gen_marxism_leninism_heavy_industries
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = NF_Gen_marxism_leninism_soviet_leadership }
+		x = 6
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_marxism_leninism_heavy_industries
+		}
+	}
+
+	focus = {
+		id = NF_Gen_marxism_leninism_internationalism
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = NF_Gen_marxism_leninism_heavy_industries }
+		available = {
+		}
+		x = 6
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_marxism_leninism_internationalism
+		}
+	}
+	#### 마오주의 maoism
+	focus = {
+		id = NF_Gen_maoism
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = NF_Gen_socialism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_marxism_leninism }
+		mutually_exclusive = { focus = NF_Gen_democratic_socialism }
+		x = 8
+		y = 3
+		cost = 10
+		
+		available = {
+			if = {
+				limit = { original_tag = CHI }
+				has_government = communism
+				else = {
+					OR = {
+						has_government = communism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = communism }
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_3
+					}
+					swap_ideas = {
+						remove_idea = NS_Gen_government_crisis_3
+						add_idea = NS_Gen_government_crisis_2				
+					}
+				}
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_2
+					}
+					swap_ideas = {
+						remove_idea = NS_Gen_government_crisis_2
+						add_idea = NS_Gen_government_crisis_1				
+					}
+				}
+			swap_ideas = {
+				remove_idea = NS_Gen_socialism_ideologie
+				add_idea = NS_Gen_maoism				
+			}
+			swap_ideas = {
+				remove_idea = Gen_cartel
+				add_idea = Gen_cartel_nationalize				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_3
+				add_idea = NS_Gen_mafia_2				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_maoism_rectification_campaign
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = NF_Gen_maoism }
+		x = 8
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_maoism_rectification_campaign
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_2
+					}
+						remove_ideas = NS_Gen_government_crisis_2	
+				}
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_1
+					}
+						remove_ideas = NS_Gen_government_crisis_1	
+				}
+			remove_ideas = NS_Gen_mafia_2
+		}
+	}	
+
+	focus = {
+		id = NF_Gen_maoism_agriculture
+		icon = GFX_focus_prc_maoism
+		prerequisite = { focus = NF_Gen_maoism_rectification_campaign }
+		x = 8
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_maoism_maoism_agriculture
+		}
+	}
+
+	focus = {
+		id = NF_Gen_maoism_party_army
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = NF_Gen_maoism_agriculture }
+		available = {
+		}
+		x = 8
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_maoism_party_army
+		}
+	}
+	##### 민주 사회주의 democratic_socialism 
+	focus = {
+		id = NF_Gen_democratic_socialism
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = NF_Gen_socialism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_marxism_leninism }
+		mutually_exclusive = { focus = NF_Gen_maoism }
+		available = {
+			if = {
+				limit = { original_tag = CHI }
+				has_government = communism
+				else = {
+					OR = {
+						has_government = communism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+		x = 10
+		y = 3
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = communism
+				}
+			}			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = communism }
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_3
+					}
+				remove_ideas = NS_Gen_government_crisis_3	
+				}
+			if = {
+				limit = {
+						has_idea = NS_Gen_government_crisis_2
+					}
+					remove_ideas = NS_Gen_government_crisis_2
+				}
+			swap_ideas = {
+				remove_idea = NS_Gen_socialism_ideologie
+				add_idea = NS_Gen_democratic_socialism				
+			}
+			swap_ideas = {
+				remove_idea = Gen_cartel
+				add_idea = Gen_cartel_nationalize				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_3
+				add_idea = NS_Gen_mafia_2				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_democratic_socialism_coalition_government
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = NF_Gen_democratic_socialism }
+		x = 10
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_democratic_socialism_coalition_government
+			swap_ideas = {
+				remove_idea = NS_Gen_mafia_2
+				add_idea = NS_Gen_mafia_1				
+			}
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_2
+				add_idea = NS_Gen_government_crisis_1				
+			}
+		}
+	}	
+
+	focus = {
+		id = NF_Gen_democratic_socialism_administrative_reform
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = NF_Gen_democratic_socialism_coalition_government }
+		x = 10
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_democratic_socialism_administrative_reform
+				remove_ideas = NS_Gen_mafia_1
+				remove_ideas = NS_Gen_government_crisis_1
+		}
+	}
+	focus = {
+		id = NF_Gen_democratic_socialism_flexible_diplomacy
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = NF_Gen_democratic_socialism_administrative_reform }
+		available = {
+		}
+		x = 10
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_democratic_socialism_flexible_diplomacy
+		}
+	}
+	#### 사회주의 세부중점
+
+	focus = {
+		id = NF_Gen_socialism_political_commissars
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus = NF_Gen_marxism_leninism_internationalism 
+						focus = NF_Gen_maoism_party_army 
+		}
+		mutually_exclusive = { focus = NF_Gen_socialism_duty_for_free }
+		available = {
+		}
+		x = 7
+		y = 7
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_socialism_political_commissars
+		}
+	}
+
+	focus = {
+		id = NF_Gen_socialism_duty_for_free
+		icon = GFX_focus_generic_military_academy
+		prerequisite = {focus = NF_Gen_maoism_party_army 
+						focus = NF_Gen_democratic_socialism_flexible_diplomacy 
+		}
+		mutually_exclusive = { focus = NF_Gen_socialism_political_commissars }
+		available = {
+		}
+		x = 9
+		y = 7
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_socialism_duty_for_free
+		}
+	}
+
+	focus = {
+		id = NF_Gen_socialism_partnership_soviet
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {focus = NF_Gen_socialism_political_commissars 
+						focus = NF_Gen_socialism_duty_for_free 
+		}
+		mutually_exclusive = { focus = NF_Gen_socialism_partnership_autonomous 
+								focus = NF_Gen_socialism_partnership_china
+		}
+		x = 6
+		y = 8
+		cost = 10
+		
+		available = {
+			SOV_will_support = yes
+		not = {
+			has_War_with = SOV
+			}
+		}
+
+	bypass = {
+		is_in_faction_with = SOV
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = CHI_mission_to_the_soviet_union
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_socialism_partnership_china
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		prerequisite = {focus = NF_Gen_socialism_political_commissars 
+						focus = NF_Gen_socialism_duty_for_free 
+		}
+		mutually_exclusive = { focus = NF_Gen_socialism_partnership_soviet 
+								focus = NF_Gen_socialism_partnership_autonomous
+		}
+		x = 8
+		y = 8
+		cost = 10
+		
+		available = {
+			PRC_will_support = yes
+		not = {
+			has_War_with = SOV
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = SOV
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			PRC = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = AST_delegation_to_china
+				}
+			}
+			add_opinion_modifier = {
+				target = PRC
+				modifier = AST_delegation_to_china
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_socialism_partnership_autonomous
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = {focus = NF_Gen_socialism_political_commissars 
+						focus = NF_Gen_socialism_duty_for_free 
+		}
+		mutually_exclusive = { focus = NF_Gen_socialism_partnership_soviet 
+								focus = NF_Gen_socialism_partnership_china
+		}
+		available = {
+		}
+		x = 10
+		y = 8
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+
+	####### 자유주의
+	##### 입헌군주제  constitutional_monarchy
+
+	focus = {
+		id = NF_Gen_constitutional_monarchy
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = NF_Gen_liberalism_ideologie }
+		mutually_exclusive = { focus = neutrality_focus }
+		x = 12
+		y = 3
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_idea = neutrality_idea
+			}
+		}
+
+		completion_reward = {
+			
+			add_ideas = NS_Gen_constitutional_monarchy
+			set_rule = { can_send_volunteers = yes }
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_3
+				add_idea = NS_Gen_government_crisis_2				
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_constitutional_monarchy_council_guarantee
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = NF_Gen_constitutional_monarchy }
+		x = 12
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_constitutional_monarchy_council_guarantee
+			add_ideas = volunteer_corps_focus
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_2
+				add_idea = NS_Gen_government_crisis_1				
+			}
+		}
+	}
+	##### 중립주의
+	focus = {
+		id = neutrality_focus
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = NF_Gen_liberalism_ideologie }
+		mutually_exclusive = { focus = interventionism_focus }
+		x = 14
+		y = 3
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = AUS
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
+			}
+			add_political_power = 150
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_3
+				add_idea = NS_Gen_government_crisis_2				
+			}
+		}
+	}
+
+	focus = {
+		id = deterrence
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = neutrality_focus }
+		x = 14
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = deterrence
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_2
+				add_idea = NS_Gen_government_crisis_1				
+			}
+		}
+	}
+	
+	##### 간섭주의
+	focus = {
+		id = interventionism_focus
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = NF_Gen_liberalism_ideologie }
+		mutually_exclusive = { focus = neutrality_focus }
+		x = 16
+		y = 3
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_idea = neutrality_idea
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}	
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = volunteer_corps_focus
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_3
+				add_idea = NS_Gen_government_crisis_2				
+			}
+		}
+	}
+
+	focus = {
+		id = volunteer_corps
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = interventionism_focus }
+		x = 16
+		y = 4
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = foreign_expeditions_focus
+			swap_ideas = {
+				remove_idea = NS_Gen_government_crisis_2
+				add_idea = NS_Gen_government_crisis_1				
+			}
+		}
+	}
+
+	##### 자유주의 추가효과
+	focus = {
+		id = NF_Gen_liberalism_cartel_collusion
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {focus = NF_Gen_constitutional_monarchy_council_guarantee 
+						focus = deterrence
+						focus = volunteer_corps
+		}
+		mutually_exclusive = { 	focus = NF_Gen_liberalism_cartel_challenge 
+								focus = NF_Gen_liberalism_cartel_cooperation
+		}
+		x = 12
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Gen_cartel
+				add_idea = Gen_cartel_collusion				
+			}
+				remove_ideas = NS_Gen_government_crisis_1
+		}
+	}
+
+	focus = {
+		id = NF_Gen_liberalism_cartel_cooperation
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = {focus = NF_Gen_constitutional_monarchy_council_guarantee 
+						focus = deterrence
+						focus = volunteer_corps
+		}
+		mutually_exclusive = { 	focus = NF_Gen_liberalism_cartel_collusion 
+								focus = NF_Gen_liberalism_cartel_challenge
+		}
+		x = 14
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Gen_cartel
+				add_idea = Gen_cartel_cooperation			
+			}
+				remove_ideas = NS_Gen_government_crisis_1
+		}
+	}
+
+	focus = {
+		id = NF_Gen_liberalism_cartel_challenge
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {focus = NF_Gen_constitutional_monarchy_council_guarantee 
+						focus = deterrence
+						focus = volunteer_corps
+		}
+		mutually_exclusive = { 	focus = NF_Gen_liberalism_cartel_collusion 
+								focus = NF_Gen_liberalism_cartel_cooperation
+		}
+		x = 16
+		y = 5
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Gen_cartel
+				add_idea = Gen_cartel_challenge				
+			}
+				remove_ideas = NS_Gen_government_crisis_1
+		}
+	}
+	
+	focus = {
+		id = NF_Gen_liberalism_industrial_estate
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = NF_Gen_liberalism_cartel_collusion 
+						focus = NF_Gen_liberalism_cartel_cooperation
+						focus = NF_Gen_liberalism_cartel_challenge
+		}
+		mutually_exclusive = { 	focus = NF_Gen_liberalism_infrastructure 
+								focus = NF_Gen_liberalism_mining_industry
+		}
+		x = 12
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_liberalism_industrial_estate
+		}
+	}
+	
+	focus = {
+		id = NF_Gen_liberalism_mining_industry
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = NF_Gen_liberalism_cartel_collusion 
+						focus = NF_Gen_liberalism_cartel_cooperation
+						focus = NF_Gen_liberalism_cartel_challenge
+		}
+		mutually_exclusive = { 	focus = NF_Gen_liberalism_industrial_estate 
+								focus = NF_Gen_liberalism_infrastructure
+		}
+		
+		x = 14
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_liberalism_mining_industry
+		}
+	}
+	
+	focus = {
+		id = NF_Gen_liberalism_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {focus = NF_Gen_liberalism_cartel_collusion 
+						focus = NF_Gen_liberalism_cartel_cooperation
+						focus = NF_Gen_liberalism_cartel_challenge
+		}
+		mutually_exclusive = { 	focus = NF_Gen_liberalism_industrial_estate 
+								focus = NF_Gen_liberalism_mining_industry
+		}
+		x = 16
+		y = 6
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NS_Gen_liberalism_infrastructure
+		}
+	}
+
+	focus = {
+		id = why_we_fight
+		icon = GFX_focus_generic_little_entente
+		prerequisite = {focus = NF_Gen_liberalism_industrial_estate
+						focus = NF_Gen_liberalism_mining_industry
+						focus = NF_Gen_liberalism_infrastructure
+		}
+		available = { 
+			OR = { 
+				threat > 0.75 
+				has_defensive_war = yes 
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		x = 14
+		y = 7
+		cost = 10
+
+		completion_reward = {
+			add_ideas = why_we_fight_focus
+			custom_effect_tooltip = why_we_fight_effect
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_idea = neutrality_idea } }
+					set_rule = { can_create_factions = yes }
+				}			
+			}
+		}
+	}
+
+	focus = {
+		id = NF_Gen_liberalism_resistance
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {focus = why_we_fight
+		}
+		available = { 
+			OR = { 
+				threat > 0.75 
+				has_defensive_war = yes 
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		x = 13
+		y = 8
+		cost = 10
+
+		completion_reward = {
+			add_ideas = NS_Gen_liberalism_resistance
+		}
+	}
+
+	focus = {
+		id = NF_Gen_cradle_of_science_technology
+		icon = GFX_focus_research2
+		prerequisite = {focus = why_we_fight
+		}
+		available = { 
+			OR = { 
+				threat > 0.75 
+				has_defensive_war = yes 
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		x = 15
+		y = 8
+		cost = 10
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	
+	#### 정치 이념 마무리
+	focus = {
+		id = technology_sharing
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {focus = NF_Gen_authority_mobilization_order 
+		
+						focus = NF_Gen_socialism_partnership_soviet
+						focus = NF_Gen_socialism_partnership_china
+						focus = NF_Gen_socialism_partnership_autonomous
+						
+						focus = NF_Gen_liberalism_resistance
+						focus = NF_Gen_cradle_of_science_technology
+		}
+		available = {
+			has_war = yes
+			is_in_faction = yes
+			OR = {
+				num_of_factories > 50
+				any_other_country = {
+					is_in_faction_with = ROOT
+					num_of_factories > 50
+				}
+			}
+		}		
+		x = 8
+		y = 10
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					original_research_slots < 3
+				}
+				add_research_slot = 1
+			}
+			if = {
+				limit = {
+					original_research_slots > 2
+				}
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 0.5
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}				
+			}			
+		}
+	}
+	#################### 기초 사회개혁
+
+	focus = {
+		id = NF_Gen_basic_social_reform
+		icon = GFX_goal_generic_consumer_goods
+		x = 19
+		y = 1
+		cost = 10
+		prerequisite = {focus = political_effort }
+		prerequisite = {focus = NF_Gen_basic_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			general_hyper_inflation_level_up = yes
+		}
+	}
+	focus = {
+		id = NF_Gen_vaccination
+		icon = GFX_focus_generic_self_management
+		x = 18
+		y = 2
+		cost = 10
+		prerequisite = {focus = NF_Gen_basic_social_reform }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			general_hyper_inflation_level_up = yes
+			swap_ideas = {
+				remove_idea = NS_Gen_rampant_communicable_diseases_3
+				add_idea = NS_Gen_rampant_communicable_diseases_2
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_public_health
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 18
+		y = 3
+		cost = 10
+		prerequisite = {focus = NF_Gen_vaccination }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			general_hyper_inflation_level_up = yes
+			swap_ideas = {
+				remove_idea = NS_Gen_rampant_communicable_diseases_2
+				add_idea = NS_Gen_rampant_communicable_diseases_1
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_land_reform
+		icon = GFX_goal_generic_propaganda
+		x = 20
+		y = 2
+		cost = 10
+		prerequisite = {focus = NF_Gen_basic_social_reform }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			general_hyper_inflation_level_up = yes
+			remove_ideas = NS_Gen_landed_proprietor
+		}
+	}
+	focus = {
+		id = NF_Gen_unemployed_assistance
+		icon = GFX_goal_generic_production
+		x = 20
+		y = 3
+		cost = 10
+		prerequisite = {focus = NF_Gen_basic_social_reform }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			general_hyper_inflation_level_up = yes
+			remove_ideas = {NS_Gen_risk_of_famine
+							NS_Gen_famine
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_basic_medical_welfare
+		icon = GFX_goal_generic_improve_relations
+		x = 19
+		y = 4
+		cost = 10
+		prerequisite = {focus = NF_Gen_public_health }
+		prerequisite = {focus = NF_Gen_unemployed_assistance }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			general_hyper_inflation_level_up = yes
+			remove_ideas = NS_Gen_rampant_communicable_diseases_1
+		}
+	}
+	focus = {
+		id = NF_Gen_compulsory_education
+		icon = GFX_goal_generic_scientific_exchange
+		x = 19
+		y = 5
+		cost = 10
+		prerequisite = {focus = NF_Gen_basic_medical_welfare }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+			general_hyper_inflation_level_up = yes
+		}
+	}
+	
+	
+	#################### 산업
+
+	focus = {
+		id = NF_Gen_basic_industry_promote
+		icon = GFX_goal_generic_production
+		x = 27
+		y = 0
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			general_hyper_inflation_level_down = yes
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_private_industry_promote
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 26
+		y = 1
+		cost = 10
+		prerequisite = {focus = NF_Gen_basic_industry_promote }
+		mutually_exclusive = {focus = NF_Gen_munitions_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			general_hyper_inflation_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_munitions_industry_promote
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 28
+		y = 1
+		cost = 10
+		prerequisite = {focus = NF_Gen_basic_industry_promote }
+		mutually_exclusive = {focus = NF_Gen_private_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	####### 민간 공업 중심
+	focus = {
+		id = NF_Gen_railway_expand
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 24
+		y = 2
+		cost = 10
+		prerequisite = {focus = NF_Gen_private_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_light_industry_promote
+		icon = GFX_focus_generic_industry_2
+		x = 24
+		y = 3
+		cost = 10
+		prerequisite = {focus = NF_Gen_railway_expand }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_automobile_industry
+		icon = GFX_goal_generic_army_motorized
+		x = 24
+		y = 4
+		cost = 10
+		prerequisite = {focus = NF_Gen_light_industry_promote focus = NF_Gen_infra_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.50
+				category = motorized_equipment
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.50
+				category = motorized_equipment
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_infra_promote
+		icon = GFX_goal_generic_construct_civilian
+		x = 22
+		y = 3
+		cost = 10
+		prerequisite = {focus = NF_Gen_railway_expand }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.50
+				category = motorized_equipment
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_synthetic_rubber_industry_promote
+		icon = GFX_focus_generic_rubber
+		x = 22
+		y = 4
+		cost = 10
+		prerequisite = {focus = NF_Gen_infra_promote focus = NF_Gen_light_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_resource = {
+					type = rubber
+					amount = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_interchange_technology
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 23
+		y = 5
+		cost = 10
+		prerequisite = {focus = NF_Gen_automobile_industry }
+		prerequisite = {focus = NF_Gen_synthetic_rubber_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+ ######################## 경제
+	focus = {
+		id = NF_Gen_economy_self_reliance
+		icon = GFX_focus_generic_industry_3
+		x = 27
+		y = 2
+		cost = 10
+		prerequisite = {focus = NF_Gen_private_industry_promote focus = NF_Gen_munitions_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			general_hyper_inflation_level_down = yes
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = NF_Gen_consumer_industry
+		icon = GFX_goal_generic_consumer_goods
+		x = 26
+		y = 3
+		cost = 10
+		prerequisite = {focus = NF_Gen_economy_self_reliance }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			general_hyper_inflation_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_price_controls
+		icon = GFX_goal_generic_neutrality_focus
+		x = 26
+		y = 4
+		cost = 10
+		prerequisite = {focus = NF_Gen_consumer_industry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			general_hyper_inflation_level_down = yes
+		}
+	}
+	focus = {
+		id = NF_Gen_financial_policy
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 28
+		y = 3
+		cost = 10
+		prerequisite = {focus = NF_Gen_economy_self_reliance }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			general_hyper_inflation_level_down = yes
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = NF_Gen_social_safety_net
+		icon = GFX_goal_generic_improve_relations
+		x = 28
+		y = 4
+		cost = 10
+		prerequisite = {focus = NF_Gen_financial_policy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			general_hyper_inflation_level_down = yes
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = NF_Gen_national_bank_reform
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 27
+		y = 5
+		cost = 10
+		prerequisite = {focus = NF_Gen_price_controls 
+						focus = NF_Gen_social_safety_net
+						}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			general_hyper_inflation_clear_all = yes
+			add_political_power = 120
+		}
+	}
+	
+	################## 군수공업 중심
+	focus = {
+		id = NF_Gen_basic_munitions_industry_estate
+		icon = GFX_focus_generic_combined_arms
+		x = 30
+		y = 2
+		cost = 10
+		prerequisite = { focus = NF_Gen_munitions_industry_promote }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_mining_committee
+		icon = GFX_goal_generic_construction2
+		x = 30
+		y = 3
+		cost = 10
+		prerequisite = { focus = NF_Gen_basic_munitions_industry_estate }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_synthetic_oil_industry
+		icon = GFX_goal_generic_oil_refinery
+		x = 30
+		y = 4
+		cost = 10
+		prerequisite = { focus = NF_Gen_mining_committee focus = NF_Gen_heavy_industry_exansion}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_heavy_industry_exansion
+		icon = GFX_focus_generic_tank_production
+		x = 32
+		y = 3
+		cost = 10
+		prerequisite = { focus = NF_Gen_basic_munitions_industry_estate }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_aviation_industry
+		icon = GFX_focus_YUG_ikarus
+		x = 32
+		y = 4
+		cost = 10
+		prerequisite = { focus = NF_Gen_mining_committee focus = NF_Gen_heavy_industry_exansion}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_tech_bonus = {
+				name = air_doctrine_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = air_doctrine_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		
+	}
+	focus = {
+		id = NF_Gen_military_industrial_complex
+		icon = GFX_focus_generic_license_production
+		x = 31
+		y = 5
+		cost = 10
+		prerequisite = { focus = NF_Gen_synthetic_oil_industry }
+		prerequisite = { focus = NF_Gen_aviation_industry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#####
+	focus = {
+		id = NF_Gen_add_technical_research
+		icon = GFX_focus_research2
+		x = 27
+		y = 6
+		cost = 10
+		prerequisite = { focus = NF_Gen_interchange_technology focus = NF_Gen_military_industrial_complex }
+		prerequisite = { focus = NF_Gen_national_bank_reform }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	
+ ##### 군사
+	focus = {
+		id = NF_Gen_military_innovation
+		icon = GFX_focus_generic_combined_arms
+		x = 53
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+		unlock_decision_category_tooltip = Decisions_Gen_army_reform_category
+		}
+	}
+	#######################
+	focus = {
+		id = NF_Gen_GER_focus
+		icon = GFX_focus_ger_oppose_hitler
+		x = 36
+		y = 2
+		cost = 10
+		prerequisite = { focus = NF_Gen_military_innovation }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+	completion_reward = {
+		GER = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_GER
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+			if = {
+				limit = {
+					NOT = { has_decision = Decisions_Gen_War_Games_divisions_plan }
+				}
+				unlock_decision_tooltip = Decisions_Gen_War_Games_divisions_plan
+			}
+	}
+	}
+	focus = {
+		id = NF_Gen_ENG_focus
+		icon = GFX_focus_chi_british_cooperation
+		x = 44
+		y = 2
+		cost = 10
+		prerequisite = { focus = NF_Gen_military_innovation }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ENG_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		ENG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_ENG
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+	}
+	focus = {
+		id = NF_Gen_USA_focus
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 52
+		y = 2
+		cost = 10
+		prerequisite = { focus = NF_Gen_military_innovation }
+		mutually_exclusive = { focus = NF_Gen_SOV_focus }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			USA_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_USA
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+	}
+	#############
+	focus = {
+		id = NF_Gen_GER_military_staff_capability_intension
+		icon = GFX_focus_generic_military_mission
+		x = 36
+		y = 3
+		cost = 10
+		prerequisite = { focus = NF_Gen_GER_focus }
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			every_army_leader = {
+				add_planning = 1
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_GER_picked_army
+		icon = GFX_goal_demand_sudetenland
+		x = 36
+		y = 4
+		cost = 10
+		prerequisite = { focus = NF_Gen_GER_military_staff_capability_intension 
+		}
+		prerequisite = { focus = NF_Gen_closer_ties_with_GER 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_GER_cas_plan
+		icon = GFX_goal_generic_territory_or_war
+		x = 36
+		y = 5
+		cost = 10
+		prerequisite = { focus = NF_Gen_GER_picked_army }
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_GER_bonus_cas_plan
+				bonus = 0.5
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_GER_brown_water_navy_plan
+		icon = GFX_focus_generic_destroyer
+		x = 34
+		y = 5
+		cost = 10
+		prerequisite = { focus = NF_Gen_GER_military_staff_capability_intension }
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_GER_bonus_brown_water_navy_plan
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
+			add_tech_bonus = {
+				name = "NF_Gen_GER_bonus_brown_water_navy_plan"
+				bonus = 0.5
+				uses = 1
+				category = convoy_defense_tree
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_GER_panzer
+		icon = GFX_focus_generic_tank_production
+		x = 37
+		y = 6
+		cost = 10
+		prerequisite = { focus = NF_Gen_GER_picked_army }
+		prerequisite = { focus = NF_Gen_GER_annihilation_maneuver_warfare }
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_GER_bonus_panzer
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_GER_panzergrenadier
+		icon = GFX_focus_generic_army_tanks2
+		x = 37
+		y = 7
+		cost = 10
+		prerequisite = { focus = NF_Gen_GER_panzer }
+		prerequisite = { focus = NF_Gen_mechanized_infantry_reinforce }
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_GER_bonus_panzergrenadier
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_closer_ties_with_GER
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {focus = NF_Gen_GER_focus
+		}
+		mutually_exclusive = { focus = NF_Gen_closer_ties_with_ENG }
+		x = 39
+		y = 3
+
+		cost = 10
+		available = {
+			GER_will_support = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			diplomatic_relation = {
+				country = GER
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_closer_ties_with_ENG
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = {focus = NF_Gen_ENG_focus
+		}
+		mutually_exclusive = { focus = NF_Gen_closer_ties_with_GER }
+		x = 41
+		y = 3
+
+		cost = 10
+		available = {
+			ENG_will_support = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			diplomatic_relation = {
+				country = ENG
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_GER_annihilation_maneuver_warfare
+		icon = GFX_focus_generic_air_defense
+		x = 38
+		y = 4
+		cost = 10
+		prerequisite = { focus = NF_Gen_closer_ties_with_GER 
+		}
+		prerequisite = { focus = NF_Gen_GER_military_staff_capability_intension 
+		} 
+		mutually_exclusive = {	focus = NF_Gen_USA_airland_battle
+								focus = NF_Gen_ENG_strategic_paralysis 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_GER_bonus_annihilation_maneuver_warfare
+				bonus = 0.5
+				uses = 1
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_GER_kampfgruppe
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 38
+		y = 5
+		cost = 10
+		prerequisite = { focus = NF_Gen_GER_annihilation_maneuver_warfare }
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			GER_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_GER_bonus_kampfgruppe
+				bonus = 0.5
+				uses = 1
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_ENG_strategic_paralysis
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 42
+		y = 4
+		cost = 10
+		prerequisite = {focus = NF_Gen_closer_ties_with_ENG
+		}
+		mutually_exclusive = {	focus = NF_Gen_USA_airland_battle
+								focus = NF_Gen_GER_annihilation_maneuver_warfare 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = NF_Gen_GER_focus
+					GER_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_ENG_focus
+					ENG_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_USA_focus
+					USA_will_support = yes
+				}
+			}
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_ENG_bonus_strategic_paralysis
+				bonus = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_ENG_support_company_reinforce
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 42
+		y = 5
+		cost = 10
+		prerequisite = {focus = NF_Gen_ENG_strategic_paralysis
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = NF_Gen_GER_focus
+					GER_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_ENG_focus
+					ENG_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_USA_focus
+					USA_will_support = yes
+				}
+			}
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_ENG_bonus_support_company_reinforce
+				bonus = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_USA_airland_battle
+		icon = GFX_focus_generic_license_production
+		x = 40
+		y = 4
+		cost = 10
+		prerequisite = {focus = NF_Gen_USA_focus
+						focus = NF_Gen_closer_ties_with_GER
+						focus = NF_Gen_closer_ties_with_ENG
+		}
+		mutually_exclusive = {	focus = NF_Gen_GER_annihilation_maneuver_warfare
+								focus = NF_Gen_ENG_strategic_paralysis 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = NF_Gen_GER_focus
+					GER_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_ENG_focus
+					ENG_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_USA_focus
+					USA_will_support = yes
+				}
+			}
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_USA_bonus_airland_battle
+				bonus = 0.5
+				uses = 1
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_USA_maneuver_battalion_reinforce
+		icon = GFX_goal_generic_army_motorized
+		x = 40
+		y = 5
+		cost = 10
+		prerequisite = {focus = NF_Gen_USA_airland_battle
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = NF_Gen_GER_focus
+					GER_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_ENG_focus
+					ENG_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_USA_focus
+					USA_will_support = yes
+				}
+			}
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_USA_bonus_maneuver_battalion_reinforce
+				bonus = 0.5
+				uses = 1
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_mechanized_infantry_reinforce
+		icon = GFX_goal_generic_army_tanks
+		x = 39
+		y = 6
+		cost = 10
+		prerequisite = {focus = NF_Gen_GER_kampfgruppe
+						focus = NF_Gen_USA_maneuver_battalion_reinforce
+						focus = NF_Gen_ENG_support_company_reinforce
+		}
+		mutually_exclusive = {	focus = NF_Gen_artillery_infantry_reinforce
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = NF_Gen_GER_focus
+					GER_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_ENG_focus
+					ENG_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_USA_focus
+					USA_will_support = yes
+				}
+			}
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_bonus_mechanized_infantry_reinforce
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_artillery_infantry_reinforce
+		icon = GFX_goal_generic_army_artillery
+		x = 41
+		y = 6
+		cost = 10
+		prerequisite = {focus = NF_Gen_GER_kampfgruppe
+						focus = NF_Gen_USA_maneuver_battalion_reinforce
+						focus = NF_Gen_ENG_support_company_reinforce
+		}
+		mutually_exclusive = {	focus = NF_Gen_mechanized_infantry_reinforce
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = NF_Gen_GER_focus
+					GER_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_ENG_focus
+					ENG_will_support = yes
+				}
+				AND = {
+					has_completed_focus = NF_Gen_USA_focus
+					USA_will_support = yes
+				}
+			}
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NF_Gen_bonus_mechanized_infantry_reinforce
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	####
+	focus = {
+	id = NF_Gen_ENG_cooperation
+	icon = GFX_goal_generic_improve_relations
+	prerequisite = { focus = NF_Gen_ENG_focus 
+	}
+		x = 44
+		y = 3
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		ENG_will_support = yes
+	}
+
+	bypass = {
+		OR = {
+			has_non_aggression_pact_with = ENG
+			is_in_faction_with = ENG
+		}
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}
+focus = {
+	id = NF_Gen_invite_british_advisers
+	icon = GFX_focus_generic_military_academy
+	prerequisite = { focus = NF_Gen_ENG_cooperation }
+		x = 44
+		y = 4
+
+	cost = 10
+
+	available = {
+		ENG_will_support = yes	
+	}
+
+	bypass = {
+		#custom_trigger_tooltip = {
+		#	tooltip = soviet_advisers_tt
+		#	any_other_country = {
+		#		any_army_leader = {
+		#			has_id = 600
+		#		}
+		#	}
+		#}
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+			add_tech_bonus = {
+				name = "land_doctrine_tech_bonus"
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+	}
+}
+	focus = {
+	id = NF_Gen_fighter_purchases
+	icon = GFX_goal_generic_build_airforce
+	prerequisite = {focus = NF_Gen_GER_focus 
+					focus = NF_Gen_ENG_focus 
+					focus = NF_Gen_USA_focus 
+					}
+		x = 47
+		y = 3
+
+	cost = 10
+
+	available = {
+		OR = {
+			AND = {
+				has_completed_focus = NF_Gen_GER_focus
+				GER_will_support = yes
+			}
+			AND = {
+				has_completed_focus = NF_Gen_ENG_focus
+				ENG_will_support = yes
+			}
+			AND = {
+				has_completed_focus = NF_Gen_USA_focus
+				USA_will_support = yes
+			}
+		}
+	}
+
+	bypass = {
+
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = CHI_purchase_fighters_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					not = {
+						has_tech = jet_fighter_1
+					}
+				}
+				set_technology = { jet_fighter_1 = 1 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = NF_Gen_GER_focus
+					not = { has_war_with = GER }
+				}
+				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = GER }
+			}
+			if = {
+				limit = {
+					has_completed_focus = NF_Gen_ENG_focus
+					not = { has_war_with = ENG }
+				}
+				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = ENG }
+			}
+			if = {
+				limit = {
+					has_completed_focus = NF_Gen_USA_focus
+					not = { has_war_with = USA }
+				}
+				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = USA }
+			}
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_air_base_add
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = NF_Gen_fighter_purchases }
+		x = 47
+		y = 4
+
+	cost = 10
+
+
+	available = {
+		OR = {
+			AND = {
+				has_completed_focus = NF_Gen_GER_focus
+				GER_will_support = yes
+			}
+			AND = {
+				has_completed_focus = NF_Gen_ENG_focus
+				ENG_will_support = yes
+			}
+			AND = {
+				has_completed_focus = NF_Gen_USA_focus
+				USA_will_support = yes
+			}
+		}
+		is_subject = no
+	}
+
+	bypass = {
+
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+}
+
+	focus = {
+		id = NF_Gen_ENG_operational_integrity
+		icon = GFX_goal_generic_air_fighter2
+		x = 46
+		y = 5
+		cost = 10
+		prerequisite = { focus = NF_Gen_air_base_add 
+		}
+		prerequisite = { focus = NF_Gen_ENG_cooperation 
+		}
+		mutually_exclusive = {	focus = NF_Gen_USA_strategic_destruction
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ENG_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = "NF_ENG_bonus_operational_integrity"
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = "NF_ENG_bonus_operational_integrity"
+				bonus = 0.5
+				uses = 1
+				category = operational_integrity_tree
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_ENG_tactical_strike_plan
+		icon = GFX_goal_generic_occupy_start_war
+		x = 46
+		y = 6
+		cost = 10
+		prerequisite = { focus = NF_Gen_ENG_operational_integrity 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ENG_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = "NF_ENG_bonus_operational_integrity"
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+			}
+			add_tech_bonus = {
+				name = "NF_ENG_bonus_operational_integrity"
+				bonus = 0.5
+				uses = 1
+				category = operational_integrity_tree
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_ENG_green_water_navy_plan
+		icon = GFX_focus_generic_cruiser2
+		x = 44
+		y = 6
+		cost = 10
+		prerequisite = {focus = NF_Gen_ENG_operational_integrity 
+						focus = NF_Gen_invite_british_advisers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ENG_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = "NF_ENG_bonus_green_water_navy_plan"
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = "NF_ENG_bonus_green_water_navy_plan"
+				bonus = 0.5
+				uses = 1
+				category = trade_interdiction_tree
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_ENG_commandos
+		icon = GFX_goal_generic_army_doctrines
+		x = 43
+		y = 7
+		cost = 10
+		prerequisite = { focus = NF_Gen_ENG_green_water_navy_plan 
+		}
+		prerequisite = { focus = NF_Gen_ENG_strategic_paralysis 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			ENG_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = "NF_ENG_bonus_commandos"
+				bonus = 0.5
+				uses = 1
+				category = para_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = NF_Gen_USA_strategic_destruction
+		icon = GFX_goal_generic_air_bomber
+		x = 48
+		y = 5
+		cost = 10
+		prerequisite = { focus = NF_Gen_air_base_add 
+		}
+		#prerequisite = { focus = NF_Gen_ENG_cooperation 
+		#}
+		mutually_exclusive = {	focus = NF_Gen_ENG_operational_integrity
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			USA_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = "NF_USA_bonus_strategic_destruction"
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+			add_tech_bonus = {
+				name = "NF_USA_bonus_strategic_destruction"
+				bonus = 0.5
+				uses = 1
+				category = strategic_destruction_tree
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_USA_strategic_bombing_plan
+		icon = GFX_goal_generic_position_armies
+		x = 48
+		y = 6
+		cost = 10
+		prerequisite = { focus = NF_Gen_USA_strategic_destruction 
+		}
+		#prerequisite = { focus = NF_Gen_ENG_cooperation 
+		#}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			USA_will_support = yes
+		}
+	
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = "NF_USA_bonus_strategic_bombing_plan"
+				bonus = 0.5
+				uses = 1
+				category = cat_strategic_bomber
+			}
+			add_tech_bonus = {
+				name = "NF_USA_bonus_strategic_bombing_plan"
+				bonus = 0.5
+				uses = 1
+				category = strategic_destruction_tree
+			}
+		}
+	}
+	############
+	focus = {
+	id = NF_Gen_USA_small_arms_expertise
+	icon = GFX_focus_secret_rearmament
+	prerequisite = { focus = NF_Gen_USA_focus }
+	x = 51
+	y = 3
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		USA_will_support = yes
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_small_arms_expertise
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_USA_modern_logistics
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = NF_Gen_USA_small_arms_expertise }
+	x = 51
+	y = 4
+	
+	cost = 10
+
+	ai_will_do = {
+	}
+
+	available = {
+		OR = {
+			USA_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+
+	completion_reward = {
+		every_army_leader = {
+			add_logistics = 1
+		}
+		add_ideas = CHI_modern_logistics
+		add_tech_bonus = {
+			name = CHI_modern_logistics
+			bonus = 0.5
+			uses = 1
+			technology = tech_field_hospital_1
+			technology = tech_field_hospital_2
+			technology = tech_field_hospital_3
+			technology = tech_field_hospital_4
+			technology = tech_logistics_company_1
+			technology = tech_logistics_company_2
+			technology = tech_logistics_company_3
+			technology = tech_logistics_company_4
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_USA_motorized_infantry
+	icon = GFX_goal_generic_army_motorized
+	prerequisite = { focus = NF_Gen_USA_small_arms_expertise }
+	x = 50
+	y = 5
+	
+	cost = 10
+
+	ai_will_do = {
+	}
+
+	available = {
+		OR = {
+			USA_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_heavy_weapons
+			bonus = 0.5
+			uses = 1
+			category = motorized_equipment
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_USA_air_assault_operations
+	icon = GFX_focus_generic_paratrooper
+	prerequisite = { focus = NF_Gen_USA_strategic_destruction }
+	prerequisite = { focus = NF_Gen_USA_motorized_infantry }
+	x = 49
+	y = 8
+	
+	cost = 10
+
+	ai_will_do = {
+	}
+
+	available = {
+		OR = {
+			USA_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_sino_american_cooperative_organization
+			bonus = 0.5
+			uses = 2
+			category = recon_tech
+			category = para_tech
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_USA_air_superiority_plan
+	icon = GFX_goal_generic_air_fighter
+	prerequisite = { focus = NF_Gen_USA_strategic_destruction }
+	x = 50
+	y = 6
+	
+	cost = 10
+
+	ai_will_do = {
+	}
+
+	available = {
+		USA_will_support = yes
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+			add_tech_bonus = {
+				name = "NF_USA_bonus_air_superiority_plan"
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+	}
+}
+	focus = {
+	id = NF_Gen_USA_naval_aviation
+	icon = GFX_goal_generic_navy_carrier
+	prerequisite = { focus = NF_Gen_USA_air_superiority_plan }
+	x = 50
+	y = 7
+	
+	cost = 10
+
+	ai_will_do = {
+	}
+
+	available = {
+		OR = {
+			USA_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+			add_tech_bonus = {
+				name = "NF_USA_bonus_naval_aviation"
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+	}
+}
+	focus = {
+	id = NF_Gen_USA_SOV_naval_port
+	icon = GFX_goal_generic_construct_naval_dockyard
+	prerequisite = {focus = NF_Gen_USA_focus 
+					focus = NF_Gen_SOV_focus
+	}
+	x = 53
+	y = 3
+	cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		any_state = {
+			is_controlled_by = ROOT
+			is_coastal = yes
+		}
+		OR = {
+			USA_will_support = yes
+			SOV_will_support = yes
+		}
+	}
+
+	complete_tooltip = {
+		navy_experience = 25
+		random_state = {
+			limit = {
+				has_state_flag = CHI_investment_into_shipbuilding_DY
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	completion_reward = {
+		navy_experience = 25
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = CHI_investment_into_shipbuilding_DY
+		}
+	}
+}
+	
+	focus = {
+		id = NF_Gen_USA_offensive_sea_strike
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = NF_Gen_USA_focus }
+		prerequisite = { focus = NF_Gen_USA_SOV_order_destroyers }
+		x = 52
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+		}
+
+		available = {
+			USA_will_support = yes
+		}
+
+		bypass = {
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "NF_USA_bonus_offensive_sea_strike"
+				bonus = 0.5
+				uses = 1
+				category = cat_base_strike
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_USA_cruiser_plan
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = NF_Gen_USA_offensive_sea_strike }
+		x = 52
+		y = 7
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		USA_will_support = yes
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_USA_bonus_cruiser_plan"
+			bonus = 0.5
+			uses = 1
+			category = cl_tech
+		}
+		add_tech_bonus = {
+			name = "NF_USA_bonus_cruiser_plan"
+			bonus = 0.5
+			uses = 1
+			category = cat_base_strike
+		}
+	}
+}
+	focus = {
+		id = NF_Gen_USA_carrier_focus_fleet
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = NF_Gen_USA_cruiser_plan }
+		prerequisite = { focus = NF_Gen_USA_naval_aviation }
+		x = 52
+		y = 8
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		USA_will_support = yes
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_USA_bonus_carrier_focus_fleet"
+			bonus = 0.5
+			uses = 1
+			category = cv_tech
+		}
+		add_tech_bonus = {
+			name = "NF_USA_bonus_carrier_focus_fleet"
+			bonus = 0.5
+			uses = 1
+			category = cat_base_strike
+		}
+	}
+}
+	focus = {
+		id = NF_Gen_USA_SOV_order_destroyers
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = NF_Gen_USA_SOV_naval_port }
+		x = 53
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				USA_will_support = yes
+				SOV_will_support = yes
+			}
+		}
+
+		bypass = {
+		
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_order_destroyers
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = NF_Gen_USA_SOV_marine_plan
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = NF_Gen_USA_SOV_order_destroyers }
+		prerequisite = {focus = NF_Gen_USA_offensive_sea_strike 
+						focus = NF_Gen_SOV_off_shore_defensive_strategy
+		}
+		x = 53
+		y = 6
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			USA_will_support = yes
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_ideas = CHI_train_marines
+		add_tech_bonus = {
+			name = CHI_train_marines
+			bonus = 0.5
+			uses = 1
+			category = marine_tech
+		}
+	}
+}
+	focus = {
+		id = NF_Gen_SOV_off_shore_defensive_strategy
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = NF_Gen_USA_SOV_order_destroyers }
+		prerequisite = { focus = NF_Gen_SOV_focus }
+		x = 54
+		y = 5
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		SOV_will_support = yes
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_off_shore_defensive_strategy"
+			bonus = 0.5
+			uses = 1
+			category = fleet_in_being_tree
+		}
+	}
+}
+	focus = {
+		id = NF_Gen_SOV_submarine_plan
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = NF_Gen_SOV_off_shore_defensive_strategy }
+		x = 54
+		y = 7
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		SOV_will_support = yes
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_submarine_plan"
+			bonus = 0.5
+			uses = 1
+			category = ss_tech
+		}
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_submarine_plan"
+			bonus = 0.5
+			uses = 1
+			category = fleet_in_being_tree
+		}
+	}
+}
+	focus = {
+		id = NF_Gen_SOV_missile_focus_fleet
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = {focus = NF_Gen_SOV_submarine_plan 
+		}
+		prerequisite = {focus = NF_Gen_SOV_shore_patrol_Squadron 
+		}
+		x = 54
+		y = 8
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		SOV_will_support = yes
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_missile_focus_fleet"
+			bonus = 0.5
+			uses = 1
+			category = ca_tech
+		}
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_missile_focus_fleet"
+			bonus = 0.5
+			uses = 1
+			category = fleet_in_being_tree
+		}
+	}
+}
+	####
+	
+	focus = {
+	id = NF_Gen_USA_SOV_carrier_air_wing
+	icon = GFX_goal_generic_occupy_start_war
+	prerequisite = {focus = NF_Gen_USA_carrier_focus_fleet 
+					focus = NF_Gen_SOV_missile_focus_fleet
+	}
+	x = 53
+	y = 9
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			USA_will_support = yes
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_naval_aviation
+			bonus = 0.5
+			uses = 2
+			category = naval_air
+		}
+	}
+}
+	
+	#######
+	focus = {
+		id = NF_Gen_SOV_focus
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 54
+		y = 2
+		cost = 10
+		prerequisite = { focus = NF_Gen_military_innovation }
+		mutually_exclusive = { focus = NF_Gen_USA_focus }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_SOV
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+	}
+	
+	
+	focus = {
+		id = NF_Gen_PRC_focus
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		x = 64
+		y = 2
+		cost = 10
+		prerequisite = { focus = NF_Gen_military_innovation }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		PRC = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_PRC
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+	}
+	focus = {
+		id = NF_Gen_YUG_focus
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 69
+		y = 2
+		cost = 10
+		prerequisite = { focus = NF_Gen_military_innovation }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		YUG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_YUG
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+	}
+	#######
+	focus = {
+	id = NF_Gen_SOV_PRC_small_arms_mass_production
+	icon = GFX_focus_secret_rearmament
+	prerequisite = {focus = NF_Gen_SOV_focus 
+					focus = NF_Gen_PRC_focus 
+	}
+	x = 61
+	y = 3
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+			PRC_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_small_arms_expertise
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_PRC_air_defense_plan
+	icon = GFX_goal_generic_build_tank
+	prerequisite = {focus = NF_Gen_SOV_focus 
+					focus = NF_Gen_PRC_focus 
+	}
+	x = 59
+	y = 3
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+			PRC_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+			air_experience = 25
+			random_state = {			
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_PRC_purchase_tanks
+	icon = GFX_goal_generic_army_tanks
+	prerequisite = {focus = NF_Gen_SOV_closer_ties_with_SOV 
+					focus = NF_Gen_PRC_closer_ties_with_PRC 
+	}
+	x = 60
+	y = 5
+
+	cost = 10
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+			PRC_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = CHI_purchase_tanks_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					not = {
+						has_tech = main_battle_tank_1
+					}
+				}
+				set_technology = { main_battle_tank_1 = 1 }
+			}
+			if = {
+				limit = {
+					#has_completed_focus = CHI_closer_ties_with_germany
+				}
+				add_equipment_to_stockpile = { type = modern_tank_equipment_1 amount = 100 producer = SOV }
+			}
+			if = {
+				limit = {
+					#has_completed_focus = CHI_rapprochement_with_soviet_union
+				}
+				add_equipment_to_stockpile = { type = modern_tank_equipment_1 amount = 100 producer = PRC }
+			}
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_PRC_motorized_infantry_plan
+	icon = GFX_goal_generic_cavalry
+	prerequisite = { focus = NF_Gen_SOV_PRC_purchase_tanks }
+	x = 60
+	y = 6
+
+	cost = 10
+
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+			PRC_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_SOV_PRC_bonus_motorized_infantry_plan"
+			bonus = 0.5
+			uses = 1
+			category = motorized_equipment
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_military_exchange
+	icon = GFX_focus_generic_soviet_politics
+	prerequisite = { focus = NF_Gen_SOV_focus }
+		x = 55
+		y = 3
+
+	cost = 10
+
+	available = {
+		SOV_will_support = yes	
+	}
+
+	bypass = {
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_military_exchange"
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_invite_soviet_advisers
+	icon = GFX_goal_demand_sudetenland
+	prerequisite = { focus = NF_Gen_SOV_military_exchange }
+		x = 55
+		y = 4
+
+	cost = 10
+
+
+	available = {
+		SOV_will_support = yes
+	}
+
+	bypass = {
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	completion_reward = {
+			every_army_leader = {
+				add_planning = 1
+			}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_closer_ties_with_SOV
+	icon = GFX_focus_generic_join_comintern
+	prerequisite = { focus = NF_Gen_SOV_focus }
+	mutually_exclusive = { focus = NF_Gen_PRC_closer_ties_with_PRC }
+		x = 57
+		y = 4
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		SOV_will_support = yes
+	}
+
+	bypass = {
+		OR = {
+			has_non_aggression_pact_with = SOV
+			is_in_faction_with = SOV
+		}
+	}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		diplomatic_relation = {
+			country = SOV
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_closer_ties_with_PRC
+	icon = GFX_focus_prc_agrarian_socialism
+	prerequisite = { focus = NF_Gen_SOV_focus }
+	mutually_exclusive = { focus = NF_Gen_SOV_closer_ties_with_SOV }
+		x = 63
+		y = 4
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		PRC_will_support = yes
+	}
+
+	bypass = {
+		OR = {
+			has_non_aggression_pact_with = PRC
+			is_in_faction_with = PRC
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		diplomatic_relation = {
+			country = PRC
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+	
+	focus = {
+	id = NF_Gen_SOV_operation_maneuver_group
+	icon = GFX_focus_ger_great_red_menace
+	prerequisite = {focus = NF_Gen_SOV_closer_ties_with_SOV 
+	}
+	prerequisite = {focus = NF_Gen_SOV_PRC_small_arms_mass_production 
+	}
+	prerequisite = {focus = NF_Gen_SOV_PRC_air_defense_plan 
+	}
+	#mutually_exclusive = { focus = NF_Gen_PRC_modern_peoples_war }
+	x = 58
+	y = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_operation_maneuver_group"
+			bonus = 0.5
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_operation_maneuver_group"
+			bonus = 0.5
+			uses = 1
+			category = cat_mass_assault
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_modern_peoples_war
+	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+	prerequisite = {focus = NF_Gen_PRC_closer_ties_with_PRC 
+	}
+	prerequisite = {focus = NF_Gen_SOV_PRC_small_arms_mass_production 
+	}
+	prerequisite = {focus = NF_Gen_SOV_PRC_air_defense_plan 
+	}
+	#mutually_exclusive = { focus = NF_Gen_SOV_operation_maneuver_group }
+	x = 62
+	y = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_bonus_modern_peoples_war"
+			bonus = 0.5
+			uses = 1
+			category = infantry_tech
+		}
+		add_tech_bonus = {
+			name = "NF_PRC_bonus_modern_peoples_war"
+			bonus = 0.5
+			uses = 1
+			category = cat_mass_assault
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_support_company_plan
+	icon = GFX_focus_prc_infiltration
+	prerequisite = {focus = NF_Gen_PRC_closer_ties_with_PRC 
+	}
+	#mutually_exclusive = { focus = NF_Gen_PRC_modern_peoples_war }
+	x = 62
+	y = 6
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_bonus_support_company_plan"
+			bonus = 0.5
+			uses = 1
+			category = support_tech
+		}
+		add_tech_bonus = {
+			name = "NF_PRC_bonus_support_company_plan"
+			bonus = 0.5
+			uses = 1
+			category = cat_mass_assault
+		}
+	}
+}
+	
+	focus = {
+	id = NF_Gen_SOV_armored_spearhead
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = {focus = NF_Gen_SOV_operation_maneuver_group 
+	}
+	x = 58
+	y = 6
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_mechanized_infantry_plan"
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+		add_tech_bonus = {
+			name = "NF_SOV_bonus_mechanized_infantry_plan"
+			bonus = 0.5
+			uses = 1
+			category = cat_mass_assault
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_airborne_plan
+	icon = GFX_focus_generic_paratrooper
+	prerequisite = {focus = NF_Gen_SOV_long_range_aerial_warfare 
+	}
+	prerequisite = {focus = NF_Gen_SOV_operation_maneuver_group 
+	}
+	x = 57
+	y = 8
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_sino_american_cooperative_organization
+			bonus = 0.5
+			uses = 2
+			category = recon_tech
+			category = para_tech
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_tactical_support_airforce
+	icon = GFX_goal_generic_air_doctrine
+	prerequisite = {focus = NF_Gen_SOV_military_exchange
+	}
+	x = 56
+	y = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_small_arms_expertise
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_long_range_aerial_warfare
+	icon = GFX_goal_generic_air_fighter
+	prerequisite = {focus = NF_Gen_SOV_tactical_support_airforce 
+	}
+	x = 56
+	y = 6
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_small_arms_expertise
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_SOV_shore_patrol_Squadron
+	icon = GFX_goal_generic_air_fighter2
+	prerequisite = {focus = NF_Gen_SOV_long_range_aerial_warfare 
+	}
+	x = 56
+	y = 7
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			SOV_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_small_arms_expertise
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+	
+	focus = {
+		id = NF_Gen_PRC_YUG_infra_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {focus = NF_Gen_YUG_focus 
+						focus = NF_Gen_PRC_focus
+		}
+		x = 66
+		y = 3
+		cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = NF_Gen_PRC_YUG_close_support_airforce
+	icon = GFX_goal_generic_CAS
+	prerequisite = {focus = NF_Gen_PRC_YUG_infra_development
+	}
+		x = 65
+		y = 4
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_close_support_airforce"
+			bonus = 0.5
+			uses = 1
+			category = battlefield_support_tree
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_YUG_fighter_plan
+	icon = GFX_goal_generic_air_fighter
+	prerequisite = {focus = NF_Gen_PRC_YUG_close_support_airforce
+	}
+		x = 65
+		y = 6
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_fighter_plan"
+			bonus = 0.5
+			uses = 1
+			category = light_fighter
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_YUG_cas_plan
+	icon = GFX_goal_generic_occupy_start_war
+	prerequisite = {focus = NF_Gen_PRC_YUG_fighter_plan
+	}
+		x = 65
+		y = 7
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_cas_plan"
+			bonus = 0.5
+			uses = 1
+			category = cas_bomber
+		}
+	}
+}
+	
+	focus = {
+	id = NF_Gen_PRC_YUG_coastal_defense_operation
+	icon = GFX_focus_generic_coastal_fort
+	prerequisite = {focus = NF_Gen_PRC_YUG_infra_development
+	}
+		x = 67
+		y = 4
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_coastal_defense_operation"
+			bonus = 0.5
+			uses = 1
+			category = cat_trade_interdiction
+		}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 2
+						instant_build = yes
+					}
+				}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_YUG_destroyer_plan
+	icon = GFX_goal_generic_navy_anti_submarine
+	prerequisite = { focus = NF_Gen_PRC_YUG_coastal_defense_operation }
+		x = 67
+		y = 6
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_destroyer_plan"
+			bonus = 0.5
+			uses = 1
+			category = dd_tech
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_YUG_modern_submarines
+	icon = GFX_goal_generic_navy_submarine
+	prerequisite = { focus = NF_Gen_PRC_YUG_destroyer_plan }
+		x = 67
+		y = 7
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_modern_submarines"
+			bonus = 0.5
+			uses = 1
+			category = ss_tech
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_PRC_YUG_naval_aviation
+	icon = GFX_goal_generic_air_naval_bomber
+	prerequisite = {focus = NF_Gen_PRC_YUG_close_support_airforce 
+					focus = NF_Gen_PRC_YUG_coastal_defense_operation 
+					}
+		x = 66
+		y = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			PRC_will_support = yes
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_naval_aviation"
+			bonus = 0.5
+			uses = 1
+			category = naval_bomber
+		}
+	}
+}
+	
+	focus = {
+	id = NF_Gen_PRC_engineer_company_support
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = {focus = NF_Gen_PRC_closer_ties_with_PRC }
+	prerequisite = {focus = NF_Gen_PRC_YUG_close_support_airforce }
+		x = 64
+		y = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_PRC_YUG_bonus_engineer_company_support"
+			bonus = 0.5
+			uses = 1
+			category = engineers_tech
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_YUG_cooperation
+	icon = GFX_goal_generic_intelligence_exchange
+	prerequisite = {focus = NF_Gen_YUG_focus }
+		x = 69
+		y = 3
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}
+	focus = {
+	id = NF_Gen_YUG_airplane_company
+	icon = GFX_focus_YUG_ikarus
+	prerequisite = {focus = NF_Gen_YUG_cooperation }
+		x = 69
+		y = 4
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		air_experience = 25
+		add_tech_bonus = {
+			name = "NF_YUG_bonus_airplane_company"
+			bonus = 0.5
+			uses = 1
+			category = light_air
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_YUG_fortress_construct
+	icon = GFX_goal_generic_construct_military
+	prerequisite = {focus = NF_Gen_YUG_cooperation }
+	prerequisite = {focus = NF_Gen_PRC_YUG_coastal_defense_operation }
+		x = 68
+		y = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+				random_owned_controlled_state = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 1
+						instant_build = yes
+					}
+				}
+	}
+}
+	
+	focus = {
+	id = NF_Gen_YUG_industry_defense_system
+	icon = GFX_goal_generic_fortify_city
+	prerequisite = {focus = NF_Gen_YUG_fortress_construct }
+	prerequisite = {focus = NF_Gen_YUG_airplane_company }
+	prerequisite = {focus = NF_Gen_YUG_military_exchange }
+		x = 70
+		y = 6
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+			air_experience = 25
+			random_state = {			
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+}
+	
+	focus = {
+	id = NF_Gen_YUG_military_exchange
+	icon = GFX_focus_generic_military_academy
+	prerequisite = {focus = NF_Gen_YUG_focus }
+		x = 71
+		y = 3
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_YUG_bonus_military_exchange"
+			bonus = 0.5
+			uses = 1
+			category = cat_grand_battle_plan
+		}
+	}
+}
+	focus = {
+	id = NF_Gen_YUG_total_national_defense
+	icon = GFX_goal_generic_position_armies
+	prerequisite = {focus = NF_Gen_YUG_military_exchange }
+		x = 71
+		y = 4
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_YUG_bonus_total_national_defense"
+			bonus = 0.5
+			uses = 1
+			category = cat_grand_battle_plan
+		}
+	}
+}
+	
+	focus = {
+	id = NF_Gen_YUG_infantry_heavy_weapon
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = {focus = NF_Gen_YUG_total_national_defense }
+		x = 71
+		y = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		OR = {
+			YUG_will_support = yes
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = "NF_YUG_bonus_infantry_heavy_weapon"
+			bonus = 0.5
+			uses = 1
+			category = artillery
+		}
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+}

@@ -1,0 +1,66 @@
+﻿capital = 554
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 5
+
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Ahmed Hilmi Pasha"
+	desc = ""
+	picture = "gfx/leaders/PAL/POLITICS_Arabia_Generic_navy_1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Amin al-Husseini"
+	desc = ""
+	picture = "gfx/leaders/PAL/POLITICS_Arabia_Generic_land_2.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Prince Henry"
+	desc = ""
+	picture = "gfx/leaders/PAL/POLITICS_Britain_George_VI.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bulus Farah"
+	desc = ""
+	picture = "gfx/leaders/PAL/POLITICS_Arabia_Generic_2.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

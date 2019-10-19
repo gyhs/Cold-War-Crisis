@@ -1,0 +1,8977 @@
+focus_tree = {
+	id = soviet_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	
+	continuous_focus_position = { x = 20 y = 2500 }
+	
+	#### 소련의 결정###
+	focus = {
+		id = SOV_michael_gorbachev_reform
+		icon = GFX_focus_generic_join_comintern
+		x = 12
+		y = 0
+		cost = 10.00
+		mutually_exclusive = {
+			focus = SOV_hardliners_rebellion
+		}
+		completion_reward = {
+			complete_national_focus = SOV_sinatra_doctrine
+		}
+
+		
+	}
+	focus = {
+		id = SOV_hardliners_rebellion
+		icon = GFX_focus_ger_great_red_menace
+		x = 36
+		y = 0
+		cost = 10.00
+		mutually_exclusive = {
+			focus = SOV_michael_gorbachev_reform
+		}
+		completion_reward = {
+			complete_national_focus = SOV_yanayev_doctrine
+			add_political_power = 120
+			add_named_threat = { threat = 5 name = SOV_hardliners_rebellion }
+			create_country_leader = {
+			name = "겐나디 야나예프"
+			desc = "POLITICS_SOV_Gennady_Yanayev_DESC"
+			picture = "Portrait_SOV_Gennady_Yanayev.dds"
+			expire = "2100.1.1"
+			ideology = stalinism
+			traits = {
+					}
+			}
+		}
+	}
+	### 고르바초프의 개혁 ###
+	################### 중앙정부 #####
+	focus = {
+		id = SOV_communist_party_conference_19th
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		}
+		
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = SOV_new_communist_party_doctrine
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_communist_party_conference_19th
+		}
+		
+		x = 11
+		y = 2
+		completion_reward = {
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_congress_people_deputies_1th
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_communist_party_conference_19th
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+		
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = SOV_congress_of_the_party_28th
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_new_communist_party_doctrine
+		}
+		prerequisite = {
+			focus = SOV_congress_people_deputies_1th
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+		
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = SOV_multi_party_system_establish
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 4
+		cost = 10.00
+		
+		prerequisite = {
+			focus = SOV_congress_of_the_party_28th
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+		}
+
+	}
+	focus = {
+		id = SOV_separate_office_and_party
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_congress_of_the_party_28th
+		}
+		
+		x = 12
+		y = 4
+		completion_reward = {
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_Presidential_system_establish
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_congress_of_the_party_28th
+		}
+		completion_reward = {
+			set_politics = {
+			ruling_party = communism
+			election_frequency = 48
+			elections_allowed = yes
+			}
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+		}
+		
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = SOV_administrative_power_overhul
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_multi_party_system_establish
+		}
+		prerequisite = {
+			focus = SOV_separate_office_and_party
+		}
+		prerequisite = {
+			focus = SOV_Presidential_system_establish
+		}
+		completion_reward = {
+			SOV_central_government_crisis_level_down = yes
+		}
+		
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = SOV_supreme_soviet_abolition
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_multi_party_system_establish
+		}
+		prerequisite = {
+			focus = SOV_separate_office_and_party
+		}
+		prerequisite = {
+			focus = SOV_Presidential_system_establish
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+		
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = SOV_presidents_commission_reinforcement
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_multi_party_system_establish
+		}
+		prerequisite = {
+			focus = SOV_separate_office_and_party
+		}
+		prerequisite = {
+			focus = SOV_Presidential_system_establish
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+		
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = SOV_economic_reforms
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_multi_party_system_establish
+		}
+		prerequisite = {
+			focus = SOV_separate_office_and_party
+		}
+		prerequisite = {
+			focus = SOV_Presidential_system_establish
+		}
+		completion_reward = {
+			SOV_central_government_crisis_level_down = yes
+		}
+		
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = SOV_congress_people_deputies_reinforce
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_administrative_power_overhul
+		}
+		prerequisite = {
+			focus = SOV_supreme_soviet_abolition
+		}
+		prerequisite = {
+			focus = SOV_presidents_commission_reinforcement
+		}
+		prerequisite = {
+			focus = SOV_economic_reforms
+		}
+		completion_reward = {
+			remove_ideas = SOV_power_struggles
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+		
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = SOV_neo_soviet_proclamation
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		x = 11
+		y = 7
+		prerequisite = {
+			focus = SOV_police_state_abolition
+		}
+		prerequisite = {
+			focus = SOV_congress_people_deputies_reinforce
+		}
+		prerequisite = {
+			focus = SOV_opening_market
+		}
+		completion_reward = {
+			SOV_central_government_crisis_clear_all = yes
+		}
+		
+		mutually_exclusive = {
+			focus = SOV_neo_soviet_treaty
+			
+		}
+
+	}
+	focus = {
+		id = SOV_neo_soviet_treaty
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		x = 13
+		y = 7
+		prerequisite = {
+			focus = SOV_police_state_abolition
+		}
+		prerequisite = {
+			focus = SOV_congress_people_deputies_reinforce
+		}
+		prerequisite = {
+			focus = SOV_opening_market
+		}
+		completion_reward = {
+			SOV_central_government_crisis_clear_all = yes
+		}
+		
+		mutually_exclusive = {
+			focus = SOV_neo_soviet_proclamation
+			
+		}
+		
+
+	}
+	
+	################### 글라스노스트 #####
+	focus = {
+		id = SOV_political_crime_release
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = security_police_state add_idea = security_major_restrictions }
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+		
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = SOV_information_censorship_down
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = press_state add_idea = press_censored }
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+		
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = SOV_denaturalization_restore
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_political_crime_release
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+		
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = SOV_relaxation_travel_restrictions
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_denaturalization_restore
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = immigration_regulated_2 add_idea = immigration_regulated_3 }
+			swap_ideas = { remove_idea = security_major_restrictions add_idea = security_minor_restrictions }
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+		}
+		
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = SOV_past_history_investigation_commission
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_political_crime_release
+		}
+		prerequisite = {
+			focus = SOV_information_censorship_down
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			add_stability = 0.05
+			add_political_power = 100
+		}
+		
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = SOV_purge_victim_remembrance
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_past_history_investigation_commission
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			add_stability = 0.05
+			add_political_power = 100
+		}
+		
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = SOV_press_freedom_extension
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_political_crime_release
+		}
+		prerequisite = {
+			focus = SOV_information_censorship_down
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = press_censored add_idea = press_regulated }
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+		
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = SOV_corrupt_government_official_ban
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_administrative_power_overhul
+		}
+		prerequisite = {
+			focus = SOV_administrative_power_abuse_limit
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+			SOV_nomenklatura_power_level_down = yes
+		}
+		
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = SOV_administrative_power_abuse_limit
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_press_freedom_extension
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_down = yes
+		}
+		
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = SOV_police_state_abolition
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_relaxation_travel_restrictions
+		}
+		prerequisite = {
+			focus = SOV_administrative_power_abuse_limit
+		}
+		prerequisite = {
+			focus = SOV_administrative_power_overhul
+		}
+
+		completion_reward = {
+			swap_ideas = { remove_idea = security_minor_restrictions add_idea = security_liberty_first }
+			swap_ideas = { remove_idea = press_regulated add_idea = press_free }
+			remove_ideas = SOV_idea_police_state_1
+			SOV_desire_for_reformation_clear_all = yes
+		}
+		
+		x = 5
+		y = 6
+
+	}
+	
+	################### 페레스트로이카 #####
+	focus = {
+		id = SOV_department_of_commerce_authority_transfer
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+
+		completion_reward = {
+			swap_ideas = { remove_idea = fdi_banned add_idea = fdi_regulated }
+			SOV_hyper_inflation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_oligarch_power_level_up = yes
+		}
+		
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = SOV_self_financing
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_up = yes
+			remove_ideas = SOV_incompetent_business
+			SOV_central_government_crisis_level_up = yes
+			SOV_oligarch_power_level_up = yes
+		}
+		
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = SOV_wage_reform
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_worker_enthusiasm_level_up = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = SOV_foreigner_joint_venture_firm
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_department_of_commerce_authority_transfer
+		}
+		prerequisite = {
+			focus = SOV_self_financing
+		}
+
+		completion_reward = {
+			swap_ideas = { remove_idea = fdi_regulated add_idea = fdi_allowed }
+			swap_ideas = { remove_idea = limited_exports add_idea = export_focus }
+			SOV_hyper_inflation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_oligarch_power_level_up = yes
+		}
+		
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = SOV_private_business_allowable
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_self_financing
+		}
+		prerequisite = {
+			focus = SOV_wage_reform
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_up = yes
+			SOV_worker_enthusiasm_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_oligarch_power_level_up = yes
+		}
+		
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = SOV_special_economic_zone
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_foreigner_joint_venture_firm
+		}
+		prerequisite = {
+			focus = SOV_private_business_allowable
+		}
+
+		completion_reward = {
+			swap_ideas = { remove_idea = fdi_allowed add_idea = fdi_encouraged }
+			SOV_hyper_inflation_level_up = yes
+			SOV_oligarch_power_level_up = yes
+		}
+		
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = SOV_price_control
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_private_business_allowable
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = SOV_social_safety_net
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_price_control
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = SOV_open_market_preparation
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		x = 18
+		y = 5
+		
+		prerequisite = {
+			focus = SOV_foreigner_joint_venture_firm
+		}
+
+		available = {
+			has_hyper_inflation = yes
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_oligarch_power_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_market_of_common_people_improvement
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_private_business_allowable
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_worker_enthusiasm_clear_all = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = SOV_opening_market
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_open_market_preparation
+		}
+		prerequisite = {
+			focus = SOV_market_of_common_people_improvement
+		}
+		prerequisite = {
+			focus = SOV_economic_reforms
+		}
+
+		completion_reward = {
+			swap_ideas = { remove_idea = Soviet_reform_economic_planning add_idea = civilian_economy }
+			swap_ideas = { remove_idea = export_focus add_idea = free_trade }
+			SOV_hyper_inflation_level_down = yes
+			remove_ideas = SOV_Soviet_economy_law_1
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = SOV_corruption_practice
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_economic_reforms
+		}
+		prerequisite = {
+			focus = SOV_open_market_preparation
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_central_government_crisis_level_down = yes
+			SOV_oligarch_power_clear_all = yes
+		}
+		
+		x = 17
+		y = 6
+
+	}
+	
+	#### 강경파 쿠데타###
+	focus = {
+		id = SOV_opposition_demonstration_press 
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10.00
+		x = 34
+		y = 1
+		prerequisite = {
+			focus = SOV_hardliners_rebellion
+		}
+
+		completion_reward = {
+			SOV_desire_for_reformation_level_down = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_state_committee_state_emergency_up
+		icon = GFX_focus_generic_soviet_politics
+		x = 36
+		y = 1
+		cost = 10.00
+		
+		prerequisite = {
+			focus = SOV_hardliners_rebellion
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_down = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+	}
+	focus = {
+		id = SOV_kgb_reorganize
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 10.00
+		x = 38
+		y = 1
+		
+		prerequisite = {
+			focus = SOV_hardliners_rebellion
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_down = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	####### 강경파 대숙청 #####
+	focus = {
+		id = SOV_hardliners_great_purge 
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_state_committee_state_emergency_up
+		}
+		prerequisite = {
+			focus = SOV_opposition_demonstration_press
+		}
+		prerequisite = {
+			focus = SOV_kgb_reorganize
+		}
+		x = 36
+		y = 2
+
+	}
+	
+	#### 당원 숙청 ####
+	focus = {
+		id = SOV_hardliners_party_leadership_reorganize
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_great_purge
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = SOV_party_reformed_purge 
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_party_leadership_reorganize
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = SOV_local_congressman_purge 
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_party_leadership_reorganize
+		}
+		x = 31
+		y = 4
+
+	}
+	#### 관료 숙청 ####
+	
+	focus = {
+		id = SOV_government_official_purge 
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_great_purge
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = SOV_noncooperation_government_official 
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_government_official_purge
+		}
+		x = 36
+		y = 4
+
+	}
+	
+	#### 군부 숙청 ####
+	focus = {
+		id = SOV_ministry_defence_purge 
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_great_purge
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = SOV_opposition_officer_purge 
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_ministry_defence_purge
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = SOV_kgb_strength_expand
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_ministry_defence_purge
+		}
+		x = 41
+		y = 4
+
+	}
+	#### 노멘클라투라 친위대 ####
+	focus = {
+		id = SOV_yanayev_faithful_party_member_change 
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_party_reformed_purge
+		}
+		prerequisite = {
+			focus = SOV_noncooperation_government_official
+		}
+		mutually_exclusive = {
+			focus = SOV_kgb_rights_up
+			
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = SOV_nomenklatura_guard 
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_faithful_party_member_change
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = SOV_social_class_system_up 
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_nomenklatura_guard
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = {
+		id = SOV_shield_of_power 
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_nomenklatura_guard
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = SOV_nomenklatura_guard_siloviki_purge 
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_shield_of_power
+		}
+		prerequisite = {
+			focus = SOV_social_class_system_up
+		}
+		x = 34
+		y = 8
+
+	}
+	#### 실로비키 친위대 ####
+	focus = {
+		id = SOV_kgb_rights_up 
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_opposition_officer_purge
+		}
+		prerequisite = {
+			focus = SOV_noncooperation_government_official
+		}
+		
+		mutually_exclusive = {
+			focus = SOV_yanayev_faithful_party_member_change
+			
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = SOV_siloviki_guard 
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_kgb_rights_up
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = SOV_hardliners_kgb_reform
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_siloviki_guard
+		}
+		x = 37
+		y = 7
+
+	}
+	focus = {
+		id = SOV_hardliners_political_commissar_up
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_siloviki_guard
+		}
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = SOV_siloviki_guard_nomenklatura_purge
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_kgb_reform
+		}
+		prerequisite = {
+			focus = SOV_hardliners_political_commissar_up
+		}
+		x = 38
+		y = 8
+
+	}
+	###
+	focus = {
+		id = SOV_old_leader_purge
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_siloviki_guard_nomenklatura_purge
+			focus = SOV_nomenklatura_guard_siloviki_purge
+		}
+		x = 36
+		y = 9
+
+	}
+	
+	################### 굴라크 #####
+	
+	focus = {
+		id = SOV_anti_soviet_people_arrest
+		icon = GFX_focus_CZE_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_local_congressman_purge
+		}
+		prerequisite = {
+			focus = SOV_party_reformed_purge
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = SOV_reformer_arrest
+		icon = GFX_focus_CZE_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_anti_soviet_people_arrest
+		}
+		prerequisite = {
+			focus = SOV_party_reformed_purge
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = SOV_hardliners_gulag_reopen
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_anti_soviet_people_arrest
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = SOV_prisoner_labor_force 
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_gulag_reopen
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = SOV_hardliners_scientist_gulag_reopen
+		icon = GFX_focus_generic_socialist_science
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_gulag_reopen
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = SOV_hardliners_closed_city_add
+		icon = GFX_focus_generic_socialist_science
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_scientist_gulag_reopen
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = SOV_hardliners_penal_battalion_reorganization
+		icon = GFX_focus_prc_infiltration
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_hardliners_gulag_reopen
+		}
+		x = 31
+		y = 7
+
+	}
+	
+	################### 인터프론트 독트린 #####
+	
+	focus = {
+		id = SOV_interfront_plan
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_kgb_strength_expand
+		}
+		x = 41
+		y = 5
+
+	}
+	
+	############ 민족주의 운동 ######################
+	focus = {
+		id = SOV_nationalist_movement
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 80
+		y = 0
+		completion_reward = {
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	############ 서부 공화국 민족주의 운동 ########
+	
+	focus = {
+		id = SOV_eastern_europe_nm
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 60
+		y = 1
+		prerequisite = {
+			focus = SOV_nationalist_movement
+		}
+
+	}
+	#### 러시아 민족주의
+	focus = {
+		id = SOV_Russian_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 48
+		y = 2
+		prerequisite = {
+			focus = SOV_eastern_europe_nm
+		}
+
+	}
+	focus = {
+		id = SOV_Russian_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 47
+		y = 3
+		prerequisite = {
+			focus = SOV_Russian_nm_1
+		}
+		prerequisite = {
+			focus = SOV_outpower_intellectual
+		}
+		mutually_exclusive = {
+			focus = SOV_Russian_nm_3
+		}
+		completion_reward = {
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_Russian_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 49
+		y = 3
+		prerequisite = {
+			focus = SOV_fail_coupdeta
+		}
+		prerequisite = {
+			focus = SOV_Russian_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_Russian_nm_2
+		}
+		completion_reward = {
+			SOV_central_government_crisis_level_up = yes
+		}
+
+	}
+	focus = {
+		id = SOV_Russian_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 47
+		y = 4
+		prerequisite = {
+			focus = SOV_Russian_nm_2
+			focus = SOV_Russian_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_Russian_nm_5
+		}
+		completion_reward = {
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_Russian_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 49
+		y = 4
+		prerequisite = {
+			focus = SOV_Russian_nm_2
+			focus = SOV_Russian_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_Russian_nm_4
+		}
+		completion_reward = {
+			SOV_central_government_crisis_level_up = yes
+		}
+
+	}
+	focus = {
+		id = SOV_outpower_intellectual
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 46
+		y = 2
+		available = {
+			has_completed_focus = SOV_press_freedom_extension
+		}
+
+	}
+	focus = {
+		id = SOV_fail_coupdeta
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 50
+		y = 2
+		available = {
+		}
+
+	}
+	#### 벨라루스 민족주의
+	focus = {
+		id = SOV_belarus_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 54
+		y = 2
+		prerequisite = {
+			focus = SOV_eastern_europe_nm
+		}
+		available = {
+			always = no
+		}
+
+
+	}
+	focus = {
+		id = SOV_belarus_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 52
+		y = 3
+		prerequisite = {
+			focus = SOV_belarus_nm_1
+		}
+		available = {
+			has_completed_focus = SOV_past_history_investigation_commission
+		}
+		completion_reward = {
+			set_country_flag = flag_SOV_belarus_kurapaty_purge_apologize_nm
+			if = {
+				limit = { has_completed_focus = SOV_past_history_investigation_commission }
+				SOV_idea_belarus_uprising_level_up = yes
+				SOV_central_government_crisis_level_down = yes
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 54
+		y = 3
+		prerequisite = {
+			focus = SOV_belarus_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_4
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 56
+		y = 3
+		prerequisite = {
+			focus = SOV_belarus_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 51
+		y = 4
+		prerequisite = {
+			focus = SOV_belarus_nm_2
+		}
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_6
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 53
+		y = 4
+		prerequisite = {
+			focus = SOV_belarus_nm_2
+		}
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_5
+		}
+		available = {
+			has_completed_focus = SOV_purge_victim_remembrance
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 55
+		y = 4
+		prerequisite = {
+			focus = SOV_belarus_nm_3
+			focus = SOV_belarus_nm_4
+		}
+		
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_8
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 57
+		y = 4
+		prerequisite = {
+			focus = SOV_belarus_nm_3
+			focus = SOV_belarus_nm_4
+		}
+		
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_7
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 54
+		y = 5
+		prerequisite = {
+			focus = SOV_belarus_nm_5
+			focus = SOV_belarus_nm_6
+		}
+		prerequisite = {
+			focus = SOV_belarus_nm_7
+			focus = SOV_belarus_nm_8
+		}
+		completion_reward = {
+			SOV_idea_belarus_uprising_level_down = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 53
+		y = 6
+		prerequisite = {
+			focus = SOV_belarus_nm_7
+			focus = SOV_belarus_nm_8
+			focus = SOV_belarus_nm_9
+		}
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_11
+		}
+		available = {
+			always = no
+			or= {
+				not= {
+					has_completed_focus = SOV_belarus_nm_3
+					has_completed_focus = SOV_belarus_nm_5
+					has_completed_focus = SOV_belarus_nm_7
+					}
+				}
+		}
+
+	}
+	focus = {
+		id = SOV_belarus_nm_11
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 55
+		y = 6
+		prerequisite = {
+			focus = SOV_belarus_nm_7
+			focus = SOV_belarus_nm_8
+			focus = SOV_belarus_nm_9
+		}
+		mutually_exclusive = {
+			focus = SOV_belarus_nm_10
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 94
+			controls_state = 95
+			controls_state = 194
+			controls_state = 204
+			controls_state = 206
+			controls_state = 207
+			controls_state = 241
+			controls_state = 788
+			controls_state = 1011
+		}
+		completion_reward = {
+			#### 벨라루스
+			if = {
+				limit = {
+					country_exists = BLR
+				}
+				hidden_effect = {
+					BLR = {
+						set_state_controller = 94
+						set_state_controller = 95
+						set_state_controller = 194
+						set_state_controller = 204
+						set_state_controller = 206
+						set_state_controller = 207
+						set_state_controller = 241
+						set_state_controller = 788
+						set_state_controller = 1011
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = BLR
+						has_government = communism
+					}
+					transfer_state = 94
+					transfer_state = 95
+					transfer_state = 194
+					transfer_state = 204
+					transfer_state = 206
+					transfer_state = 207
+					transfer_state = 241
+					transfer_state = 788
+					transfer_state = 1011
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				BLR = {
+					transfer_state = 94
+					transfer_state = 95
+					transfer_state = 194
+					transfer_state = 204
+					transfer_state = 206
+					transfer_state = 207
+					transfer_state = 241
+					transfer_state = 788
+					transfer_state = 1011
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = BLR autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+	}
+	
+	#### 우크라이나 민족주의
+	focus = {
+		id = SOV_ukraine_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 63
+		y = 2
+		prerequisite = {
+			focus = SOV_eastern_europe_nm
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 62
+		y = 3
+		prerequisite = {
+			focus = SOV_ukraine_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 64
+		y = 3
+		prerequisite = {
+			focus = SOV_ukraine_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_2
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 66
+		y = 4
+		prerequisite = {
+			focus = SOV_ukraine_nm_2
+			focus = SOV_ukraine_nm_3
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 62
+		y = 4
+		prerequisite = {
+			focus = SOV_ukraine_nm_2
+			focus = SOV_ukraine_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_6
+		}
+		available = {
+			always = no
+			has_completed_focus = SOV_information_censorship_down
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 64
+		y = 4
+		prerequisite = {
+			focus = SOV_ukraine_nm_2
+			focus = SOV_ukraine_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 66
+		y = 6
+		prerequisite = {
+			focus = SOV_ukraine_nm_4
+		}
+		prerequisite = {
+			focus = SOV_ukraine_nm_5
+			focus = SOV_ukraine_nm_6
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 62
+		y = 5
+		prerequisite = {
+			focus = SOV_ukraine_nm_5
+			focus = SOV_ukraine_nm_6
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 64
+		y = 5
+		prerequisite = {
+			focus = SOV_ukraine_nm_4
+		}
+		prerequisite = {
+			focus = SOV_ukraine_nm_5
+			focus = SOV_ukraine_nm_6
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 62
+		y = 7
+		prerequisite = {
+			focus = SOV_ukraine_nm_8
+			focus = SOV_ukraine_nm_9
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_11
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_11
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 64
+		y = 7
+		prerequisite = {
+			focus = SOV_ukraine_nm_7
+		}
+		prerequisite = {
+			focus = SOV_ukraine_nm_8
+			focus = SOV_ukraine_nm_9
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_10
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_12
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 62
+		y = 8
+		prerequisite = {
+			focus = SOV_ukraine_nm_10
+			focus = SOV_ukraine_nm_11
+			
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_13
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_ukraine_nm_13
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 64
+		y = 8
+		prerequisite = {
+			focus = SOV_ukraine_nm_11
+			focus = SOV_ukraine_nm_10
+		}
+		mutually_exclusive = {
+			focus = SOV_ukraine_nm_12
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 73
+			controls_state = 80
+			controls_state = 89
+			controls_state = 91
+			controls_state = 93
+			controls_state = 137
+			controls_state = 192
+			controls_state = 193
+			controls_state = 196
+			controls_state = 197
+			controls_state = 198
+			controls_state = 199
+			controls_state = 200
+			controls_state = 201
+			controls_state = 202
+			controls_state = 203
+			controls_state = 221
+			controls_state = 225
+			controls_state = 226
+			controls_state = 227
+			controls_state = 228
+			controls_state = 259
+			controls_state = 787
+			controls_state = 799
+		}
+		completion_reward = {
+			#### 우크라이나
+			if = {
+				limit = {
+					country_exists = UKR
+				}
+				hidden_effect = {
+					UKR = {
+						set_state_controller = 73
+						set_state_controller = 80
+						set_state_controller = 89
+						set_state_controller = 91
+						set_state_controller = 93
+						set_state_controller = 137
+						set_state_controller = 192
+						set_state_controller = 193
+						set_state_controller = 196
+						set_state_controller = 197
+						set_state_controller = 198
+						set_state_controller = 199
+						set_state_controller = 200
+						set_state_controller = 201
+						set_state_controller = 202
+						set_state_controller = 203
+						set_state_controller = 221
+						set_state_controller = 225
+						set_state_controller = 226
+						set_state_controller = 227
+						set_state_controller = 228
+						set_state_controller = 259
+						set_state_controller = 787
+						set_state_controller = 799
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = UKR
+						has_government = communism
+					}
+						transfer_state = 73
+						transfer_state = 80
+						transfer_state = 89
+						transfer_state = 91
+						transfer_state = 93
+						transfer_state = 137
+						transfer_state = 192
+						transfer_state = 193
+						transfer_state = 196
+						transfer_state = 197
+						transfer_state = 198
+						transfer_state = 199
+						transfer_state = 200
+						transfer_state = 201
+						transfer_state = 202
+						transfer_state = 203
+						transfer_state = 221
+						transfer_state = 225
+						transfer_state = 226
+						transfer_state = 227
+						transfer_state = 228
+						transfer_state = 259
+						transfer_state = 787
+						transfer_state = 799
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				UKR = {
+						transfer_state = 73
+						transfer_state = 80
+						transfer_state = 89
+						transfer_state = 91
+						transfer_state = 93
+						transfer_state = 137
+						transfer_state = 192
+						transfer_state = 193
+						transfer_state = 196
+						transfer_state = 197
+						transfer_state = 198
+						transfer_state = 199
+						transfer_state = 200
+						transfer_state = 201
+						transfer_state = 202
+						transfer_state = 203
+						transfer_state = 221
+						transfer_state = 225
+						transfer_state = 226
+						transfer_state = 227
+						transfer_state = 228
+						transfer_state = 259
+						transfer_state = 787
+						transfer_state = 799
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = UKR autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+	}
+	#### 발트 3국 민족주의
+	focus = {
+		id = SOV_baltic_states_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 70
+		y = 2
+		prerequisite = {
+			focus = SOV_eastern_europe_nm
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 69
+		y = 3
+		prerequisite = {
+			focus = SOV_baltic_states_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 71
+		y = 3
+		prerequisite = {
+			focus = SOV_baltic_states_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_2
+		}
+		available = {
+			always = no
+			has_completed_focus = SOV_information_censorship_down
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 69
+		y = 4
+		prerequisite = {
+			focus = SOV_baltic_states_nm_2
+			focus = SOV_baltic_states_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 71
+		y = 4
+		prerequisite = {
+			focus = SOV_baltic_states_nm_2
+			focus = SOV_baltic_states_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_4
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 68
+		y = 5
+		prerequisite = {
+			focus = SOV_baltic_states_nm_4
+			focus = SOV_baltic_states_nm_5
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 70
+		y = 5
+		prerequisite = {
+			focus = SOV_baltic_states_nm_4
+			focus = SOV_baltic_states_nm_5
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 72
+		y = 5
+		prerequisite = {
+			focus = SOV_baltic_states_nm_4
+			focus = SOV_baltic_states_nm_5
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 69
+		y = 6
+		prerequisite = {
+			focus = SOV_baltic_states_nm_6
+		}
+		prerequisite = {
+			focus = SOV_baltic_states_nm_7
+			focus = SOV_baltic_states_nm_8
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_10
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 71
+		y = 6
+		prerequisite = {
+			focus = SOV_baltic_states_nm_6
+			focus = SOV_baltic_states_nm_7
+		}
+		prerequisite = {
+			focus = SOV_baltic_states_nm_8
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_9
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_baltic_states_nm_11
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 69
+		y = 7
+		prerequisite = {
+			focus = SOV_baltic_states_nm_9
+			focus = SOV_baltic_states_nm_10
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_12
+		}
+		available = {
+			always = no
+		}
+		
+	}
+	focus = {
+		id = SOV_baltic_states_nm_12
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 71
+		y = 7
+		prerequisite = {
+			focus = SOV_baltic_states_nm_9
+			focus = SOV_baltic_states_nm_10
+		}
+		mutually_exclusive = {
+			focus = SOV_baltic_states_nm_11
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 13
+			controls_state = 191
+			controls_state = 995
+			controls_state = 12
+			controls_state = 190
+			controls_state = 992
+			controls_state = 993
+			controls_state = 994
+			controls_state = 11
+			controls_state = 96
+			controls_state = 188
+			controls_state = 189
+			controls_state = 830
+			controls_state = 990
+			controls_state = 991
+		}
+		completion_reward = {
+			#### 에스토니아
+			if = {
+				limit = {
+					country_exists = EST
+				}
+				hidden_effect = {
+					EST = {
+						set_state_controller = 13
+						set_state_controller = 191
+						set_state_controller = 995
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = EST
+						has_government = communism
+					}
+					transfer_state = 13
+					transfer_state = 191
+					transfer_state = 995
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				EST = {
+					transfer_state = 13
+					transfer_state = 191
+					transfer_state = 995
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = EST autonomy_state = autonomy_integrated_puppet }
+			}
+			#### 라트비아
+			if = {
+				limit = {
+					country_exists = LAT
+				}
+				hidden_effect = {
+					LAT = {
+						set_state_controller = 12
+						set_state_controller = 190
+						set_state_controller = 992
+						set_state_controller = 993
+						set_state_controller = 994
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = LAT
+						has_government = communism
+					}
+					transfer_state = 12
+					transfer_state = 190
+					transfer_state = 992
+					transfer_state = 993
+					transfer_state = 994
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				LAT = {
+					transfer_state = 12
+					transfer_state = 190
+					transfer_state = 992
+					transfer_state = 993
+					transfer_state = 994
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = LAT autonomy_state = autonomy_integrated_puppet }
+			}
+			#### 리투아니아
+			if = {
+				limit = {
+					country_exists = LIT
+				}
+				hidden_effect = {
+					LIT = {
+						set_state_controller = 11
+						set_state_controller = 96
+						set_state_controller = 188
+						set_state_controller = 189
+						set_state_controller = 830
+						set_state_controller = 990
+						set_state_controller = 991
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = LIT
+						has_government = communism
+					}
+					transfer_state = 11
+					transfer_state = 96
+					transfer_state = 188
+					transfer_state = 189
+					transfer_state = 830
+					transfer_state = 990
+					transfer_state = 991
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				LIT = {
+					transfer_state = 11
+					transfer_state = 96
+					transfer_state = 188
+					transfer_state = 189
+					transfer_state = 830
+					transfer_state = 990
+					transfer_state = 991
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = LIT autonomy_state = autonomy_integrated_puppet }
+			}
+			
+		}
+
+	}
+	#### 몰도바 민족주의
+	focus = {
+		id = SOV_moldova_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 75
+		y = 2
+		prerequisite = {
+			focus = SOV_eastern_europe_nm
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 74
+		y = 3
+		prerequisite = {
+			focus = SOV_moldova_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 76
+		y = 3
+		prerequisite = {
+			focus = SOV_moldova_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_2
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 74
+		y = 4
+		prerequisite = {
+			focus = SOV_moldova_nm_2
+			focus = SOV_moldova_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 76
+		y = 4
+		prerequisite = {
+			focus = SOV_moldova_nm_2
+			focus = SOV_moldova_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_4
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 74
+		y = 5
+		prerequisite = {
+			focus = SOV_moldova_nm_4
+			focus = SOV_moldova_nm_5
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_7
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 76
+		y = 5
+		prerequisite = {
+			focus = SOV_moldova_nm_4
+			focus = SOV_moldova_nm_5
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_6
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 74
+		y = 6
+		prerequisite = {
+			focus = SOV_moldova_nm_6
+			focus = SOV_moldova_nm_7
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_9
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 76
+		y = 6
+		prerequisite = {
+			focus = SOV_moldova_nm_6
+			focus = SOV_moldova_nm_7
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_8
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 74
+		y = 7
+		prerequisite = {
+			focus = SOV_moldova_nm_9
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_11
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 78
+			controls_state = 790
+			controls_state = 791
+		}
+		completion_reward = {
+			#### 몰도바
+			if = {
+				limit = {
+					country_exists = MOL
+				}
+				hidden_effect = {
+					MOL = {
+						set_state_controller = 78
+						set_state_controller = 790
+						set_state_controller = 791
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = MOL
+						has_government = communism
+					}
+						transfer_state = 78
+						transfer_state = 790
+						transfer_state = 791
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				MOL = {
+						transfer_state = 78
+						transfer_state = 790
+						transfer_state = 791
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = MOL autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_moldova_nm_11
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 76
+		y = 7
+		prerequisite = {
+			focus = SOV_moldova_nm_9
+		}
+		mutually_exclusive = {
+			focus = SOV_moldova_nm_10
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 78
+			controls_state = 791
+		}
+		completion_reward = {
+			#### 몰도바
+			if = {
+				limit = {
+					country_exists = ROM
+				}
+				hidden_effect = {
+					ROM = {
+						set_state_controller = 78
+						set_state_controller = 791
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = ROM
+					}
+						transfer_state = 78
+						transfer_state = 791
+				}
+			}
+		}
+
+	}
+	############ 캅카스 민족주의 운동 ########
+	focus = {
+		id = SOV_caucasus_nm
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 85
+		y = 1
+		prerequisite = {
+			focus = SOV_nationalist_movement
+		}
+		available = {
+			always = no
+		}
+
+	}
+	##### 아르메니아 민족주의 운동 ###
+	focus = {
+		id = SOV_armenia_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 79
+		y = 2
+		prerequisite = {
+			focus = SOV_caucasus_nm
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 78
+		y = 3
+		prerequisite = {
+			focus = SOV_armenia_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 80
+		y = 3
+		prerequisite = {
+			focus = SOV_armenia_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_2
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 78
+		y = 4
+		prerequisite = {
+			focus = SOV_armenia_nm_2
+			focus = SOV_armenia_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 80
+		y = 4
+		prerequisite = {
+			focus = SOV_armenia_nm_2
+			focus = SOV_armenia_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_4
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 78
+		y = 5
+		prerequisite = {
+			focus = SOV_armenia_nm_4
+			focus = SOV_armenia_nm_5
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_2
+			focus = SOV_nagorno_karabakh_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_7
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 80
+		y = 5
+		prerequisite = {
+			focus = SOV_armenia_nm_4
+			focus = SOV_armenia_nm_5
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_2
+			focus = SOV_nagorno_karabakh_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_6
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 79
+		y = 6
+		prerequisite = {
+			focus = SOV_armenia_nm_6
+			focus = SOV_armenia_nm_7
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 80
+		y = 9
+		prerequisite = {
+			focus = SOV_armenia_nm_8
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_6
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_11
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_10
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_armenia_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 82
+		y = 9
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_11
+		}
+		mutually_exclusive = {
+			focus = SOV_armenia_nm_9
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 230
+			controls_state = 948
+		}
+		completion_reward = {
+			#### 아르메니아
+			if = {
+				limit = {
+					country_exists = ARM
+				}
+				hidden_effect = {
+					ARM = {
+						set_state_controller = 230
+						set_state_controller = 948
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = ARM
+						has_government = communism
+					}
+						transfer_state = 230
+						transfer_state = 948
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				ARM = {
+						transfer_state = 230
+						transfer_state = 948
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = ARM autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+	}
+	##### 나고르노카라바흐 분쟁 ###
+	focus = {
+		id = SOV_nagorno_karabakh_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 85
+		y = 3
+		prerequisite = {
+			focus = SOV_armenia_nm_1
+		}
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_1
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 84
+		y = 4
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 86
+		y = 4
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_2
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 84
+		y = 5
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_2
+			focus = SOV_nagorno_karabakh_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 86
+		y = 5
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_2
+			focus = SOV_nagorno_karabakh_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_4
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 82
+		y = 6
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_4
+			focus = SOV_nagorno_karabakh_nm_5
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_7
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 84
+		y = 6
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_4
+			focus = SOV_nagorno_karabakh_nm_5
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_6
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 86
+		y = 6
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_4
+			focus = SOV_nagorno_karabakh_nm_5
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_9
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 88
+		y = 6
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_4
+			focus = SOV_nagorno_karabakh_nm_5
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_8
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 85
+		y = 7
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_6
+			focus = SOV_nagorno_karabakh_nm_7
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_8
+			focus = SOV_nagorno_karabakh_nm_9
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_11
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 83
+		y = 8
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_10
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_12
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_12
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 87
+		y = 8
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_10
+		}
+		mutually_exclusive = {
+			focus = SOV_nagorno_karabakh_nm_11
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_13
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 84
+		y = 10
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_11
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 229
+			controls_state = 1035
+		}
+		completion_reward = {
+			#### 아제르바이잔
+			if = {
+				limit = {
+					country_exists = AZR
+				}
+				hidden_effect = {
+					AZR = {
+						set_state_controller = 229
+						set_state_controller = 1035
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = AZR
+						has_government = communism
+					}
+						transfer_state = 229
+						transfer_state = 1035
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				AZR = {
+						transfer_state = 229
+						transfer_state = 1035
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_nagorno_karabakh_nm_14
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 86
+		y = 10
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_12
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 230
+			controls_state = 948
+		}
+		completion_reward = {
+			#### 아르메니아
+			if = {
+				limit = {
+					country_exists = ARM
+				}
+				hidden_effect = {
+					ARM = {
+						set_state_controller = 230
+						set_state_controller = 948
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = ARM
+						has_government = communism
+					}
+						transfer_state = 230
+						transfer_state = 948
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				ARM = {
+						transfer_state = 230
+						transfer_state = 948
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+		}
+
+	}
+	##### 아제르바이잔 민족주의 운동 ###
+	focus = {
+		id = SOV_azerbaijan_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 91
+		y = 2
+		prerequisite = {
+			focus = SOV_caucasus_nm
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 90
+		y = 3
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 92
+		y = 3
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_2
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 90
+		y = 4
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_2
+			focus = SOV_azerbaijan_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 92
+		y = 4
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_2
+			focus = SOV_azerbaijan_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_4
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 90
+		y = 5
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_4
+			focus = SOV_azerbaijan_nm_5
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_2
+			focus = SOV_nagorno_karabakh_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_7
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 92
+		y = 5
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_4
+			focus = SOV_azerbaijan_nm_5
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_2
+			focus = SOV_nagorno_karabakh_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_6
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 91
+		y = 6
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_6
+			focus = SOV_azerbaijan_nm_7
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 90
+		y = 9
+		prerequisite = {
+			focus = SOV_azerbaijan_nm_8
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_9
+		}
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_12
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_10
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_azerbaijan_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 88
+		y = 9
+		prerequisite = {
+			focus = SOV_nagorno_karabakh_nm_12
+		}
+		mutually_exclusive = {
+			focus = SOV_azerbaijan_nm_9
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 229
+			controls_state = 1035
+		}
+		completion_reward = {
+			#### 아제르바이잔
+			if = {
+				limit = {
+					country_exists = AZR
+				}
+				hidden_effect = {
+					AZR = {
+						set_state_controller = 229
+						set_state_controller = 1035
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = AZR
+						has_government = communism
+					}
+						transfer_state = 229
+						transfer_state = 1035
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				AZR = {
+						transfer_state = 229
+						transfer_state = 1035
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = AZR autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+	}
+	##### 조지아 민족주의 운동 ###
+	focus = {
+		id = SOV_georgia_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 96
+		y = 2
+		prerequisite = {
+			focus = SOV_caucasus_nm
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 95
+		y = 3
+		prerequisite = {
+			focus = SOV_georgia_nm_1
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 97
+		y = 3
+		prerequisite = {
+			focus = SOV_georgia_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_4
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 99
+		y = 3
+		prerequisite = {
+			focus = SOV_georgia_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 97
+		y = 4
+		prerequisite = {
+			focus = SOV_georgia_nm_3
+			focus = SOV_georgia_nm_4
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_6
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 99
+		y = 4
+		prerequisite = {
+			focus = SOV_georgia_nm_3
+			focus = SOV_georgia_nm_4
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 95
+		y = 5
+		prerequisite = {
+			focus = SOV_georgia_nm_2
+			focus = SOV_georgia_nm_3
+			focus = SOV_georgia_nm_4
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 98
+		y = 5
+		prerequisite = {
+			focus = SOV_georgia_nm_2
+			focus = SOV_georgia_nm_3
+			focus = SOV_georgia_nm_4
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 94
+		y = 6
+		prerequisite = {
+			focus = SOV_georgia_nm_7
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_10
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 96
+		y = 6
+		prerequisite = {
+			focus = SOV_georgia_nm_7
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_9
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_11
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 94
+		y = 7
+		prerequisite = {
+			focus = SOV_georgia_nm_9
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_12
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 96
+		y = 7
+		prerequisite = {
+			focus = SOV_georgia_nm_10
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_13
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 95
+		y = 8
+		prerequisite = {
+			focus = SOV_georgia_nm_11
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_14
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 97
+		y = 8
+		prerequisite = {
+			focus = SOV_georgia_nm_8
+		}
+		prerequisite = {
+			focus = SOV_georgia_nm_11
+		}
+		prerequisite = {
+			focus = SOV_georgia_nm_5
+			focus = SOV_georgia_nm_6
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_15
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_15
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 99
+		y = 8
+		prerequisite = {
+			focus = SOV_georgia_nm_5
+			focus = SOV_georgia_nm_6
+		}
+		mutually_exclusive = {
+			focus = SOV_georgia_nm_14
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 231
+			controls_state = 949
+			controls_state = 950
+		}
+		completion_reward = {
+			#### 조지아
+			if = {
+				limit = {
+					country_exists = GEO
+				}
+				hidden_effect = {
+					GEO = {
+						set_state_controller = 231
+						set_state_controller = 949
+						set_state_controller = 950
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = GEO
+						has_government = communism
+					}
+						transfer_state = 231
+						transfer_state = 949
+						transfer_state = 950
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				GEO = {
+						transfer_state = 231
+						transfer_state = 949
+						transfer_state = 950
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = GEO autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_16
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 98
+		y = 9
+		prerequisite = {
+			focus = SOV_georgia_nm_15
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_georgia_nm_17
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 100
+		y = 9
+		prerequisite = {
+			focus = SOV_georgia_nm_15
+		}
+		available = {
+			always = no
+		}
+
+	}
+	
+	
+	############ 중앙 아시아 민족주의 운동 ########
+	focus = {
+		id = SOV_central_asia_nm
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 104
+		y = 1
+		prerequisite = {
+			focus = SOV_nationalist_movement
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_1
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 104
+		y = 2
+		prerequisite = {
+			focus = SOV_central_asia_nm
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 103
+		y = 3
+		prerequisite = {
+			focus = SOV_central_asia_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_3
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_3
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 105
+		y = 3
+		prerequisite = {
+			focus = SOV_central_asia_nm_1
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_2
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_4
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 102
+		y = 4
+		prerequisite = {
+			focus = SOV_central_asia_nm_2
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_5
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 105
+		y = 4
+		prerequisite = {
+			focus = SOV_central_asia_nm_2
+			focus = SOV_central_asia_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_6
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_6
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 107
+		y = 4
+		prerequisite = {
+			focus = SOV_central_asia_nm_2
+			focus = SOV_central_asia_nm_3
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_5
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_7
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 102
+		y = 6
+		prerequisite = {
+			focus = SOV_central_asia_nm_4
+			focus = SOV_central_asia_nm_6
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_8
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 104
+		y = 6
+		prerequisite = {
+			focus = SOV_central_asia_nm_4
+			focus = SOV_central_asia_nm_6
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_9
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 105
+		y = 5
+		prerequisite = {
+			focus = SOV_central_asia_nm_5
+			focus = SOV_central_asia_nm_6
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_10
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_10
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 107
+		y = 5
+		prerequisite = {
+			focus = SOV_central_asia_nm_5
+			focus = SOV_central_asia_nm_6
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_9
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_11
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 105
+		y = 7
+		prerequisite = {
+			focus = SOV_central_asia_nm_7
+		}
+		prerequisite = {
+			focus = SOV_central_asia_nm_8
+		}
+		prerequisite = {
+			focus = SOV_central_asia_nm_9
+			focus = SOV_central_asia_nm_10
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_12
+		}
+		available = {
+			always = no
+		}
+
+	}
+	focus = {
+		id = SOV_central_asia_nm_12
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		x = 107
+		y = 7
+		prerequisite = {
+			focus = SOV_central_asia_nm_9
+			focus = SOV_central_asia_nm_10
+		}
+		mutually_exclusive = {
+			focus = SOV_central_asia_nm_11
+		}
+		available = {
+			always = no
+			has_government = communism
+			controls_state = 402
+			controls_state = 404
+			controls_state = 583
+			controls_state = 587
+			controls_state = 588
+			controls_state = 589
+			controls_state = 590
+			controls_state = 952
+			controls_state = 953
+			controls_state = 954
+		}
+		completion_reward = {
+			#### 카자흐스탄
+			if = {
+				limit = {
+					country_exists = KAZ
+				}
+				hidden_effect = {
+					KAZ = {
+						set_state_controller = 402
+						set_state_controller = 404
+						set_state_controller = 583
+						set_state_controller = 587
+						set_state_controller = 588
+						set_state_controller = 589
+						set_state_controller = 590
+						set_state_controller = 952
+						set_state_controller = 953
+						set_state_controller = 954
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = KAZ
+						has_government = communism
+					}
+						transfer_state = 402
+						transfer_state = 404
+						transfer_state = 583
+						transfer_state = 587
+						transfer_state = 588
+						transfer_state = 589
+						transfer_state = 590
+						transfer_state = 952
+						transfer_state = 953
+						transfer_state = 954
+					SOV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				KAZ = {
+						transfer_state = 402
+						transfer_state = 404
+						transfer_state = 583
+						transfer_state = 587
+						transfer_state = 588
+						transfer_state = 589
+						transfer_state = 590
+						transfer_state = 952
+						transfer_state = 953
+						transfer_state = 954
+					#set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = marxism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = KAZ autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+
+	}
+	
+	
+	#### 시나트라 독트린
+	focus = {
+		id = SOV_sinatra_doctrine
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		x = 16
+		y = 10
+		prerequisite = {
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine
+		}
+		available = {
+			has_focus_tree = SOV_michael_gorbachev_reform
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#### 아프간 전역
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_dispatch_keep
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		x = 0
+		y = 11
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
+		}
+		available = {
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_named_threat = { threat = 5 name = SOV_sinatra_doctrine_AFG_dispatch_keep }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_army_support
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		x = 0
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
+		}
+		available = {
+		}
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = AFG
+			}
+			AFG={ army_experience = 100
+				
+				add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+				}
+				
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		x = 2
+		y = 11
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
+		}
+		available = {
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_manpower = 105000
+			AFG={ delete_unit_template_and_units = { division_template = "소련 파병군" } }
+			news_event = { id = soviet.news.1 }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_only_supplie_support
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		x = 2
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
+		}
+		available = {
+		}
+		completion_reward = {
+			send_equipment = {
+				equipment = support_equipment
+				amount = 500
+				target = AFG
+			}
+			AFG={ 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_negotiation_PRC
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 1
+		y = 14
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_AFG_army_support
+			focus = SOV_sinatra_doctrine_AFG_only_supplie_support
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRC_cooperation
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	#### 중국 관계 개선
+	focus = {
+		id = SOV_sinatra_doctrine_relation_PRC
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		cost = 10.00
+		x = 5
+		y = 11
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		available = {
+		}
+		completion_reward = {
+		PRC = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_PRC
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRC_cooperation
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 5
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_relation_PRC
+		}
+		available = {
+		}
+		completion_reward = {
+				add_to_tech_sharing_group = sov_research
+				PRC = { add_to_tech_sharing_group = sov_research }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRC_comecon_join
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 3
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRC_cooperation
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRC_joint_training
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		x = 5
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRC_cooperation
+		}
+		available = {
+		}
+		completion_reward = {
+		army_experience = 100
+		add_tech_bonus = {
+			name = CHI_wargaming_division
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+			}
+		PRC = {
+		army_experience = 100
+		add_tech_bonus = {
+			name = CHI_wargaming_division
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_far_east_siberia_develop
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 6
+		y = 15
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRC_cooperation
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_vladivostok_develop
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					region = 148
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					region = 148
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					region = 148
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	#### 한반도 관계 개선
+	focus = {
+		id = SOV_sinatra_doctrine_KOR_relation
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		x = 7
+		y = 11
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_PRK_support
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_KOR_relation }
+		KOR = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_KOR
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_KOR_trade_agreement
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 7
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_KOR_relation
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_KOR_trade_agreement }
+			KOR = { 
+				add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } 
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_KOR_reunification_support 
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 7
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_KOR_trade_agreement
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_KOR_reunification_support }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRK_support
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 9
+		y = 11
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_KOR_relation
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = SOV_sinatra_doctrine_PRK_support }
+		PRK = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_PRK
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRK_support_infra
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		x = 9
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRK_support
+		}
+		available = {
+		}
+		completion_reward = {
+		PRK ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRK_vladivostok_ports
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		x = 9
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRK_support_infra
+		}
+		available = {
+		}
+		completion_reward = {
+		random_state = {
+			limit = {
+				state = 408
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_vladivostok_develop
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		x = 8
+		y = 14
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_KOR_trade_agreement
+			focus = SOV_sinatra_doctrine_PRK_support_infra
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					state = 408
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				}
+		}
+
+	}
+	#### 미국과 관계 개선
+	focus = {
+		id = SOV_sinatra_doctrine_usa_summit_meeting
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10.00
+		x = 12
+		y = 11
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_USA
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+			}
+			country_event = { id = soviet.1 }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		x = 11
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_usa_summit_meeting }
+			add_ideas = NS_Gen_nuclear_disarmament
+			USA = { add_ideas = NS_Gen_nuclear_disarmament }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_usa_both_army_disarmament
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 13
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_usa_summit_meeting }
+			add_ideas = NS_Gen_army_disarmament
+			USA = { add_ideas = NS_Gen_army_disarmament }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_usa_relaxation
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		x = 12
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -2 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_usa_trade_agreement
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 12
+		y = 14
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_both_army_disarmament
+			focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
+			focus = SOV_sinatra_doctrine_usa_relaxation
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -2 name = SOV_sinatra_doctrine_usa_summit_meeting }
+			USA = { 
+				add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } 
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_usa_reformed_faction_bureaucrat_support
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		x = 10
+		y = 16
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_vladivostok_develop
+			
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_trade_agreement
+			
+		}
+		available = {
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_down = yes
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_usa_attract_investment
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 11
+		y = 15
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_trade_agreement
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -2 name = SOV_sinatra_doctrine_usa_attract_investment }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_usa_interchange_technology
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		x = 13
+		y = 15
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_trade_agreement
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -2 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+		}
+
+	}
+	
+	### 유럽과 관계 개선
+	focus = {
+		id = SOV_sinatra_doctrine_common_european_home
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		x = 16
+		y = 11
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_common_european_home }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_europe_summit_meeting
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		x = 16
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_common_european_home
+		}
+		available = {
+		}
+		completion_reward = {
+		ENG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_ENG
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		FRA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_FRA
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_ITA
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		GER = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_GER
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_europe_exchange_east_west
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 15
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_summit_meeting
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_sinatra_doctrine_europe_exchange_east_west_tt
+			hidden_effect = {
+			if = {
+				limit = { is_in_faction_with = DDR }
+				add_opinion_modifier = {target = DDR 
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = DDR 
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = DDR 
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = DDR 
+								modifier = mission_to_the_ENG
+								}
+				}
+			if = {
+				limit = { is_in_faction_with = POL }
+				add_opinion_modifier = {target = POL 
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = POL 
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = POL 
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = POL 
+								modifier = mission_to_the_ENG
+								}
+				}
+			if = {
+				limit = { is_in_faction_with = CZE }
+				add_opinion_modifier = {target = CZE 
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = CZE 
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = CZE 
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = CZE 
+								modifier = mission_to_the_ENG
+								}
+				}
+			if = {
+				limit = { is_in_faction_with = HUN }
+				add_opinion_modifier = {target = HUN 
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = HUN 
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = HUN 
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = HUN 
+								modifier = mission_to_the_ENG
+								}
+				}
+			if = {
+				limit = { is_in_faction_with = ROM }
+				add_opinion_modifier = {target = ROM
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = ROM
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = ROM
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = ROM
+								modifier = mission_to_the_ENG
+								}
+				}
+			if = {
+				limit = { is_in_faction_with = BUL }
+				add_opinion_modifier = {target = BUL
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = BUL
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = BUL
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = BUL
+								modifier = mission_to_the_ENG
+								}
+				}
+			if = {
+				limit = { is_in_faction_with = YUG }
+				add_opinion_modifier = {target = YUG
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = YUG
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = YUG
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = YUG
+								modifier = mission_to_the_ENG
+								}
+				}
+			if = {
+				limit = { is_in_faction_with = ALB }
+				add_opinion_modifier = {target = ALB
+								modifier = mission_to_the_GER 
+								}
+				add_opinion_modifier = {target = ALB
+								modifier = mission_to_the_ITA
+								}
+				add_opinion_modifier = {target = ALB
+								modifier = mission_to_the_FRA
+								}
+				add_opinion_modifier = {target = ALB
+								modifier = mission_to_the_ENG
+								}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_europe_attract_investment
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 17
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_sinatra_doctrine_europe_attract_investment_tt
+			hidden_effect = {
+		if = {
+				limit = { is_in_faction_with = DDR }
+		DDR ={ 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = POL }
+		POL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = CZE }
+		CZE ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = HUN }
+		HUN ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ROM }
+		ROM ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = BUL }
+		BUL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = YUG }
+		YUG ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ALB }
+		ALB ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		}
+		
+		}
+
+	}
+#	focus = {
+#		id = SOV_sinatra_doctrine_europe_both_army_disarmament
+#		icon = GFX_goal_generic_allies_build_infantry
+#		cost = 10.00
+#		x = 14
+#		y = 14
+#		prerequisite = {
+#			focus = SOV_sinatra_doctrine_usa_both_army_disarmament
+#			focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
+#			focus = SOV_sinatra_doctrine_usa_relaxation
+#		}
+#		prerequisite = {
+#			focus = SOV_sinatra_doctrine_europe_exchange_east_west
+#		}
+#		prerequisite = {
+#			focus = SOV_sinatra_doctrine_europe_attract_investment
+#		}
+#		available = {
+#		}
+#		completion_reward = {
+#		}
+#
+#	}
+	focus = {
+		id = SOV_sinatra_doctrine_europe_trade_agreement
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 16
+		y = 16
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_attract_investment
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_exchange_east_west
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_sinatra_doctrine_europe_trade_agreement_tt
+			hidden_effect = {
+			ENG = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+		if = {
+			limit = { is_in_faction_with = DDR }
+			ENG = { add_opinion_modifier = { target = DDR modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = DDR modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = DDR modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = DDR modifier = unholy_alliance_trade } }
+			}
+		if = {
+			limit = { is_in_faction_with = POL }
+			ENG = { add_opinion_modifier = { target = POL modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = POL modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = POL modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = POL modifier = unholy_alliance_trade } }
+			}
+		if = {
+			limit = { is_in_faction_with = CZE }
+			ENG = { add_opinion_modifier = { target = CZE modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = CZE modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = CZE modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = CZE modifier = unholy_alliance_trade } }
+			}
+		if = {
+			limit = { is_in_faction_with = HUN }
+			ENG = { add_opinion_modifier = { target = HUN modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = HUN modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = HUN modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = HUN modifier = unholy_alliance_trade } }
+			}
+		if = {
+			limit = { is_in_faction_with = ROM }
+			ENG = { add_opinion_modifier = { target = ROM modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = ROM modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = ROM modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = ROM modifier = unholy_alliance_trade } }
+			}
+		if = {
+			limit = { is_in_faction_with = BUL }
+			ENG = { add_opinion_modifier = { target = BUL modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = BUL modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = BUL modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = BUL modifier = unholy_alliance_trade } }
+			}
+		if = {
+			limit = { is_in_faction_with = YUG }
+			ENG = { add_opinion_modifier = { target = YUG modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = YUG modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = YUG modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = YUG modifier = unholy_alliance_trade } }
+			}
+		if = {
+			limit = { is_in_faction_with = ALB }
+			ENG = { add_opinion_modifier = { target = ALB modifier = unholy_alliance_trade } }
+			FRA = { add_opinion_modifier = { target = ALB modifier = unholy_alliance_trade } }
+			GER = { add_opinion_modifier = { target = ALB modifier = unholy_alliance_trade } }
+			ITA = { add_opinion_modifier = { target = ALB modifier = unholy_alliance_trade } }
+			}
+		}
+			
+		}
+
+	}
+	### 스칸디나비아 관계 개선
+	focus = {
+		id = SOV_sinatra_doctrine_scandinavia_western_summit_meeting
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		x = 18
+		y = 14
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+			FIN = { add_opinion_modifier = { target = SOV modifier = mission_to_the_FIN } }
+			SWE = { add_opinion_modifier = { target = SOV modifier = mission_to_the_SWE } }
+			NOR = { add_opinion_modifier = { target = SOV modifier = mission_to_the_NOR } }
+			DEN = { add_opinion_modifier = { target = SOV modifier = mission_to_the_DEN } }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_scandinavia_attract_investment
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 18
+		y = 15
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_scandinavia_western_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					region = 132
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					region = 132
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					region = 132
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_scandinavia_baltic_sea_trade_agreement
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		x = 18
+		y = 16
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_scandinavia_attract_investment
+		}
+		available = {
+		}
+		completion_reward = {
+			FIN = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+			SWE = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+			NOR = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+			DEN = { add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_eu_comecon_exchange
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		x = 18
+		y = 17
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_trade_agreement
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_scandinavia_baltic_sea_trade_agreement
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_warsaw_pact_comecon_reform
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_sinatra_doctrine_eu_comecon_exchange_tt
+			hidden_effect = {
+		if = {
+				limit = { is_in_faction_with = DDR }
+		DDR ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = POL }
+		POL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = CZE }
+		CZE ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = HUN }
+		HUN ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ROM }
+		ROM ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = BUL }
+		BUL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = YUG }
+		YUG ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ALB }
+		ALB ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {	limit = { is_in_faction_with = DDR } DDR = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = POL } POL = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = CZE } CZE = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = HUN } HUN = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = ROM } ROM = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = BUL } BUL = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = YUG } YUG = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = ALB } ALB = {	general_hyper_inflation_level_down = yes	}	}
+		}
+		
+		}
+
+	}
+	
+	#### 바르샤바 조약 비개입
+	focus = {
+		id = SOV_sinatra_doctrine_warsaw_pact_infra_support
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 19
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_common_european_home
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_sinatra_doctrine_warsaw_pact_infra_support_tt
+			hidden_effect = {
+		if = {
+				limit = { is_in_faction_with = DDR }
+		DDR ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = POL }
+		POL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = CZE }
+		CZE ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = HUN }
+		HUN ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ROM }
+		ROM ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = BUL }
+		BUL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = YUG }
+		YUG ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ALB }
+		ALB ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+		}
+		
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_warsaw_pact_emergency_credit_support
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 21
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_common_european_home
+		}
+		available = {
+		}
+		completion_reward = {
+		if = {	limit = { is_in_faction_with = DDR } DDR = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = POL } POL = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = CZE } CZE = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = HUN } HUN = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = ROM } ROM = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = BUL } BUL = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = YUG } YUG = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = ALB } ALB = {	general_hyper_inflation_level_down = yes	}	}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_warsaw_pact_industry_support
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		x = 20
+		y = 14
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_warsaw_pact_infra_support
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_warsaw_pact_emergency_credit_support
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_exchange_east_west
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_europe_attract_investment
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_sinatra_doctrine_warsaw_pact_industry_support_tt
+			hidden_effect = {
+		if = {
+				limit = { is_in_faction_with = DDR }
+		DDR ={ 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = POL }
+		POL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = CZE }
+		CZE ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = HUN }
+		HUN ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ROM }
+		ROM ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = BUL }
+		BUL ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = YUG }
+		YUG ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		if = {
+				limit = { is_in_faction_with = ALB }
+		ALB ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		}
+		
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_warsaw_pact_comecon_reform
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		x = 20
+		y = 16
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_warsaw_pact_industry_support
+		}
+		available = {
+		}
+		completion_reward = {
+		if = {	limit = { is_in_faction_with = DDR } DDR = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = POL } POL = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = CZE } CZE = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = HUN } HUN = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = ROM } ROM = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = BUL } BUL = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = YUG } YUG = {	general_hyper_inflation_level_down = yes	}	}
+		if = {	limit = { is_in_faction_with = ALB } ALB = {	general_hyper_inflation_level_down = yes	}	}
+		}
+
+	}
+	#######
+	focus = {
+		id = SOV_sinatra_doctrine_finland_conflict_resolution
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		x = 24
+		y = 12
+		prerequisite = {
+			focus = SOV_sinatra_doctrine
+		}
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_warning_to_NATO
+		}
+		available = {
+			is_puppet = no
+			NOT = { has_war_with = FIN }
+			NOT = { is_in_faction_with = FIN }
+		}
+		bypass = {
+			OR = {
+				AND = {
+					FIN = { has_war = yes }
+					NOT = { has_war_with = FIN }
+				}
+				AND = {
+					FIN = { is_subject = yes }
+					NOT = { FIN = { is_subject_of = SOV } }
+				}
+				FIN = { exists = no }
+			}
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+			if = {	limit = { NOT = {has_global_flag = FIN_flag_communist_party_bankruptcy_case } } FIN = { country_event = { id = soviet.8 } }
+				}
+			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_finland_embargo
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 24
+		y = 15
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_finland_conflict_resolution
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_finland_influential_sphere_reinforcement
+		}
+		available = {
+		}
+		completion_reward = {
+			SOV = { 
+				add_opinion_modifier = { target = FIN modifier = embargo } 
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_finland_crisis
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 23
+		y = 16
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_finland_influential_sphere_reinforcement
+			focus = SOV_sinatra_doctrine_finland_embargo
+		}
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 949999 } #100 div			
+			#Make custom trigger tooltip here
+			OR = {
+				FIN = {
+					has_civil_war = no
+				}
+				#custom_trigger_tooltip = {
+					#tooltip = GER_danzig_trigger_polish_civil_war
+					AND = {
+						any_other_country = {
+							original_tag = FIN
+							#has_civil_war = yes
+							OR = {
+								is_in_faction_with = ROOT
+								has_volunteers_amount_from = {
+									tag = SOV
+									count > 0
+								}
+							}
+						}
+					}
+				#}
+			}
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = SOV_sinatra_doctrine_finland_crisis_war_name }
+			if = {
+				FIN = {
+					#country_event = { id = germany.86 }
+					if = {
+						limit = { NOT = { is_in_faction_with = ROOT } }
+						#custom_effect_tooltip = needs_approval
+					}
+					if = {
+						limit = { 
+							is_in_faction_with = ROOT 
+							ROOT = { is_faction_leader = yes }
+						}
+						#custom_effect_tooltip = GER_danzig_or_war_FIN_faction_GER_leader
+					}
+					if = {
+						limit = {
+							is_in_faction_with = ROOT 
+							NOT = { ROOT = { is_faction_leader = yes } }
+						}
+						#custom_effect_tooltip = GER_danzig_or_war_FIN_faction_GER_noleader
+					}
+					country_event = { id = soviet.11 }
+				}
+			}
+			#if = {
+			#	random_other_country = {
+			#		limit = {
+			#			original_tag = FIN
+			#			has_civil_war = yes
+			#			OR = {
+			#				is_in_faction_with = SOV
+			#				has_volunteers_amount_from = {
+			#					tag = SOV
+			#					count > 0
+			#				}
+			#			}
+			#		}
+			#		FIN = { country_event = { id = soviet.11 } }
+			#	}
+			#	#custom_effect_tooltip = GER_danzig_or_war_FIN_civil_war
+			#}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_toward_oslo
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 22
+		y = 17
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_finland_crisis
+		}
+		available = {
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SWE
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NOR
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_7_days_to_the_river_rhine
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 24
+		y = 17
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_finland_crisis
+		}
+		available = {
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = AUS
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_finland_communist_party_support
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 22
+		y = 13
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_warsaw_pact_emergency_credit_support
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_finland_conflict_resolution
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_finland_influential_sphere_reinforcement
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 22
+		y = 15
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_finland_communist_party_support
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_finland_embargo
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	#### 야나예프 독트린###
+	focus = {
+		id = SOV_yanayev_doctrine
+		icon = GFX_focus_ger_great_red_menace
+		x = 55
+		y = 10
+		cost = 10.00
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine
+		}
+		available = {
+			has_focus_tree = SOV_hardliners_rebellion
+		}
+		completion_reward = {
+		}
+
+		
+	}
+	#################
+	focus = {
+		id = SOV_yanayev_doctrine_warning_to_NATO
+		icon = GFX_goal_generic_war_with_comintern
+		x = 34
+		y = 11
+		cost = 10.00
+		prerequisite = {
+		}
+		available = {
+			threat > 0.7
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_for_the_soviet_union
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 34
+		y = 15
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_warning_to_NATO
+		}
+		completion_reward = {
+		}
+	}
+	##################
+	focus = {
+		id = SOV_yanayev_doctrine_DDR_support
+		icon = GFX_focus_ger_oppose_hitler
+		x = 42
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_reunification_by_GER_opposition
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 37
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_DDR_support
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_DDR_suppression
+			focus = SOV_yanayev_doctrine_reunification_by_DDR_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_secret_negotiation_by_ENG
+		icon = GFX_focus_chi_british_cooperation
+		x = 35
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_reunification_by_GER_opposition
+		}
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_warning_to_NATO
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_secret_negotiation_by_FRA
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 35
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_secret_negotiation_by_ENG
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_GER_reproach
+		icon = GFX_goal_generic_forceful_treaty
+		x = 36
+		y = 15
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_secret_negotiation_by_FRA
+			focus = SOV_yanayev_doctrine_stasi_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_thick_berlin_wall
+		icon = GFX_goal_generic_construct_military
+		x = 40
+		y = 16
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_GER_reproach
+			focus = SOV_yanayev_doctrine_DDR_army_reeducation
+			focus = SOV_yanayev_doctrine_DDR_infra_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_stasi_support
+		icon = GFX_focus_generic_military_academy
+		x = 37
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_reunification_by_GER_opposition
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_DDR_suppression
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 39
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_reunification_by_GER_opposition
+			focus = SOV_yanayev_doctrine_reunification_by_DDR_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_DDR_army_reeducation
+		icon = GFX_focus_CZE_german_puppet
+		x = 39
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_DDR_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_reunification_by_DDR_support
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 41
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_DDR_support
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_reunification_by_GER_opposition
+			focus = SOV_yanayev_doctrine_DDR_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_DDR_industry_support
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 43
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_DDR_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_DDR_infra_support
+		icon = GFX_goal_generic_soviet_construction
+		x = 42
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_DDR_army_reeducation
+			focus = SOV_yanayev_doctrine_reunification_by_DDR_support
+			focus = SOV_yanayev_doctrine_DDR_industry_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_DDR_POL_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 44
+		y = 15
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_DDR_infra_support
+		}
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_POL_infra_support
+		}
+		completion_reward = {
+		}
+	}
+	#################
+	focus = {
+		id = SOV_yanayev_doctrine_jaruzelski_press
+		icon = GFX_focus_CZE_german_puppet
+		x = 46
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_POL_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_POL_suppression
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 48
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_jaruzelski_press
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_jaruzelski_support
+		icon = GFX_focus_generic_combined_arms
+		x = 45
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_jaruzelski_press
+			focus = SOV_yanayev_doctrine_POL_suppression
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_jaruzelski_arrest
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_jaruzelski_arrest
+		icon = GFX_goal_generic_forceful_treaty
+		x = 47
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_jaruzelski_press
+			focus = SOV_yanayev_doctrine_POL_suppression
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_jaruzelski_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_POL_infra_support
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 46
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_jaruzelski_support
+			focus = SOV_yanayev_doctrine_jaruzelski_arrest
+		}
+		completion_reward = {
+		}
+	}
+	###########################
+	focus = {
+		id = SOV_yanayev_doctrine_CZE_industry_support
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 51
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_CZE_nation_integration_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_CZE_nation_integration_support
+		icon = GFX_goal_generic_national_unity
+		x = 53
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_CZE_industry_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_CZE_suppression
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 50
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_CZE_industry_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_CZE_infra_support
+		icon = GFX_goal_generic_soviet_construction
+		x = 52
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_CZE_industry_support
+			focus = SOV_yanayev_doctrine_CZE_nation_integration_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_CZE_nation_integration_passport_accept
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 54
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_CZE_nation_integration_support
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_CZE_control_reinforce
+		icon = GFX_focus_generic_soviet_politics
+		x = 52
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_CZE_suppression
+			focus = SOV_yanayev_doctrine_CZE_infra_support
+			focus = SOV_yanayev_doctrine_CZE_nation_integration_passport_accept
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_catholic_total_research
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 49
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_POL_suppression
+			focus = SOV_yanayev_doctrine_jaruzelski_arrest
+			focus = SOV_yanayev_doctrine_CZE_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_CZE_dubcek_assassination
+		icon = GFX_focus_hun_assassinate_horthy
+		x = 50
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_catholic_total_research
+		}
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_CZE_control_reinforce
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_POL_lech_Walesa_arrest
+		icon = GFX_focus_CZE_german_puppet
+		x = 48
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_jaruzelski_arrest
+		}
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_catholic_total_research
+		}
+		completion_reward = {
+		}
+	}
+	###########################
+	focus = {
+		id = SOV_yanayev_doctrine_BUL_zhivkov_support
+		icon = GFX_goal_generic_soviet_construction
+		x = 55
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_BUL_opposition_purge
+		icon = GFX_focus_CZE_german_puppet
+		x = 55
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_BUL_zhivkov_support
+		}
+		completion_reward = {
+		}
+	}
+	#######
+	focus = {
+		id = SOV_yanayev_doctrine_HUN_press
+		icon = GFX_focus_generic_support_the_left_right
+		x = 59
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_HUN_suppression
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 56
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_HUN_negotiation
+			focus = SOV_yanayev_doctrine_HUN_transylvania_move_negotiation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_HUN_negotiation
+		icon = GFX_goal_generic_military_deal
+		x = 58
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_HUN_press
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_HUN_suppression
+			focus = SOV_yanayev_doctrine_HUN_transylvania_move_negotiation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_HUN_transylvania_move_negotiation
+		icon = GFX_goal_generic_position_armies
+		x = 60
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_HUN_press
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_HUN_suppression
+			focus = SOV_yanayev_doctrine_HUN_negotiation
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_negotiation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_HUN_budapest_spring
+		icon = GFX_focus_CZE_german_puppet
+		x = 57
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_HUN_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_HUN_AUS_close_border
+		icon = GFX_goal_generic_construct_military
+		x = 59
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_HUN_budapest_spring
+			focus = SOV_yanayev_doctrine_HUN_negotiation
+			focus = SOV_yanayev_doctrine_HUN_transylvania_move_negotiation
+		}
+		completion_reward = {
+		}
+	}
+	###########################
+	focus = {
+		id = SOV_yanayev_doctrine_ROM_negotiation
+		icon = GFX_focus_rom_preserve_romania
+		x = 62
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_HUN_transylvania_move_negotiation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_ROM_ceausescu_support
+		icon = GFX_goal_generic_dangerous_deal
+		x = 61
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_ROM_negotiation
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_new_leader_negotiation
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_ROM_new_leader_negotiation
+		icon = GFX_goal_generic_major_alliance
+		x = 63
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_ROM_negotiation
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_ceausescu_support
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_ROM_suppression
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 65
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_new_leader_negotiation
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_ceausescu_support
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_YUG_milosevic_expel
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_ROM_ideology_reeducation
+		icon = GFX_focus_CZE_german_puppet
+		x = 65
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_ROM_suppression
+		}
+		completion_reward = {
+		}
+	}
+	###########################
+	focus = {
+		id = SOV_yanayev_doctrine_ALB_negotiation
+		icon = GFX_goal_generic_improve_relations
+		x = 66
+		y = 15
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_ALB_return
+		icon = GFX_focus_generic_join_comintern
+		x = 66
+		y = 16
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_ALB_negotiation
+			focus = SOV_yanayev_doctrine_YUG_return
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ALB_ultimatum
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_ALB_ultimatum
+		icon = GFX_focus_CZE_german_puppet
+		x = 68
+		y = 16
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_ALB_negotiation
+			focus = SOV_yanayev_doctrine_YUG_return
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ALB_return
+		}
+		completion_reward = {
+		}
+	}
+	###########################
+	focus = {
+		id = SOV_yanayev_doctrine_YUG_negotiation
+		icon = GFX_goal_generic_improve_relations
+		x = 68
+		y = 11
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_YUG_federation_support
+		icon = GFX_goal_generic_demand_territory
+		x = 68
+		y = 12
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_YUG_negotiation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_YUG_milosevic_expel
+		icon = GFX_goal_generic_dangerous_deal
+		x = 67
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_YUG_negotiation
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_YUG_dispute_intervene
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_ROM_suppression
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_YUG_strengthen_government
+		icon = GFX_focus_generic_soviet_politics
+		x = 67
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_YUG_milosevic_expel
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_YUG_dispute_intervene
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 69
+		y = 13
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_YUG_negotiation
+		}
+		mutually_exclusive = {
+			focus = SOV_yanayev_doctrine_YUG_milosevic_expel
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_YUG_dispute_manage
+		icon = GFX_focus_generic_little_entente
+		x = 69
+		y = 14
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_YUG_dispute_intervene
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_yanayev_doctrine_YUG_return
+		icon = GFX_focus_generic_join_comintern
+		x = 68
+		y = 15
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_yanayev_doctrine_YUG_strengthen_government
+			focus = SOV_yanayev_doctrine_YUG_dispute_manage
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

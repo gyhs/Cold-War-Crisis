@@ -1,0 +1,40 @@
+﻿capital = 303
+
+oob = "PRU_1987"
+
+# Starting tech
+set_technology = {
+}
+
+set_country_flag = monroe_doctrine
+
+set_convoys = 5
+
+set_politics = {	
+	ruling_party = fascism
+	last_election = "1931.10.11"
+	election_frequency = 96
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Óscar Benavides"
+	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	picture = "GFX_POLITICS_peru_oscar_benavides"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

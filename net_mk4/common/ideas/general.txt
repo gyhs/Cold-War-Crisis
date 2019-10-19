@@ -1,0 +1,1764 @@
+ideas = {
+	country = {
+
+		
+		################################
+		##### 경제 위기 level ####
+		################################
+
+		general_hyper_inflation_none = {
+
+			picture = chi_hyper_inflation
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		general_hyper_inflation_1 = {
+
+			picture = chi_hyper_inflation
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		
+		general_hyper_inflation_2 = {
+
+			picture = chi_hyper_inflation2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		
+		general_hyper_inflation_3 = {
+
+			picture = chi_hyper_inflation3
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		
+		general_hyper_inflation_4 = {
+
+			picture = chi_hyper_inflation4
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+			}
+		}
+
+		general_hyper_inflation_5 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_6 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_7 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_8 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_9 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_10 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_11 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_12 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_13 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_14 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		general_hyper_inflation_15 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		CHI_modern_logistics = {
+
+			picture = FRA_motorized_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_logistics_level = 1
+			}
+		}
+
+		CHI_train_marines = {
+
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.02
+			}
+		}
+
+		Gen_cartel = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ROM_king_carol_ii_hedonist
+			
+			modifier = {
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		Gen_cartel_nationalize = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil2
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+
+		Gen_cartel_collusion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil2
+			
+			modifier = {
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		Gen_cartel_cooperation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ROM_king_carol_ii_hedonist
+			
+			modifier = {
+				political_power_cost = 0.5
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		Gen_cartel_challenge = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil
+			
+			modifier = {
+				stability_factor = -0.1
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		##########################
+		NS_Gen_authoritarianism_ideologie = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				fascism_drift = 0.05
+				neutrality_drift = 0.05
+			}
+		}
+		NS_Gen_socialism_ideologie = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		NS_Gen_liberalism_ideologie = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		############################
+		NS_Gen_government_crisis_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.02
+				production_speed_arms_factory_factor = -0.02
+				production_speed_dockyard_factor = -0.01
+				industrial_capacity_factory = -0.01
+			}
+		}
+		NS_Gen_government_crisis_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.04
+				production_speed_arms_factory_factor = -0.04
+				production_speed_dockyard_factor = -0.02
+				industrial_capacity_factory = -0.02
+			}
+		}
+		NS_Gen_government_crisis_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.06
+				production_speed_arms_factory_factor = -0.06
+				production_speed_dockyard_factor = -0.03
+				industrial_capacity_factory = -0.03
+			}
+		}
+		NS_Gen_government_crisis_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.2
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.08
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.04
+				industrial_capacity_factory = -0.04
+			}
+		}
+		NS_Gen_government_crisis_5 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.25
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		NS_Gen_mafia_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				drift_defence_factor = -0.02
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		NS_Gen_mafia_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				drift_defence_factor = -0.05
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		NS_Gen_mafia_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				drift_defence_factor = -0.07
+				stability_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		NS_Gen_mafia_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.2
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		NS_Gen_mafia_5 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				drift_defence_factor = -0.12
+				stability_factor = -0.25
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		NS_Gen_mafia_political = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				drift_defence_factor = -0.15
+				stability_factor = -0.02
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+##################
+		
+		NS_Gen_authoritarianism_monarchy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				fascism_drift = 0.05
+				neutrality_drift = 0.05
+			}
+		}
+		NS_Gen_authoritarianism_republic = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				fascism_drift = 0.05
+				neutrality_drift = 0.05
+			}
+		}
+####################
+
+		NS_Gen_monarchy_nationalism_monarchy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		NS_Gen_monarchy_nationalism_all_political_party_end = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		NS_Gen_monarchy_nationalism_guard_extend = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		NS_Gen_monarchy_nationalism_Paramilitary_expand = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				send_volunteers_tension = -0.2
+				training_time_army_factor = -0.1
+				research_speed_factor = 0.05
+			}
+		}
+##################
+		
+		NS_Gen_statism_monarchy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				fascism_drift = 0.1
+			}
+		}
+		NS_Gen_statism_republic = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				fascism_drift = 0.1
+			}
+		}
+		NS_Gen_statism_state_socialism = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		NS_Gen_statism_guard_extend = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				conscription = 0.02
+				send_volunteers_tension = -0.2
+			}
+		}
+		NS_Gen_statism_our_empire = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+			
+			rule = {
+				can_send_volunteers = yes
+			}
+
+			modifier = {
+				send_volunteers_tension = -0.2
+				justify_war_goal_time = -0.25
+			}
+		}
+		########################
+		NS_Gen_authority_nationalism_monarchy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				fascism_drift = 0.1
+			}
+		}
+		NS_Gen_authority_nationalism_republic = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				fascism_drift = 0.1
+			}
+		}
+		NS_Gen_authority_nationalism_social_control = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				drift_defence_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		NS_Gen_authority_nationalism_military_extend = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+				research_speed_factor = 0.05
+			}
+		}
+		NS_Gen_authority_nationalism_discontent_outside = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.01
+			}
+		}
+		########################
+		NS_Gen_authority_military_youth = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+				training_time_army_factor = -0.1
+			}
+		}
+		NS_Gen_authority_expansionist_policy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				army_core_attack_factor = 0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+		NS_Gen_authority_defense_strategy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				army_core_defence_factor = 0.1
+				ai_focus_aggressive_factor = -0.5
+			}
+		}
+		NS_Gen_authority_mobilization_order = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		NS_Gen_authority_for_the_empire = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			rule = {
+				can_create_factions = yes
+			}
+	
+			modifier = {
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		NS_Gen_authority_army_private_organization = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				drift_defence_factor = 0.05
+				political_power_factor = 0.05
+				military_leader_cost_factor = 0.05
+			}
+		}
+		###################
+		NS_Gen_marxism_leninism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.03
+				global_building_slots_factor = 0.25
+			}
+		}
+		NS_Gen_marxism_leninism_soviet_leadership = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		NS_Gen_marxism_leninism_heavy_industries = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		NS_Gen_marxism_leninism_internationalism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				political_power_factor = 0.05
+				send_volunteers_tension = -0.20
+			}
+		}
+		
+		################
+		NS_Gen_maoism = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				global_building_slots_factor = 0.25
+			}
+		}
+		NS_Gen_maoism_rectification_campaign = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				foreign_subversive_activites = -0.75
+			}
+		}
+		NS_Gen_maoism_maoism_agriculture = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				MONTHLY_POPULATION = 0.2
+				consumer_goods_factor = 0.03
+				stability_factor = -0.02
+			}
+		}
+		NS_Gen_maoism_party_army = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				send_volunteers_tension = -0.2
+			}
+		}
+		##################
+		NS_Gen_democratic_socialism = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				global_building_slots_factor = 0.25
+			}
+		}
+		NS_Gen_democratic_socialism_coalition_government = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		NS_Gen_democratic_socialism_administrative_reform = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				consumer_goods_factor = 0.05
+			}
+		}
+		NS_Gen_democratic_socialism_flexible_diplomacy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+				improve_relations_maintain_cost_factor = -0.05
+			}
+		}
+		#####################
+		NS_Gen_socialism_political_commissars = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		NS_Gen_socialism_duty_for_free = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				training_time_army_factor = -0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		#################
+		
+		NS_Gen_constitutional_monarchy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+		NS_Gen_constitutional_monarchy_council_guarantee = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+		
+		############
+		NS_Gen_liberalism_republic = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+		############
+		NS_Gen_liberalism_industrial_estate = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+		NS_Gen_liberalism_mining_industry = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+		NS_Gen_liberalism_infrastructure = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+		
+		#############
+		NS_Gen_liberalism_resistance = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
+			}
+		}
+		
+		
+		############
+		NS_Gen_rampant_of_warlord = {	#군벌
+
+			picture = generic_oppression
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		NS_Gen_incompetence_officer = {	#무능한 장교
+
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.7
+			}
+		}
+
+		NS_Gen_army_corruption_1 = {
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				mobilization_speed = -0.3
+			}
+
+		}
+
+		NS_Gen_army_corruption_2 = {
+
+			picture = chi_army_corruption2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.33
+				army_defence_factor = -0.33
+				mobilization_speed = -0.2
+			}
+
+		}
+		
+		NS_Gen_army_corruption_3 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.16
+				army_defence_factor = -0.16
+				mobilization_speed = -0.1
+			}
+
+		}
+		NS_Gen_rampant_communicable_diseases_3 = {	#전염병3
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.01
+
+			}
+		}
+		NS_Gen_rampant_communicable_diseases_2 = {	#전염병2
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.01
+
+			}
+		}
+		NS_Gen_rampant_communicable_diseases_1 = {	#전염병1
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.01
+
+			}
+		}
+
+		NS_Gen_risk_of_famine = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.01
+
+			}
+		}
+
+		NS_Gen_famine = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		NS_Gen_landed_proprietor = {
+
+			picture = saf_history_of_segregation
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.35
+			}
+		}
+		
+		colonial_nation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea colonial_nation"}
+			modifier = {
+				ai_call_ally_desire_factor = -2000
+				ai_join_ally_desire_factor = -2000
+			}
+			
+			picture = FRA_fortification_focus
+		}
+
+		NS_Gen_nuclear_disarmament = {
+
+			picture = idea_yug_federal_defense_council
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				nuclear_production_factor = -1
+			}
+		}
+
+		NS_Gen_army_disarmament = {
+
+			picture = idea_generic_army_problems
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 1
+			}
+		}
+		
+		NS_Gen_millitary_cooperation = {
+
+			picture = german_advisors
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						has_government = fascism
+						GER = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						has_government = communism
+						GER = {
+							has_government = communism
+						}
+					}
+					AND = {
+						has_government = democratic
+						GER = {
+							has_government = democratic
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+			research_bonus = {
+				air_doctrine = 0.05
+			}				
+		}
+
+		NS_Gen_revanchism = {
+	
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+		
+			modifier = {		
+			justify_war_goal_time = -0.25
+			generate_wargoal_tension = -0.4
+			war_support_factor = 0.05
+			}
+		}
+		NS_Gen_islam_idea = {
+
+			picture = raj_marginalized_muslim_community_happy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			cancel = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				#generate_wargoal_tension = 1.00
+				join_faction_tension = 1.00
+				#lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+				communism_acceptance = -100
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

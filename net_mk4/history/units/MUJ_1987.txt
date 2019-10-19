@@ -1,0 +1,541 @@
+﻿
+division_template = { 
+	name = "아프간 부족 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "지하드 군벌전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = no
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "마수드파 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "굴부딘파 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "칼리스파 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "사야프파 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "이슬람 국민전선파 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "이슬람 혁명운동파 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "해방 이슬람 연맹파 전사들"
+	division_names_group = MUJ_MIL_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+	support = {
+		anti_tank_rocket = { x = 0 y = 0 }
+		anti_air_manpads = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		division_name = { is_name_ordered = yes }
+		location = 2078
+		division_template = "아프간 부족 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "아프간 부족 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "아프간 부족 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "아프간 부족 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "아프간 부족 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "아프간 부족 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "지하드 군벌전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "지하드 군벌전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "지하드 군벌전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "지하드 군벌전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "지하드 군벌전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "지하드 군벌전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "마수드파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "굴부딘파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "굴부딘파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "굴부딘파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "굴부딘파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "굴부딘파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "굴부딘파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "칼리스파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "칼리스파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "칼리스파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "칼리스파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "칼리스파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "칼리스파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "사야프파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "사야프파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "사야프파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "사야프파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "사야프파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "사야프파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "이슬람 국민전선파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "이슬람 국민전선파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "이슬람 국민전선파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "이슬람 혁명운동파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "이슬람 혁명운동파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "이슬람 혁명운동파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "해방 이슬람 연맹파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "해방 이슬람 연맹파 전사들"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2078
+		division_template = "해방 이슬람 연맹파 전사들"
+		start_experience_factor = 0.3
+	}
+}
+
+air_wings = {
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

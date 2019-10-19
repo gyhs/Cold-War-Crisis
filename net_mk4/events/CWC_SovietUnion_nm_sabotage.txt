@@ -1,0 +1,1073 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet.nm.sabotage
+
+	#immediate = {
+	#	news_event = {id = world_news_soviet.1 days = 1}
+	#}
+	
+#######################################################
+# 벨라루스
+#######################################################
+# 벨라루스 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1
+	title = soviet.nm.sabotage.1.t
+	desc = soviet.nm.sabotage.1.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 벨라루스 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.2
+	title = soviet.nm.sabotage.2.t
+	desc = soviet.nm.sabotage.2.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.2.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 벨라루스 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.3
+	title = soviet.nm.sabotage.3.t
+	desc = soviet.nm.sabotage.3.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.3.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 에스토니아
+#######################################################
+# 에스토니아 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.101
+	title = soviet.nm.sabotage.101.t
+	desc = soviet.nm.sabotage.101.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.101.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 에스토니아 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.102
+	title = soviet.nm.sabotage.102.t
+	desc = soviet.nm.sabotage.102.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.102.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 에스토니아 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.103
+	title = soviet.nm.sabotage.103.t
+	desc = soviet.nm.sabotage.103.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.103.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 라트비아
+#######################################################
+# 라트비아 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.201
+	title = soviet.nm.sabotage.201.t
+	desc = soviet.nm.sabotage.201.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.201.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 라트비아 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.202
+	title = soviet.nm.sabotage.202.t
+	desc = soviet.nm.sabotage.202.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.202.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 라트비아 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.203
+	title = soviet.nm.sabotage.203.t
+	desc = soviet.nm.sabotage.203.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.203.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 리투아니아
+#######################################################
+# 리투아니아 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.301
+	title = soviet.nm.sabotage.301.t
+	desc = soviet.nm.sabotage.301.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.301.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 리투아니아 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.302
+	title = soviet.nm.sabotage.302.t
+	desc = soviet.nm.sabotage.302.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.302.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 리투아니아 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.303
+	title = soviet.nm.sabotage.303.t
+	desc = soviet.nm.sabotage.303.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.303.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 우크라이나
+#######################################################
+# 우크라이나 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.401
+	title = soviet.nm.sabotage.401.t
+	desc = soviet.nm.sabotage.401.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.401.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 우크라이나 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.402
+	title = soviet.nm.sabotage.402.t
+	desc = soviet.nm.sabotage.402.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.402.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 우크라이나 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.403
+	title = soviet.nm.sabotage.403.t
+	desc = soviet.nm.sabotage.403.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.403.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 몰도바
+#######################################################
+# 몰도바 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.501
+	title = soviet.nm.sabotage.501.t
+	desc = soviet.nm.sabotage.501.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.501.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 몰도바 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.502
+	title = soviet.nm.sabotage.502.t
+	desc = soviet.nm.sabotage.502.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.502.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 몰도바 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.503
+	title = soviet.nm.sabotage.503.t
+	desc = soviet.nm.sabotage.503.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.503.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 아르메니아
+#######################################################
+# 아르메니아 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.601
+	title = soviet.nm.sabotage.601.t
+	desc = soviet.nm.sabotage.601.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.601.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 아르메니아 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.602
+	title = soviet.nm.sabotage.602.t
+	desc = soviet.nm.sabotage.602.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.602.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 아르메니아 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.603
+	title = soviet.nm.sabotage.603.t
+	desc = soviet.nm.sabotage.603.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.603.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 아제르바이잔
+#######################################################
+# 아제르바이잔 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.701
+	title = soviet.nm.sabotage.701.t
+	desc = soviet.nm.sabotage.701.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.701.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 아제르바이잔 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.702
+	title = soviet.nm.sabotage.702.t
+	desc = soviet.nm.sabotage.702.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.702.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 아제르바이잔 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.703
+	title = soviet.nm.sabotage.703.t
+	desc = soviet.nm.sabotage.703.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.703.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 조지아
+#######################################################
+# 조지아 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.801
+	title = soviet.nm.sabotage.801.t
+	desc = soviet.nm.sabotage.801.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.801.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 조지아 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.802
+	title = soviet.nm.sabotage.802.t
+	desc = soviet.nm.sabotage.802.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.802.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 조지아 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.803
+	title = soviet.nm.sabotage.803.t
+	desc = soviet.nm.sabotage.803.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.803.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 카자흐스탄
+#######################################################
+# 카자흐스탄 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.901
+	title = soviet.nm.sabotage.901.t
+	desc = soviet.nm.sabotage.901.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.901.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 카자흐스탄 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.902
+	title = soviet.nm.sabotage.902.t
+	desc = soviet.nm.sabotage.902.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.902.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 카자흐스탄 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.903
+	title = soviet.nm.sabotage.903.t
+	desc = soviet.nm.sabotage.903.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.903.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 키르기스스탄
+#######################################################
+# 키르기스스탄 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1001
+	title = soviet.nm.sabotage.1001.t
+	desc = soviet.nm.sabotage.1001.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1001.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 키르기스스탄 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1002
+	title = soviet.nm.sabotage.1002.t
+	desc = soviet.nm.sabotage.1002.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1002.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 키르기스스탄 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.1003
+	title = soviet.nm.sabotage.1003.t
+	desc = soviet.nm.sabotage.1003.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1003.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 우즈베키스탄
+#######################################################
+# 우즈베키스탄 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1101
+	title = soviet.nm.sabotage.1101.t
+	desc = soviet.nm.sabotage.1101.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1101.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 우즈베키스탄 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1102
+	title = soviet.nm.sabotage.1102.t
+	desc = soviet.nm.sabotage.1102.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1102.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 우즈베키스탄 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.1103
+	title = soviet.nm.sabotage.1103.t
+	desc = soviet.nm.sabotage.1103.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1103.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 투르크메니스탄
+#######################################################
+# 투르크메니스탄 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1201
+	title = soviet.nm.sabotage.1201.t
+	desc = soviet.nm.sabotage.1201.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1201.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 투르크메니스탄 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1202
+	title = soviet.nm.sabotage.1202.t
+	desc = soviet.nm.sabotage.1202.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1202.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 투르크메니스탄 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.1203
+	title = soviet.nm.sabotage.1203.t
+	desc = soviet.nm.sabotage.1203.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1203.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+	
+#######################################################
+# 타지키스탄
+#######################################################
+# 타지키스탄 민족주의 봉기 - 군수공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1301
+	title = soviet.nm.sabotage.1301.t
+	desc = soviet.nm.sabotage.1301.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1301.a #okay
+		random_owned_state = {
+				prioritize = { 193 202 203 }
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 타지키스탄 민족주의 봉기 - 민간공장 파업
+country_event = {
+	id = soviet.nm.sabotage.1302
+	title = soviet.nm.sabotage.1302.t
+	desc = soviet.nm.sabotage.1302.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1302.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+# 타지키스탄 민족주의 봉기 - 인프라 봉쇄
+country_event = {
+	id = soviet.nm.sabotage.1303
+	title = soviet.nm.sabotage.1303.t
+	desc = soviet.nm.sabotage.1303.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.nm.sabotage.1303.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}

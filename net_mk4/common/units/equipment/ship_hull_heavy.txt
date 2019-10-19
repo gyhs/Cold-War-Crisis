@@ -1,0 +1,866 @@
+equipments = {
+
+	ship_hull_heavy = { #
+		#year = 1922
+
+		is_archetype = yes
+		is_buildable = no
+		type = capital_ship
+		interface_category = interface_category_capital_ships
+		priority = 1500
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+		
+		module_slots = {
+			fixed_ship_deck_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					ship_airplane_launcher
+				}
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_torpedo_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo }
+			}
+			#fixed_ship_armor_slot = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		#ship_blast_hardened_bulkhead_cruiser
+			#		#ship_blast_hardened_bulkhead_heavy
+			#	}
+			#}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					#ship_engine_light
+					ship_engine_cruiser
+					ship_engine_heavy
+					#ship_engine_nuke
+				}
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_fire_control_system
+					#ship_aegis_combat_system
+				}
+			}
+			fixed_ship_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_radar
+					ship_radar_heavy
+				}
+			}
+			fixed_ship_air_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_air_radar
+					ship_air_radar_heavy
+					#ship_radar_aegis
+				}
+			}
+			
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_cruise_missile_launcher_8
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			front_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+		}
+		
+		lg_armor_piercing = 0
+		lg_attack = 0
+		
+		hg_armor_piercing = 0
+		hg_attack = 0
+		
+		torpedo_attack = 0
+		sub_attack = 0
+		
+		anti_air_attack = 0
+		
+		armor_value = 0
+
+		
+		surface_detection = 20
+		sub_detection = 1
+		surface_visibility = 20
+		naval_speed = 0
+		reliability = 0.80
+		
+		naval_range = 0
+		
+		max_strength = 350
+
+		fuel_consumption = 0
+		
+		build_cost_ic = 3300
+		resources = {
+			steel = 1
+			chromium = 1
+		}
+
+		manpower = 4000
+	}
+	
+	ship_hull_heavy_1 = { #ww2급 보스턴급
+		year = 1944
+		archetype = ship_hull_heavy
+		priority = 1500
+		visual_level = 0
+		
+		module_slots = {
+			fixed_ship_deck_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					ship_asw_missile_launcher
+				}
+			}
+			#fixed_ship_anti_air_slot = {
+			#	required = no
+			#	allowed_module_categories = { ship_anti_air }
+			#}
+			fixed_ship_torpedo_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo }
+			}
+			#fixed_ship_armor_slot = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		#ship_blast_hardened_bulkhead_cruiser
+			#		#ship_blast_hardened_bulkhead_heavy
+			#	}
+			#}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					#ship_engine_light
+					ship_engine_cruiser
+					ship_engine_heavy
+					#ship_engine_nuke
+				}
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_fire_control_system
+					#ship_aegis_combat_system
+				}
+			}
+			fixed_ship_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_radar
+					ship_radar_heavy
+				}
+			}
+			fixed_ship_air_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_air_radar
+					ship_air_radar_heavy
+					#ship_radar_aegis
+				}
+			}
+			
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_airplane_launcher
+					
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			mid_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_anti_air_missile_mr
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_anti_air_missile_mr
+				}
+			}
+			#front_2_custom_slot = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		ship_missile_launcher_turret
+			#		ship_battery_medium
+			#		ship_battery_heavy
+			#	}
+			#}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+		}
+		naval_range = 0
+		
+		max_strength = 300
+		naval_speed = 0
+		fuel_consumption = 0
+		reliability = 0.65
+		build_cost_ic = 3000
+		resources = {
+			steel = 1
+			chromium = 1
+		}
+
+		manpower = 3200
+	}
+
+	ship_hull_heavy_2 = {	#리히급 / 벨크냅급
+		year = 1960
+
+		archetype = ship_hull_heavy
+		priority = 1500
+		parent = ship_hull_heavy_1
+		visual_level = 1
+		module_slots = {
+			#fixed_ship_deck_slot_1 = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		#ship_airplane_launcher
+			#		#ship_mine_warfare
+			#		#ship_mine_layer
+			#		#ship_depth_charge
+			#	}
+			#}
+			#fixed_ship_anti_air_slot = {
+			#	required = no
+			#	allowed_module_categories = { ship_anti_air }
+			#}
+			fixed_ship_torpedo_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo }
+			}
+			#fixed_ship_armor_slot = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		#ship_blast_hardened_bulkhead_cruiser
+			#		#ship_blast_hardened_bulkhead_heavy
+			#	}
+			#}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_engine_light
+					ship_engine_cruiser
+					ship_engine_heavy
+					ship_engine_nuke
+				}
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_fire_control_system
+					#ship_aegis_combat_system
+				}
+			}
+			fixed_ship_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_radar
+					ship_radar_heavy
+				}
+			}
+			fixed_ship_air_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_air_radar
+					ship_air_radar_heavy
+					#ship_radar_aegis
+				}
+			}
+			
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_airplane_launcher
+				}
+			}
+			mid_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_cruise_missile_launcher_4
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_cruise_missile_launcher_4
+				}
+			}
+			#front_2_custom_slot = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		ship_missile_launcher_turret
+			#		ship_battery_medium
+			#		ship_battery_heavy
+			#	}
+			#}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+				}
+			}
+		}
+		naval_range = 0
+		
+		max_strength = 370
+		reliability = 0.85
+		fuel_consumption = 0
+		naval_speed = 0
+		build_cost_ic = 3400
+		resources = {
+			#oil = 1
+			steel = 1
+			chromium = 1
+		}
+
+		manpower = 5200
+	}
+
+	ship_hull_heavy_3 = {	#버지니아급
+		year = 1970
+
+		archetype = ship_hull_heavy
+		priority = 1500
+		parent = ship_hull_heavy_2
+		visual_level = 1
+		module_slots = {
+			fixed_ship_deck_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					ship_airplane_launcher
+				}
+			}
+			#fixed_ship_anti_air_slot = {
+			#	required = no
+			#	allowed_module_categories = { ship_anti_air }
+			#}
+			fixed_ship_torpedo_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_blast_hardened_bulkhead_cruiser
+					ship_blast_hardened_bulkhead_heavy
+				}
+			}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_engine_light
+					ship_engine_cruiser
+					ship_engine_heavy
+					ship_engine_nuke
+				}
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_fire_control_system
+					#ship_aegis_combat_system
+				}
+			}
+			fixed_ship_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_radar
+					ship_radar_heavy
+				}
+			}
+			fixed_ship_air_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_air_radar
+					ship_air_radar_heavy
+					#ship_radar_aegis
+				}
+			}
+			
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_cruise_missile_launcher_8
+				}
+			}
+			front_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+					ship_battery_heavy
+				}
+			}
+		}
+		naval_range = 0
+		naval_speed = 0
+		max_strength = 400
+		reliability = 0.9
+		fuel_consumption = 0
+		
+		build_cost_ic = 3500
+		resources = {
+			#oil = 1
+			steel = 1
+			chromium = 1
+		}
+
+		manpower = 6000
+	}
+
+	ship_hull_heavy_4 = {	#타이콘데로가급
+		year = 1990
+
+		archetype = ship_hull_heavy
+		priority = 1500
+		parent = ship_hull_heavy_3
+		visual_level = 1
+		module_slots = {
+			fixed_ship_deck_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					ship_towed_array_sonar
+				}
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_torpedo_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_blast_hardened_bulkhead_cruiser
+					ship_blast_hardened_bulkhead_heavy
+				}
+			}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_engine_light
+					ship_engine_cruiser
+					ship_engine_heavy
+					ship_engine_nuke
+				}
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_fire_control_system
+					ship_aegis_combat_system
+				}
+			}
+			fixed_ship_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_radar
+					ship_radar_heavy
+				}
+			}
+			fixed_ship_air_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_air_radar
+					ship_air_radar_heavy
+					ship_radar_aegis
+				}
+			}
+			
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_cruise_missile_launcher_8
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+				}
+			}
+			mid_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_vls_8
+					ship_vls_16
+					ship_vls_24
+					ship_vls_32
+					ship_vls_48
+					ship_vls_56
+					ship_vls_61
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_airplane_launcher
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			front_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_vls_8
+					ship_vls_16
+					ship_vls_24
+					ship_vls_32
+					ship_vls_48
+					ship_vls_56
+					ship_vls_61
+				}
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+				}
+			}
+		}
+		
+		naval_range = 0
+		
+		max_strength = 450
+		naval_speed = 0
+		fuel_consumption = 0
+		reliability = 0.95
+		build_cost_ic = 3600
+		resources = {
+			#oil = 1
+			steel = 1
+			chromium = 1
+		}
+
+		manpower = 6000
+	}
+
+	ship_hull_heavy_5 = {	#타이콘데로가급 현대화
+		year = 2010
+
+		archetype = ship_hull_heavy
+		priority = 1500
+		parent = ship_hull_heavy_4
+		visual_level = 1
+		module_slots = {
+			fixed_ship_deck_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					ship_towed_array_sonar
+				}
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_torpedo_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_blast_hardened_bulkhead_cruiser
+					ship_blast_hardened_bulkhead_heavy
+				}
+			}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_engine_light
+					ship_engine_cruiser
+					ship_engine_heavy
+					ship_engine_nuke
+				}
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_fire_control_system
+					ship_aegis_combat_system
+				}
+			}
+			fixed_ship_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_radar
+					ship_radar_heavy
+				}
+			}
+			fixed_ship_air_radar_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_air_radar
+					ship_air_radar_heavy
+					ship_radar_aegis
+				}
+			}
+			
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_cruise_missile_launcher_8
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+				}
+			}
+			mid_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_vls_32
+					ship_vls_48
+					ship_vls_56
+					ship_vls_61
+					ship_vls_64
+					ship_vls_80 # 한국 국특 장비
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_airplane_launcher
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			front_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_vls_32
+					ship_vls_48
+					ship_vls_56
+					ship_vls_61
+					ship_vls_64
+					ship_vls_80 # 한국 국특 장비
+				}
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_missile_launcher_turret
+					ship_battery_medium
+				}
+			}
+		}
+		
+		naval_range = 0
+		
+		max_strength = 450
+		naval_speed = 0
+		fuel_consumption = 0
+		reliability = 0.95
+		build_cost_ic = 3600
+		resources = {
+			#oil = 1
+			steel = 1
+			chromium = 1
+		}
+
+		manpower = 6000
+	}
+
+
+	
+	
+}

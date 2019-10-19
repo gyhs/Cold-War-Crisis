@@ -1,0 +1,2879 @@
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1600 }
+	default = no
+#--------------------------------------------------
+ #Focus for 연방정부 권한강화 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_federal_gov_empowerment
+ icon = GFX_focus_usa_guarantee_the_american_dream
+ x = 42
+ y = 0
+ cost = 10
+ available_if_capitulated = yes 
+ mutually_exclusive = { focus = NF_USA_federal_gov_empowerment } 
+ mutually_exclusive = { focus = NF_USA_state_government_empowerment } 
+ ai_will_do = { 
+ factor = 1
+ } 
+ }
+
+ #Focus for 주 정부 권한강화 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_state_government_empowerment
+ icon = GFX_focus_usa_union_representation_act
+ x = 48
+ y = 0
+ cost = 10
+ available_if_capitulated = yes 
+ mutually_exclusive = { focus = NF_USA_federal_gov_empowerment } 
+ ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#--------------------------------------------------
+#Focus for 대외영향력 재정비 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_external_influence_keep
+ icon = GFX_goal_generic_neutrality_focus
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ mutually_exclusive = { focus = NF_USA_external_influence_Expansion } 
+ prerequisite = { 	focus = NF_USA_state_government_empowerment 
+					focus = NF_USA_federal_gov_empowerment 
+ }
+relative_position_id = NF_USA_federal_gov_empowerment
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 대외영향력 강화 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_external_influence_Expansion
+ icon = GFX_goal_generic_territory_or_war
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ mutually_exclusive = { focus = NF_USA_external_influence_keep } 
+ prerequisite = { 	focus = NF_USA_state_government_empowerment 
+					focus = NF_USA_federal_gov_empowerment 
+ }
+relative_position_id = NF_USA_state_government_empowerment
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 마약문제 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_drug_problem
+ icon = GFX_goal_generic_position_armies
+ x = 3
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_state_government_empowerment 
+					focus = NF_USA_federal_gov_empowerment 
+ }
+ relative_position_id = NF_USA_federal_gov_empowerment
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 파나마 침공 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_invasion_panama
+ icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_drug_problem
+ }
+ relative_position_id = NF_USA_drug_problem
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 중남미 영향력 재확인 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_latin_american_influence_reaffirm
+ icon = GFX_goal_generic_propaganda
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_invasion_panama
+ }
+ relative_position_id = NF_USA_invasion_panama
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 중남미 첩보전 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_latin_american_spy_war
+ icon = GFX_goal_generic_propaganda
+ x = 0
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_latin_american_influence_reaffirm
+ }
+ relative_position_id = NF_USA_latin_american_influence_reaffirm
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 마약 규제 완하 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_drug_regulation_abatement
+ icon = GFX_goal_generic_intelligence_exchange
+ x = -1
+ y = 3
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_invasion_panama
+ }
+ mutually_exclusive = { focus = NF_USA_war_on_drug } 
+ relative_position_id = NF_USA_drug_problem
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 마약 전쟁 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_war_on_drug
+ icon = GFX_goal_generic_intelligence_exchange
+ x = 1
+ y = 3
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_invasion_panama
+ }
+ mutually_exclusive = { focus = NF_USA_drug_regulation_abatement } 
+ relative_position_id = NF_USA_drug_problem
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 공공사업 확충 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_public_work_expansion
+icon = GFX_goal_generic_construct_civ_factory
+x = -6
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_federal_gov_empowerment } 
+ relative_position_id = NF_USA_federal_gov_empowerment
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 기업규제 강화 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_corporation_strengthen_regulations
+icon = GFX_focus_generic_treaty
+x = -4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_federal_gov_empowerment } 
+ relative_position_id = NF_USA_federal_gov_empowerment
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 최저임금 개혁 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_minimum_wage_reform
+icon = GFX_goal_generic_consumer_goods
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_public_work_expansion } 
+prerequisite = { focus = NF_USA_corporation_strengthen_regulations } 
+ relative_position_id = NF_USA_public_work_expansion
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 공공인프라 확충 - focus ID randomly generated due to title being in non-latin characters
+focus = {
+id = NF_USA_public_infrastructure_building
+icon = GFX_goal_generic_construct_infrastructure
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_corporation_strengthen_regulations } 
+prerequisite = { focus = NF_USA_public_work_expansion } 
+ relative_position_id = NF_USA_public_work_expansion
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 의료복지 개혁 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_medical_welfare_reform
+icon = GFX_focus_generic_industry_2
+x = -2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_lobby_regulatory_act } 
+prerequisite = { focus = NF_USA_public_infrastructure_building } 
+ relative_position_id = NF_USA_public_infrastructure_building
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 경찰 행정력 강화 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_police_administrative_power_reinforcement
+icon = GFX_goal_generic_intelligence_exchange
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_public_infrastructure_building } 
+ relative_position_id = NF_USA_public_infrastructure_building
+ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 의료보험제도 개혁 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_medical_insurance_system_reform
+icon = GFX_focus_generic_industry_3
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_medical_welfare_reform }
+ relative_position_id = NF_USA_medical_welfare_reform
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 공교육 재건 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_reconstruction_public_education
+icon = GFX_focus_generic_military_academy
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_minimum_wage_reform } 
+prerequisite = { focus = NF_USA_public_infrastructure_building } 
+ relative_position_id = NF_USA_public_infrastructure_building
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 공립대 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_public_university_support
+icon = GFX_focus_research
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_e_government_building } 
+prerequisite = { focus = NF_USA_reconstruction_public_education } 
+ relative_position_id = NF_USA_reconstruction_public_education
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 공정근로 기준법 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_process_work_standards_act
+icon = GFX_focus_eng_concessions_to_the_trade_unions
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_corporation_strengthen_regulations } 
+ relative_position_id = NF_USA_corporation_strengthen_regulations
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 연방부동산법 강화 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_federal_real_estate_act_strengthen
+icon = GFX_focus_generic_self_management
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_process_work_standards_act } 
+ relative_position_id = NF_USA_process_work_standards_act
+ai_will_do = { 
+ factor = 1
+ }
+}
+#--------------------------------------------------------------------
+#Focus for 전자정부 구축 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_e_government_building
+icon = GFX_goal_generic_national_unity
+x = 2
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_public_infrastructure_building } 
+prerequisite = { focus = NF_USA_process_work_standards_act } 
+ relative_position_id = NF_USA_public_infrastructure_building
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 산업단지 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_support_industrial_park
+icon = GFX_goal_generic_construction2
+x = 0
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_e_government_building } 
+prerequisite = { focus = NF_USA_federal_real_estate_act_strengthen } 
+prerequisite = { focus = NF_USA_military_industrial_complex } 
+ relative_position_id = NF_USA_federal_real_estate_act_strengthen
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#-------------------------------------------------
+#Focus for 로비 규제법 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_lobby_regulatory_act
+icon = GFX_focus_eng_concessions_to_the_trade_unions
+x = -8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_federal_gov_empowerment }
+ relative_position_id = NF_USA_federal_gov_empowerment
+ai_will_do = {
+ factor = 1
+ } 
+}
+#Focus for 공공 선거자금 지원 제도 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_public_election_funding_system
+icon = GFX_goal_generic_intelligence_exchange
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_election_law_reform } 
+prerequisite = { focus = NF_USA_lobby_regulatory_act } 
+ relative_position_id = NF_USA_lobby_regulatory_act
+ai_will_do = { 
+ factor = 1
+ }
+}
+#--------------------------------------------------------------------
+ #Focus for 정부 지출 축소 - focus ID randomly generated due to title being in non-latin characters
+ focus = {
+ id = NF_USA_government_spending_reduction
+ icon = GFX_focus_generic_self_management
+ x = 4
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_state_government_empowerment } 
+ relative_position_id = NF_USA_state_government_empowerment
+ ai_will_do = { 
+ factor = 1
+ }
+}
+
+#Focus for 공공부문 민영화 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_public_sector_privatize
+icon = GFX_goal_generic_intelligence_exchange
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_government_spending_reduction } 
+ relative_position_id = NF_USA_government_spending_reduction
+ai_will_do = { 
+ factor = 1
+ }
+}
+
+#Focus for 기업규제 완하 - focus ID randomly generated due to title being in non-latin characters
+focus = {
+id = NF_USA_corporate_deregulation
+icon = GFX_focus_renounce_the_treaty_of_trianon
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_public_sector_privatize } 
+ relative_position_id = NF_USA_public_sector_privatize
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 태프트-하틀리법 재확인 - focus ID randomly generated due to title being in non-latin characters
+focus = {
+id = NF_USA_taft_hartley_act_reconfirm
+icon = GFX_focus_renounce_the_treaty_of_trianon
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_public_sector_privatize } 
+ relative_position_id = NF_USA_public_sector_privatize
+ai_will_do = { 
+ factor = 1
+ } 
+}
+
+#Focus for 기업 감세 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_corporate_tax_cut
+icon = GFX_focus_hol_abandon_the_gold_standard
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_corporate_deregulation }
+prerequisite = { focus = NF_USA_taft_hartley_act_reconfirm }
+ relative_position_id = NF_USA_corporate_deregulation
+ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 부유층 소득세 완하 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_income_tax_wealthy_decline
+icon = GFX_focus_hol_abandon_the_gold_standard
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_corporate_tax_cut } 
+ relative_position_id = NF_USA_corporate_tax_cut
+ai_will_do = { 
+ factor = 1
+ }
+}
+#--------------------------------------------------------------------
+#Focus for 전자정부 구축과 대량해고 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_e_government_building_mass_layoffs
+icon = GFX_goal_generic_trade
+x = 7
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_state_government_empowerment } 
+ relative_position_id = NF_USA_state_government_empowerment
+ai_will_do = { 
+ factor = 1
+ } 
+} 
+#Focus for 학교건설 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_construction_school
+icon = GFX_focus_generic_military_academy
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_e_government_building_mass_layoffs } 
+ relative_position_id = NF_USA_e_government_building_mass_layoffs
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 연방준비제도 주도의 경제개혁 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_federal_reserve_led_Economic_Reform
+icon = GFX_focus_generic_industry_3
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_public_sector_privatize } 
+prerequisite = { focus = NF_USA_e_government_building_mass_layoffs } 
+ relative_position_id = NF_USA_e_government_building_mass_layoffs
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 로비 공개법 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_lobby_disclosure_act
+icon = GFX_focus_mex_privatisation
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_corporate_deregulation } 
+prerequisite = { focus = NF_USA_federal_reserve_led_Economic_Reform } 
+ relative_position_id = NF_USA_federal_reserve_led_Economic_Reform
+ai_will_do = { 
+ factor = 1
+ } 
+} 
+#Focus for 슈퍼팩 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_super_pac
+ icon = GFX_focus_usa_reestablish_the_gold_standard
+ x = 0
+ y = 3
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_income_tax_wealthy_decline } 
+ prerequisite = { focus = NF_USA_lobby_disclosure_act } 
+ relative_position_id = NF_USA_lobby_disclosure_act
+ ai_will_do = { 
+ factor = 1
+ }
+} 
+#Focus for 군-업체-로비스트 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_army_company_robist
+ icon = GFX_goal_generic_national_unity
+ x = 0
+ y = 3
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_europe_military_assistance 
+				focus = NF_USA_munitions_factory_support 
+ } 
+ prerequisite = { focus = NF_USA_super_pac } 
+ relative_position_id = NF_USA_super_pac
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 기업진출 정치적 후원 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_political_patronage_business_advancement
+ icon = GFX_goal_generic_intelligence_exchange
+ x = -1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_army_company_robist } 
+ mutually_exclusive = { focus = NF_USA_pmc_army_mission_division } 
+ relative_position_id = NF_USA_army_company_robist
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for PMC 육군임무 분담 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_pmc_army_mission_division
+ icon = GFX_focus_eng_move_to_secure_the_dominions
+ x = 1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_army_company_robist } 
+ mutually_exclusive = { focus = NF_USA_political_patronage_business_advancement } 
+ relative_position_id = NF_USA_army_company_robist
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#--------------------------------------------------------------------
+#Focus for 가족의료법안 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_family_medical_leave_act
+icon = GFX_focus_generic_treaty
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_federal_reserve_led_Economic_Reform } 
+ relative_position_id = NF_USA_federal_reserve_led_Economic_Reform
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 의료보장제도 개혁 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_reformation_medical_security_system
+icon = GFX_focus_generic_treaty
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_family_medical_leave_act } 
+ relative_position_id = NF_USA_family_medical_leave_act
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 공교육 재관리 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_re_management_public_education
+icon = GFX_goal_generic_positive_trade_relations
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_construction_school } 
+prerequisite = { focus = NF_USA_federal_reserve_led_Economic_Reform } 
+ relative_position_id = NF_USA_construction_school
+ai_will_do = { 
+ factor = 1
+ } 
+}
+
+
+#--------------------------------------------------------------------
+#--------------------------------------------------------------------
+#Focus for 네오콘 확산 - focus ID randomly generated due to title being in non-latin characters
+#https://terms.naver.com/entry.nhn?docId=1006182&cid=62122&categoryId=62122&expCategoryId=62122
+ focus = { 
+ id = NF_USA_neocon_expansion
+ icon = GFX_focus_usa_recruit_the_free_corps
+ x = 16
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_state_government_empowerment }
+ relative_position_id = NF_USA_state_government_empowerment
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 연방대법원 정원확장 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_supreme_court_quota_extension
+ icon = GFX_focus_generic_military_academy
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_neocon_expansion } 
+ relative_position_id = NF_USA_neocon_expansion
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 게리멘더링 선거구 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_geimendering_district
+ icon = GFX_focus_usa_voter_registration_act
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_supreme_court_quota_extension } 
+ relative_position_id = NF_USA_supreme_court_quota_extension
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 애국자 법 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_patriot_act
+ icon = GFX_focus_hol_war_on_pacifism
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_geimendering_district } 
+ relative_position_id = NF_USA_geimendering_district
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+
+#--------------------------------------------------------------------
+#Focus for 와그너법 수정 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_wagner_act_modify
+ icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+ x = 6
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_patriot_act } 
+ relative_position_id = NF_USA_patriot_act
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 산업 재건 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_industrial_reconstruction
+ icon = GFX_goal_generic_construct_civ_factory
+ x = 1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_wagner_act_modify } 
+ relative_position_id = NF_USA_wagner_act_modify
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 썬 벨트 투자 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_sun_belt_investment
+ icon = GFX_goal_generic_construction2
+ x = 1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_industrial_reconstruction } 
+ mutually_exclusive = { focus = NF_USA_bible_belt_investment } 
+ relative_position_id = NF_USA_industrial_reconstruction
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 바이블 벨트 투자 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_bible_belt_investment
+ icon = GFX_focus_generic_diplomatic_treaty
+ x = -1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_cultural_war } 
+ prerequisite = { focus = NF_USA_industrial_reconstruction } 
+ mutually_exclusive = { focus = NF_USA_sun_belt_investment } 
+ relative_position_id = NF_USA_industrial_reconstruction
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 공화당내 조사 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_republican_party_investigation
+ icon = GFX_focus_eng_concessions_to_the_trade_unions
+ x = 4
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_patriot_act } 
+ relative_position_id = NF_USA_patriot_act
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 전통적 가치 전파 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_traditional_value_propagation
+ icon = GFX_goal_generic_propaganda
+ x = 1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_wagner_act_modify } 
+ prerequisite = { focus = NF_USA_republican_party_investigation } 
+ relative_position_id = NF_USA_republican_party_investigation
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 문화전쟁 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_cultural_war
+ icon = GFX_focus_usa_honor_the_confederacy
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_traditional_value_propagation } 
+ relative_position_id = NF_USA_traditional_value_propagation
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 주 정부와 정보교류 강화 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_intel_exchange_state_gov_reinforce
+ icon = GFX_focus_generic_self_management
+ x = -1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_republican_party_investigation } 
+ relative_position_id = NF_USA_republican_party_investigation
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 주 방위대 교육 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_state_defense_force_education
+ icon = GFX_focus_secret_rearmament
+ x = 1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_cultural_war } 
+ prerequisite = { focus = NF_USA_intel_exchange_state_gov_reinforce } 
+ relative_position_id = NF_USA_intel_exchange_state_gov_reinforce
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 주 방위군 훈련 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_national_guard_training
+ icon = GFX_goal_generic_allies_build_infantry
+ x = -1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_new_ndaa } 
+ prerequisite = { focus = NF_USA_intel_exchange_state_gov_reinforce } 
+ relative_position_id = NF_USA_intel_exchange_state_gov_reinforce
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 새 국방수권법 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_new_ndaa
+ icon = GFX_focus_generic_little_entente
+ x = -2
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_patriot_act } 
+ relative_position_id = NF_USA_patriot_act
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 미국 우선주의 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_america_first
+ icon = GFX_goal_generic_demand_territory
+ x = 2
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_new_ndaa } 
+ mutually_exclusive = { focus = NF_USA_nato_reorganization }
+ relative_position_id = NF_USA_new_ndaa
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 나토 재조직 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_nato_reorganization
+ icon = GFX_goal_generic_major_alliance
+ x = -2
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_new_ndaa } 
+ mutually_exclusive = { focus = NF_USA_america_first }
+ relative_position_id = NF_USA_new_ndaa
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------------------------
+#Focus for 미국-캐나다 안보회담 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_neocon_can_security_meeting
+ icon = GFX_goal_generic_forceful_treaty
+ x = -1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {	focus = NF_USA_america_first
+ }
+ relative_position_id = NF_USA_america_first
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 네오콘 태평양 전략 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_neocon_pacific_strategy
+ icon = GFX_goal_generic_position_armies
+ x = 0
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_america_first } 
+ relative_position_id = NF_USA_america_first
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 동남아시아 거점 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_southeast_asia_strongholds
+ icon = GFX_goal_generic_position_armies
+ x = 0
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_neocon_pacific_strategy } 
+ relative_position_id = NF_USA_neocon_pacific_strategy
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------
+#Focus for 중남미 대전략 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_expansion_latin_america_grand_strategy
+ icon = GFX_focus_mex_redeem_aztlan
+ x = 2
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_nato_reorganization 
+				focus = NF_USA_america_first
+ } 
+ relative_position_id = NF_USA_nato_reorganization
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 멕시코에 민주주의 전파 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_spread_democracy_MEX
+icon = GFX_focus_mex_jefe_maximo
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_expansion_latin_america_grand_strategy } 
+ relative_position_id = NF_USA_expansion_latin_america_grand_strategy
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+#Focus for 쿠바에 민주주의 전파 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_spread_democracy_CUB
+icon = GFX_goal_generic_position_armies
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_expansion_latin_america_grand_strategy } 
+ relative_position_id = NF_USA_expansion_latin_america_grand_strategy
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 그린란드 미군기지 협상 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_greenland_us_army_base_negotiation
+ icon = GFX_focus_generic_license_production
+ x = 1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_nato_reorganization }
+ relative_position_id = NF_USA_nato_reorganization
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 네오콘 대서양 전략 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_neocon_atlantic_strategy
+ icon = GFX_goal_generic_position_armies
+ x = 0
+ y = 2
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = NF_USA_nato_reorganization }
+ relative_position_id = NF_USA_nato_reorganization
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 북아프리카 거점 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_north_african_stronghold
+ icon = GFX_goal_generic_position_armies
+ x = 0
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_neocon_atlantic_strategy } 
+ relative_position_id = NF_USA_neocon_atlantic_strategy
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+
+
+
+
+#------------------------------------------------------------
+#Focus for 긴밀한 민간교류 지원 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_support_close_civilian_exchanges
+ icon = GFX_focus_generic_little_entente
+ x = 1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_external_influence_Expansion } 
+ relative_position_id = NF_USA_external_influence_Expansion
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 해상권 확보 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_secure_sea_power
+ icon = GFX_focus_generic_little_entente
+ x = 1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_support_close_civilian_exchanges } 
+ relative_position_id = NF_USA_support_close_civilian_exchanges
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 다국적기업 군수품연구 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_multinational_corporate_military_research
+ icon = GFX_focus_generic_little_entente
+ x = 1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_secure_sea_power } 
+ prerequisite = { focus = NF_USA_corporate_deregulation } 
+ relative_position_id = NF_USA_secure_sea_power
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 연합 공중훈련 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_combined_air_training
+ icon = GFX_focus_generic_little_entente
+ x = -1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_support_close_civilian_exchanges } 
+ relative_position_id = NF_USA_support_close_civilian_exchanges
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 장교 교환 훈련 확대 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_officer_exchange_training_expanding
+ icon = GFX_focus_generic_little_entente
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_combined_air_training 
+					focus = NF_USA_secure_sea_power
+				} 
+ relative_position_id = NF_USA_combined_air_training
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 연합 군사훈련 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_joint_military_drill
+ icon = GFX_focus_generic_little_entente
+ x = 1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_officer_exchange_training_expanding }
+ prerequisite = { 	focus = NF_USA_secure_sea_power	}
+ relative_position_id = NF_USA_officer_exchange_training_expanding
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#------------------------------------------------------------
+#Focus for 군수 건설 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_munitions_construction
+ icon = GFX_focus_generic_little_entente
+ x = -1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_external_influence_keep } 
+ relative_position_id = NF_USA_external_influence_keep
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 군산복합체 확장 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_military_industrial_complex
+ icon = GFX_focus_generic_little_entente
+ x = -1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_munitions_construction } 
+ relative_position_id = NF_USA_munitions_construction
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 해군 강화 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_naval_reinforcement
+ icon = GFX_focus_generic_little_entente
+ x = 1
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_munitions_construction } 
+ relative_position_id = NF_USA_munitions_construction
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 해병 강화 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_marine_reinforcement
+ icon = GFX_focus_generic_little_entente
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_naval_reinforcement 
+					focus = NF_USA_military_industrial_complex
+				} 
+ relative_position_id = NF_USA_naval_reinforcement
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 해병대 전략 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_marine_corps_strategy
+ icon = GFX_focus_generic_little_entente
+ x = -1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { 	focus = NF_USA_marine_reinforcement }
+ prerequisite = { 	focus = NF_USA_military_industrial_complex	}
+ relative_position_id = NF_USA_marine_reinforcement
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#------------------------------------------------------------
+#Focus for 전략적 개입 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_strategic_intervention
+ icon = GFX_goal_generic_position_armies
+ x = 1
+ y = 6
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_external_influence_keep } 
+ relative_position_id = NF_USA_external_influence_keep
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#------------------------------------------------------------
+#Focus for 적극적 개입 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_active_intervention
+ icon = GFX_focus_generic_little_entente
+ x = -1
+ y = 6
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = { focus = NF_USA_external_influence_Expansion } 
+ relative_position_id = NF_USA_external_influence_Expansion
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#-------------------------------------------------------
+#Focus for 중동 대전략 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_expansion_middle_east_grand_strategy
+ icon = GFX_goal_generic_position_armies
+ x = -42
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ relative_position_id = NF_USA_active_intervention
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 사막의 폭풍 작전 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_desert_storm_operation
+icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_expansion_middle_east_grand_strategy } 
+ relative_position_id = NF_USA_expansion_middle_east_grand_strategy
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+#Focus for 후세인 축출 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_hussein_ouster
+icon = GFX_focus_mex_arrest_general_cedillo
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_desert_storm_operation } 
+ mutually_exclusive = { focus = NF_USA_hussein_maintenance } 
+ relative_position_id = NF_USA_desert_storm_operation
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+#Focus for 이라크 직접 관리 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_iraq_direct_management
+icon = GFX_focus_eng_move_to_secure_the_dominions
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_hussein_ouster } 
+ relative_position_id = NF_USA_hussein_ouster
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+#Focus for 후세인 유지 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_hussein_maintenance
+icon = GFX_focus_mex_support_general_cedillo
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_desert_storm_operation } 
+ mutually_exclusive = { focus = NF_USA_hussein_ouster } 
+ relative_position_id = NF_USA_desert_storm_operation
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+#Focus for 중동 세력균형 유지 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_middle_east_balance_power_Maintaining
+icon = GFX_focus_chi_mission_to_the_us
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_hussein_maintenance } 
+ relative_position_id = NF_USA_hussein_maintenance
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+#Focus for 아랍연맹 전쟁계획 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_expansion_arab_league_war_plan
+icon = GFX_goal_generic_major_war
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_expansion_middle_east_grand_strategy } 
+ relative_position_id = NF_USA_expansion_middle_east_grand_strategy
+ai_will_do = { 
+ factor = 1
+ }
+ }
+#-------------------------------------------------------------------------
+#Focus for 미국 소련 사회주의회담 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_usa_sov_socialist_conference
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = -18
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				} 
+ prerequisite = {focus = NF_USA_socialist_solidarity
+				}
+ mutually_exclusive = { focus = NF_USA_usa_sov_conference }
+ mutually_exclusive = { focus = NF_USA_sov_military_collision_preparation }
+ mutually_exclusive = { focus = NF_USA_sov_evil_empire }
+ relative_position_id = NF_USA_strategic_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 유럽공동체와 갈등 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_european_community_conflict
+icon = GFX_goal_generic_trade
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_usa_sov_socialist_conference	
+				}
+ relative_position_id = NF_USA_usa_sov_socialist_conference
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 바르샤바 조약국 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_support_warsaw_pact
+icon = GFX_goal_generic_positive_trade_relations
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_communism_european_community_conflict	
+				}
+ relative_position_id = NF_USA_communism_european_community_conflict
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 미국 소련 군사협약 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_sov_military_agreement
+icon = GFX_goal_support_communism
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_communism_support_warsaw_pact	
+				}
+ mutually_exclusive = { focus = NF_USA_prc_sov_relations_wobbling } 
+ mutually_exclusive = { focus = NF_USA_prc_sov_trilateral_meeting } 
+ relative_position_id = NF_USA_communism_support_warsaw_pact
+ 
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#---------------------------------------------------------------
+#Focus for 미국 동유럽 연구교류 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_eastern_europe_research_exchange
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_usa_sov_socialist_conference
+				focus = NF_USA_support_study_abroad_labor_unions
+				}
+ relative_position_id = NF_USA_usa_sov_socialist_conference
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#---------------------------------------------------------------
+#Focus for 미국 베트남 관계 정상화 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_vin_normalization_relation
+icon = GFX_goal_generic_improve_relations
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_usa_sov_socialist_conference
+				focus = NF_USA_usa_sov_conference
+				}
+ relative_position_id = NF_USA_usa_sov_socialist_conference
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 베트남 경제제재 해제 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_vin_lifting_economic_sanction
+icon = GFX_goal_generic_positive_trade_relations
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_communism_vin_normalization_relation
+				}
+ relative_position_id = NF_USA_communism_vin_normalization_relation
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 미국 베트남 군사협약 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_vin_military_agreement
+icon = GFX_goal_generic_military_deal
+x = -1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_communism_sov_military_agreement }
+ prerequisite = {focus = NF_USA_communism_vin_lifting_economic_sanction }
+ relative_position_id = NF_USA_communism_vin_lifting_economic_sanction
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 미국 베트남 경제협약 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communism_vin_economic_agreement
+icon = GFX_goal_generic_intelligence_exchange
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_communism_vin_lifting_economic_sanction
+				}
+ prerequisite = {focus = NF_USA_usa_sov_trade_talk
+				}
+ relative_position_id = NF_USA_communism_vin_lifting_economic_sanction
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#-------------------------------------------------------------------------
+#Focus for 미국 소련 회담 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_usa_sov_conference
+icon = GFX_focus_chi_mission_to_the_us
+x = -4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ mutually_exclusive = { focus = NF_USA_usa_sov_socialist_conference }
+ mutually_exclusive = { focus = NF_USA_sov_military_collision_preparation }
+ mutually_exclusive = { focus = NF_USA_sov_evil_empire }
+ relative_position_id = NF_USA_strategic_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#Focus for 미국 소련 무역회담 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_usa_sov_trade_talk
+icon = GFX_goal_generic_improve_relations
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_usa_sov_conference } 
+ relative_position_id = NF_USA_usa_sov_conference
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 유럽 항구 증설 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_euro_port_extension
+icon = GFX_goal_generic_improve_relations
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_support_industrial_park } 
+prerequisite = { focus = NF_USA_usa_sov_conference } 
+ relative_position_id = NF_USA_usa_sov_conference
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 유럽 공항 증설 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_euro_airport_extension
+icon = GFX_goal_generic_improve_relations
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_euro_port_extension } 
+ relative_position_id = NF_USA_euro_port_extension
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 나토 방공 지상 통제소 강화 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_nato_integrated_air_defense_system_extension
+icon = GFX_goal_generic_improve_relations
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_euro_airport_extension } 
+ relative_position_id = NF_USA_euro_airport_extension
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 소련에 경제개방 요구 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_call_for_economic_openness_sov
+icon = GFX_goal_generic_intelligence_exchange
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_usa_sov_trade_talk } 
+ relative_position_id = NF_USA_usa_sov_trade_talk
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#Focus for 유럽공동체 무역회담 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_ec_us_trade_talk
+icon = GFX_goal_generic_intelligence_exchange
+x = -2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_usa_sov_conference } 
+ relative_position_id = NF_USA_usa_sov_conference
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#Focus for 대서양 공동 연구단지 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_atlantic_joint_research_park
+icon = GFX_focus_research
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_public_university_support } 
+prerequisite = { focus = NF_USA_ec_us_trade_talk } 
+ relative_position_id = NF_USA_ec_us_trade_talk
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 독일 통일 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_german_unification_support
+icon = GFX_goal_generic_national_unity
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_usa_sov_trade_talk } 
+prerequisite = { focus = NF_USA_ec_us_trade_talk } 
+ relative_position_id = NF_USA_ec_us_trade_talk
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#--------------------------------------------------------------------
+#Focus for 동유럽 무역회담 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_eastern_europe_trade_talk
+icon = GFX_goal_generic_intelligence_exchange
+x = -7
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_support_study_abroad_labor_unions 
+				focus = NF_USA_usa_sov_conference 
+} 
+ relative_position_id = NF_USA_usa_sov_conference
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#--------------------------------------------------------------------
+#Focus for 소련 군사적 충돌 대비 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_sov_military_collision_preparation
+icon = GFX_focus_attack_soviet
+x = 8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ mutually_exclusive = { focus = NF_USA_usa_sov_conference }
+ mutually_exclusive = { focus = NF_USA_usa_sov_socialist_conference }
+ mutually_exclusive = { focus = NF_USA_sov_evil_empire }
+ relative_position_id = NF_USA_strategic_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+#Focus for 유럽 보급망 증설 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_europ_supply_chain_extension
+icon = GFX_goal_generic_construct_infrastructure
+x = -2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_joint_military_drill }
+prerequisite = {focus = NF_USA_sov_military_collision_preparation }
+ relative_position_id = NF_USA_sov_military_collision_preparation
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 대서양 해군 합동훈련 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_atlantic_naval_joint_training
+icon = GFX_focus_generic_coastal_fort
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_sov_military_collision_preparation } 
+ relative_position_id = NF_USA_sov_military_collision_preparation
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 폴다 간격 방어선 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_fulda_gap_defence_line
+icon = GFX_goal_generic_construct_military
+x = -2
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_europ_supply_chain_extension }
+prerequisite = {focus = NF_USA_atlantic_naval_joint_training }
+ mutually_exclusive = { focus = NF_USA_rhine_river_defence_line }
+ relative_position_id = NF_USA_atlantic_naval_joint_training
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 라인강 방어선 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_rhine_river_defence_line
+icon = GFX_goal_generic_construct_military
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_atlantic_naval_joint_training }
+ mutually_exclusive = { focus = NF_USA_fulda_gap_defence_line }
+ relative_position_id = NF_USA_atlantic_naval_joint_training
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 전시산업 준비 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_war_industry_preparation
+icon = GFX_focus_generic_combined_arms
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_atlantic_naval_joint_training } 
+ relative_position_id = NF_USA_atlantic_naval_joint_training
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 유럽 군사 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_europe_military_assistance
+icon = GFX_focus_generic_combined_arms
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_sov_military_collision_preparation } 
+ relative_position_id = NF_USA_sov_military_collision_preparation
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 서독 군사 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_wgr_military_assistance
+icon = GFX_focus_ger_bulwark_against_bolshevism
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_atlantic_naval_joint_training } 
+prerequisite = { focus = NF_USA_europe_military_assistance } 
+ relative_position_id = NF_USA_europe_military_assistance
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#--------------------------------------------------------------------
+#Focus for 소련 악의 제국 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_sov_evil_empire
+icon = GFX_focus_attack_soviet
+x = 14
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ prerequisite = { focus = NF_USA_new_ndaa } 
+ mutually_exclusive = { focus = NF_USA_usa_sov_conference }
+ mutually_exclusive = { focus = NF_USA_usa_sov_socialist_conference }
+ mutually_exclusive = { focus = NF_USA_sov_military_collision_preparation }
+ relative_position_id = NF_USA_strategic_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#Focus for 군수공장 지원 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_munitions_factory_support
+ icon = GFX_focus_ger_strike_at_the_source
+ x = -2
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {	focus = NF_USA_sov_evil_empire	 }
+ relative_position_id = NF_USA_sov_evil_empire
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 대서양 무력시위 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_atlantic_armed_protest
+icon = GFX_focus_generic_coastal_fort
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_sov_evil_empire } 
+#prerequisite = { focus = NF_USA_neocon_atlantic_strategy } 
+ relative_position_id = NF_USA_sov_evil_empire
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 스칸디나비아 개입 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_scandinavian_intervention
+icon = GFX_focus_generic_coastal_fort
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_atlantic_armed_protest } 
+ relative_position_id = NF_USA_atlantic_armed_protest
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 소련 선제 공격 - focus ID randomly generated due to title being in non-latin characters
+ focus = { 
+ id = NF_USA_preemptive_attack_sov
+ icon = GFX_focus_ger_strike_at_the_source
+ x = 0
+ y = 3
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {	focus = NF_USA_sov_evil_empire	 }
+ relative_position_id = NF_USA_sov_evil_empire
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#---------------------------------------------------
+#Focus for 소련 금수조치 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_soviet_embargo
+icon = GFX_goal_generic_trade
+x = 6
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_usa_sov_conference 
+				focus = NF_USA_sov_military_collision_preparation
+}
+ relative_position_id = NF_USA_usa_sov_conference
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#Focus for 에이블 아처 실전 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_able_archer_actual_fight
+icon = GFX_goal_generic_occupy_states_coastal
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_soviet_embargo }
+ relative_position_id = NF_USA_soviet_embargo
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 소련과 전쟁 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+ id = NF_USA_war_with_Soviet
+ icon = GFX_focus_ger_great_red_menace
+ x = 0
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_able_archer_actual_fight }
+ relative_position_id = NF_USA_able_archer_actual_fight
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 오스트리아 선제 침공 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+ id = NF_USA_aus_preventive_action
+ icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+ x = -1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_war_with_Soviet 
+ }
+ relative_position_id = NF_USA_war_with_Soviet
+ ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 스웨덴에 참전 요청 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+ id = NF_USA_invite_sweden_join_war
+ icon = GFX_goal_generic_military_deal
+ x = 1
+ y = 1
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_war_with_Soviet 
+ }
+ relative_position_id = NF_USA_war_with_Soviet
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 붉은 새벽 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+ id = NF_USA_red_dawn
+ icon = GFX_focus_ger_bulwark_against_bolshevism
+ x = 0
+ y = 2
+ cost = 10
+ available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_war_with_Soviet }
+ relative_position_id = NF_USA_war_with_Soviet
+ ai_will_do = { 
+ factor = 1
+ } 
+}
+#---------------------------------------------------
+#Focus for 한국 6월항쟁 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = {
+id = NF_USA_kor_june_struggle_support
+icon = GFX_goal_support_democracy
+x = -38
+y = 1
+cost = 10
+available_if_capitulated = yes
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ mutually_exclusive = { focus = NF_USA_kor_june_struggle_sideline } 
+ relative_position_id = NF_USA_active_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+
+}
+#Focus for 한국 6월항쟁 방관 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_kor_june_struggle_sideline
+icon = GFX_focus_CZE_german_puppet
+x = -36
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ mutually_exclusive = { focus = NF_USA_kor_june_struggle_support } 
+ relative_position_id = NF_USA_active_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 미국 한국 긴장 완하 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_kor_relaxes_tension
+icon = GFX_goal_generic_positive_trade_relations
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_kor_june_struggle_support 
+				focus = NF_USA_kor_june_struggle_sideline
+				}
+ relative_position_id = NF_USA_kor_june_struggle_support
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 한국 군사지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_kor_military_assistance
+icon = GFX_goal_generic_military_sphere
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_kor_relaxes_tension 
+				}
+ relative_position_id = NF_USA_kor_relaxes_tension
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 미국-한국 아태평양 파트너 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_south_korean_pacific_partnership_reinforcement
+icon = GFX_focus_generic_treaty
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_kor_relaxes_tension 
+				}
+ mutually_exclusive = { focus = NF_USA_pacific_triangle_military_exchange } 
+ relative_position_id = NF_USA_kor_relaxes_tension
+ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 한국 해군 확장 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_korea_navy_expansion_support
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_south_korean_pacific_partnership_reinforcement }
+ relative_position_id = NF_USA_south_korean_pacific_partnership_reinforcement
+ai_will_do = { 
+ factor = 1
+ }
+}
+#---------------------------------------------------
+#Focus for 일본 자동차 통상압력
+focus = { 
+id = NF_USA_jap_car_trade_pressure
+icon = GFX_goal_generic_trade
+x = 13
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 일본 통신 통상압력
+focus = { 
+id = NF_USA_jap_networking_business_trade_pressure
+icon = GFX_goal_generic_trade
+x = 15
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+} 
+#Focus for 일본 반도체 통상압력
+focus = { 
+id = NF_USA_jap_semiconductor_trade_pressure
+icon = GFX_goal_generic_trade
+x = 17
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 일본에 시장개방 요구
+focus = { 
+id = NF_USA_japan_calls_open_market
+icon = GFX_focus_jap_pacific_guardian
+x = 2
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_jap_car_trade_pressure }
+prerequisite = {focus = NF_USA_jap_networking_business_trade_pressure }
+prerequisite = {focus = NF_USA_jap_semiconductor_trade_pressure }
+
+prerequisite = {focus = NF_USA_state_government_empowerment 
+				focus = NF_USA_federal_gov_empowerment 
+}
+ relative_position_id = NF_USA_jap_car_trade_pressure
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 자동차 회사 육성
+focus = { 
+id = NF_USA_motor_company_incubation
+icon = GFX_goal_generic_army_motorized
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_jap_car_trade_pressure
+				}
+ relative_position_id = NF_USA_jap_car_trade_pressure
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 제조업 육성
+focus = { 
+id = NF_USA_manufacturing_industry_promotion
+icon = GFX_goal_generic_production
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_motor_company_incubation	}
+prerequisite = {focus = NF_USA_japan_calls_open_market	}
+ relative_position_id = NF_USA_motor_company_incubation
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 러스트벨트 재건
+focus = { 
+id = NF_USA_reconstruction_rust_belt
+icon = GFX_goal_generic_production
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_manufacturing_industry_promotion	}
+ relative_position_id = NF_USA_manufacturing_industry_promotion
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 첨단산업 육성
+focus = { 
+id = NF_USA_high_tech_industries_incubation
+icon = GFX_goal_generic_army_motorized
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_jap_semiconductor_trade_pressure
+				}
+ relative_position_id = NF_USA_jap_semiconductor_trade_pressure
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for IT산업 육성
+focus = { 
+id = NF_USA_it_industry_incubation
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_high_tech_industries_incubation	}
+prerequisite = {focus = NF_USA_japan_calls_open_market	}
+ relative_position_id = NF_USA_high_tech_industries_incubation
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 흐르는 투자금
+#focus = { 
+#id = NF_USA_flowing_investment
+#icon = GFX_goal_tfv_generic_tech_sharing
+#x = 1
+#y = 2
+#cost = 10
+#available_if_capitulated = yes 
+#prerequisite = {focus = NF_USA_high_tech_industries_incubation	}
+#prerequisite = {focus = NF_USA_japan_calls_open_market	}
+# relative_position_id = NF_USA_high_tech_industries_incubation
+#ai_will_do = { 
+# factor = 1
+# } 
+#}
+#Focus for 썬벨트의 팽창
+focus = { 
+id = NF_USA_sun_belt_expansion
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_it_industry_incubation	}
+ relative_position_id = NF_USA_it_industry_incubation
+ai_will_do = { 
+ factor = 1
+ } 
+}
+
+#Focus for 일본-소련밀거래 차단 - CNC 기기
+focus = { 
+id = NF_USA_jap_Sov_illegal_trade_cut_off
+icon = GFX_goal_generic_trade
+x = 0
+y = 6
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ mutually_exclusive = { focus = NF_USA_kor_june_struggle_sideline } 
+ relative_position_id = NF_USA_japan_calls_open_market
+ai_will_do = { 
+ factor = 1
+ } 
+
+}
+#Focus for 미국 일본 긴장 완하 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_jap_relaxes_tension
+icon = GFX_goal_generic_positive_trade_relations
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_jap_Sov_illegal_trade_cut_off }
+prerequisite = {focus = NF_USA_japan_calls_open_market	}
+ mutually_exclusive = { focus = NF_USA_trade_pressure_on_japan } 
+ relative_position_id = NF_USA_jap_Sov_illegal_trade_cut_off
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 일본에 무역압력 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_trade_pressure_on_japan
+icon = GFX_goal_generic_trade
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_jap_Sov_illegal_trade_cut_off }
+prerequisite = {focus = NF_USA_japan_calls_open_market	}
+ mutually_exclusive = { focus = NF_USA_jap_relaxes_tension } 
+ relative_position_id = NF_USA_jap_Sov_illegal_trade_cut_off
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 아태평양 삼각 군사 교류 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_pacific_triangle_military_exchange
+icon = GFX_goal_generic_forceful_treaty
+x = -1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_trade_pressure_on_japan 
+				focus = NF_USA_jap_relaxes_tension
+				}
+ mutually_exclusive = { focus = NF_USA_south_korean_pacific_partnership_reinforcement } 
+ relative_position_id = NF_USA_jap_relaxes_tension
+ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 아태평양 임무분담 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_pacific_mission_division_support
+icon = GFX_goal_generic_military_sphere
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_pacific_triangle_military_exchange 
+				} 
+ relative_position_id = NF_USA_pacific_triangle_military_exchange
+ai_will_do = { 
+ factor = 1
+ }
+}
+#Focus for 주일미군 준비태세 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_us_forces_japan_preparedness
+icon = GFX_focus_AST_war_japan
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_trade_pressure_on_japan 
+				focus = NF_USA_jap_relaxes_tension
+				}
+ relative_position_id = NF_USA_trade_pressure_on_japan
+ai_will_do = { 
+ factor = 1
+ }
+}
+#-------------------------------------------------
+#Focus for 대만문제 계획적 모호성 정책
+focus = { 
+id = NF_USA_taiwan_question_policy_deliberate_ambiguity
+icon = GFX_focus_chi_proclaim_rival_government
+x = -29
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+ mutually_exclusive = { focus = NF_USA_taiwan_question_prc_support } 
+ relative_position_id = NF_USA_active_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 천안문 학살 비난
+focus = { 
+id = NF_USA_tiananmen_square_massacre_criticism
+icon = GFX_focus_CZE_german_puppet
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_taiwan_question_prc_support 
+				focus = NF_USA_taiwan_question_policy_deliberate_ambiguity
+				}
+ relative_position_id = NF_USA_taiwan_question_policy_deliberate_ambiguity
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 대만문제 중국에 긍정
+focus = { 
+id = NF_USA_taiwan_question_prc_support
+icon = GFX_focus_prc_proclaim_the_peoples_republic
+x = -27
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ prerequisite = {focus = NF_USA_active_intervention	
+				focus = NF_USA_strategic_intervention
+				}
+prerequisite = {focus = NF_USA_socialist_solidarity 
+				}
+ mutually_exclusive = { focus = NF_USA_taiwan_question_policy_deliberate_ambiguity } 
+ relative_position_id = NF_USA_active_intervention
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 대만문제 대만 지원
+focus = { 
+id = NF_USA_taiwan_question_chi_support
+icon = GFX_focus_chi_cooperation_with_the_nationalists
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_tiananmen_square_massacre_criticism
+				}
+ mutually_exclusive = { focus = NF_USA_limited_chinese_sanctions } 
+ relative_position_id = NF_USA_tiananmen_square_massacre_criticism
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 대만 보증법
+focus = { 
+id = NF_USA_taiwan_assurance_act
+icon = GFX_focus_generic_china1
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_taiwan_question_chi_support 	}
+ relative_position_id = NF_USA_taiwan_question_chi_support
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 대만에 무기공여
+focus = { 
+id = NF_USA_taiwan_weapons_contribution
+icon = GFX_focus_generic_license_production
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_taiwan_question_chi_support } 
+prerequisite = {focus = NF_USA_taiwan_question_policy_deliberate_ambiguity }
+ relative_position_id = NF_USA_taiwan_question_chi_support
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 제한적인 중국 제재
+focus = { 
+id = NF_USA_limited_chinese_sanctions
+icon = GFX_focus_eng_concessions_to_the_trade_unions
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_tiananmen_square_massacre_criticism
+				}
+ mutually_exclusive = { focus = NF_USA_taiwan_question_chi_support } 
+ relative_position_id = NF_USA_tiananmen_square_massacre_criticism
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 중공 경제 실속 챙기기
+focus = { 
+id = NF_USA_prc_economic_substance
+icon = GFX_focus_mex_privatisation
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_limited_chinese_sanctions
+				}
+ relative_position_id = NF_USA_limited_chinese_sanctions
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 중소관계 흔들기
+focus = { 
+id = NF_USA_prc_sov_relations_wobbling
+icon = GFX_focus_chi_one_china_policy
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_limited_chinese_sanctions
+				}
+prerequisite = {focus = NF_USA_taiwan_question_prc_support
+				}
+ mutually_exclusive = { focus = NF_USA_prc_sov_trilateral_meeting } 
+ mutually_exclusive = { focus = NF_USA_communism_sov_military_agreement } 
+ relative_position_id = NF_USA_limited_chinese_sanctions
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 미국 중국 공산동맹
+focus = { 
+id = NF_USA_communism_prc_military_convention
+icon = GFX_focus_prc_proclaim_the_peoples_republic
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_prc_sov_relations_wobbling
+				}
+ mutually_exclusive = { focus = NF_USA_prc_hegemonic_competition } 
+ relative_position_id = NF_USA_prc_sov_relations_wobbling
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 미국 중국 공산동맹
+focus = { 
+id = NF_USA_prc_sov_attack
+icon = GFX_focus_attack_soviet
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_communism_prc_military_convention
+				}
+ relative_position_id = NF_USA_communism_prc_military_convention
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 삼국 공산 회담
+focus = { 
+id = NF_USA_prc_sov_trilateral_meeting
+icon = GFX_goal_tripartite_pact
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_taiwan_question_prc_support
+				}
+prerequisite = {#focus = NF_USA_socialist_solidarity
+				#focus = NF_USA_independent_socialist_world
+				}
+ prerequisite = {focus = NF_USA_usa_sov_socialist_conference
+				}
+ mutually_exclusive = { focus = NF_USA_prc_sov_relations_wobbling } 
+ mutually_exclusive = { focus = NF_USA_communism_sov_military_agreement } 
+ relative_position_id = NF_USA_limited_chinese_sanctions
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#---------------------------------------------------------
+#Focus for 동북아시아 공격
+focus = { 
+id = NF_USA_socialism_northeast_asia_attack
+icon = GFX_goal_generic_war_with_comintern
+x = -1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_prc_sov_trilateral_meeting
+				focus = NF_USA_communism_sov_military_agreement
+				focus = NF_USA_communism_prc_military_convention
+				}
+ relative_position_id = NF_USA_prc_sov_trilateral_meeting
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 오스트레일리아 공격
+focus = { 
+id = NF_USA_socialism_australia_attack
+icon = GFX_focus_attack_australia
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_prc_sov_trilateral_meeting
+				focus = NF_USA_communism_sov_military_agreement
+				focus = NF_USA_communism_prc_military_convention
+				}
+ relative_position_id = NF_USA_prc_sov_trilateral_meeting
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 유럽 공격
+focus = { 
+id = NF_USA_socialism_europe_attack
+icon = GFX_focus_usa_focus_on_europe
+x = 3
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_prc_sov_trilateral_meeting
+				focus = NF_USA_communism_sov_military_agreement
+				focus = NF_USA_communism_prc_military_convention
+				}
+ relative_position_id = NF_USA_prc_sov_trilateral_meeting
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#---------------------------------------------------------
+#Focus for 미중 패권경쟁
+focus = { 
+id = NF_USA_prc_hegemonic_competition
+icon = GFX_focus_usa_focus_on_asia
+x = 0
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_taiwan_question_chi_support
+				focus = NF_USA_limited_chinese_sanctions
+				}
+ mutually_exclusive = { focus = NF_USA_communism_prc_military_convention } 
+ relative_position_id = NF_USA_tiananmen_square_massacre_criticism
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 앵커리지 기지
+focus = { 
+id = NF_USA_prc_anchorage_military_base
+icon = GFX_focus_usa_focus_on_asia
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_prc_hegemonic_competition }
+ relative_position_id = NF_USA_prc_hegemonic_competition
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 앵커리지 작전
+focus = { 
+id = NF_USA_prc_operation_anchorage
+icon = GFX_focus_usa_focus_on_asia
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_prc_anchorage_military_base }
+ relative_position_id = NF_USA_prc_anchorage_military_base
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 아태평양-호주 방어선
+focus = { 
+id = NF_USA_pacific_australian_defense_line
+icon = GFX_goal_generic_military_sphere
+x = -7
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = {focus = NF_USA_prc_hegemonic_competition	}
+prerequisite = {focus = NF_USA_south_korean_pacific_partnership_reinforcement
+				focus = NF_USA_pacific_triangle_military_exchange
+				}
+ relative_position_id = NF_USA_prc_hegemonic_competition
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#-------------------------------------------------
+#Focus for 선거법 개혁 - focus ID randomly generated due to title being in non-latin characters
+# 지방정부에서 중앙정부로 선거관리를 위임
+focus = { 
+id = NF_USA_election_law_reform
+icon = GFX_focus_generic_military_academy
+x = -10
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_federal_gov_empowerment } 
+relative_position_id = NF_USA_federal_gov_empowerment
+ai_will_do = { 
+ factor = 1
+ }
+}
+
+#Focus for 토론회 참가조건 완하 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_debate_conditions_participation_down
+icon = GFX_focus_generic_military_academy
+x = -1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_election_law_reform } 
+relative_position_id = NF_USA_election_law_reform
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#Focus for 선거인단 폐지 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_electoral_college_abolition
+icon = GFX_focus_generic_treaty
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_debate_conditions_participation_down } 
+prerequisite = { focus = NF_USA_public_election_funding_system } 
+mutually_exclusive = { focus = NF_USA_electoral_college_proportion } 
+relative_position_id = NF_USA_debate_conditions_participation_down
+ai_will_do = { 
+ factor = 1
+ }
+} 
+#Focus for 선거인단 비례제 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_electoral_college_proportion
+icon = GFX_goal_generic_improve_relations
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_debate_conditions_participation_down } 
+prerequisite = { focus = NF_USA_public_election_funding_system } 
+mutually_exclusive = { focus = NF_USA_electoral_college_abolition } 
+relative_position_id = NF_USA_debate_conditions_participation_down
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#Focus for 연방정부 단합 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_federal_government_unity
+icon = GFX_goal_generic_national_unity
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_electoral_college_abolition 
+				focus = NF_USA_electoral_college_proportion
+} 
+relative_position_id = NF_USA_electoral_college_abolition
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+
+#Focus for 통일된 공화국 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_united_republic
+icon = GFX_focus_usa_guarantee_the_american_dream
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_federal_government_unity } 
+prerequisite = { focus = NF_USA_police_administrative_power_reinforcement } 
+relative_position_id = NF_USA_federal_government_unity
+ai_will_do = { 
+ factor = 1
+ } 
+ } 
+#--------------------------------------------------
+#Focus for 노조 대표법 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_labor_union_representation_law
+icon = GFX_focus_usa_union_representation_act
+x = -5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_election_law_reform } 
+relative_position_id = NF_USA_election_law_reform
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+#Focus for 미국 공산당 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_communist_party_usa
+icon = GFX_focus_generic_join_comintern
+x = -2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_labor_union_representation_law } 
+mutually_exclusive = { focus = NF_USA_democratic_socialists_america } 
+mutually_exclusive = { focus = NF_USA_social_democrats_usa } 
+relative_position_id = NF_USA_labor_union_representation_law
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+#Focus for 민주사회주의 미국 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_democratic_socialists_america
+icon = GFX_goal_tripartite_pact
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_labor_union_representation_law } 
+mutually_exclusive = { focus = NF_USA_communist_party_usa } 
+mutually_exclusive = { focus = NF_USA_social_democrats_usa } 
+relative_position_id = NF_USA_labor_union_representation_law
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 사회민주주의 미국 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_social_democrats_usa
+icon = GFX_goal_generic_major_alliance
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_labor_union_representation_law } 
+mutually_exclusive = { focus = NF_USA_communist_party_usa } 
+mutually_exclusive = { focus = NF_USA_democratic_socialists_america } 
+relative_position_id = NF_USA_labor_union_representation_law
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#--------------------------------------------------
+#Focus for 사회주의 연대 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_socialist_solidarity
+icon = GFX_goal_tripartite_pact
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_communist_party_usa 
+				focus = NF_USA_democratic_socialists_america
+} 
+mutually_exclusive = { focus = NF_USA_independent_socialist_world } 
+relative_position_id = NF_USA_communist_party_usa
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 독자적 사회주의 세계 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_independent_socialist_world
+icon = GFX_goal_generic_soviet_construction
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_communist_party_usa 
+				focus = NF_USA_democratic_socialists_america
+} 
+mutually_exclusive = { focus = NF_USA_socialist_solidarity } 
+relative_position_id = NF_USA_communist_party_usa
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 아메리카 사회주의 전파 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_america_socialist_propagation
+icon = GFX_goal_generic_war_with_comintern
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_independent_socialist_world } 
+mutually_exclusive = { focus = NF_USA_walk_with_existing_world } 
+relative_position_id = NF_USA_independent_socialist_world
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 현재세계와 함께 걷다 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_walk_with_existing_world
+icon = GFX_goal_tripartite_pact
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_independent_socialist_world } 
+mutually_exclusive = { focus = NF_USA_america_socialist_propagation } 
+relative_position_id = NF_USA_independent_socialist_world
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 바다 넘어 전진 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_march_over_the_sea
+icon = GFX_focus_ger_great_red_menace
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_america_socialist_propagation } 
+relative_position_id = NF_USA_america_socialist_propagation
+ai_will_do = { 
+ factor = 1
+ } 
+}
+#Focus for 노조 유학 지원 - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = NF_USA_support_study_abroad_labor_unions
+icon = GFX_focus_generic_military_academy
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = NF_USA_social_democrats_usa 
+				focus = NF_USA_walk_with_existing_world 
+} 
+relative_position_id = NF_USA_walk_with_existing_world
+ai_will_do = { 
+ factor = 1
+ } 
+}
+
+
+
+
+
+#-------------------------------------------
+}

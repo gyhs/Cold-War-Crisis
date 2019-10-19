@@ -1,0 +1,69 @@
+﻿capital = 202 #Kiev
+
+oob = "UKR_1987"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+}
+
+set_politics = {}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Kost Levytsky"
+	desc = ""
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Nikita Sergeyevich Khrushchev"
+	desc = ""
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_4.dds"
+	expire = "1953.3.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Stepan Bandera"
+	desc = ""
+	picture = "gfx/leaders/SOV/POLITICS_Soviet_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+#create_country_leader = {
+#	name = ""
+#	desc = ""
+#	picture = ""
+#	expire = "1953.3.1"
+#	ideology = oligarchism
+#	traits = {
+#		
+#	}
+#}
+
+
+

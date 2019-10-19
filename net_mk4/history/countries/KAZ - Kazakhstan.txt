@@ -1,0 +1,52 @@
+﻿capital = 586 #Almaty
+
+oob = "KAZ_1987"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+}
+set_politics = {
+	
+	ruling_party = market_liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Nikolay Aleksandrovich Skvortsov"
+	desc = ""
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ilyas Zhansugurov"
+	desc = ""
+	picture = "gfx/leaders/asia/POLITICS_Asia_Generic_democracy.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+
+
+

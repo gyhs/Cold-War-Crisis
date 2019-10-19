@@ -1,0 +1,2501 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "차량화소총사단"
+	division_names_group = SOV_MOT_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_anti_air_brigade = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "전차사단"
+	division_names_group = SOV_ARM_02
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_sp_anti_air_brigade = { x = 2 y = 3 }
+		
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		mechanized = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "공수사단"
+	division_names_group = SOV_PAR_01
+
+	regiments = {
+		airborne_ifv = { x = 0 y = 0 }
+		airborne_ifv = { x = 0 y = 1 }
+		airborne_ifv = { x = 0 y = 2 }
+		airborne_ifv = { x = 0 y = 3 }
+		airborne_ifv = { x = 1 y = 0 }
+		airborne_ifv = { x = 1 y = 1 }
+		airborne_ifv = { x = 1 y = 2 }
+		airborne_ifv = { x = 1 y = 3 }
+		airborne_ifv = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "해군보병대여단"
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		amphibious_mechanized = { x = 0 y = 0 }
+		amphibious_mechanized = { x = 0 y = 1 }
+		amphibious_mechanized = { x = 0 y = 2 }
+		amphibious_mechanized = { x = 0 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "해안경비대"
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+	}
+}
+
+### Note: OOB abstracts away the following:
+#	Marine Brigade (3x marine bn, engineers), 2 Brigades: Leningrad, Sevastopol
+
+##### OOB #####
+units = {		
+	#### 바르샤바
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 3522
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3522
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3522
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3522
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3522
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3522
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3522
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3522
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	## 소련 본토
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6380
+		division_template = "공수사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 56
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 58
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 67
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3522
+		division_template = "해군보병대여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3522
+		division_template = "해군보병대여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3522
+		division_template = "해군보병대여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3522
+		division_template = "해군보병대여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3522
+		division_template = "해군보병대여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3522
+		division_template = "해군보병대여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3522
+		division_template = "해군보병대여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3522
+		division_template = "해안경비대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3522
+		division_template = "해안경비대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3522
+		division_template = "해안경비대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3522
+		division_template = "해안경비대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3522
+		division_template = "해안경비대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3522
+		division_template = "해안경비대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3522
+		division_template = "해안경비대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	## 중앙 아시아
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 83
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 84
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 85
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 86
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 87
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 88
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 89
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 90
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 91
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 92
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 93
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 94
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 95
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 96
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 97
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 98
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 99
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location = 6380
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 6380
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	## 몽골
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 108
+		}
+		location = 4801
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location = 4801
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location = 4801
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 111
+		}
+		location = 4801
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 112
+		}
+		location = 4801
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	## 중국
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 113
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 114
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 115
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 116
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 117
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 118
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 119
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 120
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 121
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 122
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 123
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 124
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 125
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 126
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 127
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 128
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 129
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 130
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 131
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 132
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 133
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 134
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 135
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 136
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 137
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 138
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 139
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 140
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 141
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 142
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 143
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 144
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 145
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 146
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 147
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 148
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 149
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 150
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 151
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 152
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 153
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 154
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 155
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 156
+		}
+		location = 7725
+		division_template = "차량화소총사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 7725
+		division_template = "전차사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	
+	
+}

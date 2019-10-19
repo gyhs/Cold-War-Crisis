@@ -1,0 +1,105 @@
+﻿capital = 126
+
+set_oob = "ENG_1987"
+
+set_research_slots = 4
+
+set_stability = 0.6
+set_war_support = 0.1
+
+# Starting tech
+set_technology = {
+}
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+}
+
+set_variable = { var = eng_gateway_to_europe_influence value = 0 }
+
+add_ideas = {
+	uk_great_depression
+}
+	
+
+set_convoys = 800
+
+# DIPLOMACY
+if = {
+	set_autonomy = {
+		target = HKG
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes ##suspended through duration of war, which is handled via event
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+###
+create_country_leader = {
+	name = "고든 맥레넌"
+	desc = "POLITICS_ENG_Gordon_McLennan_DESC"
+	picture = "POLITICS_ENG_Gordon_McLennan.dds"
+	expire = "2100.3.1"
+	ideology = Marxism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "마거릿 대처"
+	desc = "POLITICS_ENG_Margaret_Thatcher_DESC"
+	picture = "POLITICS_ENG_Margaret_Thatcher.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "앨런 스케드"
+	desc = "POLITICS_ENG_Alan_Sked_DESC"
+	picture = "POLITICS_ENG_Alan_Sked.dds"
+	expire = "2100.3.1"
+	ideology = despotism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "존 틴들"
+	desc = "POLITICS_ENG_John_Tyndall_DESC"
+	picture = "POLITICS_ENG_John_Tyndall.dds"
+	expire = "2100.3.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+### Ship Variants ###

@@ -1,0 +1,5734 @@
+################# Equipment Designer Window layouts: Light Ship Hulls (new format examples) #################
+
+guiTypes = {
+	
+#----------------------------------------------------------------------------------------
+
+	################# Equipment Archetype: ship_hull_heavy_new_format_example #################
+	containerWindowType = {
+		name = "equipment_designer_ship_hull_heavy_carrier_1"
+		# NOTE: to keep aligned with the window "equipment_modules" in equipmentdesignerview.gui
+		position = { x=0 y=0 }
+		size = { width=512 height=260 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+
+		iconType = {
+			name = "equipment_image"
+			spriteType = "GFX_SD_tv_heavy_carrier_1"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			
+			################# MODULE SLOT: Deck Space slot 1 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_1"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				containerWindowType = {
+					name = "ship_armor_carrier_1"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_armor"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_armor_carrier_1@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_armor@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 2 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_2"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 3 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_3"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=6 y=82 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=6 y=82 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=8 y=82 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=8 y=82 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 4 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_4"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 5 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_5"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Engine #################
+			containerWindowType = {
+				name = "fixed_ship_engine_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Fire Control System #################
+			containerWindowType = {
+				name = "fixed_ship_fire_control_system_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_fire_control_system"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_carrier_hull_fire_control"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_fire_control@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_air_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_air_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=85 y=140 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_5_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_4_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_3_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=307 y=126 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=307 y=126 }
+					}
+				}
+				#### MODULE: Airplane Launcher ####
+				containerWindowType = {
+					name = "ship_airplane_launcher"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1"
+						position = { x=150 y=120 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_airplane_launcher@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1@highlight"
+						position = { x=150 y=120 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #2 #################
+			containerWindowType = {
+				name = "mid_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Middle #3 #################
+			containerWindowType = {
+				name = "mid_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=394 y=73 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=394 y=73 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=379 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=379 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=376 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=376 y=144 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=388 y=143 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=388 y=143 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+			}
+		}
+	}
+
+	################# Equipment Archetype: ship_hull_light_new_format_example #################
+	containerWindowType = {
+		name = "equipment_designer_ship_hull_heavy_carrier_2"
+		# NOTE: to keep aligned with the window "equipment_modules" in equipmentdesignerview.gui
+		position = { x=0 y=0 }
+		size = { width=512 height=260 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+
+		iconType = {
+			name = "equipment_image"
+			spriteType = "GFX_SD_tv_heavy_carrier_2"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			
+			################# MODULE SLOT: Deck Space slot 1 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_1"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				containerWindowType = {
+					name = "ship_armor_carrier_1"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_armor"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_armor_carrier_1@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_armor@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 2 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_2"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 3 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_3"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=6 y=82 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=6 y=82 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=8 y=82 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=8 y=82 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 4 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_4"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 5 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_5"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Engine #################
+			containerWindowType = {
+				name = "fixed_ship_engine_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Fire Control System #################
+			containerWindowType = {
+				name = "fixed_ship_fire_control_system_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_fire_control_system"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_carrier_hull_fire_control"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_fire_control@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_air_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_air_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=85 y=140 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_5_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_4_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_3_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=307 y=126 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=307 y=126 }
+					}
+				}
+				#### MODULE: Airplane Launcher ####
+				containerWindowType = {
+					name = "ship_airplane_launcher"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1"
+						position = { x=150 y=120 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_airplane_launcher@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1@highlight"
+						position = { x=150 y=120 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #2 #################
+			containerWindowType = {
+				name = "mid_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Middle #3 #################
+			containerWindowType = {
+				name = "mid_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=394 y=73 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=394 y=73 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=379 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=379 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=376 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=376 y=144 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=388 y=143 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=388 y=143 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+			}
+		}
+	}
+
+	################# Equipment Archetype: ship_hull_light_new_format_example #################
+	containerWindowType = {
+		name = "equipment_designer_ship_hull_heavy_carrier_3"
+		# NOTE: to keep aligned with the window "equipment_modules" in equipmentdesignerview.gui
+		position = { x=0 y=0 }
+		size = { width=512 height=260 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+
+		iconType = {
+			name = "equipment_image"
+			spriteType = "GFX_SD_tv_heavy_carrier_3"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			
+			################# MODULE SLOT: Deck Space slot 1 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_1"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				containerWindowType = {
+					name = "ship_armor_carrier_1"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_armor"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_armor_carrier_1@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_armor@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 2 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_2"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 3 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_3"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=6 y=82 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=6 y=82 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=8 y=82 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=8 y=82 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 4 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_4"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 5 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_5"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Engine #################
+			containerWindowType = {
+				name = "fixed_ship_engine_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Fire Control System #################
+			containerWindowType = {
+				name = "fixed_ship_fire_control_system_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_fire_control_system"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_carrier_hull_fire_control"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_fire_control@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_air_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_air_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=85 y=140 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_5_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_4_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_3_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=307 y=126 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=307 y=126 }
+					}
+				}
+				#### MODULE: Airplane Launcher ####
+				containerWindowType = {
+					name = "ship_airplane_launcher"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1"
+						position = { x=150 y=120 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_airplane_launcher@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1@highlight"
+						position = { x=150 y=120 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #2 #################
+			containerWindowType = {
+				name = "mid_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Middle #3 #################
+			containerWindowType = {
+				name = "mid_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=394 y=73 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=394 y=73 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=379 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=379 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=376 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=376 y=144 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=388 y=143 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=388 y=143 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+			}
+		}
+	}
+
+	################# Equipment Archetype: ship_hull_light_new_format_example #################
+	containerWindowType = {
+		name = "equipment_designer_ship_hull_heavy_carrier_4"
+		# NOTE: to keep aligned with the window "equipment_modules" in equipmentdesignerview.gui
+		position = { x=0 y=0 }
+		size = { width=512 height=260 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+
+		iconType = {
+			name = "equipment_image"
+			spriteType = "GFX_SD_tv_heavy_carrier_4"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			
+			################# MODULE SLOT: Deck Space slot 1 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_1"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				containerWindowType = {
+					name = "ship_armor_carrier_1"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_armor"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_armor_carrier_1@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_armor@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 2 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_2"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 3 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_3"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=6 y=82 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=6 y=82 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=8 y=82 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=8 y=82 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 4 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_4"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 5 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_5"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Engine #################
+			containerWindowType = {
+				name = "fixed_ship_engine_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Fire Control System #################
+			containerWindowType = {
+				name = "fixed_ship_fire_control_system_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_fire_control_system"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_carrier_hull_fire_control"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_fire_control@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_air_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_air_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=85 y=140 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_5_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_4_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_3_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=307 y=126 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=307 y=126 }
+					}
+				}
+				#### MODULE: Airplane Launcher ####
+				containerWindowType = {
+					name = "ship_airplane_launcher"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1"
+						position = { x=150 y=120 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_airplane_launcher@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1@highlight"
+						position = { x=150 y=120 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #2 #################
+			containerWindowType = {
+				name = "mid_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Middle #3 #################
+			containerWindowType = {
+				name = "mid_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=394 y=73 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=394 y=73 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=379 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=379 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=376 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=376 y=144 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=388 y=143 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=388 y=143 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+			}
+		}
+	}
+
+	################# Equipment Archetype: ship_hull_light_new_format_example #################
+	containerWindowType = {
+		name = "equipment_designer_ship_hull_heavy_carrier_5"
+		# NOTE: to keep aligned with the window "equipment_modules" in equipmentdesignerview.gui
+		position = { x=0 y=0 }
+		size = { width=512 height=260 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+
+		iconType = {
+			name = "equipment_image"
+			spriteType = "GFX_SD_tv_heavy_carrier_5"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			
+			################# MODULE SLOT: Deck Space slot 1 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_1"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				containerWindowType = {
+					name = "ship_armor_carrier_1"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_armor"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_armor_carrier_1@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_armor@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 2 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_2"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=80 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=80 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 3 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_3"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=6 y=82 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=6 y=82 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=8 y=82 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=8 y=82 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 4 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_4"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=-3 y=115 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=-3 y=115 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Deck Space slot 5 #################
+			containerWindowType = {
+				name = "fixed_ship_deck_slot_5"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile mr ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2"
+						position = { x=17 y=148 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_2@highlight"
+						position = { x=17 y=148 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Engine #################
+			containerWindowType = {
+				name = "fixed_ship_engine_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_carrier_nuke@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_cruiser@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_carrier_hull_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_engine_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_carrier_hull_engine@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Fire Control System #################
+			containerWindowType = {
+				name = "fixed_ship_fire_control_system_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "ship_fire_control_system"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_carrier_hull_fire_control"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_carrier_hull_fire_control@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Radar/Sonar #################
+			containerWindowType = {
+				name = "fixed_ship_air_radar_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: Radar ####
+				containerWindowType = {
+					name = "ship_air_radar"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_heavy_hull_radar"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_air_radar_heavy@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint_highlight"
+						spriteType = "GFX_SM_heavy_hull_radar@highlight"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_2@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=85 y=140 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=85 y=140 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "rear_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=137 y=54 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=137 y=54 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_5_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=166 y=70 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=166 y=70 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_4_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=297 y=90 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=297 y=90 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #1 #################
+			containerWindowType = {
+				name = "mid_3_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Deck Space ####
+				containerWindowType = {
+					name = "ship_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=337 y=130 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1"
+						position = { x=307 y=126 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_light_deck_space@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_ship_deck_space_1f_1@highlight"
+						position = { x=307 y=126 }
+					}
+				}
+				#### MODULE: Airplane Launcher ####
+				containerWindowType = {
+					name = "ship_airplane_launcher"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1"
+						position = { x=150 y=120 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_airplane_launcher@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_airplane_launcher_1f_1@highlight"
+						position = { x=150 y=120 }
+					}
+				}
+			}
+			
+			################# MODULE SLOT: Custom, Middle #2 #################
+			containerWindowType = {
+				name = "mid_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=384 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=384 y=74 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Middle #3 #################
+			containerWindowType = {
+				name = "mid_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=394 y=74 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=394 y=74 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=394 y=73 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=394 y=73 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=379 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=379 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=376 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=376 y=144 }
+					}
+				}
+			}
+			################# MODULE SLOT: Custom, Front #1 #################
+			containerWindowType = {
+				name = "front_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+				
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_anti_air"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1"
+						position = { x=388 y=143 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_mr@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_mr_1f_1@highlight"
+						position = { x=388 y=143 }
+					}
+				}
+
+				#### MODULE: anti-air missile er ####
+				containerWindowType = {
+					name = "ship_anti_air_missile_er"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1"
+						position = { x=388 y=144 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_anti_air_missile_er@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "highlight"
+						spriteType = "GFX_SM_module_equip_carrier_heavy_anti_air_missile_er_1f_1@highlight"
+						position = { x=388 y=144 }
+					}
+				}
+			}
+		}
+	}
+
+	################# Equipment Archetype, Germany: ship_hull_light_new_format_example #################
+	containerWindowType = {
+		name = "equipment_designer_ship_hull_light_new_format_example_GER"
+		# the rest of the content...
+	}
+	
+	################# Equipment Type: ship_hull_light_new_format_example_1 #################
+	containerWindowType = {
+		name = "ship_hull_light_new_format_example_1"
+		# the rest of the content...
+	}
+	
+	################# Equipment Type, U.K.: ship_hull_light_new_format_example_1 #################
+	containerWindowType = {
+		name = "ship_hull_light_new_format_example_1_ENG"
+		# the rest of the content...
+	}
+}

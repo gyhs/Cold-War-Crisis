@@ -1,0 +1,53 @@
+﻿capital = 594
+
+oob = "GXC_1987"
+
+set_stability = 0.6
+set_war_support = 0.4
+# Starting tech
+set_technology = {
+}
+
+
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = social_conservatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Li Zongren"
+	desc = "POLITICS_LI_ZONGREN_DESC"
+	picture = "gfx/leaders/GXC/POLITICS_Guanxi_Clique_Li_Zongren.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Chen Jitang"
+	POLITICS_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_1.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

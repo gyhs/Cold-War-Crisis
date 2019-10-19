@@ -1,0 +1,1155 @@
+technologies = {
+	
+	##### 잠수함 #####
+	tech_ship_hull_submarine_1 = {
+		enable_equipments = { 
+			ship_hull_submarine_1
+		}
+		enable_equipment_modules = { 
+			sub_engine_1
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_naval_submarin_aip_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_submarin_extra_fuel_tanks_1 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.5
+		start_year = 1945
+		
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_submarine_2 = {
+		enable_equipments = { 
+			ship_hull_submarine_2
+		}
+		enable_equipment_modules = { 
+			sub_engine_2
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_3 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_2
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.5
+		start_year = 1950
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_submarine_3 = {
+		enable_equipments = { 
+			ship_hull_submarine_3
+		}
+		enable_equipment_modules = { 
+			sub_engine_3
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_4 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_3
+			research_cost_coeff = 0.75
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.5
+		start_year = 1955
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_submarine_4 = {
+		enable_equipments = { 
+			ship_hull_submarine_4
+		}
+		enable_equipment_modules = { 
+			sub_engine_4
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_5 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_4
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1960
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_submarine_5 = {
+		enable_equipments = { 
+			ship_hull_submarine_5
+		}
+		enable_equipment_modules = { 
+			sub_engine_5
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_6 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_5
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1970
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_submarine_6 = {
+		enable_equipments = { 
+			ship_hull_submarine_6
+		}
+		enable_equipment_modules = { 
+			sub_engine_6
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_7 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_6
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1970
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 6 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	##### 잠수함 #####
+	tech_ship_hull_cruiser_submarine_1 = {
+		enable_equipments = { 
+			ship_hull_cruiser_submarine_1
+		}
+		enable_equipment_modules = { 
+			sub_engine_heavy_1
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_attack_nuclear_submarine_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruise_missile_nuclear_submarine_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_naval_submarin_aip_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_submarin_extra_fuel_tanks_1 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			experimental_rockets = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.5
+		start_year = 1945
+		
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 11 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruiser_submarine_2 = {
+		enable_equipments = { 
+			ship_hull_cruiser_submarine_2
+		}
+		enable_equipment_modules = { 
+			sub_engine_heavy_2
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_3 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = submarine_2
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.5
+		start_year = 1950
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 11 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruiser_submarine_3 = {
+		enable_equipments = { 
+			ship_hull_cruiser_submarine_3
+		}
+		enable_equipment_modules = { 
+			sub_engine_heavy_3
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_4 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = submarine_3
+			research_cost_coeff = 0.75
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.5
+		start_year = 1955
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 11 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruiser_submarine_4 = {
+		enable_equipments = { 
+			ship_hull_cruiser_submarine_4
+		}
+		enable_equipment_modules = { 
+			sub_engine_heavy_4
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_5 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = submarine_4
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1960
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 11 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruiser_submarine_5 = {
+		enable_equipments = { 
+			ship_hull_cruiser_submarine_5
+		}
+		enable_equipment_modules = { 
+			sub_engine_heavy_5
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_6 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = submarine_5
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1970
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 11 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruiser_submarine_6 = {
+		enable_equipments = { 
+			ship_hull_cruiser_submarine_6
+		}
+		enable_equipment_modules = { 
+			sub_engine_heavy_6
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_submarine_7 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = submarine_6
+			research_cost_coeff = 0.75
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1970
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 11 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	########## 공격형 핵잠수함 #############
+	
+	tech_ship_hull_attack_nuclear_submarine_1 = {
+		enable_equipments = { 
+			ship_hull_attack_nuclear_submarine_1
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_attack_nuclear_submarine_2 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+			experimental_rockets = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1955
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 17 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_attack_nuclear_submarine_2 = {
+		enable_equipments = { 
+			ship_hull_attack_nuclear_submarine_2
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_attack_nuclear_submarine_3 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1960
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 17 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_attack_nuclear_submarine_3 = {
+		enable_equipments = { 
+			ship_hull_attack_nuclear_submarine_3
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_attack_nuclear_submarine_4 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1970
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 17 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_attack_nuclear_submarine_4 = {
+		enable_equipments = { 
+			ship_hull_attack_nuclear_submarine_4
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_attack_nuclear_submarine_5
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1980
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 17 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_attack_nuclear_submarine_5 = {
+		enable_equipments = { 
+			ship_hull_attack_nuclear_submarine_5
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1980
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 17 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	########## 순항미사일 핵잠수함 #############
+	
+	tech_ship_hull_cruise_missile_nuclear_submarine_1 = {
+		enable_equipments = { 
+			ship_hull_cruise_missile_nuclear_submarine_1
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruise_missile_nuclear_submarine_2 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+			experimental_rockets = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1955
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 22 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruise_missile_nuclear_submarine_2 = {
+		enable_equipments = { 
+			ship_hull_cruise_missile_nuclear_submarine_2
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruise_missile_nuclear_submarine_3 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1960
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 22 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruise_missile_nuclear_submarine_3 = {
+		enable_equipments = { 
+			ship_hull_cruise_missile_nuclear_submarine_3
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruise_missile_nuclear_submarine_4 
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1970
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 22 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruise_missile_nuclear_submarine_4 = {
+		enable_equipments = { 
+			ship_hull_cruise_missile_nuclear_submarine_4
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_cruise_missile_nuclear_submarine_5
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1980
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 22 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	tech_ship_hull_cruise_missile_nuclear_submarine_5 = {
+		enable_equipments = { 
+			ship_hull_cruise_missile_nuclear_submarine_5
+		}
+
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.65
+		start_year = 1980
+
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 22 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	##### 잠수함 AIP #####
+	tech_naval_submarin_aip_1 = {
+
+		enable_equipment_modules = { 
+			sub_aip_1
+		}
+		show_equipment_icon = yes
+		
+		path = {
+			leads_to_tech = tech_naval_submarin_aip_2 
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_naval_submarin_aip_2 = {
+
+		enable_equipment_modules = { 
+			sub_aip_2
+		}
+		show_equipment_icon = yes
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		
+		path = {
+			leads_to_tech = tech_naval_submarin_aip_3 
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_naval_submarin_aip_3 = {
+
+		enable_equipment_modules = { 
+			sub_aip_3
+		}
+		show_equipment_icon = yes
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		
+		path = {
+			leads_to_tech = tech_naval_submarin_aip_4 
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_naval_submarin_aip_4 = {
+
+		enable_equipment_modules = { 
+			sub_aip_4
+		}
+		show_equipment_icon = yes
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		
+		path = {
+			leads_to_tech = tech_naval_submarin_aip_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_naval_submarin_aip_5 = {
+
+		enable_equipment_modules = { 
+			sub_aip_5
+		}
+		show_equipment_icon = yes
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		
+		path = {
+			leads_to_tech = tech_naval_submarin_aip_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	##### 잠수함 추가연료 #####
+	tech_submarin_extra_fuel_tanks_1 = {
+
+		enable_equipment_modules = { 
+			sub_extra_fuel_tanks
+		}
+		show_equipment_icon = yes
+		research_speed_factor = 0.02
+		
+		path = {
+			leads_to_tech = naval_submarin_extra_fuel_tanks_2 
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = naval_submarine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+}

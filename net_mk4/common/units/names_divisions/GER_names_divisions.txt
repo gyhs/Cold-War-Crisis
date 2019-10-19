@@ -1,0 +1,1381 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+GER_Inf_01 = 
+{
+	name = "보병 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "제%d 보병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 보병 사단" }
+		2 = { "제%d 보병 사단" }
+		3 = { "제%d 보병 사단" }
+		4 = { "제%d 보병 사단" }
+		5 = { "제%d 보병 사단" }
+		6 = { "제%d 보병 사단" }
+		7 = { "제%d 보병 사단" }
+		8 = { "제%d 보병 사단" }
+		9 = { "제%d 보병 사단" }
+		10 = { "제%d 보병 사단" }
+		11 = { "제%d 보병 사단" }
+		12 = { "제%d 보병 사단" }
+		13 = { "제%d 보병 사단" }
+		14 = { "제%d 보병 사단" }
+		15 = { "제%d 보병 사단" }
+		16 = { "제%d 보병 사단" }
+		17 = { "제%d 보병 사단" }
+		18 = { "제%d 보병 사단" }
+		19 = { "제%d 보병 사단" }
+		20 = { "제%d 보병 사단" }
+		21 = { "제%d 보병 사단" }
+		22 = { "제%d 보병 사단" }
+		23 = { "제%d 보병 사단" }
+		24 = { "제%d 보병 사단" }
+		25 = { "제%d 보병 사단" }
+		26 = { "제%d 보병 사단" }
+		33 = { "제%d 보병 사단" }
+		34 = { "제%d 보병 사단" }
+		27 = { "제%d 보병 사단" }
+		28 = { "제%d 보병 사단" }
+		29 = { "제%d 보병 사단" }
+		30 = { "제%d 보병 사단" }
+		31 = { "제%d 보병 사단" }
+		32 = { "제%d 보병 사단" }
+		35 = { "제%d 보병 사단" }
+		36 = { "제%d 보병 사단" }
+		44 = { "제%d 보병 사단" }
+		45 = { "제%d 보병 사단" }
+		46 = { "제%d 보병 사단" }
+		61 = { "제%d 보병 사단" }
+		50 = { "제%d 보병 사단" }
+		52 = { "제%d 보병 사단" }
+		56 = { "제%d 보병 사단" }
+		57 = { "제%d 보병 사단" }
+		58 = { "제%d 보병 사단" }
+		62 = { "제%d 보병 사단" }
+		68 = { "제%d 보병 사단" }
+		69 = { "제%d 보병 사단" }
+		71 = { "제%d 보병 사단" }
+		73 = { "제%d 보병 사단" }
+		75 = { "제%d 보병 사단" }
+		76 = { "제%d 보병 사단" }
+		78 = { "제%d 보병 사단" }
+		79 = { "제%d 보병 사단" }
+		86 = { "제%d 보병 사단" }
+		87 = { "제%d 보병 사단" }
+		206 = { "제%d 보병 사단" }
+		207 = { "제%d 보병 사단" }
+		208 = { "제%d 보병 사단" }
+		209 = { "제%d 보병 사단" }
+		211 = { "제%d 보병 사단" }
+		212 = { "제%d 보병 사단" }
+		213 = { "제%d 보병 사단" }
+		214 = { "제%d 보병 사단" }
+		215 = { "제%d 보병 사단" }
+		216 = { "제%d 보병 사단" }
+		217 = { "제%d 보병 사단" }
+		218 = { "제%d 보병 사단" }
+		221 = { "제%d 보병 사단" }
+		223 = { "제%d 보병 사단" }
+		225 = { "제%d 보병 사단" }
+		227 = { "제%d 보병 사단" }
+		228 = { "제%d 보병 사단" }
+		231 = { "제%d 보병 사단" }
+		239 = { "제%d 보병 사단" }
+		246 = { "제%d 보병 사단" }
+		251 = { "제%d 보병 사단" }
+		252 = { "제%d 보병 사단" }
+		253 = { "제%d 보병 사단" }
+		254 = { "제%d 보병 사단" }
+		255 = { "제%d 보병 사단" }
+		256 = { "제%d 보병 사단" }
+		257 = { "제%d 보병 사단" }
+		258 = { "제%d 보병 사단" }
+		260 = { "제%d 보병 사단" }
+		262 = { "제%d 보병 사단" }
+		263 = { "제%d 보병 사단" }
+		267 = { "제%d 보병 사단" }
+		268 = { "제%d 보병 사단" }
+		269 = { "제%d 보병 사단" }
+		93 = { "제%d 보병 사단" }
+		94 = { "제%d 보병 사단" }
+		98 = { "제%d 보병 사단" }
+		72 = { "제%d 보병 사단" }
+		95 = { "제%d 보병 사단" }
+		96 = { "제%d 보병 사단" }
+		60 = { "제%d 보병 사단" }
+		163 = { "제%d 보병 사단" }
+		167 = { "제%d 보병 사단" }
+		164 = { "제%d 보병 사단" }
+		196 = { "제%d 보병 사단" }
+		183 = { "제%d 보병 사단" }
+		81 = { "제%d 보병 사단" }
+		82 = { "제%d 보병 사단" }
+		83 = { "제%d 보병 사단" }
+		88 = { "제%d 보병 사단" }
+		162 = { "제%d 보병 사단" }
+		168 = { "제%d 보병 사단" }
+		170 = { "제%d 보병 사단" }
+		181 = { "제%d 보병 사단" }
+		197 = { "제%d 보병 사단" }
+		198 = { "제%d 보병 사단" }
+		169 = { "제%d 보병 사단" }
+		161 = { "제%d 보병 사단" }
+		205 = { "제%d 보병 사단" }
+		297 = { "제%d 보병 사단" }
+		290 = { "제%d 보병 사단" }
+		291 = { "제%d 보병 사단" }
+		292 = { "제%d 보병 사단" }
+		294 = { "제%d 보병 사단" }
+		296 = { "제%d 보병 사단" }
+		298 = { "제%d 보병 사단" }
+		293 = { "제%d 보병 사단" }
+		299 = { "제%d 보병 사단" }
+		295 = { "제%d 보병 사단" }
+		121 = { "제%d 보병 사단" }
+		131 = { "제%d 보병 사단" }
+		132 = { "제%d 보병 사단" }
+		134 = { "제%d 보병 사단" }
+		123 = { "제%d 보병 사단" }
+		122 = { "제%d 보병 사단" }
+		137 = { "제%d 보병 사단" }
+		100 = { "제%d 경보병 사단" }
+		126 = { "제%d 보병 사단" }
+		125 = { "제%d 보병 사단" }
+		129 = { "제%d 보병 사단" }
+		199 = { "제%d 보병 사단" }
+		111 = { "제%d 보병 사단" }
+		302 = { "제%d 보병 사단" }
+		304 = { "제%d 보병 사단" }
+		306 = { "제%d 보병 사단" }
+		319 = { "제%d 보병 사단" }
+		332 = { "제%d 보병 사단" }
+		333 = { "제%d 보병 사단" }
+		340 = { "제%d 보병 사단" }
+		337 = { "제%d 보병 사단" }
+		99 = { "제%d 경보병 사단" }
+		342 = { "제%d 보병 사단" }
+		335 = { "제%d 보병 사단" }
+		106 = { "제%d 보병 사단" }
+		320 = { "제%d 보병 사단" }
+		97 = { "제%d 경보병 사단" }
+		101 = { "제%d 경보병 사단" }
+		110 = { "제%d 보병 사단" }
+		112 = { "제%d 보병 사단" }
+		113 = { "제%d 보병 사단" }
+		102 = { "제%d 보병 사단" }
+		305 = { "제%d 보병 사단" }
+		323 = { "제%d 보병 사단" }
+		336 = { "제%d 보병 사단" }
+		339 = { "제%d 보병 사단" }
+		321 = { "제%d 보병 사단" }
+		718 = { "제%d 보병 사단" }
+		704 = { "제%d 보병 사단" }
+		702 = { "제%d 보병 사단" }
+		711 = { "제%d 보병 사단" }
+		714 = { "제%d 보병 사단" }
+		707 = { "제%d 보병 사단" }
+		708 = { "제%d 보병 사단" }
+		709 = { "제%d 보병 사단" }
+		710 = { "제%d 보병 사단" }
+		713 = { "제%d 보병 사단" }
+		716 = { "제%d 보병 사단" }
+		719 = { "제%d 보병 사단" }
+		715 = { "제%d 보병 사단" }
+		717 = { "제%d 보병 사단" }
+		328 = { "제%d 보병 사단" }
+		329 = { "제%d 보병 사단" }
+		330 = { "제%d 보병 사단" }
+		331 = { "제%d 보병 사단" }
+		416 = { "제%d 보병 사단" }
+		384 = { "제%d 보병 사단" }
+		385 = { "제%d 보병 사단" }
+		383 = { "제%d 보병 사단" }
+		389 = { "제%d 보병 사단" }
+		387 = { "제%d 보병 사단" }
+		370 = { "제%d 보병 사단" }
+		371 = { "제%d 보병 사단" }
+		376 = { "제%d 보병 사단" }
+		377 = { "제%d 보병 사단" }
+		38 = { "제%d 보병 사단" }
+		39 = { "제%d 보병 사단" }
+		65 = { "제%d 보병 사단" }
+		348 = { "제%d 보병 사단" }
+		346 = { "제%d 보병 사단" }
+		344 = { "제%d 보병 사단" }
+		343 = { "제%d 보병 사단" }
+		909 = { "공군 제1 야전사단" }
+		910 = { "공군 제2 야전사단" }
+		911 = { "공군 제3 야전사단" }
+		912 = { "공군 제4 야전사단" }
+		914 = { "공군 제6 야전사단" }
+		913 = { "공군 제5 야전사단" }
+		915 = { "공군 제7 야전사단" }
+		917 = { "공군 제9 야전사단" }
+		919 = { "공군 제11 야전사단" }
+		920 = { "공군 제12 야전사단" }
+		923 = { "공군 제15 야전사단" }
+		347 = { "제%d 보병 사단" }
+		916 = { "공군 제8 야전사단" }
+		326 = { "제%d 보병 사단" }
+		338 = { "제%d 보병 사단" }
+		921 = { "공군 제13 야전사단" }
+		922 = { "공군 제14 야전사단" }
+		334 = { "제%d 보병 사단" }
+		918 = { "공군 제10 야전사단" }
+		924 = { "공군 제16 야전사단" }
+		925 = { "공군 제17 야전사단" }
+		926 = { "공군 제18 야전사단" }
+		929 = { "공군 제21 야전사단" }
+		282 = { "제%d 보병 사단" }
+		355 = { "제%d 보병 사단" }
+		927 = { "공군 제19 야전사단" }
+		928 = { "공군 제20 야전사단" }
+		356 = { "제%d 보병 사단" }
+		264 = { "제%d 보병 사단" }
+		265 = { "제%d 보병 사단" }
+		266 = { "제%d 보병 사단" }
+		274 = { "제%d 보병 사단" }
+		242 = { "제%d 보병 사단" }
+		243 = { "제%d 보병 사단" }
+		244 = { "제%d 보병 사단" }
+		245 = { "제%d 보병 사단" }
+		352 = { "제%d 보병 사단" }
+		353 = { "제%d 보병 사단" }
+		357 = { "제%d 보병 사단" }
+		359 = { "제%d 보병 사단" }
+		362 = { "제%d 보병 사단" }
+		367 = { "제%d 보병 사단" }
+		271 = { "제%d 보병 사단" }
+		272 = { "제%d 보병 사단" }
+		275 = { "제%d 보병 사단" }
+		276 = { "제%d 보병 사단" }
+		277 = { "제%d 보병 사단" }
+		278 = { "제%d 보병 사단" }
+		349 = { "제%d 보병 사단" }
+		361 = { "제%d 보병 사단" }
+		363 = { "제%d 보병 사단" }
+		77 = { "제%d 보병 사단" }
+		89 = { "제%d 보병 사단" }
+		91 = { "제%d 보병 사단" }
+		92 = { "제%d 보병 사단" }
+		47 = { "제%d 보병 사단" }
+		48 = { "제%d 보병 사단" }
+		49 = { "제%d 보병 사단" }
+		84 = { "제%d 보병 사단" }
+		85 = { "제%d 보병 사단" }
+		237 = { "제%d 보병 사단" }
+		59 = { "제%d 보병 사단" }
+		64 = { "제%d 보병 사단" }
+		226 = { "제%d 보병 사단" }
+		232 = { "제%d 보병 사단" }
+		541 = { "제%d 척탄병 사단" }
+		544 = { "제%d 척탄병 사단" }
+		545 = { "제%d 척탄병 사단" }
+		547 = { "제%d 척탄병 사단" }
+		548 = { "제%d 척탄병 사단" }
+		549 = { "제%d 척탄병 사단" }
+		551 = { "제%d 척탄병 사단" }
+		553 = { "제%d 척탄병 사단" }
+		558 = { "제%d 척탄병 사단" }
+		559 = { "제%d 척탄병 사단" }
+		561 = { "제%d 척탄병 사단" }
+		562 = { "제%d 척탄병 사단" }
+		70 = { "제%d 보병 사단" }
+		542 = { "제%d 보병 사단" }
+		563 = { "제%d 척탄병 사단" }
+		148 = { "제%d 보병 사단" }
+		189 = { "제%d 보병 사단" }
+		159 = { "제%d 보병 사단" }
+		176 = { "제%d 보병 사단" }
+		180 = { "제%d 보병 사단" }
+		190 = { "제%d 보병 사단" }
+		286 = { "제%d 보병 사단" }
+		203 = { "제%d 보병 사단" }
+		41 = { "제%d 보병 사단" }
+		281 = { "제%d 보병 사단" }
+		303 = { "보병 사단 '되베리츠'" }
+		309 = { "보병 사단 '베를린'" }
+		947 = { "제1 해군보병 사단" }
+		153 = { "제%d 척탄병 사단" }
+		154 = { "제%d 보병 사단" }
+		155 = { "제%d 보병 사단" }
+		948 = { "제2 해군보병 사단" }
+		324 = { "보병 사단 '함부르크'" }
+		160	= { "제%d 보병 사단" }
+		166 = { "제%d 보병 사단" }
+		949 = { "제3 해군보병 사단" }
+		156 = { "제%d 보병 사단" }
+		903 = { "보병 사단 '포츠담'" }
+		904 = { "보병 사단 '샤른호르스트'" }
+		905 = { "보병 사단 '울리히 폰 후텐'" }
+		901 = { "보병 사단 '프리드리히 루트비히 얀'" }
+		907 = { "보병 사단 '테오도르 쾨르너'" }
+		906 = { "보병 사단 '알베르트 슐라게터'" }
+		930 = { "공군 제1 보충 사단" }
+		900 = { "보병 사단 '페르디난트 폰 쉴'" }
+		902 = { "보병 사단 '귀스트로'" }
+		
+		# divisions are put in the order they were raised, which was NOT consecutive historically due to the vagaries of the German mobilization system
+		# leaving out 250. 보병 사단 (Azul) as the existence of this division depends upon a not guaranteed Francoist victory in Spain, plus can be simulated by expeditionary forces
+		# deleted 369., 373., 392. 보병 사단 (kroatische) for the same reasons as Division Azul.
+		# deleted 162. (Turk.) ID because its existence depends on German occupation of certain areas they may not go in game.
+		# omitted noncombat "shadow divisions" and holding units raised to fill up combat units
+		# ad hoc divisional sized Kampfgruppe such as "Division von Broich" deleted as their temporary existence was highly dependent on unique historical circumstances that are not guaranteed to be replicated in game
+		# deleted Landesschützen, training/holding divisions with a super short life and no combat record, "보병 사단" that were ad hoc collections of fortress/coast defense units in Norway, etc
+		# deleted some 500-series Grenadier Divisions as they were almost immediately converted to Volksgrenadier
+		# deleted 돌격 사단 Rhodos as it was made from a collection of Aegean island garrison troops not guaranteed to exist in game
+		# deleted 999. leichte Afrika 사단 as Germany is not guaranteed to go to Africa
+		# deleted 99. leichte as it was soon converted in to 7. 산악 사단
+		# added 1-3. 해군보병 사단 to the infantry list, as they were ground combat units formed from surplus naval personnel at the end of the war, not "Marines" in the proper sense. 11. and 16. Divisions were deleted as they were most likely camouflage/deception units that never saw combat.
+	}
+}
+
+GER_ALTINF_01 = 
+{
+	name = "후기/대체 보병 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry"  }
+
+	fallback_name = "제%d 국민척탄병 사단"
+
+	link_numbering_with = { GER_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		22 = { "제%d 공중강하 보병 사단" }
+		78 = { "제%d 돌격 사단" }
+		44 = { "제44 제국척탄병 사단 '튜턴 기사단 총장'" }
+		91 = { "제%d 공중강하 보병 사단" }
+		944 = { "공군 제19 돌격 사단" }
+		945 = { "공군 제20 돌격 사단" }
+		560 = { "제%d 국민척탄병 사단" }
+		12 = { "제%d 국민척탄병 사단" }
+		361 = { "제%d 국민척탄병 사단" }
+		18 = { "제%d 국민척탄병 사단" }
+		276 = { "제%d 국민척탄병 사단" }
+		277 = { "제%d 국민척탄병 사단" }
+		326 = { "제%d 국민척탄병 사단" }
+		708 = { "제%d 국민척탄병 사단" }
+		349 = { "제%d 국민척탄병 사단" }
+		183 = { "제%d 국민척탄병 사단" }
+		246 = { "제%d 국민척탄병 사단" }
+		337 = { "제%d 국민척탄병 사단" }
+		340 = { "제%d 국민척탄병 사단" }
+		26 = { "제%d 국민척탄병 사단" }
+		47 = { "제%d 국민척탄병 사단" }
+		212 = { "제%d 국민척탄병 사단" }
+		256 = { "제%d 국민척탄병 사단" }
+		271 = { "제%d 국민척탄병 사단" }
+		272 = { "제%d 국민척탄병 사단" }
+		363 = { "제%d 국민척탄병 사단" }
+		352 = { "제%d 국민척탄병 사단" }
+		62 = { "제%d 국민척탄병 사단" }
+		6 = { "제%d 국민척탄병 사단" }
+		16 = { "제%d 국민척탄병 사단" }
+		19 = { "제%d 국민척탄병 사단" }
+		31 = { "제%d 국민척탄병 사단" }
+		36 = { "제%d 국민척탄병 사단" }
+		61 = { "제%d 국민척탄병 사단" }
+		541 = { "제%d 국민척탄병 사단" }
+		542 = { "제%d 국민척탄병 사단" }
+		544 = { "제%d 국민척탄병 사단" }
+		545 = { "제%d 국민척탄병 사단" }
+		547 = { "제%d 국민척탄병 사단" }
+		548 = { "제%d 국민척탄병 사단" }
+		549 = { "제%d 국민척탄병 사단" }
+		551 = { "제%d 국민척탄병 사단" }
+		553 = { "제%d 국민척탄병 사단" }
+		558 = { "제%d 국민척탄병 사단" }
+		559 = { "제%d 국민척탄병 사단" }
+		561 = { "제%d 국민척탄병 사단" }
+		562 = { "제%d 국민척탄병 사단" }
+		563 = { "제%d 국민척탄병 사단" }
+		9 = { "제%d 국민척탄병 사단" }
+		257 = { "제%d 국민척탄병 사단" }
+		45 = { "제%d 국민척탄병 사단" }
+		79 = { "제%d 국민척탄병 사단" }
+		320 = { "제%d 국민척탄병 사단" }
+		167 = { "제%d 국민척탄병 사단" }
+		462 = { "제%d 국민척탄병 사단" }
+		211 = { "제%d 국민척탄병 사단" }
+		98 = { "제%d 국민척탄병 사단" }
+		46 = { "제%d 국민척탄병 사단" }
+		278 = { "제%d 국민척탄병 사단" }
+		334 = { "제%d 국민척탄병 사단" }
+		347 = { "제%d 국민척탄병 사단" }
+
+		# deleted some 500-series 국민척탄병 사단s because they were renumbered within a month of being formed to match the old numbers of decimated/destroyed 보병 사단 they were earmarked to replace.
+		
+	}
+}
+
+
+GER_LTINF_01 = 
+{
+	name = "경보병 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry"  }
+
+	fallback_name = "제%d 산악 경보병 사단"
+
+	link_numbering_with = { GER_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+	    8 = { "제%d 산악 경보병 사단" }
+		5 = { "제%d 산악 경보병 사단" }
+		28 = { "제%d 산악 경보병 사단" }
+		97 = { "제%d 산악 경보병 사단" }
+		100 = { "제%d 산악 경보병 사단" }
+		101 = { "제%d 산악 경보병 사단" }
+		104 = { "제%d 산악 경보병 사단" }
+		114 = { "제%d 산악 경보병 사단" }
+		117 = { "제%d 산악 경보병 사단" }
+		118 = { "제%d 산악 경보병 사단" }
+		42 = { "제%d 산악 경보병 사단" }
+		
+		# this was a small series of divisions raised/converted with only two regiments, reduced and decentralized heavy weapons and services for operating in rough terrain with bad roads. Not full mountain troops.
+		# some of these were renamed from leichte-Infanterie, some raised from scratch
+		
+	}
+}
+
+GER_MOT_01 = 
+{
+	name = "차량화보병 사단"
+
+	for_countries = { GER }
+
+	can_use = {
+		OR = {
+			has_government = neutrality 
+			has_government = democratic 
+		}
+	}
+
+	division_types = { "motorized"  }
+
+	fallback_name = "제%d 차량화보병 사단"
+
+	link_numbering_with = { GER_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		2 = { "제%d 차량화보병 사단" }
+		13 = { "제%d 차량화보병 사단" }
+		20 = { "제%d 차량화보병 사단" }
+		29 = { "제%d 차량화보병 사단" }
+		16 = { "제%d 차량화보병 사단" }
+		60 = { "제%d 차량화보병 사단" }
+		14 = { "제%d 차량화보병 사단" }
+		3 = { "제%d 차량화보병 사단" }
+		18 = { "제%d 차량화보병 사단" }
+		36 = { "제%d 차량화보병 사단" }
+		10 = { "제%d 차량화보병 사단" }
+		25 = { "제%d 차량화보병 사단" }
+		90 = { "제%d 차량화보병 사단" }
+		932 = { "차량화보병 사단 '그로스도이칠란트'" }
+		164 = { "제%d 차량화보병 사단" }
+		
+		# GD existed before 16.5.42 as a strong regiment, but this list is divisional sized units only so it was put in the raising order after it was upgraded to a full division.
+		# removed 'leichte Afrika' from the names of 90., 164. Divisions as their existence depends on historical events that may not occur in game
+		# surviving units of this type renamed to 기갑척탄병 사단s in 1943
+	}
+}
+
+#Nazi Motorized
+GER_MOT_02 = 
+{
+	name = "차량화보병 사단"
+
+	for_countries = { GER }
+
+	can_use = { has_government = fascism }
+
+	division_types = { "motorized"  }
+
+	fallback_name = "제%d 차량화보병 사단"
+
+	link_numbering_with = { GER_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "SS 전투부대" }
+		2 = { "제%d 차량화보병 사단" }
+		13 = { "제%d 차량화보병 사단" }
+		20 = { "제%d 차량화보병 사단" }
+		29 = { "제%d 차량화보병 사단" }
+		16 = { "제%d 차량화보병 사단" }
+		60 = { "제%d 차량화보병 사단" }
+		14 = { "제%d 차량화보병 사단" }
+		3 = { "제%d 차량화보병 사단" }
+		18 = { "제%d 차량화보병 사단" }
+		36 = { "제%d 차량화보병 사단" }
+		10 = { "제%d 차량화보병 사단" }
+		25 = { "제%d 차량화보병 사단" }
+		90 = { "제%d 차량화보병 사단" }
+		932 = { "차량화보병 사단 '그로스도이칠란트'" }
+		164 = { "제%d 차량화보병 사단" }
+		
+		# GD existed before 16.5.42 as a strong regiment, but this list is divisional sized units only so it was put in the raising order after it was upgraded to a full division.
+		# removed 'leichte Afrika' from the names of 90., 164. Divisions as their existence depends on historical events that may not occur in game
+		# surviving units of this type renamed to 기갑척탄병 사단s in 1943
+	}
+}
+
+GER_MEC_01 = 
+{
+	name = "기갑척탄병 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	fallback_name = "제%d 기갑척탄병 사단"
+
+	link_numbering_with = { GER_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		932 = { "기갑척탄병 사단 '그로스도이칠란트'" }
+		10 = { "제%d 기갑척탄병 사단" }
+		60 = { "기갑척탄병 사단 '펠트헤른할레'" }
+		3 = { "제%d 기갑척탄병 사단" }
+		16 = { "제%d 기갑척탄병 사단" }
+		18 = { "제%d 기갑척탄병 사단" }
+		25 = { "제%d 기갑척탄병 사단" }
+		29 = { "제%d 기갑척탄병 사단" }
+		90 = { "제%d 기갑척탄병 사단" }
+		15 = { "제%d 기갑척탄병 사단" }
+		20 = { "제%d 기갑척탄병 사단" }
+		931 = { "기갑척탄병 사단 '브란덴부르크'" }
+		933 = { "제2 강하 기갑척탄병 사단 '헤르만 괴링'" }
+		936 = { "총통 경호 사단" }
+		935 = { "총통 척탄병 사단" }
+		934 = { "기갑척탄병 사단 '쿠르마르크'" }
+		
+		# put all divisions titled "Panzergrenadier" in this list to avoid confusion, even though some (GD, '브란덴부르크', etc) were full Panzer Divisions in organization.
+		
+	}
+}
+
+GER_Mnt_01 = 
+{
+	name = "산악 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers"  }
+
+	fallback_name = "제%d 산악 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		2 = { "제%d 산악 사단" }
+		3 = { "제%d 산악 사단" }
+		1 = { "제%d 산악 사단" }
+		6 = { "제%d 산악 사단" }
+		4 = { "제%d 산악 사단" }
+		5 = { "제%d 산악 사단" }
+		7 = { "제%d 산악 사단" }
+		188 = { "제%d 산악 사단" }
+		937 = { "제1 공수 경보병 사단" }
+		8 = { "제%d 산악 사단" }
+		
+		# deleted 9. 산악 사단 because it was an ad-hoc grouping built in Lapland around the reinforced GJR 139, and only officially a "division" from one day before the end of the war. There was, interestingly, another ad-hoc 9. GJD formed in the final stage of the war with similarly mixed components. 
+		# deleted 157. GJD which was quickly renamed 8. GJD
+		
+	}
+}
+
+GER_MAR_01 = 
+{
+	name = "해군보병 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "marine"  }
+
+	fallback_name = "제%d 해군보병 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "제%d 해군보병 사단" }
+		2 = { "제%d 해군보병 사단" }
+		3 = { "제%d 해군보병 사단" }
+		4 = { "제%d 해군보병 사단" }
+		5 = { "제%d 해군보병 사단" }
+		6 = { "제%d 돌격 사단 '자오저우'" }
+		
+		# chose to remove the old name list entirely as it refers to late war improvised infantry units built from idle naval personnel, with little in the way of ground combat training. These in no way constitute a naval assault landing unit which is what Marines are, so in the ahistorical event that the player chooses to invest in a proper German Marine Corps, we gave them the name of "Sea Landing Division" to more correctly reflect the role. This frees up the KM 보병 사단 for the normal infantry name list.
+	}
+}
+
+GER_PAR_01 = 
+{
+	name = "공수보병 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper"  }
+
+	fallback_name = "제%d 공수보병 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "제%d 공수보병 사단" }
+		2 = { "제%d 공수보병 사단" }
+		3 = { "제%d 공수보병 사단" }
+		4 = { "제%d 공수보병 사단" }
+		5 = { "제%d 공수보병 사단" }
+		6 = { "제%d 공수보병 사단" }
+		7 = { "제%d 공수보병 사단" }
+		8 = { "제%d 공수보병 사단" }
+		9 = { "제%d 공수보병 사단" }
+		10 = { "제%d 공수보병 사단" }
+		11 = { "제%d 공수보병 사단" }
+		20 = { "제%d 공수보병 사단" }
+		
+		# sadly had to leave out 7. Flieger 사단, the original name of 1. FJD, as it wouldn't be worth the interface clutter to have an alternate name list with one division in it. Put it first in the name list despite formally receiving the 1. FJD designation after 2. Fallschirm 사단 was formed, so at least it gets built first. 
+		# considered making 5th Division and above actually part of the infantry list since historically they had almost no jump trained personnel, but since this would conflict with players who might invest in a larger than historical airborne arm, decided against this.
+		# deleted Fallschirm 사단 Erdmann as it was an unusually large Kampfgruppe raised in response to an operational crisis (Market-Garden), and not a properly planned and raised division. It was soon renamed 7. FJD.
+	}
+}
+
+GER_GAR_01 = 
+{
+	name = "주둔 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry"  }
+
+	fallback_name = "제%d 보안 사단"
+
+	link_numbering_with = { GER_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		539 = { "사단사령부 특전대 z.b.V. 539" }
+		540 = { "사단사령부 특전대 z.b.V. 540" }
+		442 = { "사단사령부 특전대 z.b.V. 442" }
+		431 = { "사단사령부 특전대 z.b.V. 431" }
+		429 = { "사단사령부 특전대 z.b.V. 429" }
+		428 = { "사단사령부 특전대 z.b.V. 428" }
+		430 = { "사단사령부 특전대 z.b.V. 430" }
+		432 = { "사단사령부 특전대 z.b.V. 432" }
+		207 = { "제%d 보안 사단" }
+		213 = { "제%d 보안 사단" }
+		221 = { "제%d 보안 사단" }
+		281 = { "제%d 보안 사단" }
+		285 = { "제%d 보안 사단" }
+		286 = { "제%d 보안 사단" }
+		403 = { "제%d 보안 사단" }
+		444 = { "제%d 보안 사단" }
+		454 = { "제%d 보안 사단" }
+		230 = { "제%d 페스퉁스-보병 사단" } 
+		201 = { "제%d 보안 사단" }
+		203 = { "제%d 보안 사단" }
+		210 = { "제%d 페스퉁스-보병 사단" } 
+		325 = { "제%d 보안 사단" }
+		391 = { "제%d 야전 훈련 사단" }
+		390 = { "제%d 야전 훈련 사단" }
+		381 = { "제%d 야전 훈련 사단" }
+		382 = { "제%d 야전 훈련 사단" }
+		388 = { "제%d 야전 훈련 사단" }
+		154 = { "제%d 예비 사단" }
+		26 = { "174. 예비 사단" }
+		143 = { "제%d 예비 사단" }
+		68 = { "141. 예비 사단" }
+		151 = { "제%d 예비 사단" }
+		189 = { "제%d 예비 사단" }
+		363 = { "147. 예비 사단" }
+		148 = { "제%d 예비 사단" }
+		8 = { "157. 예비 사단" }
+		16 = { "158. 예비 사단" }
+		159 = { "제%d 예비 사단" }
+		48 = { "171. 예비 사단" }
+		42 = { "187. 예비 사단" }
+		49 = { "191. 예비 사단" }
+		70 = { "165. 예비 사단" }
+		47 = { "156. 예비 사단" }
+		182 = { "제%d 예비 사단" }
+		153 = { "제%d 야전 훈련 사단" }
+		173 = { "제%d 예비 사단" }
+		188 = { "제%d 예비 산악 사단" }
+		166 = { "제%d 예비 사단" }
+		160 = { "제%d 예비 사단" }
+		41 = { "제%d 페스퉁스 사단" }
+		133 = { "제%d 페스퉁스 사단" }
+		956 = { "의용 돌격 사단" }
+		52 = { "제%d 보안 사단" }
+		300 = { "사단사령부 특전대 z.b.V. 300" }
+		331 = { "사단사령부 특전대 z.b.V. 331" }
+		140 = { "사단사령부 특전대 z.b.V. 140" }
+		604 = { "사단 특전대 z.b.V. 604" }
+		601 = { "사단 특전대 z.b.V. 601" }
+		602 = { "사단 특전대 z.b.V. 602" }
+		603 = { "사단 특전대 z.b.V. 603" }
+		155 = { "제%d 야전 훈련 사단" }
+		605 = { "사단 특전대 z.b.V. 605" }
+		606 = { "사단 특전대 z.b.V. 606" }
+		607 = { "사단 특전대 z.b.V. 607" }
+		608 = { "사단 특전대 z.b.V. 608" }
+		950 = { "페스퉁스 사단 '단치히'" }
+		951 = { "페스퉁스 사단 '프랑크푸르트/오데르'" }
+		952 = { "페스퉁스 사단 '고텐하펜'" }
+		954 = { "페스퉁스 사단 '슈비네뮌데'" }
+		609 = { "사단 특전대 z.b.V. 609" }
+		610 = { "사단 특전대 z.b.V. 610" }
+		612 = { "사단 특전대 z.b.V. 612" }
+		613 = { "사단 특전대 z.b.V. 613" }
+		615 = { "사단 특전대 z.b.V. 615" }
+		955 = { "사단 특전대 z.b.V. (L)" }
+		616 = { "사단 특전대 z.b.V. 616" }
+		617 = { "사단 특전대 z.b.V. 617" }
+		618 = { "사단 특전대 z.b.V. 618" }
+		402 = { "훈련 사단 402" }
+		404 = { "제%d 보충병 훈련 사단" }
+		464 = { "훈련 사단 464" }
+		158 = { "제%d 야전 훈련 사단" }
+		953 = { "페스퉁스 사단 '슈테틴'" }
+		619 = { "사단 특전대 z.b.V. 619" }
+		
+		# put in a large amount of assorted reserve, replacement, and training units if a meaningful history of antipartisan/frontline service could be attributed to them
+		# included some of the 사단 특전대 z.b.V. ("for special use") that have a recorded service history in occupied territory. Most of these were ad hoc grouping of training/Landesschützen units inside Germany.
+		# gave some reserve units a static name and linked them with a number in the infantry list as they were later upgraded to full infantry/Jäger divisions
+		# deleted some reserve and training units only used as holding depots for recruits, etc.
+		# 153. Reserve Division only went by this name for a few months while forming, so went with 153. 야전 훈련 사단 as this was the name it saw out the majority of its life as.
+		# removed Volksgrenadiers from this list as they were not static defense units, rather late war normal 보병 사단 organized on a 'many weapons - few men' basis. Put them in the Alt Infantry list.
+	}
+}
+
+
+
+GER_Arm_01 = 
+{
+	name = "기갑 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "제%d 기갑 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "제%d 기갑 사단" }
+		2 = { "제%d 기갑 사단" }
+		3 = { "제%d 기갑 사단" }
+		4 = { "제%d 기갑 사단" }
+		5 = { "제%d 기갑 사단" }
+		10 = { "제%d 기갑 사단" }
+		8 = { "제%d 기갑 사단" }
+		6 = { "제%d 기갑 사단" }
+		7 = { "제%d 기갑 사단" }
+		9 = { "제%d 기갑 사단" }
+		11 = { "제%d 기갑 사단" }
+		14 = { "제%d 기갑 사단" }
+		12 = { "제%d 기갑 사단" }
+		13 = { "제%d 기갑 사단" }
+		20 = { "제%d 기갑 사단" }
+		18 = { "제%d 기갑 사단" }
+		15 = { "제%d 기갑 사단" }
+		16 = { "제%d 기갑 사단" }
+		17 = { "제%d 기갑 사단" }
+		19 = { "제%d 기갑 사단" }
+		21 = { "제%d 기갑 사단" }
+		23 = { "제%d 기갑 사단" }
+		22 = { "제%d 기갑 사단" }
+		24 = { "제%d 기갑 사단" }
+		25 = { "제%d 기갑 사단" }
+		26 = { "제%d 기갑 사단" }
+		27 = { "제%d 기갑 사단" }
+		693 = { "공중강습 기갑척탄병 '헤르만 괴링'" }
+		130 = { "경기갑 사단" }
+		116 = { "제%d 기갑 사단" }
+		60 = { "제1 기갑 사단 '펠트헤른할레'" }
+		232 = { "제%d 기갑 사단" }
+		85 = { "기갑 사단 '홀스타인'" }
+		88 = { "기갑 사단 '뮌헤베르크'" }
+		61 = { "제2 기갑 사단 '펠트헤른할레'" }
+		233 = { "기갑 사단 '클라우제비츠'" }
+	
+		# deleted Panzer 사단 'Kurmark' because it is actually just an erroneous name for PzG Div Kurmark in some postwar literature
+		# deleted Panzer 사단 'Kempf' as it was a temporary adhoc grouping of army tanks and SS infantry for the Polish campaign, which was quickly broken up after and absorbed by 10. Panzer 사단
+		# deleted Panzer 사단 Tatra as it was only used as a security/holding unit, and then renamed to 232. Panzer 사단 which did in fact see active combat
+		# deleted Panzer 사단s Jüterbog and Schlesien as they was used as a holding unit and disbanded a month after formation
+		# deleted Norwegen Panzer Division as Norway is not guaranteed to be occupied by Germany in every game, plus it was in reality no more than a brigade in size despite the title.
+		# had to settle on a single name for the HG Panzer Division despite several historical name changes over time
+		# no way to register things like 1. Kavallerie 사단 becoming 24. Panzer, 13. Panzer becoming '펠트헤른할레' 2, etc, without bloating the name list selection and causing obnoxious clutter. The ability to rename is there though, for those who are really devoted.
+		# deleted most of the Reserve-Panzer 사단s because they were holding units for recruits, and quickly disbanded after being used to replenish field units
+
+	}
+}
+
+GER_LTARM_01 = 
+{
+	name = "경기갑 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	fallback_name = "제%d 경기갑 사단"
+	
+	link_numbering_with = { GER_Arm_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+	9 = { "제4 경기갑 사단" }
+	6 = { "제1 경기갑 사단" }
+	7 = { "제2 경기갑 사단" }
+	8 = { "제3 경기갑 사단" }
+	21 = { "제5 경기갑 사단" }
+	
+	# a small series of early war 'light' armoured divisions raised as an attempt by the cavalry branch to remain relevant in modern war. They were found to be too light to fight after Poland and converted in to full Panzer Divisions. X = number of the Panzer Division they were converted in to.
+	
+	}
+}
+
+GER_Cav_01 = 
+{
+	name = "기병 사단"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry"  }
+
+	fallback_name = "제%d 기병 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "제%d 기병 사단" }
+		900 = { "기병 사단 '노르트'" }
+		3 = { "제%d 기병 사단" }
+		4 = { "제%d 기병 사단" }
+		
+		# deleted Kosaken-Kavallerie 사단s as they depend on a German occupation of Ukraine that may not occur
+
+	}
+	
+}
+
+GER_SS_01 = 
+{
+	name = "SS 사단"
+
+	for_countries = { GER }
+
+	can_use = { 
+		has_government = fascism
+	}
+
+	division_types = { "infantry" "motorized" "medium_armor" "mechanized" }
+
+	fallback_name = "제%d SS 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "제%d SS 사단 '총통친위경호대 아돌프 히틀러'" }
+		2 = { "제%d SS 사단 '다스 라이히'" }
+		3 = { "제%d SS 사단 '토텐코프'" }
+		4 = { "제%d SS 사단 '경찰'" }
+		5 = { "제%d SS 사단 '비킹'" }
+		6 = { "제%d SS 사단 '노르트'" }
+		7 = { "제%d SS 사단 '프린츠 오이겐'" }
+		8 = { "제%d SS 사단 '플로리안 가이어'" }
+		9 = { "제%d SS 사단 '호엔슈타우펜'" }
+		10 = { "제%d SS 사단 '프룬츠베르크'" }
+		11 = { "제%d SS 사단 '노르트란트'" }
+		12 = { "제%d SS 사단 '히틀러 유겐트'" }
+		13 = { "제%d SS 사단 '한트샤르'" }
+		14 = { "제%d SS 사단 (우크라이나 1사단)" }
+		15 = { "제%d SS 사단 (라트비아 1사단)" }
+		16 = { "제%d SS 사단 '라이히스퓌러-SS'" }
+		17 = { "제%d SS 사단 '괴츠 폰 베를리힝엔'" }
+		18 = { "제%d SS 사단 '호르스트 베셀'" }
+		19 = { "제%d SS 사단 (라트비아 2사단)" }
+		20 = { "제%d SS 사단 (에스토니아 1사단)" }
+		21 = { "제%d SS 사단 '스칸데르베그'" }
+		22 = { "제%d SS 사단 '마리아 테레지아'" }
+		23 = { "제%d SS 사단 '네델란트'" }
+		24 = { "제%d SS 사단 '카르스트예거'" }
+		25 = { "제%d SS 사단 '훈야디' (헝가리 1사단)" }
+		26 = { "제%d SS 사단 '훙가리아' (헝가리 2사단)" }
+		27 = { "제%d SS 사단 '랑게마르크' (플랑드르 1사단)" }
+		28 = { "제%d SS 사단 '발로니엔'" }
+		29 = { "제%d SS 사단 RONA (러시아 1사단)" }
+		30 = { "제%d SS 사단 (러시아 2사단)" }
+		31 = { "제%d SS 사단 '뵈멘 메렌'" }
+		32 = { "제%d SS 사단 '1월 30일'" }
+		33 = { "제%d SS 사단 '샤를마뉴'(프랑스 1사단)" }
+		34 = { "제%d SS 사단 '란트슈투름 니덜란데'" }
+		35 = { "제%d SS 경찰 척탄병사단" }
+		36 = { "제%d SS 사단 '디를레방어'" }
+		37 = { "제%d SS 사단 '뤼초'" }
+		38 = { "제%d SS 사단 '니벨룽'" }
+		
+		# to avoid massively bloating the names list with alternate lists, the final/most representative divisional name was used. Das Reich held no less than 6 different names during the war and providing variant name lists for all of them was not feasible. The tools to rename/reconfigure divisions are in the hands of the player, however.
+		# left out divisional type names (Panzer, Gebirgs, etc) to allow the player to use the SS name list for any type of division they choose
+		# diverged from the ordering based on historical formation date as this to a large degree would depend on the divisional type, which is not fixed
+		# put in non-German formations contrary to the regular Heer lists
+
+	}
+}
+
+GER_MONINF_01 = 
+{
+	name = "근왕 보병 사단"
+
+	for_countries = { GER }
+
+	can_use = { 
+		OR = {
+			has_government = neutrality 
+			has_government = democratic 
+		}
+	}
+
+	division_types = { "infantry" "mechanized" "mountaineers" "paratrooper" "marine" }
+
+	fallback_name = "제%d 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		901 = { "제1 근위 사단" }
+		902 = { "제2 근위 사단" }
+		903 = { "제3 근위 사단" }
+		1 = { "제%d 사단 '황태자'" }
+		2 = { "제%d 사단 '국왕 프리드리히 빌헬름 IV'" }
+		3 = { "제%d 사단 '국왕 프리드리히 빌헬름 I'" }
+		4 = { "제%d 사단 '프리드리히 대왕'" }
+		5 = { "제%d 사단 '국왕 프리드리히 I'" }
+		6 = { "제%d 사단 '백작 클라이스트 폰 놀렌도르프'" }
+		7 = { "제%d 사단 '국왕 빌헬름 I'" }
+		8 = { "제%d 사단 '국왕 프리드리히 빌헬름 III'" }
+		9 = { "제%d 콜버그 사단 '백작 그나이제나우'" }
+		10 = { "제%d 사단 '국왕 프리드리히 빌헬름 II'" }
+		11 = { "제%d 사단 '국왕 프리드리히 III'" }
+		12 = { "제%d 사단 '프린츠 칼 폰 프로이센'" }
+		13 = { "제%d 사단 '헤르바르트 폰 비텐펠트'" }
+		14 = { "제%d 사단 '백작 슈베린'" }
+		15 = { "제%d 사단 '프린츠 프리드리히 데르 네덜란드'" }
+		16 = { "제%d 사단 '프라이어 폰 스파'" }
+		17 = { "제%d 사단 '백작 바르풋'" }
+		18 = { "제%d 사단 '폰 그롤만'" }
+		19 = { "제%d 사단 '폰 크루비에르'" }
+		20 = { "제%d 사단 '백작 타우엔친 폰 비텐베르크'" }
+		21 = { "제%d 사단 '폰 보케'" }
+		22 = { "제%d 사단 '키스'" }
+		23 = { "제%d 사단 '폰 윈터펠트'" }
+		24 = { "제%d 사단 '대공 프리드리히 프란츠 II 폰 메클렌부르크-슈베린'" }
+		25 = { "제%d 사단 '폰 뤄초우'" }
+		26 = { "제%d 사단 '퓌르스트 레오폴트 폰 안할트-데사우'" }
+		27 = { "제%d 사단 '프린츠 루이스 페르디난트 폰 프로이센'" }
+		28 = { "제%d 사단 '폰 괴벤'" }
+		29 = { "제%d 사단 '폰 혼'" }
+		30 = { "제%d 사단 '백작 베르더'" }
+		31 = { "제%d 사단 '백작 보스'" }
+		32 = { "제%d 튀링기셰 사단" }
+		33 = { "제%d 사단 '백작 룬'" }
+		34 = { "제%d 사단 '여왕 빅토리아 폰 스웨덴'" }
+		35 = { "제%d 사단 '프린츠 하인리히 폰 프로이센'" }
+		36 = { "제%d 사단 '육군원수 백작 블루멘탈'" }
+		37 = { "제%d 사단 '폰 슈타인메츠'" }
+		38 = { "제%d 사단 '육군원수 백작 몰트케'" }
+		39 = { "제%d 사단 '육군참모총장 루덴도르프' " }
+		40 = { "제%d 사단 '퓌르스트 칼-안톤 폰 호엔촐레른'" }
+		41 = { "제%d 사단 '폰 보옌'" }
+		42 = { "제%d 사단 '프린츠 모리츠 폰 안할트-데사우'" }
+		43 = { "제%d 사단 '헤르조그 칼 폰 메클렌부르크-스트르리츠'" }
+		44 = { "제%d 사단 '백작 된호프'" }
+		45 = { "제%d 오스트프로이센 사단" }
+		46 = { "제%d 사단 '백작 키르크바흐'" }
+		47 = { "제%d 사단 '국왕 루트비히 III. 폰 바이에른'" }
+		48 = { "제%d 사단 '폰 슈튈프나겔'" }
+		49 = { "제%d 포메른 사단" }
+		50 = { "제%d 니더슐레지엔 사단" }
+		51 = { "제%d 니더슐레지엔 사단" }
+		52 = { "제%d 사단 '폰 알벤스레벤'" }
+		53 = { "제%d 베스트펠리셰 사단" }
+		54 = { "제%d 사단 '폰 데르 골츠'" }
+		55 = { "제%d 사단 '백작 뷜로프 폰 데네위츠'" }
+		56 = { "제%d 사단 '보겔 폰 팔켄슈타인'" }
+		57 = { "제%d 사단 '헤르조그 페르디난트 폰 브라운슈바이크'" }
+		58 = { "제%d 포젠 사단" }
+		59 = { "제%d 사단 '프라이어 힐러 폰 궤트링엔'" }
+		60 = { "제%d 사단 '공작 칼'" }
+		61 = { "제%d 사단 '폰 데르 마르비츠'" }
+		62 = { "제%d 오버슐라이스하임 사단" }
+		63 = { "제%d 사단 '카이저 칼 폰 외스터라이히 와 국왕 폰 웅가른'" }
+		64 = { "제%d 사단 '육군원수 프린츠 프리드리히 칼 폰 프로이센'" }
+		65 = { "제%d 라인 사단" }
+		66 = { "제%d 마그데부르크 사단" }
+		67 = { "제%d 마그데부르크 사단" }
+		68 = { "제%d 라인 사단" }
+		69 = { "제%d 라인 사단" }
+		70 = { "제%d 라인 사단" }
+		71 = { "제%d 튀링기셰 사단" }
+		72 = { "제%d 튀링기셰 사단" }
+		73 = { "제%d 사단 '육군원수 프린츠 알브레히트 폰 프로이센'" }
+		74 = { "제%d 하노버 사단" }
+		75 = { "제%d 한자 사단" }
+		76 = { "제%d 한자 사단" }
+		77 = { "제%d 하노버 사단" }
+		78 = { "제%d 사단 '헤르조그 프리드리히 빌헬름 폰 브라운슈바이크'" }
+		79 = { "제%d 사단 '폰 뵈그츠-레츠'" }
+		80 = { "제%d 사단 '폰 게르스도르프'" }
+		81 = { "제%d 사단 '공작 프리드리히 I. 폰 헤센-카셀'" }
+		82 = { "제%d 쿠르비에르 사단" }
+		83 = { "제%d 사단 '폰 비티히'" }
+		84 = { "제%d 사단 '폰 만슈타인'" }
+		85 = { "제%d 사단 '헤르조그 폰 홀스타인'" }
+		86 = { "제%d 사단 '여왕'" }
+		87 = { "제%d 나사우 사단" }
+		88 = { "제%d 나사우 사단" }
+		89 = { "제%d 대공국 메르켄부르기쉬 사단" }
+		90 = { "제%d 대공국 메르켄부르기쉬 사단 '카이저 빌헬름 '" }
+		91 = { "제%d 올덴부르크 사단" }
+		92 = { "제%d 브라운슈바이크 사단" }
+		93 = { "제%d 안할트 사단" }
+		94 = { "제%d 사단 '대공 폰 작센'" }
+		95 = { "제%d 튀링기셰 사단" }
+		96 = { "제%d 튀링기셰 사단" }
+		97 = { "제%d 오베르라인 사단" }
+		98 = { "제%d 메처 사단" }
+		99 = { "제%d 오베르라인 사단" }
+		904 = { "왕립 독일 군단. 바이엘 경보병 사단" }
+		905 = { "1. 왕립 독일 군단. 바이엘 사단 '국왕'" }
+		906 = { "2. 왕립 독일 군단. 바이엘 사단 '황태자'" }
+		907 = { "3. 왕립 독일 군단. 바이엘 사단 '프린츠 칼 폰 바이에른'" }
+		908 = { "4. 왕립 독일 군단. 바이엘 사단 '국왕 빌헬름 폰 뷔르템베르크'" }
+		909 = { "5. 왕립 독일 군단. 바이엘 사단 '대공 에른스트 루드비히 폰 헤센'" }
+		910 = { "6. 왕립 독일 군단. 바이엘 사단 '카이저 빌헬름, 국왕 폰 프로이센'" }
+		911 = { "7. 왕립 독일 군단. 바이엘 사단 '프린츠 레오폴트'" }
+		912 = { "8. 왕립 독일 군단. 바이엘 사단 '대공 프리드리히 II. 폰 바덴'" }
+		913 = { "9. 왕립 독일 군단. 바이엘 사단 '브레데'" }
+		914 = { "10. 왕립 독일 군단. 바이엘 사단 '국왕'" }
+		915 = { "11. 왕립 독일 군단. 바이엘 사단 '폰 데르 탄'" }
+		916 = { "12. 왕립 독일 군단. 바이엘 사단 '프린츠 아르눌프'" }
+		917 = { "13. 왕립 독일 군단. 바이엘 사단 '프란츠 요제프 I., 카이저 폰 외스터라이히 와 아포스톨리셔 국왕 폰 웅가른'" }
+		918 = { "14. 왕립 독일 군단. 바이엘 사단 '하트만'" }
+		919 = { "15. 왕립 독일 군단. 바이엘 사단 '국왕 프리드리히 아우구스트 폰 작센'" }
+		920 = { "16. 왕립 독일 군단. 바이엘 사단 '대공 페르디난트 폰 토스카나'" }
+		921 = { "17. 왕립 독일 군단. 바이엘 사단 '오르프'" }
+		922 = { "18. 왕립 독일 군단. 바이엘 사단 '프린츠 루드비히 페르디난트'" }
+		923 = { "19. 왕립 독일 군단. 바이엘 사단 '국왕 빅토르 엠마뉴엘 III. 폰 이탈리아'" }
+		924 = { "20. 왕립 독일 군단. 바이엘 사단 '프린츠 프란츠'" }
+		925 = { "21. 왕립 독일 군단. 바이엘 사단 '대공 프리드리히 프란츠 IV. 폰 메클렌부르크-슈베린'" }
+		926 = { "22. 왕립 독일 군단. 바이엘 사단 '퓌르스트 빌헬름 폰 호엔촐레른'" }
+		927 = { "23. 왕립 독일 군단. 바이엘 사단 '국왕 페르디난트 데어 불가리아'" }
+		100 = { "제%d 왕립 독일 군단. 작센 근위 사단" }
+		101 = { "제%d 왕립 독일 군단. 작센 사단 '카이저 빌헬름, 국왕 폰 프로이센'" }
+		102 = { "제%d 왕립 독일 군단. 작센 사단 '국왕 루드비히 III 폰 바이에른'" }
+		103 = { "제%d 왕립 독일 군단. 작센 사단" }
+		104 = { "제%d 왕립 독일 군단. 작센 사단 '황태자'" }
+		105 = { "제%d 왕립 독일 군단. 작센 사단 '국왕 빌헬름 II. 폰 뷔르템베르크'" }
+		106 = { "제%d 왕립 독일 군단. 작센 사단 '국왕 게오르그'" }
+		107 = { "제%d 왕립 독일 군단. 작센 사단 '프린츠 요한 게오르그'" }
+		108 = { "제%d 왕립 독일 군단. 작센 사단 '프린츠 게오르그'" }
+		109 = { "제%d 바덴 근위 사단" }
+		110 = { "제%d 바덴 사단 '카이저 빌헬름 I'" }
+		111 = { "제%d 사단 '공작 루드비히 빌헬름'" }
+		112 = { "제%d 바덴 사단 '프린츠 빌헬름'" }
+		113 = { "제%d 바덴 사단" }
+		114 = { "제%d 바덴 사단 '카이저 프리드리히 III'" }
+		115 = { "제%d 근위 사단" }
+		116 = { "제%d 사단 '카이저 빌헬름'" }
+		117 = { "제%d 사단 '대공비'" }
+		118 = { "제%d 사단 '프린츠 칼'" }
+		119 = { "제%d 사단 '여왕 올가'" }
+		120 = { "제%d 사단 '카이저 빌헬름, 국왕 폰 프로이센'" }
+		121 = { "제%d 사단 '알트-뷔르템베르크'" }
+		122 = { "제%d 사단 '카이저 프란츠 요제프 폰 외스터라이히, 국왕 폰 웅가른'" }
+		123 = { "제%d 사단 '국왕 칼'" }
+		124 = { "제%d 사단 '국왕 빌헬름 I'" }
+		125 = { "제%d 사단 '프리드리히, 국왕 폰 프로이센'" }
+		126 = { "제%d 사단 '대공 프리드리히 폰 바덴'" }
+		127 = { "제%d 뷔르템베르크 사단" }
+		128 = { "제%d 단치히 사단" }
+		129 = { "제%d 사단 '육군원수 폰 마켄젠'" }
+		130 = { "제%d 로트링겐 사단" }
+		131 = { "제%d 로트링겐 사단" }
+		132 = { "제%d 운터알자스 사단" }
+		133 = { "제%d 왕립 독일 군단. 작센 사단" }
+		134 = { "제%d 왕립 독일 군단. 작센 사단" }
+		135 = { "제%d 로트링겐 사단" }
+		136 = { "제%d 로트링겐 사단" }
+		137 = { "제%d 운터알자스 사단" }
+		138 = { "제%d 운터알자스 사단" }
+		139 = { "제%d 왕립 독일 군단. 작센 사단" }
+		140 = { "제%d 베스트프로이센 사단" }
+		141 = { "제%d 쿨메르 사단" }
+		142 = { "제%d 바덴 사단" }
+		143 = { "제%d 운터알자스 사단" }
+		144 = { "제%d 로트링겐 사단" }
+		145 = { "제%d 쾨니히 사단" }
+		146 = { "제%d 마주리아 사단" }
+		147 = { "제%d 마주리아 사단" }
+		148 = { "제%d 베스트프로이센 사단" }
+		149 = { "제%d 베스트프로이센 사단" }
+		150 = { "제%d 에름란트 사단" }
+		151 = { "제%d 에름란트 사단" }
+		152 = { "제%d 도이치 오어든스 사단" }
+		153 = { "제%d 튀링기셰 사단" }
+		154 = { "제%d 니더슐레지엔 사단" }
+		155 = { "제%d 베스트프로이센 사단" }
+		156 = { "제%d 슐레지엔 사단" }
+		157 = { "제%d 슐레지엔 사단" }
+		158 = { "제%d 로트링겐 사단" }
+		159 = { "제%d 로트링겐 사단" }
+		160 = { "제%d 라인 사단" }
+		161 = { "제%d 라인 사단" }
+		162 = { "제%d 한자 사단" }
+		163 = { "제%d 슐레스비히-홀슈타인 사단" }
+		164 = { "제%d 하노버 사단" }
+		165 = { "제%d 하노버 사단" }
+		166 = { "제%d 헤센-홈부르크 사단" }
+		167 = { "제%d 오베르-알자스 사단" }
+		168 = { "제%d 대공국-헤센 사단" }
+		169 = { "제%d 바덴 사단" }
+		170 = { "제%d 바덴 사단" }
+		171 = { "제%d 오베르-알자스 사단" }
+		172 = { "제%d 오베르-알자스 사단" }
+		173 = { "제%d 로트링겐 사단" }
+		174 = { "제%d 로트링겐 사단" }
+		175 = { "제%d 베스트프로이센 사단" }
+		176 = { "제%d 베스트프로이센 사단" }
+		177 = { "제%d 왕립 독일 군단. 작센 사단 '국왕 페르디난트 데어 불가리아'" }
+		178 = { "제%d 왕립 독일 군단. 작센 사단" }
+		179 = { "제%d 왕립 독일 군단. 작센 사단" }
+		180 = { "제%d 뷔르템베르크 사단" }
+		181 = { "제%d 왕립 독일 군단. 작센 사단" }
+		182 = { "제%d 왕립 독일 군단. 작센 사단" }
+		
+		# converted WWI era imperial infantry regiments to 사단 sized units, preserving their numerical order
+		# put Bavarian 사단s in earlier so they show up sooner, as it was the largest non-Prussian part of the empire, but they had their own numbering scheme not linked to the others.
+
+	}
+}
+
+GER_MONMOB_01 = 
+{
+	name = "근왕 기동 사단"
+
+	for_countries = { GER }
+
+	can_use = { 
+		OR = {
+			has_government = neutrality 
+			has_government = democratic 
+		}
+	}
+
+	division_types = {  "cavalry" "light_armor" "medium_armor" "heavy_armor" "modern_armor"  }
+
+	fallback_name = "제%d 기동 사단"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		901 = { "근위대 사단" }
+		902 = { "근위 흉갑기병 사단" }
+		903 = { "근위 용기병 사단 '여왕 빅토리아 폰 그로스브리타니엔 u. 아일랜드'" }
+		904 = { "근위 용기병 사단 '여제 알렉산드라 폰 루슬란트'" }
+		905 = { "근위대 경기병 사단" }
+		906 = { "1. 근위 창기병 사단" }
+		907 = { "2. 근위 창기병 사단" }
+		908 = { "3. 근위 창기병 사단" }
+		909 = { "1. 왕립 독일 군단. 바이엘 흑기병 사단 '프린츠 칼 폰 바이에른'" }
+		910 = { "2. 왕립 독일 군단. 바이엘 흑기병 사단 '대공 프란츠 페르디난트 폰 외스터라이히-에스테'" }
+		1 = { "제%d 근위 흉갑기병 사단 '그로서 쿠어퓌르스트'" }
+		2 = { "제%d 흉갑기병 사단 '여왕'" }
+		3 = { "제%d 흉갑기병 사단 '백작 우랑겔'" }
+		4 = { "제%d 흉갑기병 사단 '폰 드리센'" }
+		5 = { "제%d 흉갑기병 사단 '헤르조그 프리드리히 오이겐 폰 뷔르템베르크'" }
+		6 = { "제%d 흉갑기병 사단 '카이저 니콜라우스 I. 폰 루슬란트'" }
+		7 = { "제%d 흉갑기병 사단 '폰 자이들리츠'" }
+		8 = { "제%d 흉갑기병 사단 '백작 게슬러'" }
+		9 = { "제%d 왕립 독일 군단.작센 근위 총기병 사단" }
+		10 = { "제%d 왕립 독일 군단. 작센 총기병 사단" }
+		911 = { "1. 왕립 독일 군단. 바이엘 경기병 사단 '카이저 니콜라우스 폰 루슬란트'" }
+		912 = { "2. 왕립 독일 군단. 바이엘 경기병 사단 '텍시스'" }
+		913 = { "3. 왕립 독일 군단. 바이엘 경기병 사단 '헤르조그 칼 테오도르'" }
+		914 = { "4. 왕립 독일 군단. 바이엘 경기병 사단 '국왕'" }
+		915 = { "5. 왕립 독일 군단. 바이엘 경기병 사단 '대공 프리드리히 폰 외스터라이히'" }
+		916 = { "6. 왕립 독일 군단. 바이엘 경기병 사단 '프린츠 알브레히트 폰 프로이센'" }
+		917 = { "7. 왕립 독일 군단. 바이엘 경기병 사단 '프린츠 알폰스'" }
+		918 = { "8. 왕립 독일 군단. 바이엘 경기병 사단" }
+		919 = { "1. 왕립 독일 군단. 바이엘 창기병 사단 '카이저 빌헬름 II., 국왕 폰 프로이센'" }
+		920 = { "2. 왕립 독일 군단. 바이엘 창기병 사단 '국왕'" }
+		11 = { "제%d 용기병 사단 '프린츠 알브레히트 폰 프로이센'" }
+		12 = { "제%d '브란덴부르크'이쉐 용기병 사단" }
+		13 = { "제%d 근위대 사단 '프라이어 폰 데르플링거'" }
+		14 = { "제%d 용기병 사단 '폰 브레도프'" }
+		15 = { "제%d 용기병 사단 '프라이어 폰 만토이펠'" }
+		16 = { "제%d 마그데부르크 용기병 사단" }
+		17 = { "제%d 용기병 사단 '육군원수 프린츠 레오폴트 폰 바이에른'" }
+		18 = { "제%d 용기병 사단 '국왕 프리드리히 III'" }
+		19 = { "제%d 용기병 사단 '국왕 칼 I. 폰 루마니아'" }
+		20 = { "제%d 용기병 사단 '국왕 알베르트 폰 작센'" }
+		21 = { "제%d 용기병 사단 '폰 베델'" }
+		22 = { "제%d 용기병 사단 '폰 아르님'" }
+		23 = { "제%d 슐레스비히-홀슈타인 용기병 사단" }
+		24 = { "제%d 쿠르메르키쉐 용기병 사단" }
+		25 = { "제%d 슐레지엔 용기병 사단" }
+		26 = { "제%d 하노버 용기병 사단" }
+		27 = { "제%d 대공국 메르켄부르크 용기병 사단" }
+		28 = { "제%d 대공국 메르켄부르크 용기병 사단" }
+		29 = { "제%d 올덴부르크 용기병 사단" }
+		30 = { "제%d 바덴 근위 용기병 사단" }
+		31 = { "제%d 바덴 용기병 사단" }
+		32 = { "제%d 바덴 용기병 사단 '프린츠 칼 '" }
+		33 = { "제%d 대공국 헤센 근위 용기병 사단" }
+		34 = { "제%d 대공국 헤센 근위용기병 사단" }
+		35 = { "제%d 용기병 사단 '여왕 올가'" }
+		36 = { "제%d 용기병 사단 '국왕'" }
+		37 = { "제%d 근위 경기병 사단" }
+		38 = { "제%d 근위 경기병 사단 '여왕 빅토리아 폰 프로이센'" }
+		39 = { "제%d 경기병 사단 '폰 자이튼'" }
+		40 = { "제%d 경기병 사단 '폰 실'" }
+		41 = { "제%d 경기병 사단 '퓌르스트 블뤼허 폰 발슈타트'" }
+		42 = { "제%d 경기병 사단 '백작 괴첸'" }
+		43 = { "제%d 경기병 사단 '국왕 빌헬름 I'" }
+		44 = { "제%d 경기병 사단 '카이저 니콜라우스 II. 폰 루슬란트'" }
+		45 = { "제%d 라인 경기병 사단" }
+		46 = { "제%d 마그데부르크 경기병 사단" }
+		47 = { "제%d 베스트팔렌 경기병 사단" }
+		48 = { "제%d 튀링엔 경기병 사단" }
+		49 = { "제%d 경기병 사단 '국왕 험버트 폰 이탈리아'" }
+		50 = { "제%d 경기병 사단 '공작 프리드리히 II. 폰 헤센-홈부르크'" }
+		51 = { "제%d 경기병 사단 '여왕 빌헬미나 데어 네덜란드'" }
+		52 = { "제%d 경기병 사단 '카이저 프란츠 요제프 폰 외스터라이히, 국왕 폰 웅가른'" }
+		53 = { "제%d 브라운슈바이크 경기병 사단" }
+		54 = { "제%d 왕립 독일 군단. 작센 경기병 사단 '국왕 알베르트'" }
+		55 = { "제%d 왕립 독일 군단. 작센 경기병 사단 '황태자 빌헬름 폰 프로이센'" }
+		56 = { "제%d 왕립 독일 군단. 작센 경기병 사단" }
+		57 = { "제%d 창기병 사단 '카이저 알렉산드로스 III 폰 루슬란트'" }
+		58 = { "제%d 창기병 사단 '폰 카즐러'" }
+		59 = { "제%d 창기병 사단 '카이저 알렉산드로스 II. 폰 루슬란트'" }
+		60 = { "제%d 창기병 사단 '폰 슈미트'" }
+		61 = { "제%d 베스트팔렌 창기병 사단" }
+		62 = { "제%d 튀링엔 창기병 사단" }
+		63 = { "제%d 창기병 사단 '프리드리히 폰 바덴'" }
+		64 = { "제%d 창기병 사단 '백작 추 도나'" }
+		65 = { "제%d 포메른 창기병 사단" }
+		66 = { "제%d 창기병 사단 '프린츠 아우구스트 폰 뷔르템베르크'" }
+		67 = { "제%d 창기병 사단 '백작 헤젤러'" }
+		68 = { "제%d 리츠하우서 창기병 사단" }
+		69 = { "제%d 쾨니히-창기병 사단" }
+		70 = { "제%d 하노버 창기병 사단" }
+		71 = { "제%d 슐레스비히-홀슈타인 창기병 사단" }
+		72 = { "제%d 창기병 사단 '헤닝 폰 트레펜필트'" }
+		73 = { "제%d 왕립 독일 군단. 작센 창기병 사단 '카이저 프란츠 요제프 폰 외스터라이히, 국왕 폰 웅가른'" }
+		74 = { "제%d 왕립 독일 군단. 작센 창기병 사단" }
+		75 = { "제%d 창기병 사단 '국왕 칼'" }
+		76 = { "제%d 창기병 사단 '국왕 빌헬름 I'" }
+		77 = { "제%d 왕립 독일 군단. 작센 창기병 사단 '카이저 빌헬름 II, 국왕 폰 프로이센'" }
+		78 = { "제%d 왕립 근위 경보병 사단" }
+		79 = { "제%d 근위 경보병 사단" }
+		80 = { "제%d 근위 경보병 사단" }
+		81 = { "제%d 근위 경보병 사단" }
+		82 = { "제%d 근위 경보병 사단" }
+		83 = { "제%d 근위 경보병 사단" }
+		84 = { "제%d 근위 경보병 사단" }
+		85 = { "제%d 근위 경보병 사단" }
+		86 = { "제%d 근위 경보병 사단" }
+		87 = { "제%d 근위 경보병 사단" }
+		88 = { "제%d 근위 경보병 사단" }
+		89 = { "제%d 근위 경보병 사단" }
+		90 = { "제%d 근위 경보병 사단" }
+	
+		#took namelist for mobile divisions for imperial cavalry regiments, but did not preserve numbering to avoid a confusing mess of Curassier, Dragoon, Hussar, etc, Divisions all with the same number. Except for Bavaria, because they're weird.
+
+
+	}
+}
+
+

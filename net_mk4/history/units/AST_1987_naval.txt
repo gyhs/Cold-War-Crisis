@@ -1,0 +1,59 @@
+﻿units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Royal Australian Navy 1"
+		naval_base = 12406 # Sydney
+		task_force = {				
+			name = "Australian Squadron"			
+			base = 12406
+			location = 12406 # Sydney
+			ship = { name = "HMAS 파라마타" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "리버 급" } } }
+			ship = { name = "HMAS 스튜어트" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "리버 급" } } }
+			ship = { name = "HMAS 스완" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "리버 급" } } }
+			ship = { name = "HMAS 토런스" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "리버 급" } } }
+		}				
+	}
+	fleet = {
+		name = "Royal Australian Navy 2"
+		naval_base = 12406 # Sydney
+		task_force = {				
+			name = "Australian Squadron 2"			
+			base = 12406
+			location = 12406 # Sydney
+			ship = { name = "HMAS 애들레이드" definition = destroyer equipment = { ship_hull_light_4 = { amount = 1 owner = AST version_name = "애들레이드 급" } } }
+			ship = { name = "HMAS 캔버라" definition = destroyer equipment = { ship_hull_light_4 = { amount = 1 owner = AST version_name = "애들레이드 급" } } }
+			ship = { name = "HMAS 시드니" definition = destroyer equipment = { ship_hull_light_4 = { amount = 1 owner = AST version_name = "애들레이드 급" } } }
+			ship = { name = "HMAS 다윈" definition = destroyer equipment = { ship_hull_light_4 = { amount = 1 owner = AST version_name = "애들레이드 급" } } }
+		}				
+	}
+	fleet = {
+		name = "Royal Australian Navy 3"
+		naval_base = 12406 # Sydney
+		task_force = {				
+			name = "Australian Squadron 3"			
+			base = 12406
+			location = 12406 # Sydney
+			ship = { name = "HMAS 퍼스" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "퍼스 급" } } }
+			ship = { name = "HMAS 호바트" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "퍼스 급" } } }
+			ship = { name = "HMAS 브리즈번" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "퍼스 급" } } }
+		}				
+	}
+	fleet = {
+		name = "Royal Australian Navy 4"
+		naval_base = 12406 # Sydney
+		task_force = {				
+			name = "Australian Squadron 4"			
+			base = 12406
+			location = 12406 # Sydney
+			ship = { name = "HMAS 온슬로" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "온슬로 급" } } }
+			ship = { name = "HMAS 오리온" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "온슬로 급" } } }
+			ship = { name = "HMAS 오타마" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "온슬로 급" } } }
+			ship = { name = "HMAS 오트웨이" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "온슬로 급" } } }
+			ship = { name = "HMAS 오븐" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "온슬로 급" } } }
+			ship = { name = "HMAS 옥슬리" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "온슬로 급" } } }
+		}				
+	}
+}
+
+

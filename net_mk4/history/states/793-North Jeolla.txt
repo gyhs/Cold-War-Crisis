@@ -1,0 +1,20 @@
+state=
+{
+	id=793
+	name="STATE_793"
+	manpower = 2069960
+	
+	state_category = town
+	history=
+	{
+		owner = KOR
+
+		add_core_of = KOR
+		add_core_of = PRK
+		add_claim_by = PRK
+
+	}
+	provinces={
+		10085 4126
+	}
+}

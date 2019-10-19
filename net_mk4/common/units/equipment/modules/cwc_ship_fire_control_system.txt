@@ -1,0 +1,577 @@
+equipment_modules = {
+#ship_fire_control_system
+#ship_fire_control_system_heavy
+##
+#ship_aegis_combat_system
+#----------------------------------------------------------------------------
+	ship_fire_control_system_1 = {
+		category = ship_fire_control_system
+	
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.02
+		}
+
+		can_convert_from = {
+			module = ship_fire_control_system_0
+			convert_cost_ic = 40
+		}
+	}
+	ship_fire_control_system_2 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.15
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_1
+			convert_cost_ic = 60
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_3 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.02
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_2
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_4 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.02
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_3
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_5 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.02
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_4
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_6 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.02
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_5
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_7 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.02
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_6
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_8 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+			anti_air_attack = 0.1
+			hg_armor_piercing = 0.1
+			lg_armor_piercing = 0.1
+			reliability = -0.02
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_7
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 100
+		}
+	}
+#------------------------------------------------------------------
+	ship_fire_control_system_heavy_0 = {
+		category = ship_fire_control_system_heavy
+		gfx = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 60
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+	}
+	ship_fire_control_system_heavy_1 = {
+		category = ship_fire_control_system_heavy
+	
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_0
+			convert_cost_ic = 40
+		}
+	}
+	ship_fire_control_system_heavy_2 = {
+		category = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_1
+			convert_cost_ic = 60
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system_heavy
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_heavy_3 = {
+		category = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_2
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system_heavy
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_heavy_4 = {
+		category = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_3
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system_heavy
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_heavy_5 = {
+		category = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_4
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system_heavy
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_heavy_6 = {
+		category = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_5
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system_heavy
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_heavy_7 = {
+		category = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_6
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system_heavy
+			convert_cost_ic = 100
+		}
+	}
+	ship_fire_control_system_heavy_8 = {
+		category = ship_fire_control_system_heavy
+		sfx = sfx_ui_sd_module_sonar
+
+		
+		add_stats = {
+			max_organisation = 0.2
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			lg_attack = 0.2
+			hg_attack = 0.2
+			anti_air_attack = 0.2
+			hg_armor_piercing = 0.2
+			lg_armor_piercing = 0.2
+			reliability = -0.03
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_heavy_7
+			convert_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system_heavy
+			convert_cost_ic = 100
+		}
+	}
+#---------------------------------------------------------------------------------------------
+	ship_aegis_combat_system_1 = {
+		category = ship_aegis_combat_system
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			max_organisation = 0.3
+			build_cost_ic = 90
+			surface_detection = 5
+		}
+		multiply_stats = {
+			lg_attack = 0.3
+			hg_attack = 0.3
+			anti_air_attack = 0.3
+			hg_armor_piercing = 0.3
+			lg_armor_piercing = 0.3
+			reliability = -0.03
+		}
+	}
+	ship_aegis_combat_system_2 = {
+		category = ship_aegis_combat_system
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			max_organisation = 0.3
+			build_cost_ic = 120
+			surface_detection = 7
+		}
+		multiply_stats = {
+			lg_attack = 0.3
+			hg_attack = 0.3
+			anti_air_attack = 0.3
+			hg_armor_piercing = 0.3
+			lg_armor_piercing = 0.3
+			reliability = -0.03
+		}
+		
+		can_convert_from = {
+			module = ship_aegis_combat_system_1
+			convert_cost_ic = 40
+		}
+	}
+	ship_aegis_combat_system_3 = {
+		category = ship_aegis_combat_system
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			max_organisation = 0.3
+			surface_detection = 12
+			build_cost_ic = 170
+		}
+		multiply_stats = {
+			lg_attack = 0.3
+			hg_attack = 0.3
+			anti_air_attack = 0.3
+			hg_armor_piercing = 0.3
+			lg_armor_piercing = 0.3
+			reliability = -0.03
+		}
+		
+		can_convert_from = {
+			module = ship_aegis_combat_system_2
+			convert_cost_ic = 60
+		}
+		can_convert_from = {
+			module_category = ship_aegis_combat_system
+			convert_cost_ic = 80
+		}
+	}
+	ship_aegis_combat_system_4 = {
+		category = ship_aegis_combat_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			max_organisation = 0.3
+			build_cost_ic = 210
+			surface_detection = 18
+		}
+		multiply_stats = {
+			lg_attack = 0.3
+			hg_attack = 0.3
+			anti_air_attack = 0.3
+			hg_armor_piercing = 0.3
+			lg_armor_piercing = 0.3
+			reliability = -0.03
+		}
+		
+		can_convert_from = {
+			module = ship_aegis_combat_system_3
+			convert_cost_ic = 60
+		}
+		can_convert_from = {
+			module_category = ship_aegis_combat_system
+			convert_cost_ic = 120
+		}
+	}
+	ship_aegis_combat_system_5 = {
+		category = ship_aegis_combat_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			max_organisation = 0.3
+			build_cost_ic = 210
+			surface_detection = 18
+		}
+		multiply_stats = {
+			lg_attack = 0.3
+			hg_attack = 0.3
+			anti_air_attack = 0.3
+			hg_armor_piercing = 0.3
+			lg_armor_piercing = 0.3
+			reliability = -0.03
+		}
+		
+		can_convert_from = {
+			module = ship_aegis_combat_system_4
+			convert_cost_ic = 60
+		}
+		can_convert_from = {
+			module_category = ship_aegis_combat_system
+			convert_cost_ic = 120
+		}
+	}
+#----------------------------------------------------------------------------
+}

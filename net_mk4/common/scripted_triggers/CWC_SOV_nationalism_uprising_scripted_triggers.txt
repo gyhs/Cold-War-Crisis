@@ -1,0 +1,549 @@
+
+#### 우크라이나
+has_idea_ukraine_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_1 }
+		has_idea = SOV_idea_ukraine_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_2 }
+		has_idea = SOV_idea_ukraine_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_3 }
+		has_idea = SOV_idea_ukraine_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_4 }
+		has_idea = SOV_idea_ukraine_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_5 }
+		has_idea = SOV_idea_ukraine_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_6 }
+		has_idea = SOV_idea_ukraine_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_7 }
+		has_idea = SOV_idea_ukraine_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_8 }
+		has_idea = SOV_idea_ukraine_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_9 }
+		has_idea = SOV_idea_ukraine_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_10 }
+		has_idea = SOV_idea_ukraine_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_ukraine_uprising_1
+				has_idea = SOV_idea_ukraine_uprising_2
+				has_idea = SOV_idea_ukraine_uprising_3
+				has_idea = SOV_idea_ukraine_uprising_4
+				has_idea = SOV_idea_ukraine_uprising_5
+				has_idea = SOV_idea_ukraine_uprising_6
+				has_idea = SOV_idea_ukraine_uprising_7
+				has_idea = SOV_idea_ukraine_uprising_8
+				has_idea = SOV_idea_ukraine_uprising_9
+				has_idea = SOV_idea_ukraine_uprising_10
+			}
+		}
+		has_idea = SOV_idea_ukraine_uprising_1
+	}
+}
+
+#### 발트 3국
+has_idea_baltic_states_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_1 }
+		has_idea = SOV_idea_baltic_states_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_2 }
+		has_idea = SOV_idea_baltic_states_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_3 }
+		has_idea = SOV_idea_baltic_states_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_4 }
+		has_idea = SOV_idea_baltic_states_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_5 }
+		has_idea = SOV_idea_baltic_states_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_6 }
+		has_idea = SOV_idea_baltic_states_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_7 }
+		has_idea = SOV_idea_baltic_states_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_8 }
+		has_idea = SOV_idea_baltic_states_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_9 }
+		has_idea = SOV_idea_baltic_states_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_10 }
+		has_idea = SOV_idea_baltic_states_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_baltic_states_uprising_1
+				has_idea = SOV_idea_baltic_states_uprising_2
+				has_idea = SOV_idea_baltic_states_uprising_3
+				has_idea = SOV_idea_baltic_states_uprising_4
+				has_idea = SOV_idea_baltic_states_uprising_5
+				has_idea = SOV_idea_baltic_states_uprising_6
+				has_idea = SOV_idea_baltic_states_uprising_7
+				has_idea = SOV_idea_baltic_states_uprising_8
+				has_idea = SOV_idea_baltic_states_uprising_9
+				has_idea = SOV_idea_baltic_states_uprising_10
+			}
+		}
+		has_idea = SOV_idea_baltic_states_uprising_1
+	}
+}
+
+#### 몰도바
+has_idea_moldova_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_1 }
+		has_idea = SOV_idea_moldova_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_2 }
+		has_idea = SOV_idea_moldova_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_3 }
+		has_idea = SOV_idea_moldova_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_4 }
+		has_idea = SOV_idea_moldova_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_5 }
+		has_idea = SOV_idea_moldova_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_6 }
+		has_idea = SOV_idea_moldova_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_7 }
+		has_idea = SOV_idea_moldova_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_8 }
+		has_idea = SOV_idea_moldova_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_9 }
+		has_idea = SOV_idea_moldova_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_10 }
+		has_idea = SOV_idea_moldova_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_moldova_uprising_1
+				has_idea = SOV_idea_moldova_uprising_2
+				has_idea = SOV_idea_moldova_uprising_3
+				has_idea = SOV_idea_moldova_uprising_4
+				has_idea = SOV_idea_moldova_uprising_5
+				has_idea = SOV_idea_moldova_uprising_6
+				has_idea = SOV_idea_moldova_uprising_7
+				has_idea = SOV_idea_moldova_uprising_8
+				has_idea = SOV_idea_moldova_uprising_9
+				has_idea = SOV_idea_moldova_uprising_10
+			}
+		}
+		has_idea = SOV_idea_moldova_uprising_1
+	}
+}
+
+#### 벨라루스
+has_idea_belarus_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_1 }
+		has_idea = SOV_idea_belarus_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_2 }
+		has_idea = SOV_idea_belarus_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_3 }
+		has_idea = SOV_idea_belarus_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_4 }
+		has_idea = SOV_idea_belarus_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_5 }
+		has_idea = SOV_idea_belarus_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_6 }
+		has_idea = SOV_idea_belarus_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_7 }
+		has_idea = SOV_idea_belarus_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_8 }
+		has_idea = SOV_idea_belarus_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_9 }
+		has_idea = SOV_idea_belarus_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_10 }
+		has_idea = SOV_idea_belarus_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_belarus_uprising_1
+				has_idea = SOV_idea_belarus_uprising_2
+				has_idea = SOV_idea_belarus_uprising_3
+				has_idea = SOV_idea_belarus_uprising_4
+				has_idea = SOV_idea_belarus_uprising_5
+				has_idea = SOV_idea_belarus_uprising_6
+				has_idea = SOV_idea_belarus_uprising_7
+				has_idea = SOV_idea_belarus_uprising_8
+				has_idea = SOV_idea_belarus_uprising_9
+				has_idea = SOV_idea_belarus_uprising_10
+			}
+		}
+		has_idea = SOV_idea_belarus_uprising_1
+	}
+}
+
+#### 아르메니아
+has_idea_armenia_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_1 }
+		has_idea = SOV_idea_armenia_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_2 }
+		has_idea = SOV_idea_armenia_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_3 }
+		has_idea = SOV_idea_armenia_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_4 }
+		has_idea = SOV_idea_armenia_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_5 }
+		has_idea = SOV_idea_armenia_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_6 }
+		has_idea = SOV_idea_armenia_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_7 }
+		has_idea = SOV_idea_armenia_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_8 }
+		has_idea = SOV_idea_armenia_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_9 }
+		has_idea = SOV_idea_armenia_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_10 }
+		has_idea = SOV_idea_armenia_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_armenia_uprising_1
+				has_idea = SOV_idea_armenia_uprising_2
+				has_idea = SOV_idea_armenia_uprising_3
+				has_idea = SOV_idea_armenia_uprising_4
+				has_idea = SOV_idea_armenia_uprising_5
+				has_idea = SOV_idea_armenia_uprising_6
+				has_idea = SOV_idea_armenia_uprising_7
+				has_idea = SOV_idea_armenia_uprising_8
+				has_idea = SOV_idea_armenia_uprising_9
+				has_idea = SOV_idea_armenia_uprising_10
+			}
+		}
+		has_idea = SOV_idea_armenia_uprising_1
+	}
+}
+
+#### 아제르바이잔
+has_idea_azerbaijan_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_1 }
+		has_idea = SOV_idea_azerbaijan_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_2 }
+		has_idea = SOV_idea_azerbaijan_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_3 }
+		has_idea = SOV_idea_azerbaijan_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_4 }
+		has_idea = SOV_idea_azerbaijan_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_5 }
+		has_idea = SOV_idea_azerbaijan_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_6 }
+		has_idea = SOV_idea_azerbaijan_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_7 }
+		has_idea = SOV_idea_azerbaijan_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_8 }
+		has_idea = SOV_idea_azerbaijan_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_9 }
+		has_idea = SOV_idea_azerbaijan_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_10 }
+		has_idea = SOV_idea_azerbaijan_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_azerbaijan_uprising_1
+				has_idea = SOV_idea_azerbaijan_uprising_2
+				has_idea = SOV_idea_azerbaijan_uprising_3
+				has_idea = SOV_idea_azerbaijan_uprising_4
+				has_idea = SOV_idea_azerbaijan_uprising_5
+				has_idea = SOV_idea_azerbaijan_uprising_6
+				has_idea = SOV_idea_azerbaijan_uprising_7
+				has_idea = SOV_idea_azerbaijan_uprising_8
+				has_idea = SOV_idea_azerbaijan_uprising_9
+				has_idea = SOV_idea_azerbaijan_uprising_10
+			}
+		}
+		has_idea = SOV_idea_azerbaijan_uprising_1
+	}
+}
+
+#### 조지아
+has_idea_georgia_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_1 }
+		has_idea = SOV_idea_georgia_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_2 }
+		has_idea = SOV_idea_georgia_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_3 }
+		has_idea = SOV_idea_georgia_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_4 }
+		has_idea = SOV_idea_georgia_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_5 }
+		has_idea = SOV_idea_georgia_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_6 }
+		has_idea = SOV_idea_georgia_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_7 }
+		has_idea = SOV_idea_georgia_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_8 }
+		has_idea = SOV_idea_georgia_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_9 }
+		has_idea = SOV_idea_georgia_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_10 }
+		has_idea = SOV_idea_georgia_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_georgia_uprising_1
+				has_idea = SOV_idea_georgia_uprising_2
+				has_idea = SOV_idea_georgia_uprising_3
+				has_idea = SOV_idea_georgia_uprising_4
+				has_idea = SOV_idea_georgia_uprising_5
+				has_idea = SOV_idea_georgia_uprising_6
+				has_idea = SOV_idea_georgia_uprising_7
+				has_idea = SOV_idea_georgia_uprising_8
+				has_idea = SOV_idea_georgia_uprising_9
+				has_idea = SOV_idea_georgia_uprising_10
+			}
+		}
+		has_idea = SOV_idea_georgia_uprising_1
+	}
+}
+
+#### 카자흐스탄
+has_idea_central_asia_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_1 }
+		has_idea = SOV_idea_central_asia_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_2 }
+		has_idea = SOV_idea_central_asia_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_3 }
+		has_idea = SOV_idea_central_asia_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_4 }
+		has_idea = SOV_idea_central_asia_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_5 }
+		has_idea = SOV_idea_central_asia_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_6 }
+		has_idea = SOV_idea_central_asia_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_7 }
+		has_idea = SOV_idea_central_asia_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_8 }
+		has_idea = SOV_idea_central_asia_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_9 }
+		has_idea = SOV_idea_central_asia_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_10 }
+		has_idea = SOV_idea_central_asia_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_central_asia_uprising_1
+				has_idea = SOV_idea_central_asia_uprising_2
+				has_idea = SOV_idea_central_asia_uprising_3
+				has_idea = SOV_idea_central_asia_uprising_4
+				has_idea = SOV_idea_central_asia_uprising_5
+				has_idea = SOV_idea_central_asia_uprising_6
+				has_idea = SOV_idea_central_asia_uprising_7
+				has_idea = SOV_idea_central_asia_uprising_8
+				has_idea = SOV_idea_central_asia_uprising_9
+				has_idea = SOV_idea_central_asia_uprising_10
+			}
+		}
+		has_idea = SOV_idea_central_asia_uprising_1
+	}
+}
+
+#### 러시아
+has_idea_russian_uprising = {
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_1 }
+		has_idea = SOV_idea_russian_uprising_1
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_2 }
+		has_idea = SOV_idea_russian_uprising_2
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_3 }
+		has_idea = SOV_idea_russian_uprising_3
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_4 }
+		has_idea = SOV_idea_russian_uprising_4
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_5 }
+		has_idea = SOV_idea_russian_uprising_5
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_6 }
+		has_idea = SOV_idea_russian_uprising_6
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_7 }
+		has_idea = SOV_idea_russian_uprising_7
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_8 }
+		has_idea = SOV_idea_russian_uprising_8
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_9 }
+		has_idea = SOV_idea_russian_uprising_9
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_10 }
+		has_idea = SOV_idea_russian_uprising_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_idea_russian_uprising_1
+				has_idea = SOV_idea_russian_uprising_2
+				has_idea = SOV_idea_russian_uprising_3
+				has_idea = SOV_idea_russian_uprising_4
+				has_idea = SOV_idea_russian_uprising_5
+				has_idea = SOV_idea_russian_uprising_6
+				has_idea = SOV_idea_russian_uprising_7
+				has_idea = SOV_idea_russian_uprising_8
+				has_idea = SOV_idea_russian_uprising_9
+				has_idea = SOV_idea_russian_uprising_10
+			}
+		}
+		has_idea = SOV_idea_russian_uprising_1
+	}
+}

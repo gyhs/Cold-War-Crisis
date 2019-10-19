@@ -1,0 +1,458 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+# 군 감축안
+country_event = {
+	id = soviet.1
+	title = soviet.1.t
+	desc = soviet.1.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 핵 감축
+		name = soviet.1.a
+		ai_chance = { factor = 75 }
+		USA = { country_event = { id = soviet.2 } }
+	}
+	option = { # 군 감축
+		name = soviet.1.b
+		ai_chance = { factor = 25 }
+		USA = { country_event = { id = soviet.4 } }
+	}
+	option = { # 핵과 군 감축
+		name = soviet.1.c
+		ai_chance = { factor = 0 }
+		USA = { country_event = { id = soviet.6 } }
+	}
+}
+# 핵 감축안. 미국 답신
+country_event = {
+	id = soviet.2
+	title = soviet.2.t
+	desc = soviet.2.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 핵 감축 승인
+		name = soviet.2.a
+		ai_chance = { factor = 75 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament }
+		news_event = { id = soviet.news.2 }
+	}
+	option = { # 핵 대신 군 감축 제안
+		name = soviet.2.b
+		ai_chance = { factor = 25 }
+		SOV =	{country_event = { id = soviet.3 } }
+	}
+	option = { # 회담 종료
+		name = soviet.2.c
+		ai_chance = { factor = 0 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
+		news_event = { id = soviet.news.5 }
+	}
+}
+# 핵 감축안. 미국 회신에 소련 답신
+country_event = {
+	id = soviet.3
+	title = soviet.3.t
+	desc = soviet.3.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 군 감축 승인
+		name = soviet.3.a
+		ai_chance = { factor = 75 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_army_disarmament }
+		news_event = { id = soviet.news.3 }
+	}
+	option = { # 회담 종료
+		name = soviet.3.b
+		ai_chance = { factor = 0 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
+		news_event = { id = soviet.news.5 }
+	}
+}
+# 군 감축안. 미국 답신
+country_event = {
+	id = soviet.4
+	title = soviet.4.t
+	desc = soviet.4.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 군 감축 승인
+		name = soviet.4.a
+		ai_chance = { factor = 75 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_army_disarmament }
+		news_event = { id = soviet.news.3 }
+	}
+	option = { # 군 대신 핵 감축 제안
+		name = soviet.4.b
+		ai_chance = { factor = 25 }
+		SOV =	{country_event = { id = soviet.5 } }
+	}
+	option = { # 회담 종료
+		name = soviet.4.c
+		ai_chance = { factor = 0 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
+		news_event = { id = soviet.news.5 }
+	}
+}
+# 군 감축안. 미국 회신에 소련 답신
+country_event = {
+	id = soviet.5
+	title = soviet.5.t
+	desc = soviet.5.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 핵 감축 승인
+		name = soviet.5.a
+		ai_chance = { factor = 75 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament }
+		news_event = { id = soviet.news.2 }
+	}
+	option = { # 회담 종료
+		name = soviet.5.b
+		ai_chance = { factor = 0 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
+		news_event = { id = soviet.news.5 }
+	}
+}
+# 핵과 군 감축안. 미국 답신
+country_event = {
+	id = soviet.6
+	title = soviet.6.t
+	desc = soviet.6.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 핵 과 군 감축한 승인
+		name = soviet.6.a
+		ai_chance = { factor = 1 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_army_disarmament }
+		news_event = { id = soviet.news.4 }
+	}
+	option = { # 회담 되돌림
+		name = soviet.6.b
+		ai_chance = { factor = 99 }
+		SOV = { country_event = { id = soviet.7 } }
+	}
+	option = { # 회담 종료
+		name = soviet.6.c
+		ai_chance = { factor = 0 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
+		news_event = { id = soviet.news.5 }
+	}
+}
+# 핵과 군 감축안. 미국의 회신에 소련 답신
+country_event = {
+	id = soviet.7
+	title = soviet.7.t
+	desc = soviet.7.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 핵 감축
+		name = soviet.7.a
+		ai_chance = { factor = 75 }
+		USA = { country_event = { id = soviet.2 } }
+	}
+	option = { # 군 감축
+		name = soviet.7.b
+		ai_chance = { factor = 25 }
+		USA = { country_event = { id = soviet.4 } }
+	}
+	option = { # 회담 종료
+		name = soviet.7.c
+		ai_chance = { factor = 0 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
+		news_event = { id = soviet.news.5 }
+	}
+}
+
+# 핀란드 갈등 조정
+country_event = {
+	id = soviet.8
+	title = soviet.8.t
+	desc = soviet.8.desc
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	# 수락
+	option = {
+		name = soviet.8.a
+		ai_chance = {
+			factor = 50
+		}
+		effect_tooltip = {
+			FIN = { add_popularity = { ideology = communism popularity = 0.2 } }
+			#add_ideas = anti_soviet_pact
+			add_opinion_modifier = { target = SOV modifier = influential_sphere_by_SOV }
+		}
+		set_global_flag = SOV_flag_finland_conflict_resolution
+		SOV = {
+			country_event = { id = soviet.9 }
+		}
+	}
+
+	# 거부
+	option = {
+		name = soviet.8.b
+		ai_chance = {
+			#factor = 50
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = SOV ratio < 1 }
+			}
+			modifier = {
+				factor = 0.2
+				strength_ratio = { tag = SOV ratio < 0.5 }
+			}
+			modifier = {
+				factor = 0.5
+				SOV = { strength_ratio = { tag = SOV ratio > 0.8 } }
+			}
+			modifier = {
+				factor = 0
+				SOV = { strength_ratio = { tag = SOV ratio > 0.8 } }
+				strength_ratio = { tag = SOV ratio < 0.5 }
+			}
+		}
+		set_global_flag = SOV_flag_finland_conflict_resolution
+		complete_national_focus = FIN_strategy_decisions
+		SOV = {
+			country_event = { id = soviet.10 }
+		}
+	}
+}
+
+# 핀란드 갈등 조정 - 수락
+country_event = {
+	id = soviet.9
+	title = soviet.9.t
+	desc = soviet.9.desc
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	# 좋아
+	option = {
+		name = soviet.9.a
+		FIN = { add_popularity = { ideology = communism popularity = 0.2 } }
+		#add_ideas = anti_soviet_pact
+		FIN = { 
+			#add_ideas = anti_soviet_pact
+			add_opinion_modifier = { target = SOV modifier = influential_sphere_by_SOV }
+			complete_national_focus = FIN_strategy_decisions
+		}
+		hidden_effect = {
+			#news_event = { id = wtt_news.7 hours = 6 }
+			set_country_flag = flag_finland_control_by_SOV
+			FIN = {
+				add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ENG
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ENG
+					value = -200
+				}
+			}
+		}
+	}
+}
+
+# 핀란드 갈등 조정 - 거부
+country_event = {
+	id = soviet.10
+	title = soviet.10.t
+	desc = soviet.10.desc
+	picture = GFX_report_event_poland_rejects
+
+	is_triggered_only = yes
+
+	# 절대 핀란드가 나토에 가입하는걸 가만두지 않겠다.
+	option = {
+		name = soviet.10.a
+	}
+
+	# 그들이 원하는대로 가게 둬라.
+	option = {
+		name = soviet.10.b
+	}
+}
+
+
+# 중립화냐 나토화냐 (핀란드)
+country_event = {
+	id = soviet.11
+	title = soviet.11.t
+	desc = soviet.11.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = SOV }
+	}
+	
+	#핀란드 - 중립화를 선택
+	option = {
+		name = soviet.11.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		SOV = { country_event = { id = soviet.12 } }
+		effect_tooltip = {
+			leave_faction = yes
+			add_ideas = neutrality_idea
+		}
+		hidden_effect = {
+			#news_event = { id = news.203 hours = 6 }
+		}
+	}
+	# 핀란드 - 나토를 선택
+	option = {
+		name = soviet.11.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = SOV
+					ratio > 0.7
+				}
+			}
+			modifier = {
+				factor = 0.1
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = FIN
+				}
+			}
+		}
+		SOV = { country_event = { id = soviet.13 } 
+			if = {
+				limit = {
+					is_in_faction_with = FIN
+					is_faction_leader = yes
+				}
+				remove_from_faction = FIN
+			}
+			if = {
+				limit = { 
+					is_in_faction_with = FIN
+					is_faction_leader = no
+				}
+				random_other_country = {
+					limit = { 
+						is_in_faction_with = SOV
+						is_faction_leader = yes
+					}
+					remove_from_faction = SOV
+				}
+			}
+		}		
+		hidden_effect = {
+			#news_event = { hours = 1 id = news.204 }
+		}
+		effect_tooltip = {
+			SOV = {
+				create_wargoal = {
+				type = topple_government
+				target = FIN
+				}
+			}
+		}
+	}
+}
+
+# 핀란드의 중립화
+country_event = {
+	id = soviet.12
+	title = soviet.12.t
+	desc = soviet.12.desc
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.12.a
+		leave_faction = yes
+		add_ideas = neutrality_idea
+		if = {
+			limit = {
+				ENG = {
+					NOT = {
+						is_in_faction_with = SOV
+					}
+				}
+			}
+			ENG = {
+				add_war_support = -0.1 #dodged a bullet there
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					NOT = {
+						is_in_faction_with = SOV
+					}
+				}
+			}
+			FRA = {
+				add_war_support = -0.1 #dodged a bullet there
+			}
+		}
+	}
+}
+
+# 핀란드의 나토화
+country_event = {
+	id = soviet.13
+	title = soviet.13.t
+	desc = soviet.13.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	#Demand Danzig for aid
+	option = {
+		name = soviet.13.a
+			SOV = {
+				create_wargoal = {
+				type = topple_government
+				target = FIN
+				}
+			}
+	}
+}

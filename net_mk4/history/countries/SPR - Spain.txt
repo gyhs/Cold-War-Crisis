@@ -1,0 +1,84 @@
+﻿capital = 41
+
+oob = "SPR_1987"
+
+set_research_slots = 3
+
+set_technology = {
+}
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+set_convoys = 150
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Manuel Azana"
+	desc = "POLITICS_MANUEL_AZANA_DESC"
+	picture = "POLITICS_Spain_Manuel_Azana.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Díaz"
+	desc = "POLITICS_JOSE_DIAZ_DESC"
+	picture = "POLITICS_Spain_Jose_Diaz.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "POLITICS_Spain_Francisco_Franco.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alejandro Lerroux"
+	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "José Asensio Torrado"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}

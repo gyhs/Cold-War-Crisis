@@ -1,0 +1,656 @@
+technologies = {
+	### 항공모함 ###
+	tech_ship_hull_carrier_1 = {
+		enable_equipments = { 
+			ship_hull_carrier_1
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_1
+			ship_deck_space
+			ship_light_deck_space
+			ship_heavy_deck_space
+			ship_armor_carrier_1
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_carrier_1
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.8
+		start_year = 1945
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_carrier_2 = {
+		enable_equipments = { 
+			ship_hull_carrier_2
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_2
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_3
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1.1
+		start_year = 1950
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_carrier_3 = {
+		enable_equipments = { 
+			ship_hull_carrier_3
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_3
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_4
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1.1
+		start_year = 1955
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_carrier_4 = {
+		enable_equipments = { 
+			ship_hull_carrier_4
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_4
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1.1
+		start_year = 1955
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_carrier_5 = {
+		enable_equipments = { 
+			ship_hull_carrier_5
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_5
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1.1
+		start_year = 1955
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	### 대형 항공모함
+	
+	tech_ship_hull_heavy_carrier_1 = {
+		enable_equipments = { 
+			ship_hull_heavy_carrier_1
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_heavy_1
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_carrier_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.8
+		start_year = 1955
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	tech_ship_hull_heavy_carrier_2 = {
+		enable_equipments = { 
+			ship_hull_heavy_carrier_2
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_heavy_2
+		}
+
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_carrier_3
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.8
+		start_year = 1960
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	tech_ship_hull_heavy_carrier_3 = {
+		enable_equipments = { 
+			ship_hull_heavy_carrier_3
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_heavy_3
+		}
+
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_carrier_4
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.8
+		start_year = 1970
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	tech_ship_hull_heavy_carrier_4 = {
+		enable_equipments = { 
+			ship_hull_heavy_carrier_4
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_heavy_4
+		}
+
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_carrier_5
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			nuke_naval_engine_1 = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.8
+		start_year = 1970
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	### 강습상륙함 ###
+	tech_ship_hull_light_carrier_1 = {
+		enable_equipments = { 
+			ship_hull_light_carrier_1
+			ship_hull_carrier_conversion_bb
+			ship_hull_carrier_conversion_ca
+		}
+		enable_equipment_modules = {
+			ship_light_deck_space
+			ship_engine_carrier_light_1
+		}
+
+		path = {
+			leads_to_tech = tech_ship_hull_light_carrier_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.7
+		start_year = 1945
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_light_carrier_2 = {
+		enable_equipments = { 
+			ship_hull_light_carrier_2
+		}
+
+		path = {
+			leads_to_tech = tech_ship_hull_light_carrier_3
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1
+		start_year = 1950
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_light_carrier_3 = {
+		enable_equipments = { 
+			ship_hull_light_carrier_3
+		}
+
+		path = {
+			leads_to_tech = tech_ship_hull_light_carrier_4
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1
+		start_year = 1955
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				tag = ENG
+			}
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_light_carrier_4 = {
+		enable_equipments = { 
+			ship_hull_light_carrier_4
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_light_carrier_5
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1
+		start_year = 1955
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				tag = ENG
+			}
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	tech_ship_hull_light_carrier_5 = {
+		enable_equipments = { 
+			ship_hull_light_carrier_5
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_light_carrier_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1
+		start_year = 1955
+		
+		folder = {
+			name = naval_capital_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				tag = ENG
+			}
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+}

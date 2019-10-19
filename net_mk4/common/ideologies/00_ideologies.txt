@@ -1,0 +1,245 @@
+#Dskod1 (Dylan) now claims this file in the name of the AI... may the AI empire forever expan
+#All ideologies have been clumped into 3 groups for the AI. No one will ever see these, so we are hijacking them for our own purposes. The three AI groups are Democracy, Facist, and communism
+#there is a 4th ai group called neutral, but that works differently.
+
+#Note: Because of hard coded features, democracies now use the fascism AI and the ol fascisms use the neutral AI
+#Note: AI changed back to all neutral ai. This is because the other AI doesn't want to be apart of things if the tension is so low (IE at game start)
+# communism = 공산주의	
+# socialism = 사회주의 
+# social_democracy = 사회민주주의 
+# social_liberalism = 사회자유주의
+# market_liberalism = 시장자유주의
+# social_conservatism = 사회보수주의
+# authoritarianism = 권위주의
+# fascism = 파시즘
+ideologies = {
+
+	communism = {
+		types = {
+			communism_subtype = {} #generic
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_communism_1"
+			"FACTION_NAME_communism_2"
+			"FACTION_NAME_communism_3"
+			"FACTION_NAME_communism_4"
+			"FACTION_NAME_communism_5"
+			"FACTION_NAME_communism_6"
+		}
+		color = { 127 0 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	socialism = {
+		types = {
+			socialism_subtype = {} #generic
+
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_socialism_1"
+			"FACTION_NAME_socialism_2"
+			"FACTION_NAME_socialism_3"
+			"FACTION_NAME_socialism_4"
+			"FACTION_NAME_socialism_5"
+			"FACTION_NAME_socialism_6"
+		}
+		color = { 255 0 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+
+	}
+
+	social_democracy = {
+		types = {
+			social_democracy_subtype = {} #generic
+
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_social_democracy_1"
+			"FACTION_NAME_social_democracy_2"
+			"FACTION_NAME_social_democracy_3"
+			"FACTION_NAME_social_democracy_4"
+			"FACTION_NAME_social_democracy_5"
+			"FACTION_NAME_social_democracy_6"
+		}
+		color = { 194 30 86 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+
+	}
+
+	social_liberalism = {
+		types = {
+			social_liberalism_subtype = {} #generic
+
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_social_liberalism_1"
+			"FACTION_NAME_social_liberalism_2"
+			"FACTION_NAME_social_liberalism_3"
+			"FACTION_NAME_social_liberalism_4"
+			"FACTION_NAME_social_liberalism_5"
+			"FACTION_NAME_social_liberalism_6"
+		}
+		color = { 255 170 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+
+	}
+
+	market_liberalism = {
+		types = {
+			market_liberalism_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_market_liberalism_1"
+			"FACTION_NAME_market_liberalism_2"
+			"FACTION_NAME_market_liberalism_3"
+			"FACTION_NAME_market_liberalism_4"
+			"FACTION_NAME_market_liberalism_5"
+			"FACTION_NAME_market_liberalism_6"
+		}
+		color = { 255 255 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.75
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+
+	social_conservatism = {
+		types = {
+			social_conservatism_subtype = {} #generic
+
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_social_conservatism_1"
+			"FACTION_NAME_social_conservatism_2"
+			"FACTION_NAME_social_conservatism_3"
+			"FACTION_NAME_social_conservatism_4"
+			"FACTION_NAME_social_conservatism_5"
+			"FACTION_NAME_social_conservatism_6"
+		}
+		color = { 0 0 255 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+
+	}
+
+	authoritarianism = {
+		types = {
+			authoritarianism_subtype = {} #generic
+
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_authoritarianism_1"
+			"FACTION_NAME_authoritarianism_2"
+			"FACTION_NAME_authoritarianism_3"
+			"FACTION_NAME_authoritarianism_4"
+			"FACTION_NAME_authoritarianism_5"
+			"FACTION_NAME_authoritarianism_6"
+		}
+		color = { 80 80 80 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+
+	}
+
+	fascism = {
+		types = {
+			fascism_subtype = {} #generic
+
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_fascism_1"
+			"FACTION_NAME_fascism_2"
+			"FACTION_NAME_fascism_3"
+			"FACTION_NAME_fascism_4"
+			"FACTION_NAME_fascism_5"
+			"FACTION_NAME_fascism_6"
+		}
+		color = { 142 57 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+
+	}
+
+}

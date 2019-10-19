@@ -1,0 +1,31 @@
+@SOV_HUNT_UPRISING_EQUIPMENT_COST_TRIGGER = 499
+@SOV_HUNT_UPRISING_EQUIPMENT_COST_EFFECT = -500
+
+SOV_nm_uprising_category = {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

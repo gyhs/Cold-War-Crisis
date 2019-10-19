@@ -1,0 +1,89 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = generic.nf
+######################
+# 권위주의
+######################
+# 권위주의의 군주정 vs 공화정
+country_event = {
+	id = generic.nf.1
+	title = generic.nf.1.t
+	desc = generic.nf.1.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {has_completed_focus = NF_Gen_authoritarianism_ideologie 
+	}
+	
+	option = { #
+		name = generic.nf.1.a
+		swap_ideas = {
+			remove_idea = collectivist_ethos_focus
+			add_idea = NS_Gen_authoritarianism_monarchy				
+		}
+	}
+	
+	option = { #
+		name = generic.nf.1.b
+		swap_ideas = {
+			remove_idea = collectivist_ethos_focus
+			add_idea = NS_Gen_authoritarianism_republic				
+		}
+	}
+}
+
+
+#RAJ gets famine - Trigger/randomness event
+country_event = {
+	id = generic.nf.2
+	
+	hidden = yes
+	
+	immediate = {
+		country_event = { id = generic.nf.3 days = 300 }
+	}
+
+	trigger = {
+		#compare_autonomy_state < autonomy_dominion
+		has_capitulated = no
+		NOT = { surrender_progress > 0.5 }
+		has_idea = NS_Gen_risk_of_famine
+		has_war = yes		
+	}
+
+	mean_time_to_happen = { days = 150 }
+
+}
+
+#RAJ gets famine - Actual event
+country_event = {
+	id = generic.nf.3
+	title = generic.nf.3.t
+	desc = generic.nf.3.desc	#
+	picture = GFX_report_event_indian_famine
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+	}
+			
+	trigger = {
+		#compare_autonomy_state < autonomy_dominion
+		has_capitulated = no
+		NOT = { surrender_progress > 0.5 }
+		has_idea = NS_Gen_risk_of_famine
+	}
+
+	option = {
+		name = generic.nf.3.a
+		effect_tooltip = {
+			remove_ideas = NS_Gen_risk_of_famine
+			add_timed_idea = { idea = NS_Gen_famine days = 365 }
+		}
+	}
+}

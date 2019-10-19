@@ -1,0 +1,44 @@
+﻿capital = 361
+
+oob = "USA_1987"
+
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.5
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+# Starting tech
+set_technology = {
+}
+
+
+
+
+set_convoys = 400
+
+
+set_politics = {	
+	ruling_party = social_conservatism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
+}
+
+add_ideas = {
+}

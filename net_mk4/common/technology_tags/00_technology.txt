@@ -1,0 +1,159 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+technology_categories = {
+####################################################### CWC 장비###########################################
+
+	### 보병 ###
+	infantry_tech
+	motorized_equipment
+	para_tech
+	
+	infantry_weapons
+	night_vision
+	
+	#### 지원중대 ###
+	support_tech
+	engineers_tech
+	recon_tech
+	mountaineers_tech
+	military_police_tech
+	hospital_tech
+	logistics_tech
+	signal_company_tech
+	maintenance_company_tech
+	
+	#### 지상 화력지원 ###
+	artillery
+	cat_anti_tank
+	rocketry
+	mot_rockets
+	
+	### 기갑 ###
+	armor
+	cat_light_armor
+	cat_medium_armor
+	cat_heavy_armor
+	cat_mechanized_equipment
+	
+	### 공군 ###
+	air_equipment
+	light_air
+	medium_air
+	heavy_air
+	naval_air
+		### 전투기 ###
+	light_fighter
+	cat_heavy_fighter
+	naval_bomber
+	cas_bomber
+		### 전략 폭격기 ###
+	tactical_bomber
+	cat_strategic_bomber
+		### 헬리콥터 ###
+		
+	### 해군 ###
+	naval_equipment
+		#수상함
+	dd_tech
+	cl_tech
+	ca_tech
+	bc_tech
+	bb_tech
+	shbb_tech
+	ss_tech
+	tp_tech
+		#항공모함
+	cv_tech
+		#잠수함
+		#해병
+	marine_tech
+		
+	### 공학 ###
+	electronics
+	computing_tech
+	radar_tech
+	
+	encryption_tech
+	decryption_tech
+	
+	jet_technology
+	
+	nuclear
+	
+	### 산업 ###
+	industry
+	synth_resources
+	construction_tech
+	excavation_tech
+	
+############################################## 교리 ###########################################
+
+	### 육군 ###
+	land_doctrine
+	cat_mobile_warfare
+	cat_superior_firepower
+	cat_grand_battle_plan
+	cat_mass_assault
+	
+	### 해군 ###
+	naval_doctrine
+	
+	fleet_in_being_tree
+	cat_fleet_in_being
+	
+	trade_interdiction_tree
+	cat_trade_interdiction
+	
+	base_strike_main
+	cat_base_strike
+	
+	convoy_defense_tree
+	
+	submarine_doctrine
+	
+	### 공군 ###
+	air_doctrine
+	
+	strategic_destruction_tree
+	cat_strategic_destruction
+	
+	battlefield_support_tree
+	cat_battlefield_support
+	
+	operational_integrity_tree
+	cat_operational_integrity
+	
+	### 신규 ###
+	naval_mines
+	concentrated_industry_category
+	dispersed_industry_category
+	asw_tech
+	naval_minesweeping
+	naval_minelaying
+
+}
+
+technology_folders = {
+	infantry_folder
+	support_folder
+	armour_folder
+	artillery_folder
+	air_techs_folder		# original folder -- single engine aircraft
+	air_bomber_folder		# new folder -- twin and quad engine aircraft
+	air_helicopter_folder
+	naval_folder			# original folder -- naval screen ships
+	naval_capital_folder	# new folder -- naval capital ships
+	naval_submarine_folder
+	naval_equipment_folder
+	naval_marine_folder
+	industry_folder
+	land_doctrine_folder
+	naval_doctrine_folder
+	air_doctrine_folder
+	electronics_folder
+	#secret_weapons_folder
+
+}
+
+ 

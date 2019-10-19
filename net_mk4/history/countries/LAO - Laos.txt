@@ -1,0 +1,63 @@
+﻿capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
+
+oob = "LAO_1987"
+
+set_research_slots = 3
+
+# Starting tech
+# clone of France
+set_technology = {
+}
+
+set_politics = {
+	
+	ruling_party = social_conservatism
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Souphanouvong"
+	desc = ""
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_4.dds"
+	expire = "1953.3.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Sisavang Vong"
+	desc = ""
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Kou Voragong" 
+	desc = ""
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+#couldnt find historical fascists

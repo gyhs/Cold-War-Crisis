@@ -1,0 +1,18 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = world_news_soviet
+
+# 소비에트 연방 민족주의 확산
+news_event = {
+	id = world_news_soviet.1
+	title = world_news_soviet.1.t
+	desc = world_news_soviet.1.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	option = {
+		name = world_news_soviet.1.a
+	}
+}

@@ -1,0 +1,7 @@
+####################
+Decisions_AFG_army_reform_category = {
+	icon = army_reform
+
+	allowed = {
+	}
+}

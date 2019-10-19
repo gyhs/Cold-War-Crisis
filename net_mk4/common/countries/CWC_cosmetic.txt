@@ -1,0 +1,9 @@
+
+MUJ_cosmetic_islamic_state = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+MUJ_cosmetic_taliban = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}

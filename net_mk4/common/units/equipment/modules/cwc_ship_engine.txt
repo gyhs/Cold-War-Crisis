@@ -1,0 +1,2305 @@
+#-------------------------------------------------------------
+#ship_engine_light
+#ship_engine_cruiser
+#ship_engine_heavy
+#ship_engine_nuke
+#-----------------------
+#ship_engine_carrier_light
+#ship_engine_carrier
+#ship_engine_carrier_heavy
+#ship_engine_carrier_nuke
+#-----------------------
+#sub_engine
+#sub_engine_heavy
+#sub_engine_nuke
+#-------------------------------------------------------------
+equipment_modules = {
+#engine
+	ship_engine_light_1 = {
+		category = ship_engine_light
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+
+	}
+
+	ship_engine_light_2 = {
+		category = ship_engine_light
+		parent = ship_engine_light_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_engine_light_1
+			convert_cost_ic = 230
+		}
+	}
+
+	ship_engine_light_3 = {
+		category = ship_engine_light
+		parent = ship_engine_light_2
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_engine_light_2
+			convert_cost_ic = 230
+		}
+	}
+	ship_engine_light_4 = {
+		category = ship_engine_light
+		parent = ship_engine_light_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_engine_light_3
+			convert_cost_ic = 230
+		}
+	}
+	ship_engine_light_5 = {
+		category = ship_engine_light
+		parent = ship_engine_light_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_engine_light_4
+			convert_cost_ic = 230
+		}
+	}
+	ship_engine_light_6 = {
+		category = ship_engine_light
+		parent = ship_engine_light_5
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_engine_light_5
+			convert_cost_ic = 230
+		}
+	}
+	ship_engine_light_7 = {
+		category = ship_engine_light
+		parent = ship_engine_light_6
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_engine_light_6
+			convert_cost_ic = 230
+		}
+	}
+	ship_engine_light_8 = {
+		category = ship_engine_light
+		parent = ship_engine_light_7
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_light
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_engine_light_6
+			convert_cost_ic = 230
+		}
+	}
+#--------------------------------------------------------
+	ship_engine_cruiser_1 = {
+		category = ship_engine_cruiser
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_cruiser
+			convert_cost_ic = 2500
+		}
+	}
+
+	ship_engine_cruiser_2 = {
+		category = ship_engine_cruiser
+		parent = ship_engine_cruiser_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_cruiser
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_cruiser_1
+			convert_cost_ic = 2300
+		}
+	}
+
+	ship_engine_cruiser_3 = {
+		category = ship_engine_cruiser
+		parent = ship_engine_cruiser_2
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_cruiser
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_cruiser_2
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_cruiser_4 = {
+		category = ship_engine_cruiser
+		parent = ship_engine_cruiser_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_cruiser
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_cruiser_3
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_cruiser_5 = {
+		category = ship_engine_cruiser
+		parent = ship_engine_cruiser_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module = ship_engine_cruiser_4
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_cruiser_6 = {
+		category = ship_engine_cruiser
+		parent = ship_engine_cruiser_5
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_cruiser
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_cruiser_5
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_cruiser_7 = {
+		category = ship_engine_cruiser
+		parent = ship_engine_cruiser_6
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_cruiser
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_cruiser_6
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_cruiser_8 = {
+		category = ship_engine_cruiser
+		parent = ship_engine_cruiser_7
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_cruiser
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_cruiser_6
+			convert_cost_ic = 2300
+		}
+	}
+#--------------------------------------------------------
+	ship_engine_heavy_1 = {
+		category = ship_engine_heavy
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_heavy
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_heavy_2 = {
+		category = ship_engine_heavy
+		parent = ship_engine_heavy_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_heavy
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_heavy_1
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_heavy_3 = {
+		category = ship_engine_heavy
+		parent = ship_engine_heavy_2
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_heavy
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_heavy_2
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_heavy_4 = {
+		category = ship_engine_heavy
+		parent = ship_engine_heavy_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_heavy
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_heavy_3
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_heavy_5 = {
+		category = ship_engine_heavy
+		parent = ship_engine_heavy_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_heavy
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_heavy_4
+			convert_cost_ic = 4800
+		}
+	}
+#--------------------------------------------------------
+	ship_engine_nuke_1 = {
+		category = ship_engine_nuke
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_nuke
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_nuke_2 = {
+		category = ship_engine_nuke
+		parent = ship_engine_nuke_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_nuke
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_nuke_1
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_nuke_3 = {
+		category = ship_engine_nuke
+		parent = ship_engine_nuke_2
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_nuke
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_nuke_2
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_nuke_4 = {
+		category = ship_engine_nuke
+		parent = ship_engine_nuke_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_nuke
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_nuke_3
+			convert_cost_ic = 4800
+		}
+	}
+	ship_engine_nuke_5 = {
+		category = ship_engine_nuke
+		parent = ship_engine_nuke_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_nuke
+			convert_cost_ic = 5000
+		}
+		
+		can_convert_from = {
+			module = ship_engine_nuke_4
+			convert_cost_ic = 4800
+		}
+	}
+#----------------------------------------------------------------------------------
+	ship_engine_carrier_light_1 = {
+		category = ship_engine_carrier_light
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_light
+			convert_cost_ic = 2500
+		}
+	}
+
+	ship_engine_carrier_light_2 = {
+		category = ship_engine_carrier_light
+		parent = ship_engine_carrier_light_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_light
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_light_1
+			convert_cost_ic = 2300
+		}
+	}
+
+	ship_engine_carrier_light_3 = {
+		category = ship_engine_carrier_light
+		parent = ship_engine_carrier_light_2
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_light
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_light_2
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_light_4 = {
+		category = ship_engine_carrier_light
+		parent = ship_engine_carrier_light_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_light
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_light_3
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_light_5 = {
+		category = ship_engine_carrier_light
+		parent = ship_engine_carrier_light_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_light
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_light_4
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_light_6 = {
+		category = ship_engine_carrier_light
+		parent = ship_engine_carrier_light_5
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_light
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_light_5
+			convert_cost_ic = 2300
+		}
+	}
+#----------------------------------------------------------------------------------
+	ship_engine_carrier_1 = {
+		category = ship_engine_carrier
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier
+			convert_cost_ic = 2500
+		}
+	}
+
+	ship_engine_carrier_2 = {
+		category = ship_engine_carrier
+		parent = ship_engine_carrier_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_1
+			convert_cost_ic = 2300
+		}
+	}
+
+	ship_engine_carrier_3 = {
+		category = ship_engine_carrier
+		parent = ship_engine_carrier_2
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_2
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_4 = {
+		category = ship_engine_carrier
+		parent = ship_engine_carrier_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_3
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_5 = {
+		category = ship_engine_carrier
+		parent = ship_engine_carrier_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_4
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_6 = {
+		category = ship_engine_carrier
+		parent = ship_engine_carrier_5
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_5
+			convert_cost_ic = 2300
+		}
+	}
+#-------------------------------------------------------------------------
+	ship_engine_carrier_heavy_1 = {
+		category = ship_engine_carrier_heavy
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_heavy
+			convert_cost_ic = 2500
+		}
+	}
+
+	ship_engine_carrier_heavy_2 = {
+		category = ship_engine_carrier_heavy
+		parent = ship_engine_carrier_heavy_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_heavy
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_heavy_1
+			convert_cost_ic = 2300
+		}
+	}
+
+	ship_engine_carrier_heavy_3 = {
+		category = ship_engine_carrier_heavy
+		parent = ship_engine_carrier_heavy_2
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		can_convert_from = {
+			module_category = ship_engine_carrier_heavy
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_heavy_2
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_heavy_4 = {
+		category = ship_engine_carrier_heavy
+		parent = ship_engine_carrier_heavy_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_heavy
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_heavy_3
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_heavy_5 = {
+		category = ship_engine_carrier_heavy
+		parent = ship_engine_carrier_heavy_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			fuel_consumption = 24
+			supply_consumption = 0.014
+			surface_visibility = 1.13
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_heavy
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_heavy_4
+			convert_cost_ic = 2300
+		}
+	}
+#-------------------------------------------------------------------------
+	ship_engine_carrier_nuke_1 = {
+		category = ship_engine_carrier_nuke
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_nuke
+			convert_cost_ic = 2500
+		}
+	}
+
+	ship_engine_carrier_nuke_2 = {
+		category = ship_engine_carrier_nuke
+		parent = ship_engine_carrier_nuke_1
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_nuke
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_nuke_1
+			convert_cost_ic = 2300
+		}
+	}
+
+	ship_engine_carrier_nuke_3 = {
+		category = ship_engine_carrier_nuke
+		parent = ship_engine_carrier_nuke_2
+		sfx = sfx_ui_sd_module_engine
+		
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_nuke
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_nuke_2
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_nuke_4 = {
+		category = ship_engine_carrier_nuke
+		parent = ship_engine_carrier_nuke_3
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_nuke
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_nuke_3
+			convert_cost_ic = 2300
+		}
+	}
+	ship_engine_carrier_nuke_5 = {
+		category = ship_engine_carrier_nuke
+		parent = ship_engine_carrier_nuke_4
+		sfx = sfx_ui_sd_module_engine
+
+		manpower = 139
+		add_stats = {
+			build_cost_ic = 1770
+			naval_speed = 35.6
+			naval_range = 4000
+			supply_consumption = 0.05
+			
+		}
+		add_average_stats = {
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1875
+			reliability = -0.03375
+			
+		}
+		build_cost_resources = {
+			chromium = 1
+			
+		}
+		dismantle_cost_ic = 442.5
+		
+		can_convert_from = {
+			module_category = ship_engine_carrier_nuke
+			convert_cost_ic = 2500
+		}
+		
+		can_convert_from = {
+			module = ship_engine_carrier_nuke_4
+			convert_cost_ic = 2300
+		}
+	}
+#----------------------------------------------------------------------------
+	sub_engine_1 = {
+		category = sub_engine
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 7
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.05
+			reliability = -0.2
+
+		}
+
+		
+		can_convert_from = {
+			module_category = sub_engine
+			convert_cost_ic = 250
+		}
+	}
+
+	sub_engine_2 = {
+		category = sub_engine
+		parent = sub_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 8
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			reliability = -0.2
+			sub_visibility = -0.05
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_1
+			convert_cost_ic = 230
+		}
+	}
+
+	sub_engine_3 = {
+		category = sub_engine
+		parent = sub_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.2
+			sub_visibility = -0.1
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_2
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_4 = {
+		category = sub_engine
+		parent = sub_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_3
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_5 = {
+		category = sub_engine
+		parent = sub_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_4
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_6 = {
+		category = sub_engine
+		parent = sub_engine_5
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_5
+			convert_cost_ic = 230
+		}
+	}
+#--------------------------------------------------------
+	sub_engine_heavy_1 = {
+		category = sub_engine_heavy
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 7
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.05
+			reliability = -0.2
+
+		}
+
+		
+		can_convert_from = {
+			module_category = sub_engine_heavy
+			convert_cost_ic = 250
+		}
+	}
+
+	sub_engine_heavy_2 = {
+		category = sub_engine_heavy
+		parent = sub_engine_heavy_1
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 8
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			reliability = -0.2
+			sub_visibility = -0.05
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_heavy
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_heavy_1
+			convert_cost_ic = 230
+		}
+	}
+
+	sub_engine_heavy_3 = {
+		category = sub_engine_heavy
+		parent = sub_engine_heavy_2
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.2
+			sub_visibility = -0.1
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_heavy
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_heavy_2
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_heavy_4 = {
+		category = sub_engine_heavy
+		parent = sub_engine_heavy_3
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_heavy
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_heavy_3
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_heavy_5 = {
+		category = sub_engine_heavy
+		parent = sub_engine_heavy_4
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_heavy
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_heavy_4
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_heavy_6 = {
+		category = sub_engine_heavy
+		parent = sub_engine_heavy_5
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_heavy
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_heavy_5
+			convert_cost_ic = 230
+		}
+	}
+#--------------------------------------------------------
+	sub_engine_nuke_1 = {
+		category = sub_engine_nuke
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 7
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.05
+			reliability = -0.2
+
+		}
+
+		
+		can_convert_from = {
+			module_category = sub_engine_nuke
+			convert_cost_ic = 250
+		}
+	}
+
+	sub_engine_nuke_2 = {
+		category = sub_engine_nuke
+		parent = sub_engine_nuke_1
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 8
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			reliability = -0.2
+			sub_visibility = -0.05
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_nuke
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_nuke_1
+			convert_cost_ic = 230
+		}
+	}
+
+	sub_engine_nuke_3 = {
+		category = sub_engine_nuke
+		parent = sub_engine_nuke_2
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.2
+			sub_visibility = -0.1
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_nuke
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_nuke_2
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_nuke_4 = {
+		category = sub_engine_nuke
+		parent = sub_engine_nuke_3
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_nuke
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_nuke_3
+			convert_cost_ic = 230
+		}
+	}
+	sub_engine_nuke_5 = {
+		category = sub_engine_nuke
+		parent = sub_engine_nuke_4
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 10
+			build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_engine_nuke
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_engine_nuke_4
+			convert_cost_ic = 230
+		}
+	}
+}

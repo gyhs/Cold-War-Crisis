@@ -1,0 +1,847 @@
+﻿start_equipment_factor = 0.1
+##### Division Templates #####
+division_template = {
+	name = "차량화보병 사단"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_anti_air_brigade = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "경기계화보병 사단"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		light_mechanized = { x = 2 y = 0 }
+		light_mechanized = { x = 2 y = 1 }
+		light_mechanized = { x = 2 y = 2 }
+		
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_anti_air_brigade = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "기계화보병 사단"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_anti_air_brigade = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "기갑 사단"
+	division_names_group = USA_ARM_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_sp_anti_air_brigade = { x = 2 y = 3 }
+		
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		mechanized = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "차량화보병 여단"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		modern_armor = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		modern_sp_anti_air_brigade = { x = 2 y = 2 }
+		
+		motorized_rocket_brigade = { x = 3 y = 0 }
+		motorized_rocket_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "기계화보병 여단"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		
+		modern_armor = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		modern_sp_anti_air_brigade = { x = 2 y = 2 }
+		
+		motorized_rocket_brigade = { x = 3 y = 0 }
+		motorized_rocket_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "기갑 여단"
+	division_names_group = USA_ARM_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 1 y = 3 }
+		
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "차량화보병 연대"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		modern_armor = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
+		modern_sp_anti_air_brigade = { x = 1 y = 2 }
+		
+		motorized_rocket_brigade = { x = 2 y = 0 }
+		motorized_rocket_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "기갑 연대"
+	division_names_group = USA_ARM_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+		
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		
+		motorized_rocket_brigade = { x = 2 y = 0 }
+		motorized_rocket_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+
+division_template = { 
+	name = "주방위군 보병 사단"
+	division_names_group = USA_national_guard_01
+	is_locked = yes
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_anti_air_brigade = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "주방위군 기계화보병 사단"
+	division_names_group = USA_national_guard_01
+	is_locked = yes
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 3 }
+		modern_sp_anti_air_brigade = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+division_template = { 
+	name = "주방위군 기갑 사단"
+	division_names_group = USA_national_guard_01
+	is_locked = yes
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_sp_anti_air_brigade = { x = 2 y = 3 }
+		
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		mechanized = { x = 3 y = 4 }
+		
+		motorized_rocket_brigade = { x = 4 y = 0 }
+		motorized_rocket_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "공수 사단"
+	division_names_group = USA_PAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "해병 여단"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		amphibious_mechanized = { x = 0 y = 0 }
+		amphibious_mechanized = { x = 0 y = 1 }
+		amphibious_mechanized = { x = 0 y = 2 }
+		amphibious_mechanized = { x = 0 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer  = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		field_hospital  = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "해안경비대"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+	}
+}
+
+### Note: OOB abstracts away the following:
+#	Marine Brigade (3x marine bn, engineers), 2 Brigades: Leningrad, Sevastopol
+
+##### OOB #####
+units = {		
+	####주 방위군####
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3878
+		division_template = "주방위군 보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3878
+		division_template = "주방위군 보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3878
+		division_template = "주방위군 보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3878
+		division_template = "주방위군 보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3878
+		division_template = "주방위군 보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3878
+		division_template = "주방위군 보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3878
+		division_template = "주방위군 기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3878
+		division_template = "주방위군 기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3878
+		division_template = "주방위군 기갑 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3878
+		division_template = "주방위군 기갑 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	####본토 미군####
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 82
+		}
+		location = 3878
+		division_template = "공수 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 3878
+		division_template = "공수 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3878
+		division_template = "기갑 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3878
+		division_template = "기갑 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 194
+		}
+		location = 3878
+		division_template = "기갑 여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3878
+		division_template = "기갑 여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3878
+		division_template = "차량화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3878
+		division_template = "차량화보병 여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3878
+		division_template = "기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3878
+		division_template = "기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 3878
+		division_template = "기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 197
+		}
+		location = 3878
+		division_template = "기계화보병 여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3878
+		division_template = "경기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3878
+		division_template = "경기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3878
+		division_template = "경기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	#### 주한미군 ####
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7125
+		division_template = "차량화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	### 파나마 ###
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 193
+		}
+		location = 7617
+		division_template = "차량화보병 여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	####유럽 주둔군####
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11506
+		division_template = "기갑 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11506
+		division_template = "기갑 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11506
+		division_template = "기갑 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11506
+		division_template = "기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11506
+		division_template = "기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11506
+		division_template = "기계화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "베를린 연대"
+		location = 11506
+		division_template = "차량화보병 연대"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11506
+		division_template = "기갑 여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11506
+		division_template = "기갑 여단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	#### 태평양미군 ####
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 12140
+		division_template = "차량화보병 사단"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	
+	
+}

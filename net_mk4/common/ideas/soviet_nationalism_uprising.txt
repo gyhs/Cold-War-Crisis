@@ -1,0 +1,2025 @@
+ideas = {
+	country = {
+	
+		################################
+		##### 민족주의 불만 level ####
+		################################
+		
+		SOV_idea_ukraine_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		
+		SOV_idea_ukraine_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_baltic_states_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_baltic_states_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_baltic_states_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_baltic_states_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_baltic_states_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_baltic_states_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_baltic_states_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_baltic_states_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_baltic_states_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_baltic_states_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_baltic_states_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_moldova_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_moldova_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_moldova_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_moldova_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_moldova_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_moldova_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_moldova_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_moldova_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_moldova_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_moldova_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_moldova_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_belarus_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_belarus_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_belarus_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_belarus_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_belarus_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_belarus_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_belarus_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_belarus_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_belarus_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_belarus_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_belarus_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_armenia_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_armenia_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_armenia_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_armenia_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_armenia_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_armenia_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_armenia_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_armenia_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_armenia_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_armenia_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_armenia_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_azerbaijan_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_azerbaijan_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_azerbaijan_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_azerbaijan_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_azerbaijan_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_azerbaijan_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_azerbaijan_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_azerbaijan_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_azerbaijan_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_azerbaijan_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_azerbaijan_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_georgia_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_georgia_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_georgia_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_georgia_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_georgia_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_georgia_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_georgia_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_georgia_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_georgia_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_georgia_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_georgia_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_central_asia_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_central_asia_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_central_asia_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_central_asia_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_central_asia_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_central_asia_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_central_asia_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_central_asia_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_central_asia_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_central_asia_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_central_asia_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+		
+		SOV_idea_russian_uprising_none = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_russian_uprising_1 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		SOV_idea_russian_uprising_2 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+		SOV_idea_russian_uprising_3 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		SOV_idea_russian_uprising_4 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.06
+				stability_factor = -0.06
+				war_support_factor = -0.06
+			}
+		}
+		SOV_idea_russian_uprising_5 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = -0.07
+				war_support_factor = -0.07
+			}
+		}
+		SOV_idea_russian_uprising_6 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.08
+				stability_factor = -0.08
+				war_support_factor = -0.08
+			}
+		}
+		SOV_idea_russian_uprising_7 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				stability_factor = -0.09
+				war_support_factor = -0.09
+			}
+		}
+		SOV_idea_russian_uprising_8 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		SOV_idea_russian_uprising_9 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				stability_factor = -0.11
+				war_support_factor = -0.11
+			}
+		}
+		SOV_idea_russian_uprising_10 = {
+			
+			picture = chi_war_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.12
+				stability_factor = -0.12
+				war_support_factor = -0.12
+			}
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}

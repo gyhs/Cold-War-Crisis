@@ -1,0 +1,1359 @@
+#
+#worker_enthusiasm	노동자 의욕
+#desire_for_reformation 개혁 열망
+#hyper_inflation 경제위기
+#central_government_crisis 중앙정부 통제 위기
+#oligarch_power 올리가르히 권력
+################################
+#
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_worker_enthusiasm_clear_all = {
+	remove_ideas = {
+		SOV_worker_enthusiasm_1
+		SOV_worker_enthusiasm_2
+		SOV_worker_enthusiasm_3
+		SOV_worker_enthusiasm_4
+		SOV_worker_enthusiasm_5
+	}
+}
+
+#Important to put HIGHEST first
+SOV_worker_enthusiasm_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_worker_enthusiasm_up_tt
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_4 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_4
+			add_idea = SOV_worker_enthusiasm_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_worker_enthusiasm_3 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_3
+			add_idea = SOV_worker_enthusiasm_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_worker_enthusiasm_2 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_2
+			add_idea = SOV_worker_enthusiasm_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_worker_enthusiasm_1 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_1
+			add_idea = SOV_worker_enthusiasm_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_worker_enthusiasm_1 } }
+		add_ideas = SOV_worker_enthusiasm_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_worker_enthusiasm_level_down = {
+custom_effect_tooltip = SOV_worker_enthusiasm_down_tt
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_worker_enthusiasm_1
+				add_idea = SOV_worker_enthusiasm_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_worker_enthusiasm_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_2 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_2
+			add_idea = SOV_worker_enthusiasm_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_3 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_3
+			add_idea = SOV_worker_enthusiasm_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_4 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_4
+			add_idea = SOV_worker_enthusiasm_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_5 }
+		swap_ideas = {
+			remove_idea = SOV_worker_enthusiasm_5
+			add_idea = SOV_worker_enthusiasm_4
+		}
+	}
+}
+
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_desire_for_reformation_clear_all = {
+	remove_ideas = {
+		SOV_desire_for_reformation_1
+		SOV_desire_for_reformation_2
+		SOV_desire_for_reformation_3
+		SOV_desire_for_reformation_4
+		SOV_desire_for_reformation_5
+		SOV_desire_for_reformation_6
+		SOV_desire_for_reformation_7
+		SOV_desire_for_reformation_8
+		SOV_desire_for_reformation_9
+		SOV_desire_for_reformation_10
+		SOV_desire_for_reformation_11
+		SOV_desire_for_reformation_12
+		SOV_desire_for_reformation_13
+	}
+}
+
+#Important to put HIGHEST first
+SOV_desire_for_reformation_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_desire_for_reformation_up_tt
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_12 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_12
+			add_idea = SOV_desire_for_reformation_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_11 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_11
+			add_idea = SOV_desire_for_reformation_12
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_10 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_10
+			add_idea = SOV_desire_for_reformation_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_9 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_9
+			add_idea = SOV_desire_for_reformation_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_8 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_8
+			add_idea = SOV_desire_for_reformation_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_7 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_7
+			add_idea = SOV_desire_for_reformation_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_6 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_6
+			add_idea = SOV_desire_for_reformation_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_5 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_5
+			add_idea = SOV_desire_for_reformation_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_4 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_4
+			add_idea = SOV_desire_for_reformation_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_3 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_3
+			add_idea = SOV_desire_for_reformation_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_2 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_2
+			add_idea = SOV_desire_for_reformation_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_desire_for_reformation_1 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_1
+			add_idea = SOV_desire_for_reformation_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_desire_for_reformation_1 } }
+		add_ideas = SOV_desire_for_reformation_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_desire_for_reformation_level_down = {
+custom_effect_tooltip = SOV_desire_for_reformation_down_tt
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_desire_for_reformation_1
+				add_idea = SOV_desire_for_reformation_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_desire_for_reformation_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_2 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_2
+			add_idea = SOV_desire_for_reformation_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_3 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_3
+			add_idea = SOV_desire_for_reformation_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_4 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_4
+			add_idea = SOV_desire_for_reformation_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_5 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_5
+			add_idea = SOV_desire_for_reformation_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_6 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_6
+			add_idea = SOV_desire_for_reformation_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_7 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_7
+			add_idea = SOV_desire_for_reformation_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_8 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_8
+			add_idea = SOV_desire_for_reformation_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_9 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_9
+			add_idea = SOV_desire_for_reformation_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_10 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_10
+			add_idea = SOV_desire_for_reformation_9
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_11 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_11
+			add_idea = SOV_desire_for_reformation_10
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_12 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_12
+			add_idea = SOV_desire_for_reformation_11
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_13 }
+		swap_ideas = {
+			remove_idea = SOV_desire_for_reformation_13
+			add_idea = SOV_desire_for_reformation_12
+		}
+	}
+}
+
+# 소련 경제 위기
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_hyper_inflation_clear_all = {
+	remove_ideas = {
+		SOV_hyper_inflation_1
+		SOV_hyper_inflation_2
+		SOV_hyper_inflation_3
+		SOV_hyper_inflation_4
+		SOV_hyper_inflation_5
+		SOV_hyper_inflation_6
+		SOV_hyper_inflation_7
+		SOV_hyper_inflation_8
+		SOV_hyper_inflation_9
+		SOV_hyper_inflation_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_hyper_inflation_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_hyper_inflation_up_tt
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_9 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_9
+			add_idea = SOV_hyper_inflation_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_8 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_8
+			add_idea = SOV_hyper_inflation_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_7 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_7
+			add_idea = SOV_hyper_inflation_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_6 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_6
+			add_idea = SOV_hyper_inflation_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_5 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_5
+			add_idea = SOV_hyper_inflation_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_4 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_4
+			add_idea = SOV_hyper_inflation_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_3 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_3
+			add_idea = SOV_hyper_inflation_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_2 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_2
+			add_idea = SOV_hyper_inflation_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_hyper_inflation_1 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_1
+			add_idea = SOV_hyper_inflation_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_hyper_inflation_1 } }
+		add_ideas = SOV_hyper_inflation_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_hyper_inflation_level_down = {
+custom_effect_tooltip = SOV_hyper_inflation_down_tt
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_hyper_inflation_1
+				add_idea = SOV_hyper_inflation_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_hyper_inflation_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_2 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_2
+			add_idea = SOV_hyper_inflation_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_3 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_3
+			add_idea = SOV_hyper_inflation_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_4 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_4
+			add_idea = SOV_hyper_inflation_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_5 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_5
+			add_idea = SOV_hyper_inflation_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_6 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_6
+			add_idea = SOV_hyper_inflation_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_7 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_7
+			add_idea = SOV_hyper_inflation_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_8 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_8
+			add_idea = SOV_hyper_inflation_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_9 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_9
+			add_idea = SOV_hyper_inflation_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_10 }
+		swap_ideas = {
+			remove_idea = SOV_hyper_inflation_10
+			add_idea = SOV_hyper_inflation_9
+		}
+	}
+}
+
+
+# 소련 정부 통제력
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_central_government_crisis_clear_all = {
+	remove_ideas = {
+		SOV_central_government_crisis_1
+		SOV_central_government_crisis_2
+		SOV_central_government_crisis_3
+		SOV_central_government_crisis_4
+		SOV_central_government_crisis_5
+		SOV_central_government_crisis_6
+		SOV_central_government_crisis_7
+		SOV_central_government_crisis_8
+		SOV_central_government_crisis_9
+		SOV_central_government_crisis_10
+		SOV_central_government_crisis_11
+		SOV_central_government_crisis_12
+		SOV_central_government_crisis_13
+		SOV_central_government_crisis_14
+		SOV_central_government_crisis_15
+		SOV_central_government_crisis_16
+		SOV_central_government_crisis_17
+		SOV_central_government_crisis_18
+		SOV_central_government_crisis_19
+		SOV_central_government_crisis_20
+	}
+}
+
+#Important to put HIGHEST first
+SOV_central_government_crisis_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_central_government_crisis_up_tt
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_19 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_19
+			add_idea = SOV_central_government_crisis_20
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_18 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_18
+			add_idea = SOV_central_government_crisis_19
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_17 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_17
+			add_idea = SOV_central_government_crisis_18
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_16 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_16
+			add_idea = SOV_central_government_crisis_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_15 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_15
+			add_idea = SOV_central_government_crisis_16
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_14 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_14
+			add_idea = SOV_central_government_crisis_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_13 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_13
+			add_idea = SOV_central_government_crisis_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_12 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_12
+			add_idea = SOV_central_government_crisis_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_11 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_11
+			add_idea = SOV_central_government_crisis_12
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_10 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_10
+			add_idea = SOV_central_government_crisis_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_9 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_9
+			add_idea = SOV_central_government_crisis_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_8 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_8
+			add_idea = SOV_central_government_crisis_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_7 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_7
+			add_idea = SOV_central_government_crisis_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_6 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_6
+			add_idea = SOV_central_government_crisis_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_5 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_5
+			add_idea = SOV_central_government_crisis_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_4 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_4
+			add_idea = SOV_central_government_crisis_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_3 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_3
+			add_idea = SOV_central_government_crisis_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_2 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_2
+			add_idea = SOV_central_government_crisis_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_central_government_crisis_1 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_1
+			add_idea = SOV_central_government_crisis_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_central_government_crisis_1 } }
+		add_ideas = SOV_central_government_crisis_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_central_government_crisis_level_down = {
+custom_effect_tooltip = SOV_central_government_crisis_down_tt
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_central_government_crisis_1
+				add_idea = SOV_central_government_crisis_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_central_government_crisis_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_2 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_2
+			add_idea = SOV_central_government_crisis_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_3 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_3
+			add_idea = SOV_central_government_crisis_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_4 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_4
+			add_idea = SOV_central_government_crisis_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_5 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_5
+			add_idea = SOV_central_government_crisis_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_6 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_6
+			add_idea = SOV_central_government_crisis_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_7 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_7
+			add_idea = SOV_central_government_crisis_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_8 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_8
+			add_idea = SOV_central_government_crisis_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_9 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_9
+			add_idea = SOV_central_government_crisis_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_10 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_10
+			add_idea = SOV_central_government_crisis_9
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_11 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_11
+			add_idea = SOV_central_government_crisis_10
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_12 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_12
+			add_idea = SOV_central_government_crisis_11
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_13 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_13
+			add_idea = SOV_central_government_crisis_12
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_14 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_14
+			add_idea = SOV_central_government_crisis_13
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_15 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_15
+			add_idea = SOV_central_government_crisis_14
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_16 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_16
+			add_idea = SOV_central_government_crisis_15
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_17 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_17
+			add_idea = SOV_central_government_crisis_16
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_18 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_18
+			add_idea = SOV_central_government_crisis_17
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_19 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_19
+			add_idea = SOV_central_government_crisis_18
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_20 }
+		swap_ideas = {
+			remove_idea = SOV_central_government_crisis_20
+			add_idea = SOV_central_government_crisis_19
+		}
+	}
+}
+
+
+# 올리가르히
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_oligarch_power_clear_all = {
+	remove_ideas = {
+		SOV_oligarch_power_1
+		SOV_oligarch_power_2
+		SOV_oligarch_power_3
+		SOV_oligarch_power_4
+		SOV_oligarch_power_5
+		SOV_oligarch_power_6
+		SOV_oligarch_power_7
+		SOV_oligarch_power_8
+		SOV_oligarch_power_9
+		SOV_oligarch_power_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_oligarch_power_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_oligarch_power_up_tt
+	if = {
+		limit = { has_idea = SOV_oligarch_power_9 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_9
+			add_idea = SOV_oligarch_power_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_8 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_8
+			add_idea = SOV_oligarch_power_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_7 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_7
+			add_idea = SOV_oligarch_power_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_6 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_6
+			add_idea = SOV_oligarch_power_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_5 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_5
+			add_idea = SOV_oligarch_power_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_4 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_4
+			add_idea = SOV_oligarch_power_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_3 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_3
+			add_idea = SOV_oligarch_power_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_2 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_2
+			add_idea = SOV_oligarch_power_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_oligarch_power_1 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_1
+			add_idea = SOV_oligarch_power_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_oligarch_power_1 } }
+		add_ideas = SOV_oligarch_power_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_oligarch_power_level_down = {
+custom_effect_tooltip = SOV_oligarch_power_down_tt
+	if = {
+		limit = { has_idea = SOV_oligarch_power_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_oligarch_power_1
+				add_idea = SOV_oligarch_power_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_oligarch_power_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_2 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_2
+			add_idea = SOV_oligarch_power_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_3 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_3
+			add_idea = SOV_oligarch_power_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_4 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_4
+			add_idea = SOV_oligarch_power_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_5 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_5
+			add_idea = SOV_oligarch_power_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_6 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_6
+			add_idea = SOV_oligarch_power_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_7 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_7
+			add_idea = SOV_oligarch_power_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_8 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_8
+			add_idea = SOV_oligarch_power_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_9 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_9
+			add_idea = SOV_oligarch_power_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_10 }
+		swap_ideas = {
+			remove_idea = SOV_oligarch_power_10
+			add_idea = SOV_oligarch_power_9
+		}
+	}
+}
+
+
+# 사회안정망
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_social_safety_nets_crisis_clear_all = {
+	remove_ideas = {
+		SOV_social_safety_nets_crisis_1
+		SOV_social_safety_nets_crisis_2
+		SOV_social_safety_nets_crisis_3
+		SOV_social_safety_nets_crisis_4
+		SOV_social_safety_nets_crisis_5
+		SOV_social_safety_nets_crisis_6
+		SOV_social_safety_nets_crisis_7
+		SOV_social_safety_nets_crisis_8
+		SOV_social_safety_nets_crisis_9
+		SOV_social_safety_nets_crisis_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_social_safety_nets_crisis_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_social_safety_nets_crisis_up_tt
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_9 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_9
+			add_idea = SOV_social_safety_nets_crisis_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_8 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_8
+			add_idea = SOV_social_safety_nets_crisis_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_7 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_7
+			add_idea = SOV_social_safety_nets_crisis_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_6 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_6
+			add_idea = SOV_social_safety_nets_crisis_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_5 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_5
+			add_idea = SOV_social_safety_nets_crisis_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_4 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_4
+			add_idea = SOV_social_safety_nets_crisis_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_3 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_3
+			add_idea = SOV_social_safety_nets_crisis_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_2 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_2
+			add_idea = SOV_social_safety_nets_crisis_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_1 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_1
+			add_idea = SOV_social_safety_nets_crisis_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_social_safety_nets_crisis_1 } }
+		add_ideas = SOV_social_safety_nets_crisis_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_social_safety_nets_crisis_level_down = {
+custom_effect_tooltip = SOV_social_safety_nets_crisis_down_tt
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_social_safety_nets_crisis_1
+				add_idea = SOV_social_safety_nets_crisis_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_social_safety_nets_crisis_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_2 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_2
+			add_idea = SOV_social_safety_nets_crisis_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_3 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_3
+			add_idea = SOV_social_safety_nets_crisis_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_4 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_4
+			add_idea = SOV_social_safety_nets_crisis_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_5 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_5
+			add_idea = SOV_social_safety_nets_crisis_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_6 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_6
+			add_idea = SOV_social_safety_nets_crisis_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_7 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_7
+			add_idea = SOV_social_safety_nets_crisis_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_8 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_8
+			add_idea = SOV_social_safety_nets_crisis_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_9 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_9
+			add_idea = SOV_social_safety_nets_crisis_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_10 }
+		swap_ideas = {
+			remove_idea = SOV_social_safety_nets_crisis_10
+			add_idea = SOV_social_safety_nets_crisis_9
+		}
+	}
+}
+
+
+# 노멘클라투라
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_nomenklatura_power_clear_all = {
+	remove_ideas = {
+		SOV_nomenklatura_power_1
+		SOV_nomenklatura_power_2
+		SOV_nomenklatura_power_3
+		SOV_nomenklatura_power_4
+		SOV_nomenklatura_power_5
+		SOV_nomenklatura_power_6
+		SOV_nomenklatura_power_7
+		SOV_nomenklatura_power_8
+		SOV_nomenklatura_power_9
+		SOV_nomenklatura_power_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_nomenklatura_power_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_nomenklatura_power_up_tt
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_9 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_9
+			add_idea = SOV_nomenklatura_power_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_8 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_8
+			add_idea = SOV_nomenklatura_power_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_7 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_7
+			add_idea = SOV_nomenklatura_power_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_6 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_6
+			add_idea = SOV_nomenklatura_power_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_5 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_5
+			add_idea = SOV_nomenklatura_power_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_4 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_4
+			add_idea = SOV_nomenklatura_power_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_3 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_3
+			add_idea = SOV_nomenklatura_power_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_2 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_2
+			add_idea = SOV_nomenklatura_power_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_nomenklatura_power_1 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_1
+			add_idea = SOV_nomenklatura_power_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_nomenklatura_power_1 } }
+		add_ideas = SOV_nomenklatura_power_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_nomenklatura_power_level_down = {
+custom_effect_tooltip = SOV_nomenklatura_power_down_tt
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_nomenklatura_power_1
+				add_idea = SOV_nomenklatura_power_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_nomenklatura_power_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_2 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_2
+			add_idea = SOV_nomenklatura_power_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_3 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_3
+			add_idea = SOV_nomenklatura_power_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_4 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_4
+			add_idea = SOV_nomenklatura_power_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_5 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_5
+			add_idea = SOV_nomenklatura_power_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_6 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_6
+			add_idea = SOV_nomenklatura_power_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_7 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_7
+			add_idea = SOV_nomenklatura_power_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_8 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_8
+			add_idea = SOV_nomenklatura_power_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_9 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_9
+			add_idea = SOV_nomenklatura_power_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_10 }
+		swap_ideas = {
+			remove_idea = SOV_nomenklatura_power_10
+			add_idea = SOV_nomenklatura_power_9
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+SOV_negative_spirit_transfer = {
+	if = {
+		limit = {
+			event_target:old_leader = { has_idea = SOV_hyper_inflation_none }	
+		}
+		add_ideas = SOV_hyper_inflation_none
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = SOV_hyper_inflation_1 }	
+		}
+		add_ideas = SOV_hyper_inflation_1
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = SOV_hyper_inflation_2 }	
+		}
+		add_ideas = SOV_hyper_inflation_2
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = SOV_hyper_inflation_3 }	
+		}
+		add_ideas = SOV_hyper_inflation_3
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = SOV_hyper_inflation_4 }	
+		}
+		add_ideas = SOV_hyper_inflation_4
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = SOV_hyper_inflation_5 }	
+		}
+		add_ideas = SOV_hyper_inflation_5
+	}
+}

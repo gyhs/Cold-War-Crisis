@@ -1,0 +1,507 @@
+
+
+# 부족 영향력
+#Add to scripted triggers if more levels of hyper inflation is added
+AFG_idea_tribe_influence_clear_all = {
+	remove_ideas = {
+		AFG_idea_tribe_influence_1
+		AFG_idea_tribe_influence_2
+		AFG_idea_tribe_influence_3
+		AFG_idea_tribe_influence_4
+		AFG_idea_tribe_influence_5
+		AFG_idea_tribe_influence_6
+		AFG_idea_tribe_influence_7
+		AFG_idea_tribe_influence_8
+		AFG_idea_tribe_influence_9
+		AFG_idea_tribe_influence_10
+	}
+}
+
+#Important to put HIGHEST first
+AFG_idea_tribe_influence_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = AFG_idea_tribe_influence_up_tt
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_9 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_9
+			add_idea = AFG_idea_tribe_influence_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_8 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_8
+			add_idea = AFG_idea_tribe_influence_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_7 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_7
+			add_idea = AFG_idea_tribe_influence_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_6 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_6
+			add_idea = AFG_idea_tribe_influence_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_5 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_5
+			add_idea = AFG_idea_tribe_influence_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_4 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_4
+			add_idea = AFG_idea_tribe_influence_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_3 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_3
+			add_idea = AFG_idea_tribe_influence_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_2 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_2
+			add_idea = AFG_idea_tribe_influence_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_tribe_influence_1 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_1
+			add_idea = AFG_idea_tribe_influence_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = AFG_idea_tribe_influence_1 } }
+		add_ideas = AFG_idea_tribe_influence_1
+	}
+}
+
+#Important to put LOWEST first
+AFG_idea_tribe_influence_level_down = {
+custom_effect_tooltip = AFG_idea_tribe_influence_down_tt
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = AFG_idea_tribe_influence_1
+				add_idea = AFG_idea_tribe_influence_none
+			}
+		}
+		hidden_effect = { remove_ideas = AFG_idea_tribe_influence_1 }
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_2 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_2
+			add_idea = AFG_idea_tribe_influence_1
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_3 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_3
+			add_idea = AFG_idea_tribe_influence_2
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_4 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_4
+			add_idea = AFG_idea_tribe_influence_3
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_5 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_5
+			add_idea = AFG_idea_tribe_influence_4
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_6 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_6
+			add_idea = AFG_idea_tribe_influence_5
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_7 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_7
+			add_idea = AFG_idea_tribe_influence_6
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_8 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_8
+			add_idea = AFG_idea_tribe_influence_7
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_9 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_9
+			add_idea = AFG_idea_tribe_influence_8
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_tribe_influence_10 }
+		swap_ideas = {
+			remove_idea = AFG_idea_tribe_influence_10
+			add_idea = AFG_idea_tribe_influence_9
+		}
+	}
+}
+# 종교 영향력
+#Add to scripted triggers if more levels of hyper inflation is added
+AFG_idea_religion_influence_clear_all = {
+	remove_ideas = {
+		AFG_idea_religion_influence_1
+		AFG_idea_religion_influence_2
+		AFG_idea_religion_influence_3
+		AFG_idea_religion_influence_4
+		AFG_idea_religion_influence_5
+		AFG_idea_religion_influence_6
+		AFG_idea_religion_influence_7
+		AFG_idea_religion_influence_8
+		AFG_idea_religion_influence_9
+		AFG_idea_religion_influence_10
+	}
+}
+
+#Important to put HIGHEST first
+AFG_idea_religion_influence_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = AFG_idea_religion_influence_up_tt
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_9 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_9
+			add_idea = AFG_idea_religion_influence_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_8 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_8
+			add_idea = AFG_idea_religion_influence_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_7 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_7
+			add_idea = AFG_idea_religion_influence_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_6 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_6
+			add_idea = AFG_idea_religion_influence_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_5 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_5
+			add_idea = AFG_idea_religion_influence_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_4 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_4
+			add_idea = AFG_idea_religion_influence_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_3 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_3
+			add_idea = AFG_idea_religion_influence_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_2 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_2
+			add_idea = AFG_idea_religion_influence_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_religion_influence_1 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_1
+			add_idea = AFG_idea_religion_influence_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = AFG_idea_religion_influence_1 } }
+		add_ideas = AFG_idea_religion_influence_1
+	}
+}
+
+#Important to put LOWEST first
+AFG_idea_religion_influence_level_down = {
+custom_effect_tooltip = AFG_idea_religion_influence_down_tt
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = AFG_idea_religion_influence_1
+				add_idea = AFG_idea_religion_influence_none
+			}
+		}
+		hidden_effect = { remove_ideas = AFG_idea_religion_influence_1 }
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_2 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_2
+			add_idea = AFG_idea_religion_influence_1
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_3 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_3
+			add_idea = AFG_idea_religion_influence_2
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_4 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_4
+			add_idea = AFG_idea_religion_influence_3
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_5 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_5
+			add_idea = AFG_idea_religion_influence_4
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_6 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_6
+			add_idea = AFG_idea_religion_influence_5
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_7 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_7
+			add_idea = AFG_idea_religion_influence_6
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_8 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_8
+			add_idea = AFG_idea_religion_influence_7
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_9 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_9
+			add_idea = AFG_idea_religion_influence_8
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_religion_influence_10 }
+		swap_ideas = {
+			remove_idea = AFG_idea_religion_influence_10
+			add_idea = AFG_idea_religion_influence_9
+		}
+	}
+}
+
+# 아편 영향력
+#Add to scripted triggers if more levels of hyper inflation is added
+AFG_idea_opium_industry_clear_all = {
+	remove_ideas = {
+		AFG_idea_opium_industry_1
+		AFG_idea_opium_industry_2
+		AFG_idea_opium_industry_3
+		AFG_idea_opium_industry_4
+		AFG_idea_opium_industry_5
+		AFG_idea_opium_industry_6
+		AFG_idea_opium_industry_7
+		AFG_idea_opium_industry_8
+		AFG_idea_opium_industry_9
+		AFG_idea_opium_industry_10
+	}
+}
+
+#Important to put HIGHEST first
+AFG_idea_opium_industry_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = AFG_idea_opium_industry_up_tt
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_9 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_9
+			add_idea = AFG_idea_opium_industry_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_8 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_8
+			add_idea = AFG_idea_opium_industry_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_7 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_7
+			add_idea = AFG_idea_opium_industry_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_6 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_6
+			add_idea = AFG_idea_opium_industry_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_5 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_5
+			add_idea = AFG_idea_opium_industry_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_4 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_4
+			add_idea = AFG_idea_opium_industry_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_3 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_3
+			add_idea = AFG_idea_opium_industry_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_2 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_2
+			add_idea = AFG_idea_opium_industry_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AFG_idea_opium_industry_1 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_1
+			add_idea = AFG_idea_opium_industry_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = AFG_idea_opium_industry_1 } }
+		add_ideas = AFG_idea_opium_industry_1
+	}
+}
+
+#Important to put LOWEST first
+AFG_idea_opium_industry_level_down = {
+custom_effect_tooltip = AFG_idea_opium_industry_down_tt
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = AFG_idea_opium_industry_1
+				add_idea = AFG_idea_opium_industry_none
+			}
+		}
+		hidden_effect = { remove_ideas = AFG_idea_opium_industry_1 }
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_2 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_2
+			add_idea = AFG_idea_opium_industry_1
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_3 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_3
+			add_idea = AFG_idea_opium_industry_2
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_4 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_4
+			add_idea = AFG_idea_opium_industry_3
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_5 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_5
+			add_idea = AFG_idea_opium_industry_4
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_6 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_6
+			add_idea = AFG_idea_opium_industry_5
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_7 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_7
+			add_idea = AFG_idea_opium_industry_6
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_8 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_8
+			add_idea = AFG_idea_opium_industry_7
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_9 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_9
+			add_idea = AFG_idea_opium_industry_8
+		}
+	}
+	if = {
+		limit = { has_idea = AFG_idea_opium_industry_10 }
+		swap_ideas = {
+			remove_idea = AFG_idea_opium_industry_10
+			add_idea = AFG_idea_opium_industry_9
+		}
+	}
+}

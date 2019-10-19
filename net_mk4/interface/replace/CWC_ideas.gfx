@@ -1,0 +1,14 @@
+spriteTypes = {	
+	
+	
+	##################
+	# 국가중점
+	
+	##################
+	#소련
+	spriteType = {
+        name = "GFX_idea_nomenklatura_power"
+        textureFile = "gfx/interface/ideas/national_focus/nomenklatura_power.dds"
+    }
+	
+}

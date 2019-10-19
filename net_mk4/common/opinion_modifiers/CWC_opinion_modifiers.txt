@@ -1,0 +1,22 @@
+opinion_modifiers = {
+	mission_to_the_GER = { value = 50 }
+	mission_to_the_ENG = { value = 50 }
+	mission_to_the_FRA = { value = 50 }
+	mission_to_the_ITA = { value = 50 }
+	mission_to_the_USA = { value = 50 }
+	mission_to_the_SOV = { value = 50 }
+	mission_to_the_PRC = { value = 50 }
+	mission_to_the_YUG = { value = 50 }
+	mission_to_the_KOR = { value = 50 }
+	mission_to_the_PRK = { value = 50 }
+	mission_to_the_FIN = { value = 50 }
+	mission_to_the_SWE = { value = 50 }
+	mission_to_the_NOR = { value = 50 }
+	mission_to_the_DEN = { value = 50 }
+	mission_to_the_PAK = { value = 50 }
+	
+	SOV_leanings = { value = 50 }
+	
+	influential_sphere_by_SOV = { value = 10 }
+	seek_accommodation_with_SOV = { value = 50 }
+}

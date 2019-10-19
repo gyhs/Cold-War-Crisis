@@ -1,0 +1,181 @@
+
+#### 부족 영향력
+has_MUJ_idea_tribe_influence = {
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_1 }
+		has_idea = MUJ_idea_tribe_influence_1
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_2 }
+		has_idea = MUJ_idea_tribe_influence_2
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_3 }
+		has_idea = MUJ_idea_tribe_influence_3
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_4 }
+		has_idea = MUJ_idea_tribe_influence_4
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_5 }
+		has_idea = MUJ_idea_tribe_influence_5
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_6 }
+		has_idea = MUJ_idea_tribe_influence_6
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_7 }
+		has_idea = MUJ_idea_tribe_influence_7
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_8 }
+		has_idea = MUJ_idea_tribe_influence_8
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_9 }
+		has_idea = MUJ_idea_tribe_influence_9
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_tribe_influence_10 }
+		has_idea = MUJ_idea_tribe_influence_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = MUJ_idea_tribe_influence_1
+				has_idea = MUJ_idea_tribe_influence_2
+				has_idea = MUJ_idea_tribe_influence_3
+				has_idea = MUJ_idea_tribe_influence_4
+				has_idea = MUJ_idea_tribe_influence_5
+				has_idea = MUJ_idea_tribe_influence_6
+				has_idea = MUJ_idea_tribe_influence_7
+				has_idea = MUJ_idea_tribe_influence_8
+				has_idea = MUJ_idea_tribe_influence_9
+				has_idea = MUJ_idea_tribe_influence_10
+			}
+		}
+		has_idea = MUJ_idea_tribe_influence_1
+	}
+}
+#### 종교 영향력
+has_MUJ_idea_religion_influence = {
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_1 }
+		has_idea = MUJ_idea_religion_influence_1
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_2 }
+		has_idea = MUJ_idea_religion_influence_2
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_3 }
+		has_idea = MUJ_idea_religion_influence_3
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_4 }
+		has_idea = MUJ_idea_religion_influence_4
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_5 }
+		has_idea = MUJ_idea_religion_influence_5
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_6 }
+		has_idea = MUJ_idea_religion_influence_6
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_7 }
+		has_idea = MUJ_idea_religion_influence_7
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_8 }
+		has_idea = MUJ_idea_religion_influence_8
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_9 }
+		has_idea = MUJ_idea_religion_influence_9
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_religion_influence_10 }
+		has_idea = MUJ_idea_religion_influence_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = MUJ_idea_religion_influence_1
+				has_idea = MUJ_idea_religion_influence_2
+				has_idea = MUJ_idea_religion_influence_3
+				has_idea = MUJ_idea_religion_influence_4
+				has_idea = MUJ_idea_religion_influence_5
+				has_idea = MUJ_idea_religion_influence_6
+				has_idea = MUJ_idea_religion_influence_7
+				has_idea = MUJ_idea_religion_influence_8
+				has_idea = MUJ_idea_religion_influence_9
+				has_idea = MUJ_idea_religion_influence_10
+			}
+		}
+		has_idea = MUJ_idea_religion_influence_1
+	}
+}
+#### 아편 영향력
+has_MUJ_idea_opium_industry = {
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_1 }
+		has_idea = MUJ_idea_opium_industry_1
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_2 }
+		has_idea = MUJ_idea_opium_industry_2
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_3 }
+		has_idea = MUJ_idea_opium_industry_3
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_4 }
+		has_idea = MUJ_idea_opium_industry_4
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_5 }
+		has_idea = MUJ_idea_opium_industry_5
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_6 }
+		has_idea = MUJ_idea_opium_industry_6
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_7 }
+		has_idea = MUJ_idea_opium_industry_7
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_8 }
+		has_idea = MUJ_idea_opium_industry_8
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_9 }
+		has_idea = MUJ_idea_opium_industry_9
+	}
+	if = {
+		limit = { has_idea = MUJ_idea_opium_industry_10 }
+		has_idea = MUJ_idea_opium_industry_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = MUJ_idea_opium_industry_1
+				has_idea = MUJ_idea_opium_industry_2
+				has_idea = MUJ_idea_opium_industry_3
+				has_idea = MUJ_idea_opium_industry_4
+				has_idea = MUJ_idea_opium_industry_5
+				has_idea = MUJ_idea_opium_industry_6
+				has_idea = MUJ_idea_opium_industry_7
+				has_idea = MUJ_idea_opium_industry_8
+				has_idea = MUJ_idea_opium_industry_9
+				has_idea = MUJ_idea_opium_industry_10
+			}
+		}
+		has_idea = MUJ_idea_opium_industry_1
+	}
+}

@@ -1,0 +1,85 @@
+﻿capital = 608
+
+oob = "PRC_1987"
+
+# Starting tech
+set_technology = {
+}
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+}
+
+set_stability = 0.6
+set_war_support = 0.7
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
+}
+
+add_ideas = {
+}
+
+add_opinion_modifier = { target = CHI modifier = hostile_status }
+
+
+###
+create_country_leader = {
+	name = "덩샤오핑"
+	desc = "POLITICS_PRC_Deng_Xiaoping_DESC"
+	picture = "POLITICS_PRC_Deng_Xiaoping.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "한동팡"
+	desc = "POLITICS_PRC_Han_Dongfang_DESC"
+	picture = "POLITICS_PRC_Han_Dongfang.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "우쿠"
+	desc = "POLITICS_PRC_Wu_Qu_DESC"
+	picture = "POLITICS_PRC_Wu_Qu.dds"
+	expire = "2100.3.1"
+	ideology = despotism
+	traits = {
+	}
+}
+#create_country_leader = {
+#	name = "우쿠"
+#	desc = "POLITICS_PRC_Wu_Qu_DESC"
+#	picture = "POLITICS_PRC_Wu_Qu.dds"
+#	expire = "2100.3.1"
+#	ideology = fascism_ideology
+#	traits = {
+#	}
+#}

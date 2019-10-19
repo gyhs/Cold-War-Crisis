@@ -1,0 +1,2196 @@
+ideas = {
+	country = {
+		
+		home_of_revolution = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		SOV_Soviet_economy_law_1 = {
+
+			picture = HUN_treaty_of_triannon
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = 0.5
+				fdi_regulations_cost_factor = 0.5
+				tariffs_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				taxes_cost_factor = 0.5
+
+			}
+
+		}
+
+		################################
+		##### 개혁 열망 level ####
+		################################
+
+		SOV_desire_for_reformation_none = {
+
+			picture = generic_political_support
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		SOV_desire_for_reformation_1 = {
+
+			picture = generic_political_support
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.01
+				stability_factor = -0.01
+			}
+
+		}
+
+		SOV_desire_for_reformation_2 = {
+
+			picture = chi_army_corruption2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = -0.02
+			}
+
+		}
+		
+		SOV_desire_for_reformation_3 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.03
+				stability_factor = -0.03
+			}
+
+		}
+		
+		SOV_desire_for_reformation_4 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.04
+				stability_factor = -0.04
+			}
+
+		}
+		
+		SOV_desire_for_reformation_5 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+			}
+
+		}
+		
+		SOV_desire_for_reformation_6 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.06
+				stability_factor = -0.06
+			}
+
+		}
+		
+		SOV_desire_for_reformation_7 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.07
+				stability_factor = -0.07
+			}
+
+		}
+		
+		SOV_desire_for_reformation_8 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.08
+				stability_factor = -0.08
+			}
+
+		}
+		
+		SOV_desire_for_reformation_9 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.09
+				stability_factor = -0.09
+			}
+
+		}
+		
+		SOV_desire_for_reformation_10 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = -0.10
+			}
+
+		}
+		
+		SOV_desire_for_reformation_11 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.11
+				stability_factor = -0.11
+			}
+
+		}
+		
+		SOV_desire_for_reformation_12 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.12
+				stability_factor = -0.12
+			}
+
+		}
+		
+		SOV_desire_for_reformation_13 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.13
+				stability_factor = -0.13
+			}
+
+		}
+		
+		###################################################
+
+		SOV_incompetent_business = {
+
+			picture = SOV_scientist_defect
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+
+		}
+
+		################################
+		##### 노멘클라투라 level ####
+		################################
+
+		SOV_nomenklatura_power_none = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_1 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_2 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_3 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_4 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_5 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_6 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_7 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_8 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_9 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_nomenklatura_power_10 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+		}
+
+		SOV_power_struggles = {
+
+			picture = generic_disjointed_gov
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+
+		SOV_ineffective_bureaucracy = {
+
+			picture = generic_disjointed_gov
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -1
+			}
+
+		}
+		
+		###################################################
+
+		SOV_worker_enthusiasm_none = {
+
+			picture = generic_production_bonus
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+
+		SOV_worker_enthusiasm_1 = {
+
+			picture = generic_production_bonus
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+
+		SOV_worker_enthusiasm_2 = {
+
+			picture = generic_production_bonus
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.13
+				production_speed_buildings_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+		SOV_worker_enthusiasm_3 = {
+
+			picture = generic_production_bonus
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.11
+				production_speed_buildings_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+		SOV_worker_enthusiasm_4 = {
+
+			picture = generic_production_bonus
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.09
+				production_speed_buildings_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+		SOV_worker_enthusiasm_5 = {
+
+			picture = generic_production_bonus
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		
+		SOV_idea_police_state_1 = {
+			
+			picture = nkvd_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				press_laws_cost_factor = 0.5
+				security_cost_factor = 0.5
+				immigration_policy_cost_factor = 0.5
+				political_power_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		
+		SOV_idea_police_state_2 = {
+			
+			picture = nkvd_1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.02
+				stability_factor = -0.02
+			}
+		}
+
+		################################
+		##### 올리가르히 level ####
+		################################
+
+		SOV_oligarch_power_none = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.01
+				stability_factor = -0.01
+				war_support_factor = -0.01
+			}
+		}
+
+		SOV_oligarch_power_1 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.01
+				stability_factor = -0.01
+				war_support_factor = -0.01
+			}
+		}
+
+		SOV_oligarch_power_2 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = -0.02
+				war_support_factor = -0.02
+			}
+		}
+
+		SOV_oligarch_power_3 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+
+		SOV_oligarch_power_4 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+
+		SOV_oligarch_power_5 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_oligarch_power_6 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_oligarch_power_7 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_oligarch_power_8 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_oligarch_power_9 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_oligarch_power_10 = {
+
+			picture = ROM_king_carol_ii_hedonist
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		################################
+		##### 사회안전망 level ####
+		################################
+
+		SOV_social_safety_nets_crisis_none = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.01
+				stability_factor = -0.01
+				war_support_factor = -0.01
+			}
+		}
+
+		SOV_social_safety_nets_crisis_1 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.01
+				stability_factor = -0.01
+				war_support_factor = -0.01
+			}
+		}
+
+		SOV_social_safety_nets_crisis_2 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = -0.02
+				war_support_factor = -0.02
+			}
+		}
+
+		SOV_social_safety_nets_crisis_3 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+
+		SOV_social_safety_nets_crisis_4 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.04
+				stability_factor = -0.04
+				war_support_factor = -0.04
+			}
+		}
+
+		SOV_social_safety_nets_crisis_5 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_social_safety_nets_crisis_6 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_social_safety_nets_crisis_7 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_social_safety_nets_crisis_8 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_social_safety_nets_crisis_9 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SOV_social_safety_nets_crisis_10 = {
+
+			picture = idea_Can_wartime_prices_and_trade_board
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		################################
+		##### 경제 위기 level ####
+		################################
+
+		SOV_hyper_inflation_none = {
+
+			picture = chi_hyper_inflation
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		SOV_hyper_inflation_1 = {
+
+			picture = chi_hyper_inflation
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		
+		SOV_hyper_inflation_2 = {
+
+			picture = chi_hyper_inflation2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		
+		SOV_hyper_inflation_3 = {
+
+			picture = chi_hyper_inflation3
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		
+		SOV_hyper_inflation_4 = {
+
+			picture = chi_hyper_inflation4
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+			}
+		}
+
+		SOV_hyper_inflation_5 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_hyper_inflation_6 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_hyper_inflation_7 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_hyper_inflation_8 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_hyper_inflation_9 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_hyper_inflation_10 = {
+
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		################################
+		##### 정부 통제력 level ####
+		################################
+
+		SOV_central_government_crisis_none = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		SOV_central_government_crisis_1 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+				war_support_factor = -0.02
+				consumer_goods_factor = 0.01
+				industrial_capacity_factory = -0.01
+			}
+		}
+
+		
+		SOV_central_government_crisis_2 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.04
+				war_support_factor = -0.04
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		
+		SOV_central_government_crisis_3 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.06
+				war_support_factor = -0.06
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		
+		SOV_central_government_crisis_4 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = -0.08
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+			}
+		}
+
+		SOV_central_government_crisis_5 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_6 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.12
+				war_support_factor = -0.12
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_7 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.14
+				war_support_factor = -0.14
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_8 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.16
+				war_support_factor = -0.16
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_9 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.18
+				war_support_factor = -0.18
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_10 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_11 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.22
+				war_support_factor = -0.22
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_12 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.24
+				war_support_factor = -0.24
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_13 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.26
+				war_support_factor = -0.26
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_14 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.28
+				war_support_factor = -0.28
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_15 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.30
+				war_support_factor = -0.30
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_16 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.32
+				war_support_factor = -0.32
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_17 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.34
+				war_support_factor = -0.34
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_18 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.36
+				war_support_factor = -0.36
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_19 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.38
+				war_support_factor = -0.38
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SOV_central_government_crisis_20 = {
+
+			picture = generic_pp_unity_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.40
+				war_support_factor = -0.40
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	political_advisor = {
+		
+		konstantin_rodzaevsky = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			traits = { fascist_demagogue }
+	
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+		
+	army_chief = {
+		
+		vasily_blucher = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			# PURGED
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	navy_chief = {
+		
+		ivan_yumashev = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	air_chief = {
+		
+		
+		alexander_novikov = {
+						
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			# Not Purged, but imprisoned
+			traits = { air_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	
+	high_command = {
+		
+		arseniy_golovko = {
+			#Also unit leader: 409
+			
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+		
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		okmo = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		yakovlev_design_bureau = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}	
+	
+	
+	industrial_concern = {
+				
+		stalingrad_tractor_factory = {
+		
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		leningrad_polytechnical_institute = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		gaz = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+				mot_rockets = 0.50
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		nevskoye_design_bureau = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	theorist = {	
+		
+		sergei_korolev = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+
+			
+			traits = { rocket_scientist }
+		}
+	}
+	
+}

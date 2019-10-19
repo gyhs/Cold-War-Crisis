@@ -1,0 +1,83 @@
+﻿capital = 266
+
+oob = "PER_1987"
+
+# Starting tech
+set_technology = {
+}
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+}
+
+set_convoys = 10
+set_politics = {	
+	ruling_party = social_conservatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Reza Shah Pahlavi"
+	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
+	picture = "POLITICS_Iran_Reza_Shah_Pahlavi.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+# His son, who came to power 41
+#create_country_leader = {
+#	name = "Mohammad Reza Pahlavi"
+#	desc = "POLITICS_MOHAMMAD_REZA_PAHLAVI_DESC"
+#	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_3.dds"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Soleyman Mirza Eskandari"
+	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
+	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Hasan Arfa"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
+	traits = {  desert_fox }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

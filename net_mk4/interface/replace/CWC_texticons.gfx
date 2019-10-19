@@ -1,0 +1,139 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_nato_unit_militia_icon_small"
+		texturefile = "gfx/texticons/nato_unit_militia_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_unit_militia_icon_small"
+		texturefile = "gfx/texticons/unit_militia_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_nato_unit_light_mechanized_icon_small"
+		texturefile = "gfx/texticons/nato_unit_light_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_light_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_light_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_heliborne_icon_small"
+		texturefile = "gfx/texticons/nato_unit_heliborne_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_unit_heliborne_icon_small"
+		texturefile = "gfx/texticons/unit_heliborne_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_nato_unit_airborne_ifv_icon_small"
+		texturefile = "gfx/texticons/nato_unit_airborne_ifv_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_unit_airborne_ifv_icon_small"
+		texturefile = "gfx/texticons/unit_airborne_ifv_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_unit_mechanized_sp_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_mechanized_icon_art_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_unit_light_tank_airborne_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_light_tank_airborne_brigade_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}	
+	
+	spriteType = {
+		name = "GFX_nato_light_tank_airborne_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_light_tank_airborne_brigade_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#### 대전차 로켓###
+	spriteType = {
+		name = "GFX_unit_anti_tank_rocket_company_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_rocket_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_anti_tank_rocket_icon_small"
+		texturefile = "gfx/texticons/support_unit_anti_tank_rocket_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_nato_unit_anti_tank_rocket_company_icon_small"
+		texturefile = "gfx/texticons/nato_unit_anti_tank_rocket_company_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nato_unit_anti_tank_rocket_icon_small"
+		texturefile = "gfx/texticons/nato_unit_anti_tank_rocket_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#### 대전차 미사일###
+	spriteType = {
+		name = "GFX_unit_anti_tank_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_brigade_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_anti_tank_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_anti_tank_brigade_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_anti_tank_icon_small"
+		texturefile = "gfx/texticons/support_unit_anti_tank_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_anti_tank_icon_small"
+		texturefile = "gfx/texticons/nato_unit_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#### 맨패즈###
+	spriteType = {
+		name = "GFX_unit_anti_air_manpads_company_icon_small"
+		texturefile = "gfx/texticons/unit_anti_air_manpads_company_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_anti_air_manpads_company_icon_small"
+		texturefile = "gfx/texticons/nato_unit_anti_air_manpads_company_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_anti_air_manpads_icon_small"
+		texturefile = "gfx/texticons/unit_anti_air_manpads_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_anti_air_manpads_icon_small"
+		texturefile = "gfx/texticons/nato_unit_anti_air_manpads_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	
+}

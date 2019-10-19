@@ -1,0 +1,318 @@
+spriteTypes = {	
+	### 경제
+	spriteType = {
+		name = "GFX_idea_Soviet_economic_planning"
+		texturefile = "gfx/interface/ideas/policy/general/idea_Soviet_economic_planning.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Soviet_reform_economic_planning"
+		texturefile = "gfx/interface/ideas/policy/general/idea_Soviet_reform_economic_planning.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_state_capitalism"
+		texturefile = "gfx/interface/ideas/policy/general/idea_state_capitalism.dds"
+	}
+	
+	### 외국인 투자법
+	spriteType = {
+		name = "GFX_idea_fdi_encouraged"
+		texturefile = "gfx/interface/ideas/policy/general/idea_finv_encouraged.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fdi_allowed"
+		texturefile = "gfx/interface/ideas/policy/general/idea_finv_allowed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fdi_regulated"
+		texturefile = "gfx/interface/ideas/policy/general/idea_finv_regulated.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fdi_banned"
+		texturefile = "gfx/interface/ideas/policy/general/idea_finv_banned.dds"
+	}
+	
+	### 관세
+	spriteType = {
+		name = "GFX_idea_tariffs_none"
+		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_none.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_low"
+		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_average"
+		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_average.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_high"
+		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_extreme"
+		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_extreme.dds"
+	}
+	
+	### 세금
+	spriteType = {
+        name = "GFX_idea_tax_minimal"
+        textureFile = "gfx/interface/ideas/policy/general/idea_tax_minimal.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_tax_low"
+        textureFile = "gfx/interface/ideas/policy/general/idea_tax_low.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_tax_average"
+        textureFile = "gfx/interface/ideas/policy/general/idea_tax_average.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_tax_high"
+        textureFile = "gfx/interface/ideas/policy/general/idea_tax_high.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_tax_extreme"
+        textureFile = "gfx/interface/ideas/policy/general/idea_tax_extreme.dds"
+    }
+	
+	### 여행,이민법
+	spriteType = {
+        name = "GFX_idea_immigration_closed_borders"
+        textureFile = "gfx/interface/ideas/policy/general/idea_immigration_closed_borders.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_immigration_regulated_1"
+        textureFile = "gfx/interface/ideas/policy/general/idea_immigration_regulated_1.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_immigration_regulated_2"
+        textureFile = "gfx/interface/ideas/policy/general/idea_immigration_regulated_2.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_immigration_regulated_3"
+        textureFile = "gfx/interface/ideas/policy/general/idea_immigration_regulated_3.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_immigration_open_borders"
+        textureFile = "gfx/interface/ideas/policy/general/idea_immigration_open_borders.dds"
+    }
+	
+	### 교육
+	spriteType = {
+        name = "GFX_idea_edu_excellent"
+        textureFile = "gfx/interface/ideas/policy/general/idea_edu_excellent.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_edu_high"
+        textureFile = "gfx/interface/ideas/policy/general/idea_edu_high.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_edu_low"
+        textureFile = "gfx/interface/ideas/policy/general/idea_edu_low.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_edu_minimal"
+        textureFile = "gfx/interface/ideas/policy/general/idea_edu_minimal.dds"
+    }
+	### 민간산업 기술 수준
+	spriteType = {
+        name = "GFX_idea_civilian_factory_level_1"
+        textureFile = "gfx/interface/ideas/policy/general/idea_civilian_factory_level_1.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_civilian_factory_level_2"
+        textureFile = "gfx/interface/ideas/policy/general/idea_civilian_factory_level_2.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_civilian_factory_level_3"
+        textureFile = "gfx/interface/ideas/policy/general/idea_civilian_factory_level_3.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_civilian_factory_level_4"
+        textureFile = "gfx/interface/ideas/policy/general/idea_civilian_factory_level_4.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_civilian_factory_level_5"
+        textureFile = "gfx/interface/ideas/policy/general/idea_civilian_factory_level_5.dds"
+    }
+	### 군수산업 기술 수준
+	spriteType = {
+        name = "GFX_idea_military_factory_level_1"
+        textureFile = "gfx/interface/ideas/policy/general/idea_military_factory_level_1.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_military_factory_level_2"
+        textureFile = "gfx/interface/ideas/policy/general/idea_military_factory_level_2.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_military_factory_level_3"
+        textureFile = "gfx/interface/ideas/policy/general/idea_military_factory_level_3.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_military_factory_level_4"
+        textureFile = "gfx/interface/ideas/policy/general/idea_military_factory_level_4.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_military_factory_level_5"
+        textureFile = "gfx/interface/ideas/policy/general/idea_military_factory_level_5.dds"
+    }
+	### 조선소 기술 수준
+	spriteType = {
+        name = "GFX_idea_shipyard_level_1"
+        textureFile = "gfx/interface/ideas/policy/general/idea_shipyard_level_1.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_shipyard_level_2"
+        textureFile = "gfx/interface/ideas/policy/general/idea_shipyard_level_2.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_shipyard_level_3"
+        textureFile = "gfx/interface/ideas/policy/general/idea_shipyard_level_3.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_shipyard_level_4"
+        textureFile = "gfx/interface/ideas/policy/general/idea_shipyard_level_4.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_shipyard_level_5"
+        textureFile = "gfx/interface/ideas/policy/general/idea_shipyard_level_5.dds"
+    }
+	
+	# 언론
+	spriteType = {
+        name = "GFX_idea_press_free"
+        textureFile = "gfx/interface/ideas/policy/general/idea_press_free.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_press_censored"
+        textureFile = "gfx/interface/ideas/policy/general/idea_press_censored.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_press_regulated"
+        textureFile = "gfx/interface/ideas/policy/general/idea_press_regulated.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_press_state"
+        textureFile = "gfx/interface/ideas/policy/general/idea_press_state.dds"
+    }
+	
+	### 보안법
+	spriteType = {
+		name = "GFX_idea_security_liberty_first"
+		texturefile = "gfx/interface/ideas/policy/general/idea_security_liberty_first.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_security_minor_restrictions"
+		texturefile = "gfx/interface/ideas/policy/general/idea_security_minor_restrictions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_security_major_restrictions"
+		texturefile = "gfx/interface/ideas/policy/general/idea_security_major_restrictions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_security_police_state"
+		texturefile = "gfx/interface/ideas/policy/general/idea_security_police_state.dds"
+	}
+	
+	###전시 채권
+	spriteType = {
+		name = "GFX_idea_bonds_basic"
+		texturefile = "gfx/interface/ideas/policy/general/idea_bonds_basic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bonds_war_international"
+		texturefile = "gfx/interface/ideas/policy/general/idea_bonds_war_international.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bonds_war_domestic"
+		texturefile = "gfx/interface/ideas/policy/general/idea_bonds_war_domestic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bonds_war_public"
+		texturefile = "gfx/interface/ideas/policy/general/idea_bonds_war_public.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bonds_state_requisition"
+		texturefile = "gfx/interface/ideas/policy/general/idea_bonds_state_requisition.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bonds_print"
+		texturefile = "gfx/interface/ideas/policy/general/idea_bonds_print.dds"
+	}
+	
+	### 훈련 정책
+	spriteType = {
+        name = "GFX_idea_training_basic"
+        textureFile = "gfx/interface/ideas/policy/general/idea_training_basic.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_training_high"
+        textureFile = "gfx/interface/ideas/policy/general/idea_training_high.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_training_extensive"
+        textureFile = "gfx/interface/ideas/policy/general/idea_training_extensive.dds"
+    }
+	### 여성 복무 정책
+	spriteType = {
+        name = "GFX_idea_no_female_mobilization"
+        textureFile = "gfx/interface/ideas/policy/general/idea_no_female_mobilization.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_female_limited_volunteer"
+        textureFile = "gfx/interface/ideas/policy/general/idea_female_limited_volunteer.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_female_full_volunteer"
+        textureFile = "gfx/interface/ideas/policy/general/idea_female_full_volunteer.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_female_limited_mobilization"
+        textureFile = "gfx/interface/ideas/policy/general/idea_female_limited_mobilization.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_female_full_mobilization"
+        textureFile = "gfx/interface/ideas/policy/general/idea_female_full_mobilization.dds"
+    }
+	
+	### 데프콘
+	spriteType = {
+        name = "GFX_idea_DEFCON_5"
+        textureFile = "gfx/interface/ideas/policy/general/idea_DEFCON_5.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_DEFCON_4"
+        textureFile = "gfx/interface/ideas/policy/general/idea_DEFCON_4.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_DEFCON_3"
+        textureFile = "gfx/interface/ideas/policy/general/idea_DEFCON_3.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_DEFCON_2"
+        textureFile = "gfx/interface/ideas/policy/general/idea_DEFCON_2.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_DEFCON_1"
+        textureFile = "gfx/interface/ideas/policy/general/idea_DEFCON_1.dds"
+    }
+	### 보조무장
+	spriteType = {
+        name = "GFX_idea_private_sub_weapon_1"
+        textureFile = "gfx/interface/ideas/policy/general/idea_private_sub_weapon_1.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_private_sub_weapon_2"
+        textureFile = "gfx/interface/ideas/policy/general/idea_private_sub_weapon_2.dds"
+    }
+	### 핵 발사 권한
+	spriteType = {
+        name = "GFX_idea_nuclear_weapon_nonpermission"
+        textureFile = "gfx/interface/ideas/policy/general/idea_nuclear_weapon_nonpermission.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_nuclear_weapon_permission"
+        textureFile = "gfx/interface/ideas/policy/general/idea_nuclear_weapon_permission.dds"
+    }
+	
+}

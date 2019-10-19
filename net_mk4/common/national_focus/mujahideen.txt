@@ -1,0 +1,1878 @@
+focus_tree = {
+	id = afghanistan_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MUJ
+		}
+	}
+	continuous_focus_position = { x = 20 y = 1200 }
+	
+	#### 
+	focus = {
+		id = MUJ_afghan_strategy
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 0
+		cost = 10.00
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = MUJ_industry_build
+		icon = GFX_focus_focus_generic_industry_1
+		x = 6
+		y = 1
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_opium_industry_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_food_rationing
+		icon = GFX_focus_generic_industry_2
+		x = 3
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_industry_build
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_MUJ_famine_3
+				add_idea = NS_MUJ_famine_2
+			}
+			MUJ_idea_opium_industry_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_mosque_food_rationing
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 3
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_food_rationing
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_MUJ_famine_2
+				add_idea = NS_MUJ_famine_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_religious_society_network
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 5
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_mosque_food_rationing
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			remove_ideas = NS_MUJ_famine_1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_opium_industry_expand
+		icon = GFX_focus_generic_industry_3
+		x = 4
+		y = 3
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_food_rationing
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_opium_industry_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_labor_office
+		icon = GFX_goal_generic_production2
+		x = 4
+		y = 5
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_opium_industry_expand
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_opium_industry_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_fanatical_worker
+		icon = GFX_focus_generic_concessions
+		x = 3
+		y = 6
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_religious_society_network
+		}
+		prerequisite = { 
+			focus = MUJ_labor_office
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_opium_industry_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_weapons_factory
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_industry_build
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_modern_munitions_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 3
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_weapons_factory
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_heavy_industries_expand
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 5
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_modern_munitions_factory
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_mining_industry_expand
+		icon = GFX_goal_generic_construction2
+		x = 5
+		y = 4
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_opium_industry_expand
+		}
+		prerequisite = { 
+			focus = MUJ_modern_munitions_factory
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = aluminium
+					amount = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_oil_industry_expand
+		icon = GFX_goal_generic_oil_refinery
+		x = 5
+		y = 7
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_fanatical_worker
+		}
+		prerequisite = { 
+			focus = MUJ_mining_industry_expand
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_modern_rifle
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 5
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_modern_munitions_factory
+		}
+		prerequisite = { 
+			focus = MUJ_military_leadership_reform
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+		add_tech_bonus = {
+			name = CHI_small_arms_expertise
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+		}
+	}
+	focus = {
+		id = MUJ_modern_artillery
+		icon = GFX_goal_generic_army_artillery2
+		x = 8
+		y = 6
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_modern_rifle
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = MUJ_modern_artillery
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_warlord_expand
+		icon = GFX_goal_generic_army_doctrines
+		x = 13
+		y = 1
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = MUJ_religion_authority_reinforce
+		icon = GFX_goal_generic_air_doctrine
+		x = 15
+		y = 1
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_religion_influence_level_up = yes
+		}
+	}
+	focus = {
+		id = MUJ_tribe_negotiation
+		icon = GFX_goal_generic_dangerous_deal
+		x = 14
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_warlord_expand
+		}
+		prerequisite = { 
+			focus = MUJ_religion_authority_reinforce
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = MUJ_tribe_soldier_absorb
+		icon = GFX_goal_demand_sudetenland
+		x = 14
+		y = 3
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_tribe_negotiation
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			set_division_template_lock = {
+			division_template = "아프간 부족 전사들"
+			is_locked = no
+			}
+		}
+	}
+	focus = {
+		id = MUJ_military_leadership_reform
+		icon = GFX_focus_generic_support_the_left_right
+		x = 13
+		y = 4
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_tribe_negotiation
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_MUJ_incompetence_warrior_3
+				add_idea = NS_MUJ_incompetence_warrior_2
+			}
+		}
+	}
+	focus = {
+		id = MUJ_warlord_leadership_strengthening
+		icon = GFX_goal_generic_military_deal
+		x = 15
+		y = 4
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_tribe_negotiation
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			remove_ideas = NS_MUJ_incompetence_officer
+			add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MUJ_warlord_warrior_capabilities_strengthening
+		icon = GFX_goal_generic_special_forces
+		x = 14
+		y = 5
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_military_leadership_reform
+		}
+		prerequisite = { 
+			focus = MUJ_warlord_leadership_strengthening
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_MUJ_incompetence_warrior_2
+				add_idea = NS_MUJ_incompetence_warrior_1
+			}
+			set_division_template_lock = {
+			division_template = "굴부딘파 전사들"
+			is_locked = no
+			}
+			set_division_template_lock = {
+			division_template = "칼리스파 전사들"
+			is_locked = no
+			}
+			set_division_template_lock = {
+			division_template = "이슬람 혁명운동파 전사들"
+			is_locked = no
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_modern_army
+		icon = GFX_goal_generic_small_arms
+		x = 9
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_warlord_warrior_capabilities_strengthening
+		}
+		prerequisite = { 
+			focus = MUJ_modern_rifle
+		}
+		prerequisite = { 
+			focus = MUJ_caliph_declaration
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			remove_ideas = NS_MUJ_incompetence_warrior_1
+			add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MUJ_motorized_infantry
+		icon = GFX_goal_generic_army_motorized
+		x = 8
+		y = 9
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_modern_army
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.50
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = MUJ_officer_competency_reinforcement
+		icon = GFX_focus_generic_military_mission
+		x = 10
+		y = 9
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_modern_army
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_anti_soviet_propaganda
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 10
+		y = 1
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_manpower = 5000
+			swap_ideas = {
+				remove_idea = NS_MUJ_rampant_communicable_diseases_2
+				add_idea = NS_MUJ_rampant_communicable_diseases_1
+			}
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = SOV
+			}
+		}
+	}
+	focus = {
+		id = MUJ_islam_volunteer
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_anti_soviet_propaganda
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_manpower = 10000
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = SOV
+			}
+		}
+	}
+	focus = {
+		id = MUJ_pakistan_training_school_strengthening
+		icon = GFX_focus_generic_military_academy
+		x = 9
+		y = 3
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_islam_volunteer
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			army_experience = 200
+			add_manpower = 2000
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = SOV
+			}
+		}
+	}
+	focus = {
+		id = MUJ_world_powers_support
+		icon = GFX_focus_generic_treaty
+		x = 11
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_anti_soviet_propaganda
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			remove_ideas = NS_MUJ_rampant_communicable_diseases_1
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = SOV
+			}
+		}
+	}
+	focus = {
+		id = MUJ_infantry_munitions_supplement
+		icon = GFX_goal_generic_military_sphere
+		x = 11
+		y = 3
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_world_powers_support
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 10000
+			producer = SOV
+			}
+		}
+	}
+	focus = {
+		id = MUJ_anti_air_supplement
+		icon = GFX_focus_generic_air_defense
+		x = 10
+		y = 4
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_pakistan_training_school_strengthening
+		}
+		prerequisite = { 
+			focus = MUJ_infantry_munitions_supplement
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			type = manpads_equipment
+			amount = 1000
+			producer = USA
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_afghan_war_victory
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 1
+		cost = 1.00
+		prerequisite = { 
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			NOT = { country_exists = AFG }
+		}
+		bypass = {
+			NOT = { country_exists = AFG }
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			
+			create_country_leader = {
+				name = "무하마드 오마르"
+				desc = "POLITICS_MUJ_Mohammed_Omar_DESC"
+				picture = "Portrait_MUJ_Mohammed_Omar.dds"
+				expire = "2010.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			delete_unit_template_and_units = {
+			division_template = "마수드파 전사들"
+			}
+			delete_unit_template_and_units = {
+			division_template = "사야프파 전사들"
+			}
+			delete_unit_template_and_units = {
+			division_template = "이슬람 국민전선파 전사들"
+			}
+			delete_unit_template_and_units = {
+			division_template = "해방 이슬람 연맹파 전사들"
+			}
+		}
+	}
+	focus = {
+		id = MUJ_westernizer_punish
+		icon = GFX_goal_generic_political_pressure
+		x = 18
+		y = 3
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_islamic_state
+			focus = MUJ_jihadist_global_together
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			declare_war_on = {
+			target = AFG
+			type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = MUJ_administrative_reorganization
+		icon = GFX_goal_generic_position_armies
+		x = 17
+		y = 4
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_westernizer_punish
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_stability = 0.1
+			MUJ_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = MUJ_reeducation_campaign
+		icon = GFX_goal_generic_demand_territory
+		x = 19
+		y = 4
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_westernizer_punish
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_religion_influence_level_up = yes
+			add_ideas = MUJ_reeducation_campaign
+		}
+	}
+	
+	focus = {
+		id = MUJ_islamic_state
+		icon = GFX_goal_generic_territory_or_war
+		x = 16
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_afghan_war_victory
+		}
+		mutually_exclusive = {
+			focus = MUJ_jihadist_global_together
+		}
+		available = {
+		}
+		completion_reward = {
+			set_cosmetic_tag = MUJ_cosmetic_islamic_state
+			create_faction = islamic_state_faction
+			MUJ_idea_religion_influence_level_up = yes
+			MUJ_idea_tribe_influence_level_down = yes
+			
+			
+			#### 자유 아프간
+			if = {
+				limit = {
+					country_exists = AFG
+				}
+				hidden_effect = {
+					AFG = {
+						set_state_controller = 267
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = AFG
+						has_government = democratic
+					}
+						transfer_state = 267
+					#set_cosmetic_tag = NOR_reichskommissariat
+					
+					create_country_leader = {
+						name = "아흐마드 샤 마수드"
+						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
+						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
+						expire = "2020.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				AFG = {
+						transfer_state = 267
+					#set_cosmetic_tag = NOR_reichskommissariat
+					
+					create_country_leader = {
+						name = "아흐마드 샤 마수드"
+						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
+						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
+						expire = "2020.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_jihadist_global_together
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 20
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_afghan_war_victory
+		}
+		mutually_exclusive = {
+			focus = MUJ_islamic_state
+		}
+		available = {
+		}
+		completion_reward = {
+			set_cosmetic_tag = MUJ_cosmetic_taliban
+			create_faction = al_qaeda_faction
+			MUJ_idea_religion_influence_level_up = yes
+			
+			
+			#### 자유 아프간
+			if = {
+				limit = {
+					country_exists = AFG
+				}
+				hidden_effect = {
+					AFG = {
+						set_state_controller = 267
+					}
+				}
+				random_country = {
+					limit= {
+						original_tag = AFG
+						has_government = democratic
+					}
+						transfer_state = 267
+					#set_cosmetic_tag = NOR_reichskommissariat
+					
+					create_country_leader = {
+						name = "아흐마드 샤 마수드"
+						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
+						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
+						expire = "2020.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				AFG = {
+						transfer_state = 267
+					#set_cosmetic_tag = NOR_reichskommissariat
+					
+					create_country_leader = {
+						name = "아흐마드 샤 마수드"
+						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
+						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
+						expire = "2020.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_NF_jihad
+		icon = GFX_goal_generic_secret_weapon
+		x = 18
+		y = 7
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_administrative_reorganization
+		}
+		prerequisite = { 
+			focus = MUJ_reeducation_campaign
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			MUJ_idea_religion_influence_level_up = yes
+			set_rule = {
+			can_use_kamikaze_pilots = yes
+			}
+		}
+	}
+	focus = {
+		id = MUJ_caliph_declaration
+		icon = GFX_focus_generic_home_defense
+		x = 16
+		y = 7
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_islamic_state
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = MUJ_idea_caliph_declaration
+			MUJ_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = MUJ_amir_declaration
+		icon = GFX_goal_generic_military_deal
+		x = 20
+		y = 7
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_jihadist_global_together
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = MUJ_idea_amir_declaration
+		}
+	}
+	focus = {
+		id = MUJ_SOV_conquest
+		icon = GFX_focus_ger_strike_at_the_source
+		x = 12
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_caliph_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		bypass = {
+			OR = {				
+				has_war_with = SOV
+				has_wargoal_against = SOV
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = MUJ_USA_conquest
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 14
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_caliph_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		bypass = {
+			OR = {				
+				has_war_with = USA
+				has_wargoal_against = USA
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = MUJ_PAK_conquest
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 16
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_caliph_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		bypass = {
+			OR = {				
+				has_war_with = PAK
+				has_wargoal_against = PAK
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = PAK
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = MUJ_RAJ_conquest
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 16
+		y = 10
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_PAK_conquest
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		bypass = {
+			OR = {				
+				has_war_with = RAJ
+				has_wargoal_against = RAJ
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = RAJ
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = MUJ_PER_conquest
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 18
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		bypass = {
+			OR = {				
+				has_war_with = PER
+				has_wargoal_against = PER
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = MUJ_islamic_world_united_war
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 17
+		y = 9
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_caliph_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_PER_conquest
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = IRQ
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SAU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
+			MUJ_idea_tribe_influence_clear_all = yes
+		}
+	}
+	focus = {
+		id = MUJ_islamic_world_alliance
+		icon = GFX_goal_generic_military_deal
+		x = 19
+		y = 9
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_amir_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_PER_conquest
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = MUJ_PAK_pashtun_friendship
+		icon = GFX_goal_generic_position_armies
+		x = 20
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_amir_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+			focus = MUJ_PAK_pashtun_claim
+		}
+		available = {
+			PAK_will_support = yes
+		}
+		completion_reward = {
+		PAK = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_PAK
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+	}
+	focus = {
+		id = MUJ_PAK_pashtun_claim
+		icon = GFX_goal_generic_position_armies
+		x = 22
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_amir_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+			focus = MUJ_PAK_pashtun_friendship
+		}
+		available = {
+		}
+		completion_reward = {
+		PAK = { country_event = { id = mujahideen.1 } }
+		}
+	}
+	focus = {
+		id = MUJ_PAK_military_exchange
+		icon = GFX_goal_generic_military_deal
+		x = 20
+		y = 10
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_PAK_pashtun_friendship
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			is_in_faction_with = PAK
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		PAK = {
+			add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_PAK_fate
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 22
+		y = 10
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_PAK_pashtun_claim
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		bypass = {
+			has_completed_focus = MUJ_PAK_pashtun_claim
+			OR = {				
+				has_war_with = PAK
+				has_wargoal_against = PAK
+			}
+		}
+		completion_reward = {
+			MUJ = { country_event = { id = mujahideen.4 } }
+		}
+	}
+	focus = {
+		id = MUJ_USA_terror
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 24
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_amir_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = MUJ_SOV_terror
+		icon = GFX_focus_ger_strike_at_the_source
+		x = 26
+		y = 8
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_amir_declaration
+		}
+		prerequisite = { 
+			focus = MUJ_NF_jihad
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MUJ_traffic_route_secure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 0
+		cost = 10.00
+		prerequisite = { 
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_guerrilla_traffic_route
+		icon = GFX_focus_prc_infiltration
+		x = 0
+		y = 2
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_traffic_route_secure
+		}
+		prerequisite = { 
+			focus = MUJ_air_defense_network_build_additional
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			every_army_leader = {
+			add_logistics = 1
+			}
+			add_ideas = CHI_modern_logistics
+		}
+	}
+	focus = {
+		id = MUJ_warlord_railroad_official
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 4
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_guerrilla_traffic_route
+		}
+		prerequisite = { 
+			focus = MUJ_industry_build
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MUJ_railroad_build
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 6
+		cost = 10.00
+		prerequisite = { 
+			focus = MUJ_warlord_railroad_official
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MUJ_air_defense_network_build_additional
+		icon = GFX_focus_generic_air_defense
+		x = 2
+		y = 0
+		cost = 10.00
+		prerequisite = { 
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}		
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

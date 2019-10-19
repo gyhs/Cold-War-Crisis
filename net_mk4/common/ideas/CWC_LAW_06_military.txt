@@ -1,0 +1,398 @@
+ideas = {
+
+	female_mobilization_laws = {
+		law = yes
+
+		no_female_mobilization = {  # 여성 징병 제외
+						
+			cost = 150
+			removal_cost = -1
+			level = 5
+			
+			available = {
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = -0.05
+				stability_weekly = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		female_limited_volunteer = { # 여성 제한적 지원
+						
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			}
+
+			modifier = {
+				conscription = 0.01
+				industrial_capacity_factory = 0.12
+				production_speed_buildings_factor = 0.12
+				research_speed_factor = -0.02
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		female_full_volunteer = { #여성 평등 지원
+						
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			}
+
+			modifier = {
+				conscription = 0.015
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.01
+			}
+			
+			cancel_if_invalid = no
+		}
+		female_limited_mobilization = { # 여성 제한적 징병
+					
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			}
+
+			modifier = {
+				conscription = 0.025
+			}
+			
+			cancel_if_invalid = no
+		}
+		female_full_mobilization = { # 여성 평등 징병
+		
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			}
+			
+			modifier = {
+				conscription = 0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+				training_time_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+
+	training_laws = {
+		law = yes
+		
+		
+		training_basic = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 100
+					has_war = yes
+					enemies_strength_ratio > 1.5
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						has_war = no
+						enemies_strength_ratio < 1.1
+						AND = {
+							is_major = yes
+							has_manpower < 800000
+						}
+					}
+				}
+   			}
+		}
+		
+		training_high = {
+					
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			available = {
+			}
+
+			modifier = {
+				training_time_factor = 0.025
+				invasion_preparation = -0.025
+				army_org_factor = 0.025
+				army_morale_factor = 0.025
+				planning_speed = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_war = yes
+					enemies_strength_ratio > 0.9
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						has_war = no
+						enemies_strength_ratio < 0.7
+					}
+				}
+   			}
+		}
+		
+		training_extensive = {
+			
+			available = {
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			modifier = {
+				training_time_factor = 0.05
+				invasion_preparation = -0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				planning_speed = 0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 10
+					has_war = no
+					threat < 0.50
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						has_war = yes
+						tag = SOV
+						tag = CHI
+						tag = ITA
+					}
+				}
+   			}
+		}
+	}
+	
+	private_sub_weapon = {
+		law = yes
+		
+		private_sub_weapon_1 = {
+						
+			cost = 500
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		private_sub_weapon_2 = {
+					
+			cost = 500
+			removal_cost = -1
+			level = 2
+
+			available = {
+			}
+
+			modifier = {
+				training_time_army_factor = 0.001
+				supply_consumption_factor = 0.001
+				army_org_factor = 0.01
+				army_morale_factor = 0.01
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	
+	DEFCON = {
+		law = yes
+		
+		DEFCON_5 = {
+						
+			cost = 500
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			}
+
+			modifier = {
+				training_time_army_factor = -0.2
+				army_org_Factor = -0.15
+				supply_consumption_factor = -0.20
+				ai_focus_aggressive_factor = -0.3
+			}
+	
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		DEFCON_4 = {
+					
+			cost = 500
+			removal_cost = -1
+			level = 2
+
+			available = {
+			}
+
+			modifier = {
+				training_time_army_factor = -0.15
+				army_org_Factor = -0.1
+				supply_consumption_factor = -0.15
+				ai_focus_aggressive_factor = -0.2
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		DEFCON_3 = {
+					
+			cost = 500
+			removal_cost = -1
+			level = 2
+
+			available = {
+			}
+
+			modifier = {
+				training_time_army_factor = -0.1
+				army_org_Factor = -0.05
+				supply_consumption_factor = -0.1
+				ai_focus_aggressive_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		DEFCON_2 = {
+					
+			cost = 500
+			removal_cost = -1
+			level = 2
+
+			available = {
+			}
+
+			modifier = {
+				training_time_army_factor = -0.05
+				army_org_Factor = -0.02
+				supply_consumption_factor = -0.05
+				ai_focus_aggressive_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		DEFCON_1 = {
+					
+			cost = 500
+			removal_cost = -1
+			level = 2
+
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+
+	nuclear_weapon_order = {
+		law = yes
+		
+		nuclear_weapon_nonpermission = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		nuclear_weapon_permission = {
+					
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			available = {
+				has_tech = nukes
+				num_of_nukes > 1
+				threat > 0.6
+				or = {
+				surrender_progress> 0.1
+				has_global_flag = first_nuke_dropped
+				casualties > 100000
+				}
+			}
+			modifier = {
+		
+				nuclear_production = 1
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	
+	
+}

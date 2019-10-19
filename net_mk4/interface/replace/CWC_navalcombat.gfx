@@ -1,0 +1,48 @@
+spriteTypes = {	
+
+	# ---------------------------------------------------------------------------
+	# Code expects GFX_navalcombat_ship_icon_ + sprite_name set in subunit defs
+	spriteType = { # "frigate"
+		name = "GFX_navalcombat_ship_icon_frigate"
+		texturefile = "gfx/interface/navalcombat/ships/frigate.dds"
+		noOfFrames = 2
+	}
+	spriteType = { # "super_carrier"
+		name = "GFX_navalcombat_ship_icon_super_carrier"
+		texturefile = "gfx/interface/navalcombat/ships/super_carrier.dds"
+		noOfFrames = 2
+	}
+	spriteType = { # "large_submarine"
+		name = "GFX_navalcombat_ship_icon_large_submarine"
+		texturefile = "gfx/interface/navalcombat/ships/large_submarine.dds"
+		noOfFrames = 2
+	}
+	spriteType = { # "attack_nuclear_submarine"
+		name = "GFX_navalcombat_ship_icon_attack_nuclear_submarine"
+		texturefile = "gfx/interface/navalcombat/ships/attack_nuclear_submarine.dds"
+		noOfFrames = 2
+	}
+	spriteType = { # "cruise_missile_nuclear_submarine"
+		name = "GFX_navalcombat_ship_icon_cruise_missile_nuclear_submarine"
+		texturefile = "gfx/interface/navalcombat/ships/cruise_missile_nuclear_submarine.dds"
+		noOfFrames = 2
+	}
+	
+	# ---------------------------------------------------------------------------
+	spriteType = { # "light_carrier"
+		name = "GFX_navalcombat_ship_icon_light_carrier"
+		texturefile = "gfx/interface/navalcombat/ships/light_carrier.dds"
+		noOfFrames = 2
+	}
+	spriteType = { # "light_cruiser_aa"
+		name = "GFX_navalcombat_ship_icon_light_cruiser_aa"
+		texturefile = "gfx/interface/navalcombat/ships/light_cruiser_aa.dds"
+		noOfFrames = 2
+	}
+	spriteType = { # "SH_battleship"
+		name = "GFX_navalcombat_ship_icon_SH_battleship"
+		texturefile = "gfx/interface/navalcombat/ships/sh_battleship.dds"
+		noOfFrames = 2
+	}
+
+}

@@ -1,0 +1,91 @@
+﻿capital = 64
+
+# Starting tech
+set_technology = {
+}
+
+
+
+
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.7
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Klaus Klauser"
+	desc = ""
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Konrad Adenauer"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "gfx/leaders/GER/POLITICS_Germany_Konrad_Adenauer.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+#
+#create_country_leader = {
+#	name = "William Trieck"
+#	desc = "POLITICS_WILHELM_PIECK_DESC"
+#	picture = "POLITICS_Germany_Wilhelm_Pieck.dds"
+#	expire = "1965.1.1"
+#	ideology = stalinism
+#	traits = {
+#	}
+#}
+
+#create_country_leader = {
+#	name = "Otto Wels"
+#	desc = "POLITICS_OTTO_WELS_DESC"
+#	picture = "POLITICS_Germany_Adolf_Hitler.dds"
+#	expire = "1939.1.16"
+#	ideology = socialism
+#	traits = {
+#		exiled
+#		union_man
+#	}
+#}
+#
+#create_country_leader = {
+#	name = "Ernst Thälmann"
+#	desc = "POLITICS_ERNST_THALMANN_DESC"
+#	picture = "POLITICS_Germany_Adolf_Hitler.dds"
+#	expire = "1956.1.1"
+#	ideology = stalinism
+#	traits = {
+#		assassination_survivor
+#		stalins_puppet
+#		political_prisoner
+#	}
+#}

@@ -1,0 +1,602 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+FIN_INF_01 = 
+{
+	name = "엽병 사단"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "제%d 엽병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 엽병 사단" }
+		2 = { "제%d 엽병 사단" }
+		3 = { "제%d 엽병 사단" }
+		4 = { "제%d 엽병 사단" }
+		5 = { "제%d 엽병 사단" }
+		6 = { "제%d 엽병 사단" }
+		7 = { "제%d 엽병 사단" }
+		8 = { "제%d 엽병 사단" }
+		9 = { "제%d 엽병 사단" }
+		10 = { "제%d 엽병 사단" }
+
+		# FIN's unusual order for infantry divisions was because garrison units were converted into full divisions down the track so they didn't become available in numeric order (hence link between the two lists).
+	}
+}
+FIN_INF_02 = 
+{
+	name = "엽병 여단"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "제%d 엽병 여단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 엽병 여단" }
+		2 = { "제%d 엽병 여단" }
+		3 = { "제%d 엽병 여단" }
+		4 = { "제%d 엽병 여단" }
+		5 = { "제%d 엽병 여단" }
+		6 = { "제%d 엽병 여단" }
+		7 = { "제%d 엽병 여단" }
+		8 = { "제%d 엽병 여단" }
+		9 = { "제%d 엽병 여단" }
+		10 = { "제%d 엽병 여단" }
+
+		# FIN's unusual order for infantry divisions was because garrison units were converted into full divisions down the track so they didn't become available in numeric order (hence link between the two lists).
+	}
+}
+
+FIN_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "제%d Ratsuväkiprikaati"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Ratsuväkiprikaati" }
+		2 = { "제%d Ratsuväkiprikaati" }
+		3 = { "제%d Ratsuväkiprikaati" }
+		4 = { "제%d Ratsuväkiprikaati" }
+		5 = { "제%d Ratsuväkiprikaati" }
+		6 = { "제%d Ratsuväkiprikaati" }
+		7 = { "제%d Ratsuväkiprikaati" }
+		8 = { "제%d Ratsuväkiprikaati" }
+		9 = { "제%d Ratsuväkiprikaati" }
+		10 = { "제%d Ratsuväkiprikaati" }
+		11 = { "제%d Ratsuväkiprikaati" }
+		12 = { "제%d Ratsuväkiprikaati" }
+		13 = { "제%d Ratsuväkiprikaati" }
+		14 = { "제%d Ratsuväkiprikaati" }
+		15 = { "제%d Ratsuväkiprikaati" }
+		16 = { "제%d Ratsuväkiprikaati" }
+		17 = { "제%d Ratsuväkiprikaati" }
+		18 = { "제%d Ratsuväkiprikaati" }
+		19 = { "제%d Ratsuväkiprikaati" }
+		20 = { "제%d Ratsuväkiprikaati" }
+		21 = { "제%d Ratsuväkiprikaati" }
+		22 = { "제%d Ratsuväkiprikaati" }
+		23 = { "제%d Ratsuväkiprikaati" }
+		24 = { "제%d Ratsuväkiprikaati" }
+		25 = { "제%d Ratsuväkiprikaati" }
+		26 = { "제%d Ratsuväkiprikaati" }
+		27 = { "제%d Ratsuväkiprikaati" }
+		28 = { "제%d Ratsuväkiprikaati" }
+		29 = { "제%d Ratsuväkiprikaati" }
+		30 = { "제%d Ratsuväkiprikaati" }
+		31 = { "제%d Ratsuväkiprikaati" }
+		32 = { "제%d Ratsuväkiprikaati" }
+		33 = { "제%d Ratsuväkiprikaati" }
+		34 = { "제%d Ratsuväkiprikaati" }
+		35 = { "제%d Ratsuväkiprikaati" }
+		36 = { "제%d Ratsuväkiprikaati" }
+		37 = { "제%d Ratsuväkiprikaati" }
+		38 = { "제%d Ratsuväkiprikaati" }
+		39 = { "제%d Ratsuväkiprikaati" }
+		40 = { "제%d Ratsuväkiprikaati" }
+		41 = { "제%d Ratsuväkiprikaati" }
+		42 = { "제%d Ratsuväkiprikaati" }
+		43 = { "제%d Ratsuväkiprikaati" }
+		44 = { "제%d Ratsuväkiprikaati" }
+		45 = { "제%d Ratsuväkiprikaati" }
+		46 = { "제%d Ratsuväkiprikaati" }
+		47 = { "제%d Ratsuväkiprikaati" }
+		48 = { "제%d Ratsuväkiprikaati" }
+		49 = { "제%d Ratsuväkiprikaati" }
+		50 = { "제%d Ratsuväkiprikaati" }
+		51 = { "제%d Ratsuväkiprikaati" }
+		52 = { "제%d Ratsuväkiprikaati" }
+		53 = { "제%d Ratsuväkiprikaati" }
+	}
+}
+
+FIN_MOT_01 = 
+{
+	name = "차량화엽병 사단"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { FIN_ARM_01 FIN_MEC_01 }
+
+	fallback_name = "제%d 차량화엽병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 차량화엽병 사단" }
+		2 = { "제%d 차량화엽병 사단" }
+		3 = { "제%d 차량화엽병 사단" }
+		4 = { "제%d 차량화엽병 사단" }
+		5 = { "제%d 차량화엽병 사단" }
+		6 = { "제%d 차량화엽병 사단" }
+		7 = { "제%d 차량화엽병 사단" }
+		8 = { "제%d 차량화엽병 사단" }
+		9 = { "제%d 차량화엽병 사단" }
+		10 = { "제%d 차량화엽병 사단" }
+
+	}
+}
+
+FIN_ARM_01 = 
+{
+	name = "기갑엽병 사단"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { FIN_MOT_01 }
+
+	fallback_name = "제%d 기갑엽병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 기갑엽병 사단" }
+		2 = { "제%d 기갑엽병 사단" }
+		3 = { "제%d 기갑엽병 사단" }
+		4 = { "제%d 기갑엽병 사단" }
+		5 = { "제%d 기갑엽병 사단" }
+		6 = { "제%d 기갑엽병 사단" }
+		7 = { "제%d 기갑엽병 사단" }
+		8 = { "제%d 기갑엽병 사단" }
+		9 = { "제%d 기갑엽병 사단" }
+		10 = { "제%d 기갑엽병 사단" }
+
+		# Only 1 historically.
+	}
+}
+
+FIN_ARM_02 = 
+{
+	name = "기갑엽병 여단"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { FIN_MOT_01 }
+
+	fallback_name = "제%d 기갑엽병 여단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 기갑엽병 여단" }
+		2 = { "제%d 기갑엽병 여단" }
+		3 = { "제%d 기갑엽병 여단" }
+		4 = { "제%d 기갑엽병 여단" }
+		5 = { "제%d 기갑엽병 여단" }
+		6 = { "제%d 기갑엽병 여단" }
+		7 = { "제%d 기갑엽병 여단" }
+		8 = { "제%d 기갑엽병 여단" }
+		9 = { "제%d 기갑엽병 여단" }
+		10 = { "제%d 기갑엽병 여단" }
+
+		# Only 1 historically.
+	}
+}
+
+FIN_MEC_01 = 
+{
+	name = "기계화엽병 사단"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { FIN_MOT_01 }
+
+	fallback_name = "제%d 기계화엽병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 기계화엽병 사단" }
+		2 = { "제%d 기계화엽병 사단" }
+		3 = { "제%d 기계화엽병 사단" }
+		4 = { "제%d 기계화엽병 사단" }
+		5 = { "제%d 기계화엽병 사단" }
+		6 = { "제%d 기계화엽병 사단" }
+		7 = { "제%d 기계화엽병 사단" }
+		8 = { "제%d 기계화엽병 사단" }
+		9 = { "제%d 기계화엽병 사단" }
+		10 = { "제%d 기계화엽병 사단" }
+
+		# None historically.
+	}
+}
+
+FIN_MEC_02 = 
+{
+	name = "기계화엽병 여단"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { FIN_MOT_01 }
+
+	fallback_name = "제%d 기계화엽병 여단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 기계화엽병 여단" }
+		2 = { "제%d 기계화엽병 여단" }
+		3 = { "제%d 기계화엽병 여단" }
+		4 = { "제%d 기계화엽병 여단" }
+		5 = { "제%d 기계화엽병 여단" }
+		6 = { "제%d 기계화엽병 여단" }
+		7 = { "제%d 기계화엽병 여단" }
+		8 = { "제%d 기계화엽병 여단" }
+		9 = { "제%d 기계화엽병 여단" }
+		10 = { "제%d 기계화엽병 여단" }
+
+		# None historically.
+	}
+}
+
+FIN_GAR_01 = 
+{
+	name = "Garrison Divisions"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { FIN_INF_01 }
+
+	fallback_name = "제%d Ryhmä"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Taipals. Komennuskunta" }
+		4 = { "Taivalal. Komennuskunta" }
+		5 = { "Äänl. Komennuskunta" }
+		8 = { "Petsamon komennuskunta" }
+		10 = { "제%d Ryhmä" }
+		11 = { "제%d Ryhmä" }
+		6 = { "Lahden Komennuskunta" }
+		9 = { "Hanhik. Komennuskunta" }
+		12 = { "Lemin Komennuskunta" }
+		13 = { "Savitaip. Komennuskunta" }
+		2 = { "Raudun Ryhmä" }
+		3 = { "Lapin Ryhmä" }
+		7 = { "Pohjois-Karjalan Ryhmä" }
+		14 = { "Räsäsen Ryhmä" }
+		15 = { "Lipolan Ryhmä" }
+		17 = { "Muolaan Ryhmä" }
+		18 = { "Uudenkirkon Ryhmä" }
+		19 = { "제%d Ryhmä" }
+		20 = { "제%d Ryhmä" }
+		21 = { "제%d Ryhmä" }
+		22 = { "제%d Ryhmä" }
+		23 = { "제%d Ryhmä" }
+		24 = { "제%d Ryhmä" }
+		25 = { "제%d Ryhmä" }
+		26 = { "제%d Ryhmä" }
+		27 = { "제%d Ryhmä" }
+		28 = { "제%d Ryhmä" }
+		29 = { "제%d Ryhmä" }
+		30 = { "제%d Ryhmä" }
+		31 = { "제%d Ryhmä" }
+		32 = { "제%d Ryhmä" }
+		33 = { "제%d Ryhmä" }
+		34 = { "제%d Ryhmä" }
+		35 = { "제%d Ryhmä" }
+		36 = { "제%d Ryhmä" }
+		37 = { "제%d Ryhmä" }
+		38 = { "제%d Ryhmä" }
+		39 = { "제%d Ryhmä" }
+		40 = { "제%d Ryhmä" }
+		41 = { "제%d Ryhmä" }
+		42 = { "제%d Ryhmä" }
+		43 = { "제%d Ryhmä" }
+		44 = { "제%d Ryhmä" }
+		45 = { "제%d Ryhmä" }
+		46 = { "제%d Ryhmä" }
+		47 = { "제%d Ryhmä" }
+		48 = { "제%d Ryhmä" }
+		49 = { "제%d Ryhmä" }
+		51 = { "제%d Ryhmä" }
+		52 = { "제%d Ryhmä" }
+		53 = { "제%d Ryhmä" }
+
+		# FIN converted some of its groups or similar into divisions for the continuation war, but they fought as garrison units or therabouts for the winter war.  Thus, the INF and GAR lists are linked, with the idea that converting one of the starting "Ryhmä's" into a div will give it a sensible div number (although these groups have not been matched to their division numbers, and this approach may or may not be appropriate).
+	}
+}
+
+FIN_MAR_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FIN_GAR_01 }
+
+	fallback_name = "제%d Rannikkojääkäridiv"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Rannikkojääkäridiv" }
+		2 = { "제%d Rannikkojääkäridiv" }
+		3 = { "제%d Rannikkojääkäridiv" }
+		4 = { "제%d Rannikkojääkäridiv" }
+		5 = { "제%d Rannikkojääkäridiv" }
+		6 = { "제%d Rannikkojääkäridiv" }
+		7 = { "제%d Rannikkojääkäridiv" }
+		8 = { "제%d Rannikkojääkäridiv" }
+		9 = { "제%d Rannikkojääkäridiv" }
+		10 = { "제%d Rannikkojääkäridiv" }
+		11 = { "제%d Rannikkojääkäridiv" }
+		12 = { "제%d Rannikkojääkäridiv" }
+		13 = { "제%d Rannikkojääkäridiv" }
+		14 = { "제%d Rannikkojääkäridiv" }
+		15 = { "제%d Rannikkojääkäridiv" }
+		16 = { "제%d Rannikkojääkäridiv" }
+		17 = { "제%d Rannikkojääkäridiv" }
+		18 = { "제%d Rannikkojääkäridiv" }
+		19 = { "제%d Rannikkojääkäridiv" }
+		20 = { "제%d Rannikkojääkäridiv" }
+		21 = { "제%d Rannikkojääkäridiv" }
+		22 = { "제%d Rannikkojääkäridiv" }
+		23 = { "제%d Rannikkojääkäridiv" }
+		24 = { "제%d Rannikkojääkäridiv" }
+		25 = { "제%d Rannikkojääkäridiv" }
+		26 = { "제%d Rannikkojääkäridiv" }
+		27 = { "제%d Rannikkojääkäridiv" }
+		28 = { "제%d Rannikkojääkäridiv" }
+		29 = { "제%d Rannikkojääkäridiv" }
+		30 = { "제%d Rannikkojääkäridiv" }
+
+		# FIN didn't have any Marine divisions, these are all fictional.  Based on HoI3 lists, numbering independent of main sequence.
+	}
+}
+
+FIN_MTN_01 = 
+{
+	name = "Mountain Divisions"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FIN_INF_01 }
+
+	fallback_name = "제%d Sissidivisioona"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Sissidivisioona" }
+		2 = { "제%d Sissidivisioona" }
+		3 = { "제%d Sissidivisioona" }
+		4 = { "제%d Sissidivisioona" }
+		5 = { "제%d Sissidivisioona" }
+		6 = { "제%d Sissidivisioona" }
+		7 = { "제%d Sissidivisioona" }
+		8 = { "제%d Sissidivisioona" }
+		9 = { "제%d Sissidivisioona" }
+		10 = { "제%d Sissidivisioona" }
+		11 = { "제%d Sissidivisioona" }
+		12 = { "제%d Sissidivisioona" }
+		13 = { "제%d Sissidivisioona" }
+		14 = { "제%d Sissidivisioona" }
+		15 = { "제%d Sissidivisioona" }
+		16 = { "제%d Sissidivisioona" }
+		17 = { "제%d Sissidivisioona" }
+		18 = { "제%d Sissidivisioona" }
+		19 = { "제%d Sissidivisioona" }
+		20 = { "제%d Sissidivisioona" }
+		21 = { "제%d Sissidivisioona" }
+		22 = { "제%d Sissidivisioona" }
+		23 = { "제%d Sissidivisioona" }
+		24 = { "제%d Sissidivisioona" }
+		25 = { "제%d Sissidivisioona" }
+		26 = { "제%d Sissidivisioona" }
+		27 = { "제%d Sissidivisioona" }
+		28 = { "제%d Sissidivisioona" }
+		29 = { "제%d Sissidivisioona" }
+		30 = { "제%d Sissidivisioona" }
+		31 = { "제%d Sissidivisioona" }
+		32 = { "제%d Sissidivisioona" }
+		33 = { "제%d Sissidivisioona" }
+		34 = { "제%d Sissidivisioona" }
+		35 = { "제%d Sissidivisioona" }
+		36 = { "제%d Sissidivisioona" }
+		37 = { "제%d Sissidivisioona" }
+		38 = { "제%d Sissidivisioona" }
+		39 = { "제%d Sissidivisioona" }
+		40 = { "제%d Sissidivisioona" }
+		41 = { "제%d Sissidivisioona" }
+		42 = { "제%d Sissidivisioona" }
+		43 = { "제%d Sissidivisioona" }
+		44 = { "제%d Sissidivisioona" }
+		45 = { "제%d Sissidivisioona" }
+		46 = { "제%d Sissidivisioona" }
+		47 = { "제%d Sissidivisioona" }
+		48 = { "제%d Sissidivisioona" }
+		49 = { "제%d Sissidivisioona" }
+		50 = { "제%d Sissidivisioona" }
+		51 = { "제%d Sissidivisioona" }
+		52 = { "제%d Sissidivisioona" }
+		53 = { "제%d Sissidivisioona" }
+
+		# None in service historically.
+	}
+}
+
+FIN_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "제%d Laskuvarjojääkäridiv."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Laskuvarjojääkäridiv." }
+		2 = { "제%d Laskuvarjojääkäridiv." }
+		3 = { "제%d Laskuvarjojääkäridiv." }
+		4 = { "제%d Laskuvarjojääkäridiv." }
+		5 = { "제%d Laskuvarjojääkäridiv." }
+		6 = { "제%d Laskuvarjojääkäridiv." }
+		7 = { "제%d Laskuvarjojääkäridiv." }
+		8 = { "제%d Laskuvarjojääkäridiv." }
+		9 = { "제%d Laskuvarjojääkäridiv." }
+		10 = { "제%d Laskuvarjojääkäridiv." }
+		11 = { "제%d Laskuvarjojääkäridiv." }
+		12 = { "제%d Laskuvarjojääkäridiv." }
+		13 = { "제%d Laskuvarjojääkäridiv." }
+		14 = { "제%d Laskuvarjojääkäridiv." }
+		15 = { "제%d Laskuvarjojääkäridiv." }
+		16 = { "제%d Laskuvarjojääkäridiv." }
+		17 = { "제%d Laskuvarjojääkäridiv." }
+		18 = { "제%d Laskuvarjojääkäridiv." }
+		19 = { "제%d Laskuvarjojääkäridiv." }
+		20 = { "제%d Laskuvarjojääkäridiv." }
+		21 = { "제%d Laskuvarjojääkäridiv." }
+		22 = { "제%d Laskuvarjojääkäridiv." }
+		23 = { "제%d Laskuvarjojääkäridiv." }
+		24 = { "제%d Laskuvarjojääkäridiv." }
+		25 = { "제%d Laskuvarjojääkäridiv." }
+		26 = { "제%d Laskuvarjojääkäridiv." }
+		27 = { "제%d Laskuvarjojääkäridiv." }
+		28 = { "제%d Laskuvarjojääkäridiv." }
+		29 = { "제%d Laskuvarjojääkäridiv." }
+		30 = { "제%d Laskuvarjojääkäridiv." }
+
+		# FIN didn't have any Airborne divisions.  Have independent sequence.
+	}
+}

@@ -1,0 +1,694 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+PRK_INF_01 = 
+{
+	name = "소총 사단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 소총 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 소총 사단" }
+		2 = { "제%d 소총 사단" }
+		3 = { "제%d 소총 사단" }
+		4 = { "제%d 소총 사단" }
+		5 = { "제%d 소총 사단" }
+		6 = { "제%d 소총 사단" }
+		7 = { "제%d 소총 사단" }
+		8 = { "제%d 소총 사단" }
+		9 = { "제%d 소총 사단" }
+		10 = { "제%d 소총 사단" }
+	}
+}
+
+PRK_MOT_01 = 
+{
+	name = "차량화소총 사단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 차량화소총 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 차량화소총 사단" }
+		36 = { "제%d 차량화소총 사단" }
+		57 = { "제%d 차량화소총 사단" }
+		15 = { "제%d 차량화소총 사단" }
+		81 = { "제%d 차량화소총 사단" }
+		82 = { "제%d 차량화소총 사단" }
+		84 = { "제%d 차량화소총 사단" }
+		7 = { "제%d 차량화소총 사단" }
+		29 = { "제%d 차량화소총 사단" }
+		69 = { "제%d 차량화소총 사단" }
+		103 = { "제%d 차량화소총 사단" }
+		109 = { "제%d 차량화소총 사단" }
+		131 = { "제%d 차량화소총 사단" }
+		163 = { "제%d 차량화소총 사단" }
+		185 = { "제%d 차량화소총 사단" }
+		198 = { "제%d 차량화소총 사단" }
+		202 = { "제%d 차량화소총 사단" }
+		204 = { "제%d 차량화소총 사단" }
+		205 = { "제%d 차량화소총 사단" }
+		208 = { "제%d 차량화소총 사단" }
+		209 = { "제%d 차량화소총 사단" }
+		210 = { "제%d 차량화소총 사단" }
+		212 = { "제%d 차량화소총 사단" }
+		213 = { "제%d 차량화소총 사단" }
+		215 = { "제%d 차량화소총 사단" }
+		216 = { "제%d 차량화소총 사단" }
+		218 = { "제%d 차량화소총 사단" }
+		219 = { "제%d 차량화소총 사단" }
+		220 = { "제%d 차량화소총 사단" }
+		221 = { "제%d 차량화소총 사단" }
+		236 = { "제%d 차량화소총 사단" }
+		239 = { "제%d 차량화소총 사단" }
+	}
+}
+
+PRK_MEC_01 = 
+{
+	name = "기계화소총 사단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 기계화소총 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 기계화소총 사단" }
+		7 = { "제%d 기계화소총 사단" }
+		15 = { "제%d 기계화소총 사단" }
+		29 = { "제%d 기계화소총 사단" }
+		69 = { "제%d 기계화소총 사단" }
+		81 = { "제%d 기계화소총 사단" }
+		82 = { "제%d 기계화소총 사단" }
+		84 = { "제%d 기계화소총 사단" }
+		103 = { "제%d 기계화소총 사단" }
+		109 = { "제%d 기계화소총 사단" }
+		131 = { "제%d 기계화소총 사단" }
+		163 = { "제%d 기계화소총 사단" }
+		185 = { "제%d 기계화소총 사단" }
+		198 = { "제%d 기계화소총 사단" }
+		202 = { "제%d 기계화소총 사단" }
+		204 = { "제%d 기계화소총 사단" }
+		205 = { "제%d 기계화소총 사단" }
+		208 = { "제%d 기계화소총 사단" }
+		209 = { "제%d 기계화소총 사단" }
+		210 = { "제%d 기계화소총 사단" }
+		212 = { "제%d 기계화소총 사단" }
+		213 = { "제%d 기계화소총 사단" }
+		215 = { "제%d 기계화소총 사단" }
+		216 = { "제%d 기계화소총 사단" }
+		218 = { "제%d 기계화소총 사단" }
+		219 = { "제%d 기계화소총 사단" }
+		220 = { "제%d 기계화소총 사단" }
+		221 = { "제%d 기계화소총 사단" }
+		236 = { "제%d 기계화소총 사단" }
+		239 = { "제%d 기계화소총 사단" }
+		240 = { "제%d 기계화소총 사단" }
+	}
+}
+
+PRK_ARM_01 = 
+{
+	name = "전차 사단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 전차 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 전차 사단" }
+		2 = { "제%d 전차 사단" }
+		3 = { "제%d 전차 사단" }
+		4 = { "제%d 전차 사단" }
+		5 = { "제%d 전차 사단" }
+		6 = { "제%d 전차 사단" }
+		7 = { "제%d 전차 사단" }
+		8 = { "제%d 전차 사단" }
+		9 = { "제%d 전차 사단" }
+		10 = { "제%d 전차 사단" }
+		11 = { "제%d 전차 사단" }
+		12 = { "제%d 전차 사단" }
+		13 = { "제%d 전차 사단" }
+		14 = { "제%d 전차 사단" }
+		15 = { "제%d 전차 사단" }
+		16 = { "제%d 전차 사단" }
+		17 = { "제%d 전차 사단" }
+		18 = { "제%d 전차 사단" }
+		19 = { "제%d 전차 사단" }
+		20 = { "제%d 전차 사단" }
+		21 = { "제%d 전차 사단" }
+		22 = { "제%d 전차 사단" }
+		23 = { "제%d 전차 사단" }
+		24 = { "제%d 전차 사단" }
+		25 = { "제%d 전차 사단" }
+		26 = { "제%d 전차 사단" }
+		27 = { "제%d 전차 사단" }
+		28 = { "제%d 전차 사단" }
+		29 = { "제%d 전차 사단" }
+		30 = { "제%d 전차 사단" }
+		31 = { "제%d 전차 사단" }
+		32 = { "제%d 전차 사단" }
+		33 = { "제%d 전차 사단" }
+		34 = { "제%d 전차 사단" }
+		35 = { "제%d 전차 사단" }
+		36 = { "제%d 전차 사단" }
+		37 = { "제%d 전차 사단" }
+		38 = { "제%d 전차 사단" }
+		39 = { "제%d 전차 사단" }
+		40 = { "제%d 전차 사단" }
+		41 = { "제%d 전차 사단" }
+		42 = { "제%d 전차 사단" }
+		43 = { "제%d 전차 사단" }
+		44 = { "제%d 전차 사단" }
+		45 = { "제%d 전차 사단" }
+		46 = { "제%d 전차 사단" }
+		47 = { "제%d 전차 사단" }
+		48 = { "제%d 전차 사단" }
+		49 = { "제%d 전차 사단" }
+		50 = { "제%d 전차 사단" }
+		51 = { "제%d 전차 사단" }
+		52 = { "제%d 전차 사단" }
+		53 = { "제%d 전차 사단" }
+		54 = { "제%d 전차 사단" }
+		55 = { "제%d 전차 사단" }
+		56 = { "제%d 전차 사단" }
+		57 = { "제%d 전차 사단" }
+		58 = { "제%d 전차 사단" }
+		59 = { "제%d 전차 사단" }
+		60 = { "제%d 전차 사단" }
+		61 = { "제%d 전차 사단" }
+		101 = { "제%d 전차 사단" }
+		102 = { "제%d 전차 사단" }
+		104 = { "제%d 전차 사단" }
+		105 = { "제%d 전차 사단" }
+		107 = { "제%d 전차 사단" }
+		108 = { "제%d 전차 사단" }
+		109 = { "제%d 전차 사단" }
+		110 = { "제%d 전차 사단" }
+		111 = { "제%d 전차 사단" }
+		112 = { "제%d 전차 사단" }
+	}
+}
+
+PRK_ARM_02 = 
+{
+	name = "전차 군단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 전차 군단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 전차 군단" }
+		2 = { "제%d 전차 군단" }
+		3 = { "제%d 전차 군단" }
+		4 = { "제%d 전차 군단" }
+		5 = { "제%d 전차 군단" }
+		6 = { "제%d 전차 군단" }
+		7 = { "제%d 전차 군단" }
+		8 = { "제%d 전차 군단" }
+		9 = { "제%d 전차 군단" }
+		10 = { "제%d 전차 군단" }
+		11 = { "제%d 전차 군단" }
+		12 = { "제%d 전차 군단" }
+		13 = { "제%d 전차 군단" }
+		14 = { "제%d 전차 군단" }
+		15 = { "제%d 전차 군단" }
+		16 = { "제%d 전차 군단" }
+		17 = { "제%d 전차 군단" }
+		18 = { "제%d 전차 군단" }
+		19 = { "제%d 전차 군단" }
+		20 = { "제%d 전차 군단" }
+		21 = { "제%d 전차 군단" }
+		22 = { "제%d 전차 군단" }
+		23 = { "제%d 전차 군단" }
+		24 = { "제%d 전차 군단" }
+		25 = { "제%d 전차 군단" }
+		26 = { "제%d 전차 군단" }
+		27 = { "제%d 전차 군단" }
+		28 = { "제%d 전차 군단" }
+		29 = { "제%d 전차 군단" }
+		30 = { "제%d 전차 군단" }
+		31 = { "제%d 전차 군단" }
+		32 = { "제%d 전차 군단" }
+		33 = { "제%d 전차 군단" }
+		34 = { "제%d 전차 군단" }
+		35 = { "제%d 전차 군단" }
+		36 = { "제%d 전차 군단" }
+		37 = { "제%d 전차 군단" }
+		38 = { "제%d 전차 군단" }
+		39 = { "제%d 전차 군단" }
+		40 = { "제%d 전차 군단" }
+		41 = { "제%d 전차 군단" }
+		42 = { "제%d 전차 군단" }
+		43 = { "제%d 전차 군단" }
+		44 = { "제%d 전차 군단" }
+		45 = { "제%d 전차 군단" }
+		46 = { "제%d 전차 군단" }
+		47 = { "제%d 전차 군단" }
+		48 = { "제%d 전차 군단" }
+		49 = { "제%d 전차 군단" }
+		50 = { "제%d 전차 군단" }
+		51 = { "제%d 전차 군단" }
+		52 = { "제%d 전차 군단" }
+		53 = { "제%d 전차 군단" }
+		54 = { "제%d 전차 군단" }
+		55 = { "제%d 전차 군단" }
+		56 = { "제%d 전차 군단" }
+		57 = { "제%d 전차 군단" }
+		58 = { "제%d 전차 군단" }
+		59 = { "제%d 전차 군단" }
+		60 = { "제%d 전차 군단" }
+		61 = { "제%d 전차 군단" }
+		101 = { "제%d 전차 군단" }
+		102 = { "제%d 전차 군단" }
+		104 = { "제%d 전차 군단" }
+		105 = { "제%d 전차 군단" }
+		107 = { "제%d 전차 군단" }
+		108 = { "제%d 전차 군단" }
+		109 = { "제%d 전차 군단" }
+		110 = { "제%d 전차 군단" }
+		111 = { "제%d 전차 군단" }
+		112 = { "제%d 전차 군단" }
+	}
+}
+
+PRK_ARM_03 = 
+{
+	name = "근위 전차 군단"
+
+	for_countries = { PRK }
+
+	can_use = { has_war = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 근위 전차 군단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 근위 전차 군단" }
+		2 = { "제%d 근위 전차 군단" }
+		3 = { "제%d 근위 전차 군단" }
+		4 = { "제%d 근위 전차 군단" }
+		5 = { "제%d 근위 전차 군단" }
+		6 = { "제%d 근위 전차 군단" }
+		7 = { "제%d 근위 전차 군단" }
+		8 = { "제%d 근위 전차 군단" }
+		9 = { "제%d 근위 전차 군단" }
+		10 = { "제%d 근위 전차 군단" }
+		11 = { "제%d 근위 전차 군단" }
+		12 = { "제%d 근위 전차 군단" }
+		13 = { "제%d 근위 전차 군단" }
+		14 = { "제%d 근위 전차 군단" }
+		15 = { "제%d 근위 전차 군단" }
+		16 = { "제%d 근위 전차 군단" }
+		17 = { "제%d 근위 전차 군단" }
+		18 = { "제%d 근위 전차 군단" }
+		19 = { "제%d 근위 전차 군단" }
+		20 = { "제%d 근위 전차 군단" }
+		21 = { "제%d 근위 전차 군단" }
+		22 = { "제%d 근위 전차 군단" }
+		23 = { "제%d 근위 전차 군단" }
+		24 = { "제%d 근위 전차 군단" }
+		25 = { "제%d 근위 전차 군단" }
+		26 = { "제%d 근위 전차 군단" }
+		27 = { "제%d 근위 전차 군단" }
+		28 = { "제%d 근위 전차 군단" }
+		29 = { "제%d 근위 전차 군단" }
+		30 = { "제%d 근위 전차 군단" }
+		31 = { "제%d 근위 전차 군단" }
+		32 = { "제%d 근위 전차 군단" }
+		33 = { "제%d 근위 전차 군단" }
+		34 = { "제%d 근위 전차 군단" }
+		35 = { "제%d 근위 전차 군단" }
+		36 = { "제%d 근위 전차 군단" }
+		37 = { "제%d 근위 전차 군단" }
+		38 = { "제%d 근위 전차 군단" }
+		39 = { "제%d 근위 전차 군단" }
+		40 = { "제%d 근위 전차 군단" }
+		41 = { "제%d 근위 전차 군단" }
+		42 = { "제%d 근위 전차 군단" }
+		43 = { "제%d 근위 전차 군단" }
+		44 = { "제%d 근위 전차 군단" }
+		45 = { "제%d 근위 전차 군단" }
+		46 = { "제%d 근위 전차 군단" }
+		47 = { "제%d 근위 전차 군단" }
+		48 = { "제%d 근위 전차 군단" }
+		49 = { "제%d 근위 전차 군단" }
+		50 = { "제%d 근위 전차 군단" }
+		51 = { "제%d 근위 전차 군단" }
+		52 = { "제%d 근위 전차 군단" }
+		53 = { "제%d 근위 전차 군단" }
+		54 = { "제%d 근위 전차 군단" }
+		55 = { "제%d 근위 전차 군단" }
+		56 = { "제%d 근위 전차 군단" }
+		57 = { "제%d 근위 전차 군단" }
+		58 = { "제%d 근위 전차 군단" }
+		59 = { "제%d 근위 전차 군단" }
+		60 = { "제%d 근위 전차 군단" }
+		61 = { "제%d 근위 전차 군단" }
+		101 = { "제%d 근위 전차 군단" }
+		102 = { "제%d 근위 전차 군단" }
+		104 = { "제%d 근위 전차 군단" }
+		105 = { "제%d 근위 전차 군단" }
+		107 = { "제%d 근위 전차 군단" }
+		108 = { "제%d 근위 전차 군단" }
+		109 = { "제%d 근위 전차 군단" }
+		110 = { "제%d 근위 전차 군단" }
+		111 = { "제%d 근위 전차 군단" }
+		112 = { "제%d 근위 전차 군단" }
+	}
+}
+
+PRK_ARM_04 = 
+{
+	name = "전차 여단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 전차 여단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 전차 여단" }
+		2 = { "제%d 전차 여단" }
+		3 = { "제%d 전차 여단" }
+		4 = { "제%d 전차 여단" }
+		5 = { "제%d 전차 여단" }
+		6 = { "제%d 전차 여단" }
+		7 = { "제%d 전차 여단" }
+		8 = { "제%d 전차 여단" }
+		9 = { "제%d 전차 여단" }
+		10 = { "제%d 전차 여단" }
+		11 = { "제%d 전차 여단" }
+		12 = { "제%d 전차 여단" }
+		13 = { "제%d 전차 여단" }
+		14 = { "제%d 전차 여단" }
+		15 = { "제%d 전차 여단" }
+		16 = { "제%d 전차 여단" }
+		17 = { "제%d 전차 여단" }
+		18 = { "제%d 전차 여단" }
+		19 = { "제%d 전차 여단" }
+		20 = { "제%d 전차 여단" }
+		21 = { "제%d 전차 여단" }
+		22 = { "제%d 전차 여단" }
+		23 = { "제%d 전차 여단" }
+		24 = { "제%d 전차 여단" }
+		25 = { "제%d 전차 여단" }
+		26 = { "제%d 전차 여단" }
+		27 = { "제%d 전차 여단" }
+		28 = { "제%d 전차 여단" }
+		29 = { "제%d 전차 여단" }
+		30 = { "제%d 전차 여단" }
+		31 = { "제%d 전차 여단" }
+		32 = { "제%d 전차 여단" }
+		33 = { "제%d 전차 여단" }
+		34 = { "제%d 전차 여단" }
+		35 = { "제%d 전차 여단" }
+		36 = { "제%d 전차 여단" }
+		37 = { "제%d 전차 여단" }
+		38 = { "제%d 전차 여단" }
+		39 = { "제%d 전차 여단" }
+		40 = { "제%d 전차 여단" }
+		41 = { "제%d 전차 여단" }
+		42 = { "제%d 전차 여단" }
+		43 = { "제%d 전차 여단" }
+		44 = { "제%d 전차 여단" }
+		45 = { "제%d 전차 여단" }
+		46 = { "제%d 전차 여단" }
+		47 = { "제%d 전차 여단" }
+		48 = { "제%d 전차 여단" }
+		49 = { "제%d 전차 여단" }
+		50 = { "제%d 전차 여단" }
+		51 = { "제%d 전차 여단" }
+		52 = { "제%d 전차 여단" }
+		53 = { "제%d 전차 여단" }
+		54 = { "제%d 전차 여단" }
+		55 = { "제%d 전차 여단" }
+		56 = { "제%d 전차 여단" }
+		57 = { "제%d 전차 여단" }
+		58 = { "제%d 전차 여단" }
+		59 = { "제%d 전차 여단" }
+		60 = { "제%d 전차 여단" }
+		61 = { "제%d 전차 여단" }
+		101 = { "제%d 전차 여단" }
+		102 = { "제%d 전차 여단" }
+		104 = { "제%d 전차 여단" }
+		105 = { "제%d 전차 여단" }
+		107 = { "제%d 전차 여단" }
+		108 = { "제%d 전차 여단" }
+		109 = { "제%d 전차 여단" }
+		110 = { "제%d 전차 여단" }
+		111 = { "제%d 전차 여단" }
+		112 = { "제%d 전차 여단" }
+	}
+}
+
+PRK_PAR_01 = 
+{
+	name = "공수 사단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 공중강습 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 공중강습 사단" }
+		2 = { "제%d 공중강습 사단" }
+		3 = { "제%d 공중강습 사단" }
+		4 = { "제%d 공중강습 사단" }
+		5 = { "제%d 공중강습 사단" }
+		6 = { "제%d 공중강습 사단" }
+		7 = { "제%d 공중강습 사단" }
+		8 = { "제%d 공중강습 사단" }
+		9 = { "제%d 공중강습 사단" }
+		10 = { "제%d 공중강습 사단" }
+		11 = { "제%d 공중강습 사단" }
+		12 = { "제%d 공중강습 사단" }
+		101 = { "제1 근위 공중강습 사단" }
+		102 = { "제2 근위 공중강습 사단" }
+		103 = { "제3 근위 공중강습 사단" }
+		104 = { "제4 근위 공중강습 사단" }
+		105 = { "제5 근위 공중강습 사단" }
+		106 = { "제6 근위 공중강습 사단" }
+		107 = { "제7 근위 공중강습 사단" }
+		108 = { "제8 근위 공중강습 사단" }
+		109 = { "제9 근위 공중강습 사단" }
+		110 = { "제10 근위 공중강습 사단" }
+		111 = { "제11 근위 공중강습 사단" }
+		112 = { "제12 근위 공중강습 사단" }
+		113 = { "제13 근위 공중강습 사단" }
+		114 = { "제14 근위 공중강습 사단" }
+		115 = { "제15 근위 공중강습 사단" }
+		116 = { "제16 근위 공중강습 사단" }
+		121 = { "제21 근위 공중강습 사단" }
+		131 = { "제31 근위 공중강습 사단" }
+		176 = { "제76 근위 공중강습 사단" }
+		198 = { "제98 근위 공중강습 사단" }
+		203 = { "제103 근위 공중강습 사단" }
+		204 = { "제104 근위 공중강습 사단" }
+		206 = { "제106 근위 공중강습 사단" }
+		214 = { "제114 근위 공중강습 사단" }
+	}
+}
+
+PRK_MAR_01 = 
+{
+	name = "해군보병 연대"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 해군보병 연대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 해군보병 연대" }
+		2 = { "제%d 해군보병 연대" }
+		3 = { "제%d 해군보병 연대" }
+		4 = { "제%d 해군보병 연대" }
+		5 = { "제%d 해군보병 연대" }
+		6 = { "제%d 해군보병 연대" }
+		7 = { "제%d 해군보병 연대" }
+		8 = { "제%d 해군보병 연대" }
+		9 = { "제%d 해군보병 연대" }
+		10 = { "제%d 해군보병 연대" }
+	}
+}
+PRK_worker_peasant_red_guards_01 = 
+{
+	name = "로농적위대 사단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 로농적위대 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 로농적위대 사단" }
+		2 = { "제%d 로농적위대 사단" }
+		3 = { "제%d 로농적위대 사단" }
+		4 = { "제%d 로농적위대 사단" }
+		5 = { "제%d 로농적위대 사단" }
+		6 = { "제%d 로농적위대 사단" }
+		7 = { "제%d 로농적위대 사단" }
+		8 = { "제%d 로농적위대 사단" }
+		9 = { "제%d 로농적위대 사단" }
+		10 = { "제%d 로농적위대 사단" }
+	}
+}
+PRK_reserve_military_training_units_01 = 
+{
+	name = "교도대 사단"
+
+	for_countries = { PRK }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRK_INF_01 }
+
+	fallback_name = "제%d 교도대 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d 교도대 사단" }
+		2 = { "제%d 교도대 사단" }
+		3 = { "제%d 교도대 사단" }
+		4 = { "제%d 교도대 사단" }
+		5 = { "제%d 교도대 사단" }
+		6 = { "제%d 교도대 사단" }
+		7 = { "제%d 교도대 사단" }
+		8 = { "제%d 교도대 사단" }
+		9 = { "제%d 교도대 사단" }
+		10 = { "제%d 교도대 사단" }
+	}
+}

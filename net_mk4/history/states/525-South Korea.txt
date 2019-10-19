@@ -1,0 +1,23 @@
+state=
+{
+	id=525
+	name="STATE_525"
+	manpower = 9791470
+	
+	state_category = town
+	history=
+	{
+		owner = KOR
+		victory_points = {
+			7125 3 
+		}
+
+		add_core_of = KOR
+		add_core_of = PRK
+		add_claim_by = PRK
+
+	}
+	provinces={
+		7125 7221
+	}
+}

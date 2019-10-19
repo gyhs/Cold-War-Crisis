@@ -1,0 +1,39 @@
+﻿capital = 305
+
+oob = "ECU_1987"
+
+# Starting tech
+set_technology = {
+}
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 5
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1933.12.15"
+	election_frequency = 84
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Federico Páez"
+	desc = "POLITICS_FEDERICO_PAEZ_DESC"
+	picture = "GFX_POLITICS_ecuador_federico_paez"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}

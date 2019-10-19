@@ -1,0 +1,86 @@
+﻿capital = 3
+
+oob = "SWI_1987"
+
+set_research_slots = 3
+
+set_technology = {
+}
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+add_ideas = {
+}
+
+set_stability = 0.85
+
+create_country_leader = {
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "POLITICS_Switzerland_Federal_council.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ernest Béuin"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dr. Max Leo Keller"
+	desc = "POLITICS_MAX_LEO_KELLER_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds" 
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fritz Platten"
+	desc = "POLITICS_FRITZ_PLATTEN_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Henri Guisan"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
+	traits = {  winter_specialist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

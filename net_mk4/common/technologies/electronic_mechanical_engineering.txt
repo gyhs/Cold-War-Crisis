@@ -1,0 +1,2342 @@
+technologies = {
+	electronic_mechanical_engineering = {
+
+		# small boost to research speed
+		research_speed_factor = 0.02
+		
+		path = {
+			leads_to_tech = radio 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mechanical_computing 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1970
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
+	radio = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.05
+		
+		path = {
+			leads_to_tech = radio_detection 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 10 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 6
+				has_war = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1939.8.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	radio_detection = {
+		enable_building = {
+			building = radar_station
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = decimetric_radar 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fire_control_system_1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	decimetric_radar = {
+		enable_equipment_modules = { 
+			ship_radar_1
+			ship_radar_heavy_1
+			ship_air_radar_1
+			ship_air_radar_heavy_1
+		}
+		
+		path = {
+			leads_to_tech = improved_decimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1938
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
+	}
+	
+###------> Radio Finders <><> <><> <><> <><> <><>
+
+	fire_control_system_1 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_1
+			ship_fire_control_system_heavy_1
+		}
+		
+		path = {
+			leads_to_tech = fire_control_system_2 
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+
+	fire_control_system_2 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_2
+			ship_fire_control_system_heavy_2
+		}
+		
+		path = {
+			leads_to_tech = fire_control_system_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1941
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+
+	fire_control_system_3 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_3
+			ship_fire_control_system_heavy_3
+		}
+		
+		path = {
+			leads_to_tech = tech_aegis_combat_system_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fire_control_system_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1943
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+
+	fire_control_system_4 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_4
+			ship_fire_control_system_heavy_4
+		}
+		
+		path = {
+			leads_to_tech = fire_control_system_5
+			research_cost_coeff = 1
+		}
+     	research_cost = 1.5
+		start_year = 1945
+	
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	fire_control_system_5 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_5
+			ship_fire_control_system_heavy_5
+		}
+		
+		path = {
+			leads_to_tech = fire_control_system_6
+			research_cost_coeff = 1
+		}
+     	research_cost = 1.5
+		start_year = 1949
+	
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	fire_control_system_6 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_6
+			ship_fire_control_system_heavy_6
+		}
+		
+		path = {
+			leads_to_tech = fire_control_system_7
+			research_cost_coeff = 1
+		}
+     	research_cost = 1.5
+		start_year = 1953
+	
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	fire_control_system_7 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_7
+			ship_fire_control_system_heavy_7
+		}
+		
+		path = {
+			leads_to_tech = fire_control_system_8
+			research_cost_coeff = 1
+		}
+     	research_cost = 1.5
+		start_year = 1953
+	
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	fire_control_system_8 = {
+		enable_equipment_modules = { 
+			ship_fire_control_system_8
+			ship_fire_control_system_heavy_8
+		}
+		
+		path = {
+			leads_to_tech = fire_control_system_9
+			research_cost_coeff = 1
+		}
+     	research_cost = 1.5
+		start_year = 1953
+	
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	improved_decimetric_radar = {
+		enable_equipment_modules = { 
+			ship_radar_2
+			ship_radar_heavy_2
+			ship_air_radar_2
+			ship_air_radar_heavy_2
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 3
+		}
+		path = {
+			leads_to_tech = centimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	centimetric_radar = {
+		enable_equipment_modules = { 
+			ship_radar_3
+			ship_radar_heavy_3
+			ship_air_radar_3
+			ship_air_radar_heavy_3
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+		
+		path = {
+			leads_to_tech = tech_aegis_combat_system_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_centimetric_radar 
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	improved_centimetric_radar = {
+		enable_equipment_modules = { 
+			ship_radar_4
+			ship_radar_heavy_4
+			ship_air_radar_4
+			ship_air_radar_heavy_4
+		}
+	
+		enable_building = {
+			building = radar_station
+			level = 5
+		}
+		
+		path = {
+			leads_to_tech = advanced_centimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1941
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	advanced_centimetric_radar = {
+		enable_equipment_modules = { 
+			ship_radar_5
+			ship_radar_heavy_5
+			ship_air_radar_5
+			ship_air_radar_heavy_5
+		}
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+
+		path = {
+			leads_to_tech = future_radar
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+###------> New Radar <><> <><> <><> <><> <><>
+
+	future_radar = {
+		enable_equipment_modules = { 
+			ship_radar_6
+			ship_radar_heavy_6
+			ship_air_radar_6
+			ship_air_radar_heavy_6
+		}
+		
+		air_interception_detect_factor = 0.05
+		static_anti_air_hit_chance_factor = 0.02
+
+		path = {
+			leads_to_tech = future_radar_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1945
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	future_radar_2 = {
+		enable_equipment_modules = { 
+			ship_radar_7
+			ship_radar_heavy_7
+			ship_air_radar_7
+			ship_air_radar_heavy_7
+		}
+		
+		air_interception_detect_factor = 0.05
+		static_anti_air_hit_chance_factor = 0.02
+
+		path = {
+			leads_to_tech = future_radar_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1949
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	future_radar_3 = {
+		enable_equipment_modules = { 
+			ship_radar_8
+			ship_radar_heavy_8
+			ship_air_radar_8
+			ship_air_radar_heavy_8
+		}
+		
+		air_interception_detect_factor = 0.05
+		static_anti_air_hit_chance_factor = 0.02
+		
+		research_cost = 2.5
+		start_year = 1953
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	mechanical_computing = {
+
+		# small boost to research speed
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = computing_machine 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = atomic_research
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = experimental_rockets
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.03
+		enable_equipment_modules = { 
+			sub_acoustic_tiles_citadel_1
+			sub_acoustic_tiles_total_1
+		}
+		
+		path = {
+			leads_to_tech = improved_computing_machine 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_decryption 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1938
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			
+			modifier = {
+				factor = 3
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1939.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	improved_computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		enable_equipment_modules = { 
+			sub_acoustic_tiles_citadel_2
+			sub_acoustic_tiles_total_2
+		}
+		
+		path = {
+			leads_to_tech = advanced_computing_machine 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_decryption 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ballistic_missile_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1941.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	advanced_computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		enable_equipment_modules = { 
+			sub_acoustic_tiles_citadel_3
+			sub_acoustic_tiles_total_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_decryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_aegis_combat_system_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = future_computing_machine 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+###------> New Computers <><> <><> <><> <><> <><>
+
+	future_computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = future_encryption 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = future_decryption 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = future_computing_machine_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	future_computing_machine_2 = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = future_encryption_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = future_decryption_2 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = future_computing_machine_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1947
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	future_computing_machine_3 = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = future_encryption_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = future_decryption_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = future_computing_machine_4 
+			research_cost_coeff = 1
+		}
+		
+		dependencies = { 
+			#streamlined_line_b = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1951
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	future_computing_machine_4 = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		research_cost = 5
+		start_year = 1955
+		
+		dependencies = { 
+			#streamlined_line_c = 1
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+
+
+
+#----------------------------------------
+	
+	
+	basic_encryption = {
+
+		# encryption 1
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1938
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	improved_encryption = {
+
+		# encryption 2
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	advanced_encryption = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	future_encryption = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	future_encryption_2 = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1947
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	future_encryption_3 = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1951
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	basic_decryption = {
+
+		# decryption 1
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1938
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	improved_decryption = {
+
+		# decryption 2
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	advanced_decryption = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	future_decryption = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	future_decryption_2 = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1947
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	future_decryption_3 = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1951
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+#-------------------------------------------------------
+
+	tech_aegis_combat_system_1 = {
+		enable_equipment_modules = { 
+			ship_aegis_combat_system_1
+			ship_radar_aegis_1
+		}
+		
+		path = {
+			leads_to_tech = tech_aegis_combat_system_2 
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			fire_control_system_3 = 1
+			centimetric_radar = 1
+			advanced_computing_machine = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+
+	tech_aegis_combat_system_2 = {
+		enable_equipment_modules = { 
+			ship_aegis_combat_system_2
+			ship_radar_aegis_2
+		}
+		
+		path = {
+			leads_to_tech = tech_aegis_combat_system_3 
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	tech_aegis_combat_system_3 = {
+		enable_equipment_modules = { 
+			ship_aegis_combat_system_3
+			ship_radar_aegis_3
+		}
+		
+		path = {
+			leads_to_tech = tech_aegis_combat_system_4 
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	tech_aegis_combat_system_4 = {
+		enable_equipment_modules = { 
+			ship_aegis_combat_system_4
+			ship_radar_aegis_4
+		}
+		
+		path = {
+			leads_to_tech = tech_aegis_combat_system_5 
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	tech_aegis_combat_system_5 = {
+		enable_equipment_modules = { 
+			ship_aegis_combat_system_5
+			ship_radar_aegis_5
+		}
+		
+		path = {
+			leads_to_tech = tech_aegis_combat_system_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1939
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+#-------------------------------------------------------
+	experimental_rockets = {
+
+		enable_building = {
+			building = rocket_site
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = heavy_rocket_engine_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = jet_engines_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = missile_engineering_1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 15 y = 4 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	heavy_rocket_engine_1 = {
+
+		show_equipment_icon = yes
+
+		research_speed_factor = 0.02
+		
+		rocket_artillery = {
+			soft_attack = 0.02
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.02
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.02
+		}
+		
+		path = {
+			leads_to_tech = heavy_rocket_engine_2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 15 y = 6 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}		
+	}
+	
+	heavy_rocket_engine_2 = {
+
+		show_equipment_icon = yes
+
+		research_speed_factor = 0.02
+		
+		rocket_artillery = {
+			soft_attack = 0.02
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.02
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.02
+		}
+		
+		path = {
+			leads_to_tech = heavy_rocket_engine_3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 15 y = 8 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}		
+	}
+	
+	heavy_rocket_engine_3 = {
+
+		show_equipment_icon = yes
+
+		research_speed_factor = 0.02
+		
+		rocket_artillery = {
+			soft_attack = 0.02
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.02
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.02
+		}
+		#path = {
+		#	leads_to_tech = aerospace_engineering_1 
+		#	research_cost_coeff = 1
+		#}
+		path = {
+			leads_to_tech = ballistic_missile_1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 15 y = 10 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}		
+	}
+	
+	ballistic_missile_1 = {
+
+		show_equipment_icon = yes
+		
+		enable_equipments = {
+			guided_missile_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = ballistic_missile_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			heavy_rocket_engine_3 = 1
+			nukes_2 = 1
+			improved_computing_machine = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1959
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	ballistic_missile_2 = {
+
+		show_equipment_icon = yes
+		
+		enable_equipments = {
+			guided_missile_equipment_2
+		}
+		
+		rocket_artillery = {
+			soft_attack = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = ballistic_missile_3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 14 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}		
+	}
+	
+	ballistic_missile_3 = {
+
+		show_equipment_icon = yes
+		
+		enable_equipments = {
+			guided_missile_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = ballistic_missile_4 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1945
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	ballistic_missile_4 = {
+
+		show_equipment_icon = yes
+		enable_equipments = {
+			guided_missile_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = ballistic_missile_5 
+			research_cost_coeff = 1
+		}
+
+		# can build ICBMs?
+		
+		research_cost = 1.5
+		start_year = 1946
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	ballistic_missile_5 = {
+
+		show_equipment_icon = yes
+		enable_equipments = {
+			guided_missile_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = ballistic_missile_6 
+			research_cost_coeff = 1
+		}
+
+		# can build ICBMs?
+		
+		research_cost = 1.5
+		start_year = 1946
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	missile_engineering_1 = { 
+		
+		path = {
+			leads_to_tech = missile_engineering_2 
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 17 y = 6 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	missile_engineering_2 = { 
+		
+		path = {
+			leads_to_tech = missile_engineering_3 
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 17 y = 8 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	missile_engineering_3 = { 
+		
+		path = {
+			leads_to_tech = vls_engineering_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = slbm_engineering_1
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 17 y = 10 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	slbm_engineering_1 = { 
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 16 y = 12 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	vls_engineering_1 = { 
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 18 y = 12 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines_1 = { #
+		
+		path = {
+			leads_to_tech = jet_engines_2 
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 6 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines_2 = { #
+		
+		path = {
+			leads_to_tech = jet_engines_3 
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 8 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines_3 = { #
+		
+		path = {
+			leads_to_tech = jet_engines_4 
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 10 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines_4 = { #
+		
+		path = {
+			leads_to_tech = jet_engines_5 
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 12 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines_5 = { #
+		
+		path = {
+			leads_to_tech = jet_engines_6 
+			research_cost_coeff = 1
+		}
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 14 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines_6 = { #
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 16 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	atomic_research = {
+
+		research_speed_factor = 0.02
+		
+		path = {
+			leads_to_tech = nuclear_reactor 
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1940
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 13 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+		}
+		
+		categories = {
+			nuclear
+		}
+		
+
+	}
+	
+	nuclear_reactor = {
+
+		# can build reactors
+		
+		start_year = 1943
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 13 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = nukes 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			nuclear
+		}
+		
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}
+	}
+
+	nukes = {
+	
+		start_year = 1945
+		research_cost = 5
+		
+		enable_building = {
+			building = nuclear_reactor
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = nukes_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 13 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			nuclear
+		}
+		
+	}
+	
+	nukes_2 = {
+	
+		start_year = 1951
+		research_cost = 5
+		
+		enable_building = {
+			building = nuclear_reactor
+			level = 3
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 13 y = 10 }
+		}
+		
+		path = {
+			leads_to_tech = ballistic_missile_1 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = nuke_naval_engine_1 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+	
+	nuke_naval_engine_1 = {
+		enable_equipment_modules = { 
+			ship_engine_nuke_1
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_nuke_1
+		}
+		enable_equipment_modules = { 
+			sub_engine_nuke_1
+		}
+	
+		start_year = 1948
+		research_cost = 5
+		
+		research_speed_factor = 0.02
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 14 y = 12 }
+		}
+
+		path = {
+			leads_to_tech = nuke_naval_engine_2
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+	
+	nuke_naval_engine_2 = {
+		enable_equipment_modules = { 
+			ship_engine_nuke_2
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_nuke_2
+		}
+		enable_equipment_modules = { 
+			sub_engine_nuke_2
+		}
+	
+		start_year = 1948
+		research_cost = 5
+		
+		research_speed_factor = 0.02
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 14 y = 14 }
+		}
+
+		path = {
+			leads_to_tech = nuke_naval_engine_3
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+	
+	nuke_naval_engine_3 = {
+		enable_equipment_modules = { 
+			ship_engine_nuke_3
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_nuke_3
+		}
+		enable_equipment_modules = { 
+			sub_engine_nuke_3
+		}
+	
+		start_year = 1948
+		research_cost = 5
+		
+		research_speed_factor = 0.02
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 14 y = 16 }
+		}
+
+		path = {
+			leads_to_tech = nuke_naval_engine_4
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+	
+	nuke_naval_engine_4 = {
+		enable_equipment_modules = { 
+			ship_engine_nuke_4
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_nuke_4
+		}
+		enable_equipment_modules = { 
+			sub_engine_nuke_4
+		}
+	
+		start_year = 1948
+		research_cost = 5
+		
+		research_speed_factor = 0.02
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 14 y = 18 }
+		}
+
+		path = {
+			leads_to_tech = nuke_naval_engine_5
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+	
+	nuke_naval_engine_5 = {
+		enable_equipment_modules = { 
+			ship_engine_nuke_5
+		}
+		enable_equipment_modules = { 
+			ship_engine_carrier_nuke_5
+		}
+		enable_equipment_modules = { 
+			sub_engine_nuke_5
+		}
+	
+		start_year = 1948
+		research_cost = 5
+		
+		research_speed_factor = 0.02
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 14 y = 20 }
+		}
+
+		path = {
+			leads_to_tech = nuke_naval_engine_6
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+}

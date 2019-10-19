@@ -1,0 +1,1823 @@
+equipment_modules = {
+#ship_torpedo
+#sub_torpedo_medium_4
+#sub_torpedo_medium_6
+#sub_torpedo_medium_8
+#sub_torpedo_medium_10
+#sub_torpedo_medium_12
+#sub_torpedo_medium_16
+##
+#sub_torpedo_heavy_4
+#sub_torpedo_heavy_6
+#sub_torpedo_heavy_8
+#sub_torpedo_heavy_10
+#sub_torpedo_heavy_12
+#sub_torpedo_heavy_16
+##
+#sub_torpedo_tube_cruise_missile
+#----------------------------------------------------------------------------
+#어뢰
+
+#----------------------------------------------------------------------------
+
+	ship_torpedo_1 = {
+		category = ship_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			torpedo_attack = 18
+			build_cost_ic = 90
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_2 = {
+		category = ship_torpedo
+		parent = ship_torpedo_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 27
+			build_cost_ic = 120
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		 
+		dismantle_cost_ic = 60
+		dismantle_cost_resources = {
+			steel = 0
+		}
+
+		can_convert_from = {
+			module_category = ship_torpedo
+			convert_cost_ic = 60
+			convert_cost_resources = {
+				steel = 0
+			}
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_3 = {
+		category = ship_torpedo
+		parent = ship_torpedo_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 36
+			build_cost_ic = 150
+		}
+		
+		dismantle_cost_ic = 60
+
+		can_convert_from = {
+			module_category = ship_torpedo
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_4 = {
+		category = ship_torpedo
+		parent = ship_torpedo_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 45
+			build_cost_ic = 180
+		}
+		
+		dismantle_cost_ic = 60
+
+		can_convert_from = {
+			module_category = ship_torpedo
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_medium_4_1 = {
+		category = sub_torpedo_medium_4
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_4_2 = {
+		category = sub_torpedo_medium_4
+		parent = sub_torpedo_medium_4_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_4_3 = {
+		category = sub_torpedo_medium_4
+		parent = sub_torpedo_medium_4_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_4_4 = {
+		category = sub_torpedo_medium_4
+		parent = sub_torpedo_medium_4_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_4_5 = {
+		category = sub_torpedo_medium_4
+		parent = sub_torpedo_medium_4_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_4_6 = {
+		category = sub_torpedo_medium_4
+		parent = sub_torpedo_medium_4_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_4_7 = {
+		category = sub_torpedo_medium_4
+		parent = sub_torpedo_medium_4_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_medium_6_1 = {
+		category = sub_torpedo_medium_6
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_6_2 = {
+		category = sub_torpedo_medium_6
+		parent = sub_torpedo_medium_6_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_6_3 = {
+		category = sub_torpedo_medium_6
+		parent = sub_torpedo_medium_6_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_6_4 = {
+		category = sub_torpedo_medium_6
+		parent = sub_torpedo_medium_6_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_6_5 = {
+		category = sub_torpedo_medium_6
+		parent = sub_torpedo_medium_6_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_6_6 = {
+		category = sub_torpedo_medium_6
+		parent = sub_torpedo_medium_6_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_6_7 = {
+		category = sub_torpedo_medium_6
+		parent = sub_torpedo_medium_6_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_medium_8_1 = {
+		category = sub_torpedo_medium_8
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_8_2 = {
+		category = sub_torpedo_medium_8
+		parent = sub_torpedo_medium_8_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_8_3 = {
+		category = sub_torpedo_medium_8
+		parent = sub_torpedo_medium_8_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_8_4 = {
+		category = sub_torpedo_medium_8
+		parent = sub_torpedo_medium_8_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_8_5 = {
+		category = sub_torpedo_medium_8
+		parent = sub_torpedo_medium_8_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_8_6 = {
+		category = sub_torpedo_medium_8
+		parent = sub_torpedo_medium_8_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_8_7 = {
+		category = sub_torpedo_medium_8
+		parent = sub_torpedo_medium_8_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_medium_10_1 = {
+		category = sub_torpedo_medium_10
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_10_2 = {
+		category = sub_torpedo_medium_10
+		parent = sub_torpedo_medium_10_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_10_3 = {
+		category = sub_torpedo_medium_10
+		parent = sub_torpedo_medium_10_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_10_4 = {
+		category = sub_torpedo_medium_10
+		parent = sub_torpedo_medium_10_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_10_5 = {
+		category = sub_torpedo_medium_10
+		parent = sub_torpedo_medium_10_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_10_6 = {
+		category = sub_torpedo_medium_10
+		parent = sub_torpedo_medium_10_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_10_7 = {
+		category = sub_torpedo_medium_10
+		parent = sub_torpedo_medium_10_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_medium_12_1 = {
+		category = sub_torpedo_medium_12
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_12_2 = {
+		category = sub_torpedo_medium_12
+		parent = sub_torpedo_medium_12_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_12_3 = {
+		category = sub_torpedo_medium_12
+		parent = sub_torpedo_medium_12_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_12_4 = {
+		category = sub_torpedo_medium_12
+		parent = sub_torpedo_medium_12_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_12_5 = {
+		category = sub_torpedo_medium_12
+		parent = sub_torpedo_medium_12_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_12_6 = {
+		category = sub_torpedo_medium_12
+		parent = sub_torpedo_medium_12_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_12_7 = {
+		category = sub_torpedo_medium_12
+		parent = sub_torpedo_medium_12_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_medium_16_1 = {
+		category = sub_torpedo_medium_16
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_16_2 = {
+		category = sub_torpedo_medium_16
+		parent = sub_torpedo_medium_16_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_16_3 = {
+		category = sub_torpedo_medium_16
+		parent = sub_torpedo_medium_16_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_16_4 = {
+		category = sub_torpedo_medium_16
+		parent = sub_torpedo_medium_16_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_16_5 = {
+		category = sub_torpedo_medium_16
+		parent = sub_torpedo_medium_16_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_16_6 = {
+		category = sub_torpedo_medium_16
+		parent = sub_torpedo_medium_16_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_medium_16_7 = {
+		category = sub_torpedo_medium_16
+		parent = sub_torpedo_medium_16_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_medium_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_heavy_4_1 = {
+		category = sub_torpedo_heavy_4
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_4_2 = {
+		category = sub_torpedo_heavy_4
+		parent = sub_torpedo_heavy_4_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_4_3 = {
+		category = sub_torpedo_heavy_4
+		parent = sub_torpedo_heavy_4_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_4_4 = {
+		category = sub_torpedo_heavy_4
+		parent = sub_torpedo_heavy_4_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_4_5 = {
+		category = sub_torpedo_heavy_4
+		parent = sub_torpedo_heavy_4_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_4_6 = {
+		category = sub_torpedo_heavy_4
+		parent = sub_torpedo_heavy_4_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_4_7 = {
+		category = sub_torpedo_heavy_4
+		parent = sub_torpedo_heavy_4_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_4
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_heavy_6_1 = {
+		category = sub_torpedo_heavy_6
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_6_2 = {
+		category = sub_torpedo_heavy_6
+		parent = sub_torpedo_heavy_6_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_6_3 = {
+		category = sub_torpedo_heavy_6
+		parent = sub_torpedo_heavy_6_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_6_4 = {
+		category = sub_torpedo_heavy_6
+		parent = sub_torpedo_heavy_6_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_6_5 = {
+		category = sub_torpedo_heavy_6
+		parent = sub_torpedo_heavy_6_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_6_6 = {
+		category = sub_torpedo_heavy_6
+		parent = sub_torpedo_heavy_6_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_6_7 = {
+		category = sub_torpedo_heavy_6
+		parent = sub_torpedo_heavy_6_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_heavy_8_1 = {
+		category = sub_torpedo_heavy_8
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_8_2 = {
+		category = sub_torpedo_heavy_8
+		parent = sub_torpedo_heavy_8_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_8_3 = {
+		category = sub_torpedo_heavy_8
+		parent = sub_torpedo_heavy_8_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_8_4 = {
+		category = sub_torpedo_heavy_8
+		parent = sub_torpedo_heavy_8_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_8_5 = {
+		category = sub_torpedo_heavy_8
+		parent = sub_torpedo_heavy_8_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_8_6 = {
+		category = sub_torpedo_heavy_8
+		parent = sub_torpedo_heavy_8_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_8_7 = {
+		category = sub_torpedo_heavy_8
+		parent = sub_torpedo_heavy_8_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_heavy_10_1 = {
+		category = sub_torpedo_heavy_10
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_10_2 = {
+		category = sub_torpedo_heavy_10
+		parent = sub_torpedo_heavy_10_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_10_3 = {
+		category = sub_torpedo_heavy_10
+		parent = sub_torpedo_heavy_10_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_10_4 = {
+		category = sub_torpedo_heavy_10
+		parent = sub_torpedo_heavy_10_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_10_5 = {
+		category = sub_torpedo_heavy_10
+		parent = sub_torpedo_heavy_10_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_10_6 = {
+		category = sub_torpedo_heavy_10
+		parent = sub_torpedo_heavy_10_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_10_7 = {
+		category = sub_torpedo_heavy_10
+		parent = sub_torpedo_heavy_10_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_heavy_12_1 = {
+		category = sub_torpedo_heavy_12
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_12_2 = {
+		category = sub_torpedo_heavy_12
+		parent = sub_torpedo_heavy_12_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_12_3 = {
+		category = sub_torpedo_heavy_12
+		parent = sub_torpedo_heavy_12_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_12_4 = {
+		category = sub_torpedo_heavy_12
+		parent = sub_torpedo_heavy_12_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_12_5 = {
+		category = sub_torpedo_heavy_12
+		parent = sub_torpedo_heavy_12_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_12_6 = {
+		category = sub_torpedo_heavy_12
+		parent = sub_torpedo_heavy_12_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_12_7 = {
+		category = sub_torpedo_heavy_12
+		parent = sub_torpedo_heavy_12_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_heavy_16_1 = {
+		category = sub_torpedo_heavy_16
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 14
+			build_cost_ic = 80
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_16_2 = {
+		category = sub_torpedo_heavy_16
+		parent = sub_torpedo_heavy_16_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 18
+			build_cost_ic = 100
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_16_3 = {
+		category = sub_torpedo_heavy_16
+		parent = sub_torpedo_heavy_16_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 23
+			build_cost_ic = 120
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_16_4 = {
+		category = sub_torpedo_heavy_16
+		parent = sub_torpedo_heavy_16_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_16_5 = {
+		category = sub_torpedo_heavy_16
+		parent = sub_torpedo_heavy_16_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_16_6 = {
+		category = sub_torpedo_heavy_16
+		parent = sub_torpedo_heavy_16_5
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_heavy_16_7 = {
+		category = sub_torpedo_heavy_16
+		parent = sub_torpedo_heavy_16_6
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			sub_attack = 8
+			torpedo_attack = 30
+			build_cost_ic = 140
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_heavy_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_torpedo_tube_cruise_missile_1 = {
+		category = sub_torpedo_tube_cruise_missile
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_tube_cruise_missile_2 = {
+		category = sub_torpedo_tube_cruise_missile
+		parent = sub_torpedo_tube_cruise_missile_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_tube_cruise_missile
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_tube_cruise_missile_3 = {
+		category = sub_torpedo_tube_cruise_missile
+		parent = sub_torpedo_tube_cruise_missile_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_tube_cruise_missile
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_tube_cruise_missile_4 = {
+		category = sub_torpedo_tube_cruise_missile
+		parent = sub_torpedo_tube_cruise_missile_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_tube_cruise_missile
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_torpedo_tube_cruise_missile_5 = {
+		category = sub_torpedo_tube_cruise_missile
+		parent = sub_torpedo_tube_cruise_missile_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_torpedo_tube_cruise_missile
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+#----------------------------------------------------------------------------
+
+}

@@ -1,0 +1,82 @@
+﻿l_english:
+########
+ AFG_traffic_route_secure:0 "교통로 확보"
+ AFG_afghan_national_railroad_administration:0 "아프간 철도청"
+ AFG_build_western_railroad:0 "서부 철도 건설"
+ AFG_railroad_branch_line:0 "지선 철도"
+ AFG_provincial_government_office:0 "지방 관청"
+ AFG_local_public_health_center:0 "지방 보건소"
+ AFG_agriculture_foundation_recovery:0 "농업기반 회복"
+ AFG_agriculture_improvement:0 "농업 증진"
+ AFG_cultivate_alternative_crop:0 "대체작물 경작 유도"
+ AFG_opium_industry_crush:0 "아편산업 분쇄"
+ AFG_manufacturing_industry_base_recovery:0 "제조업 기반 회복"
+ AFG_manufacturing_industry_support:0 "제조업 지원"
+ AFG_basic_industry_promote:0 "기초산업 육성"
+ AFG_build_traverse_electrical_grid:0 "횡단 전력망 건설"
+ AFG_build_oil_pipeline:0 "석유 송유관 건설"
+ AFG_build_industrial_complex:0 "공업단지 건설"
+ AFG_private_industry_support:0 "민간산업 지원"
+ AFG_local_council_establish:0 "지방의회 수립"
+ AFG_central_government_admin_officer_send:0 "중앙정부 행정관 파견"
+ AFG_electoral_system_rootage:0 "선거제도 정착"
+ AFG_parliamentary_system_rootage:0 "의회제도 정착"
+ AFG_infantry_training_school:0 "보병 훈련소"
+ AFG_armed_policeman:0 "무장 경찰"
+ AFG_police_administration_system_establish:0 "경찰 행정체계 수립"
+ AFG_tribe_disarmament:0 "부족 무장해제"
+ 
+ AFG_military_academy:0 "사관 학교"
+ AFG_officer_corps_reform:0 "장교단 개혁"
+ AFG_military_military_improve:0 "군사역량 개선"
+ AFG_soldiers_reform_awareness:0 "사병의식 개혁"
+ AFG_Afghan_air_force:0 "아프간 공군"
+ AFG_standard_language:0 "표준어 제정"
+ AFG_fundamental_education_system:0 "기초교육 체계 수립"
+ AFG_build_national_university:0 "국립대 설립"
+ AFG_local_school_extend:0 "지방학교 확장"
+ 
+ AFG_together_SOV:0 "소련과 함께 간다"
+ AFG_together_USA:0 "미국과 함께 간다"
+ AFG_tribe_system_reform:0 "부족체계 혁파"
+ AFG_tribal_chief_conference_system:0 "부족장 협의회"
+ AFG_ideology_partner:0 "이념의 동반자"
+ AFG_northern_alliance_organize:0 "북부동맹 결성"
+ AFG_religious_society_radical_reform:0 "종교사회 급진개혁"
+ AFG_religious_society_moderate_reform:0 "종교사회 온건개혁"
+ AFG_separation_religion_society:0 "종교와 사회 분리"
+ AFG_communist_afghan_strategy:0 "공산 아프간 전략"
+ AFG_iran_wall:0 "이란 장벽"
+ AFG_negotiations_with_RAJ:0 "인도와 협상"
+ AFG_negotiations_with_RAJ_desc:0 "제작필요 W.I.P."
+ AFG_capital_afghan_strategy:0 "자본 아프간 전략"
+ AFG_negotiations_with_PAK:0 "파키스탄과 협상"
+ AFG_negotiations_with_PAK_desc:0 "제작필요 W.I.P."
+ AFG_negotiations_with_PER:0 "이란과 협상"
+ AFG_negotiations_with_PER_desc:0 "제작필요 W.I.P."
+ 
+ AFG_modern_society:0 "현대사회"
+ 
+ 
+### 설명
+ AFG_infantry_training_school_tt:0 "군대개혁 결정이 해금 됩니다.\n"
+ AFG_military_academy_tt:0 "군대개혁 결정을 완수 할 수 있게 됩니다.\n"
+ AFG_officer_corps_reform_tt:0 "군 운영 경험 결정이 해금 됩니다.\n"
+ AFG_military_military_improve_tt:0 "역량 강화를 위한, 사단 모의전 결정이 해금 됩니다.\n"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,119 @@
+﻿ ###########################
+# mujahideen Events
+###########################
+
+add_namespace = mujahideen
+
+# 무자헤딘의 파슈툰 지역 요구 - 파키스탄
+country_event = {
+	id = mujahideen.1
+	title = mujahideen.1.t
+	desc = mujahideen.1.desc
+	picture = GFX_report_event_canada_treaty
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # 파슈툰 요구 승락
+		name = mujahideen.1.a
+		ai_chance = { factor = 100 }
+		MUJ = { country_event = { id = mujahideen.2 } }
+	}
+	option = { # 파슈툰 요구 거절
+		name = mujahideen.1.b
+		ai_chance = { factor = 0 }
+		MUJ = { country_event = { id = mujahideen.3 } }
+	}
+}
+# 파키스탄이 파슈툰 요구 승락 - 탈레반
+country_event = {
+	id = mujahideen.2
+	title = mujahideen.2.t
+	desc = mujahideen.2.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = mujahideen.2.a
+		ai_chance = { factor = 75 }
+		transfer_state = 442
+	}
+}
+# 파키스탄이 파슈툰 요구 거절 - 탈레반
+country_event = {
+	id = mujahideen.3
+	title = mujahideen.3.t
+	desc = mujahideen.3.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+	option = { # 확인
+		name = mujahideen.3.a
+		ai_chance = { factor = 75 }
+	}
+}
+
+# 탈레반의 파키스탄 전략 - 탈레반
+country_event = {
+	id = mujahideen.4
+	title = mujahideen.4.t
+	desc = mujahideen.4.desc
+	picture = GFX_report_event_canada_treaty
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # 파키스탄 선전포고
+		name = mujahideen.4.a
+		ai_chance = { factor = 100 }
+		declare_war_on = {
+		target = PAK
+		type = annex_everything
+		}
+	}
+	option = { # 파키스탄을 괴뢰화
+		name = mujahideen.4.b
+		ai_chance = { factor = 0 }
+		MUJ = { country_event = { id = mujahideen.5 } }
+	}
+}
+# 파키스탄을 괴뢰화 - 파키스탄
+country_event = {
+	id = mujahideen.5
+	title = mujahideen.5.t
+	desc = mujahideen.5.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+	option = { # 괴뢰화 승인
+		name = mujahideen.5.a
+		ai_chance = { factor = 75 }
+		MUJ = {puppet = PAK }
+	}
+	option = { # 거부
+		name = mujahideen.5.b
+		ai_chance = { factor = 25 }
+	MUJ = {
+		declare_war_on = {
+		target = PAK
+		type = annex_everything
+		}
+	}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

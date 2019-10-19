@@ -1,0 +1,22 @@
+﻿ l_english:
+ STAT_NAVY_TORPEDO_ATTACK:0 "어뢰 공격:"
+ STAT_NAVY_TORPEDO_ATTACK_DESC:0 "함선의 어뢰로 입힐 수 있는 피해 수치입니다."
+ 
+ STAT_NAVY_SUB_ATTACK:0 "대잠 공격:"
+ STAT_NAVY_SUB_ATTACK_DESC:0 "적 잠수함에 대잠 공격으로 입힐 수 있는 피해 수치입니다."
+ 
+ STAT_COMMON_ARMOR:0 "종합방어력:"
+ STAT_COMMON_ARMOR_DESC:0 "적군의 §H관통§!보다 더 높은 §H종합방어력§!을 가지면 피해를 줄이고 전투 중 자유로운 이동을 할 수 있습니다."
+ 
+ STAT_COMMON_PIERCING:0 "관통:"
+ STAT_COMMON_PIERCING_DESC:0 "목표물의 §H종합방어력§! 수치와 같거나 더 큰 §H관통§!은 기갑 부대에게 큰 피해를 주고 효율적으로 고착시킬 수 있습니다."
+ 
+ STAT_NAVY_LG_ATTACK:1 "부무장 공격:"
+ STAT_NAVY_LG_ATTACK_DESC:0 "부무장이 준 피해량입니다. 부무장은 소형 함정을 목표로 삼기 좋습니다."
+ STAT_NAVY_LG_ARMOR_PIERCING:1 "부무장 관통:"
+ STAT_NAVY_LG_ARMOR_PIERCING_DESC:0 "부무장의 장갑 관통력입니다."
+ 
+ STAT_NAVY_HG_ATTACK:1 "주무장 공격:"
+ STAT_NAVY_HG_ATTACK_DESC:0 "주무장이 준 피해량입니다. 주무장은 큰 함선 일수록 표적으로 삼기 좋습니다."
+ STAT_NAVY_HG_ARMOR_PIERCING:1 "주무장 관통:"
+ STAT_NAVY_HG_ARMOR_PIERCING_DESC:0 "주무장의 장갑 관통력입니다."

@@ -1,0 +1,3709 @@
+equipment_modules = {
+#ship_vls_5
+#ship_vls_8
+#ship_vls_10
+#ship_vls_12
+#ship_vls_14
+#ship_vls_16
+#ship_vls_24
+#ship_vls_29
+#ship_vls_32
+#ship_vls_48
+#ship_vls_56
+#ship_vls_61
+#ship_vls_64
+#ship_vls_80
+##
+#ship_vls_heavy_20
+#ship_vls_heavy_40
+##
+#sub_vls_6
+#sub_vls_8
+#sub_vls_10
+#sub_vls_12
+#sub_vls_16
+#sub_vls_24
+#----------------------------------------------------------------------------
+#주 무장
+#----------------------------------------------------------------------------
+#VLS발사대
+
+#---------------------------------------------------------------------------
+	ship_vls_5_1 = {
+		category = ship_vls_5
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_5_2 = {
+		category = ship_vls_5
+		parent = ship_vls_5_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_5
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_5_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_5_3 = {
+		category = ship_vls_5
+		parent = ship_vls_5_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_5
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_5_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_5_4 = {
+		category = ship_vls_5
+		parent = ship_vls_5_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_5
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_5_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_5_5 = {
+		category = ship_vls_5
+		parent = ship_vls_5_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_5
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_5_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_8_1 = {
+		category = ship_vls_8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_8
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_8_2 = {
+		category = ship_vls_8
+		parent = ship_vls_8_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_8
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_8_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_8_3 = {
+		category = ship_vls_8
+		parent = ship_vls_8_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_8
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_8_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_8_4 = {
+		category = ship_vls_8
+		parent = ship_vls_8_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_8_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_8_5 = {
+		category = ship_vls_8
+		parent = ship_vls_8_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_8_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_10_1 = {
+		category = ship_vls_10
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_10
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_10_2 = {
+		category = ship_vls_10
+		parent = ship_vls_10_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_10
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_10_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_10_3 = {
+		category = ship_vls_10
+		parent = ship_vls_10_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_10
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_10_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_10_4 = {
+		category = ship_vls_10
+		parent = ship_vls_10_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_10
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_10_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_10_5 = {
+		category = ship_vls_10
+		parent = ship_vls_10_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_10
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_10_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_12_1 = {
+		category = ship_vls_12
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_12
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_12_2 = {
+		category = ship_vls_12
+		parent = ship_vls_12_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_12
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_12_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_12_3 = {
+		category = ship_vls_12
+		parent = ship_vls_12_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_12
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_12_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_12_4 = {
+		category = ship_vls_12
+		parent = ship_vls_12_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_12_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_12_5 = {
+		category = ship_vls_12
+		parent = ship_vls_12_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_12_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_14_1 = {
+		category = ship_vls_14
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_14
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_14_2 = {
+		category = ship_vls_14
+		parent = ship_vls_14_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_14
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_14_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_14_3 = {
+		category = ship_vls_14
+		parent = ship_vls_14_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_14
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_14_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_14_4 = {
+		category = ship_vls_14
+		parent = ship_vls_14_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_14
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_14_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_14_5 = {
+		category = ship_vls_14
+		parent = ship_vls_14_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_14
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_14_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_16_1 = {
+		category = ship_vls_16
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_16
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_16_2 = {
+		category = ship_vls_16
+		parent = ship_vls_16_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_16
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_16_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_16_3 = {
+		category = ship_vls_16
+		parent = ship_vls_16_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_16
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_16_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_16_4 = {
+		category = ship_vls_16
+		parent = ship_vls_16_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_16_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_16_5 = {
+		category = ship_vls_16
+		parent = ship_vls_16_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_16_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_24_1 = {
+		category = ship_vls_24
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_24
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_24_2 = {
+		category = ship_vls_24
+		parent = ship_vls_24_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_24
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_24_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_24_3 = {
+		category = ship_vls_24
+		parent = ship_vls_24_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_24
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_24_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_24_4 = {
+		category = ship_vls_24
+		parent = ship_vls_24_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_24
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_24_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_24_5 = {
+		category = ship_vls_24
+		parent = ship_vls_24_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_24
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_24_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_29_1 = {
+		category = ship_vls_29
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_29
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_29_2 = {
+		category = ship_vls_29
+		parent = ship_vls_29_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_29
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_29_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_29_3 = {
+		category = ship_vls_29
+		parent = ship_vls_29_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_29
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_29_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_29_4 = {
+		category = ship_vls_29
+		parent = ship_vls_29_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_29
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_29_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_29_5 = {
+		category = ship_vls_29
+		parent = ship_vls_29_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_29
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_29_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_32_1 = {
+		category = ship_vls_32
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_32
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_32_2 = {
+		category = ship_vls_32
+		parent = ship_vls_32_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_32
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_32_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_32_3 = {
+		category = ship_vls_32
+		parent = ship_vls_32_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_32
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_32_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_32_4 = {
+		category = ship_vls_32
+		parent = ship_vls_32_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_32
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_32_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_32_5 = {
+		category = ship_vls_32
+		parent = ship_vls_32_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_32
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_32_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_48_1 = {
+		category = ship_vls_48
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_48
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_48_2 = {
+		category = ship_vls_48
+		parent = ship_vls_48_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_48
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_48_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_48_3 = {
+		category = ship_vls_48
+		parent = ship_vls_48_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_48
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_48_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_48_4 = {
+		category = ship_vls_48
+		parent = ship_vls_48_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_48
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_48_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_48_5 = {
+		category = ship_vls_48
+		parent = ship_vls_48_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_48
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_48_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_56_1 = {
+		category = ship_vls_56
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_56
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_56_2 = {
+		category = ship_vls_56
+		parent = ship_vls_56_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_56
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_56_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_56_3 = {
+		category = ship_vls_56
+		parent = ship_vls_56_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_56
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_56_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_56_4 = {
+		category = ship_vls_56
+		parent = ship_vls_56_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_56
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_56_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_56_5 = {
+		category = ship_vls_56
+		parent = ship_vls_56_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_56
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_56_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_61_1 = {
+		category = ship_vls_61
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_61
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_61_2 = {
+		category = ship_vls_61
+		parent = ship_vls_61_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_61
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_61_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_61_3 = {
+		category = ship_vls_61
+		parent = ship_vls_61_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_61
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_61_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_61_4 = {
+		category = ship_vls_61
+		parent = ship_vls_61_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_61
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_61_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_61_5 = {
+		category = ship_vls_61
+		parent = ship_vls_61_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_61
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_61_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_64_1 = {
+		category = ship_vls_64
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_64
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_64_2 = {
+		category = ship_vls_64
+		parent = ship_vls_64_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_64
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_64_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_64_3 = {
+		category = ship_vls_64
+		parent = ship_vls_64_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_64
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_64_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_64_4 = {
+		category = ship_vls_64
+		parent = ship_vls_64_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_64
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_64_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_64_5 = {
+		category = ship_vls_64
+		parent = ship_vls_64_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_64
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_64_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_80_1 = {
+		category = ship_vls_80
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_80
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_80_2 = {
+		category = ship_vls_80
+		parent = ship_vls_80_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_80
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_80_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_80_3 = {
+		category = ship_vls_80
+		parent = ship_vls_80_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_80
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_80_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_80_4 = {
+		category = ship_vls_80
+		parent = ship_vls_80_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_80
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_80_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_80_5 = {
+		category = ship_vls_80
+		parent = ship_vls_80_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			sub_attack = 8
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_80
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_80_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_heavy_20_1 = {
+		category = ship_vls_heavy_20
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_20
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_20_2 = {
+		category = ship_vls_heavy_20
+		parent = ship_vls_heavy_20_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_20
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_20_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_20_3 = {
+		category = ship_vls_heavy_20
+		parent = ship_vls_heavy_20_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_20
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_20_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_20_4 = {
+		category = ship_vls_heavy_20
+		parent = ship_vls_heavy_20_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_20
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_20_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_20_5 = {
+		category = ship_vls_heavy_20
+		parent = ship_vls_heavy_20_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_20
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_20_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_vls_heavy_40_1 = {
+		category = ship_vls_heavy_40
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			anti_air_attack = 2.5
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_40
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_40_2 = {
+		category = ship_vls_heavy_40
+		parent = ship_vls_heavy_40_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			anti_air_attack = 2.5
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_40
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_40_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_40_3 = {
+		category = ship_vls_heavy_40
+		parent = ship_vls_heavy_40_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			anti_air_attack = 2.5
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_40
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_40_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_40_4 = {
+		category = ship_vls_heavy_40
+		parent = ship_vls_heavy_40_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_40
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_40_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_vls_heavy_40_5 = {
+		category = ship_vls_heavy_40
+		parent = ship_vls_heavy_40_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			anti_air_attack = 2.5
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			anti_air_attack = 0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_vls_heavy_40
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_vls_heavy_40_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_vls_6_1 = {
+		category = sub_vls_6
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+
+	sub_vls_6_2 = {
+		category = sub_vls_6
+		parent = sub_vls_6_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_6_3 = {
+		category = sub_vls_6
+		parent = sub_vls_6_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_6_4 = {
+		category = sub_vls_6
+		parent = sub_vls_6_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_6_5 = {
+		category = sub_vls_6
+		parent = sub_vls_6_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_6
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_vls_8_1 = {
+		category = sub_vls_8
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_8_2 = {
+		category = sub_vls_8
+		parent = sub_vls_8_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_8_3 = {
+		category = sub_vls_8
+		parent = sub_vls_8_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_8_4 = {
+		category = sub_vls_8
+		parent = sub_vls_8_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_8_5 = {
+		category = sub_vls_8
+		parent = sub_vls_8_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_8
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_vls_10_1 = {
+		category = sub_vls_10
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_10_2 = {
+		category = sub_vls_10
+		parent = sub_vls_10_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_10_3 = {
+		category = sub_vls_10
+		parent = sub_vls_10_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_10_4 = {
+		category = sub_vls_10
+		parent = sub_vls_10_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_10_5 = {
+		category = sub_vls_10
+		parent = sub_vls_10_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_10
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_vls_12_1 = {
+		category = sub_vls_12
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_12_2 = {
+		category = sub_vls_12
+		parent = sub_vls_12_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_12_3 = {
+		category = sub_vls_12
+		parent = sub_vls_12_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_12_4 = {
+		category = sub_vls_12
+		parent = sub_vls_12_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_12_5 = {
+		category = sub_vls_12
+		parent = sub_vls_12_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_12
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+#----------------------------------------------------------------------------
+
+	sub_vls_16_1 = {
+		category = sub_vls_16
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_16_2 = {
+		category = sub_vls_16
+		parent = sub_vls_16_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_16_3 = {
+		category = sub_vls_16
+		parent = sub_vls_16_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_16_4 = {
+		category = sub_vls_16
+		parent = sub_vls_16_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_16_5 = {
+		category = sub_vls_16
+		parent = sub_vls_16_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_16
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+#----------------------------------------------------------------------------
+
+	sub_vls_24_1 = {
+		category = sub_vls_24
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_24_2 = {
+		category = sub_vls_24
+		parent = sub_vls_24_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_24
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_24_3 = {
+		category = sub_vls_24
+		parent = sub_vls_24_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_24
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_24_4 = {
+		category = sub_vls_24
+		parent = sub_vls_24_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_24
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	sub_vls_24_5 = {
+		category = sub_vls_24
+		parent = sub_vls_24_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = sub_vls_24
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+}

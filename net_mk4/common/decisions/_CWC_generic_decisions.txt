@@ -1,0 +1,166 @@
+
+#군사개혁
+Decisions_Gen_army_reform_category = {
+
+	Decisions_Gen_army_reform = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_army_experience > 99
+			has_completed_focus = NF_Gen_military_innovation
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 500
+		}
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_idea = NS_Gen_army_corruption_1
+				has_idea = NS_Gen_army_corruption_2
+				has_idea = NS_Gen_army_corruption_3
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = NS_Gen_army_corruption_1 }
+				swap_ideas = {
+					remove_idea = NS_Gen_army_corruption_1
+					add_idea = NS_Gen_army_corruption_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = NS_Gen_army_corruption_2 }
+				swap_ideas = {
+					remove_idea = NS_Gen_army_corruption_2
+					add_idea = NS_Gen_army_corruption_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = NS_Gen_army_corruption_3 }
+				remove_ideas = NS_Gen_army_corruption_3
+			}
+		}
+		complete_effect = {
+			army_experience = -100
+			#custom_effect_tooltip = 90_days_tt
+						
+		}		
+	}
+
+	Decisions_Gen_lessons_of_war = {
+		icon = generic_army_support
+		available = {
+			has_army_experience > 199
+			has_idea = NS_Gen_incompetence_officer
+			if = {
+				limit = { has_idea = NS_Gen_army_corruption_1 }
+				NOT = { has_idea = NS_Gen_army_corruption_1 }
+			}
+
+			if = {
+				limit = { has_idea = NS_Gen_army_corruption_2 }
+				NOT = { has_idea = NS_Gen_army_corruption_2 }
+			}
+
+			if = {
+				limit = { has_idea = NS_Gen_army_corruption_3 }
+				NOT = { has_idea = NS_Gen_army_corruption_3 }
+			}
+
+			if = {
+				limit = {
+					NOT = { has_idea = NS_Gen_army_corruption_1 }
+					NOT = { has_idea = NS_Gen_army_corruption_2 }
+					NOT = { has_idea = NS_Gen_army_corruption_3 }
+				}
+				NOT = { has_idea = NS_Gen_army_corruption_3 }
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+
+		visible = {
+			has_idea = NS_Gen_incompetence_officer
+			has_completed_focus = NF_Gen_military_innovation
+		}
+
+		complete_effect = {
+			army_experience = -200
+			remove_ideas = NS_Gen_incompetence_officer
+			set_country_flag = NF_Gen_lessons_of_war_completed
+		}		
+	}
+
+	#Activates when the player picks CHI_War_Games_divisions_plan decision
+	Decisions_Gen_bolster_our_ranks = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			num_divisions > 10
+			has_army_manpower = { size > 149999 }
+		}
+
+		fire_only_once = yes
+		
+		days_mission_timeout = 180
+
+		is_good = no
+
+		activation = {
+			always = no #Triggered from effect in NF_Gen_military_innovation
+		}
+
+		complete_effect = {
+			add_war_support = 0.1
+		}
+
+		timeout_effect = {
+
+		}
+	}
+
+	Decisions_Gen_War_Games_divisions_plan = {
+
+		icon = generic_operation
+
+		available = {
+		}
+
+		cost = 90
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+
+		visible = {
+			OR = {
+					has_completed_focus = NF_Gen_GER_focus
+					has_completed_focus = NF_Gen_ENG_focus
+					has_completed_focus = NF_Gen_USA_focus
+					has_completed_focus = NF_Gen_SOV_focus
+					has_completed_focus = NF_Gen_PRC_focus
+					has_completed_focus = NF_Gen_YUG_focus
+			}
+		}
+
+		days_remove = 180
+
+		modifier = {
+			training_time_army_factor = -0.25
+		}
+
+		complete_effect = {
+			activate_mission = Decisions_Gen_bolster_our_ranks
+		}		
+	}
+
+}

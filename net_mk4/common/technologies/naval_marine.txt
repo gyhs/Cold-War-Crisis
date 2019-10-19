@@ -1,0 +1,1241 @@
+technologies = {
+	
+	### TRANSPORTS ###
+	transport = {
+		transport_capacity = -0.5
+		naval_invasion_capacity = 10
+		
+		path = {
+			leads_to_tech = landing_craft 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = marines_1 
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.5
+		start_year = 1980
+
+		show_equipment_icon = yes
+		
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				NOT = { has_war = yes }
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				tag = JAP
+			}
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	landing_craft = {
+		invasion_preparation = -0.5
+		amphibious_invasion_defence = 0.15
+		naval_invasion_capacity = 40
+
+		path = {
+			leads_to_tech = tank_landing_craft 
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.85
+		start_year = 1990
+		
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0.5
+				NOT = { has_war = yes }
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				tag = JAP
+			}
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	tank_landing_craft = {
+		amphibious_invasion = 0.055
+		amphibious_invasion_defence = 0.5
+		naval_invasion_capacity = 100
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 0.85
+		start_year = 2000
+		
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0.5
+				NOT = { has_war = yes }
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				tag = JAP
+			}
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	marines_1 = {
+
+		enable_subunits = {
+			marine
+		}
+		
+		on_research_complete = {
+			limit = {
+				NOT = {
+					has_template_containing_unit = marine
+				}
+			}
+			hidden_effect = {
+				load_oob = "unlock_marines"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = marines_2
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	marines_2 = {
+
+		marine = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = marines_3
+			research_cost_coeff = 1
+		}
+		
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	marines_3 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = marines_4
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2.0
+		start_year = 1995
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	marines_4 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = marines_5
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2.0
+		start_year = 2000
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	marines_5 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = marines_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2.0
+		start_year = 2010
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_1 = {
+		xor={ mobile_support_marine_1 	}
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_2
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 2.0
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_2 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_5
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_3 = {
+	
+		xor={
+			spearhead_marine_doctrine_5
+		}
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_4
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_4 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_7
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_5 = {
+		xor={
+			spearhead_marine_doctrine_3
+		}
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_6 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_7
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_7 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_10
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_8 = {
+		xor={
+			spearhead_marine_doctrine_10
+		}
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_9
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_9 = {
+
+		marine = {
+			max_organisation = 5
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_10 = {
+		xor={
+			spearhead_marine_doctrine_8
+		}
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = spearhead_marine_doctrine_11
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	spearhead_marine_doctrine_11 = {
+
+		marine = {
+			max_organisation = 5
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_1 = {
+		xor={
+			spearhead_marine_doctrine_1
+		}
+
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_3
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 2.0
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_2 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_4
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_3 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_4
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_4 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_7
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_5 = {
+		xor={
+			mobile_support_marine_7
+		}
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_6 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_9
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_7 = {
+		xor={
+			mobile_support_marine_5
+		}
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_8
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_8 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_9
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_9 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_10
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mobile_support_marine_11
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_10 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	mobile_support_marine_11 = {
+	
+		marine = {
+			max_organisation = 5
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes
+		research_cost = 3
+		folder = {
+			name = naval_marine_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+
+}

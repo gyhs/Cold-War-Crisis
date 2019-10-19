@@ -1,0 +1,33 @@
+ideas = {
+	
+	country = {
+
+		SOV_uprising = {
+
+			available = {
+				OR = {
+					has_country_flag = SOV_decision_ukraine_uprising
+					has_country_flag = SOV_eastern_uprising
+					has_country_flag = SOV_western_uprising
+				}
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = SOV
+			}
+			
+			removal_cost = -1
+
+			picture = chi_army_corruption2
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+	}
+}

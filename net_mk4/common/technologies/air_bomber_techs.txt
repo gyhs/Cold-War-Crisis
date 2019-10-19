@@ -1,0 +1,893 @@
+technologies = {
+	##### 프롭식 전략폭격기 #####
+	
+	strategic_bomber_1 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = strategic_bomber_2
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	strategic_bomber_2 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = strategic_bomber_3
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			experimental_rockets = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	strategic_bomber_3 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = strategic_bomber_4
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	strategic_bomber_4 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_4
+		}
+	
+		path = {
+			leads_to_tech = strategic_bomber_5
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	strategic_bomber_5 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = strategic_bomber_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	strategic_bomber_6 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_6
+		}
+		
+		path = {
+			leads_to_tech = strategic_bomber_7
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	jet_strategic_bomber_1 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = jet_strategic_bomber_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = supersonic_strategic_bomber_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = stealth_strategic_bomber_1
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_1 = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	jet_strategic_bomber_2 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = jet_strategic_bomber_3
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_2 = 1
+			experimental_rockets = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	jet_strategic_bomber_3 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = jet_strategic_bomber_4
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_2 = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	jet_strategic_bomber_4 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_4
+		}
+	
+		path = {
+			leads_to_tech = jet_strategic_bomber_5
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			jet_engines_2 = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	jet_strategic_bomber_5 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jet_strategic_bomber_6
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			jet_engines_2 = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	jet_strategic_bomber_6 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_6
+		}
+
+		path = {
+			leads_to_tech = jet_strategic_bomber_7
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			jet_engines_2 = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = air_bomber_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	supersonic_strategic_bomber_1 = {
+
+		enable_equipments = {
+			supersonic_strat_bomber_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = supersonic_strategic_bomber_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_1 = 1
+			experimental_rockets = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supersonic_strategic_bomber_2 = {
+
+		enable_equipments = {
+			supersonic_strat_bomber_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = supersonic_strategic_bomber_3
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			jet_engines_2 = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supersonic_strategic_bomber_3 = {
+
+		enable_equipments = {
+			supersonic_strat_bomber_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = supersonic_strategic_bomber_4
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supersonic_strategic_bomber_4 = {
+
+		enable_equipments = {
+			supersonic_strat_bomber_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = supersonic_strategic_bomber_5
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supersonic_strategic_bomber_5 = {
+
+		enable_equipments = {
+			supersonic_strat_bomber_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = supersonic_strategic_bomber_6
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stealth_strategic_bomber_1 = {
+
+		enable_equipments = {
+			stealth_strat_bomber_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = stealth_strategic_bomber_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_4 = 1
+			experimental_rockets = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 8 y = 2 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stealth_strategic_bomber_2 = {
+
+		enable_equipments = {
+			stealth_strat_bomber_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = stealth_strategic_bomber_3
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_5 = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 8 y = 4 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stealth_strategic_bomber_3 = {
+
+		enable_equipments = {
+			stealth_strat_bomber_equipment_3
+		}
+		path = {
+			leads_to_tech = stealth_strategic_bomber_4
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 8 y = 6 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stealth_strategic_bomber_4 = {
+
+		enable_equipments = {
+			stealth_strat_bomber_equipment_4
+		}
+		path = {
+			leads_to_tech = stealth_strategic_bomber_5
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stealth_strategic_bomber_5 = {
+
+		enable_equipments = {
+			stealth_strat_bomber_equipment_5
+		}
+		path = {
+			leads_to_tech = stealth_strategic_bomber_6
+			research_cost_coeff = 1
+		}
+		dependencies = {
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 8 y = 10 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

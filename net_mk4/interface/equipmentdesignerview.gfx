@@ -1,0 +1,337 @@
+spriteTypes = {
+
+###################################################
+# UI Elements
+###################################################
+
+	spriteType = {
+		name = "GFX_ship_view_bg"
+		textureFile = "gfx/interface/equipmentdesigner/naval/ship_view_bg.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_ship_category_icon_small"
+		textureFile = "gfx//interface/equipmentdesigner/ship_category_icon_small.dds"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_equipment_module_bg"
+		textureFile = "gfx/interface/equipmentdesigner/equipment_module_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_equipment_role_bg"
+		textureFile = "gfx/interface/equipmentdesigner/equipment_role_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_eqipment_sprite_bg"
+		textureFile = "gfx//interface//eqipment_designer_sprite_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_naval_equipment_item_large_simple"
+		textureFile = "gfx//interface//naval_equipment_item_large_simple.dds"
+		noOfFrames = 2
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_equipment_role_selector_tiled_window"
+		size= { x=48 y=48 }
+		textureFile = "gfx//interface//tiles//tiled_insignia_window.dds"
+		borderSize = { x=16 y=16 }
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+###################################################
+# Ship hulls
+###################################################
+
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_7"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_7.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_light_8"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_light_8.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_7"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_7.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_cruiser_8"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_cruiser_8.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_heavy_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_heavy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_heavy_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_heavy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_heavy_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_heavy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_heavy_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_heavy_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_heavy_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_heavy_5.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_super_heavy_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_super_heavy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_super_heavy_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_super_heavy_2.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_ship_hull_ww2_super_heavy_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_ship_hull_ww2_super_heavy_1.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_carrier_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_carrier_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_carrier_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_carrier_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_carrier_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_carrier_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_6.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_light_carrier_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_light_carrier_6.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_heavy_carrier_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_heavy_carrier_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_heavy_carrier_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_heavy_carrier_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_heavy_carrier_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_heavy_carrier_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_heavy_carrier_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_heavy_carrier_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_heavy_carrier_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_heavy_carrier_5.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_carrier_conversion_ca"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_conversion_ca.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_carrier_conversion_bb"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_conversion_bb.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_submarine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_submarine_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_submarine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_submarine_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_submarine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_submarine_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_submarine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_submarine_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_submarine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_submarine_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_submarine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_submarine_6.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_cruiser_submarine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruiser_submarine_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruiser_submarine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruiser_submarine_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruiser_submarine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruiser_submarine_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruiser_submarine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruiser_submarine_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruiser_submarine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruiser_submarine_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruiser_submarine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruiser_submarine_6.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_attack_nuclear_submarine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_attack_nuclear_submarine_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_attack_nuclear_submarine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_attack_nuclear_submarine_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_attack_nuclear_submarine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_attack_nuclear_submarine_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_attack_nuclear_submarine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_attack_nuclear_submarine_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_attack_nuclear_submarine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_attack_nuclear_submarine_5.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_SD_tv_cruise_missile_nuclear_submarine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruise_missile_nuclear_submarine_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruise_missile_nuclear_submarine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruise_missile_nuclear_submarine_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruise_missile_nuclear_submarine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruise_missile_nuclear_submarine_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruise_missile_nuclear_submarine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruise_missile_nuclear_submarine_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SD_tv_cruise_missile_nuclear_submarine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_cruise_missile_nuclear_submarine_5.dds"
+	}
+#-----------------------------------------------------------------------------------------------------------
+
+
+#######################
+# Extras
+#######################
+
+	spriteType = {
+		name = "GFX_design_not_valid"
+		textureFile = "gfx//interface//stop_icon.dds"		
+	}	
+
+}

@@ -1,0 +1,140 @@
+SOV_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_baltic_states_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_belarus_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_ukraine_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_moldova_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_armenia_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_azerbaijan_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_nagorno_karabakh_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_georgia_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_central_asia_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}

@@ -1,0 +1,33 @@
+
+GER_will_support = {
+	GER = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = GER
+			}
+		}
+	}
+}
+YUG_will_support = {
+	YUG = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = YUG
+			}
+		}
+	}
+}

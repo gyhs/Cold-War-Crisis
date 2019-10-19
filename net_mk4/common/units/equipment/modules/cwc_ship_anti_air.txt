@@ -1,0 +1,1831 @@
+equipment_modules = {
+#ship_anti_air
+##
+#ship_missile_launcher_turret
+##
+#ship_anti_air_missile_mr
+#ship_anti_air_missile_er
+##
+#아래 모듈은 게임이 너무 복잡해질 것을 우려해서 인게임에서 사용하지 않음
+#ship_anti_air_missile_mr_2x1
+#ship_anti_air_missile_mr_2x2
+#ship_anti_air_missile_mr_2x20
+#ship_anti_air_missile_mr_16x8
+#ship_anti_air_missile_er_2x1
+#ship_anti_air_missile_er_2x2
+#ship_anti_air_missile_er_6x8
+#ship_anti_air_missile_er_8x8
+#ship_anti_air_missile_er_12x8
+#ship_anti_air_missile_er_16x8
+
+#----------------------------------------------------------------------------
+#대공
+#----------------------------------------------------------------------------
+	ship_anti_air_1 = {
+		category = ship_anti_air
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_2 = {
+		category = ship_anti_air
+		parent = ship_anti_air_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_3 = {
+		category = ship_anti_air
+		parent = ship_anti_air_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_4 = {
+		category = ship_anti_air
+		parent = ship_anti_air_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_5 = {
+		category = ship_anti_air
+		parent = ship_anti_air_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_missile_launcher_turret_1 = {	#RIM-2 테리어
+		category = ship_missile_launcher_turret
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_missile_launcher_turret
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_missile_launcher_turret_2 = {	#RIM-8 탈로스
+		category = ship_missile_launcher_turret
+		parent = ship_missile_launcher_turret_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_missile_launcher_turret
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_missile_launcher_turret_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_missile_launcher_turret_3 = {	#RIM-66
+		category = ship_missile_launcher_turret
+		parent = ship_missile_launcher_turret_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_missile_launcher_turret
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_missile_launcher_turret_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_missile_launcher_turret_4 = {
+		category = ship_missile_launcher_turret
+		parent = ship_missile_launcher_turret_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_missile_launcher_turret
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_missile_launcher_turret_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_missile_launcher_turret_5 = {
+		category = ship_missile_launcher_turret
+		parent = ship_missile_launcher_turret_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_missile_launcher_turret
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_missile_launcher_turret_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_mr_1 = {	#RIM-116 RAM
+		category = ship_anti_air_missile_mr
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_mr_2 = {
+		category = ship_anti_air_missile_mr
+		parent = ship_anti_air_missile_mr_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_3 = {
+		category = ship_anti_air_missile_mr
+		parent = ship_anti_air_missile_mr_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_4 = {
+		category = ship_anti_air_missile_mr
+		parent = ship_anti_air_missile_mr_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_mr_5 = {
+		category = ship_anti_air_missile_mr
+		parent = ship_anti_air_missile_mr_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_mr_2x1_1 = {
+		category = ship_anti_air_missile_mr_2x1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x1
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_mr_2x1_2 = {
+		category = ship_anti_air_missile_mr_2x1
+		parent = ship_anti_air_missile_mr_2x1_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x1
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x1_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_2x1_3 = {
+		category = ship_anti_air_missile_mr_2x1
+		parent = ship_anti_air_missile_mr_2x1_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x1
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x1_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_2x1_4 = {
+		category = ship_anti_air_missile_mr_2x1
+		parent = ship_anti_air_missile_mr_2x1_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x1
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x1_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_mr_2x1_5 = {
+		category = ship_anti_air_missile_mr_2x1
+		parent = ship_anti_air_missile_mr_2x1_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x1
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x1_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_mr_2x2_1 = {
+		category = ship_anti_air_missile_mr_2x2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x2
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_mr_2x2_2 = {
+		category = ship_anti_air_missile_mr_2x2
+		parent = ship_anti_air_missile_mr_2x2_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x2
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x2_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_2x2_3 = {
+		category = ship_anti_air_missile_mr_2x2
+		parent = ship_anti_air_missile_mr_2x2_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x2
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x2_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_2x2_4 = {
+		category = ship_anti_air_missile_mr_2x2
+		parent = ship_anti_air_missile_mr_2x2_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x2
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x2_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_mr_2x2_5 = {
+		category = ship_anti_air_missile_mr_2x2
+		parent = ship_anti_air_missile_mr_2x2_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x2
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x2_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_mr_2x20_1 = {
+		category = ship_anti_air_missile_mr_2x20
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x20
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_mr_2x20_2 = {
+		category = ship_anti_air_missile_mr_2x20
+		parent = ship_anti_air_missile_mr_2x20_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x20
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x20_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_2x20_3 = {
+		category = ship_anti_air_missile_mr_2x20
+		parent = ship_anti_air_missile_mr_2x20_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x20
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x20_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_2x20_4 = {
+		category = ship_anti_air_missile_mr_2x20
+		parent = ship_anti_air_missile_mr_2x20_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x20
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x20_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_mr_2x20_5 = {
+		category = ship_anti_air_missile_mr_2x20
+		parent = ship_anti_air_missile_mr_2x20_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_2x20
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_2x20_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_mr_16x8_1 = {
+		category = ship_anti_air_missile_mr_16x8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_16x8
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_mr_16x8_2 = {
+		category = ship_anti_air_missile_mr_16x8
+		parent = ship_anti_air_missile_mr_16x8_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_16x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_16x8_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_16x8_3 = {
+		category = ship_anti_air_missile_mr_16x8
+		parent = ship_anti_air_missile_mr_16x8_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_16x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_16x8_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_mr_16x8_4 = {
+		category = ship_anti_air_missile_mr_16x8
+		parent = ship_anti_air_missile_mr_16x8_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_16x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_16x8_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_mr_16x8_5 = {
+		category = ship_anti_air_missile_mr_16x8
+		parent = ship_anti_air_missile_mr_16x8_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_mr_16x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_mr_16x8_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_er_1 = {	#RIM-7 시 스패로우
+		category = ship_anti_air_missile_er
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_er_2 = {
+		category = ship_anti_air_missile_er
+		parent = ship_anti_air_missile_er_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_3 = {
+		category = ship_anti_air_missile_er
+		parent = ship_anti_air_missile_er_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_4 = {
+		category = ship_anti_air_missile_er
+		parent = ship_anti_air_missile_er_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_er_5 = {
+		category = ship_anti_air_missile_er
+		parent = ship_anti_air_missile_er_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_er_2x1_1 = {
+		category = ship_anti_air_missile_er_2x1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x1
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_er_2x1_2 = {
+		category = ship_anti_air_missile_er_2x1
+		parent = ship_anti_air_missile_er_2x1_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x1
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x1_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_2x1_3 = {
+		category = ship_anti_air_missile_er_2x1
+		parent = ship_anti_air_missile_er_2x1_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x1
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x1_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_2x1_4 = {
+		category = ship_anti_air_missile_er_2x1
+		parent = ship_anti_air_missile_er_2x1_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x1
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x1_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_er_2x1_5 = {
+		category = ship_anti_air_missile_er_2x1
+		parent = ship_anti_air_missile_er_2x1_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x1
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x1_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_er_2x2_1 = {
+		category = ship_anti_air_missile_er_2x2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x2
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_er_2x2_2 = {
+		category = ship_anti_air_missile_er_2x2
+		parent = ship_anti_air_missile_er_2x2_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x2
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x2_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_2x2_3 = {
+		category = ship_anti_air_missile_er_2x2
+		parent = ship_anti_air_missile_er_2x2_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x2
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x2_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_2x2_4 = {
+		category = ship_anti_air_missile_er_2x2
+		parent = ship_anti_air_missile_er_2x2_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x2
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x2_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_er_2x2_5 = {
+		category = ship_anti_air_missile_er_2x2
+		parent = ship_anti_air_missile_er_2x2_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_2x2
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_2x2_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_er_6x8_1 = {
+		category = ship_anti_air_missile_er_6x8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_6x8
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_er_6x8_2 = {
+		category = ship_anti_air_missile_er_6x8
+		parent = ship_anti_air_missile_er_6x8_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_6x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_6x8_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_6x8_3 = {
+		category = ship_anti_air_missile_er_6x8
+		parent = ship_anti_air_missile_er_6x8_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_6x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_6x8_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_6x8_4 = {
+		category = ship_anti_air_missile_er_6x8
+		parent = ship_anti_air_missile_er_6x8_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_6x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_6x8_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_er_6x8_5 = {
+		category = ship_anti_air_missile_er_6x8
+		parent = ship_anti_air_missile_er_6x8_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_6x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_6x8_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_er_8x8_1 = {
+		category = ship_anti_air_missile_er_8x8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_8x8
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_er_8x8_2 = {
+		category = ship_anti_air_missile_er_8x8
+		parent = ship_anti_air_missile_er_8x8_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_8x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_8x8_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_8x8_3 = {
+		category = ship_anti_air_missile_er_8x8
+		parent = ship_anti_air_missile_er_8x8_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_8x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_8x8_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_8x8_4 = {
+		category = ship_anti_air_missile_er_8x8
+		parent = ship_anti_air_missile_er_8x8_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_8x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_8x8_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_er_8x8_5 = {
+		category = ship_anti_air_missile_er_8x8
+		parent = ship_anti_air_missile_er_8x8_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_8x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_8x8_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_er_12x8_1 = {
+		category = ship_anti_air_missile_er_12x8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_12x8
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_er_12x8_2 = {
+		category = ship_anti_air_missile_er_12x8
+		parent = ship_anti_air_missile_er_12x8_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_12x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_12x8_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_12x8_3 = {
+		category = ship_anti_air_missile_er_12x8
+		parent = ship_anti_air_missile_er_12x8_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_12x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_12x8_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_12x8_4 = {
+		category = ship_anti_air_missile_er_12x8
+		parent = ship_anti_air_missile_er_12x8_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_12x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_12x8_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_er_12x8_5 = {
+		category = ship_anti_air_missile_er_12x8
+		parent = ship_anti_air_missile_er_12x8_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_12x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_12x8_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	ship_anti_air_missile_er_16x8_1 = {
+		category = ship_anti_air_missile_er_16x8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.5
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_16x8
+			convert_cost_ic = 60
+		}
+	}
+
+	ship_anti_air_missile_er_16x8_2 = {
+		category = ship_anti_air_missile_er_16x8
+		parent = ship_anti_air_missile_er_16x8_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_16x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_16x8_1
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_16x8_3 = {
+		category = ship_anti_air_missile_er_16x8
+		parent = ship_anti_air_missile_er_16x8_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+			build_cost_ic = 0.025
+			anti_air_attack = 0.125
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_16x8
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_16x8_2
+			convert_cost_ic = 60
+		}
+	}
+	ship_anti_air_missile_er_16x8_4 = {
+		category = ship_anti_air_missile_er_16x8
+		parent = ship_anti_air_missile_er_16x8_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_16x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_16x8_3
+			convert_cost_ic = 50
+		}
+	}
+	ship_anti_air_missile_er_16x8_5 = {
+		category = ship_anti_air_missile_er_16x8
+		parent = ship_anti_air_missile_er_16x8_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = anti_air
+		add_stats = {
+			anti_air_attack = 4
+			build_cost_ic = 190
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.05
+			build_cost_ic = 0.025
+			anti_air_attack = 0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air_missile_er_16x8
+			convert_cost_ic = 120
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_missile_er_16x8_4
+			convert_cost_ic = 50
+		}
+	}
+#----------------------------------------------------------------
+	
+}

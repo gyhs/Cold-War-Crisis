@@ -1,0 +1,1525 @@
+
+		################################
+		##### 민족주의 불만 level ####
+		################################
+		
+#### 우크라이나
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_ukraine_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_ukraine_uprising_1
+		SOV_idea_ukraine_uprising_2
+		SOV_idea_ukraine_uprising_3
+		SOV_idea_ukraine_uprising_4
+		SOV_idea_ukraine_uprising_5
+		SOV_idea_ukraine_uprising_6
+		SOV_idea_ukraine_uprising_7
+		SOV_idea_ukraine_uprising_8
+		SOV_idea_ukraine_uprising_9
+		SOV_idea_ukraine_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_ukraine_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_ukraine_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_9
+			add_idea = SOV_idea_ukraine_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_8
+			add_idea = SOV_idea_ukraine_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_7
+			add_idea = SOV_idea_ukraine_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_6
+			add_idea = SOV_idea_ukraine_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_5
+			add_idea = SOV_idea_ukraine_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_4
+			add_idea = SOV_idea_ukraine_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_3
+			add_idea = SOV_idea_ukraine_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_2
+			add_idea = SOV_idea_ukraine_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_1
+			add_idea = SOV_idea_ukraine_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_ukraine_uprising_1 } }
+		add_ideas = SOV_idea_ukraine_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_ukraine_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_ukraine_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_ukraine_uprising_1
+				add_idea = SOV_idea_ukraine_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_ukraine_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_2
+			add_idea = SOV_idea_ukraine_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_3
+			add_idea = SOV_idea_ukraine_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_4
+			add_idea = SOV_idea_ukraine_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_5
+			add_idea = SOV_idea_ukraine_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_6
+			add_idea = SOV_idea_ukraine_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_7
+			add_idea = SOV_idea_ukraine_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_8
+			add_idea = SOV_idea_ukraine_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_9
+			add_idea = SOV_idea_ukraine_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_ukraine_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_ukraine_uprising_10
+			add_idea = SOV_idea_ukraine_uprising_9
+		}
+	}
+}
+
+#### 발트 3국
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_baltic_states_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_baltic_states_uprising_1
+		SOV_idea_baltic_states_uprising_2
+		SOV_idea_baltic_states_uprising_3
+		SOV_idea_baltic_states_uprising_4
+		SOV_idea_baltic_states_uprising_5
+		SOV_idea_baltic_states_uprising_6
+		SOV_idea_baltic_states_uprising_7
+		SOV_idea_baltic_states_uprising_8
+		SOV_idea_baltic_states_uprising_9
+		SOV_idea_baltic_states_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_baltic_states_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_baltic_states_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_9
+			add_idea = SOV_idea_baltic_states_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_8
+			add_idea = SOV_idea_baltic_states_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_7
+			add_idea = SOV_idea_baltic_states_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_6
+			add_idea = SOV_idea_baltic_states_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_5
+			add_idea = SOV_idea_baltic_states_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_4
+			add_idea = SOV_idea_baltic_states_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_3
+			add_idea = SOV_idea_baltic_states_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_2
+			add_idea = SOV_idea_baltic_states_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_1
+			add_idea = SOV_idea_baltic_states_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_baltic_states_uprising_1 } }
+		add_ideas = SOV_idea_baltic_states_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_baltic_states_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_baltic_states_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_baltic_states_uprising_1
+				add_idea = SOV_idea_baltic_states_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_baltic_states_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_2
+			add_idea = SOV_idea_baltic_states_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_3
+			add_idea = SOV_idea_baltic_states_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_4
+			add_idea = SOV_idea_baltic_states_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_5
+			add_idea = SOV_idea_baltic_states_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_6
+			add_idea = SOV_idea_baltic_states_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_7
+			add_idea = SOV_idea_baltic_states_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_8
+			add_idea = SOV_idea_baltic_states_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_9
+			add_idea = SOV_idea_baltic_states_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_baltic_states_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_baltic_states_uprising_10
+			add_idea = SOV_idea_baltic_states_uprising_9
+		}
+	}
+}
+
+#### 몰도바
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_moldova_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_moldova_uprising_1
+		SOV_idea_moldova_uprising_2
+		SOV_idea_moldova_uprising_3
+		SOV_idea_moldova_uprising_4
+		SOV_idea_moldova_uprising_5
+		SOV_idea_moldova_uprising_6
+		SOV_idea_moldova_uprising_7
+		SOV_idea_moldova_uprising_8
+		SOV_idea_moldova_uprising_9
+		SOV_idea_moldova_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_moldova_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_moldova_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_9
+			add_idea = SOV_idea_moldova_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_8
+			add_idea = SOV_idea_moldova_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_7
+			add_idea = SOV_idea_moldova_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_6
+			add_idea = SOV_idea_moldova_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_5
+			add_idea = SOV_idea_moldova_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_4
+			add_idea = SOV_idea_moldova_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_3
+			add_idea = SOV_idea_moldova_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_2
+			add_idea = SOV_idea_moldova_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_1
+			add_idea = SOV_idea_moldova_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_moldova_uprising_1 } }
+		add_ideas = SOV_idea_moldova_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_moldova_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_moldova_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_moldova_uprising_1
+				add_idea = SOV_idea_moldova_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_moldova_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_2
+			add_idea = SOV_idea_moldova_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_3
+			add_idea = SOV_idea_moldova_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_4
+			add_idea = SOV_idea_moldova_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_5
+			add_idea = SOV_idea_moldova_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_6
+			add_idea = SOV_idea_moldova_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_7
+			add_idea = SOV_idea_moldova_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_8
+			add_idea = SOV_idea_moldova_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_9
+			add_idea = SOV_idea_moldova_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_moldova_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_moldova_uprising_10
+			add_idea = SOV_idea_moldova_uprising_9
+		}
+	}
+}
+
+#### 벨라루스
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_belarus_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_belarus_uprising_1
+		SOV_idea_belarus_uprising_2
+		SOV_idea_belarus_uprising_3
+		SOV_idea_belarus_uprising_4
+		SOV_idea_belarus_uprising_5
+		SOV_idea_belarus_uprising_6
+		SOV_idea_belarus_uprising_7
+		SOV_idea_belarus_uprising_8
+		SOV_idea_belarus_uprising_9
+		SOV_idea_belarus_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_belarus_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_belarus_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_9
+			add_idea = SOV_idea_belarus_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_8
+			add_idea = SOV_idea_belarus_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_7
+			add_idea = SOV_idea_belarus_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_6
+			add_idea = SOV_idea_belarus_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_5
+			add_idea = SOV_idea_belarus_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_4
+			add_idea = SOV_idea_belarus_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_3
+			add_idea = SOV_idea_belarus_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_2
+			add_idea = SOV_idea_belarus_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_1
+			add_idea = SOV_idea_belarus_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_belarus_uprising_1 } }
+		add_ideas = SOV_idea_belarus_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_belarus_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_belarus_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_belarus_uprising_1
+				add_idea = SOV_idea_belarus_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_belarus_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_2
+			add_idea = SOV_idea_belarus_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_3
+			add_idea = SOV_idea_belarus_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_4
+			add_idea = SOV_idea_belarus_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_5
+			add_idea = SOV_idea_belarus_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_6
+			add_idea = SOV_idea_belarus_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_7
+			add_idea = SOV_idea_belarus_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_8
+			add_idea = SOV_idea_belarus_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_9
+			add_idea = SOV_idea_belarus_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_belarus_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_belarus_uprising_10
+			add_idea = SOV_idea_belarus_uprising_9
+		}
+	}
+}
+
+#### 아르메니아
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_armenia_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_armenia_uprising_1
+		SOV_idea_armenia_uprising_2
+		SOV_idea_armenia_uprising_3
+		SOV_idea_armenia_uprising_4
+		SOV_idea_armenia_uprising_5
+		SOV_idea_armenia_uprising_6
+		SOV_idea_armenia_uprising_7
+		SOV_idea_armenia_uprising_8
+		SOV_idea_armenia_uprising_9
+		SOV_idea_armenia_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_armenia_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_armenia_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_9
+			add_idea = SOV_idea_armenia_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_8
+			add_idea = SOV_idea_armenia_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_7
+			add_idea = SOV_idea_armenia_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_6
+			add_idea = SOV_idea_armenia_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_5
+			add_idea = SOV_idea_armenia_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_4
+			add_idea = SOV_idea_armenia_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_3
+			add_idea = SOV_idea_armenia_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_2
+			add_idea = SOV_idea_armenia_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_1
+			add_idea = SOV_idea_armenia_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_armenia_uprising_1 } }
+		add_ideas = SOV_idea_armenia_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_armenia_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_armenia_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_armenia_uprising_1
+				add_idea = SOV_idea_armenia_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_armenia_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_2
+			add_idea = SOV_idea_armenia_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_3
+			add_idea = SOV_idea_armenia_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_4
+			add_idea = SOV_idea_armenia_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_5
+			add_idea = SOV_idea_armenia_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_6
+			add_idea = SOV_idea_armenia_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_7
+			add_idea = SOV_idea_armenia_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_8
+			add_idea = SOV_idea_armenia_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_9
+			add_idea = SOV_idea_armenia_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_armenia_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_armenia_uprising_10
+			add_idea = SOV_idea_armenia_uprising_9
+		}
+	}
+}
+
+#### 아제르바이잔
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_azerbaijan_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_azerbaijan_uprising_1
+		SOV_idea_azerbaijan_uprising_2
+		SOV_idea_azerbaijan_uprising_3
+		SOV_idea_azerbaijan_uprising_4
+		SOV_idea_azerbaijan_uprising_5
+		SOV_idea_azerbaijan_uprising_6
+		SOV_idea_azerbaijan_uprising_7
+		SOV_idea_azerbaijan_uprising_8
+		SOV_idea_azerbaijan_uprising_9
+		SOV_idea_azerbaijan_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_azerbaijan_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_azerbaijan_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_9
+			add_idea = SOV_idea_azerbaijan_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_8
+			add_idea = SOV_idea_azerbaijan_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_7
+			add_idea = SOV_idea_azerbaijan_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_6
+			add_idea = SOV_idea_azerbaijan_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_5
+			add_idea = SOV_idea_azerbaijan_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_4
+			add_idea = SOV_idea_azerbaijan_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_3
+			add_idea = SOV_idea_azerbaijan_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_2
+			add_idea = SOV_idea_azerbaijan_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_1
+			add_idea = SOV_idea_azerbaijan_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_azerbaijan_uprising_1 } }
+		add_ideas = SOV_idea_azerbaijan_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_azerbaijan_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_azerbaijan_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_azerbaijan_uprising_1
+				add_idea = SOV_idea_azerbaijan_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_azerbaijan_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_2
+			add_idea = SOV_idea_azerbaijan_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_3
+			add_idea = SOV_idea_azerbaijan_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_4
+			add_idea = SOV_idea_azerbaijan_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_5
+			add_idea = SOV_idea_azerbaijan_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_6
+			add_idea = SOV_idea_azerbaijan_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_7
+			add_idea = SOV_idea_azerbaijan_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_8
+			add_idea = SOV_idea_azerbaijan_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_9
+			add_idea = SOV_idea_azerbaijan_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_azerbaijan_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_azerbaijan_uprising_10
+			add_idea = SOV_idea_azerbaijan_uprising_9
+		}
+	}
+}
+
+#### 조지아
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_georgia_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_georgia_uprising_1
+		SOV_idea_georgia_uprising_2
+		SOV_idea_georgia_uprising_3
+		SOV_idea_georgia_uprising_4
+		SOV_idea_georgia_uprising_5
+		SOV_idea_georgia_uprising_6
+		SOV_idea_georgia_uprising_7
+		SOV_idea_georgia_uprising_8
+		SOV_idea_georgia_uprising_9
+		SOV_idea_georgia_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_georgia_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_georgia_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_9
+			add_idea = SOV_idea_georgia_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_8
+			add_idea = SOV_idea_georgia_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_7
+			add_idea = SOV_idea_georgia_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_6
+			add_idea = SOV_idea_georgia_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_5
+			add_idea = SOV_idea_georgia_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_4
+			add_idea = SOV_idea_georgia_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_3
+			add_idea = SOV_idea_georgia_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_2
+			add_idea = SOV_idea_georgia_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_1
+			add_idea = SOV_idea_georgia_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_georgia_uprising_1 } }
+		add_ideas = SOV_idea_georgia_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_georgia_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_georgia_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_georgia_uprising_1
+				add_idea = SOV_idea_georgia_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_georgia_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_2
+			add_idea = SOV_idea_georgia_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_3
+			add_idea = SOV_idea_georgia_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_4
+			add_idea = SOV_idea_georgia_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_5
+			add_idea = SOV_idea_georgia_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_6
+			add_idea = SOV_idea_georgia_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_7
+			add_idea = SOV_idea_georgia_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_8
+			add_idea = SOV_idea_georgia_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_9
+			add_idea = SOV_idea_georgia_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_georgia_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_georgia_uprising_10
+			add_idea = SOV_idea_georgia_uprising_9
+		}
+	}
+}
+
+#### 카자흐스탄
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_central_asia_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_central_asia_uprising_1
+		SOV_idea_central_asia_uprising_2
+		SOV_idea_central_asia_uprising_3
+		SOV_idea_central_asia_uprising_4
+		SOV_idea_central_asia_uprising_5
+		SOV_idea_central_asia_uprising_6
+		SOV_idea_central_asia_uprising_7
+		SOV_idea_central_asia_uprising_8
+		SOV_idea_central_asia_uprising_9
+		SOV_idea_central_asia_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_central_asia_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_central_asia_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_9
+			add_idea = SOV_idea_central_asia_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_8
+			add_idea = SOV_idea_central_asia_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_7
+			add_idea = SOV_idea_central_asia_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_6
+			add_idea = SOV_idea_central_asia_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_5
+			add_idea = SOV_idea_central_asia_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_4
+			add_idea = SOV_idea_central_asia_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_3
+			add_idea = SOV_idea_central_asia_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_2
+			add_idea = SOV_idea_central_asia_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_1
+			add_idea = SOV_idea_central_asia_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_central_asia_uprising_1 } }
+		add_ideas = SOV_idea_central_asia_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_central_asia_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_central_asia_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_central_asia_uprising_1
+				add_idea = SOV_idea_central_asia_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_central_asia_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_2
+			add_idea = SOV_idea_central_asia_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_3
+			add_idea = SOV_idea_central_asia_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_4
+			add_idea = SOV_idea_central_asia_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_5
+			add_idea = SOV_idea_central_asia_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_6
+			add_idea = SOV_idea_central_asia_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_7
+			add_idea = SOV_idea_central_asia_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_8
+			add_idea = SOV_idea_central_asia_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_9
+			add_idea = SOV_idea_central_asia_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_central_asia_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_central_asia_uprising_10
+			add_idea = SOV_idea_central_asia_uprising_9
+		}
+	}
+}
+
+#### 러시아
+#Add to scripted triggers if more levels of hyper inflation is added
+SOV_idea_russian_uprising_clear_all = {
+	remove_ideas = {
+		SOV_idea_russian_uprising_1
+		SOV_idea_russian_uprising_2
+		SOV_idea_russian_uprising_3
+		SOV_idea_russian_uprising_4
+		SOV_idea_russian_uprising_5
+		SOV_idea_russian_uprising_6
+		SOV_idea_russian_uprising_7
+		SOV_idea_russian_uprising_8
+		SOV_idea_russian_uprising_9
+		SOV_idea_russian_uprising_10
+	}
+}
+
+#Important to put HIGHEST first
+SOV_idea_russian_uprising_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = SOV_idea_russian_uprising_up_tt
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_9
+			add_idea = SOV_idea_russian_uprising_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_8
+			add_idea = SOV_idea_russian_uprising_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_7
+			add_idea = SOV_idea_russian_uprising_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_6
+			add_idea = SOV_idea_russian_uprising_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_5
+			add_idea = SOV_idea_russian_uprising_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_4
+			add_idea = SOV_idea_russian_uprising_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_3
+			add_idea = SOV_idea_russian_uprising_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_2
+			add_idea = SOV_idea_russian_uprising_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_idea_russian_uprising_1 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_1
+			add_idea = SOV_idea_russian_uprising_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_idea_russian_uprising_1 } }
+		add_ideas = SOV_idea_russian_uprising_1
+	}
+}
+
+#Important to put LOWEST first
+SOV_idea_russian_uprising_level_down = {
+custom_effect_tooltip = SOV_idea_russian_uprising_down_tt
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SOV_idea_russian_uprising_1
+				add_idea = SOV_idea_russian_uprising_none
+			}
+		}
+		hidden_effect = { remove_ideas = SOV_idea_russian_uprising_1 }
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_2 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_2
+			add_idea = SOV_idea_russian_uprising_1
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_3 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_3
+			add_idea = SOV_idea_russian_uprising_2
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_4 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_4
+			add_idea = SOV_idea_russian_uprising_3
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_5 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_5
+			add_idea = SOV_idea_russian_uprising_4
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_6 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_6
+			add_idea = SOV_idea_russian_uprising_5
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_7 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_7
+			add_idea = SOV_idea_russian_uprising_6
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_8 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_8
+			add_idea = SOV_idea_russian_uprising_7
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_9 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_9
+			add_idea = SOV_idea_russian_uprising_8
+		}
+	}
+	if = {
+		limit = { has_idea = SOV_idea_russian_uprising_10 }
+		swap_ideas = {
+			remove_idea = SOV_idea_russian_uprising_10
+			add_idea = SOV_idea_central_asia_uprising_9
+		}
+	}
+}

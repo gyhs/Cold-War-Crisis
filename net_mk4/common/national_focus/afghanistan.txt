@@ -1,0 +1,1437 @@
+focus_tree = {
+	id = afghanistan_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AFG
+		}
+	}
+	continuous_focus_position = { x = 20 y = 1000 }
+	
+	#### 교통
+	focus = {
+		id = AFG_traffic_route_secure
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 0
+		cost = 10.00
+		available = {
+			divisions_in_state = {
+			size > 10
+			state = 267
+			}
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+
+		completion_reward = {
+			AFG_idea_opium_industry_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_afghan_national_railroad_administration
+		icon = GFX_focus_generic_self_management
+		x = 0
+		y = 2
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_traffic_route_secure
+		}
+		prerequisite = {
+			focus = AFG_tribal_chief_conference_system
+			focus = AFG_tribe_system_reform
+		}
+		prerequisite = { focus = AFG_provincial_government_office }
+		prerequisite = { focus = AFG_standard_language }
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_build_western_railroad
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 3
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_afghan_national_railroad_administration
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_railroad_branch_line
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_build_western_railroad
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AFG_provincial_government_office
+		icon = GFX_focus_generic_self_management
+		x = 8
+		y = 0
+		cost = 10.00
+		prerequisite = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+			AFG_idea_tribe_influence_level_down = yes
+			AFG_idea_opium_industry_level_down = yes
+			swap_ideas = {
+				remove_idea = NS_AFG_rampant_communicable_diseases_2
+				add_idea = NS_AFG_rampant_communicable_diseases_1
+			}
+		}
+	}
+	focus = {
+		id = AFG_local_public_health_center
+		icon = GFX_focus_generic_concessions
+		x = 2
+		y = 1
+		cost = 10.00
+		prerequisite = { focus = AFG_traffic_route_secure }
+		prerequisite = { focus = AFG_provincial_government_office }
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			remove_ideas = NS_AFG_rampant_communicable_diseases_1
+			AFG_idea_opium_industry_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_agriculture_foundation_recovery
+		icon = GFX_focus_focus_generic_industry_1
+		x = 2
+		y = 2
+		cost = 10.00
+		prerequisite = { focus = AFG_local_public_health_center }
+		prerequisite = {focus = AFG_tribal_chief_conference_system 
+						focus = AFG_tribe_system_reform 
+						}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_AFG_famine_3
+				add_idea = NS_AFG_famine_2
+			}
+			AFG_idea_opium_industry_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_agriculture_improvement
+		icon = GFX_focus_focus_generic_industry_1
+		x = 2
+		y = 3
+		cost = 10.00
+		prerequisite = { focus = AFG_afghan_national_railroad_administration }
+		prerequisite = { focus = AFG_agriculture_foundation_recovery }
+		prerequisite = { focus = AFG_manufacturing_industry_support }
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NS_AFG_famine_2
+				add_idea = NS_AFG_famine_1
+			}
+			AFG_idea_opium_industry_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_cultivate_alternative_crop
+		icon = GFX_focus_focus_generic_industry_1
+		x = 2
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_agriculture_improvement
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			remove_ideas = NS_AFG_famine_1
+			AFG_idea_opium_industry_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_opium_industry_crush
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 1
+		y = 6
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_railroad_branch_line
+		}
+		prerequisite = {
+			focus = AFG_cultivate_alternative_crop
+		}
+		prerequisite = {
+			focus = AFG_private_industry_support
+		}
+		prerequisite = {
+			focus = AFG_build_industrial_complex
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_opium_industry_clear_all = yes
+		}
+	}
+	focus = {
+		id = AFG_manufacturing_industry_base_recovery
+		icon = GFX_focus_focus_generic_industry_1
+		x = 5
+		y = 1
+		cost = 10.00
+		prerequisite = { focus = AFG_traffic_route_secure }
+		prerequisite = { focus = AFG_provincial_government_office }
+		prerequisite = { focus = AFG_standard_language }
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_manufacturing_industry_support
+		icon = GFX_focus_generic_industry_2
+		x = 5
+		y = 2
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_manufacturing_industry_base_recovery
+		}
+		prerequisite = {
+			focus = AFG_tribal_chief_conference_system
+			focus = AFG_tribe_system_reform
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_basic_industry_promote
+		icon = GFX_focus_generic_industry_3
+		x = 5
+		y = 3
+		cost = 10.00
+		prerequisite = { focus = AFG_afghan_national_railroad_administration }
+		prerequisite = { focus = AFG_manufacturing_industry_support }
+		prerequisite = { focus = AFG_local_council_establish }
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_up = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_build_traverse_electrical_grid
+		icon = GFX_goal_generic_construct_civilian
+		x = 4
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_basic_industry_promote
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_build_oil_pipeline
+		icon = GFX_goal_generic_oil_refinery
+		x = 6
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_basic_industry_promote
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_private_industry_support
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_cultivate_alternative_crop
+		}
+		prerequisite = {
+			focus = AFG_build_traverse_electrical_grid
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_build_industrial_complex
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 5
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_build_traverse_electrical_grid
+		}
+		prerequisite = {
+			focus = AFG_build_oil_pipeline
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AFG_local_council_establish
+		icon = GFX_focus_generic_self_management
+		x = 8
+		y = 2
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_tribal_chief_conference_system
+			focus = AFG_tribe_system_reform
+		}
+		prerequisite = {
+			focus = AFG_provincial_government_office
+		}
+		prerequisite = {
+			focus = AFG_standard_language
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+			AFG_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_central_government_admin_officer_send
+		icon = GFX_goal_generic_position_armies
+		x = 8
+		y = 3
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_local_council_establish
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+			AFG_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_electoral_system_rootage
+		icon = GFX_goal_generic_propaganda
+		x = 8
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_armed_policeman
+		}
+		prerequisite = {
+			focus = AFG_central_government_admin_officer_send
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+			AFG_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_parliamentary_system_rootage
+		icon = GFX_focus_generic_self_management
+		x = 8
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_electoral_system_rootage
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+			AFG_idea_tribe_influence_level_down = yes
+		}
+	}
+	
+	focus = {
+		id = AFG_infantry_training_school
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 2
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_tribal_chief_conference_system
+			focus = AFG_tribe_system_reform
+		}
+		prerequisite = { focus = AFG_provincial_government_office }
+		prerequisite = { focus = AFG_standard_language }
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				custom_effect_tooltip = AFG_infantry_training_school_tt
+		add_tech_bonus = {
+			name = CHI_small_arms_expertise
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+		}
+	}
+	focus = {
+		id = AFG_armed_policeman
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 3
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_infantry_training_school
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_down = yes
+			AFG_idea_opium_industry_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_police_administration_system_establish
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_armed_policeman
+		}
+		prerequisite = {
+			focus = AFG_central_government_admin_officer_send
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_down = yes
+			AFG_idea_opium_industry_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_tribe_disarmament
+		icon = GFX_goal_generic_improve_relations
+		x = 9
+		y = 6
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_parliamentary_system_rootage
+		}
+		prerequisite = {
+			focus = AFG_police_administration_system_establish
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_level_down = yes
+		}
+	}
+	focus = {
+		id = AFG_military_academy
+		icon = GFX_focus_generic_military_academy
+		x = 12
+		y = 3
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_fundamental_education_system
+		}
+		prerequisite = {
+			focus = AFG_infantry_training_school
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				custom_effect_tooltip = AFG_military_academy_tt
+		}
+	}
+	focus = {
+		id = AFG_officer_corps_reform
+		icon = GFX_focus_generic_military_mission
+		x = 12
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_military_academy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				custom_effect_tooltip = AFG_officer_corps_reform_tt
+		}
+	}
+	focus = {
+		id = AFG_military_military_improve
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 13
+		y = 6
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_officer_corps_reform
+		}
+		prerequisite = {
+			focus = AFG_local_school_extend
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				custom_effect_tooltip = AFG_military_military_improve_tt
+		}
+	}
+	focus = {
+		id = AFG_soldiers_reform_awareness
+		icon = GFX_goal_generic_demand_territory
+		x = 15
+		y = 7
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_military_military_improve
+		}
+		prerequisite = {
+			focus = AFG_separation_religion_society
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_religion_influence_clear_all = yes
+		}
+	}
+	focus = {
+		id = AFG_Afghan_air_force
+		icon = GFX_goal_generic_air_fighter2
+		x = 13
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_military_academy
+		}
+		prerequisite = {
+			focus = AFG_build_national_university
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AFG_standard_language
+		icon = GFX_focus_generic_treaty
+		x = 14
+		y = 0
+		cost = 10.00
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				AFG_idea_tribe_influence_level_down = yes
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+		}
+	}
+	focus = {
+		id = AFG_fundamental_education_system
+		icon = GFX_focus_research
+		x = 14
+		y = 2
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_standard_language
+		}
+		prerequisite = {
+			focus = AFG_tribal_chief_conference_system
+			focus = AFG_tribe_system_reform
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				AFG_idea_religion_influence_level_down = yes
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+		}
+	}
+	focus = {
+		id = AFG_build_national_university
+		icon = GFX_focus_research2
+		x = 14
+		y = 3
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_fundamental_education_system
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_religion_influence_level_down = yes
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = AFG_local_school_extend
+		icon = GFX_goal_generic_scientific_exchange
+		x = 14
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_build_national_university
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				AFG_idea_religion_influence_level_down = yes
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+		}
+	}
+	
+	focus = {
+		id = AFG_together_SOV
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 19
+		y = 0
+		cost = 10.00
+		
+		available = {
+			SOV_will_support = yes
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+			focus = AFG_together_USA
+		}
+
+		completion_reward = {
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = CHI_mission_to_the_soviet_union
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+			}
+		}
+	}
+	focus = {
+		id = AFG_together_USA
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 21
+		y = 0
+		cost = 10.00
+		prerequisite = {
+		}
+		mutually_exclusive = {
+			focus = AFG_together_SOV
+		}
+		available = {
+			USA_will_support = yes
+		}
+		completion_reward = {
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_USA
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		}
+	}
+	focus = {
+		id = AFG_tribe_system_reform
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 19
+		y = 1
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_together_SOV
+			focus = AFG_together_USA
+		}
+		mutually_exclusive = {
+			focus = AFG_tribal_chief_conference_system
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = AFG_idea_tribe_system_reform
+		}
+	}
+	focus = {
+		id = AFG_tribal_chief_conference_system
+		icon = GFX_goal_generic_major_alliance
+		x = 21
+		y = 1
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_together_USA
+		}
+		mutually_exclusive = {
+			focus = AFG_tribe_system_reform
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = AFG_idea_tribal_chief_conference_system
+		}
+	}
+	focus = {
+		id = AFG_ideology_partner
+		icon = GFX_goal_generic_national_unity
+		x = 18
+		y = 3
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_together_SOV
+		}
+		prerequisite = {
+			focus = AFG_tribe_system_reform
+		}
+		prerequisite = {
+			focus = AFG_religious_society_radical_reform
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = AFG_idea_ideology_partner
+		}
+	}
+	focus = {
+		id = AFG_northern_alliance_organize
+		icon = GFX_focus_generic_little_entente
+		x = 22
+		y = 3
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_together_USA
+		}
+		prerequisite = {
+			focus = AFG_tribal_chief_conference_system
+		}
+		prerequisite = {
+			focus = AFG_religious_society_moderate_reform
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = AFG_idea_northern_alliance_organize
+		}
+	}
+	
+	focus = {
+		id = AFG_religious_society_radical_reform
+		icon = GFX_goal_generic_forceful_treaty
+		x = 19
+		y = 2
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_tribe_system_reform
+			focus = AFG_tribal_chief_conference_system
+		}
+		mutually_exclusive = {
+			focus = AFG_religious_society_moderate_reform
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_religion_influence_level_down = yes
+			add_ideas = AFG_idea_religious_society_radical_reform
+		}
+	}
+	focus = {
+		id = AFG_religious_society_moderate_reform
+		icon = GFX_focus_generic_treaty
+		x = 21
+		y = 2
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_tribe_system_reform
+			focus = AFG_tribal_chief_conference_system
+		}
+		mutually_exclusive = {
+			focus = AFG_religious_society_radical_reform
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = AFG_idea_religious_society_moderate_reform
+		}
+	}
+	focus = {
+		id = AFG_separation_religion_society
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 20
+		y = 6
+		cost = 10.00
+		prerequisite = { focus = AFG_parliamentary_system_rootage }
+		prerequisite = { focus = AFG_police_administration_system_establish }
+		prerequisite = { focus = AFG_local_school_extend }
+		prerequisite = {
+			focus = AFG_religious_society_moderate_reform
+			focus = AFG_religious_society_radical_reform
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				AFG_idea_religion_influence_level_down = yes
+		}
+	}
+	
+	focus = {
+		id = AFG_communist_afghan_strategy
+		icon = GFX_goal_support_communism
+		x = 17
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_together_SOV
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = AFG_iran_wall
+		icon = GFX_goal_generic_construct_military
+		x = 16
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_communist_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+				random_owned_controlled_state = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+					}
+				}
+		}
+	}
+	focus = {
+		id = AFG_negotiations_with_RAJ
+		icon = GFX_focus_RAJ_indianisation_of_army
+		x = 18
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_communist_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = AFG_capital_afghan_strategy
+		icon = GFX_goal_support_democracy
+		x = 23
+		y = 4
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_together_USA
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = AFG_negotiations_with_PAK
+		icon = GFX_focus_RAJ_two_nation_theory
+		x = 22
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_capital_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AFG_negotiations_with_PER
+		icon = GFX_goal_generic_dangerous_deal
+		x = 24
+		y = 5
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_capital_afghan_strategy
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = AFG_modern_society
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 9
+		y = 8
+		cost = 10.00
+		prerequisite = {
+			focus = AFG_opium_industry_crush
+		}
+		prerequisite = {
+			focus = AFG_tribe_disarmament
+		}
+		prerequisite = {
+			focus = AFG_soldiers_reform_awareness
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+		completion_reward = {
+			AFG_idea_tribe_influence_clear_all = yes
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

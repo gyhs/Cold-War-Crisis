@@ -1,0 +1,65 @@
+﻿capital = 741 #Phnom Penh NOT on the map as VP!
+
+oob = "CAM_1987"
+
+set_research_slots = 3
+
+# Starting tech
+# clone of France
+set_technology = {
+}
+
+set_politics = {
+	ruling_party = market_liberalism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Pol Pot" 
+	desc = ""
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_warlord1.dds"
+	expire = "1953.3.1"
+	ideology = anarchist_communism #insanity
+	traits = {
+		
+	}
+}
+
+#non standard english alphabet character
+create_country_leader = {
+	name = "Sisowath Youtévong"
+	desc = ""
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_4.dds"
+	expire = "1953.3.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Norodom Sihanouk" 
+	desc = ""
+	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+#couldnt find anything historical on fascism
+

@@ -1,0 +1,315 @@
+﻿FRA = {
+	submarine = {
+		prefix = ""
+		generic = { "Sous-Marin" }
+		unique = {
+			# Starting with L'Espoire class        
+			"L`Espoire" "Le Glorieux" "Le Centaure" "Le Héros" "Le Conquérant" "Le Tonnant" "Agosta" "Sfax" "Casabianca" "Bévéziers" "Ouessant" "Sidi Ferruch" 
+			"Minerve" "Junon" "Vénus" "Iris" "Pallas" "Cérès" "Aurore" "La Créole" "La Favorite" "La Bayadère" "L`Africaine" "L`Astrée" "L`Andromède" "L`Artémise" 
+			"L`Andromaque" "L`Antigone" "L`Armide" "L`Hermione" "La Gorgone" "La Clorinde" "Roland Morillot" "La Praya" "La Martinique" "La Guadeloupe" "La Réunion" 
+			"Blaison" "Laubie" "Bouan" "Gymnote" "Daphné"
+			# Older and other models
+			"Sirène" "Naïade" "Galathée" "Ariane" "Ondine" "Eurydice" "Danaé" "Circé" "Calypso" "Thétis" "Doris" "Requin" "Souffleur" "Marsouin" "Dauphin" "Narval" "Morse" "Phoque" 
+			"Espadon" "Caïman" "Redoutable" "Vengeur" "Archimède" "Fresnel" "Henri Poincaré" "Monge" "Pascal" "Pasteur" "Poncelet" "Achille" "Ajax" "Actéon" "Achéron" "Argo" 
+			"Protée" "Pégase" "Persée" "Phénix" "Orion" "Ondine" "Diane" "Méduse" "Antiope" "Amphitrite" "Amazone" "Orphée" "Oréade" "La Sybille" "La Psyché" "Argonaute" "Aréthuse" 
+			"Atalante" "La Vestale" "La Sultane" "Surcouf" "Prométhée" "Nymphe" "Saphir" " Turquoise" "Diamant" "Nautilus" "Perlé" " Rubis" 
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Légère Contre-Torpilleur" }
+		unique = {
+			# Starting with Le Fantasque class			
+			"Le Hardi" "Fleuret" "Epée" "Casque" "Lansquenet" "Mameluk" "Le Corsaire" 
+			# Incomplete and unfinished ships
+			"L`Intrépide" "Le Téméraire" "L`Aventurier" "L`Opiniâtre" "Le Filibustier" "Le Foudroyant" "L`Adroit" "Siroco" "Bison" "Desaix" "Kléber" "D'Estaing"
+			"Jurien de la Gravière" "Duperré" "Duchaffault" 
+			# Older and other models
+			"Mistral" "Ouragan" "Simoun" "Tempête" "Tornade" "Trombe" "Typhon" "Bourrasque" "Cyclone" "Orage" "Siroco" "Tramontane" 
+			"Basque" "Le Bordelais" "Boulonnais" "Brestois" "Forbin" "Frondeur" "L`Alcyon" "La Palme" "La Railleuse" "Le Fortune" "Le Mars" "Le Foudroyant" "Fougueux" 
+			
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Croiseur Léger" }
+		unique = {
+			"La Galissonnière" "Jean de Vienne" "Marseillaise" "Gloire" "Montcalm" "Georges Leygues" "De Grasse" "Châteaurenault" "Guichen" "Colbert" 
+			# Older and other models
+			"Duguay-Trouin" "Lamotte-Picquet" "Primaguet" "Pluton" "Jeanne d'Arc" "Émile Bertin" 
+			# Fictional names start here			
+			"Colmar" "Mulhouse" "Strasbourg" "Metz" "Thionville" 
+		}
+	}
+	light_cruiser_aa = {
+		prefix = ""
+		generic = { "Croiseur Léger Antiaérien" }
+		unique = {
+			"De Grasse" "Châteaurenault" "Guichen" "Colbert" 
+			# Fictional names start here			
+			"Colmar" "Mulhouse" "Strasbourg" "Metz" "Thionville" 
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Croiseur Lourd" }
+		unique = {
+			"Duquesne" "Tourville" "Suffren" "Colbert" "Foch" "Dupleix" "Algerié"  		
+			# Fictional (WWI) names start here
+			"St. Louis" "Dupuy de Lôme" "Amiral Charner" "Bruix" "Chanzy" "Latouche-Tréville" "Pothuau" "Dupetit-Thouars" "Gueydon" 
+			"Gloire" "Montcalm" "Desaix" "Dupleix" "Kléber" "Amiral Aube" "Condé" "Marseillaise" "Léon Gambetta" 
+			"Jules Ferry" "Victor Hugo" "Jules Michelet" "Ernest Renan" "Edgar Quinet" "Waldeck-Rousseau" 
+		}
+	}
+	battle_cruiser = {
+        prefix = ""
+        generic = { "Croiseur Cuirassé" }
+        unique = {
+            "Dunkerque" "Strasbourg" "Arras" "Bourges" "Metz" "Lille" "Nantes" "Toulon" "Rouen" "Montpellier"
+            "La Hire" "Jean Bureau" "Bertrand du Guesclin" "Pierre de Brézé" "Jean de Grouchy" "Jean Le Maingre"
+ 			# Fictional names start here
+			"Normandie" "Flandre" "Gascogne" "Béarn" "Gille" "Durand-Viel" 
+       }
+    }
+    battleship = {
+        prefix = ""
+        generic = { "Navire de Ligne" }
+        unique = {
+            "Richelieu" "Jean Bart" "Clemenceau" "Gascogne" "Alsace" "Normandie" "Flandre" "Bourgogne" "Languedoc" 
+			"Champagne" "Poitou" "Artois" "Foix" "Picardie" "Liberté" "Justice" "Vérité" "Démocratie" "République" "Patrie"
+            "Paris" "Orléans" "Marseille" "Lyon" "Toulouse" "Nice" "Courbet" "France" "Océan" "Bretagne" "Lorraine" "Provence"
+ 			# Fictional names start here
+			"Duquesne" "Lille" "Tourville"
+       }
+    }
+    SH_battleship = {
+        prefix = ""
+        generic = { "Navire de Ligne Lourd" }
+        unique = {
+            "Clemenceau" "Gascogne" "Alsace" "Normandie" "Flandre" "Bourgogne" "Languedoc" 
+			"Champagne" "Poitou" "Artois" "Foix" "Picardie" "Liberté" "Justice" "Vérité" "Démocratie" "République" "Patrie"
+            "Orléans" "Marseille" "Lyon" "Toulouse" "Nice" "France"
+ 			# Fictional names start here
+			"Duquesne" "Lille" "Tourville"
+       }
+    }
+	carrier = {
+		prefix = ""
+		generic = { "Porte-Avions" }
+		unique = {
+			"Joffre" "Painlevé" "Clemenceau" "Béarn" 
+			# Fictional names start here
+			"Dixmude" "Arromanches" "Lafayette" "Bois Belleau" "Foch" "Jeanne d'Arc" "Verdun" "Foudre" "Commandant Tante"
+		}
+	}
+	light_carrier = {
+		prefix = ""
+		generic = { "Porte-Avions Léger" }
+		unique = {
+			# Fictional names start here
+			"Dixmude" "Arromanches" "Lafayette" "Bois Belleau" "Foch" "Jeanne d'Arc" "Verdun" "Foudre" "Commandant Tante"
+		}
+	}
+	super_carrier = {
+		prefix = ""
+		generic = { "Porte-Avions" }
+		unique = {
+			"Joffre" "Painlevé" "Clemenceau" "Béarn" 
+			# Fictional names start here
+			"Dixmude" "Arromanches" "Lafayette" "Bois Belleau" "Foch" "Jeanne d'Arc" "Verdun" "Foudre" "Commandant Tante"
+		}
+	}
+
+
+	air_wing_names_template = AIR_WING_NAME_GER_FALLBACK
+
+	#Air wings can only be named through archetype
+	fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+			"Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" 
+			"Groupe de Chasse 17" "Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		}	
+	}
+	heavy_fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+			"Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" 
+			"Groupe de Chasse 17" "Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		}	
+	}
+	multi_role_fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+			"Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" 
+			"Groupe de Chasse 17" "Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		}	
+	}
+	night_fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+			"Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" 
+			"Groupe de Chasse 17" "Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		}	
+	}
+	jet_fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+			"Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" 
+			"Groupe de Chasse 17" "Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		}	
+	}
+	CAS_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bomb. d'Assault" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Bomb. d'Assaut 18" "Groupe de Bomb. d'Assaut 19" "Groupe de Bomb. d'Assaut 21" "Groupe de Bomb. d'Assaut 22" "Groupe de Bomb. d'Assaut 23" "Groupe de Bomb. d'Assaut 24" "Groupe de Bomb. d'Assaut 25" "Groupe de Bomb. d'Assaut 26" "Groupe de Bomb. d'Assaut 27" "Groupe de Bomb. d'Assaut 28" "Groupe de Bomb. d'Assaut 29" 
+			"Groupe de Bomb. d'Assaut 30" 
+		}	
+	}
+	light_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
+			"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
+			"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
+		}	
+	}
+	tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
+			"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
+			"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
+		}	
+	}
+	jet_tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
+			"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
+			"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
+		}	
+	}
+	strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
+			"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
+			"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
+		}	
+	}
+	jet_strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
+			"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
+			"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
+		}	
+	}
+	nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bomb. Naval" "Flotille" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+			"Groupe de Bomb. Naval 1" "Groupe de Bomb. Naval 2" "Groupe de Bomb. Naval 3" "Groupe de Bomb. Naval 4" "Groupe de Bomb. Naval 5" "Groupe de Bomb. Naval 6" "Groupe de Bomb. Naval 7" "Groupe de Bomb. Naval 8" "Groupe de Bomb. Naval 9" "Groupe de Bomb. Naval 10" "Groupe de Torpilleur 1" 
+			"Groupe de Torpilleur 2" "Groupe de Torpilleur 3" "Groupe de Torpilleur 4" "Groupe de Torpilleur 5" "Groupe de Torpilleur 6" "Groupe de Torpilleur 7" "Groupe de Torpilleur 8" "Groupe de Torpilleur 9" "Groupe de Torpilleur 10" 
+		}	
+	}
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "Flotille de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+			"Flotille de Chasse F1C" "Flotille de Chasse F1A" "Flotille de Chasse 5F" "Flotille de Chasse F1H" "Flotille de Chasse 2F" "Flotille de Chasse 3F" "Flotille de Chasse 4F" "Flotille de Chasse 6F" "Flotille de Chasse 7F" 
+		}	
+	}
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "Flotille" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+			"Flotille F1A" "Flotille 5F" "Flotille F1H" "Flotille 2F" "Flotille 3F" "Flotille 4F" "Flotille 6F" "Flotille 7F"
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Flotille" "Groupe de Torpilleur" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+			"Flotille F1A" "Flotille F1A" "Flotille 5F" "Flotille F1H" 
+			"Groupe de Torpilleur 1" "Groupe de Torpilleur 2" "Groupe de Torpilleur 3" "Groupe de Torpilleur 4" "Groupe de Torpilleur 5" "Groupe de Torpilleur 6" "Groupe de Torpilleur 7" "Groupe de Torpilleur 8" "Groupe de Torpilleur 9" "Groupe de Torpilleur 10" 
+		}	
+	}
+	transport_plane_equipment = {
+		prefix = ""
+		generic = { "Groupe de Transport Aérien" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+			"1ère Groupe de Transport Aérien" "2ème Groupe de Transport Aérien" "3ème Groupe de Transport Aérien" "4ème Groupe de Transport Aérien" "5ème Groupe de Transport Aérien" "6ème Groupe de Transport Aérien" "7ème Groupe de Transport Aérien" "8ème Groupe de Transport Aérien" "9ème Groupe de Transport Aérien" "10ème Groupe de Transport Aérien" 
+		}	
+	}
+
+	infantry = {
+		prefix = ""
+		generic = { "Division d'Infanterie" }
+		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		unique = {}
+	}
+	motorized = {
+		prefix = ""
+		generic = { "Div. d'Infanterie Motorisée" }
+		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Division d'Infanterie Alpine" }
+		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Division de Cavalerie" }
+		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Brigade de Chars de Combat" }
+		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Brigade de Chars de Combat" }
+		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		unique = {}
+	}
+}

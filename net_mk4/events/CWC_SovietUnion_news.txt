@@ -1,0 +1,149 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet.news
+
+######################
+# 
+######################
+# 아프가니스탄 철수
+news_event = {
+	id = soviet.news.1
+	title = soviet.news.1.t
+	desc = soviet.news.1.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.news.1.a
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = soviet.news.1.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = soviet.news.1.c
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 핵 군축
+news_event = {
+	id = soviet.news.2
+	title = soviet.news.2.t
+	desc = soviet.news.2.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.news.2.a
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = soviet.news.2.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = soviet.news.2.c
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 군 군축
+news_event = {
+	id = soviet.news.3
+	title = soviet.news.3.t
+	desc = soviet.news.3.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.news.3.a
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = soviet.news.3.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = soviet.news.3.c
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 핵 과 군 군축
+news_event = {
+	id = soviet.news.4
+	title = soviet.news.4.t
+	desc = soviet.news.4.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.news.4.a
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = soviet.news.4.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = soviet.news.4.c
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 회담 종료
+news_event = {
+	id = soviet.news.5
+	title = soviet.news.5.t
+	desc = soviet.news.5.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.news.5.a
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = soviet.news.5.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = soviet.news.5.c
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}

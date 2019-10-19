@@ -1,0 +1,562 @@
+﻿# 사단 template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the 사단 template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old 사단 naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical 사단 names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical 사단. The text will be visible in the tooltip
+#                                      where you choose the historical 사단 name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+MUJ_INF_01 = 
+{
+	name = "보병 사단"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { MUJ_GAR_01 }
+
+	fallback_name = "%d. 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 사단" }
+		2 = { "가즈니 사단" }
+		3 = { "헤라트 사단" }
+		4 = { "잘랄라바드 사단" }
+		5 = { "칸다하르 사단" }
+		6 = { "마야메네 사단" }
+		7 = { "마자르 샤 사단" }
+		8 = { "자히르 샤 사단" }
+		9 = { "압두르 라만 사단" }
+		10 = { "나디르 샤 사단" }
+		11 = { "도스트 모하마드 사단" }
+		12 = { "샤 슈자 사단" }
+		13 = { "탈로칸 사단" }
+		14 = { "퀀도즈 사단" }
+		15 = { "홀름 사단" }
+		16 = { "아이벡 사단" }
+		17 = { "셰베르간 사단" }
+		18 = { "발흐 사단" }
+		19 = { "메이마네 사단" }
+		20 = { "다울라타바드 사단" }
+		21 = { "타린 콧 사단" }
+		22 = { "달랏 사단" }
+		23 = { "카시로드 사단" }
+		24 = { "라슈카르 간 사단" }
+		25 = { "미라바드 사단" }
+		26 = { "%d. 사단" }
+		27 = { "%d. 사단" }
+		28 = { "%d. 사단" }
+		29 = { "%d. 사단" }
+		30 = { "%d. 사단" }
+
+	}
+}
+
+MUJ_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. Cavalry"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 Cavalry" }
+		2 = { "가즈니 Cavalry" }
+		3 = { "헤라트 Cavalry" }
+		4 = { "잘랄라바드 Cavalry" }
+		5 = { "칸다하르 Cavalry" }
+		6 = { "마야메네 Cavalry" }
+		7 = { "마자르 샤 Cavalry" }
+		8 = { "자히르 샤 Cavalry" }
+		9 = { "압두르 라만 Cavalry" }
+		10 = { "나디르 샤 Cavalry" }
+		11 = { "도스트 모하마드 Cavalry" }
+		12 = { "샤 슈자 Cavalry" }
+		13 = { "탈로칸 Cavalry" }
+		14 = { "퀀도즈 Cavalry" }
+		15 = { "홀름 Cavalry" }
+		16 = { "아이벡 Cavalry" }
+		17 = { "셰베르간 Cavalry" }
+		18 = { "발흐 Cavalry" }
+		19 = { "메이마네 Cavalry" }
+		20 = { "다울라타바드 Cavalry" }
+		21 = { "타린 콧 Cavalry" }
+		22 = { "달랏 Cavalry" }
+		23 = { "카시로드 Cavalry" }
+		24 = { "라슈카르 간 Cavalry" }
+		25 = { "미라바드 Cavalry" }
+		26 = { "%d. Cavalry" }
+		27 = { "%d. Cavalry" }
+		28 = { "%d. Cavalry" }
+		29 = { "%d. Cavalry" }
+		30 = { "%d. Cavalry" }
+
+	}
+}
+
+MUJ_MOT_01 = 
+{
+	name = "차량화 보병 사단"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. Motor 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 Motor 사단" }
+		2 = { "가즈니 Motor 사단" }
+		3 = { "헤라트 Motor 사단" }
+		4 = { "잘랄라바드 Motor 사단" }
+		5 = { "칸다하르 Motor 사단" }
+		6 = { "마야메네 Motor 사단" }
+		7 = { "마자르 샤 Motor 사단" }
+		8 = { "자히르 샤 Motor 사단" }
+		9 = { "압두르 라만 Motor 사단" }
+		10 = { "나디르 샤 Motor 사단" }
+		11 = { "도스트 모하마드 Motor 사단" }
+		12 = { "샤 슈자 Motor 사단" }
+		13 = { "탈로칸 Motor 사단" }
+		14 = { "퀀도즈 Motor 사단" }
+		15 = { "홀름 Motor 사단" }
+		16 = { "아이벡 Motor 사단" }
+		17 = { "셰베르간 Motor 사단" }
+		18 = { "발흐 Motor 사단" }
+		19 = { "메이마네 Motor 사단" }
+		20 = { "다울라타바드 Motor 사단" }
+		21 = { "타린 콧 Motor 사단" }
+		22 = { "달랏 Motor 사단" }
+		23 = { "카시로드 Motor 사단" }
+		24 = { "라슈카르 간 Motor 사단" }
+		25 = { "미라바드 Motor 사단" }
+		26 = { "%d. Motor 사단" }
+		27 = { "%d. Motor 사단" }
+		28 = { "%d. Motor 사단" }
+		29 = { "%d. Motor 사단" }
+		30 = { "%d. Motor 사단" }
+
+	}
+}
+
+MUJ_ARM_01 = 
+{
+	name = "Armored Divisions"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. 기갑 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 기갑 사단" }
+		2 = { "가즈니 기갑 사단" }
+		3 = { "헤라트 기갑 사단" }
+		4 = { "잘랄라바드 기갑 사단" }
+		5 = { "칸다하르 기갑 사단" }
+		6 = { "마야메네 기갑 사단" }
+		7 = { "마자르 샤 기갑 사단" }
+		8 = { "자히르 샤 기갑 사단" }
+		9 = { "압두르 라만 기갑 사단" }
+		10 = { "나디르 샤 기갑 사단" }
+		11 = { "도스트 모하마드 기갑 사단" }
+		12 = { "샤 슈자 기갑 사단" }
+		13 = { "탈로칸 기갑 사단" }
+		14 = { "퀀도즈 기갑 사단" }
+		15 = { "홀름 기갑 사단" }
+		16 = { "아이벡 기갑 사단" }
+		17 = { "셰베르간 기갑 사단" }
+		18 = { "발흐 기갑 사단" }
+		19 = { "메이마네 기갑 사단" }
+		20 = { "다울라타바드 기갑 사단" }
+		21 = { "타린 콧 기갑 사단" }
+		22 = { "달랏 기갑 사단" }
+		23 = { "카시로드 기갑 사단" }
+		24 = { "라슈카르 간 기갑 사단" }
+		25 = { "미라바드 기갑 사단" }
+		26 = { "%d. 기갑 사단" }
+		27 = { "%d. 기갑 사단" }
+		28 = { "%d. 기갑 사단" }
+		29 = { "%d. 기갑 사단" }
+		30 = { "%d. 기갑 사단" }
+
+	}
+}
+
+MUJ_MEC_01 = 
+{
+	name = "Mechanised Divisions"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. Half Track 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 Half Track 사단" }
+		2 = { "가즈니 Half Track 사단" }
+		3 = { "헤라트 Half Track 사단" }
+		4 = { "잘랄라바드 Half Track 사단" }
+		5 = { "칸다하르 Half Track 사단" }
+		6 = { "마야메네 Half Track 사단" }
+		7 = { "마자르 샤 Half Track 사단" }
+		8 = { "자히르 샤 Half Track 사단" }
+		9 = { "압두르 라만 Half Track 사단" }
+		10 = { "나디르 샤 Half Track 사단" }
+		11 = { "도스트 모하마드 Half Track 사단" }
+		12 = { "샤 슈자 Half Track 사단" }
+		13 = { "탈로칸 Half Track 사단" }
+		14 = { "퀀도즈 Half Track 사단" }
+		15 = { "홀름 Half Track 사단" }
+		16 = { "아이벡 Half Track 사단" }
+		17 = { "셰베르간 Half Track 사단" }
+		18 = { "발흐 Half Track 사단" }
+		19 = { "메이마네 Half Track 사단" }
+		20 = { "다울라타바드 Half Track 사단" }
+		21 = { "타린 콧 Half Track 사단" }
+		22 = { "달랏 Half Track 사단" }
+		23 = { "카시로드 Half Track 사단" }
+		24 = { "라슈카르 간 Half Track 사단" }
+		25 = { "미라바드 Half Track 사단" }
+		26 = { "%d. Half Track 사단" }
+		27 = { "%d. Half Track 사단" }
+		28 = { "%d. Half Track 사단" }
+		29 = { "%d. Half Track 사단" }
+		30 = { "%d. Half Track 사단" }
+
+	}
+}
+
+MUJ_GAR_01 = 
+{
+	name = "Garrison Divisions"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. 주둔군"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 주둔군" }
+		2 = { "가즈니 주둔군" }
+		3 = { "헤라트 주둔군" }
+		4 = { "잘랄라바드 주둔군" }
+		5 = { "칸다하르 주둔군" }
+		6 = { "마야메네 주둔군" }
+		7 = { "마자르 샤 주둔군" }
+		8 = { "자히르 샤 주둔군" }
+		9 = { "압두르 라만 주둔군" }
+		10 = { "나디르 샤 주둔군" }
+		11 = { "도스트 모하마드 주둔군" }
+		12 = { "샤 슈자 주둔군" }
+		13 = { "탈로칸 주둔군" }
+		14 = { "퀀도즈 주둔군" }
+		15 = { "홀름 주둔군" }
+		16 = { "아이벡 주둔군" }
+		17 = { "셰베르간 주둔군" }
+		18 = { "발흐 주둔군" }
+		19 = { "메이마네 주둔군" }
+		20 = { "다울라타바드 주둔군" }
+		21 = { "타린 콧 주둔군" }
+		22 = { "달랏 주둔군" }
+		23 = { "카시로드 주둔군" }
+		24 = { "라슈카르 간 주둔군" }
+		25 = { "미라바드 주둔군" }
+		26 = { "%d. 주둔군" }
+		27 = { "%d. 주둔군" }
+		28 = { "%d. 주둔군" }
+		29 = { "%d. 주둔군" }
+		30 = { "%d. 주둔군" }
+
+	}
+}
+
+MUJ_MIL_01 = 
+{
+	name = "민병대"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. 민병대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 민병대" }
+		2 = { "가즈니 민병대" }
+		3 = { "헤라트 민병대" }
+		4 = { "잘랄라바드 민병대" }
+		5 = { "칸다하르 민병대" }
+		6 = { "마야메네 민병대" }
+		7 = { "마자르 샤 민병대" }
+		8 = { "자히르 샤 민병대" }
+		9 = { "압두르 라만 민병대" }
+		10 = { "나디르 샤 민병대" }
+		11 = { "도스트 모하마드 민병대" }
+		12 = { "샤 슈자 민병대" }
+		13 = { "탈로칸 민병대" }
+		14 = { "퀀도즈 민병대" }
+		15 = { "홀름 민병대" }
+		16 = { "아이벡 민병대" }
+		17 = { "셰베르간 민병대" }
+		18 = { "발흐 민병대" }
+		19 = { "메이마네 민병대" }
+		20 = { "다울라타바드 민병대" }
+		21 = { "타린 콧 민병대" }
+		22 = { "달랏 민병대" }
+		23 = { "카시로드 민병대" }
+		24 = { "라슈카르 간 민병대" }
+		25 = { "미라바드 민병대" }
+		26 = { "%d. 민병대" }
+		27 = { "%d. 민병대" }
+		28 = { "%d. 민병대" }
+		29 = { "%d. 민병대" }
+		30 = { "%d. 민병대" }
+
+	}
+}
+
+MUJ_MAR_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. 해병 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 해병 사단" }
+		2 = { "가즈니 해병 사단" }
+		3 = { "헤라트 해병 사단" }
+		4 = { "잘랄라바드 해병 사단" }
+		5 = { "칸다하르 해병 사단" }
+		6 = { "마야메네 해병 사단" }
+		7 = { "마자르 샤 해병 사단" }
+		8 = { "자히르 샤 해병 사단" }
+		9 = { "압두르 라만 해병 사단" }
+		10 = { "나디르 샤 해병 사단" }
+		11 = { "도스트 모하마드 해병 사단" }
+		12 = { "샤 슈자 해병 사단" }
+		13 = { "탈로칸 해병 사단" }
+		14 = { "퀀도즈 해병 사단" }
+		15 = { "홀름 해병 사단" }
+		16 = { "아이벡 해병 사단" }
+		17 = { "셰베르간 해병 사단" }
+		18 = { "발흐 해병 사단" }
+		19 = { "메이마네 해병 사단" }
+		20 = { "다울라타바드 해병 사단" }
+		21 = { "타린 콧 해병 사단" }
+		22 = { "달랏 해병 사단" }
+		23 = { "카시로드 해병 사단" }
+		24 = { "라슈카르 간 해병 사단" }
+		25 = { "미라바드 해병 사단" }
+		26 = { "%d. 해병 사단" }
+		27 = { "%d. 해병 사단" }
+		28 = { "%d. 해병 사단" }
+		29 = { "%d. 해병 사단" }
+		30 = { "%d. 해병 사단" }
+
+	}
+}
+
+MUJ_MTN_01 = 
+{
+	name = "Mountain Divisions"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. Mountain 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 Mountain 사단" }
+		2 = { "가즈니 Mountain 사단" }
+		3 = { "헤라트 Mountain 사단" }
+		4 = { "잘랄라바드 Mountain 사단" }
+		5 = { "칸다하르 Mountain 사단" }
+		6 = { "마야메네 Mountain 사단" }
+		7 = { "마자르 샤 Mountain 사단" }
+		8 = { "자히르 샤 Mountain 사단" }
+		9 = { "압두르 라만 Mountain 사단" }
+		10 = { "나디르 샤 Mountain 사단" }
+		11 = { "도스트 모하마드 Mountain 사단" }
+		12 = { "샤 슈자 Mountain 사단" }
+		13 = { "탈로칸 Mountain 사단" }
+		14 = { "퀀도즈 Mountain 사단" }
+		15 = { "홀름 Mountain 사단" }
+		16 = { "아이벡 Mountain 사단" }
+		17 = { "셰베르간 Mountain 사단" }
+		18 = { "발흐 Mountain 사단" }
+		19 = { "메이마네 Mountain 사단" }
+		20 = { "다울라타바드 Mountain 사단" }
+		21 = { "타린 콧 Mountain 사단" }
+		22 = { "달랏 Mountain 사단" }
+		23 = { "카시로드 Mountain 사단" }
+		24 = { "라슈카르 간 Mountain 사단" }
+		25 = { "미라바드 Mountain 사단" }
+		26 = { "%d. Mountain 사단" }
+		27 = { "%d. Mountain 사단" }
+		28 = { "%d. Mountain 사단" }
+		29 = { "%d. Mountain 사단" }
+		30 = { "%d. Mountain 사단" }
+
+	}
+}
+
+MUJ_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { MUJ }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MUJ_INF_01 }
+
+	fallback_name = "%d. 공수 사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "파이자바드 공수 사단" }
+		2 = { "가즈니 공수 사단" }
+		3 = { "헤라트 공수 사단" }
+		4 = { "잘랄라바드 공수 사단" }
+		5 = { "칸다하르 공수 사단" }
+		6 = { "마야메네 공수 사단" }
+		7 = { "마자르 샤 공수 사단" }
+		8 = { "자히르 샤 공수 사단" }
+		9 = { "압두르 라만 공수 사단" }
+		10 = { "나디르 샤 공수 사단" }
+		11 = { "도스트 모하마드 공수 사단" }
+		12 = { "샤 슈자 공수 사단" }
+		13 = { "탈로칸 공수 사단" }
+		14 = { "퀀도즈 공수 사단" }
+		15 = { "홀름 공수 사단" }
+		16 = { "아이벡 공수 사단" }
+		17 = { "셰베르간 공수 사단" }
+		18 = { "발흐 공수 사단" }
+		19 = { "메이마네 공수 사단" }
+		20 = { "다울라타바드 공수 사단" }
+		21 = { "타린 콧 공수 사단" }
+		22 = { "달랏 공수 사단" }
+		23 = { "카시로드 공수 사단" }
+		24 = { "라슈카르 간 공수 사단" }
+		25 = { "미라바드 공수 사단" }
+		26 = { "%d. 공수 사단" }
+		27 = { "%d. 공수 사단" }
+		28 = { "%d. 공수 사단" }
+		29 = { "%d. 공수 사단" }
+		30 = { "%d. 공수 사단" }
+
+	}
+}

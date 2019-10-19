@@ -1,0 +1,1178 @@
+ideas = {
+	country = {
+		
+		################################
+		##### 부족 영향력 level ####
+		################################
+
+		MUJ_idea_tribe_influence_none = {
+
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		MUJ_idea_tribe_influence_1 = {
+
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.07
+				conscription_factor = -0.02
+				production_speed_buildings_factor = -0.01
+			}
+		}
+
+		
+		MUJ_idea_tribe_influence_2 = {
+
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.09
+				conscription_factor = -0.04
+				production_speed_buildings_factor = -0.02
+			}
+		}
+		
+		MUJ_idea_tribe_influence_3 = {
+
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.11
+				conscription_factor = -0.06
+				production_speed_buildings_factor = -0.03
+			}
+		}
+		
+		MUJ_idea_tribe_influence_4 = {
+
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.13
+				conscription_factor = -0.08
+				production_speed_buildings_factor = -0.04
+			}
+		}
+
+		MUJ_idea_tribe_influence_5 = {
+
+			picture = chi_war_of_resistance2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				conscription_factor = -0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		MUJ_idea_tribe_influence_6 = {
+
+			picture = chi_war_of_resistance2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.17
+				conscription_factor = -0.12
+				production_speed_buildings_factor = -0.06
+			}
+		}
+
+		MUJ_idea_tribe_influence_7 = {
+
+			picture = chi_war_of_resistance2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.19
+				conscription_factor = -0.14
+				production_speed_buildings_factor = -0.07
+			}
+		}
+
+		MUJ_idea_tribe_influence_8 = {
+
+			picture = chi_war_of_resistance2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.21
+				conscription_factor = -0.16
+				production_speed_buildings_factor = -0.08
+			}
+		}
+
+		MUJ_idea_tribe_influence_9 = {
+
+			picture = chi_war_of_resistance2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.23
+				conscription_factor = -0.18
+				production_speed_buildings_factor = -0.09
+			}
+		}
+
+		MUJ_idea_tribe_influence_10 = {
+
+			picture = chi_war_of_resistance3
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				conscription_factor = -0.2
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		################################
+		##### 종교 영향력 level ####
+		################################
+
+		MUJ_idea_religion_influence_none = {
+
+			picture = raj_marginalized_muslim_community_happy
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		MUJ_idea_religion_influence_1 = {
+
+			picture = raj_marginalized_muslim_community_happy
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.13
+				war_support_factor = 0.04
+				army_core_attack_factor = 0.04
+				army_core_defence_factor = 0.04
+			}
+		}
+
+		
+		MUJ_idea_religion_influence_2 = {
+
+			picture = raj_marginalized_muslim_community_happy
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.16
+				war_support_factor = 0.07
+				army_core_attack_factor = 0.07
+				army_core_defence_factor = 0.07
+			}
+		}
+		
+		MUJ_idea_religion_influence_3 = {
+
+			picture = raj_marginalized_muslim_community_happy
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.19
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		MUJ_idea_religion_influence_4 = {
+
+			picture = raj_marginalized_muslim_community_happy
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.22
+				war_support_factor = 0.13
+				army_core_attack_factor = 0.13
+				army_core_defence_factor = 0.13
+			}
+		}
+
+		MUJ_idea_religion_influence_5 = {
+
+			picture = raj_marginalized_muslim_community
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.25
+				war_support_factor = 0.16
+				army_core_attack_factor = 0.16
+				army_core_defence_factor = 0.16
+			}
+		}
+
+		MUJ_idea_religion_influence_6 = {
+
+			picture = raj_marginalized_muslim_community
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.28
+				war_support_factor = 0.19
+				army_core_attack_factor = 0.19
+				army_core_defence_factor = 0.19
+			}
+		}
+
+		MUJ_idea_religion_influence_7 = {
+
+			picture = raj_marginalized_muslim_community
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.31
+				war_support_factor = 0.22
+				army_core_attack_factor = 0.22
+				army_core_defence_factor = 0.22
+			}
+		}
+
+		MUJ_idea_religion_influence_8 = {
+
+			picture = raj_marginalized_muslim_community
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.34
+				war_support_factor = 0.25
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+			}
+		}
+
+		MUJ_idea_religion_influence_9 = {
+
+			picture = raj_marginalized_muslim_community
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.37
+				war_support_factor = 0.28
+				army_core_attack_factor = 0.28
+				army_core_defence_factor = 0.28
+			}
+		}
+
+		MUJ_idea_religion_influence_10 = {
+
+			picture = raj_marginalized_muslim_community_angry
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.4
+				war_support_factor = 0.4
+				army_core_attack_factor = 0.4
+				army_core_defence_factor = 0.4
+			}
+		}
+		
+		################################
+		##### 아편 영향력 level ####
+		################################
+
+		MUJ_idea_opium_industry_none = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		MUJ_idea_opium_industry_1 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.01
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		
+		MUJ_idea_opium_industry_2 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		
+		MUJ_idea_opium_industry_3 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.03
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		
+		MUJ_idea_opium_industry_4 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.04
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+			}
+		}
+
+		MUJ_idea_opium_industry_5 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		MUJ_idea_opium_industry_6 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.06
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		MUJ_idea_opium_industry_7 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.07
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		MUJ_idea_opium_industry_8 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.08
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		MUJ_idea_opium_industry_9 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.09
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		MUJ_idea_opium_industry_10 = {
+
+			picture = prc_permit_opium_trade
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		#무능한 장교
+		NS_MUJ_incompetence_officer = {	#무능한 장교
+
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.7
+				planning_speed = -0.10
+			}
+		}
+		#부패한 육군
+		NS_MUJ_incompetence_warrior_1 = {
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				mobilization_speed = -0.3
+			}
+
+		}
+
+		NS_MUJ_incompetence_warrior_2 = {
+
+			picture = chi_army_corruption2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.33
+				army_defence_factor = -0.33
+				mobilization_speed = -0.2
+			}
+
+		}
+		NS_MUJ_incompetence_warrior_3 = {
+
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.16
+				army_defence_factor = -0.16
+				mobilization_speed = -0.1
+			}
+
+		}
+		
+		NS_MUJ_rampant_communicable_diseases_2 = {	#전염병2
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = -0.1
+
+			}
+		}
+		NS_MUJ_rampant_communicable_diseases_1 = {	#전염병1
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = -0.05
+
+			}
+		}
+
+		NS_MUJ_famine_3 = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.15
+
+			}
+		}
+
+		NS_MUJ_famine_2 = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.1
+
+			}
+		}
+
+		NS_MUJ_famine_1 = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.05
+
+			}
+		}
+		
+		#칼리프 선언
+		MUJ_idea_caliph_declaration = {
+
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.25
+				drift_defence_factor = 0.25
+			}
+		}
+		#아미르 선언
+		MUJ_idea_amir_declaration = {
+
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+
+		MUJ_reeducation_campaign = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = { has_stability < 0.5 }
+			
+			removal_cost = -1
+
+			picture = socialist_science_focus
+			
+			modifier = {
+				stability_weekly = 0.05
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	}
+	political_advisor = {
+
+		MUJ_haji_faiz_muhammed_zikeria = {
+
+			picture = generic_political_advisor_arab_1
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { ideological_crusader }
+		}
+
+		MUJ_mohammad_hashim_khan = {
+
+			picture = generic_political_advisor_arab_2
+				
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		MUJ_muhammed_nowroz = {
+
+			picture = generic_political_advisor_arab_3
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { armaments_organizer }
+		}
+
+		MUJ_mahmud_khan = {
+
+			picture = generic_political_advisor_arab_1
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}
+
+	theorist = {
+
+		MUJ_muhammad_amin_bughra = {
+					
+			picture = generic_political_advisor_arab_2
+
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+
+		MUJ_renato_bardolucci = {
+					
+			picture = generic_army_europe_1
+				
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	high_command = {
+
+		MUJ_mohammed_daoud_khan = {
+
+			picture = generic_political_advisor_arab_1
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MUJ_azam_ataullah = {
+
+			picture = generic_army_arab_2
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { army_infantry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MUJ_aalem_daana = {
+
+			picture = generic_navy_arab_3
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MUJ_hares_muzafar = {
+
+			picture = generic_army_arab_3
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		MUJ_asadullah_seraj_khan = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MUJ_wazir_akbar_khan = {
+			
+			picture = generic_army_arab_3
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+
+		MUJ_ali_muhammed_khan = {
+			
+			picture = generic_air_arab_1
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MUJ_gholam_wali = {
+			
+			picture = generic_air_arab_3
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		MUJ_nasirullah_husain = {
+			
+			picture = generic_navy_arab_2
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MUJ_mohammed_etemadi_khan = {
+			
+			picture = generic_navy_arab_1
+			
+			allowed = {
+				original_tag = MUJ
+			}
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

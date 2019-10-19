@@ -1,0 +1,2657 @@
+equipment_modules = {
+#ship_cruise_missile_launcher_4
+#ship_cruise_missile_launcher_8
+#ship_cruise_missile_launcher_12
+#ship_cruise_missile_launcher_16
+#ship_cruise_missile_launcher_32
+##
+#ship_cruise_missile_launcher_heavy_4
+#ship_cruise_missile_launcher_heavy_8
+#ship_cruise_missile_launcher_heavy_12
+#ship_cruise_missile_launcher_heavy_16
+#ship_cruise_missile_launcher_heavy_20
+#----------------------------------------------------------------------------
+#주 무장
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_4_1 = {
+		category = ship_cruise_missile_launcher_4
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_4_2 = {
+		category = ship_cruise_missile_launcher_4
+		parent = ship_cruise_missile_launcher_4_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_4_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_4_3 = {
+		category = ship_cruise_missile_launcher_4
+		parent = ship_cruise_missile_launcher_4_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_4_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_4_4 = {
+		category = ship_cruise_missile_launcher_4
+		parent = ship_cruise_missile_launcher_4_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_4_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_4_5 = {
+		category = ship_cruise_missile_launcher_4
+		parent = ship_cruise_missile_launcher_4_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_4_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_4_6 = {
+		category = ship_cruise_missile_launcher_4
+		parent = ship_cruise_missile_launcher_4_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_4_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_4_7 = {
+		category = ship_cruise_missile_launcher_4
+		parent = ship_cruise_missile_launcher_4_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_4_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_4_8 = {
+		category = ship_cruise_missile_launcher_4
+		parent = ship_cruise_missile_launcher_4_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_4_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_8_1 = {
+		category = ship_cruise_missile_launcher_8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_8_2 = {
+		category = ship_cruise_missile_launcher_8
+		parent = ship_cruise_missile_launcher_8_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_8_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_8_3 = {
+		category = ship_cruise_missile_launcher_8
+		parent = ship_cruise_missile_launcher_8_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_8_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_8_4 = {
+		category = ship_cruise_missile_launcher_8
+		parent = ship_cruise_missile_launcher_8_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_8_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_8_5 = {
+		category = ship_cruise_missile_launcher_8
+		parent = ship_cruise_missile_launcher_8_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_8_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_8_6 = {
+		category = ship_cruise_missile_launcher_8
+		parent = ship_cruise_missile_launcher_8_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_8_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_8_7 = {
+		category = ship_cruise_missile_launcher_8
+		parent = ship_cruise_missile_launcher_8_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_8_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_8_8 = {
+		category = ship_cruise_missile_launcher_8
+		parent = ship_cruise_missile_launcher_8_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_8_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_12_1 = {
+		category = ship_cruise_missile_launcher_12
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_12_2 = {
+		category = ship_cruise_missile_launcher_12
+		parent = ship_cruise_missile_launcher_12_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_12_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_12_3 = {
+		category = ship_cruise_missile_launcher_12
+		parent = ship_cruise_missile_launcher_12_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_12_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_12_4 = {
+		category = ship_cruise_missile_launcher_12
+		parent = ship_cruise_missile_launcher_12_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_12_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_12_5 = {
+		category = ship_cruise_missile_launcher_12
+		parent = ship_cruise_missile_launcher_12_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_12_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_12_6 = {
+		category = ship_cruise_missile_launcher_12
+		parent = ship_cruise_missile_launcher_12_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_12_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_12_7 = {
+		category = ship_cruise_missile_launcher_12
+		parent = ship_cruise_missile_launcher_12_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_12_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_12_8 = {
+		category = ship_cruise_missile_launcher_12
+		parent = ship_cruise_missile_launcher_12_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_12_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_16_1 = {
+		category = ship_cruise_missile_launcher_16
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_16_2 = {
+		category = ship_cruise_missile_launcher_16
+		parent = ship_cruise_missile_launcher_16_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_16_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_16_3 = {
+		category = ship_cruise_missile_launcher_16
+		parent = ship_cruise_missile_launcher_16_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_16_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_16_4 = {
+		category = ship_cruise_missile_launcher_16
+		parent = ship_cruise_missile_launcher_16_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_16_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_16_5 = {
+		category = ship_cruise_missile_launcher_16
+		parent = ship_cruise_missile_launcher_16_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_16_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_16_6 = {
+		category = ship_cruise_missile_launcher_16
+		parent = ship_cruise_missile_launcher_16_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_16_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_16_7 = {
+		category = ship_cruise_missile_launcher_16
+		parent = ship_cruise_missile_launcher_16_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_16_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_16_8 = {
+		category = ship_cruise_missile_launcher_16
+		parent = ship_cruise_missile_launcher_16_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_16_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_32_1 = {
+		category = ship_cruise_missile_launcher_32
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_32_2 = {
+		category = ship_cruise_missile_launcher_32
+		parent = ship_cruise_missile_launcher_32_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_32_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_32_3 = {
+		category = ship_cruise_missile_launcher_32
+		parent = ship_cruise_missile_launcher_32_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_32_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_32_4 = {
+		category = ship_cruise_missile_launcher_32
+		parent = ship_cruise_missile_launcher_32_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_32_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_32_5 = {
+		category = ship_cruise_missile_launcher_32
+		parent = ship_cruise_missile_launcher_32_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_32_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_32_6 = {
+		category = ship_cruise_missile_launcher_32
+		parent = ship_cruise_missile_launcher_32_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_32_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_32_7 = {
+		category = ship_cruise_missile_launcher_32
+		parent = ship_cruise_missile_launcher_32_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_32_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_32_8 = {
+		category = ship_cruise_missile_launcher_32
+		parent = ship_cruise_missile_launcher_32_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_32
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_32_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_heavy_4_1 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_4_2 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		parent = ship_cruise_missile_launcher_heavy_4_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_4_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_4_3 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		parent = ship_cruise_missile_launcher_heavy_4_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_4_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_4_4 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		parent = ship_cruise_missile_launcher_heavy_4_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_4_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_4_5 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		parent = ship_cruise_missile_launcher_heavy_4_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_4_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_4_6 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		parent = ship_cruise_missile_launcher_heavy_4_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_4_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_4_7 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		parent = ship_cruise_missile_launcher_heavy_4_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_4_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_4_8 = {
+		category = ship_cruise_missile_launcher_heavy_4
+		parent = ship_cruise_missile_launcher_heavy_4_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_4
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_4_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_heavy_8_1 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_8_2 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		parent = ship_cruise_missile_launcher_heavy_8_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_8_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_8_3 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		parent = ship_cruise_missile_launcher_heavy_8_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_8_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_8_4 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		parent = ship_cruise_missile_launcher_heavy_8_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_8_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_8_5 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		parent = ship_cruise_missile_launcher_heavy_8_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_8_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_8_6 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		parent = ship_cruise_missile_launcher_heavy_8_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_8_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_8_7 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		parent = ship_cruise_missile_launcher_heavy_8_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_8_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_8_8 = {
+		category = ship_cruise_missile_launcher_heavy_8
+		parent = ship_cruise_missile_launcher_heavy_8_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_8
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_8_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_heavy_12_1 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_12_2 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		parent = ship_cruise_missile_launcher_heavy_12_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_12_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_12_3 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		parent = ship_cruise_missile_launcher_heavy_12_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_12_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_12_4 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		parent = ship_cruise_missile_launcher_heavy_12_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_12_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_12_5 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		parent = ship_cruise_missile_launcher_heavy_12_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_12_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_12_6 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		parent = ship_cruise_missile_launcher_heavy_12_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_12_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_12_7 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		parent = ship_cruise_missile_launcher_heavy_12_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_12_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_12_8 = {
+		category = ship_cruise_missile_launcher_heavy_12
+		parent = ship_cruise_missile_launcher_heavy_12_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_12
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_12_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_heavy_16_1 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_16_2 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		parent = ship_cruise_missile_launcher_heavy_16_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_16_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_16_3 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		parent = ship_cruise_missile_launcher_heavy_16_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_16_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_16_4 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		parent = ship_cruise_missile_launcher_heavy_16_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_16_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_16_5 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		parent = ship_cruise_missile_launcher_heavy_16_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_16_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_16_6 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		parent = ship_cruise_missile_launcher_heavy_16_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_16_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_16_7 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		parent = ship_cruise_missile_launcher_heavy_16_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_16_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_16_8 = {
+		category = ship_cruise_missile_launcher_heavy_16
+		parent = ship_cruise_missile_launcher_heavy_16_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_16
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_16_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+	ship_cruise_missile_launcher_heavy_20_1 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.75
+			build_cost_ic = 750
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_20_2 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		parent = ship_cruise_missile_launcher_heavy_20_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.25
+			build_cost_ic = 800
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 12
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_20_1
+			convert_cost_ic = 300
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_20_3 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		parent = ship_cruise_missile_launcher_heavy_20_2
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7.75
+			build_cost_ic = 825
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 13
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 500
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_20_2
+			convert_cost_ic = 350
+			convert_cost_resources = {
+				steel = 1
+			}
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_20_4 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		parent = ship_cruise_missile_launcher_heavy_20_3
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_20_3
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_20_5 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		parent = ship_cruise_missile_launcher_heavy_20_4
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_20_4
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_20_6 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		parent = ship_cruise_missile_launcher_heavy_20_5
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_20_5
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_20_7 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		parent = ship_cruise_missile_launcher_heavy_20_6
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_20_6
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_cruise_missile_launcher_heavy_20_8 = {
+		category = ship_cruise_missile_launcher_heavy_20
+		parent = ship_cruise_missile_launcher_heavy_20_7
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 9
+			build_cost_ic = 900
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_cruise_missile_launcher_heavy_20
+			convert_cost_ic = 600
+			convert_cost_resources = {
+				steel = 2
+			}
+		}
+		can_convert_from = {
+			module = ship_cruise_missile_launcher_heavy_20_7
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+#--------------------------------------------------------------------
+ 
+}

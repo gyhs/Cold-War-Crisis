@@ -1,0 +1,138 @@
+sub_units = {
+	
+	# 전투기 #
+	fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { fighter_equipment = 1 }
+		categories = { category_fighter }
+	}
+	cv_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { cv_fighter_equipment = 1 }
+		categories = { category_fighter }
+	}
+	heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { heavy_fighter_equipment = 1 }
+		categories = { category_heavy_fighter }
+	}
+	cv_cas = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { cv_CAS_equipment = 1 }
+		categories = { category_heavy_fighter }
+	}
+
+	cv_nav_bomber = {
+		sprite = light_plane
+		priority = 3
+		active = yes
+		type = { naval_bomber }
+		need = { cv_nav_bomber_equipment = 1 }
+		categories = { category_nav_bomber }
+	}
+	
+	# 경 전투기 #
+	light_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { light_fighter_equipment = 1 }
+		categories = { category_fighter }
+	}
+	
+	# CAS and Bombers #	
+	cas = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { CAS_equipment = 1 }
+		categories = { category_cas }
+	}
+	
+	# 공격헬기 #	
+	attack_helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { attack_helicopter_equipment = 1 }
+		categories = { category_attack_helicopter }
+	}
+	
+	nav_bomber = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { naval_bomber }
+		need = { nav_bomber_equipment = 1 }
+		categories = { category_nav_bomber }
+	}
+
+	strat_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { strat_bomber_equipment = 1 }
+		categories = { category_strat_bomber }
+	}
+	
+	jet_strat_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { jet_strat_bomber_equipment = 1 }
+		categories = { category_strat_bomber }
+	}
+	
+	supersonic_strategic_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { supersonic_strat_bomber_equipment = 1 }
+		categories = { category_strat_bomber }
+	}
+	
+	stealth_strategic_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { stealth_strat_bomber_equipment = 1 }
+		categories = { category_strat_bomber }
+	}
+	
+	transport_plane = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { air_transport }
+		need = { transport_plane_equipment = 1 }
+		categories = { category_strat_bomber }
+	}
+
+	guided_missile = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { guided_missile_equipment = 1 }
+		categories = { category_strat_bomber }
+	}
+}

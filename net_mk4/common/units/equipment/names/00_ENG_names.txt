@@ -1,0 +1,389 @@
+﻿ENG = {
+	submarine = {
+		prefix = "HMS"
+		generic = { "Submarine" }
+		unique = {
+			# Starting with S-class ships 
+			"Swordfish" "Sturgeon" "Seahorse" "Starfish" "Thames" "Severn" "Clyde" "Sealion" "Shark" "Snapper" "Salmon" "Seawolf" "Spearfish" "Sunfish" "Sterlet" 
+			"Porpoise" "Grampus" "Narwhal" "Rorqual" "Cachalot" "Seal" "Triton" "Thetis" "Tribune" "Trident" "Triumph" 
+			"Undine" "Unity" "Ursula" "Umpire" "Una" "Unbeaten" "Undaunted" "Union" "Unique" "Upholder" "Upright" "Urchin" "Urge" "Usk" "Utmost" 
+			"Taku" "Tarpon" "Thistle" "Tigris" "Triad" "Truant" "Tuna" "Talisman" "Tetrarch" "Torbay" "Tempest" "Thorn" "Thrasher" "Traveller" "Trooper" "Trusty" "Turbulent" 
+			"Uproar" "P32" "P33" "Ultimatum" "Umbra" "P36" "Unbending" "P38" "P39" "P41" "P611" "P612" "P614" "P615" 
+			"Safari" "Sahib" "Saracen" "Satyr" "Sceptre" "Seadog" "Sibyl" "Sea Rover" "Seraph" "Shakespeare" "P222" "Sea Nymph" "Sickle" "Simoom" "Sirdar" "Spiteful" "Splendid" "Sportsman" 
+			"Unbroken" "Unison" "United" "Unrivalled" "Unruffled" "P47" "P48" "Unruly" "Unseen" "P52" "Ultor" "Unshaken" 
+			"P311" "Trespasser" "Tactician" "Truculent" "Templar" "Tally-Ho" "Tantalus" "Tantivy" 
+			"Stoic" "Stonehenge" "Storm" "Stratagem" "Strongbow" "Spark" "Scythian" "Stubborn" "Surf" "Syrtis" "Shalimar" "Scotsman" "Sea Devil" "Spirit" "Statesman" 
+			"Unsparing" "Usurper" "Universal" "Untamed" "Untiring" "Varangian" "Uther" "Unswerving" "Vandal" "Upstart" "Varne" "Vox" 
+			"Sturdy" "Stygian" "Subtle" "Supreme" "Sea Scout" "Selene" "Seneschal" "Sentinel" "Sidon" "Sleuth" "Solent" "Spearhead" 
+			"Venturer" "Viking" "Vampire" "Vox" "Vigorous" "Virtue" "Visigoth" "Vivid" "Voracious" "Vulpine" "Varne" "Upshot" "Urtica" "Vengeful" "Vortex" "Virulent" "Volatile" 
+			"Springer" "Telemachus" "Terrapin" "Thorough" "Thule" "Tudor" "Tireless" "Token" "Tradewind" "Trenchant" "Tiptoe" "Trump" "Taciturn" "Tapir" "Talent" "Teredo" 
+			"Saga" "Scorcher" "Spur" "Sanguine" "Votary" "Vagabond" "Amphion" "Astute" "Auriga" "Aurochs" "Alcide" "Alderney" "Alliance" "Ambush" "Anchorite" "Andrew" "Affray" "Aeneas" 
+			"Alaric" "Tabard" "Totem" "Truncheon" "Turpin" "Thermopylae" "Artemis" "Artful" "Acheron" "Ace" "Achates" 
+			###planned but cancelled, etc.
+			"Vantage"  "Vehement" "Venom" "Verve" "Unbridled" "Upward" "Sea Robin" "Sprightly" "Surface" "Surge" "Poseidon" "Veto" "Virile" "Visitan" "Upas" "Ulex" "Utopia" 
+			"Andromache" "Answer" "Antagonist" "Antaeus" "Anzac" "Aphrodite" "Approach" "Arcadian" "Ardent" "Argosy" "Atlantis" "Admirable" "Asperity" "Austere" "Adversary" "Aztec" "Abelard" 
+			"Acasta" "Agate" "Aggressor" "Agile" "Aladdin" "Alcestis" "Asgard" "Assurance" "Astarte" 
+		}
+	}
+	destroyer = {
+		prefix = "HMS"
+		generic = { "Destroyer"	}
+		unique = {
+			# Starting with G-class ships
+			"Gallant" "Garland" "Gipsy" "Glowworm" "Grafton" "Grenade" "Grenville" "Greyhound" "Griffin" "Hardy" "Hasty" "Havock" "Hereward" "Hero" "Hostile" "Hotspur" "Hunter" "Hyperion" 
+			"Icarus" "Ilex" "Imogen" "Imperial" "Impulsive" "Inglefield" "Intrepid" "Isis" "Ivanhoe" "Harvester" "Havant" "Havelock" "Hesperus" "Highlander" "Hurricane"
+			"Jervis" "Jackal" "Jaguar" "Juno" "Janus" "Javelin" "Jersey" "Jupiter" "Kelly" "Kandahar" "Kashmir" "Kelvin" "Khartoum" "Kimberley" "Kingston" "Kipling" "Napier" "Nestor" "Nizam" "Norman" "Nepal" 
+			"Laforey" "Lance" "Gurkha" "Lively" "Legion" "Lightning" "Lookout" "Loyal" "Milne" "Mahratta" "Musketeer" "Myrmidon" "Matchless" "Meteor" "Marne" "Martin" 
+			"Onslow" "Offa" "Onslaught" "Oribi" "Obdurate" "Obedient" "Opportune" "Orwell" "Pakenham" "Paladin" "Panther" "Partridge" "Pathfinder" "Penn" "Petard" "Porcupine" 
+			"Inconstant" "Ithuriel" 
+			"Queenborough" "Quadrant" "Quail" "Quality" "Quentin" "Quiberon" "Quickmatch" "Quilliam" "Rotherham" "Racehorse" "Raider" "Rapid" "Redoubt" "Relentless" "Rocket" "Roebuck" 
+			"Saumarez" "Savage" "Scorpion" "Scourge" "Serapis" "Shark" "Success" "Swift" "Teazer" "Tenacious" "Termagant" "Terpsichore" "Troubridge" "Tumult" "Tuscan" "Tyrian" 
+			"Grenville" "Ulster" "Ulysses" "Undaunted" "Undine" "Ursa" "Urchin" "Urania" "Venus" "Verulam" "Vigilant" "Virago" "Hardy" "Valentine" "Vixen" "Volage" 
+			"Kempenfelt" "Wager" "Wakeful" "Wessex" "Whelp" "Whirlwind" "Wizard" "Wrangler" 
+			"Myngs" "Zephyr" "Zambesi" "Zealous" "Zebra" "Zenith" "Zest" "Zodiac" "Caprice" "Cassandra" "Caesar" "Cavendish" "Cambrian" "Carron" "Cavalier" "Carysfort" 
+			"Chaplet" "Charity" "Chequers" "Chieftain" "Chevron" "Cheviot" "Childers" "Chivalrous" "Comus" "Concord" "Contest" "Consort" "Cockade" "Comet" "Constance" "Cossack" 
+			"Crescent" "Crusader" "Croziers" "Crystal" "Crispin" "Creole" "Cromwell" "Crown" 
+			"Battleaxe" "Broadsword" "Crossbow" "Scorpion" "Daring" "Dainty" "Defender" "Decoy" "Diana" "Duchess" "Malplaquet" "Ypres" "Vimiera" 
+			# Cancelled/Not completed
+			"Noble" "Nerissa" "Nonpareil" 
+			"Cutlass" "Dagger" "Culverin" "Howitzer" "Longbow" "Sword" "Musket" "Lance" "Carronade" "Claymore" "Dirk" "Grenade" "Halberd" "Poniard" "Rifle" "Spear"
+			"Leeds" "Lewes" "Ludlow" "Bath" "Brighton" "Campbelltown" "Caldwell" "Castleton" "Charlestown" "Chelsea" "Columbia" "Georgetown" "Hamilton" "Lancaster" "Leamington" "Lincoln" "Mansfield" 
+			"Montgomery" "Newark" "Newmarket" "Newport" "Niagara" "Richmond" "Roxburgh" "St. Albans" "St. Clair" "St. Mary's" "Salisbury" "Wells" "Belmont" "Beverley" "Bradford" "Broadwater" "Broadway" 
+			"Burnham" "Burwell" "Buxton" "Cameron" "Chesterfield" "Churchill" "Clare" "Ramsey" "Reading" "Ripley" "Rockingham" "Sherwood" "Stanley"
+		}
+	}
+	light_cruiser = {
+		prefix = "HMS"
+		generic = { "Light Cruiser" }
+		unique = {
+			# Starting with Leander class (less HMNZS ships)
+			"Amphion" "Apollo" "Penelope" "Aurora" "Southampton" "Birmingham" "Glasgow" "Newcastle" "Sheffield" "Gloucester" "Liverpool" "Manchester" "Edinburgh" "Belfast" 
+			"Fiji" "Kenya" "Nigeria" "Mauritius" "Trinidad" "Gambia" "Jamaica" "Bermuda" "Ceylon" "Newfoundland" "Uganda" "Swiftsure" "Minotaur" "Superb"  
+			"Tiger" "Lion" "Blake" "Hawke" "Bellerophon" 
+			##reusing WW1 ship names from here##
+			"Constance" "Centaur" "Concord" "Phaeton" "Bristol" "Weymouth" "Dartmouth" "Falmouth" "Yarmouth" "Chatham" "Caroline" "Caledon" "Calypso" "Caradoc" "Cardiff" "Ceres" 
+			"Coventry" "Curacoa" "Curlew" "Cairo" "Calcutta" "Capetown" "Carlisle" "Colombo" "Danae" "Dauntless" "Dragon" "Delhi" "Dunedin" "Durban" "Despatch" "Diomede" "Emerald" 
+			"Enterprise" "Achilles" "Ajax" "Leander" "Neptune" "Orion" "Arethusa" "Galatea" 
+		}
+	}
+	light_cruiser_aa = {
+		prefix = "HMS"
+		generic = { "Light Cruiser AA" }
+		unique = {
+			# Starting with Leander class (less HMNZS ships)
+			"Bonaventure" "Dido" "Naiad" "Phoebe" "Hermione" "Euryalus" "Charybdis" "Cleopatra" "Sirius" "Scylla" "Argonaut" "Bellona" "Black Prince" "Diadem" "Royalist" "Spartan" 
+			"Tiger" "Lion" "Blake" 
+			##reusing WW1 ship names from here##
+			"Constance" "Centaur" "Concord" "Phaeton" "Bristol" "Weymouth" "Dartmouth" "Falmouth" "Yarmouth" "Chatham" "Caroline" "Caledon" "Calypso" "Caradoc" "Cardiff" "Ceres" 
+			"Coventry" "Curacoa" "Curlew" "Cairo" "Calcutta" "Capetown" "Carlisle" "Colombo" "Danae" "Dauntless" "Dragon" "Delhi" "Dunedin" "Durban" "Despatch" "Diomede" "Emerald" 
+			"Enterprise" "Achilles" "Ajax" "Leander" "Neptune" "Orion" 
+		}
+	}
+	heavy_cruiser = {
+		prefix = "HMS"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Cavendish" "Raleigh" "Imperieuse" "Orlando" "Blake" "Surrey" "Blenheim" 
+			"Hawkins" "Frobisher" "Effingham" "Cumberland" "Berwick" "Cornwall" "Suffolk" "Kent" "London" "Devonshire" "Shropshire" "Sussex" "Norfolk" "Dorsetshire" 
+			"York" "Exeter" 
+			###
+			"Edgar" "Hawke" "Endymion" "Grafton" "St. George" "Northumberland" "Crescent" "Powerful" "Terrible" 
+			"Diadem" "Niobe" "Amphitrite" "Ariadne" "Spartiate" "Hogue" "Bacchante" "Euryalus" "Drake" "Good Hope" "Essex" "Hampshire" "Carnarvon" "Antrim" "Roxburgh" "Argyll" "Duke of Edinburgh" "Cochrane"
+        }
+	}
+	battle_cruiser = {
+        prefix = "HMS"
+        generic = { "battle_cruiser" }
+        unique = {
+            "Anson" "Howe" "Jellicoe" "Beatty" "Resistance" "Incomparable" "Invincible" "Inflexible" "Indomitable" "Indefatigable" "Princess Royal" "Queen Mary" "Tiger"
+            "Renown" "Repulse" "Courageous" "Glorious" "Furious" "Hood" "Rodney"
+        }
+    }
+    battleship = {
+        prefix = "HMS"
+        generic = { "Battleship" }
+        unique = {
+            "King George V" "Prince of Wales" "Duke of York" "Anson" "Howe" "Jellicoe" "Beatty" "Lion" "Temeraire" "Conqueror" "Thunderer" "Vanguard" "Agincourt" "Resistance"
+            "Bellerophon" "Superb" "St Vincent" "Collingwood" "Neptune" "Colossus" "Hercules" "Orion" "Monarch" "Centurion" "Audacious" "Ajax" "Erin" "Iron Duke" "Marlborough" 
+			"Benbow" "Emperor of India"
+            "Queen Elizabeth" "Warspite" "Valiant" "Barham" "Malaya" "Revenge" "Resolution" "Royal Oak" "Royal Sovereign" "Ramillies" "Renown" "Repulse" "Nelson" "Rodney"
+        }
+    }
+    SH_battleship = {
+        prefix = "HMS"
+        generic = { "Heavy Battleship" }
+        unique = {
+            "Bellerophon" "Superb" "St Vincent" "Collingwood" "Neptune" "Colossus" "Hercules" "Orion" "Monarch" "Centurion" "Audacious" "Ajax" "Erin" "Iron Duke" "Marlborough" 
+			"Benbow" "Emperor of India" "Lion" "Temeraire" "Conqueror" "Thunderer" "Vanguard" "Agincourt" "Resistance""Jellicoe" "Beatty" 
+        }
+    }
+	carrier = {
+		prefix = "HMS"
+		generic = { "Carrier" }
+		unique = {
+			"Ark Royal" "Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" 
+			"Audacious" "Malta" "New Zealand" "Gibraltar" "Africa" 
+			"Glorious" "Courageous" "Furious" "Eagle" 
+			"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Leviathan" "Arrogant" "Monmouth" "Polyphemus" 
+			
+		}
+	}
+	light_carrier = {
+		prefix = "HMS"
+		generic = { "Light Carrier" }
+		unique = {
+			"Unicorn" "Colossus" "Venerable" "Vengeance" "Glory" "Pioneer" "Ocean" "Perseus" "Theseus" "Triumph" "Warrior" 
+			"Magnificent" "Powerful" "Terrible" "Majestic" "Hercules" "Leviathan"  "Argus" "Hermes" 
+			"Centaur" "Albion" "Bulwark" "Elephant" "Arrogant" "Monmouth" "Polyphemus" "Europa" "Andromeda" 
+			
+		}
+	}
+	super_carrier = {
+		prefix = "HMS"
+		generic = { "Carrier" }
+		unique = {
+			"Ark Royal" "Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" 
+			"Audacious" "Malta" "New Zealand" "Gibraltar" "Africa" 
+			"Glorious" "Courageous" "Furious" "Eagle" 
+			"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Leviathan" "Arrogant" "Monmouth" "Polyphemus" 
+			
+		}
+	}
+	air_wing_names_template = AIR_WING_NAME_ENG_FALLBACK
+
+	#Air wings can only be named through archetype
+	fighter_equipment = {
+		prefix = ""
+		generic = { "Fighter Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 11 Fighter Wing" "No. 12 Fighter Wing" "No. 14 Fighter Wing" "No. 13 Fighter Wing" "No. 10 Fighter Wing" "No. 207 Fighter Wing" "No. 211 Fighter Wing" "No. 212 Fighter Wing" "No. 213 Fighter Wing" "No. 214 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 9 Fighter Wing" "No. 22 Fighter Wing" "No. 23 Fighter Wing" "No. 24 Fighter Wing" "No. 25 Fighter Wing" "No. 26 Fighter Wing" "No. 27 Fighter Wing" "No. 28 Fighter Wing" "No. 29 Fighter Wing" "No. 30 Fighter Wing" 
+			"No. 31 Fighter Wing" "No. 32 Fighter Wing" "No. 33 Fighter Wing" "No. 34 Fighter Wing" "No. 35 Fighter Wing" "No. 36 Fighter Wing" "No. 37 Fighter Wing" "No. 38 Fighter Wing" "No. 39 Fighter Wing" "No. 44 Fighter Wing" "No. 45 Fighter Wing" 
+			"No. 46 Fighter Wing" "No. 47 Fighter Wing" "No. 48 Fighter Wing" "No. 49 Fighter Wing" "No. 50 Fighter Wing" "No. 51 Fighter Wing" "No. 200 Fighter Wing" "No. 201 Fighter Wing" "No. 202 Fighter Wing" "No. 203 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 227 Fighter Wing" "No. 228 Fighter Wing" "No. 229 Fighter Wing" "No. 230 Fighter Wing" "No. 231 Fighter Wing" "No. 232 Fighter Wing" "No. 233 Fighter Wing" "No. 234 Fighter Wing" "No. 235 Fighter Wing" "No. 236 Fighter Wing" 
+			"No. 237 Fighter Wing" "No. 238 Fighter Wing" "No. 239 Fighter Wing" "No. 244 Fighter Wing" "No. 245 Fighter Wing" "No. 246 Fighter Wing" "No. 247 Fighter Wing" "No. 248 Fighter Wing" "No. 249 Fighter Wing" "No. 250 Fighter Wing" "No. 251 Fighter Wing" 
+		}	
+	}
+	heavy_fighter_equipment = {
+		prefix = ""
+		generic = { "Fighter Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 11 Fighter Wing" "No. 12 Fighter Wing" "No. 14 Fighter Wing" "No. 13 Fighter Wing" "No. 10 Fighter Wing" "No. 207 Fighter Wing" "No. 211 Fighter Wing" "No. 212 Fighter Wing" "No. 213 Fighter Wing" "No. 214 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 9 Fighter Wing" "No. 22 Fighter Wing" "No. 23 Fighter Wing" "No. 24 Fighter Wing" "No. 25 Fighter Wing" "No. 26 Fighter Wing" "No. 27 Fighter Wing" "No. 28 Fighter Wing" "No. 29 Fighter Wing" "No. 30 Fighter Wing" 
+			"No. 31 Fighter Wing" "No. 32 Fighter Wing" "No. 33 Fighter Wing" "No. 34 Fighter Wing" "No. 35 Fighter Wing" "No. 36 Fighter Wing" "No. 37 Fighter Wing" "No. 38 Fighter Wing" "No. 39 Fighter Wing" "No. 44 Fighter Wing" "No. 45 Fighter Wing" 
+			"No. 46 Fighter Wing" "No. 47 Fighter Wing" "No. 48 Fighter Wing" "No. 49 Fighter Wing" "No. 50 Fighter Wing" "No. 51 Fighter Wing" "No. 200 Fighter Wing" "No. 201 Fighter Wing" "No. 202 Fighter Wing" "No. 203 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 227 Fighter Wing" "No. 228 Fighter Wing" "No. 229 Fighter Wing" "No. 230 Fighter Wing" "No. 231 Fighter Wing" "No. 232 Fighter Wing" "No. 233 Fighter Wing" "No. 234 Fighter Wing" "No. 235 Fighter Wing" "No. 236 Fighter Wing" 
+			"No. 237 Fighter Wing" "No. 238 Fighter Wing" "No. 239 Fighter Wing" "No. 244 Fighter Wing" "No. 245 Fighter Wing" "No. 246 Fighter Wing" "No. 247 Fighter Wing" "No. 248 Fighter Wing" "No. 249 Fighter Wing" "No. 250 Fighter Wing" "No. 251 Fighter Wing" 
+		}	
+	}
+	multi_role_fighter_equipment = {
+		prefix = ""
+		generic = { "Fighter Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 11 Fighter Wing" "No. 12 Fighter Wing" "No. 14 Fighter Wing" "No. 13 Fighter Wing" "No. 10 Fighter Wing" "No. 207 Fighter Wing" "No. 211 Fighter Wing" "No. 212 Fighter Wing" "No. 213 Fighter Wing" "No. 214 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 9 Fighter Wing" "No. 22 Fighter Wing" "No. 23 Fighter Wing" "No. 24 Fighter Wing" "No. 25 Fighter Wing" "No. 26 Fighter Wing" "No. 27 Fighter Wing" "No. 28 Fighter Wing" "No. 29 Fighter Wing" "No. 30 Fighter Wing" 
+			"No. 31 Fighter Wing" "No. 32 Fighter Wing" "No. 33 Fighter Wing" "No. 34 Fighter Wing" "No. 35 Fighter Wing" "No. 36 Fighter Wing" "No. 37 Fighter Wing" "No. 38 Fighter Wing" "No. 39 Fighter Wing" "No. 44 Fighter Wing" "No. 45 Fighter Wing" 
+			"No. 46 Fighter Wing" "No. 47 Fighter Wing" "No. 48 Fighter Wing" "No. 49 Fighter Wing" "No. 50 Fighter Wing" "No. 51 Fighter Wing" "No. 200 Fighter Wing" "No. 201 Fighter Wing" "No. 202 Fighter Wing" "No. 203 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 227 Fighter Wing" "No. 228 Fighter Wing" "No. 229 Fighter Wing" "No. 230 Fighter Wing" "No. 231 Fighter Wing" "No. 232 Fighter Wing" "No. 233 Fighter Wing" "No. 234 Fighter Wing" "No. 235 Fighter Wing" "No. 236 Fighter Wing" 
+			"No. 237 Fighter Wing" "No. 238 Fighter Wing" "No. 239 Fighter Wing" "No. 244 Fighter Wing" "No. 245 Fighter Wing" "No. 246 Fighter Wing" "No. 247 Fighter Wing" "No. 248 Fighter Wing" "No. 249 Fighter Wing" "No. 250 Fighter Wing" "No. 251 Fighter Wing" 
+		}	
+	}
+	night_fighter_equipment = {
+		prefix = ""
+		generic = { "Fighter Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 11 Fighter Wing" "No. 12 Fighter Wing" "No. 14 Fighter Wing" "No. 13 Fighter Wing" "No. 10 Fighter Wing" "No. 207 Fighter Wing" "No. 211 Fighter Wing" "No. 212 Fighter Wing" "No. 213 Fighter Wing" "No. 214 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 9 Fighter Wing" "No. 22 Fighter Wing" "No. 23 Fighter Wing" "No. 24 Fighter Wing" "No. 25 Fighter Wing" "No. 26 Fighter Wing" "No. 27 Fighter Wing" "No. 28 Fighter Wing" "No. 29 Fighter Wing" "No. 30 Fighter Wing" 
+			"No. 31 Fighter Wing" "No. 32 Fighter Wing" "No. 33 Fighter Wing" "No. 34 Fighter Wing" "No. 35 Fighter Wing" "No. 36 Fighter Wing" "No. 37 Fighter Wing" "No. 38 Fighter Wing" "No. 39 Fighter Wing" "No. 44 Fighter Wing" "No. 45 Fighter Wing" 
+			"No. 46 Fighter Wing" "No. 47 Fighter Wing" "No. 48 Fighter Wing" "No. 49 Fighter Wing" "No. 50 Fighter Wing" "No. 51 Fighter Wing" "No. 200 Fighter Wing" "No. 201 Fighter Wing" "No. 202 Fighter Wing" "No. 203 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 227 Fighter Wing" "No. 228 Fighter Wing" "No. 229 Fighter Wing" "No. 230 Fighter Wing" "No. 231 Fighter Wing" "No. 232 Fighter Wing" "No. 233 Fighter Wing" "No. 234 Fighter Wing" "No. 235 Fighter Wing" "No. 236 Fighter Wing" 
+			"No. 237 Fighter Wing" "No. 238 Fighter Wing" "No. 239 Fighter Wing" "No. 244 Fighter Wing" "No. 245 Fighter Wing" "No. 246 Fighter Wing" "No. 247 Fighter Wing" "No. 248 Fighter Wing" "No. 249 Fighter Wing" "No. 250 Fighter Wing" "No. 251 Fighter Wing" 
+		}	
+	}
+	jet_fighter_equipment = {
+		prefix = ""
+		generic = { "Fighter Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 11 Fighter Wing" "No. 12 Fighter Wing" "No. 14 Fighter Wing" "No. 13 Fighter Wing" "No. 10 Fighter Wing" "No. 207 Fighter Wing" "No. 211 Fighter Wing" "No. 212 Fighter Wing" "No. 213 Fighter Wing" "No. 214 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 9 Fighter Wing" "No. 22 Fighter Wing" "No. 23 Fighter Wing" "No. 24 Fighter Wing" "No. 25 Fighter Wing" "No. 26 Fighter Wing" "No. 27 Fighter Wing" "No. 28 Fighter Wing" "No. 29 Fighter Wing" "No. 30 Fighter Wing" 
+			"No. 31 Fighter Wing" "No. 32 Fighter Wing" "No. 33 Fighter Wing" "No. 34 Fighter Wing" "No. 35 Fighter Wing" "No. 36 Fighter Wing" "No. 37 Fighter Wing" "No. 38 Fighter Wing" "No. 39 Fighter Wing" "No. 44 Fighter Wing" "No. 45 Fighter Wing" 
+			"No. 46 Fighter Wing" "No. 47 Fighter Wing" "No. 48 Fighter Wing" "No. 49 Fighter Wing" "No. 50 Fighter Wing" "No. 51 Fighter Wing" "No. 200 Fighter Wing" "No. 201 Fighter Wing" "No. 202 Fighter Wing" "No. 203 Fighter Wing" "No. 223 Fighter Wing" 
+			"No. 226 Fighter Wing" "No. 227 Fighter Wing" "No. 228 Fighter Wing" "No. 229 Fighter Wing" "No. 230 Fighter Wing" "No. 231 Fighter Wing" "No. 232 Fighter Wing" "No. 233 Fighter Wing" "No. 234 Fighter Wing" "No. 235 Fighter Wing" "No. 236 Fighter Wing" 
+			"No. 237 Fighter Wing" "No. 238 Fighter Wing" "No. 239 Fighter Wing" "No. 244 Fighter Wing" "No. 245 Fighter Wing" "No. 246 Fighter Wing" "No. 247 Fighter Wing" "No. 248 Fighter Wing" "No. 249 Fighter Wing" "No. 250 Fighter Wing" "No. 251 Fighter Wing" 
+		}	
+	}
+	CAS_equipment = {
+		prefix = ""
+		generic = { "Bomber Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 1 Bomber Wing" "No. 2 Bomber Wing" "No. 3 Bomber Wing" "No. 4 Bomber Wing" "No. 5 Bomber Wing" "No. 52 Bomber Wing" "No. 53 Bomber Wing" "No. 54 Bomber Wing" "No. 55 Bomber Wing" "No. 56 Bomber Wing" "No. 57 Bomber Wing" 
+			"No. 58 Bomber Wing" "No. 59 Bomber Wing" "No. 60 Bomber Wing" "No. 61 Bomber Wing" "No. 62 Bomber Wing" "No. 63 Bomber Wing" "No. 64 Bomber Wing" "No. 65 Bomber Wing" "No. 66 Bomber Wing" "No. 67 Bomber Wing" "No. 68 Bomber Wing" 
+			"No. 69 Bomber Wing" "No. 70 Bomber Wing" "No. 71 Bomber Wing" "No. 72 Bomber Wing" "No. 135 Bomber Wing" "No. 136 Bomber Wing" "No. 137 Bomber Wing" "No. 138 Bomber Wing" "No. 139 Bomber Wing" 
+		}	
+	}
+	light_bomber_equipment = {
+		prefix = ""
+		generic = { "Bomber Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 1 Bomber Wing" "No. 2 Bomber Wing" "No. 3 Bomber Wing" "No. 4 Bomber Wing" "No. 5 Bomber Wing" "No. 203 Bomber Wing" "No. 205 Bomber Wing" "No. 215 Bomber Wing" 
+			"No. 222 Bomber Wing" "No. 224 Bomber Wing" "No. 225 Bomber Wing" "No. 8 'Pathfinder' Wing" "No. 100 'Special Duties' Wing" "No. 83 Bomber Wing" "No. 85 Bomber Wing" "No. 103 Bomber Wing" "No. 104 Bomber Wing" "No. 105 Bomber Wing" "No. 106 Bomber Wing" 
+			"No. 107 Bomber Wing" "No. 108 Bomber Wing" "No. 109 Bomber Wing" "No. 110 Bomber Wing" "No. 111 Bomber Wing" "No. 112 Bomber Wing" "No. 113 Bomber Wing" "No. 114 Bomber Wing" "No. 115 Bomber Wing" "No. 116 Bomber Wing" "No. 117 Bomber Wing" 
+			"No. 118 Bomber Wing" "No. 119 Bomber Wing" "No. 120 Bomber Wing" "No. 121 Bomber Wing" "No. 122 Bomber Wing" "No. 123 Bomber Wing" "No. 124 Bomber Wing" "No. 125 Bomber Wing" "No. 126 Bomber Wing" "No. 127 Bomber Wing" "No. 128 Bomber Wing" 
+			"No. 129 Bomber Wing" "No. 130 Bomber Wing" "No. 131 Bomber Wing" "No. 323 Bomber Wing" "No. 326 Bomber Wing" "No. 327 Bomber Wing" "No. 328 Bomber Wing" "No. 329 Bomber Wing" "No. 330 Bomber Wing" "No. 331 Bomber Wing" "No. 332 Bomber Wing" 
+			"No. 333 Bomber Wing" "No. 334 Bomber Wing" "No. 335 Bomber Wing" "No. 336 Bomber Wing" "No. 337 Bomber Wing" "No. 338 Bomber Wing" "No. 339 Bomber Wing" "No. 344 Bomber Wing" "No. 345 Bomber Wing" "No. 346 Bomber Wing" "No. 347 Bomber Wing" 
+			"No. 348 Bomber Wing" "No. 349 Bomber Wing" "No. 350 Bomber Wing" "No. 351 Bomber Wing" 
+		}	
+	}
+	tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Bomber Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 1 Bomber Wing" "No. 2 Bomber Wing" "No. 3 Bomber Wing" "No. 4 Bomber Wing" "No. 5 Bomber Wing" "No. 203 Bomber Wing" "No. 205 Bomber Wing" "No. 215 Bomber Wing" 
+			"No. 222 Bomber Wing" "No. 224 Bomber Wing" "No. 225 Bomber Wing" "No. 8 'Pathfinder' Wing" "No. 100 'Special Duties' Wing" "No. 83 Bomber Wing" "No. 85 Bomber Wing" "No. 103 Bomber Wing" "No. 104 Bomber Wing" "No. 105 Bomber Wing" "No. 106 Bomber Wing" 
+			"No. 107 Bomber Wing" "No. 108 Bomber Wing" "No. 109 Bomber Wing" "No. 110 Bomber Wing" "No. 111 Bomber Wing" "No. 112 Bomber Wing" "No. 113 Bomber Wing" "No. 114 Bomber Wing" "No. 115 Bomber Wing" "No. 116 Bomber Wing" "No. 117 Bomber Wing" 
+			"No. 118 Bomber Wing" "No. 119 Bomber Wing" "No. 120 Bomber Wing" "No. 121 Bomber Wing" "No. 122 Bomber Wing" "No. 123 Bomber Wing" "No. 124 Bomber Wing" "No. 125 Bomber Wing" "No. 126 Bomber Wing" "No. 127 Bomber Wing" "No. 128 Bomber Wing" 
+			"No. 129 Bomber Wing" "No. 130 Bomber Wing" "No. 131 Bomber Wing" "No. 323 Bomber Wing" "No. 326 Bomber Wing" "No. 327 Bomber Wing" "No. 328 Bomber Wing" "No. 329 Bomber Wing" "No. 330 Bomber Wing" "No. 331 Bomber Wing" "No. 332 Bomber Wing" 
+			"No. 333 Bomber Wing" "No. 334 Bomber Wing" "No. 335 Bomber Wing" "No. 336 Bomber Wing" "No. 337 Bomber Wing" "No. 338 Bomber Wing" "No. 339 Bomber Wing" "No. 344 Bomber Wing" "No. 345 Bomber Wing" "No. 346 Bomber Wing" "No. 347 Bomber Wing" 
+			"No. 348 Bomber Wing" "No. 349 Bomber Wing" "No. 350 Bomber Wing" "No. 351 Bomber Wing" 
+		}	
+	}
+	jet_tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Bomber Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 1 Bomber Wing" "No. 2 Bomber Wing" "No. 3 Bomber Wing" "No. 4 Bomber Wing" "No. 5 Bomber Wing" "No. 203 Bomber Wing" "No. 205 Bomber Wing" "No. 215 Bomber Wing" 
+			"No. 222 Bomber Wing" "No. 224 Bomber Wing" "No. 225 Bomber Wing" "No. 8 'Pathfinder' Wing" "No. 100 'Special Duties' Wing" "No. 83 Bomber Wing" "No. 85 Bomber Wing" "No. 103 Bomber Wing" "No. 104 Bomber Wing" "No. 105 Bomber Wing" "No. 106 Bomber Wing" 
+			"No. 107 Bomber Wing" "No. 108 Bomber Wing" "No. 109 Bomber Wing" "No. 110 Bomber Wing" "No. 111 Bomber Wing" "No. 112 Bomber Wing" "No. 113 Bomber Wing" "No. 114 Bomber Wing" "No. 115 Bomber Wing" "No. 116 Bomber Wing" "No. 117 Bomber Wing" 
+			"No. 118 Bomber Wing" "No. 119 Bomber Wing" "No. 120 Bomber Wing" "No. 121 Bomber Wing" "No. 122 Bomber Wing" "No. 123 Bomber Wing" "No. 124 Bomber Wing" "No. 125 Bomber Wing" "No. 126 Bomber Wing" "No. 127 Bomber Wing" "No. 128 Bomber Wing" 
+			"No. 129 Bomber Wing" "No. 130 Bomber Wing" "No. 131 Bomber Wing" "No. 323 Bomber Wing" "No. 326 Bomber Wing" "No. 327 Bomber Wing" "No. 328 Bomber Wing" "No. 329 Bomber Wing" "No. 330 Bomber Wing" "No. 331 Bomber Wing" "No. 332 Bomber Wing" 
+			"No. 333 Bomber Wing" "No. 334 Bomber Wing" "No. 335 Bomber Wing" "No. 336 Bomber Wing" "No. 337 Bomber Wing" "No. 338 Bomber Wing" "No. 339 Bomber Wing" "No. 344 Bomber Wing" "No. 345 Bomber Wing" "No. 346 Bomber Wing" "No. 347 Bomber Wing" 
+			"No. 348 Bomber Wing" "No. 349 Bomber Wing" "No. 350 Bomber Wing" "No. 351 Bomber Wing" 
+		}	
+	}
+	strat_bomber_equipment  = {
+		prefix = ""
+		generic = { "Bomber Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 1 Bomber Wing" "No. 2 Bomber Wing" "No. 3 Bomber Wing" "No. 4 Bomber Wing" "No. 5 Bomber Wing" "No. 203 Bomber Wing" "No. 205 Bomber Wing" "No. 215 Bomber Wing" "No. 222 Bomber Wing" "No. 221 Bomber Wing" "No. 224 Bomber Wing" 
+			"No. 225 Bomber Wing" "No. 7 Bomber Wing" "No. 91 Bomber Wing" "No. 92 Bomber Wing" "No. 93 Bomber Wing" "No. 73 Bomber Wing" "No. 74 Bomber Wing" "No. 75 Bomber Wing" "No. 76 Bomber Wing" "No. 77 Bomber Wing" "No. 78 Bomber Wing" 
+			"No. 79 Bomber Wing" "No. 80 Bomber Wing" "No. 81 Bomber Wing" "No. 82 Bomber Wing" "No. 86 Bomber Wing" "No. 87 Bomber Wing" "No. 88 Bomber Wing" "No. 89 Bomber Wing" "No. 90 Bomber Wing" "No. 94 Bomber Wing" "No. 95 Bomber Wing" 
+			"No. 96 Bomber Wing" "No. 97 Bomber Wing" "No. 98 Bomber Wing" "No. 99 Bomber Wing" "No. 100 Bomber Wing" "No. 101 Bomber Wing" "No. 102 Bomber Wing" "No. 91 Bomber Wing" "No. 215 Bomber Wing" "No. 216 Bomber Wing" "No. 217 Bomber Wing" 
+			"No. 323 Bomber Wing" "No. 326 Bomber Wing" "No. 327 Bomber Wing" "No. 328 Bomber Wing" "No. 329 Bomber Wing" "No. 330 Bomber Wing" "No. 331 Bomber Wing" "No. 332 Bomber Wing" "No. 333 Bomber Wing" "No. 334 Bomber Wing" "No. 335 Bomber Wing" 
+			"No. 336 Bomber Wing" "No. 337 Bomber Wing" "No. 338 Bomber Wing" "No. 339 Bomber Wing" "No. 344 Bomber Wing" "No. 345 Bomber Wing" "No. 346 Bomber Wing" "No. 347 Bomber Wing" "No. 348 Bomber Wing" "No. 349 Bomber Wing" "No. 350 Bomber Wing" 
+			"No. 351 Bomber Wing" 
+		}	
+	}
+	jet_strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Bomber Wing" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 1 Bomber Wing" "No. 2 Bomber Wing" "No. 3 Bomber Wing" "No. 4 Bomber Wing" "No. 5 Bomber Wing" "No. 203 Bomber Wing" "No. 205 Bomber Wing" "No. 215 Bomber Wing" "No. 222 Bomber Wing" "No. 221 Bomber Wing" "No. 224 Bomber Wing" 
+			"No. 225 Bomber Wing" "No. 7 Bomber Wing" "No. 91 Bomber Wing" "No. 92 Bomber Wing" "No. 93 Bomber Wing" "No. 73 Bomber Wing" "No. 74 Bomber Wing" "No. 75 Bomber Wing" "No. 76 Bomber Wing" "No. 77 Bomber Wing" "No. 78 Bomber Wing" 
+			"No. 79 Bomber Wing" "No. 80 Bomber Wing" "No. 81 Bomber Wing" "No. 82 Bomber Wing" "No. 86 Bomber Wing" "No. 87 Bomber Wing" "No. 88 Bomber Wing" "No. 89 Bomber Wing" "No. 90 Bomber Wing" "No. 94 Bomber Wing" "No. 95 Bomber Wing" 
+			"No. 96 Bomber Wing" "No. 97 Bomber Wing" "No. 98 Bomber Wing" "No. 99 Bomber Wing" "No. 100 Bomber Wing" "No. 101 Bomber Wing" "No. 102 Bomber Wing" "No. 91 Bomber Wing" "No. 215 Bomber Wing" "No. 216 Bomber Wing" "No. 217 Bomber Wing" 
+			"No. 323 Bomber Wing" "No. 326 Bomber Wing" "No. 327 Bomber Wing" "No. 328 Bomber Wing" "No. 329 Bomber Wing" "No. 330 Bomber Wing" "No. 331 Bomber Wing" "No. 332 Bomber Wing" "No. 333 Bomber Wing" "No. 334 Bomber Wing" "No. 335 Bomber Wing" 
+			"No. 336 Bomber Wing" "No. 337 Bomber Wing" "No. 338 Bomber Wing" "No. 339 Bomber Wing" "No. 344 Bomber Wing" "No. 345 Bomber Wing" "No. 346 Bomber Wing" "No. 347 Bomber Wing" "No. 348 Bomber Wing" "No. 349 Bomber Wing" "No. 350 Bomber Wing" 
+			"No. 351 Bomber Wing" 
+		}	
+	}
+	nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Coastal Group" }
+		generic_pattern = AIR_WING_NAME_ENG_CARRIER
+		unique = {
+			"No. 15 Coastal Group" "No. 16 Coastal Group" "No. 201 Coastal Group" "No. 205 Coastal Group" "No. 17 Coastal Group" "No. 20 Coastal Group" "No. 21 Coastal Group" "No. 155 Coastal Group" "No. 156 Coastal Group" "No. 157 Coastal Group" "No. 158 Coastal Group" 
+			"No. 159 Coastal Group" "No. 160 Coastal Group" "No. 161 Coastal Group" "No. 162 Coastal Group" "No. 163 Coastal Group" "No. 164 Coastal Group" "No. 165 Coastal Group" "No. 166 Coastal Group" "No. 167 Coastal Group" "No. 168 Coastal Group" "No. 423 Coastal Group" 
+			"No. 426 Coastal Group" "No. 427 Coastal Group" "No. 428 Coastal Group" "No. 429 Coastal Group" "No. 430 Coastal Group" "No. 431 Coastal Group" "No. 432 Coastal Group" "No. 433 Coastal Group" "No. 434 Coastal Group" "No. 435 Coastal Group" "No. 436 Coastal Group" 
+			"No. 437 Coastal Group" "No. 438 Coastal Group" "No. 439 Coastal Group" "No. 444 Coastal Group" "No. 445 Coastal Group" "No. 446 Coastal Group" "No. 447 Coastal Group" "No. 448 Coastal Group" "No. 449 Coastal Group" "No. 450 Coastal Group" "No. 451 Coastal Group" 
+			"No. 18 Coastal Group" "No. 19 Coastal Group" "No. 170 Coastal Group" "No. 171 Coastal Group" "No. 145 Coastal Group" "No. 146 Coastal Group" "No. 147 Coastal Group" "No. 148 Coastal Group" "No. 149 Coastal Group" "No. 150 Coastal Group" "No. 151 Coastal Group" 
+			"No. 152 Coastal Group" "No. 153 Coastal Group" "No. 154 Coastal Group" "No. 172 Coastal Group" "No. 173 Coastal Group" "No. 174 Coastal Group" "No. 175 Coastal Group" "No. 176 Coastal Group" "No. 177 Coastal Group" "No. 178 Coastal Group" "No. 179 Coastal Group" 
+			"No. 423 Coastal Group" "No. 426 Coastal Group" "No. 427 Coastal Group" "No. 428 Coastal Group" "No. 429 Coastal Group" "No. 430 Coastal Group" "No. 431 Coastal Group" "No. 432 Coastal Group" "No. 433 Coastal Group" "No. 434 Coastal Group" "No. 435 Coastal Group" 
+			"No. 436 Coastal Group" "No. 437 Coastal Group" "No. 438 Coastal Group" "No. 439 Coastal Group" "No. 444 Coastal Group" "No. 445 Coastal Group" "No. 446 Coastal Group" "No. 447 Coastal Group" "No. 448 Coastal Group" "No. 449 Coastal Group" "No. 450 Coastal Group" 
+			"No. 451 Coastal Group" 
+		}	
+	}
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ENG_CARRIER
+		unique = {
+			"No. 801 Squadron FAA" "No. 802 Squadron FAA" "No. 803 Squadron FAA" "No. 804 Squadron FAA" "No. 805 Squadron FAA" "No. 806 Squadron FAA" "No. 807 Squadron FAA" "No. 808 Squadron FAA" "No. 809 Squadron FAA" "No. 810 Squadron FAA" "No. 811 Squadron FAA" 
+			"No. 812 Squadron FAA" "No. 813 Squadron FAA" "No. 814 Squadron FAA" "No. 815 Squadron FAA" "No. 816 Squadron FAA" "No. 817 Squadron FAA" "No. 818 Squadron FAA" "No. 819 Squadron FAA" "No. 820 Squadron FAA" "No. 821 Squadron FAA" "No. 822 Squadron FAA" 
+			"No. 823 Squadron FAA" "No. 824 Squadron FAA" "No. 825 Squadron FAA" "No. 826 Squadron FAA" "No. 827 Squadron FAA" "No. 828 Squadron FAA" "No. 829 Squadron FAA" "No. 830 Squadron FAA" "No. 831 Squadron FAA" "No. 832 Squadron FAA" "No. 833 Squadron FAA" 
+			"No. 834 Squadron FAA" "No. 835 Squadron FAA" "No. 836 Squadron FAA" "No. 837 Squadron FAA" "No. 838 Squadron FAA" "No. 839 Squadron FAA" "No. 840 Squadron FAA" "No. 841 Squadron FAA" "No. 842 Squadron FAA" "No. 843 Squadron FAA" "No. 844 Squadron FAA" 
+			"No. 845 Squadron FAA" "No. 846 Squadron FAA" "No. 847 Squadron FAA" "No. 848 Squadron FAA" "No. 849 Squadron FAA" "No. 850 Squadron FAA" "No. 851 Squadron FAA" "No. 852 Squadron FAA" "No. 853 Squadron FAA" "No. 854 Squadron FAA" "No. 855 Squadron FAA" 
+		}	
+	}
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ENG_CARRIER
+		unique = {
+			"No. 801 Squadron FAA" "No. 802 Squadron FAA" "No. 803 Squadron FAA" "No. 804 Squadron FAA" "No. 805 Squadron FAA" "No. 806 Squadron FAA" "No. 807 Squadron FAA" "No. 808 Squadron FAA" "No. 809 Squadron FAA" "No. 810 Squadron FAA" "No. 811 Squadron FAA" 
+			"No. 812 Squadron FAA" "No. 813 Squadron FAA" "No. 814 Squadron FAA" "No. 815 Squadron FAA" "No. 816 Squadron FAA" "No. 817 Squadron FAA" "No. 818 Squadron FAA" "No. 819 Squadron FAA" "No. 820 Squadron FAA" "No. 821 Squadron FAA" "No. 822 Squadron FAA" 
+			"No. 823 Squadron FAA" "No. 824 Squadron FAA" "No. 825 Squadron FAA" "No. 826 Squadron FAA" "No. 827 Squadron FAA" "No. 828 Squadron FAA" "No. 829 Squadron FAA" "No. 830 Squadron FAA" "No. 831 Squadron FAA" "No. 832 Squadron FAA" "No. 833 Squadron FAA" 
+			"No. 834 Squadron FAA" "No. 835 Squadron FAA" "No. 836 Squadron FAA" "No. 837 Squadron FAA" "No. 838 Squadron FAA" "No. 839 Squadron FAA" "No. 840 Squadron FAA" "No. 841 Squadron FAA" "No. 842 Squadron FAA" "No. 843 Squadron FAA" "No. 844 Squadron FAA" 
+			"No. 845 Squadron FAA" "No. 846 Squadron FAA" "No. 847 Squadron FAA" "No. 848 Squadron FAA" "No. 849 Squadron FAA" "No. 850 Squadron FAA" "No. 851 Squadron FAA" "No. 852 Squadron FAA" "No. 853 Squadron FAA" "No. 854 Squadron FAA" "No. 855 Squadron FAA" 
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ENG_CARRIER
+		unique = {
+			"No. 801 Squadron FAA" "No. 802 Squadron FAA" "No. 803 Squadron FAA" "No. 804 Squadron FAA" "No. 805 Squadron FAA" "No. 806 Squadron FAA" "No. 807 Squadron FAA" "No. 808 Squadron FAA" "No. 809 Squadron FAA" "No. 810 Squadron FAA" "No. 811 Squadron FAA" 
+			"No. 812 Squadron FAA" "No. 813 Squadron FAA" "No. 814 Squadron FAA" "No. 815 Squadron FAA" "No. 816 Squadron FAA" "No. 817 Squadron FAA" "No. 818 Squadron FAA" "No. 819 Squadron FAA" "No. 820 Squadron FAA" "No. 821 Squadron FAA" "No. 822 Squadron FAA" 
+			"No. 823 Squadron FAA" "No. 824 Squadron FAA" "No. 825 Squadron FAA" "No. 826 Squadron FAA" "No. 827 Squadron FAA" "No. 828 Squadron FAA" "No. 829 Squadron FAA" "No. 830 Squadron FAA" "No. 831 Squadron FAA" "No. 832 Squadron FAA" "No. 833 Squadron FAA" 
+			"No. 834 Squadron FAA" "No. 835 Squadron FAA" "No. 836 Squadron FAA" "No. 837 Squadron FAA" "No. 838 Squadron FAA" "No. 839 Squadron FAA" "No. 840 Squadron FAA" "No. 841 Squadron FAA" "No. 842 Squadron FAA" "No. 843 Squadron FAA" "No. 844 Squadron FAA" 
+			"No. 845 Squadron FAA" "No. 846 Squadron FAA" "No. 847 Squadron FAA" "No. 848 Squadron FAA" "No. 849 Squadron FAA" "No. 850 Squadron FAA" "No. 851 Squadron FAA" "No. 852 Squadron FAA" "No. 853 Squadron FAA" "No. 854 Squadron FAA" "No. 855 Squadron FAA" 
+		}	
+	}
+	transport_plane_equipment = {
+		prefix = ""
+		generic = { "Air Transport Group" }
+		generic_pattern = AIR_WING_NAME_ENG_GENERIC
+		unique = {
+			"No. 46 Air Transport Group" "No. 216 Air Transport Group" "No. 38 Air Transport Group" "No. 180 Air Transport Group" "No. 181 Air Transport Group" "No. 182 Air Transport Group" "No. 183 Air Transport Group" "No. 184 Air Transport Group" "No. 185 Air Transport Group" "No. 186 Air Transport Group" "No. 187 Air Transport Group" 
+			"No. 188 Air Transport Group" "No. 189 Air Transport Group" "No. 190 Air Transport Group" "No. 191 Air Transport Group" "No. 192 Air Transport Group" "No. 193 Air Transport Group" "No. 194 Air Transport Group" "No. 195 Air Transport Group" "No. 196 Air Transport Group" "No. 197 Air Transport Group" "No. 198 Air Transport Group" 
+			"No. 199 Air Transport Group" 
+		}	
+	}
+
+	
+
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Cavalry Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Tank Regiment" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Tank Regiment" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+}

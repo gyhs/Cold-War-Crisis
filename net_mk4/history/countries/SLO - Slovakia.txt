@@ -1,0 +1,35 @@
+﻿capital = 70
+
+oob = "SLO_1987"
+
+set_technology = {
+}
+
+set_politics = {	
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    communism = 90
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "Jozef Tiso"
+	desc = "POLITICS_JOZEF_TISO_DESC"
+	picture = "POLITICS_Slovakia_Jozef_Tiso.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,96 @@
+ideas = {
+
+	country = {
+#-----------------------------------------------------------
+		NS_JAP_usa_unfair_trade_10  = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				political_power_cost = -1
+				consumer_goods_factor = -0.3
+			}
+		}
+		NS_JAP_usa_unfair_semiconductor_trade  = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+			
+			research_bonus = {
+				electronics = 0.15
+				computing_tech = 0.15
+			}
+			modifier = {
+				political_power_cost = -1
+				consumer_goods_factor = -0.1
+			}
+		}
+		NS_JAP_usa_unfair_telecommunications_trade  = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+			
+			research_bonus = {
+				electronics = 0.15
+				radar_tech = 0.15
+				decryption_tech = 0.15
+				encryption_tech = 0.15
+			}
+			modifier = {
+				political_power_cost = -1
+				consumer_goods_factor = -0.1
+			}
+		}
+		NS_JAP_usa_unfair_automobile_trade  = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			modifier = {
+				political_power_cost = -1
+				consumer_goods_factor = -0.1
+			}
+		}
+#-----------------------------------------------------------
+	}
+}

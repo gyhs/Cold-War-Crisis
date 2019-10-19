@@ -1,0 +1,23 @@
+﻿capital = 104
+
+set_research_slots = 3
+
+# Starting tech
+# clone of Yugoslavia
+set_technology = {
+}
+
+set_politics = {}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+

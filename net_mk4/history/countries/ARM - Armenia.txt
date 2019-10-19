@@ -1,0 +1,57 @@
+﻿capital = 230 #Yerevan, Armenia
+
+oob = "AZR_1987"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+}
+
+set_politics = {}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "Drastamat Kanayan"
+	desc = ""
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Hovhannes Kajaznuni"
+	desc = ""
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Grigor Harutyunyan"
+	desc = ""
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+

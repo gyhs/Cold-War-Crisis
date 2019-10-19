@@ -1,0 +1,232 @@
+
+
+has_general_hyper_inflation = {
+	if = {
+		limit = { has_idea = general_hyper_inflation_1 }
+		has_idea = general_hyper_inflation_1
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_2 }
+		has_idea = general_hyper_inflation_2
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_3 }
+		has_idea = general_hyper_inflation_3
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_4 }
+		has_idea = general_hyper_inflation_4
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_5 }
+		has_idea = general_hyper_inflation_5
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_6 }
+		has_idea = general_hyper_inflation_6
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_7 }
+		has_idea = general_hyper_inflation_7
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_8 }
+		has_idea = general_hyper_inflation_8
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_9 }
+		has_idea = general_hyper_inflation_9
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_10 }
+		has_idea = general_hyper_inflation_10
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_11 }
+		has_idea = general_hyper_inflation_11
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_12 }
+		has_idea = general_hyper_inflation_12
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_13 }
+		has_idea = general_hyper_inflation_13
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_14 }
+		has_idea = general_hyper_inflation_14
+	}
+	if = {
+		limit = { has_idea = general_hyper_inflation_15 }
+		has_idea = general_hyper_inflation_15
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = general_hyper_inflation_1
+				has_idea = general_hyper_inflation_2
+				has_idea = general_hyper_inflation_3
+				has_idea = general_hyper_inflation_4
+				has_idea = general_hyper_inflation_5
+				has_idea = general_hyper_inflation_6
+				has_idea = general_hyper_inflation_7
+				has_idea = general_hyper_inflation_8
+				has_idea = general_hyper_inflation_9
+				has_idea = general_hyper_inflation_10
+				has_idea = general_hyper_inflation_11
+				has_idea = general_hyper_inflation_12
+				has_idea = general_hyper_inflation_13
+				has_idea = general_hyper_inflation_14
+				has_idea = general_hyper_inflation_15
+			}
+		}
+		has_idea = general_hyper_inflation_1
+	}
+}
+
+GER_will_support = {
+	GER = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = GER
+			}
+		}
+	}
+}
+
+SOV_will_support = {
+	SOV = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = SOV
+			}
+		}
+	}
+}
+PRC_will_support = {
+	PRC = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = PRC
+			}
+		}
+	}
+}
+ENG_will_support = {
+	ENG = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = ENG
+			}
+		}
+	}
+}
+FRA_will_support = {
+	FRA = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = FRA
+			}
+		}
+	}
+}
+USA_will_support = {
+	USA = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = USA
+			}
+		}
+	}
+}
+JAP_will_support = {
+	JAP = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = JAP
+			}
+		}
+	}
+}
+YUG_will_support = {
+	YUG = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = YUG
+			}
+		}
+	}
+}
+PAK_will_support = {
+	PAK = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = PAK
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+﻿capital = 276
+
+oob = "CAN_1987"
+
+set_research_slots = 3
+set_country_flag = monroe_doctrine
+set_stability = 0.8
+set_war_support = 0.1
+
+# Starting tech
+set_technology = {
+}
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+}
+
+
+if = {
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1935.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    communism = 5
+	socialism = 5
+	social_democracy = 15
+	social_liberalism = 25
+	market_liberalism = 25
+	social_conservatism = 15
+	authoritarianism = 5
+	fascism = 5
+}
+
+###
+create_country_leader = {
+	name = "에드워드 브로드벤트"
+	desc = "POLITICS_CAN_Ed_Broadbent_DESC"
+	picture = "POLITICS_CAN_Ed_Broadbent.dds"
+	expire = "2100.3.1"
+	ideology = Marxism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "브라이언 멀로니"
+	desc = "POLITICS_CAN_Martin_Brian_Mulroney_DESC"
+	picture = "POLITICS_CAN_Martin_Brian_Mulroney.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "프레스톤 매닝"
+	desc = "POLITICS_CAN_Preston_Manning_DESC"
+	picture = "POLITICS_CAN_Preston_Manning.dds"
+	expire = "2100.3.1"
+	ideology = despotism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "에드워드 반우덴버그"
+	desc = "POLITICS_CAN_Ed_Vanwoudenberg_DESC"
+	picture = "POLITICS_CAN_Ed_Vanwoudenberg.dds"
+	expire = "2100.3.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+### Ship Variants ###

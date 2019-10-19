@@ -1,0 +1,447 @@
+﻿ ###########################
+# finland Events
+###########################
+
+add_namespace = finland
+
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 소련
+country_event = {
+	id = finland.1
+	title = finland.1.t
+	desc = finland.1.desc
+	picture = GFX_report_event_canada_treaty
+	trigger = {
+		OR = {
+		date > 1982.1.10
+		AND = {
+		communism < 0.3
+		has_stability < 0.7
+		}
+		}
+		NOT = {	has_global_flag = SOV_flag_finland_conflict_resolution }
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # 도움 승락
+		name = finland.1.a
+		ai_chance = { factor = 100 }
+		FIN = { country_event = { id = finland.2 } }
+		FIN = {complete_national_focus = FIN_communist_party_bankruptcy_case }
+		set_global_flag = FIN_flag_communist_party_bankruptcy_case
+	}
+	option = { # 도움 거절
+		name = finland.1.b
+		ai_chance = { factor = 0 }
+		FIN = { country_event = { id = finland.3 } }
+		FIN = {complete_national_focus = FIN_communist_party_bankruptcy_case }
+		set_global_flag = FIN_flag_communist_party_bankruptcy_case
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 핀란드의 답변
+country_event = {
+	id = finland.2
+	title = finland.2.t
+	desc = finland.2.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 개입 거부
+		name = finland.2.a
+		trigger = {has_completed_focus = FIN_armed_neutrality }
+		ai_chance = { factor = 75 }
+		set_global_flag = FIN_flag_communist_party_bankruptcy_case_reject
+		USA = { country_event = { id = finland.4 } }
+		SOV = { country_event = { id = finland.5 } }
+	}
+	option = { # 개입 허용
+		name = finland.2.b
+		ai_chance = { factor = 5 }
+		complete_national_focus = FIN_SOV_leanings
+		complete_national_focus = FIN_support_communist_party_allow
+		set_global_flag = FIN_flag_communist_party_bankruptcy_case_allow
+		SOV = { country_event = { id = finland.6 } }
+	}
+	option = { # 미국에게 중재를 요청한다.
+		name = finland.2.c
+		trigger = {
+			NOT = { has_completed_focus = FIN_armed_neutrality }
+		}
+		ai_chance = { factor = 75 }
+		USA = { country_event = { id = finland.8 } }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 소련이 개입을 거부 하다. (핀란드)
+country_event = {
+	id = finland.3
+	title = finland.3.t
+	desc = finland.3.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = finland.3.a
+		ai_chance = { factor = 75 }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 핀란드 공산당 사건에 미국이 주시하다.
+country_event = {
+	id = finland.4
+	title = finland.4.t
+	desc = finland.4.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = finland.4.a
+		ai_chance = { factor = 75 }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 소련의 개입을 거부하다. (소련)
+country_event = {
+	id = finland.5
+	title = finland.5.t
+	desc = finland.5.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = finland.5.a
+		ai_chance = { factor = 75 }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 핀란드가 소련의 개입을 허용하다. (소련)
+country_event = {
+	id = finland.6
+	title = finland.6.t
+	desc = finland.6.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = finland.6.a
+		ai_chance = { factor = 75 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_finland_conflict_resolution }
+		USA = { country_event = { id = finland.7 } }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 소련의 핀란드 개입에 미국이 반발하다.
+country_event = {
+	id = finland.7
+	title = finland.7.t
+	desc = finland.7.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = finland.7.a
+		ai_chance = { factor = 75 }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 핀란드가 미국에게 중재 요청
+country_event = {
+	id = finland.8
+	title = finland.8.t
+	desc = finland.8.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 도움 승락
+		name = finland.8.a
+		ai_chance = { factor = 100 }
+		SOV = { country_event = { id = finland.9 } }
+	}
+	option = { # 도움 거절
+		name = finland.8.b
+		ai_chance = { factor = 0 }
+		FIN = { country_event = { id = finland.10 } }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 미국이 회담장에 개입하다.(소련)
+country_event = {
+	id = finland.9
+	title = finland.9.t
+	desc = finland.9.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 개입 개시
+		name = finland.9.a
+		ai_chance = { factor = 100 }
+		SOV = { complete_national_focus = SOV_sinatra_doctrine_finland_conflict_resolution }
+		USA = { country_event = { id = finland.11 } }
+		FIN = { country_event = { id = finland.12 } }
+	}
+	option = { # 개입 중단
+		name = finland.9.b
+		ai_chance = { factor = 0 }
+		USA = { country_event = { id = finland.13 } }
+		FIN = { country_event = { id = finland.14 } }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 미국의 중재 거절 (핀란드)
+country_event = {
+	id = finland.10
+	title = finland.10.t
+	desc = finland.10.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 개입 거절
+		name = finland.10.a
+		ai_chance = { factor = 75 }
+		set_global_flag = FIN_flag_communist_party_bankruptcy_case_reject
+		USA = { country_event = { id = finland.4 } }
+		SOV = { country_event = { id = finland.5 } }
+	}
+	option = { # 개입 허용
+		name = finland.10.b
+		ai_chance = { factor = 5 }
+		complete_national_focus = FIN_SOV_leanings
+		complete_national_focus = FIN_support_communist_party_allow
+		set_global_flag = FIN_flag_communist_party_bankruptcy_case_allow
+		SOV = { country_event = { id = finland.6 } }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 미국이 회담장에 개입하다.(양자간 격돌 -미국)
+country_event = {
+	id = finland.11
+	title = finland.11.t
+	desc = finland.11.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = finland.11.a
+		ai_chance = { factor = 100 }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 미국이 회담장에 개입하다.(양자간 격돌 -핀란드)
+country_event = {
+	id = finland.12
+	title = finland.12.t
+	desc = finland.12.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = finland.12.a
+		ai_chance = { factor = 100 }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 미국이 회담장에 개입하다.(소련이 물러서다 - 미국)
+country_event = {
+	id = finland.13
+	title = finland.13.t
+	desc = finland.13.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = finland.13.a
+		ai_chance = { factor = 100 }
+	}
+}
+# 핀란드 공산당, 소련에 도움을 요청 하다. - 미국이 회담장에 개입하다.(소련이 물러서다 - 핀란드)
+country_event = {
+	id = finland.14
+	title = finland.14.t
+	desc = finland.14.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = finland.14.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+# 핀란드 소련 위성국화 자처하는 문서를 보내다(소련)
+country_event = {
+	id = finland.15
+	title = finland.15.t
+	desc = finland.15.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_wargoal_against = FIN
+			}
+		}
+		name = finland.15.a #yes
+		puppet = FIN
+		FIN = {
+			country_event = { id = finland.16 }
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = finland.15.b
+		ai_chance = {
+			base = 10
+		}
+		FIN = {
+			country_event = { id = finland.17 }
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+# 소련이 승낙
+country_event = {
+	id = finland.16
+	title = finland.16.t
+	desc = finland.16.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.16.a
+		effect_tooltip = {
+			SOV = {
+				puppet = FIN
+			}
+		}
+		hidden_effect = {
+			
+		}
+	}
+}
+# 소련이 거부
+country_event = {
+	id = finland.17
+	title = finland.17.t
+	desc = finland.17.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.17.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+# 핀란드가 소련에 영토를 되돌려 달라 요청 (소련)
+country_event = {
+	id = finland.18
+	title = finland.18.t
+	desc = finland.18.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = finland.18.a #yes
+		FIN = {
+			country_event = { id = finland.19 }
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = finland.18.b
+		ai_chance = {
+			base = 0
+		}
+		FIN = {
+			country_event = { id = finland.20 }
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+# 소련이 승낙
+country_event = {
+	id = finland.19
+	title = finland.19.t
+	desc = finland.19.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.19.a
+			if = {
+				limit = { SOV = { owns_state = 146 } }
+				transfer_state = 146
+			}
+			if = {
+				limit = { SOV = { owns_state = 147 } }
+				transfer_state = 147
+			}
+			if = {
+				limit = { SOV = { owns_state = 722 } }
+				transfer_state = 722
+			}
+		hidden_effect = {
+			
+		}
+	}
+}
+# 소련이 거부
+country_event = {
+	id = finland.20
+	title = finland.20.t
+	desc = finland.20.desc
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = finland.20.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

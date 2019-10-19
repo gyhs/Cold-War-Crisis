@@ -1,0 +1,31 @@
+﻿l_english:
+ modifier_experience_gain_light_carrier_training_factor:1 "경 항공모함 훈련 경험치 획득량"
+ modifier_experience_gain_light_carrier_combat_factor:1 "경 항공모함 훈련 경험치 획득량"
+ modifier_experience_gain_super_carrier_training_factor:1 "대형 항공모함 훈련 경험치 획득량"
+ modifier_experience_gain_super_carrier_combat_factor:1 "대형 항공모함 훈련 경험치 획득량"
+ modifier_experience_gain_attack_nuclear_submarine_training_factor:1 "공격원잠 훈련 경험치 획득량"
+ modifier_experience_gain_attack_nuclear_submarine_combat_factor:1 "공격원잠 전투 경험치 획득량"
+ modifier_experience_gain_cruise_missile_nuclear_submarine_training_factor:1 "순항미사일원잠 훈련 경험치 획득량"
+ modifier_experience_gain_cruise_missile_nuclear_submarine_combat_factor:1 "순항미사일원잠 전투 경험치 획득량"
+ 
+ mission_to_the_GER:0 "독일연방과 교류"
+ mission_to_the_ENG:0 "영국과 교류"
+ mission_to_the_FRA:0 "프랑스와 교류"
+ mission_to_the_ITA:0 "이탈리아와 교류"
+ mission_to_the_USA:0 "미국과 교류"
+ mission_to_the_SOV:0 "소련과 교류"
+ mission_to_the_PRC:0 "중화인민공화국과 교류"
+ mission_to_the_YUG:0 "유고슬라비아와 교류"
+ mission_to_the_KOR:0 "남한과 교류"
+ mission_to_the_PRK:0 "북한과 교류"
+ mission_to_the_FIN:0 "핀란드와 교류"
+ mission_to_the_SWE:0 "스웨덴과 교류"
+ mission_to_the_NOR:0 "노르웨이와 교류"
+ mission_to_the_DEN:0 "덴마크와 교류"
+ mission_to_the_PAK:0 "파키스탄과 교류"
+ 
+ SOV_leanings:0 "소련의 유화책"
+ 
+ influential_sphere_by_SOV:0 "소련의 영향권"
+ seek_accommodation_with_SOV:0 "소련과 협상모색"
+ 

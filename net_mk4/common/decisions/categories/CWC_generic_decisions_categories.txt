@@ -1,0 +1,9 @@
+
+####################CWC
+
+Decisions_Gen_army_reform_category = {
+	icon = army_reform
+
+	allowed = {
+	}
+}

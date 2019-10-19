@@ -1,0 +1,476 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		example_trigger = yes
+#	}
+# 
+#	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE SOV TAG
+
+
+has_worker_enthusiasm = {
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_1 }
+		has_idea = SOV_worker_enthusiasm_1
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_2 }
+		has_idea = SOV_worker_enthusiasm_2
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_3 }
+		has_idea = SOV_worker_enthusiasm_3
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_4 }
+		has_idea = SOV_worker_enthusiasm_4
+	}
+	if = {
+		limit = { has_idea = SOV_worker_enthusiasm_5 }
+		has_idea = SOV_worker_enthusiasm_5
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_worker_enthusiasm_1
+				has_idea = SOV_worker_enthusiasm_2
+				has_idea = SOV_worker_enthusiasm_3
+				has_idea = SOV_worker_enthusiasm_4
+				has_idea = SOV_worker_enthusiasm_5
+			}
+		}
+		has_idea = SOV_worker_enthusiasm_1
+	}
+}
+
+has_desire_for_reformation = {
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_1 }
+		has_idea = SOV_desire_for_reformation_1
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_2 }
+		has_idea = SOV_desire_for_reformation_2
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_3 }
+		has_idea = SOV_desire_for_reformation_3
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_4 }
+		has_idea = SOV_desire_for_reformation_4
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_5 }
+		has_idea = SOV_desire_for_reformation_5
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_6 }
+		has_idea = SOV_desire_for_reformation_6
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_7 }
+		has_idea = SOV_desire_for_reformation_7
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_8 }
+		has_idea = SOV_desire_for_reformation_8
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_9 }
+		has_idea = SOV_desire_for_reformation_9
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_10 }
+		has_idea = SOV_desire_for_reformation_10
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_11 }
+		has_idea = SOV_desire_for_reformation_11
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_12 }
+		has_idea = SOV_desire_for_reformation_12
+	}
+	if = {
+		limit = { has_idea = SOV_desire_for_reformation_13 }
+		has_idea = SOV_desire_for_reformation_13
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_desire_for_reformation_1
+				has_idea = SOV_desire_for_reformation_2
+				has_idea = SOV_desire_for_reformation_3
+				has_idea = SOV_desire_for_reformation_4
+				has_idea = SOV_desire_for_reformation_5
+				has_idea = SOV_desire_for_reformation_6
+				has_idea = SOV_desire_for_reformation_7
+				has_idea = SOV_desire_for_reformation_8
+				has_idea = SOV_desire_for_reformation_9
+				has_idea = SOV_desire_for_reformation_10
+				has_idea = SOV_desire_for_reformation_11
+				has_idea = SOV_desire_for_reformation_12
+				has_idea = SOV_desire_for_reformation_13
+			}
+		}
+		has_idea = SOV_desire_for_reformation_1
+	}
+}
+
+has_hyper_inflation = {
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_1 }
+		has_idea = SOV_hyper_inflation_1
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_2 }
+		has_idea = SOV_hyper_inflation_2
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_3 }
+		has_idea = SOV_hyper_inflation_3
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_4 }
+		has_idea = SOV_hyper_inflation_4
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_5 }
+		has_idea = SOV_hyper_inflation_5
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_6 }
+		has_idea = SOV_hyper_inflation_6
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_7 }
+		has_idea = SOV_hyper_inflation_7
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_8 }
+		has_idea = SOV_hyper_inflation_8
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_9 }
+		has_idea = SOV_hyper_inflation_9
+	}
+	if = {
+		limit = { has_idea = SOV_hyper_inflation_10 }
+		has_idea = SOV_hyper_inflation_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_hyper_inflation_1
+				has_idea = SOV_hyper_inflation_2
+				has_idea = SOV_hyper_inflation_3
+				has_idea = SOV_hyper_inflation_4
+				has_idea = SOV_hyper_inflation_5
+				has_idea = SOV_hyper_inflation_6
+				has_idea = SOV_hyper_inflation_7
+				has_idea = SOV_hyper_inflation_8
+				has_idea = SOV_hyper_inflation_9
+				has_idea = SOV_hyper_inflation_10
+			}
+		}
+		has_idea = SOV_hyper_inflation_1
+	}
+}
+
+has_central_government_crisis = {
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_1 }
+		has_idea = SOV_central_government_crisis_1
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_2 }
+		has_idea = SOV_central_government_crisis_2
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_3 }
+		has_idea = SOV_central_government_crisis_3
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_4 }
+		has_idea = SOV_central_government_crisis_4
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_5 }
+		has_idea = SOV_central_government_crisis_5
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_6 }
+		has_idea = SOV_central_government_crisis_6
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_7 }
+		has_idea = SOV_central_government_crisis_7
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_8 }
+		has_idea = SOV_central_government_crisis_8
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_9 }
+		has_idea = SOV_central_government_crisis_9
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_10 }
+		has_idea = SOV_central_government_crisis_10
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_11 }
+		has_idea = SOV_central_government_crisis_11
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_12 }
+		has_idea = SOV_central_government_crisis_12
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_13 }
+		has_idea = SOV_central_government_crisis_13
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_14 }
+		has_idea = SOV_central_government_crisis_14
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_15 }
+		has_idea = SOV_central_government_crisis_15
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_16 }
+		has_idea = SOV_central_government_crisis_16
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_17 }
+		has_idea = SOV_central_government_crisis_17
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_18 }
+		has_idea = SOV_central_government_crisis_18
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_19 }
+		has_idea = SOV_central_government_crisis_19
+	}
+	if = {
+		limit = { has_idea = SOV_central_government_crisis_20 }
+		has_idea = SOV_central_government_crisis_20
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_central_government_crisis_1
+				has_idea = SOV_central_government_crisis_2
+				has_idea = SOV_central_government_crisis_3
+				has_idea = SOV_central_government_crisis_4
+				has_idea = SOV_central_government_crisis_5
+				has_idea = SOV_central_government_crisis_6
+				has_idea = SOV_central_government_crisis_7
+				has_idea = SOV_central_government_crisis_8
+				has_idea = SOV_central_government_crisis_9
+				has_idea = SOV_central_government_crisis_10
+				has_idea = SOV_central_government_crisis_11
+				has_idea = SOV_central_government_crisis_12
+				has_idea = SOV_central_government_crisis_13
+				has_idea = SOV_central_government_crisis_14
+				has_idea = SOV_central_government_crisis_15
+				has_idea = SOV_central_government_crisis_16
+				has_idea = SOV_central_government_crisis_17
+				has_idea = SOV_central_government_crisis_18
+				has_idea = SOV_central_government_crisis_19
+				has_idea = SOV_central_government_crisis_20
+			}
+		}
+		has_idea = SOV_central_government_crisis_1
+	}
+}
+
+has_oligarch_power = {
+	if = {
+		limit = { has_idea = SOV_oligarch_power_1 }
+		has_idea = SOV_oligarch_power_1
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_2 }
+		has_idea = SOV_oligarch_power_2
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_3 }
+		has_idea = SOV_oligarch_power_3
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_4 }
+		has_idea = SOV_oligarch_power_4
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_5 }
+		has_idea = SOV_oligarch_power_5
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_6 }
+		has_idea = SOV_oligarch_power_6
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_7 }
+		has_idea = SOV_oligarch_power_7
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_8 }
+		has_idea = SOV_oligarch_power_8
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_9 }
+		has_idea = SOV_oligarch_power_9
+	}
+	if = {
+		limit = { has_idea = SOV_oligarch_power_10 }
+		has_idea = SOV_oligarch_power_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_oligarch_power_1
+				has_idea = SOV_oligarch_power_2
+				has_idea = SOV_oligarch_power_3
+				has_idea = SOV_oligarch_power_4
+				has_idea = SOV_oligarch_power_5
+				has_idea = SOV_oligarch_power_6
+				has_idea = SOV_oligarch_power_7
+				has_idea = SOV_oligarch_power_8
+				has_idea = SOV_oligarch_power_9
+				has_idea = SOV_oligarch_power_10
+			}
+		}
+		has_idea = SOV_oligarch_power_1
+	}
+}
+
+has_social_safety_nets_crisis = {
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_1 }
+		has_idea = SOV_social_safety_nets_crisis_1
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_2 }
+		has_idea = SOV_social_safety_nets_crisis_2
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_3 }
+		has_idea = SOV_social_safety_nets_crisis_3
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_4 }
+		has_idea = SOV_social_safety_nets_crisis_4
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_5 }
+		has_idea = SOV_social_safety_nets_crisis_5
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_6 }
+		has_idea = SOV_social_safety_nets_crisis_6
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_7 }
+		has_idea = SOV_social_safety_nets_crisis_7
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_8 }
+		has_idea = SOV_social_safety_nets_crisis_8
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_9 }
+		has_idea = SOV_social_safety_nets_crisis_9
+	}
+	if = {
+		limit = { has_idea = SOV_social_safety_nets_crisis_10 }
+		has_idea = SOV_social_safety_nets_crisis_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_social_safety_nets_crisis_1
+				has_idea = SOV_social_safety_nets_crisis_2
+				has_idea = SOV_social_safety_nets_crisis_3
+				has_idea = SOV_social_safety_nets_crisis_4
+				has_idea = SOV_social_safety_nets_crisis_5
+				has_idea = SOV_social_safety_nets_crisis_6
+				has_idea = SOV_social_safety_nets_crisis_7
+				has_idea = SOV_social_safety_nets_crisis_8
+				has_idea = SOV_social_safety_nets_crisis_9
+				has_idea = SOV_social_safety_nets_crisis_10
+			}
+		}
+		has_idea = SOV_social_safety_nets_crisis_1
+	}
+}
+
+has_nomenklatura_power = {
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_1 }
+		has_idea = SOV_nomenklatura_power_1
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_2 }
+		has_idea = SOV_nomenklatura_power_2
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_3 }
+		has_idea = SOV_nomenklatura_power_3
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_4 }
+		has_idea = SOV_nomenklatura_power_4
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_5 }
+		has_idea = SOV_nomenklatura_power_5
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_6 }
+		has_idea = SOV_nomenklatura_power_6
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_7 }
+		has_idea = SOV_nomenklatura_power_7
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_8 }
+		has_idea = SOV_nomenklatura_power_8
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_9 }
+		has_idea = SOV_nomenklatura_power_9
+	}
+	if = {
+		limit = { has_idea = SOV_nomenklatura_power_10 }
+		has_idea = SOV_nomenklatura_power_10
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = SOV_nomenklatura_power_1
+				has_idea = SOV_nomenklatura_power_2
+				has_idea = SOV_nomenklatura_power_3
+				has_idea = SOV_nomenklatura_power_4
+				has_idea = SOV_nomenklatura_power_5
+				has_idea = SOV_nomenklatura_power_6
+				has_idea = SOV_nomenklatura_power_7
+				has_idea = SOV_nomenklatura_power_8
+				has_idea = SOV_nomenklatura_power_9
+				has_idea = SOV_nomenklatura_power_10
+			}
+		}
+		has_idea = SOV_nomenklatura_power_1
+	}
+}
