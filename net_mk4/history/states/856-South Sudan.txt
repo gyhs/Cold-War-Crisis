@@ -1,0 +1,24 @@
+state={
+	id=856
+	name="STATE_856"
+
+	history={
+		victory_points = {
+			7996 5 
+		}
+		owner = SUD
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1953 2096 4033 7996 10764 10857 10859 10877 10908 12800 
+	}
+	manpower=2052121
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

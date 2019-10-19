@@ -1,0 +1,25 @@
+state={
+	id=858
+	name="STATE_858"
+
+	history={
+		owner = YEM
+		buildings = {
+			infrastructure = 3
+			8000 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = YEM
+
+	}
+
+	provinces={
+		8000 
+	}
+	manpower=221205
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

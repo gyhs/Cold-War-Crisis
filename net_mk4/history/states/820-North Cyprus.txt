@@ -1,0 +1,29 @@
+state={
+	id=820
+	name="STATE_820"
+
+	history={
+		owner = CYP
+		add_core_of = CYP
+		victory_points = {
+			11984 5 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			11984 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		11984 
+	}
+	manpower=140021
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

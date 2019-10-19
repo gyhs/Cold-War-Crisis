@@ -1,0 +1,26 @@
+state={
+	id=812
+	name="STATE_812"
+
+	history={
+		add_core_of = MOL
+		owner = SOV
+		victory_points = {
+			13234 1 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		13232 13234 13235 
+	}
+	manpower=42000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

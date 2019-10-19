@@ -1,0 +1,30 @@
+state={
+	id=850
+	name="STATE_850"
+
+	history={
+		owner = MAL
+		victory_points = {
+			12299 20
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 6
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+
+			}
+		}
+		add_core_of = MAL
+
+	}
+
+	provinces={
+		12299 
+	}
+	manpower=720100
+	buildings_max_level_factor=1.000
+	state_category=city
+}

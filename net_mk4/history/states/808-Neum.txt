@@ -1,0 +1,28 @@
+state={
+	id=808
+	name="STATE_808"
+
+	history={
+		owner = YUG
+		victory_points = {
+			13278 1
+		}
+		buildings = {
+			infrastructure = 4
+
+			13278 = {
+				naval_base = 3
+
+			}
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+	}
+
+	provinces={
+		13278 
+	}
+	manpower=2100
+	buildings_max_level_factor=1.000
+	state_category = enclave
+}

@@ -1,0 +1,24 @@
+state={
+	id=851
+	name="STATE_851"
+
+	history= {
+		add_core_of = SCO
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			anti_air_building = 2
+			13246 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		13246 
+	}
+	manpower=42021
+	buildings_max_level_factor=1.000
+	state_category = small_island
+}

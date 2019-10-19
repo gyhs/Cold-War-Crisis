@@ -1,0 +1,22 @@
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = PRC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		5042 
+	}
+	manpower=16800
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
