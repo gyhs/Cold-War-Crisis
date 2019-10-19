@@ -2,11 +2,9 @@
 state={
 	id=527
 	name="STATE_527"
-	manpower = 2741260
-	state_category = town
 	resources={
-		steel=18 # was: 30
-		tungsten=28 # was: 52
+		steel=18.000
+		tungsten=28.000
 	}
 
 	history={
@@ -14,18 +12,21 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-		}
-		
-		victory_points = {
-			7171 1
-		}	
 
+		}
+		victory_points = {
+			7171 1 
+		}
 		add_core_of = KOR
 		add_core_of = PRK
 		add_claim_by = KOR
+
 	}
 
 	provinces={
-		7171 10065 
+		4052 10065 
 	}
+	manpower=2741260
+	buildings_max_level_factor=1.000
+	state_category=town
 }
