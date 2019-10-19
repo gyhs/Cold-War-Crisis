@@ -16,27 +16,22 @@ set_convoys = 200		# biggest merchant marine in the world
 set_stability = 0.7
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 96
+    fascism = 2
+    communism = 2
 }
 
 create_country_leader = {
 	name = "Johan Nygaardsvold"
 	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
-	picture = "POLITICS_Norway_Johan_Nygaardsvold.dds"
+	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -47,7 +42,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vidkun Quisling"
 	desc = "POLITICS_VIDKUN_QUISLING_DESC"
-	picture = "POLITICS_Norway_Vidkun_Quisling.dds"
+	picture = "Portrait_Norway_Vidkun_Quisling.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -58,7 +53,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Johan Ludwig Mowinckel"
 	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
-	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_3.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -69,7 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Adam Egede-Nissen"
 	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
-	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -79,7 +74,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Carl Gustav Fleischer"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = {  trickster winter_specialist }
 	skill = 4
 	attack_skill = 3
@@ -90,7 +85,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Elias Corneliussen"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_2.dds"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	traits = { navy_career_officer inshore_fighter spotter }
 	skill = 3
 	attack_skill = 2

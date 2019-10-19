@@ -25,28 +25,24 @@ set_convoys = 20
 
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 80
+    fascism = 2
+    communism = 1
+    neutrality = 17
 }
 ###
 
 create_country_leader = {
 	name = "마노하르 조쉬"
 	desc = "POLITICS_RAJ_Manohar_Joshi_DESC"
-	picture = "POLITICS_RAJ_Manohar_Joshi.dds"
+	picture = "Portrait_RAJ_Manohar_Joshi.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {
@@ -56,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "L. K. 아드바니"
 	desc = "POLITICS_RAJ_Lal_Krishna_Advani_DESC"
-	picture = "POLITICS_RAJ_Lal_Krishna_Advani.dds"
+	picture = "Portrait_RAJ_Lal_Krishna_Advani.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -67,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "라지브 간디"
 	desc = "POLITICS_RAJ_Rajiv_Gandhi_DESC"
-	picture = "POLITICS_RAJ_Rajiv_Gandhi.dds"
+	picture = "Portrait_RAJ_Rajiv_Gandhi.dds"
 	expire = "2100.1.1"
 	ideology = conservatism
 	traits = {
@@ -77,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "E.M.S. 남부리디파드"
 	desc = "POLITICS_RAJ_EMS_Namboodiripad_DESC"
-	picture = "POLITICS_RAJ_EMS_Namboodiripad.dds"
+	picture = "Portrait_RAJ_EMS_Namboodiripad.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {

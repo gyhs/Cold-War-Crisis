@@ -13,27 +13,23 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = social_conservatism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 0
+    fascism = 20
+    communism = 0
+    neutrality = 80
 }
 
 create_country_leader = {
 	name = "Long Yun"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "GFX_POLITICS_yun_long_yun"
+	picture = "GFX_portrait_yun_long_yun"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -43,7 +39,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Lu Han"
-	POLITICS_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	traits = { }
 	skill = 3
 	attack_skill = 4

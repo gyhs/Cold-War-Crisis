@@ -13,20 +13,15 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 90
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 0
-	market_liberalism = 0
-	social_conservatism = 0
-	authoritarianism = 0
-	fascism = 0
+    democratic = 5
+    fascism = 90
+    communism = 5
 }
 
 create_country_leader = {
 	name = "Jozef Tiso"
 	desc = "POLITICS_JOZEF_TISO_DESC"
-	picture = "POLITICS_Slovakia_Jozef_Tiso.dds"
+	picture = "Portrait_Slovakia_Jozef_Tiso.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

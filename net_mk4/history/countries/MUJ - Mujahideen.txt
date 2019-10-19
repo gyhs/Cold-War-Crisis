@@ -43,27 +43,23 @@ give_military_access = PER
 
 	
 set_politics = {	
-	ruling_party = social_conservatism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
+    democratic = 2
+    fascism = 0
     communism = 0
-	socialism = 0
-	social_democracy = 0
-	social_liberalism = 5
-	market_liberalism = 5
-	social_conservatism = 35
-	authoritarianism = 40
-	fascism = 20
+    neutrality = 98
 }
 
 create_country_leader = {
 	name = "아흐마드 샤 마수드"
 	desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
-	picture = "POLITICS_MUJ_Ahmad_Shah_Massoud.dds"
+	picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
 	expire = "2000.1.1"
 	ideology = Centrism
 	traits = {
