@@ -1,0 +1,61 @@
+ENG_uk_great_depression_clear_all = {
+	remove_ideas = {
+		uk_great_depression3
+		uk_great_depression4
+		uk_great_depression5
+		uk_great_depression6
+		uk_great_depression7
+		uk_great_depression8
+		uk_great_depression9
+	}
+}
+#Important to put LOWEST first
+ENG_uk_great_depression_level_down = {
+custom_effect_tooltip = ENG_depression_down_tt
+    if = {
+        limit = { has_idea = uk_great_depression8 }
+        #Makes the tooltip clearer if player looks at the effect early in the game
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = uk_great_depression8
+                add_idea = uk_great_depression9
+            }
+        }
+        hidden_effect = { remove_ideas = uk_great_depression9 }
+    }
+    if = {
+        limit = { has_idea = uk_great_depression3 }
+        swap_ideas = {
+            remove_idea = uk_great_depression3
+            add_idea = uk_great_depression4
+        }
+    }
+    if = {
+        limit = { has_idea = uk_great_depression4 }
+        swap_ideas = {
+            remove_idea = uk_great_depression4
+            add_idea = uk_great_depression5
+        }
+    }
+    if = {
+        limit = { has_idea = uk_great_depression5 }
+        swap_ideas = {
+            remove_idea = uk_great_depression5
+            add_idea = uk_great_depression6
+        }
+    }
+    if = {
+        limit = { has_idea = uk_great_depression6 }
+        swap_ideas = {
+            remove_idea = uk_great_depression6
+            add_idea = uk_great_depression7
+        }
+    }
+	    if = {
+        limit = { has_idea = uk_great_depression7 }
+        swap_ideas = {
+            remove_idea = uk_great_depression7
+            add_idea = uk_great_depression8
+        }
+    }
+}
