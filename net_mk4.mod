@@ -1,5 +1,5 @@
 ﻿name="net_mk4"
-path="mod/net_mk4/map"
+path="mod/net_mk4/"
 dependencies={
 	"한국어 모드(Korean Translation)"
 }
