@@ -1,1 +1,1229 @@
-id
+focus_tree = {
+	id = France
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	focus = {
+		id = NF_FRA_new_era
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = NF_FRA_faf
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		x = 41
+		y = 1
+
+	}
+	focus = {
+		id = NF_FRA_faf
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = NF_FRA_french_industry
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		x = 56
+		y = 1
+
+	}
+	focus = {
+		id = NF_FRA_unilaterally_path
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_new_era
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_europe_only_one
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = NF_FRA_nuclear_power
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_unilaterally_path
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_dream_of_the_past
+		icon = GFX_focus_AST_rats_tobruk
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_nuclear_power
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_memories_of_6.8
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_descendants_of_de_gaulle
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_dream_of_the_past
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_control_parliament 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_descendants_of_de_gaulle
+		}
+		x = 1
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_élan_vital
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_dream_of_the_past
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_liquidation_of_the_past
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_élan_vital
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_memories_of_6.8
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_nuclear_power
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_dream_of_the_past
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_party_consolidation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_memories_of_6.8
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_su_contact
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_school_of_youth
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_party_consolidation
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_treaty_of_permanent_revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_school_of_youth
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_su_contact
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_memories_of_6.8
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_party_consolidation
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_révolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_party_consolidation
+			focus = NF_FRA_su_contact
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_support_for_kgb
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_su_contact
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_home_of_a_real_revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_support_for_kgb
+			focus = NF_FRA_school_of_youth
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_wp_Join
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_support_for_kgb
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_europe_only_one
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_new_era
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_unilaterally_path
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = NF_FRA_sea_put_into_effect
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_europe_only_one
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_emu_institutionalization
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_sea_put_into_effect
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_europeans
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_sea_put_into_effect
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_eec_strengthen
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_sea_put_into_effect
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_euro
+		icon = GFX_focus_mex_privatisation
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_eec_strengthen
+		}
+		prerequisite = {
+			focus = NF_FRA_europeans
+		}
+		prerequisite = {
+			focus = NF_FRA_emu_institutionalization
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_the_leader_of_europe
+		icon = GFX_focus_usa_union_representation_act
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_euro
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_new_members
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_the_leader_of_europe
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_Choice_of_sweden
+		icon = GFX_focus_friend_sweden
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_new_members
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = NF_FRA_small_giant
+		icon = GFX_focus_friend_finland
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_new_members
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = NF_FRA_eastern_european_affairs
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_the_leader_of_europe
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_wait_for_comedown
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_eastern_european_affairs
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_the_Iron_curtain_breaking
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = NF_FRA_the_Iron_curtain_breaking
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_eastern_european_affairs
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_wait_for_comedown
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = NF_FRA_cold_war_overcome
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_the_Iron_curtain_breaking
+			focus = NF_FRA_wait_for_comedown
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = NF_FRA_prevention_of_war
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_wait_for_comedown
+		}
+		prerequisite = {
+			focus = NF_FRA_cold_war_overcome
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_war_for_peace
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = NF_FRA_war_for_peace
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_the_Iron_curtain_breaking
+		}
+		prerequisite = {
+			focus = NF_FRA_cold_war_overcome
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_prevention_of_war
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = {
+		id = NF_FRA_adt
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_faf
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = NF_FRA_weapons_development
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_adt
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = NF_FRA_AMX30_Improvements
+		icon = GFX_goal_continuous_armor_production
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_weapons_development
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = FN_FRA_famas_Improvements
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_weapons_development
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_a.e_development
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_weapons_development
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_Infantry_modernization
+		icon = GFX_goal_generic_army_artillery
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_a.e_development
+		}
+		prerequisite = {
+			focus = FN_FRA_famas_Improvements
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_command_reform
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_adt
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = NF_FRA_foreign_legion
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_command_reform
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_nato_reorganization
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_the_leader_of_europe
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_fgb
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_nato_reorganization
+		}
+		prerequisite = {
+			focus = NF_FRA_foreign_legion
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = NF_RFA_cos
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_command_reform
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_gign
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_RFA_cos
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_army_air_corps
+		icon = GFX_focus_usa_escort_fighters
+		cost = 10.00
+		prerequisite = {
+			focus = NF_RFA_cos
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_1er_rpima
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_army_air_corps
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_13e_rdp
+		icon = GFX_focus_generic_paratrooper
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_army_air_corps
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_dombat_doctrine
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_command_reform
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_basic_combat_training
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_dombat_doctrine
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_attack_is_the_greatest_defense.
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_basic_combat_training
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_breakthrough
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_breakthrough
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_basic_combat_training
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_attack_is_the_greatest_defense.
+		}
+		x = 37
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_shock_and_fear
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_breakthrough
+		}
+		x = 37
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_mn
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_faf
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = NF_FRA_cooperation_with_Britain
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_mn
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_cooperation_with_west_germany
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = NF_FRA_aircraft_carrier_development
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_cooperation_with_Britain
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_securing_a_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_mn
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_cooperation_with_west_germany
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_mn
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_cooperation_with_Britain
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = NF_FRA_auxiliary_ship_development
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_cooperation_with_west_germany
+			focus = NF_FRA_cooperation_with_Britain
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_cruiser_development
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_cooperation_with_west_germany
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_submarine_development
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_cruiser_development
+			focus = NF_FRA_aircraft_carrier_development
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_basic_navigation
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_cruiser_development
+		}
+		prerequisite = {
+			focus = NF_FRA_aircraft_carrier_development
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_aircraft_carriercentric_doctrine
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_basic_navigation
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_hitting_doctrine
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_hitting_doctrine
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_basic_navigation
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_aircraft_carriercentric_doctrine
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_naval_air_force
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_hitting_doctrine
+			focus = NF_FRA_aircraft_carriercentric_doctrine
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = NF_FRA_new_aircraft_development
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_faf
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = NF_FRA_attacker_development
+		icon = GFX_goal_poland_goal
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_new_aircraft_development
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_aew_fighter_development
+		icon = GFX_goal_continuous_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_new_aircraft_development
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_basic_air_warfare
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_aew_fighter_development
+		}
+		prerequisite = {
+			focus = NF_FRA_attacker_development
+		}
+		x = 47
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_strategic_destruction
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_basic_air_warfare
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_operational_integrity
+			focus = NF_FRA_battlefield_support
+		}
+		x = 45
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_operational_integrity
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_basic_air_warfare
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_strategic_destruction
+			focus = NF_FRA_battlefield_support
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_battlefield_support
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_basic_air_warfare
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_operational_integrity
+			focus = NF_FRA_strategic_destruction
+		}
+		x = 49
+		y = 6
+
+	}
+	focus = {
+		id = NF_FRA_application_of_new_technology
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_operational_integrity
+			focus = NF_FRA_battlefield_support
+			focus = NF_FRA_strategic_destruction
+		}
+		x = 47
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_helicopter_development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_new_aircraft_development
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_university_exchange
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_french_industry
+		}
+		x = 53
+		y = 2
+
+	}
+	focus = {
+		id = NF_FRA_computer_dissemination
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_university_exchange
+		}
+		x = 53
+		y = 3
+
+	}
+	focus = {
+		id = NF_FRA_development_of_communication
+		icon = GFX_goal_generic_radar
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_computer_dissemination
+		}
+		x = 53
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_international_telecommunications_regulation
+		icon = GFX_goal_continuous_research
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_development_of_communication
+		}
+		x = 53
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_promotion_of_the_cultural_industry
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_french_industry
+		}
+		x = 56
+		y = 2
+
+	}
+	focus = {
+		id = FN_FRA_arms_export
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_promotion_of_the_cultural_industry
+		}
+		x = 55
+		y = 3
+
+	}
+	focus = {
+		id = FN_FRA_military_development
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = FN_FRA_arms_export
+		}
+		x = 55
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_great_france_again!
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_élan_vital
+			focus = NF_FRA_descendants_of_de_gaulle
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = NF_FRA_new_streetcar_in_France
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_AMX30_Improvements
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_big_firepower
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_attack_is_the_greatest_defense.
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = FN_FRA_industrial_revival
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_promotion_of_the_cultural_industry
+		}
+		x = 57
+		y = 3
+
+	}
+	focus = {
+		id = NF_FRA_golden_age_of_culture
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_industrial_modernization
+		}
+		prerequisite = {
+			focus = FN_FRA_military_development
+		}
+		x = 56
+		y = 5
+
+	}
+	focus = {
+		id = NF_FRA_industrial_modernization
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = FN_FRA_industrial_revival
+		}
+		x = 57
+		y = 4
+
+	}
+	focus = {
+		id = NF_FRA_rule_france
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_liquidation_of_the_past
+		}
+		prerequisite = {
+			focus = NF_FRA_control_parliament 
+		}
+		x = 3
+		y = 8
+
+	}
+	focus = {
+		id = NF_FRA_europe_in_flames_again
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_home_of_a_real_revolution
+			focus = NF_FRA_rule_france
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = NF_FRA_land_of_the_past
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_europe_in_flames_again
+		}
+		x = 3
+		y = 11
+
+	}
+	focus = {
+		id = NF_FRA_making_comrades
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_europe_in_flames_again
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = NF_FRA_spain
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_making_comrades
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_Ireland
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_making_comrades
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_conquest_of_algeria
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_land_of_the_past
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_algerian_puppet_state
+		}
+		x = 2
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_algerian_puppet_state
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_land_of_the_past
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_conquest_of_algeria
+		}
+		x = 4
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_fate_of_the_kingdom_of_morocco
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_algerian_puppet_state
+			focus = NF_FRA_conquest_of_algeria
+		}
+		x = 2
+		y = 13
+
+	}
+	focus = {
+		id = NF_FRA_tunisia's_destiny
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_algerian_puppet_state
+			focus = NF_FRA_conquest_of_algeria
+		}
+		x = 4
+		y = 13
+
+	}
+	focus = {
+		id = NF_FRA_break_of_the_cold_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_europe_in_flames_again
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = NF_FRA_eliminate_the_long_enemy
+		icon = GFX_focus_attack_britain
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_break_of_the_cold_war
+		}
+		x = 13
+		y = 12
+
+	}
+}
