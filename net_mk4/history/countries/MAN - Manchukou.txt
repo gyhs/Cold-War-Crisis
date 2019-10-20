@@ -16,20 +16,15 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+	fascism = 15
+	communism = 10
+	neutrality = 75
 }
 
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
 	
-	picture = "gfx/leaders/MAN/POLITICS_Manchuria_Henry_Pu_Yi.dds"
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
 	ideology = rexism
 	traits = {
@@ -40,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
 	
-	picture = "gfx/leaders/MAN/POLITICS_Manchuria_Henry_Pu_Yi.dds"
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
 	ideology = despotism
 	traits = {
@@ -50,7 +45,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Zhang Haipeng"
-	GFX = "GFX_POLITICS_man_zhang_haipeng"
+	GFX = "GFX_portrait_man_zhang_haipeng"
 	traits = {  }
 	skill = 2
 	
@@ -62,7 +57,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Zhang Jinghui"
-	GFX = "GFX_POLITICS_man_zhang_jinghui"
+	GFX = "GFX_portrait_man_zhang_jinghui"
 	traits = { infantry_officer }
 	skill = 2
 	
@@ -74,7 +69,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Aisin Gioro Xiqia"
-	GFX = "GFX_POLITICS_man_aisin_gioro_xiqia"
+	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 3
@@ -85,7 +80,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Yoshiko Kawashima"
-	gfx = "GFX_POLITICS_man_yoshiko_kawashima"
+	gfx = "GFX_portrait_man_yoshiko_kawashima"
 	traits = { cavalry_officer }
 	skill = 3
 	attack_skill = 3

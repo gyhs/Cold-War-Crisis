@@ -31,20 +31,16 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 90
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 0
-	market_liberalism = 0
-	social_conservatism = 0
-	authoritarianism = 0
-	fascism = 0
+    democratic = 2
+    fascism = 0
+    communism = 98
+    neutrality = 0
 }
 
 create_country_leader = {
 	name = "Władysław Sikorski"
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
-	picture = "POLITICS_Poland_Wladyslaw_Sikorski.dds"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -55,7 +51,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ignacy Mościcki"
 	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "POLITICS_Poland_Ignacy_Moscicki.dds"
+	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -66,7 +62,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Władysław Gomułka"
 	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-	picture = "POLITICS_Poland_Wladyslaw_Gomulka.dds"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -98,7 +94,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Władysław Sikorski"
-	picture = "POLITICS_Poland_Wladyslaw_Sikorski.dds"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	traits = { defensive_doctrine }
 	skill = 3
 	attack_skill = 2

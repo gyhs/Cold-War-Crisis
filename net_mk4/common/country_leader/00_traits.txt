@@ -684,9 +684,8 @@ leader_traits = {
 
 	anti_democrat = {
 		random = no
-		social_democracy_acceptance = -50
-		social_liberalism_acceptance = -50
-		market_liberalism_acceptance = -50
+		democratic_acceptance = -50
+		democratic_drift = -0.02
 		stability_factor = 0.10
 
 		ai_will_do = {
@@ -832,17 +831,17 @@ leader_traits = {
 	disdain_for_politicians_1 = {
 		random = no
 		political_power_factor = 0.05
-		social_democracy_drift = -0.01
-		social_liberalism_drift = -0.01
-		market_liberalism_drift = -0.01
+		communism_drift = -0.01
+		fascism_drift = -0.01
+		democratic_drift = -0.01
 	}
 
 	disdain_for_politicians_2 = {
 		random = no
 		political_power_factor = 0.1
-		social_democracy_drift = -0.02
-		social_liberalism_drift = -0.02
-		market_liberalism_drift = -0.02
+		communism_drift = -0.02
+		fascism_drift = -0.02
+		democratic_drift = -0.02
 	}
 
 	queen_of_the_people = {
@@ -871,7 +870,6 @@ leader_traits = {
 
 	### IDEA TRAITS ###
 	
-#--------------------------------------------------------
 	# drift is a percent applied weekly
 	communist_revolutionary = {
 		random = no
@@ -887,108 +885,37 @@ leader_traits = {
 			}
 		}
 	}
-	socialism_reformer = {
-		random = no
-		# Boosts socialism
-		sprite = 13
-		socialism_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				#not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
-	}
-	social_democracy_reformer = {
-		random = no
-		# Boosts socialism
-		sprite = 13
-		social_democracy_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				#not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
-	}
-	market_liberalism_reformer = {
-		random = no
-		# Boosts socialism
-		sprite = 13
-		market_liberalism_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				#not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
-	}
-	social_conservatism_reformer = {
-		random = no
-		# Boosts socialism
-		sprite = 13
-		social_conservatism_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				#not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
-	}
-	authoritarianism_demagogue = {
-		random = no
-		# Boosts socialism
-		sprite = 13
-		authoritarianism_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				#not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
-	}
-	fascism_demagogue = {
-		random = no
-		# Boosts socialism
-		sprite = 13
-		fascism_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				#not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
-	}
-#--------------------------------------------------------
+	
 	democratic_reformer = {
 		random = no
 		# Boosts Democracy
 		sprite = 13
-		social_liberalism_drift = 0.1
-		market_liberalism_drift = 0.1
+		democratic_drift = 0.1
 		
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
+	fascist_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		fascism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				#not = { has_completed_focus = USA_america_first }
+				factor = 0
+			}
+		}
+	}
 	staunch_monarchist = {
 		random = no
 		# Boosts Unaligned
 		sprite = 13
-		authoritarianism_drift = 0.1
+		neutrality_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1015,8 +942,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		social_liberalism_drift = 0.1
-		market_liberalism_drift = 0.1
+		democratic_drift = 0.1
 		stability_factor = 0.15
 		
 		ai_will_do = {

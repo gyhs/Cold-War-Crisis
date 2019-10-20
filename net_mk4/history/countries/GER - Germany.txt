@@ -37,7 +37,7 @@ create_import = {
 }
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -45,21 +45,16 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 80
+    fascism = 10
+    communism = 10
 }
 ###
 
 create_country_leader = {
 	name = "마르틴 무스누그"
 	desc = "POLITICS_GER_Martin_Mussgnug_DESC"
-	picture = "POLITICS_GER_Martin_Mussgnug.dds"
+	picture = "Portrait_GER_Martin_Mussgnug.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {
@@ -69,7 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "프란츠 쇤후버"
 	desc = "POLITICS_GER_Franz_Schonhuber_DESC"
-	picture = "POLITICS_GER_Franz_Schonhuber.dds"
+	picture = "Portrait_GER_Franz_Schonhuber.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -80,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "헬무트 콜"
 	desc = "POLITICS_GER_Helmut_Kohl_DESC"
-	picture = "POLITICS_GER_Helmut_Kohl.dds"
+	picture = "Portrait_GER_Helmut_Kohl.dds"
 	expire = "2100.1.1"
 	ideology = conservatism
 	traits = {
@@ -90,7 +85,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "한스 요한 포겔"
 	desc = "POLITICS_GER_Hans_Jochen_Vogel_DESC"
-	picture = "POLITICS_GER_Hans_Jochen_Vogel.dds"
+	picture = "Portrait_GER_Hans_Jochen_Vogel.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {

@@ -3,9 +3,8 @@
 oob = "USA_1987"
 
 set_research_slots = 4
-set_stability = 1
-set_war_support = 1
-
+set_stability = 0.75
+set_war_support = 0
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
 set_variable = { var = representatives_support value = 218 }
@@ -194,18 +193,10 @@ set_technology = {
 }
 
 add_ideas = {
+
 	disarmed_nation
 	free_trade
 	home_of_the_free
-	NS_USA_nightmare_of_the_vietnam_war
-	NS_USA_problem_of_drugs_all_over_the_usa_10
-	NS_USA_american_racism_conflict_10
-	NS_USA_shooting_incident_10
-	NS_USA_government_debt_10
-	NS_USA_japan_unfair_trade_10
-	NS_USA_japan_unfair_semiconductor_trade
-	NS_USA_japan_unfair_telecommunications_trade
-	NS_USA_japan_unfair_automobile_trade
 }
 
 # DIPLOMACY
@@ -276,29 +267,24 @@ set_convoys = 400
 
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 0
-	socialism = 0
-	social_democracy = 5
-	social_liberalism = 45
-	market_liberalism = 45
-	social_conservatism = 5
-	authoritarianism = 0
-	fascism = 0
+    democratic = 99
+    fascism = 0
+    communism = 1
 }
 
 create_country_leader = {
 	name = "로널드 레이건"
 	desc = "POLITICS_Ronald_Reagan_DESC"
-	picture = "POLITICS_Ronald_Reagan.dds"
+	picture = "Portrait_USA_Ronald_Reagan.dds"
 	expire = "1947.1.1"
-	ideology = market_liberalism_subtype
+	ideology = liberalism
 	traits = {
 		dislikes_germany
 	}

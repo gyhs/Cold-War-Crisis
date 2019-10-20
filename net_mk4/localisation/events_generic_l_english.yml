@@ -10,12 +10,3 @@
  generic.nf.3.t:0 "일시적 기근 종료"
  generic.nf.3.desc:0 "상당한 대 피해를 입은 끝에 어느정도 소강상태가 되었습니다. 비록 여전히 해결하진 못했지만, 잠시나마 재정비할 시간을 갖출 수 있게 되었습니다."
  generic.nf.3.a:0 "확인"
- #----------------------------------------
- war_justification.301.a:0 "당외인물과는 공적인 비합의의 여지도 없다."
- war_justification.301.b:0 "그들은 전쟁을 피하고 싶지 않은가?"
- war_justification.301.c:0 "그들은 전쟁을 피하고 싶지 않은가?"
- war_justification.301.d:0 "그들은 전쟁을 피하고 싶지 않은가?"
- war_justification.301.e:0 "그들은 전쟁을 피하고 싶지 않은가?"
- war_justification.301.f:0 "그들은 전쟁을 피하고 싶지 않은가?"
- war_justification.301.g:0 "[Root.GetLeader]을(를) 비겁하다고 비난하게 둘 수 없다!"
- war_justification.301.h:0 "[Root.GetLeader]을(를) 비겁하다고 비난하게 둘 수 없다!"

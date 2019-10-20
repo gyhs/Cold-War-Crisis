@@ -1368,23 +1368,7 @@ war_measures = {
             has_idea = tot_economic_mobilisation
             OR = {
                 AND = {
-                    has_government = socialism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = social_democracy
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = social_liberalism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = market_liberalism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = social_conservatism
+                    has_government = democratic
                     has_war_support > 0.79
                 }
                 AND = {
@@ -1399,7 +1383,7 @@ war_measures = {
                     }
                 }
                 AND = {
-                    has_government = authoritarianism
+                    has_government = neutrality
                     has_war_support > 0.84
                     has_stability > 0.7
                 }
@@ -1447,23 +1431,7 @@ war_measures = {
             has_war = yes
             OR = {
                 AND = {
-                    has_government = socialism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = social_democracy
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = social_liberalism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = market_liberalism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = social_conservatism
+                    has_government = democratic
                     has_war_support > 0.79
                 }
                 AND = {
@@ -1478,7 +1446,7 @@ war_measures = {
                     }
                 }
                 AND = {
-                    has_government = authoritarianism
+                    has_government = neutrality
                     has_war_support > 0.84
                     has_stability > 0.7
                 }

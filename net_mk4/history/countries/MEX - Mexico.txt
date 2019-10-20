@@ -26,28 +26,23 @@ set_war_support = 0.1
 
 set_politics = {
 	
-	ruling_party = social_conservatism
+	ruling_party = neutrality
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+	fascism = 15
+	communism = 10
+	neutrality = 75
 }
 
 ###
 create_country_leader = {
 	name = "로라시오 야바라"
 	desc = "POLITICS_MEX_Rosario_Ybarra_DESC"
-	picture = "POLITICS_MEX_Rosario_Ybarra.dds"
+	picture = "Portrait_MEX_Rosario_Ybarra.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -56,7 +51,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "쿠아우테모크 칼데네스"
 	desc = "POLITICS_MEX_Cuauhtemoc_Cardenas_DESC"
-	picture = "POLITICS_MEX_Cuauhtemoc_Cardenas.dds"
+	picture = "Portrait_MEX_Cuauhtemoc_Cardenas.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -65,7 +60,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "미겔 데 라 마드리드"
 	desc = "POLITICS_MEX_Miguel_de_la_Madrid_DESC"
-	picture = "POLITICS_MEX_Miguel_de_la_Madrid.dds"
+	picture = "Portrait_MEX_Miguel_de_la_Madrid.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -74,7 +69,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "구메르신도 마그나 네그레테"
 	desc = "POLITICS_MEX_Gumersindo_Magana_Negrete_DESC"
-	picture = "POLITICS_MEX_Gumersindo_Magana_Negrete.dds"
+	picture = "Portrait_MEX_Gumersindo_Magana_Negrete.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

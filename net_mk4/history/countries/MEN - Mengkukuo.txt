@@ -15,20 +15,15 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+	fascism = 15
+	communism = 10
+	neutrality = 75
 }
 
 create_country_leader = {
 	name = "Prince Demchugdongrub"
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX_POLITICS_men_demchugdongrub"
+	picture = "GFX_portrait_men_demchugdongrub"
 	expire = "1965.1.1"
 	ideology = rexism
 	traits = {

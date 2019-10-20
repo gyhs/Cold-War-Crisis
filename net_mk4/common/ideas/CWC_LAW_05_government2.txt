@@ -587,7 +587,6 @@ ideas = {
 			}
 
 			modifier = {
-				trade_opinion_factor = 0.1
 			}
 			
 			default = yes
@@ -605,7 +604,6 @@ ideas = {
 			}
 
 			modifier = {
-				trade_opinion_factor = 0.12
 			}
 			
 			cancel_if_invalid = no
@@ -621,7 +619,6 @@ ideas = {
 			level = 3
 			
 			modifier = {
-				trade_opinion_factor = 0.15
 			}
 			
 			cancel_if_invalid = no
@@ -637,7 +634,6 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				trade_opinion_factor = 0.17
 			}
 			
 			cancel_if_invalid = no
@@ -653,7 +649,6 @@ ideas = {
 			level = 5
 			
 			modifier = {
-				trade_opinion_factor = 0.2
 			}
 			
 			cancel_if_invalid = no
@@ -757,10 +752,7 @@ ideas = {
 			}
 
 			modifier = {
-                production_cost_max_ship_hull_cruiser = 4300
-                production_cost_max_ship_hull_heavy = 10000
-                production_cost_max_ship_hull_carrier = 9500
-            }
+			}
 			
 			default = yes
 			
@@ -777,10 +769,7 @@ ideas = {
 			}
 
 			modifier = {
-                production_cost_max_ship_hull_cruiser = 4300
-                production_cost_max_ship_hull_heavy = 10000
-                production_cost_max_ship_hull_carrier = 9500
-            }
+			}
 			
 			cancel_if_invalid = no
 		}
@@ -795,10 +784,7 @@ ideas = {
 			level = 4
 			
 			modifier = {
-                production_cost_max_ship_hull_cruiser = 4300
-                production_cost_max_ship_hull_heavy = 10000
-                production_cost_max_ship_hull_carrier = 9500
-            }
+			}
 			
 			cancel_if_invalid = no
 		}
@@ -813,10 +799,7 @@ ideas = {
 			level = 4
 			
 			modifier = {
-                production_cost_max_ship_hull_cruiser = 4300
-                production_cost_max_ship_hull_heavy = 10000
-                production_cost_max_ship_hull_carrier = 9500
-            }
+			}
 			
 			cancel_if_invalid = no
 		}
@@ -831,10 +814,7 @@ ideas = {
 			level = 5
 			
 			modifier = {
-                production_cost_max_ship_hull_cruiser = 4300
-                production_cost_max_ship_hull_heavy = 10000
-                production_cost_max_ship_hull_carrier = 9500
-            }
+			}
 			
 			cancel_if_invalid = no
 		}

@@ -29,14 +29,9 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 90
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 0
-	market_liberalism = 0
-	social_conservatism = 0
-	authoritarianism = 0
-	fascism = 0
+    democratic = 0
+    fascism = 0
+    communism = 100
 }
 
 add_ideas = {
@@ -49,7 +44,7 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 create_country_leader = {
 	name = "덩샤오핑"
 	desc = "POLITICS_PRC_Deng_Xiaoping_DESC"
-	picture = "POLITICS_PRC_Deng_Xiaoping.dds"
+	picture = "Portrait_PRC_Deng_Xiaoping.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -59,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "한동팡"
 	desc = "POLITICS_PRC_Han_Dongfang_DESC"
-	picture = "POLITICS_PRC_Han_Dongfang.dds"
+	picture = "Portrait_PRC_Han_Dongfang.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -68,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "우쿠"
 	desc = "POLITICS_PRC_Wu_Qu_DESC"
-	picture = "POLITICS_PRC_Wu_Qu.dds"
+	picture = "Portrait_PRC_Wu_Qu.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -77,7 +72,7 @@ create_country_leader = {
 #create_country_leader = {
 #	name = "우쿠"
 #	desc = "POLITICS_PRC_Wu_Qu_DESC"
-#	picture = "POLITICS_PRC_Wu_Qu.dds"
+#	picture = "Portrait_PRC_Wu_Qu.dds"
 #	expire = "2100.3.1"
 #	ideology = fascism_ideology
 #	traits = {

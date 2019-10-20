@@ -1275,13 +1275,7 @@ country_event = {
 	picture = GFX_report_event_europe_funeral
 
 	trigger = {
-            OR = {
-                socialism < 0.3
-                social_democracy < 0.3
-                social_liberalism < 0.3
-                market_liberalism < 0.3
-                social_conservatism < 0.3
-            }
+		democratic < 0.3
 		has_idea = democratic_revolutionaries
 	}
 

@@ -20,12 +20,8 @@ MTG_naval_treaties = {
 		visible = {
 			has_naval_treaty_trigger = yes
 			OR = {
-                has_government = socialism
-                has_government = social_democracy
-                has_government = social_liberalism
-                has_government = market_liberalism
-                has_government = social_conservatism
-                has_government = authoritarianism
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 	
@@ -300,13 +296,7 @@ MTG_naval_treaties = {
 					tag = ENG
 					tag = USA
 				}
-            OR = {
-                has_government = socialism
-                has_government = social_democracy
-                has_government = social_liberalism
-                has_government = market_liberalism
-                has_government = social_conservatism
-            }
+				has_government = democratic
 				add = 10
 			}
 		}

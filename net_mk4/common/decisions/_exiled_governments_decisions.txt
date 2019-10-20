@@ -307,11 +307,7 @@ governments_in_exile = {
 		targeted_modifier = {
 			tag = FROM
 			targeted_legitimacy_daily = -1
-            socialism = 0.05
-            social_democracy = 0.05
-            social_liberalism = 0.05
-            market_liberalism = 0.05
-            social_conservatism = 0.05
+			democratic_drift = 0.05
 		}
 
 		remove_effect = {

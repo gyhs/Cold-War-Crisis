@@ -87,18 +87,10 @@ democratic_on_the_rise = {
 		always = yes
 	}
 	
-	visible = {
-		NOT = { 
-            OR = {
-                has_government = socialism
-                has_government = social_democracy
-                has_government = social_liberalism
-                has_government = market_liberalism
-                has_government = social_conservatism
-            }
-		}
-		has_idea_with_trait = democratic_reformer
-	}
+	#visible = {
+	#	NOT = { has_government = democratic }
+	#	has_idea_with_trait = democratic_reformer
+	#}
 }
 
 communism_on_the_rise = {

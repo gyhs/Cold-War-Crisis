@@ -30,28 +30,23 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 98
+    fascism = 1
+    communism = 1
 }
 
 ###
 create_country_leader = {
 	name = "에드워드 브로드벤트"
 	desc = "POLITICS_CAN_Ed_Broadbent_DESC"
-	picture = "POLITICS_CAN_Ed_Broadbent.dds"
+	picture = "Portrait_CAN_Ed_Broadbent.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -60,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "브라이언 멀로니"
 	desc = "POLITICS_CAN_Martin_Brian_Mulroney_DESC"
-	picture = "POLITICS_CAN_Martin_Brian_Mulroney.dds"
+	picture = "Portrait_CAN_Martin_Brian_Mulroney.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -69,7 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "프레스톤 매닝"
 	desc = "POLITICS_CAN_Preston_Manning_DESC"
-	picture = "POLITICS_CAN_Preston_Manning.dds"
+	picture = "Portrait_CAN_Preston_Manning.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -78,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "에드워드 반우덴버그"
 	desc = "POLITICS_CAN_Ed_Vanwoudenberg_DESC"
-	picture = "POLITICS_CAN_Ed_Vanwoudenberg.dds"
+	picture = "Portrait_CAN_Ed_Vanwoudenberg.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

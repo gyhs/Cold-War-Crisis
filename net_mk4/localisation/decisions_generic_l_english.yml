@@ -10,7 +10,3 @@
  Decisions_Gen_bolster_our_ranks_desc:0 "장교들의 역량을 강화하여 국방의 핵심두뇌들의 실력을 향상 시킵니다."
  Decisions_Gen_War_Games_divisions_plan:0 "사단 모의전 계획"
  Decisions_Gen_War_Games_divisions_plan_desc:0 "치밀한 모의전을 통하여 훈련법을 개선 합니다."
- communist_education:0 "[From.GetNameDef]의 공산주의 교육"
- communist_education_desc:0 "Enemies of the [From.GetAdjective] people are infiltrating our fraternal allies and sowing dissent against the democratic movement we are fostering. We must assist the legitimate government in re-educating the population in the immortal science of Marx and Engels."
- socialist_education:0 "[From.GetNameDef]의 사회주의 교육"
- socialist_education_desc:0 "Enemies of the [From.GetAdjective] people are infiltrating our fraternal allies and sowing dissent against the democratic movement we are fostering. We must assist the legitimate government in re-educating the population in the immortal science of Marx and Engels."

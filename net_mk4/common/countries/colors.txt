@@ -1,8 +1,8 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
+	color = rgb { 76  97  121 }
+	color_ui = rgb { 76  97  121 }
 }
 ENG = {
 	color = rgb { 201 56 93 }
@@ -460,8 +460,8 @@ WGR = {
     color_ui = rgb { 225 255 255 }
 }
 DDR = {
-    color = rgb { 120 150 80 }
-    color_ui = rgb { 150 180 120 }
+    color = rgb { 192  62  62 }
+    color_ui = rgb { 192  62  62 }
 }
 KOR = {
 	color = rgb { 0 51 204 }

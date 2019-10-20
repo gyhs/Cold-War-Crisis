@@ -23,28 +23,24 @@ set_war_support = 0.1
 set_convoys = 5
 
 set_politics = {	
-	ruling_party = social_conservatism
+	ruling_party = neutrality
 	last_election = "1935.1.15"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 1
+    fascism = 38
+    communism = 1
+    neutrality = 60
 }
 
 ###
 create_country_leader = {
 	name = "살바르도 산체스 세렌"
 	desc = "POLITICS_ELS_Salvador_Sanchez_Ceren_DESC"
-	picture = "POLITICS_ELS_Salvador_Sanchez_Ceren.dds"
+	picture = "Portrait_ELS_Salvador_Sanchez_Ceren.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -53,7 +49,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "호세 프란시스코 게레로"
 	desc = "POLITICS_ELS_Jose_Francisco_Guerrero_DESC"
-	picture = "POLITICS_ELS_Jose_Francisco_Guerrero.dds"
+	picture = "Portrait_ELS_Jose_Francisco_Guerrero.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -62,7 +58,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "호세 나폴레옹 두아르테"
 	desc = "POLITICS_ELS_Jose_Napoleon_Duarte_DESC"
-	picture = "POLITICS_ELS_Jose_Napoleon_Duarte.dds"
+	picture = "Portrait_ELS_Jose_Napoleon_Duarte.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -71,7 +67,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "로버트 도우부슨"
 	desc = "POLITICS_ELS_Roberto_D_Aubuisson_DESC"
-	picture = "POLITICS_ELS_Roberto_D_Aubuisson.dds"
+	picture = "Portrait_ELS_Roberto_D_Aubuisson.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

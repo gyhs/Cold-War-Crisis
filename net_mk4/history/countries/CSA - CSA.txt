@@ -23,21 +23,16 @@ set_convoys = 100
 
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 80
+    fascism = 10
+    communism = 10
 }
 
 add_ideas = {
@@ -46,7 +41,7 @@ add_ideas = {
 create_country_leader = {
 	name = "William Dudley Pelley"
 	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "POLITICS_USA_William_Dudley_Pelley.dds"
+	picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

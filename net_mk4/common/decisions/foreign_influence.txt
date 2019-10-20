@@ -4,8 +4,55 @@ foreign_influence = {
 	# Note that subject status is not checked due to those only appearing in DLC
 	# (Subjects are puppets with high autonomy)
 
+	nation_building = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+			FROM = {
+				democratic < 0.9
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+			has_government = democratic
+			FROM = {
+				is_puppet_of = ROOT
+				democratic < 0.99
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+		}
+
+		targeted_modifier = {
+			tag = FROM
+			democratic_drift = 0.1
+			stability_factor = 0.1
+		}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
-	communist_education = {
+	socialist_education = {
 
 		icon = eng_propaganda_campaigns
 
@@ -68,132 +115,7 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	socialist_education = {
-
-		icon = eng_propaganda_campaigns
-
-		days_remove = 120
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				socialism < 0.9
-			}
-			OR = {
-				political_power_daily > 0.5
-				has_political_power > 60
-			}
-		}
-
-		visible = {
-			has_government = socialism
-			NOT = {
-				AND = {
-					tag = ENG
-					#has_completed_focus = ENG_concessions_to_the_trade_unions
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-						has_government = socialism
-					}
-				}
-			}
-			FROM = {
-				is_puppet_of = ROOT
-				socialism < 0.99
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		targeted_modifier = {
-			tag = FROM
-			communism_drift = 0.1
-			research_speed_factor = 0.05
-		}
-
-		modifier = {
-			political_power_cost = 0.5
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	nation_building = {
-
-		icon = eng_propaganda_campaigns
-
-		days_remove = 120
-		
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-			OR = {
-				communism > 0.4
-				fascism > 0.4
-				authoritarianism > 0.4
-			}
-			}
-			OR = {
-				political_power_daily > 0.5
-				has_political_power > 60
-			}
-		}
-
-		visible = {
-			not = {
-			has_government = communism
-			has_government = authoritarianism
-			has_government = fascism
-			}
-			FROM = {
-				is_puppet_of = ROOT
-				OR = {
-					socialism < 0.99
-					social_democracy < 0.99
-					social_liberalism < 0.99
-					market_liberalism < 0.99
-					social_conservatism < 0.99
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
-
-		targeted_modifier = {
-			tag = FROM
-			communism_drift = -0.1
-			authoritarianism_drift = -0.1
-			fascism_drift = -0.1
-			stability_factor = 0.1
-		}
-
-		modifier = {
-			political_power_cost = 0.5
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	
 	paramilitary_training = {
 
 		icon = eng_propaganda_campaigns
@@ -267,7 +189,7 @@ foreign_influence = {
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
-				authoritarianism < 0.9
+				neutrality < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -276,10 +198,10 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = authoritarianism
+			has_government = neutrality
 			FROM = {
 				is_puppet_of = ROOT
-				authoritarianism < 0.99
+				neutrality < 0.99
 			}
 		}
 
@@ -303,6 +225,7 @@ foreign_influence = {
 			factor = 0
 		}
 	}
+	
 	police_action = {
 
 		icon = generic_prepare_civil_war
@@ -314,48 +237,18 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				OR = {
-					socialism > 0.6
-					social_democracy > 0.6
-					social_liberalism > 0.6
-					market_liberalism > 0.6
-					social_conservatism > 0.6
-				}
+				democratic > 0.6
 			}
 			FROM = {
-				NOT = {
-					OR = {
-					has_government = socialism
-					has_government = social_democracy
-					has_government = social_liberalism
-					has_government = market_liberalism
-					has_government = social_conservatism
-					}
-				
-				}
+				NOT = { has_government = democratic }
 			}
 		}
 
 		visible = {
-					OR = {
-					has_government = socialism
-					has_government = social_democracy
-					has_government = social_liberalism
-					has_government = market_liberalism
-					has_government = social_conservatism
-					}
+			has_government = democratic
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = {
-					OR = {
-					has_government = socialism
-					has_government = social_democracy
-					has_government = social_liberalism
-					has_government = market_liberalism
-					has_government = social_conservatism
-					}
-				
-				}
+				NOT = { has_government = democratic }
 			}
 		}
 
@@ -374,27 +267,9 @@ foreign_influence = {
 				}
 			}
 			FROM = {
-					OR = {
 				set_politics = {
-					ruling_party = socialism
+					ruling_party = democratic
 					elections_allowed = yes
-				}
-				set_politics = {
-					ruling_party = social_democracy
-					elections_allowed = yes
-				}
-				set_politics = {
-					ruling_party = social_liberalism
-					elections_allowed = yes
-				}
-				set_politics = {
-					ruling_party = market_liberalism
-					elections_allowed = yes
-				}
-				set_politics = {
-					ruling_party = social_conservatism
-					elections_allowed = yes
-				}
 				}
 			}
 		}
@@ -551,18 +426,18 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				authoritarianism > 0.6
+				neutrality > 0.6
 			}
 			FROM = {
-				NOT = { has_government = authoritarianism }
+				NOT = { has_government = neutrality }
 			}
 		}
 
 		visible = {
-			has_government = authoritarianism
+			has_government = neutrality
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = authoritarianism }
+				NOT = { has_government = neutrality }
 			}
 		}
 
@@ -582,7 +457,7 @@ foreign_influence = {
 			}
 			FROM = {
 				set_politics = {
-					ruling_party = authoritarianism
+					ruling_party = neutrality
 					elections_allowed = no
 				}
 			}

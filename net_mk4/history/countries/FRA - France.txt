@@ -26,21 +26,16 @@ set_convoys = 300
 
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+    democratic = 69
+    fascism = 1
+    communism = 30
 }
 
 add_ideas = {
@@ -53,7 +48,7 @@ add_ideas = {
 create_country_leader = {
 	name = "앙드레 라주엔"
 	desc = "POLITICS_FRA_Andre_Lajoinie_DESC"
-	picture = "POLITICS_FRA_Andre_Lajoinie.dds"
+	picture = "Portrait_FRA_Andre_Lajoinie.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -63,7 +58,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "프랑수아 미테랑"
 	desc = "POLITICS_FRA_Francois_Mitterrand_DESC"
-	picture = "POLITICS_FRA_Francois_Mitterrand.dds"
+	picture = "Portrait_FRA_Francois_Mitterrand.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -73,7 +68,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "자크 시라크"
 	desc = "POLITICS_FRA_Jacques_Chirac_DESC"
-	picture = "POLITICS_FRA_Jacques_Chirac.dds"
+	picture = "Portrait_FRA_Jacques_Chirac.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -83,7 +78,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "장마리 르 펜"
 	desc = "POLITICS_FRA_Jean_Marie_Le_Pen_DESC"
-	picture = "POLITICS_FRA_Jean_Marie_Le_Pen.dds"
+	picture = "Portrait_FRA_Jean_Marie_Le_Pen.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {

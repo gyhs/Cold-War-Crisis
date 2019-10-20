@@ -11,20 +11,14 @@ set_technology = {
 set_politics = {}
 
 set_popularities = {
-    communism = 90
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 0
-	market_liberalism = 0
-	social_conservatism = 0
-	authoritarianism = 0
-	fascism = 0
+    democratic = 25
+    communism = 75
 }
 
 create_country_leader = {
 	name = "Noe Zhordania"
 	desc = ""
-	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
 	ideology = liberalism
 	traits = {
@@ -35,7 +29,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kandid Charkviani"
 	desc = ""
-	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {

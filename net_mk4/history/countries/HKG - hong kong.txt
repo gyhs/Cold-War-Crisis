@@ -22,27 +22,23 @@ add_ideas = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = market_liberalism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 ###
 set_popularities = {
-    communism = 5
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 25
-	market_liberalism = 25
-	social_conservatism = 15
-	authoritarianism = 5
-	fascism = 5
+	democratic =  58
+	fascism = 2
+	communism = 25
+	neutrality = 15
 }
 
 create_country_leader = {
 	name = "데이비드 윌슨"
 	desc = "POLITICS_HKG_David_Wilson_DESC"
-	picture = "POLITICS_HKG_David_Wilson.dds"
+	picture = "Portrait_HKG_David_Wilson.dds"
 	expire = "2100.3.1"
 	ideology = liberalism
 	traits = {
