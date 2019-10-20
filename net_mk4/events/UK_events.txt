@@ -274,38 +274,38 @@ country_event = {
 	}
 }
 country_event = { #닐 키녹의 워싱턴 방문3/27
-	id = NE_ENG.9
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.9"}
-	title = NE_ENG.9.t
-	desc = NE_ENG.9.desc
-	picture = 
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #레이건을 만나자
-		name = NE_ENG.9.a
-		ai_chance = { factor = 1 }
-		add_stability = 0.02
-		country_event = {
-			id = NE_ENG.10
-		}
-	}
-}
-country_event = { #닐 키녹이 워싱턴을 방문하다
 	id = NE_ENG.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.10"}
-	title = NE_ENG.10.t
+	title = NE_ENG.10.title
 	desc = NE_ENG.10.desc
 	picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #반갑군
+	option = { #레이건을 만나자
 		name = NE_ENG.10.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
+		country_event = {
+			id = NE_ENG.11
+		}
+	}
+}
+country_event = { #닐 키녹이 워싱턴을 방문하다
+	id = NE_ENG.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.11"}
+	title = NE_ENG.11.title
+	desc = NE_ENG.11.desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #반갑군
+		name = NE_ENG.11.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.01
 		hidden_effect = {#마가렛 대처 모스크바
 			country_event = {
 				id = NE_ENG.11
@@ -315,17 +315,36 @@ country_event = { #닐 키녹이 워싱턴을 방문하다
 	}
 }
 country_event = { #마가렛 대처의 모스크바 방문
-	id = NE_ENG.11
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.11"}
-	title = NE_ENG.11.t
-	desc = NE_ENG.11.desc
+	id = NE_ENG.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.12"}
+	title = NE_ENG.12.title
+	desc = NE_ENG.12.desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #좋은 만남이 되길
+		name = NE_ENG.12.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+		country_event = {
+		id = NE_ENG.13
+		}
+	}
+}
+country_event = { #마가렛 대처의 모스크바 방문
+	id = NE_ENG.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.13"}
+	title = NE_ENG.13.title
+	desc = NE_ENG.13.desc
 	picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #반갑군
-		name = NE_ENG.11.a
+		name = NE_ENG.12.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
 	}
