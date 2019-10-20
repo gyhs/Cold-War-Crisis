@@ -19,6 +19,7 @@ set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
 	uk_great_depression
+	eces_1
 }
 	
 
