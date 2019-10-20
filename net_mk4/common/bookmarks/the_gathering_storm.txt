@@ -27,8 +27,13 @@ bookmarks = {
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = social_liberalism
 			ideas = {
+			uk_great_depression
+			eces_1
 			}
 			focuses = {
+			UK_0
+			UK_1
+			UK_85
 			}
 		}
 		"GER"={
