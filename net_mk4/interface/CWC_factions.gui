@@ -1,0 +1,114 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "country_default_faction"
+		position = { x=0 y = 0 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="c_default_logo"
+			spriteType = "GFX_faction_default"
+			position = { x= 158 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_DEFAULT
+		}
+	}
+	
+	containerWindowType = {
+		name = "player_default_faction"
+		position = { x=0 y =78 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="p_default_logo"
+			spriteType = "GFX_faction_default"
+			position = { x= 19 y = 225 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_DEFAULT
+		}
+	}
+	
+	containerWindowType = {
+		name = "country_faction_no"
+		position = { x=0 y = 0 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="c_faction_no_logo"
+			spriteType = "GFX_faction_no"
+			position = { x= 158 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_NO
+		}
+	}
+	
+	containerWindowType = {
+		name = "player_faction_no"
+		position = { x=0 y =78 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="p_faction_no_logo"
+			spriteType = "GFX_faction_no"
+			position = { x= 19 y = 225 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_NO
+		}
+	}
+
+	containerWindowType = {
+		name = "country_nato"
+		position = { x=0 y = 0 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="c_nato_logo"
+			spriteType = "GFX_faction_nato"
+			position = { x= 158 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_NATO
+		}
+	}
+	
+	containerWindowType = {
+		name = "player_nato"
+		position = { x=0 y =78 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="p_nato_logo"
+			spriteType = "GFX_faction_nato"
+			position = { x= 19 y = 225 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_NATO
+		}
+	}
+	
+	containerWindowType = {
+		name = "country_warsaw"
+		position = { x=0 y = 0 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="c_warsaw_logo"
+			spriteType = "GFX_faction_warsaw"
+			position = { x= 158 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_WARSAW
+		}
+	}
+	
+	containerWindowType = {
+		name = "player_warsaw"
+		position = { x=0 y =78 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="p_warsaw_logo"
+			spriteType = "GFX_faction_warsaw"
+			position = { x= 19 y = 225 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_WARSAW
+		}
+	}
+}

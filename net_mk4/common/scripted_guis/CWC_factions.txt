@@ -1,0 +1,89 @@
+##Scripted by Gerrade
+
+scripted_gui = {
+
+	c_default = {
+		context_type = selected_country_context
+		window_name = "country_default_faction"
+		parent_window_token = selected_country_view
+
+		visible = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = SOV }
+			is_in_faction = yes
+		}
+	}
+	
+	p_default = {
+		context_type = player_context
+		window_name = "player_default_faction"
+		parent_window_token = politics_tab
+
+		visible = {
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = SOV }
+			is_in_faction = yes
+		}
+	}
+	
+	c_faction_no = {
+		context_type = selected_country_context
+		window_name = "country_faction_no"
+		parent_window_token = selected_country_view
+
+		visible = {
+			is_in_faction = no
+		}
+	}
+	
+	p_faction_no = {
+		context_type = player_context
+		window_name = "player_faction_no"
+		parent_window_token = politics_tab
+
+		visible = {
+			is_in_faction = no
+		}
+	}
+
+	c_nato = {
+		context_type = selected_country_context
+		window_name = "country_nato"
+		parent_window_token = selected_country_view
+
+		visible = {
+			is_in_faction_with = USA
+		}
+	}
+	
+	p_nato = {
+		context_type = player_context
+		window_name = "player_nato"
+		parent_window_token = politics_tab
+
+		visible = {
+			is_in_faction_with = USA
+		}
+	}
+	
+	c_warsar = {
+		context_type = selected_country_context
+		window_name = "country_warsaw"
+		parent_window_token = selected_country_view
+
+		visible = {
+			is_in_faction_with = SOV
+		}
+	}
+	
+	p_warsaw = {
+		context_type = player_context
+		window_name = "player_warsaw"
+		parent_window_token = politics_tab
+
+		visible = {
+			is_in_faction_with = SOV
+		}
+	}
+}
+

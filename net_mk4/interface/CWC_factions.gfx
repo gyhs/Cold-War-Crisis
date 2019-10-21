@@ -1,0 +1,23 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_faction_default"
+		textureFile = "gfx/interface/faction/faction_default.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_no"
+		textureFile = "gfx/interface/faction/faction_no.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_nato"
+		textureFile = "gfx/interface/faction/faction_nato.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_faction_warsaw"
+		textureFile = "gfx/interface/faction/faction_warsaw.dds"
+	}
+
+}
