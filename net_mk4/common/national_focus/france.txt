@@ -74,7 +74,7 @@ focus_tree = {
 			focus = NF_FRA_nuclear_power
 		}
 		mutually_exclusive = {
-			focus = NF_FRA_memories_of_6.8
+			focus = NF_FRA_memories_of_6_8
 		}
 		x = 12
 		y = 5
@@ -130,7 +130,7 @@ focus_tree = {
 	}
 	#6.8혁명의 기억
 	focus = {
-		id = NF_FRA_memories_of_6.8
+		id = NF_FRA_memories_of_6_8
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 10.00
 		prerequisite = {
@@ -149,7 +149,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
 		prerequisite = {
-			focus = NF_FRA_memories_of_6.8
+			focus = NF_FRA_memories_of_6_8
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_su_contact
@@ -188,7 +188,7 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 10.00
 		prerequisite = {
-			focus = NF_FRA_memories_of_6.8
+			focus = NF_FRA_memories_of_6_8
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_party_consolidation
