@@ -122,7 +122,7 @@ focus_tree = {
 		icon = GFX_focus_renounce_the_treaty_of_triannon
 		cost = 10.00
 		prerequisite = {
-			focus = NF_FRA_élan_vital
+			focus = NF_FRA_elan_vital
 		}
 		x = 14
 		y = 7
