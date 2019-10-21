@@ -8,4 +8,5 @@ tags={
 	"Map"
 	"Fixes"
 }
+replace_path="map"
 supported_version="1.7.*"
