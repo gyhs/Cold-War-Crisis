@@ -224,8 +224,8 @@
  HOL_authoritarianism_ADJ:1 "네덜란드"
  HOL_fascism_ADJ:0 "네덜란드"
  
- CZE_communism:0 "체코슬로바키아"
- CZE_communism_DEF:0 "체코슬로바키아"
+ CZE_communism:0 "체코슬로바키아 연방공화국"
+ CZE_communism_DEF:0 "체코슬로바키아 연방공화국"
  CZE_socialism:0 "체코슬로바키아"
  CZE_socialism_DEF:0 "체코슬로바키아"
  CZE_social_democracy:0 "체코슬로바키아"
@@ -249,8 +249,8 @@
  CZE_authoritarianism_ADJ:1 "체코슬로바키아"
  CZE_fascism_ADJ:0 "체코슬로바키아"
  
- POL_communism:0 "폴란드"
- POL_communism_DEF:0 "폴란드"
+ POL_communism:0 "폴란드 인민공화국"
+ POL_communism_DEF:0 "폴란드 인민공화국"
  POL_socialism:0 "폴란드"
  POL_socialism_DEF:0 "폴란드"
  POL_social_democracy:0 "폴란드"
@@ -424,8 +424,8 @@
  ITA_authoritarianism_ADJ:1 "이탈리아"
  ITA_fascism_ADJ:0 "이탈리아"
  
- ROM_communism:0 "루마니아"
- ROM_communism_DEF:0 "루마니아"
+ ROM_communism:0 "루마니아 사회주의 공화국"
+ ROM_communism_DEF:0 "루마니아 사회주의 공화국"
  ROM_socialism:0 "루마니아"
  ROM_socialism_DEF:0 "루마니아"
  ROM_social_democracy:0 "루마니아"
@@ -624,8 +624,8 @@
  DEN_authoritarianism_ADJ:1 "덴마크"
  DEN_fascism_ADJ:0 "덴마크"
  
- BUL_communism:0 "불가리아"
- BUL_communism_DEF:0 "불가리아"
+ BUL_communism:0 "불가리아 인민공화국"
+ BUL_communism_DEF:0 "불가리아 인민공화국"
  BUL_socialism:0 "불가리아"
  BUL_socialism_DEF:0 "불가리아"
  BUL_social_democracy:0 "불가리아"

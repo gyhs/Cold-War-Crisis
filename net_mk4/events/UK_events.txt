@@ -287,8 +287,13 @@ country_event = { #닐 키녹의 워싱턴 방문3/27
 		name = NE_ENG.10.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
-		country_event = {
-			id = NE_ENG.11
+		USA = {country_event = 
+		{ days = 1 id = NE_ENG.11 }
+		hidden_effect = {#마가렛 대처 모스크바
+			country_event = {
+				id = NE_ENG.11
+				days = 2
+			}
 		}
 	}
 }
@@ -328,8 +333,8 @@ country_event = { #마가렛 대처의 모스크바 방문
 		name = NE_ENG.12.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
-		country_event = {
-		id = NE_ENG.13
+		SOV = {country_event = 
+		{ days = 1 id = NE_ENG.11 }
 		}
 	}
 }
