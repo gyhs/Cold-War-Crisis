@@ -347,5 +347,6 @@ country_event = { #마가렛 대처의 모스크바 방문
 		name = NE_ENG.12.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
+		}
 	}
 }
