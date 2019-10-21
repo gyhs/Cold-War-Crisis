@@ -743,7 +743,7 @@ focus_tree = {
 			focus = NF_FRA_cooperation_with_west_germany
 		}
 		x = 49
-		y = 3
+		y = 4
 
 	}
 	#항공모함 개발
@@ -767,7 +767,7 @@ focus_tree = {
 			focus = NF_FRA_mn
 		}
 		x = 50
-		y = 4
+		y = 3
 
 	}
 	#서독과의 협업
@@ -782,7 +782,7 @@ focus_tree = {
 			focus = NF_FRA_cooperation_with_Britain
 		}
 		x = 51
-		y = 3
+		y = 4
 
 	}
 	#보조함 개발
