@@ -1108,7 +1108,7 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
-			focus = NF_FRA_élan_vital
+			focus = NF_FRA_elan_vital
 			focus = NF_FRA_descendants_of_de_gaulle
 		}
 		x = 12
