@@ -677,7 +677,7 @@ focus_tree = {
 		y = 5
 
 	}
-	#굥격은 최대의 방어다
+	#공격은 최대의 방어다
 	focus = {
 		id = NF_FRA_attack_is_the_greatest_defense.
 		icon = GFX_goal_generic_army_artillery2
@@ -881,6 +881,7 @@ focus_tree = {
 		y = 9
 
 	}
+	#프랑스 공군
 	focus = {
 		id = NF_FRA_adl
 		icon = GFX_goal_generic_build_airforce
@@ -892,6 +893,7 @@ focus_tree = {
 		y = 2
 
 	}
+	#새로운 항공기 개발
 	focus = {
 		id = NF_FRA_new_aircraft_development
 		icon = GFX_goal_generic_air_fighter
@@ -903,6 +905,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#공격기 개발
 	focus = {
 		id = NF_FRA_attacker_development
 		icon = GFX_goal_poland_goal
@@ -914,6 +917,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#전투기 개발
 	focus = {
 		id = NF_FRA_aew_fighter_development
 		icon = GFX_goal_continuous_air_production
@@ -925,6 +929,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#기초항공교리
 	focus = {
 		id = NF_FRA_basic_air_warfare
 		icon = GFX_goal_generic_CAS
@@ -939,6 +944,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#전략적 파괴
 	focus = {
 		id = NF_FRA_strategic_destruction
 		icon = GFX_goal_generic_air_bomber
@@ -954,6 +960,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#작전상의 무결성
 	focus = {
 		id = NF_FRA_operational_integrity
 		icon = GFX_goal_generic_air_fighter
@@ -969,6 +976,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#전장 지원
 	focus = {
 		id = NF_FRA_battlefield_support
 		icon = GFX_goal_generic_air_doctrine
@@ -984,6 +992,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#스텔스 기술의 응용
 	focus = {
 		id = NF_FRA_application_of_new_technology
 		icon = GFX_goal_continuous_air_production
@@ -997,6 +1006,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#헬리콥터 개발
 	focus = {
 		id = NF_FRA_helicopter_development
 		icon = GFX_goal_unknown
@@ -1008,6 +1018,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#대학 교류회
 	focus = {
 		id = NF_FRA_university_exchange
 		icon = GFX_goal_generic_scientific_exchange
@@ -1019,6 +1030,7 @@ focus_tree = {
 		y = 2
 
 	}
+	#컴퓨터 보급
 	focus = {
 		id = NF_FRA_computer_dissemination
 		icon = GFX_focus_research
@@ -1030,6 +1042,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#통신의 발달
 	focus = {
 		id = NF_FRA_development_of_communication
 		icon = GFX_goal_generic_radar
@@ -1041,6 +1054,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#국제통신규정 확립
 	focus = {
 		id = NF_FRA_international_telecommunications_regulation
 		icon = GFX_goal_continuous_research
@@ -1052,6 +1066,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#문화산업의 진흥
 	focus = {
 		id = NF_FRA_promotion_of_the_cultural_industry
 		icon = GFX_goal_generic_production2
@@ -1063,6 +1078,7 @@ focus_tree = {
 		y = 2
 
 	}
+	#산업의 부흥
 	focus = {
 		id = FN_FRA_industrial_revival
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1074,6 +1090,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#산업 현대화
 	focus = {
 		id = NF_FRA_industrial_modernization
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1085,6 +1102,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#프랑스를 다시 위대하게!
 	focus = {
 		id = NF_FRA_great_france_again!
 		icon = GFX_goal_demand_sudetenland
@@ -1097,6 +1115,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#프랑스의 새로운 전차
 	focus = {
 		id = NF_FRA_new_streetcar_in_France
 		icon = GFX_goal_generic_army_tanks
@@ -1120,6 +1139,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#무기 수출
 	focus = {
 		id = FN_FRA_arms_export
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1131,6 +1151,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#군사 개발
 	focus = {
 		id = FN_FRA_military_development
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1142,6 +1163,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#문화의 황금기
 	focus = {
 		id = NF_FRA_golden_age_of_culture
 		icon = GFX_goal_generic_propaganda
@@ -1156,6 +1178,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#지배하라 프랑스여!
 	focus = {
 		id = NF_FRA_rule_france
 		icon = GFX_focus_eng_organise_the_blackshirts
@@ -1170,6 +1193,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#다시 불타는 유럽
 	focus = {
 		id = NF_FRA_europe_in_flames_again
 		icon = GFX_focus_usa_focus_on_europe
@@ -1182,6 +1206,7 @@ focus_tree = {
 		y = 10
 
 	}
+	#과거의 땅
 	focus = {
 		id = NF_FRA_land_of_the_past
 		icon = GFX_goal_generic_position_armies
@@ -1193,6 +1218,7 @@ focus_tree = {
 		y = 11
 
 	}
+	#동지 만들기
 	focus = {
 		id = NF_FRA_making_comrades
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -1204,6 +1230,7 @@ focus_tree = {
 		y = 11
 
 	}
+	#스페인
 	focus = {
 		id = NF_FRA_spain
 		icon = GFX_goal_generic_dangerous_deal
@@ -1215,6 +1242,7 @@ focus_tree = {
 		y = 12
 
 	}
+	#아일랜드
 	focus = {
 		id = NF_FRA_Ireland
 		icon = GFX_goal_generic_dangerous_deal
@@ -1226,6 +1254,7 @@ focus_tree = {
 		y = 12
 
 	}
+	#알제리 정복
 	focus = {
 		id = NF_FRA_conquest_of_algeria
 		icon = GFX_focus_eng_imperial_federation
@@ -1240,6 +1269,7 @@ focus_tree = {
 		y = 12
 
 	}
+	#알제리의 복종
 	focus = {
 		id = NF_FRA_algerian_puppet_state
 		icon = GFX_focus_cze_german_puppet
@@ -1254,6 +1284,7 @@ focus_tree = {
 		y = 12
 
 	}
+	#모로코 왕국의 운명
 	focus = {
 		id = NF_FRA_fate_of_the_kingdom_of_morocco
 		icon = GFX_goal_generic_major_war
@@ -1266,6 +1297,7 @@ focus_tree = {
 		y = 13
 
 	}
+	#튀니지의 운명
 	focus = {
 		id = NF_FRA_tunisia's_destiny
 		icon = GFX_goal_generic_major_war
@@ -1278,6 +1310,7 @@ focus_tree = {
 		y = 13
 
 	}
+	#냉전 부수기
 	focus = {
 		id = NF_FRA_break_of_the_cold_war
 		icon = GFX_focus_AST_never_gallipoli
@@ -1289,6 +1322,7 @@ focus_tree = {
 		y = 11
 
 	}
+	#오랜 숙적 제거
 	focus = {
 		id = NF_FRA_eliminate_the_long_enemy
 		icon = GFX_focus_attack_britain
