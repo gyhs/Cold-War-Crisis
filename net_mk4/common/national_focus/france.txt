@@ -12,7 +12,7 @@ focus_tree = {
 		id = NF_FRA_new_era
 		icon = GFX_goal_generic_alliance
 		cost = 10.00
-		x = 12
+		x = 21
 		y = 1
 
 	}
@@ -20,23 +20,15 @@ focus_tree = {
 		id = NF_FRA_faf
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10.00
-		x = 41
+		x = 50
 		y = 1
-
-	}
-	focus = {
-		id = NF_FRA_faf
-		icon = GFX_goal_generic_build_airforce
-		cost = 10.00
-		x = 47
-		y = 2
 
 	}
 	focus = {
 		id = NF_FRA_french_industry
 		icon = GFX_goal_generic_consumer_goods
 		cost = 10.00
-		x = 56
+		x = 65
 		y = 1
 
 	}
@@ -50,7 +42,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_europe_only_one
 		}
-		x = 7
+		x = 16
 		y = 2
 
 	}
@@ -61,7 +53,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_unilaterally_path
 		}
-		x = 7
+		x = 16
 		y = 4
 
 	}
@@ -75,7 +67,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_memories_of_6.8
 		}
-		x = 3
+		x = 12
 		y = 5
 
 	}
@@ -86,18 +78,18 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_dream_of_the_past
 		}
-		x = 2
+		x = 11
 		y = 6
 
 	}
 	focus = {
 		id = NF_FRA_control_parliament 
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_descendants_of_de_gaulle
 		}
-		x = 1
+		x = 10
 		y = 7
 
 	}
@@ -108,18 +100,18 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_dream_of_the_past
 		}
-		x = 4
+		x = 13
 		y = 6
 
 	}
 	focus = {
 		id = NF_FRA_liquidation_of_the_past
-		icon = GFX_goal_unknown
+		icon = GFX_focus_renounce_the_treaty_of_triannon
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_élan_vital
 		}
-		x = 5
+		x = 14
 		y = 7
 
 	}
@@ -133,13 +125,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_dream_of_the_past
 		}
-		x = 10
+		x = 19
 		y = 5
 
 	}
 	focus = {
 		id = NF_FRA_party_consolidation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_memories_of_6.8
@@ -147,35 +139,35 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_su_contact
 		}
-		x = 9
+		x = 18
 		y = 6
 
 	}
 	focus = {
 		id = NF_FRA_school_of_youth
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_party_consolidation
 		}
-		x = 8
+		x = 17
 		y = 7
 
 	}
 	focus = {
 		id = NF_FRA_treaty_of_permanent_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_school_of_youth
 		}
-		x = 7
+		x = 16
 		y = 8
 
 	}
 	focus = {
 		id = NF_FRA_su_contact
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_memories_of_6.8
@@ -183,53 +175,53 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_party_consolidation
 		}
-		x = 11
+		x = 20
 		y = 6
 
 	}
 	focus = {
 		id = NF_FRA_révolution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_fourth_int
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_party_consolidation
 			focus = NF_FRA_su_contact
 		}
-		x = 10
+		x = 19
 		y = 7
 
 	}
 	focus = {
 		id = NF_FRA_support_for_kgb
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_su_contact
 		}
-		x = 12
+		x = 21
 		y = 7
 
 	}
 	focus = {
 		id = NF_FRA_home_of_a_real_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_liberate_the_home_of_marx
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_support_for_kgb
 			focus = NF_FRA_school_of_youth
 		}
-		x = 10
+		x = 19
 		y = 8
 
 	}
 	focus = {
 		id = NF_FRA_wp_Join
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_great_red_menace
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_support_for_kgb
 		}
-		x = 13
+		x = 22
 		y = 8
 
 	}
@@ -243,7 +235,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_unilaterally_path
 		}
-		x = 17
+		x = 26
 		y = 2
 
 	}
@@ -254,7 +246,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_europe_only_one
 		}
-		x = 17
+		x = 26
 		y = 4
 
 	}
@@ -265,7 +257,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
-		x = 15
+		x = 24
 		y = 5
 
 	}
@@ -276,7 +268,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
-		x = 17
+		x = 26
 		y = 5
 
 	}
@@ -287,7 +279,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
-		x = 19
+		x = 28
 		y = 5
 
 	}
@@ -304,7 +296,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_emu_institutionalization
 		}
-		x = 17
+		x = 26
 		y = 6
 
 	}
@@ -315,7 +307,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_euro
 		}
-		x = 17
+		x = 26
 		y = 7
 
 	}
@@ -326,7 +318,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_the_leader_of_europe
 		}
-		x = 17
+		x = 26
 		y = 8
 
 	}
@@ -337,7 +329,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-		x = 16
+		x = 25
 		y = 9
 
 	}
@@ -348,7 +340,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-		x = 18
+		x = 27
 		y = 9
 
 	}
@@ -359,7 +351,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_the_leader_of_europe
 		}
-		x = 21
+		x = 30
 		y = 8
 
 	}
@@ -373,7 +365,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_the_Iron_curtain_breaking
 		}
-		x = 20
+		x = 29
 		y = 9
 
 	}
@@ -387,7 +379,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_wait_for_comedown
 		}
-		x = 22
+		x = 31
 		y = 9
 
 	}
@@ -399,7 +391,7 @@ focus_tree = {
 			focus = NF_FRA_the_Iron_curtain_breaking
 			focus = NF_FRA_wait_for_comedown
 		}
-		x = 21
+		x = 30
 		y = 10
 
 	}
@@ -416,7 +408,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_war_for_peace
 		}
-		x = 20
+		x = 29
 		y = 11
 
 	}
@@ -433,7 +425,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_prevention_of_war
 		}
-		x = 22
+		x = 31
 		y = 11
 
 	}
@@ -444,7 +436,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_faf
 		}
-		x = 36
+		x = 45
 		y = 2
 
 	}
@@ -455,7 +447,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_adt
 		}
-		x = 27
+		x = 36
 		y = 3
 
 	}
@@ -466,7 +458,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_weapons_development
 		}
-		x = 23
+		x = 32
 		y = 4
 
 	}
@@ -477,7 +469,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_weapons_development
 		}
-		x = 25
+		x = 34
 		y = 4
 
 	}
@@ -488,7 +480,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_weapons_development
 		}
-		x = 27
+		x = 36
 		y = 4
 
 	}
@@ -502,7 +494,7 @@ focus_tree = {
 		prerequisite = {
 			focus = FN_FRA_famas_Improvements
 		}
-		x = 26
+		x = 35
 		y = 5
 
 	}
@@ -513,7 +505,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_adt
 		}
-		x = 36
+		x = 45
 		y = 3
 
 	}
@@ -524,7 +516,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_command_reform
 		}
-		x = 29
+		x = 38
 		y = 4
 
 	}
@@ -535,7 +527,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_the_leader_of_europe
 		}
-		x = 25
+		x = 34
 		y = 8
 
 	}
@@ -549,7 +541,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_foreign_legion
 		}
-		x = 29
+		x = 38
 		y = 9
 
 	}
@@ -560,7 +552,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_command_reform
 		}
-		x = 32
+		x = 41
 		y = 4
 
 	}
@@ -571,7 +563,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_RFA_cos
 		}
-		x = 31
+		x = 40
 		y = 5
 
 	}
@@ -582,7 +574,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_RFA_cos
 		}
-		x = 33
+		x = 42
 		y = 5
 
 	}
@@ -593,7 +585,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_army_air_corps
 		}
-		x = 31
+		x = 40
 		y = 6
 
 	}
@@ -604,7 +596,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_army_air_corps
 		}
-		x = 33
+		x = 42
 		y = 6
 
 	}
@@ -615,7 +607,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_command_reform
 		}
-		x = 36
+		x = 45
 		y = 4
 
 	}
@@ -626,7 +618,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_dombat_doctrine
 		}
-		x = 36
+		x = 45
 		y = 5
 
 	}
@@ -640,7 +632,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_breakthrough
 		}
-		x = 35
+		x = 44
 		y = 6
 
 	}
@@ -654,7 +646,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_attack_is_the_greatest_defense.
 		}
-		x = 37
+		x = 46
 		y = 6
 
 	}
@@ -665,7 +657,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_breakthrough
 		}
-		x = 37
+		x = 46
 		y = 7
 
 	}
@@ -676,7 +668,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_faf
 		}
-		x = 41
+		x = 50
 		y = 2
 
 	}
@@ -690,7 +682,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_cooperation_with_west_germany
 		}
-		x = 40
+		x = 49
 		y = 3
 
 	}
@@ -701,7 +693,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_cooperation_with_Britain
 		}
-		x = 39
+		x = 48
 		y = 5
 
 	}
@@ -712,7 +704,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_mn
 		}
-		x = 41
+		x = 50
 		y = 4
 
 	}
@@ -726,7 +718,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_cooperation_with_Britain
 		}
-		x = 42
+		x = 51
 		y = 3
 
 	}
@@ -738,7 +730,7 @@ focus_tree = {
 			focus = NF_FRA_cooperation_with_west_germany
 			focus = NF_FRA_cooperation_with_Britain
 		}
-		x = 41
+		x = 50
 		y = 5
 
 	}
@@ -749,7 +741,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_cooperation_with_west_germany
 		}
-		x = 43
+		x = 52
 		y = 5
 
 	}
@@ -761,7 +753,7 @@ focus_tree = {
 			focus = NF_FRA_cruiser_development
 			focus = NF_FRA_aircraft_carrier_development
 		}
-		x = 41
+		x = 50
 		y = 6
 
 	}
@@ -775,7 +767,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_aircraft_carrier_development
 		}
-		x = 41
+		x = 50
 		y = 7
 
 	}
@@ -789,7 +781,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_hitting_doctrine
 		}
-		x = 40
+		x = 49
 		y = 8
 
 	}
@@ -803,7 +795,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_aircraft_carriercentric_doctrine
 		}
-		x = 42
+		x = 51
 		y = 8
 
 	}
@@ -815,8 +807,19 @@ focus_tree = {
 			focus = NF_FRA_hitting_doctrine
 			focus = NF_FRA_aircraft_carriercentric_doctrine
 		}
-		x = 41
+		x = 50
 		y = 9
+
+	}
+	focus = {
+		id = NF_FRA_adl
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_faf
+		}
+		x = 56
+		y = 2
 
 	}
 	focus = {
@@ -824,9 +827,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
-			focus = NF_FRA_faf
+			focus = NF_FRA_adl
 		}
-		x = 47
+		x = 56
 		y = 3
 
 	}
@@ -837,7 +840,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_aircraft_development
 		}
-		x = 46
+		x = 55
 		y = 4
 
 	}
@@ -848,7 +851,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_aircraft_development
 		}
-		x = 48
+		x = 57
 		y = 4
 
 	}
@@ -862,7 +865,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_attacker_development
 		}
-		x = 47
+		x = 56
 		y = 5
 
 	}
@@ -877,13 +880,13 @@ focus_tree = {
 			focus = NF_FRA_operational_integrity
 			focus = NF_FRA_battlefield_support
 		}
-		x = 45
+		x = 54
 		y = 6
 
 	}
 	focus = {
 		id = NF_FRA_operational_integrity
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_basic_air_warfare
@@ -892,7 +895,7 @@ focus_tree = {
 			focus = NF_FRA_strategic_destruction
 			focus = NF_FRA_battlefield_support
 		}
-		x = 47
+		x = 56
 		y = 6
 
 	}
@@ -907,20 +910,20 @@ focus_tree = {
 			focus = NF_FRA_operational_integrity
 			focus = NF_FRA_strategic_destruction
 		}
-		x = 49
+		x = 58
 		y = 6
 
 	}
 	focus = {
 		id = NF_FRA_application_of_new_technology
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_air_production
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_operational_integrity
 			focus = NF_FRA_battlefield_support
 			focus = NF_FRA_strategic_destruction
 		}
-		x = 47
+		x = 56
 		y = 7
 
 	}
@@ -931,7 +934,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_aircraft_development
 		}
-		x = 50
+		x = 59
 		y = 4
 
 	}
@@ -942,7 +945,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_french_industry
 		}
-		x = 53
+		x = 62
 		y = 2
 
 	}
@@ -953,7 +956,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_university_exchange
 		}
-		x = 53
+		x = 62
 		y = 3
 
 	}
@@ -964,7 +967,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_computer_dissemination
 		}
-		x = 53
+		x = 62
 		y = 4
 
 	}
@@ -975,7 +978,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_development_of_communication
 		}
-		x = 53
+		x = 62
 		y = 5
 
 	}
@@ -986,29 +989,29 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_french_industry
 		}
-		x = 56
+		x = 65
 		y = 2
 
 	}
 	focus = {
-		id = FN_FRA_arms_export
-		icon = GFX_goal_generic_construct_mil_factory
+		id = FN_FRA_industrial_revival
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_promotion_of_the_cultural_industry
 		}
-		x = 55
+		x = 64
 		y = 3
 
 	}
 	focus = {
-		id = FN_FRA_military_development
-		icon = GFX_goal_generic_construct_mil_factory
+		id = NF_FRA_industrial_modernization
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
-			focus = FN_FRA_arms_export
+			focus = FN_FRA_industrial_revival
 		}
-		x = 55
+		x = 64
 		y = 4
 
 	}
@@ -1020,7 +1023,7 @@ focus_tree = {
 			focus = NF_FRA_élan_vital
 			focus = NF_FRA_descendants_of_de_gaulle
 		}
-		x = 3
+		x = 12
 		y = 7
 
 	}
@@ -1031,7 +1034,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_AMX30_Improvements
 		}
-		x = 23
+		x = 32
 		y = 5
 
 	}
@@ -1042,19 +1045,30 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_attack_is_the_greatest_defense.
 		}
-		x = 35
+		x = 44
 		y = 7
 
 	}
 	focus = {
-		id = FN_FRA_industrial_revival
-		icon = GFX_goal_generic_construct_civ_factory
+		id = FN_FRA_arms_export
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_promotion_of_the_cultural_industry
 		}
-		x = 57
+		x = 66
 		y = 3
+
+	}
+	focus = {
+		id = FN_FRA_military_development
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = FN_FRA_arms_export
+		}
+		x = 66
+		y = 4
 
 	}
 	focus = {
@@ -1067,24 +1081,13 @@ focus_tree = {
 		prerequisite = {
 			focus = FN_FRA_military_development
 		}
-		x = 56
+		x = 65
 		y = 5
 
 	}
 	focus = {
-		id = NF_FRA_industrial_modernization
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = FN_FRA_industrial_revival
-		}
-		x = 57
-		y = 4
-
-	}
-	focus = {
 		id = NF_FRA_rule_france
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_organise_the_blackshirts
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_liquidation_of_the_past
@@ -1092,126 +1095,126 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_control_parliament 
 		}
-		x = 3
+		x = 12
 		y = 8
 
 	}
 	focus = {
 		id = NF_FRA_europe_in_flames_again
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_focus_on_europe
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_home_of_a_real_revolution
 			focus = NF_FRA_rule_france
 		}
-		x = 7
+		x = 16
 		y = 10
 
 	}
 	focus = {
 		id = NF_FRA_land_of_the_past
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_europe_in_flames_again
-		}
-		x = 3
-		y = 11
-
-	}
-	focus = {
-		id = NF_FRA_making_comrades
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_europe_in_flames_again
-		}
-		x = 9
-		y = 11
-
-	}
-	focus = {
-		id = NF_FRA_spain
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_making_comrades
-		}
-		x = 10
-		y = 12
-
-	}
-	focus = {
-		id = NF_FRA_Ireland
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_making_comrades
-		}
-		x = 8
-		y = 12
-
-	}
-	focus = {
-		id = NF_FRA_conquest_of_algeria
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_land_of_the_past
-		}
-		mutually_exclusive = {
-			focus = NF_FRA_algerian_puppet_state
-		}
-		x = 2
-		y = 12
-
-	}
-	focus = {
-		id = NF_FRA_algerian_puppet_state
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_land_of_the_past
-		}
-		mutually_exclusive = {
-			focus = NF_FRA_conquest_of_algeria
-		}
-		x = 4
-		y = 12
-
-	}
-	focus = {
-		id = NF_FRA_fate_of_the_kingdom_of_morocco
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_algerian_puppet_state
-			focus = NF_FRA_conquest_of_algeria
-		}
-		x = 2
-		y = 13
-
-	}
-	focus = {
-		id = NF_FRA_tunisia's_destiny
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_FRA_algerian_puppet_state
-			focus = NF_FRA_conquest_of_algeria
-		}
-		x = 4
-		y = 13
-
-	}
-	focus = {
-		id = NF_FRA_break_of_the_cold_war
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_europe_in_flames_again
 		}
 		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = NF_FRA_making_comrades
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_europe_in_flames_again
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = NF_FRA_spain
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_making_comrades
+		}
+		x = 18
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_Ireland
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_making_comrades
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_conquest_of_algeria
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_land_of_the_past
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_algerian_puppet_state
+		}
+		x = 12
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_algerian_puppet_state
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_land_of_the_past
+		}
+		mutually_exclusive = {
+			focus = NF_FRA_conquest_of_algeria
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = NF_FRA_fate_of_the_kingdom_of_morocco
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_algerian_puppet_state
+			focus = NF_FRA_conquest_of_algeria
+		}
+		x = 12
+		y = 13
+
+	}
+	focus = {
+		id = NF_FRA_tunisia's_destiny
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_algerian_puppet_state
+			focus = NF_FRA_conquest_of_algeria
+		}
+		x = 14
+		y = 13
+
+	}
+	focus = {
+		id = NF_FRA_break_of_the_cold_war
+		icon = GFX_focus_AST_never_gallipoli
+		cost = 10.00
+		prerequisite = {
+			focus = NF_FRA_europe_in_flames_again
+		}
+		x = 20
 		y = 11
 
 	}
@@ -1222,7 +1225,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_break_of_the_cold_war
 		}
-		x = 13
+		x = 20
 		y = 12
 
 	}
