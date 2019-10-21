@@ -222,6 +222,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#진정한 혁명의 고향
 	focus = {
 		id = NF_FRA_home_of_a_real_revolution
 		icon = GFX_focus_eng_liberate_the_home_of_marx
@@ -234,6 +235,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#바르샤바 조약 기구 가입
 	focus = {
 		id = NF_FRA_wp_Join
 		icon = GFX_focus_ger_great_red_menace
@@ -245,6 +247,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#하나의 유럽
 	focus = {
 		id = NF_FRA_europe_only_one
 		icon = GFX_goal_generic_improve_relations
@@ -259,6 +262,7 @@ focus_tree = {
 		y = 2
 
 	}
+	#단일유럽의정서 발휘
 	focus = {
 		id = NF_FRA_sea_put_into_effect
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -270,6 +274,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#경제*통화 동맹(EMU) 제도화
 	focus = {
 		id = NF_FRA_emu_institutionalization
 		icon = GFX_focus_generic_treaty
@@ -281,6 +286,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#유럽인
 	focus = {
 		id = NF_FRA_europeans
 		icon = GFX_goal_generic_national_unity
@@ -292,6 +298,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#유럽경제공동체(EEC) 강화
 	focus = {
 		id = NF_FRA_eec_strengthen
 		icon = GFX_goal_generic_major_alliance
@@ -303,6 +310,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#유로화
 	focus = {
 		id = NF_FRA_euro
 		icon = GFX_focus_mex_privatisation
@@ -320,6 +328,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#유럽의 선구자
 	focus = {
 		id = NF_FRA_the_leader_of_europe
 		icon = GFX_focus_usa_union_representation_act
@@ -331,6 +340,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#새로운 동료
 	focus = {
 		id = NF_FRA_new_members
 		icon = GFX_goal_generic_improve_relations
@@ -342,6 +352,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#스웨덴의 선택
 	focus = {
 		id = NF_FRA_Choice_of_sweden
 		icon = GFX_focus_friend_sweden
@@ -353,6 +364,7 @@ focus_tree = {
 		y = 9
 
 	}
+	#작은 거인
 	focus = {
 		id = NF_FRA_small_giant
 		icon = GFX_focus_friend_finland
@@ -364,6 +376,7 @@ focus_tree = {
 		y = 9
 
 	}
+	#동유럽 문제
 	focus = {
 		id = NF_FRA_eastern_european_affairs
 		icon = GFX_focus_usa_focus_on_europe
@@ -375,6 +388,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#몰락을 기다리다
 	focus = {
 		id = NF_FRA_wait_for_comedown
 		icon = GFX_focus_ger_bulwark_against_bolshevism
@@ -389,6 +403,7 @@ focus_tree = {
 		y = 9
 
 	}
+	#철의 장막 부수기
 	focus = {
 		id = NF_FRA_the_Iron_curtain_breaking
 		icon = GFX_focus_generic_provoke_border_clashes
@@ -403,6 +418,7 @@ focus_tree = {
 		y = 9
 
 	}
+	#냉전 극복
 	focus = {
 		id = NF_FRA_cold_war_overcome
 		icon = GFX_focus_generic_support_the_left_right
@@ -415,6 +431,7 @@ focus_tree = {
 		y = 10
 
 	}
+	#방위 전쟁
 	focus = {
 		id = NF_FRA_prevention_of_war
 		icon = GFX_goal_generic_military_sphere
@@ -432,6 +449,7 @@ focus_tree = {
 		y = 11
 
 	}
+	#평화를 위한 전쟁
 	focus = {
 		id = NF_FRA_war_for_peace
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
@@ -449,6 +467,7 @@ focus_tree = {
 		y = 11
 
 	}
+	#프랑스 육군
 	focus = {
 		id = NF_FRA_adt
 		icon = GFX_goal_generic_allies_build_infantry
@@ -460,6 +479,7 @@ focus_tree = {
 		y = 2
 
 	}
+	#무기 개발
 	focus = {
 		id = NF_FRA_weapons_development
 		icon = GFX_focus_generic_tank_production
@@ -471,6 +491,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#AMX30 개량화
 	focus = {
 		id = NF_FRA_AMX30_Improvements
 		icon = GFX_goal_continuous_armor_production
@@ -482,6 +503,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#FAMAS 개량
 	focus = {
 		id = FN_FRA_famas_Improvements
 		icon = GFX_goal_continuous_reduce_training_time
@@ -493,6 +515,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#보조장비 개발
 	focus = {
 		id = NF_FRA_a.e_development
 		icon = GFX_goal_generic_army_motorized
@@ -504,6 +527,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#보병 현대화
 	focus = {
 		id = NF_FRA_Infantry_modernization
 		icon = GFX_goal_generic_army_artillery
@@ -518,6 +542,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#사령부 개편
 	focus = {
 		id = NF_FRA_command_reform
 		icon = GFX_focus_generic_military_mission
@@ -529,6 +554,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#외인부대
 	focus = {
 		id = NF_FRA_foreign_legion
 		icon = GFX_goal_unknown
@@ -540,6 +566,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#NATO군 강화
 	focus = {
 		id = NF_FRA_nato_reorganization
 		icon = GFX_focus_generic_little_entente
@@ -551,6 +578,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#독불여단
 	focus = {
 		id = NF_FRA_fgb
 		icon = GFX_goal_unknown
@@ -565,6 +593,7 @@ focus_tree = {
 		y = 9
 
 	}
+	#특수작전사령부 개설
 	focus = {
 		id = NF_RFA_cos
 		icon = GFX_goal_unknown
@@ -576,6 +605,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#GIGN
 	focus = {
 		id = NF_FRA_gign
 		icon = GFX_goal_unknown
@@ -587,6 +617,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#육군항공대
 	focus = {
 		id = NF_FRA_army_air_corps
 		icon = GFX_focus_usa_escort_fighters
@@ -598,6 +629,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#제1해양공수연대(1er RPIMa)
 	focus = {
 		id = NF_FRA_1er_rpima
 		icon = GFX_focus_eng_special_air_service
@@ -609,6 +641,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#제13용기병공수연대(13e RDP)
 	focus = {
 		id = NF_FRA_13e_rdp
 		icon = GFX_focus_generic_paratrooper
@@ -620,6 +653,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#육군 교리
 	focus = {
 		id = NF_FRA_dombat_doctrine
 		icon = GFX_goal_generic_small_arms
@@ -631,6 +665,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#기초전투훈련
 	focus = {
 		id = NF_FRA_basic_combat_training
 		icon = GFX_focus_secret_rearmament
@@ -642,6 +677,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#굥격은 최대의 방어다
 	focus = {
 		id = NF_FRA_attack_is_the_greatest_defense.
 		icon = GFX_goal_generic_army_artillery2
@@ -656,6 +692,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#돌파전
 	focus = {
 		id = NF_FRA_breakthrough
 		icon = GFX_goal_generic_cavalry
@@ -670,6 +707,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#충격과 공포
 	focus = {
 		id = NF_FRA_shock_and_fear
 		icon = GFX_focus_generic_army_tanks2
@@ -681,6 +719,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#프랑스 해군
 	focus = {
 		id = NF_FRA_mn
 		icon = GFX_goal_generic_build_navy
@@ -692,6 +731,7 @@ focus_tree = {
 		y = 2
 
 	}
+	#영국과의 협업
 	focus = {
 		id = NF_FRA_cooperation_with_Britain
 		icon = GFX_focus_chi_british_cooperation
@@ -706,6 +746,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#항공모함 개발
 	focus = {
 		id = NF_FRA_aircraft_carrier_development
 		icon = GFX_goal_generic_navy_carrier
@@ -717,6 +758,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#조선소 확보
 	focus = {
 		id = NF_FRA_securing_a_shipyard
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -728,6 +770,7 @@ focus_tree = {
 		y = 4
 
 	}
+	#서독과의 협업
 	focus = {
 		id = NF_FRA_cooperation_with_west_germany
 		icon = GFX_goal_unknown
@@ -742,6 +785,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#보조함 개발
 	focus = {
 		id = NF_FRA_auxiliary_ship_development
 		icon = GFX_focus_generic_cruiser2
@@ -754,6 +798,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#순양함 개발
 	focus = {
 		id = NF_FRA_cruiser_development
 		icon = GFX_goal_generic_navy_battleship
@@ -765,6 +810,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#잠수함 개발
 	focus = {
 		id = NF_FRA_submarine_development
 		icon = GFX_goal_generic_navy_anti_submarine
@@ -777,6 +823,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#기초항해학
 	focus = {
 		id = NF_FRA_basic_navigation
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -791,6 +838,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#항모중심교리
 	focus = {
 		id = NF_FRA_aircraft_carriercentric_doctrine
 		icon = GFX_goal_generic_occupy_start_war
@@ -805,6 +853,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#타격함대교리
 	focus = {
 		id = NF_FRA_hitting_doctrine
 		icon = GFX_focus_rocketry
@@ -819,6 +868,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#해군항공대
 	focus = {
 		id = NF_FRA_naval_air_force
 		icon = GFX_goal_generic_air_fighter2
@@ -1058,6 +1108,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#대화력전
 	focus = {
 		id = NF_FRA_big_firepower
 		icon = GFX_focus_generic_combined_arms
