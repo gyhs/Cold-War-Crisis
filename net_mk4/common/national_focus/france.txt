@@ -8,18 +8,14 @@ focus_tree = {
 		}
 	}
 	default = no
-	#새로운 시대
 	focus = {
 		id = NF_FRA_new_era
 		icon = GFX_goal_generic_alliance
 		cost = 10.00
 		x = 21
 		y = 1
-		completion_reward = {
-			add_poltitcal_power = 100 #정치력 100
-		}
+
 	}
-	#프랑스군
 	focus = {
 		id = NF_FRA_faf
 		icon = GFX_goal_generic_army_doctrines
