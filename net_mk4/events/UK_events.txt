@@ -289,6 +289,11 @@ country_event = { #닐 키녹의 워싱턴 방문3/27
 		add_stability = 0.02
 		USA = {country_event = 
 		{ days = 1 id = NE_ENG.11 }
+		hidden_effect = {#마가렛 대처 모스크바
+			country_event = {
+				id = NE_ENG.11
+				days = 2
+			}
 		}
 	}
 }
