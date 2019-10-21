@@ -104,7 +104,7 @@ focus_tree = {
 		y = 7
 
 	}
-	#엘랑 비탈!(élan vital)
+	#엘랑 비탈(élan vital)
 	focus = {
 		id = NF_FRA_élan_vital
 		icon = GFX_goal_support_fascism
@@ -197,7 +197,7 @@ focus_tree = {
 		y = 6
 
 	}
-	#레볼루숑!(révolution)
+	#레볼루숑(révolution)
 	focus = {
 		id = NF_FRA_révolution
 		icon = GFX_goal_support_fourth_int
@@ -1102,9 +1102,9 @@ focus_tree = {
 		y = 4
 
 	}
-	#프랑스를 다시 위대하게!
+	#프랑스를 다시 위대하게
 	focus = {
-		id = NF_FRA_great_france_again!
+		id = NF_FRA_great_france_again
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
@@ -1178,7 +1178,7 @@ focus_tree = {
 		y = 5
 
 	}
-	#지배하라 프랑스여!
+	#지배하라 프랑스여
 	focus = {
 		id = NF_FRA_rule_france
 		icon = GFX_focus_eng_organise_the_blackshirts
@@ -1299,7 +1299,7 @@ focus_tree = {
 	}
 	#튀니지의 운명
 	focus = {
-		id = NF_FRA_tunisia's_destiny
+		id = NF_FRA_tunisia_destiny
 		icon = GFX_goal_generic_major_war
 		cost = 10.00
 		prerequisite = {
