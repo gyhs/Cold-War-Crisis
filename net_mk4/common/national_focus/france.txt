@@ -755,7 +755,7 @@ focus_tree = {
 			focus = NF_FRA_cooperation_with_Britain
 		}
 		x = 48
-		y = 5
+		y = 6
 
 	}
 	#조선소 확보
@@ -807,7 +807,7 @@ focus_tree = {
 			focus = NF_FRA_cooperation_with_west_germany
 		}
 		x = 52
-		y = 5
+		y = 6
 
 	}
 	#잠수함 개발
@@ -830,8 +830,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_cruiser_development
-		}
-		prerequisite = {
 			focus = NF_FRA_aircraft_carrier_development
 		}
 		x = 50
