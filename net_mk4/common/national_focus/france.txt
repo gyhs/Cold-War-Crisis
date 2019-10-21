@@ -116,6 +116,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#과거 청산
 	focus = {
 		id = NF_FRA_liquidation_of_the_past
 		icon = GFX_focus_renounce_the_treaty_of_triannon
@@ -127,6 +128,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#6.8혁명의 기억
 	focus = {
 		id = NF_FRA_memories_of_6.8
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
@@ -141,6 +143,7 @@ focus_tree = {
 		y = 5
 
 	}
+	#당 통합
 	focus = {
 		id = NF_FRA_party_consolidation
 		icon = GFX_focus_generic_soviet_politics
@@ -155,6 +158,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#학도병
 	focus = {
 		id = NF_FRA_school_of_youth
 		icon = GFX_focus_generic_military_academy
@@ -166,6 +170,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#영구 혁명 조약
 	focus = {
 		id = NF_FRA_treaty_of_permanent_revolution
 		icon = GFX_goal_anschluss
@@ -177,6 +182,7 @@ focus_tree = {
 		y = 8
 
 	}
+	#소련에게 도움을 요청하다.
 	focus = {
 		id = NF_FRA_su_contact
 		icon = GFX_focus_chi_mission_to_the_soviet_union
@@ -191,6 +197,7 @@ focus_tree = {
 		y = 6
 
 	}
+	#레볼루숑!(révolution)
 	focus = {
 		id = NF_FRA_révolution
 		icon = GFX_goal_support_fourth_int
@@ -203,6 +210,7 @@ focus_tree = {
 		y = 7
 
 	}
+	#KGB의 도움
 	focus = {
 		id = NF_FRA_support_for_kgb
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
