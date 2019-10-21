@@ -288,7 +288,6 @@ country_event = { #닐 키녹의 워싱턴 방문3/27
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
 		USA = {country_event = 
-		days = 1
 		{ id = NE_ENG.11 }
 		}
 	}
