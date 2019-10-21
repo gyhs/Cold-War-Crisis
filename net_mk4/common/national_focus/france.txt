@@ -106,7 +106,7 @@ focus_tree = {
 	}
 	#엘랑 비탈(élan vital)
 	focus = {
-		id = NF_FRA_élan_vital
+		id = NF_FRA_elan_vital
 		icon = GFX_goal_support_fascism
 		cost = 10.00
 		prerequisite = {
@@ -199,7 +199,7 @@ focus_tree = {
 	}
 	#레볼루숑(révolution)
 	focus = {
-		id = NF_FRA_révolution
+		id = NF_FRA_revolution
 		icon = GFX_goal_support_fourth_int
 		cost = 10.00
 		prerequisite = {
