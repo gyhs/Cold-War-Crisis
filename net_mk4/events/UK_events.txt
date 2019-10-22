@@ -293,6 +293,7 @@ country_event = { #닐 키녹의 워싱턴 방문3/27
 			country_event = {
 				id = NE_ENG.12
 				days = 2
+				}
 			}
 		}
 	}
@@ -333,6 +334,7 @@ country_event = { #마가렛 대처의 모스크바 방문 3/29
 			country_event = {
 				id = NE_ENG.12
 				days = 18
+				}
 			}
 		}
 	}
@@ -367,7 +369,7 @@ country_event = { #하비 프록터의 성추행 추문!
 		name = NE_ENG.14.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.05
-		add_political_power = -0.20
+		add_political_power = -20
 		days = 14
 	}
 }
@@ -384,7 +386,41 @@ country_event = { #상원 의회의 성전환 허용
 	option = { #흐음
 		name = NE_ENG.15.a
 		ai_chance = { factor = 1 }
-		add_political_power = -0.10
+		add_political_power = -10
+		days = 9
+	}
+}
+country_event = { #로우갈 매복, 앤트림주에서 IRA 8명 사살
+	id = NE_ENG.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.16"}
+	title = NE_ENG.16.title
+	desc = NE_ENG.16.desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #좋았어!
+		name = NE_ENG.16.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.07
+		days = 3
+	}
+}
+country_event = { #5/11 총선 전의 설문조사
+	id = NE_ENG.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.17"}
+	title = NE_ENG.17.title
+	desc = NE_ENG.17.desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #누구를 지지하지?
+		name = NE_ENG.17.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.07
 		days = 
 	}
 }
