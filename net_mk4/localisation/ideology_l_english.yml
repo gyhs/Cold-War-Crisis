@@ -2,31 +2,39 @@
  communism:0 "공산주의"
  communism_noun:0 "공산주의"
  communism_desc:0 "공산주의"
+ communism_subtype_1:0 "공산주의"
 #
  socialism:0 "사회주의"
  socialism_noun:0 "사회주의"
  socialism_desc:0 "사회주의"
+ socialism_subtype_1:0 "사회주의"
 #
  social_democracy:0 "사회민주주의"
  social_democracy_noun:0 "사회민주주의"
  social_democracy_desc:0 "사회민주주의"
+ social_democracy_subtype_1:0 "사회민주주의"
 #
  social_liberalism:0 "사회자유주의"
  social_liberalism_noun:0 "사회자유주의"
  social_liberalism_desc:0 "사회자유주의"
+ social_liberalism_subtype_1:0 "사회자유주의"
 #
  market_liberalism:0 "시장자유주의"
  market_liberalism_noun:0 "시장자유주의"
  market_liberalism_desc:0 "시장자유주의"
+ market_liberalism_subtype_1:0 "시장자유주의"
 #
  social_conservatism:0 "사회보수주의"
  social_conservatism_noun:0 "사회보수주의"
  social_conservatism_desc:0 "사회보수주의"
+ social_conservatism_subtype_1:0 "사회보수주의"
 #
  authoritarianism:0 "권위주의"
  authoritarianism_noun:0 "권위주의"
  authoritarianism_desc:0 "권위주의"
+ authoritarianism_subtype_1:0 "권위주의"
 #
  fascism:0 "파시즘"
  fascism_noun:0 "파시즘"
  fascism_desc:0 "파시즘"
+ fascism_subtype_1:0 "파시즘"
