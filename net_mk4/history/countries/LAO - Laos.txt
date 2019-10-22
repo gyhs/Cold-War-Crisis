@@ -11,7 +11,7 @@ set_technology = {
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = authoritarianism
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no

@@ -10,7 +10,7 @@ set_war_support = 0.1
 set_convoys = 10
 
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = authoritarianism
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = no

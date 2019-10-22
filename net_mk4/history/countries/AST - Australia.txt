@@ -187,7 +187,7 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1984.12.1"
 	election_frequency = 32
 	elections_allowed = yes

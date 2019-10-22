@@ -13,7 +13,7 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes

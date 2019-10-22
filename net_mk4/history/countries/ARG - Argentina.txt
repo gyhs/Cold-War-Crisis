@@ -22,7 +22,7 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 120
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes

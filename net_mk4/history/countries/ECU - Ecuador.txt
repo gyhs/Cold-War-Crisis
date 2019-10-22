@@ -10,7 +10,7 @@ set_war_support = 0.1
 set_convoys = 5
 
 set_politics = {	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1933.12.15"
 	election_frequency = 84
 	elections_allowed = yes

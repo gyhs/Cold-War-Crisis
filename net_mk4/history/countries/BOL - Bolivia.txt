@@ -8,7 +8,7 @@ set_technology = {
 set_country_flag = monroe_doctrine
 
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = authoritarianism
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes

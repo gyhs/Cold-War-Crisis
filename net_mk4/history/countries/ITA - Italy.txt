@@ -27,7 +27,7 @@ set_convoys = 200
 
 set_politics = {
 	
-	ruling_party = democratic
+	ruling_party = market_liberalism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = yes
