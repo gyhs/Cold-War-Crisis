@@ -274,9 +274,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 99
-    fascism = 0
-    communism = 1
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
@@ -284,7 +289,7 @@ create_country_leader = {
 	desc = "POLITICS_Ronald_Reagan_DESC"
 	picture = "POLITICS_USA_Ronald_Reagan.dds"
 	expire = "1947.1.1"
-	ideology = social_liberalism_subtype_1
+	ideology = market_liberalism_subtype_1
 	traits = {
 		dislikes_germany
 	}

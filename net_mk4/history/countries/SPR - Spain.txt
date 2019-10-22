@@ -15,9 +15,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 47
-    fascism = 46
-    communism = 7
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 set_convoys = 150
@@ -69,7 +74,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "José Asensio Torrado"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
 	traits = { defensive_doctrine }
 	skill = 2
     attack_skill = 1

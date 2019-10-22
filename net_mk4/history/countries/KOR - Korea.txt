@@ -194,10 +194,14 @@ set_politics = {
 }
 ###
 set_popularities = {
-	democratic =  48
-	fascism = 2
 	communism = 0
-	neutrality = 50
+	socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	market_liberalism = 46
+	social_conservatism = 0
+	authoritarianism = 44
+	fascism = 10
 }
 
 create_country_leader = {

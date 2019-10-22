@@ -20,10 +20,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 20
-    communism = 0
-    neutrality = 80
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 
 create_country_leader = {
@@ -39,7 +43,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Lu Han"
-	POLITICS_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_3.dds"
 	traits = { }
 	skill = 3
 	attack_skill = 4

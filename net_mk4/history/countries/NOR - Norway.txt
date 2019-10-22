@@ -23,9 +23,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 96
-    fascism = 2
-    communism = 2
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
@@ -74,7 +79,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Carl Gustav Fleischer"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	traits = {  trickster winter_specialist }
 	skill = 4
 	attack_skill = 3
@@ -85,7 +90,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Elias Corneliussen"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_2.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_2.dds"
 	traits = { navy_career_officer inshore_fighter spotter }
 	skill = 3
 	attack_skill = 2

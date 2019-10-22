@@ -17,10 +17,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 15
-    fascism = 5
-    communism = 10
-    neutrality = 70
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 
 create_country_leader = {

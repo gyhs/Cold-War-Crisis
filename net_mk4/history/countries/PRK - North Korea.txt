@@ -63,8 +63,14 @@ set_politics = {
 }
 
 set_popularities = {
-    communism = 90
-    neutrality = 10
+	communism = 70
+	socialism = 10
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 add_ideas = {

@@ -20,10 +20,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 75
-    neutrality = 14
-    communism = 8
-    fascism = 3
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 set_convoys = 25
@@ -78,7 +82,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Folke Högberg"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
 	traits = { commando }
 	skill = 3
 
@@ -90,7 +94,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Erik af Edholm"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	traits = {  hill_fighter }
 	skill = 4
 
@@ -102,7 +106,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Claes Lindström"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_2.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_2.dds"
 	traits = { battleship_adherent blockade_runner }
 	skill = 4
 	attack_skill = 3

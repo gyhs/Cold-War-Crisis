@@ -18,10 +18,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 10
-    fascism = 0
-    communism = 0
-    neutrality = 90
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 
 set_convoys = 20
@@ -84,7 +88,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Cemil Cahit Toydemir"
-	POLITICS_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_1.dds"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_1.dds"
 	traits = { desert_fox }
 	skill = 3
 
@@ -96,7 +100,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Nazmi Solok"
-	POLITICS_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_3.dds"
 	traits = { trickster }
 	skill = 2
 
@@ -108,7 +112,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Salih Omurtak"
-	POLITICS_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_4.dds"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_4.dds"
 	traits = {  hill_fighter }
 	skill = 2
 
@@ -120,7 +124,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Rauf Orbay"
-	POLITICS_path = "gfx/leaders/South America/POLITICS_South_America_Generic_navy_1.dds"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_navy_1.dds"
 	traits = { bold }
 	skill = 2
 	attack_skill = 3

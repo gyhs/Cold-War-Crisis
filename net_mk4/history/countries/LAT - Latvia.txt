@@ -20,10 +20,14 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic =  30
-	fascism = 10
-	communism = 10
-	neutrality = 50
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 
 create_country_leader = {
@@ -70,7 +74,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Berkis Krisjanis"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	traits = { ranger }
 	skill = 2
 	attack_skill = 2

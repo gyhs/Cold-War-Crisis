@@ -21,10 +21,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 10
-    fascism = 23
-    communism = 2
-    neutrality = 65
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 set_stability = 0.75
 
@@ -75,7 +79,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Markos Drakos"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
 	traits = { hill_fighter }
 	skill = 3
 	attack_skill = 1

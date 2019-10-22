@@ -18,9 +18,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 83
-    fascism = 11
-    communism = 6
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 set_convoys = 80
@@ -61,7 +66,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "M.C.L. Keyaerts"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
 	traits = { trait_mountaineer hill_fighter }
 	skill = 4
 	attack_skill = 3
@@ -72,7 +77,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Georges Timmermans"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_3.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_3.dds"
 	traits = { bold }
 	skill = 4
 	attack_skill = 4

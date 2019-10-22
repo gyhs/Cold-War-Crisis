@@ -17,10 +17,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 35
-    fascism = 15
-    communism = 15
-    neutrality = 35
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!

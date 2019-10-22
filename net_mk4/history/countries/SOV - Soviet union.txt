@@ -257,9 +257,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 10
-    fascism = 2
-    communism = 88
+	communism = 70
+	socialism = 10
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_faction = Warsaw_Pact
@@ -855,7 +860,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Vladimir Kasatonov"
 	id = 403
-		picture = "POLITICS_Soviet_Vladimir_Kasatonov.dds"
+	picture = "POLITICS_Soviet_Vladimir_Kasatonov.dds"
 	traits = { seawolf }
 	skill = 2
 	attack_skill = 1

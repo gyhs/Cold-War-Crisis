@@ -17,10 +17,14 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic =  92
-	fascism = 3
-	communism = 5
-	neutrality = 2
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 #Pierre Dupong from 37

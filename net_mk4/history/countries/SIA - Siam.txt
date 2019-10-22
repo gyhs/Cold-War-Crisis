@@ -29,10 +29,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 20
-    communism = 0
-    neutrality = 80
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 set_politics = {	
 	ruling_party = market_liberalism
@@ -42,10 +46,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 80
-    fascism = 0
-    communism = 0
-    neutrality = 20
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 ###

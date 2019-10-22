@@ -16,10 +16,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 5
-    communism = 5
-    neutrality = 90
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 
 set_convoys = 100
@@ -62,7 +66,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "José Vicente de Freitas"
-	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	traits = {  }
 	skill = 3
 

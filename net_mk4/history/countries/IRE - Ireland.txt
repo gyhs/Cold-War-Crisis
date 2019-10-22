@@ -17,9 +17,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 98
-    fascism = 1
-    communism = 1
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
@@ -68,7 +73,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Michael Costello"
-	POLITICS_path = "gfx/leaders/ENG/POLITICS_Britain_Generic_land_4.dds"
+	portrait_path = "gfx/leaders/ENG/POLITICS_Britain_Generic_land_4.dds"
 	traits = {  }
 	skill = 2
 	attack_skill = 2

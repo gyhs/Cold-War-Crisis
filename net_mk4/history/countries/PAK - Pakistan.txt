@@ -16,10 +16,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 17
-    fascism = 2
-    communism = 1
-    neutrality = 80
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
 }
 
 
@@ -58,7 +62,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Muhammad Zia-ul-Haq"
-	POLITICS_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic.dds"
+	portrait_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic.dds"
 	traits = {  }
 	skill = 2
 	
@@ -70,7 +74,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Iftikhar Khan Janjua"
-	POLITICS_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic_2.dds"
+	portrait_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic_2.dds"
 	traits = {  }
 	skill = 3
 	
@@ -81,7 +85,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Akbar Khan"
-	POLITICS_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic.dds"
+	portrait_path = "gfx/leaders/RAJ/POLITICS_The_Raj_Army_Generic.dds"
 	traits = { trickster }
 	skill = 3
 	

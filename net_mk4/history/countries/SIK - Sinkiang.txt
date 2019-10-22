@@ -14,9 +14,14 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 0
-    fascism = 0
-    communism = 100
+	communism = 70
+	socialism = 10
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
 }
 
 create_country_leader = {
@@ -32,7 +37,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Chiang Yu-fen"
-	POLITICS_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_3.dds"
 	traits = { }
 	skill = 3
 	attack_skill = 4
