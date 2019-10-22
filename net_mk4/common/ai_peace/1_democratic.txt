@@ -9,7 +9,13 @@
 
 democratic_peace = {
 	enable = {
-		has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 	}
 
 	annex_randomness = 0 #100
@@ -55,14 +61,20 @@ democratic_peace = {
 			factor = 10
 
 			FROM = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 		modifier = {
 			factor = 5
 
 			FROM = {
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 		}
 
@@ -152,14 +164,28 @@ democratic_peace = {
 			factor = 5
 
 			FROM = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 
 		modifier = {
 			factor = 10
 			FROM = {
-				NOT = { has_government = democratic }
+				NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 			}
 		}
 
@@ -600,7 +626,13 @@ democratic_peace = {
 			factor = -1
 
 			FROM = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	}

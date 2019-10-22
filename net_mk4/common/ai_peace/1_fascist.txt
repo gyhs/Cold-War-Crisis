@@ -10,7 +10,15 @@ fascist_peace = {
 			has_government = fascism
 			AND = {
 				NOT = { has_government = communism }
-				NOT = { has_government = democratic }
+				NOT = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 				OR = {
 					any_country = {
 						is_in_faction_with = ROOT

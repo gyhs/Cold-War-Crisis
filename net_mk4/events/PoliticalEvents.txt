@@ -306,11 +306,11 @@ country_event = {
 #		}
 #		if = {
 #			limit = {
-#				has_government = neutrality
+#				has_government = authoritarianism
 #			}
 #			start_civil_war = {
 #				ruling_party = communism
-#				ideology = neutrality
+#				ideology = authoritarianism
 #				size = 0.6
 #			}
 #		}
@@ -524,13 +524,13 @@ country_event = {
 #		}
 #		if = {
 #			limit = {
-#				has_government = neutrality
+#				has_government = authoritarianism
 #			}
 #			if = {
 #				limit = { fascism > 0.4 }
 #				start_civil_war = {
 #					ruling_party = fascism
-#					ideology = neutrality
+#					ideology = authoritarianism
 #					size = 0.6
 #				}
 #			}
@@ -538,7 +538,7 @@ country_event = {
 #				limit = { NOT = { fascism > 0.4 } }
 #				start_civil_war = {
 #					ruling_party = fascism
-#					ideology = neutrality
+#					ideology = authoritarianism
 #					size = 0.7
 #				}
 #			}
@@ -674,8 +674,20 @@ country_event = {
 	picture = GFX_report_event_journalists_speech
 	
 	trigger = {
-		NOT = { has_government = democratic }
-		democratic > 0.6
+		NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+		socialism > 0.6
+		social_democracy > 0.6
+		social_liberalism > 0.6
+		market_liberalism > 0.6
+		social_conservatism > 0.6
 		check_has_focus_tree_to_switch_to_democratic = yes
 	}
 
@@ -697,7 +709,7 @@ country_event = {
 		name = political.14.c
 		add_political_power = -100
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = social_liberalism
 			elections_allowed = yes
 		}
 	}
@@ -721,7 +733,15 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = democratic_reformer
-		NOT = { has_government = democratic }
+		NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		NOT = { has_country_flag = democracy_opposition_formed }
 		is_puppet = no
 	}
@@ -737,7 +757,7 @@ country_event = {
 	option = {
 		name = political.15.a
 		add_popularity = {
-			ideology = democratic
+			ideology = social_liberalism
 			popularity = 0.05
 		}
 		add_stability = -0.05
@@ -754,7 +774,15 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = democratic_reformer
-		NOT = { has_government = democratic }
+		NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+		}
 		has_country_flag = democracy_opposition_formed
 		NOT = { has_idea = democratic_opposition_voicing_protests }
 	}
@@ -988,7 +1016,7 @@ country_event = {
 			add_timed_idea = { idea = communism_defeated days = 730 }
 		}
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = social_liberalism
 			elections_allowed = yes
 		}
 		add_stability = -0.05
@@ -1035,11 +1063,17 @@ country_event = {
 		name = political.21.b
 		if = {
 			limit = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = democratic
+				ideology = social_liberalism
 				size = 0.5
 			}
 		}
@@ -1055,11 +1089,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 			start_civil_war = {
 				ruling_party = fascism
-				ideology = neutrality
+				ideology = authoritarianism
 				size = 0.5
 			}
 		}
@@ -1115,11 +1149,17 @@ country_event = {
 		name = political.22.b
 		if = {
 			limit = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 			start_civil_war = {
 				ruling_party = communism
-				ideology = democratic
+				ideology = social_liberalism
 				size = 0.5
 			}
 		}
@@ -1135,11 +1175,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 			start_civil_war = {
 				ruling_party = communism
-				ideology = neutrality
+				ideology = authoritarianism
 				size = 0.5
 			}
 		}
@@ -1153,10 +1193,22 @@ country_event = {
 	picture = GFX_report_event_gathering_protest
 
 	trigger = {
-		democratic > 0.7
+		socialism > 0.7
+		social_democracy > 0.7
+		social_liberalism > 0.7
+		market_liberalism	 > 0.7
+		social_conservatism > 0.7
 		#has_idea = democratic_revolutionaries
 		#Special case CHI PRC
-		NOT = { has_government = democratic }
+		NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		OR = {
 			NOT = { tag = CHI }
 			AND = {
@@ -1182,7 +1234,7 @@ country_event = {
 			factor = 0
 		}
 		start_civil_war = {
-			ideology = democratic
+			ideology = social_liberalism
 			size = 0.5
 		}
 	}
@@ -1191,11 +1243,11 @@ country_event = {
 		name = political.23.b
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 			start_civil_war = {
-				ruling_party = democratic
-				ideology = neutrality
+				ruling_party = social_liberalism
+				ideology = authoritarianism
 				size = 0.5
 			}
 		}
@@ -1205,7 +1257,7 @@ country_event = {
 			}
 			add_timed_idea = { idea = fascism_defeated days = 730 }			
 			start_civil_war = {
-				ruling_party = democratic
+				ruling_party = social_liberalism
 				ideology = fascism
 				size = 0.5
 			}
@@ -1216,7 +1268,7 @@ country_event = {
 			}
 			add_timed_idea = { idea = communism_defeated days = 730 }
 			start_civil_war = {
-				ruling_party = democratic
+				ruling_party = social_liberalism
 				ideology = communism
 				size = 0.5
 			}
@@ -1275,7 +1327,11 @@ country_event = {
 	picture = GFX_report_event_europe_funeral
 
 	trigger = {
-		democratic < 0.3
+		socialism < 0.3
+		social_democracy < 0.3
+		social_liberalism < 0.3
+		market_liberalism < 0.3
+		social_conservatism < 0.3
 		has_idea = democratic_revolutionaries
 	}
 
@@ -1308,7 +1364,7 @@ country_event = {
 			has_government = fascism
 			has_government = communism
 		}
-		has_idea = neutrality_idea
+		has_idea = authoritarianism_idea
 	}
 
 	mean_time_to_happen = {
@@ -1317,7 +1373,7 @@ country_event = {
 
 	option = {
 		name = political.27.a
-		remove_ideas = neutrality_idea
+		remove_ideas = authoritarianism_idea
 	}
 }
 

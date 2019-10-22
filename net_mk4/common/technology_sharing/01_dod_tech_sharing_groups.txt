@@ -13,7 +13,14 @@ technology_sharing_group = {
     	is_in_faction_with = ENG
     	ENG = {
     		is_faction_leader = yes
-    		has_government = democratic
+    		
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		}
     }
 }

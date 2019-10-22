@@ -28,7 +28,13 @@ on_actions = {
 				limit = {
 					ROOT = {
 						original_tag = FRA
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
 				}
 				set_cosmetic_tag = FRA_FREE
@@ -73,11 +79,11 @@ on_actions = {
 					has_autonomy_state = autonomy_dominion
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = social_liberalism
 					elections_allowed = yes
 				}
 				add_popularity = {
-					ideology = neutrality
+					ideology = authoritarianism
 					popularity = -1
 				}
 			}

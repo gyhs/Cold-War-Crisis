@@ -71,9 +71,21 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	}
@@ -105,9 +117,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -142,9 +166,21 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 		ai_chance = {
@@ -206,9 +242,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -238,7 +286,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = {
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 			}
 			
@@ -346,9 +394,21 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	}
@@ -382,9 +442,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -418,9 +490,21 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	}
@@ -452,9 +536,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -485,9 +581,21 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	}
@@ -519,9 +627,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -557,9 +677,21 @@ country_event = {
 			is_in_faction = no
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 		ai_chance = {
@@ -582,7 +714,13 @@ country_event = {
 				limit = {
 					FROM = {
 						original_tag = GER
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 						##has_completed_focus = GER_pool_technical_know_how
 					}
 					#NOT = { has_idea = GER_pool_technical_know_how }
@@ -656,9 +794,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -688,7 +838,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = {
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 			}
 			
@@ -716,7 +866,13 @@ country_event = {
 				limit = {
 					FROM = {
 						original_tag = GER
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 						#has_completed_focus = GER_pool_technical_know_how
 					}
 					#NOT = { has_idea = GER_pool_technical_know_how }
@@ -820,9 +976,21 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	}
@@ -856,9 +1024,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -892,9 +1072,21 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	}
@@ -926,9 +1118,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				AND = {
 					FROM = {
@@ -1340,10 +1544,35 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.1
-				NOT = { democratic > 0.2 }
+				FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				socialism > 0.1
+				social_democracy > 0.1
+				social_liberalism > 0.1
+				market_liberalism > 0.1
+				social_conservatism > 0.1
+				NOT = { socialism > 0.2 
+						social_democracy > 0.2 
+						social_liberalism > 0.2 
+						market_liberalism > 0.2 
+						social_conservatism > 0.2 
+				}
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1351,10 +1580,35 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.2
-				NOT = { democratic > 0.3 }
+				FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				socialism > 0.2
+				social_democracy > 0.2
+				social_liberalism > 0.2
+				market_liberalism > 0.2
+				social_conservatism > 0.2
+				NOT = { socialism > 0.3
+						social_democracy > 0.3
+						social_liberalism > 0.3
+						market_liberalism > 0.3
+						social_conservatism > 0.3
+				}
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1362,10 +1616,35 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.3
-				NOT = { democratic > 0.4 }
+				FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				socialism > 0.3
+				social_democracy > 0.3
+				social_liberalism > 0.3
+				market_liberalism > 0.3
+				social_conservatism > 0.3
+				NOT = { socialism > 0.4
+						social_democracy > 0.4
+						social_liberalism > 0.4
+						market_liberalism > 0.4
+						social_conservatism > 0.4
+				}
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1373,9 +1652,29 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.4
+				FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+				socialism > 0.4
+				social_democracy > 0.4
+				social_liberalism > 0.4
+				market_liberalism > 0.4
+				social_conservatism > 0.4
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt

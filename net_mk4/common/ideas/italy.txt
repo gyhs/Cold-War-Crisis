@@ -35,7 +35,11 @@ ideas = {
 				NOT = {
 					OR = {
 						has_government = communism
-						has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 					}
 				}
 			}
@@ -44,7 +48,11 @@ ideas = {
 			
 			modifier = {
 				communism_acceptance = -10
-				democratic_acceptance = -10
+				socialism_acceptance = -10
+				social_democracy_acceptance = -10
+				social_liberalism_acceptance = -10
+				market_liberalism_acceptance = -10
+				social_conservatism_acceptance = -10
 				fascism_acceptance = 10
 				ai_focus_aggressive_factor = 0.5
 				justify_war_goal_time = -0.05
@@ -74,9 +82,21 @@ ideas = {
 						}
 					}
 					AND = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 						GER = {
-							has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 						}
 					}
 				}
@@ -139,7 +159,13 @@ ideas = {
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 			}
 			

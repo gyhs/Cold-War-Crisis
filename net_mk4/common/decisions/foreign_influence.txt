@@ -15,7 +15,13 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				democratic < 0.9
+			OR = {
+                socialism < 0.9
+                social_democracy < 0.9
+                social_liberalism < 0.9
+                market_liberalism < 0.9
+                social_conservatism < 0.9
+				}
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -24,10 +30,22 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			FROM = {
 				is_puppet_of = ROOT
-				democratic < 0.99
+            OR = {
+                socialism < 0.99
+                social_democracy < 0.99
+                social_liberalism < 0.99
+                market_liberalism < 0.99
+                social_conservatism < 0.99
+            }
 			}
 		}
 
@@ -39,7 +57,11 @@ foreign_influence = {
 
 		targeted_modifier = {
 			tag = FROM
-			democratic_drift = 0.1
+			socialism_drift = 0.1
+			social_democracy_drift = 0.1
+			social_liberalism_drift = 0.1
+			market_liberalism_drift = 0.1
+			social_conservatism_drift = 0.1
 			stability_factor = 0.1
 		}
 
@@ -189,7 +211,7 @@ foreign_influence = {
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
-				neutrality < 0.9
+				authoritarianism < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -198,10 +220,10 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = neutrality
+			has_government = authoritarianism
 			FROM = {
 				is_puppet_of = ROOT
-				neutrality < 0.99
+				authoritarianism < 0.99
 			}
 		}
 
@@ -213,7 +235,7 @@ foreign_influence = {
 
 		targeted_modifier = {
 			tag = FROM
-			neutrality_drift = 0.1
+			authoritarianism_drift = 0.1
 			mobilization_speed = 0.15
 		}
 
@@ -237,18 +259,46 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				democratic > 0.6
+            OR = {
+                socialism > 0.6
+                social_democracy > 0.6
+                social_liberalism > 0.6
+                market_liberalism > 0.6
+                social_conservatism > 0.6
+            }
 			}
 			FROM = {
-				NOT = { has_government = democratic }
+				NOT = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 			}
 		}
 
 		visible = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = democratic }
+				NOT = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 			}
 		}
 
@@ -261,15 +311,90 @@ foreign_influence = {
 		complete_effect = {
 			FROM = { country_event = { id = mtg_generic.1 } }
 			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
+				if = {
+					limit = {
+						FROM = {
+						socialism > 0.6
+						}
+					}
+					effect_tooltip = {
+						add_timed_idea = {
+							idea = political_turmoil
+							days = 365
+						}
+						set_politics = {
+							ruling_party = socialism
+							elections_allowed = no
+						}
+					}
 				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = yes
+				if = {
+					limit = {
+						FROM = {
+						social_democracy > 0.6
+						}
+					}
+					effect_tooltip = {
+						add_timed_idea = {
+							idea = political_turmoil
+							days = 365
+						}
+						set_politics = {
+							ruling_party = social_democracy
+							elections_allowed = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+						social_liberalism > 0.6
+						}
+					}
+					effect_tooltip = {
+						add_timed_idea = {
+							idea = political_turmoil
+							days = 365
+						}
+						set_politics = {
+							ruling_party = social_liberalism
+							elections_allowed = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+						market_liberalism > 0.6
+						}
+					}
+					effect_tooltip = {
+						add_timed_idea = {
+							idea = political_turmoil
+							days = 365
+						}
+						set_politics = {
+							ruling_party = market_liberalism
+							elections_allowed = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+						social_conservatism > 0.6
+						}
+					}
+					effect_tooltip = {
+						add_timed_idea = {
+							idea = political_turmoil
+							days = 365
+						}
+						set_politics = {
+							ruling_party = social_conservatism
+							elections_allowed = no
+						}
+					}
 				}
 			}
 		}
@@ -426,18 +551,18 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				neutrality > 0.6
+				authoritarianism > 0.6
 			}
 			FROM = {
-				NOT = { has_government = neutrality }
+				NOT = { has_government = authoritarianism }
 			}
 		}
 
 		visible = {
-			has_government = neutrality
+			has_government = authoritarianism
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = neutrality }
+				NOT = { has_government = authoritarianism }
 			}
 		}
 
@@ -457,7 +582,7 @@ foreign_influence = {
 			}
 			FROM = {
 				set_politics = {
-					ruling_party = neutrality
+					ruling_party = authoritarianism
 					elections_allowed = no
 				}
 			}

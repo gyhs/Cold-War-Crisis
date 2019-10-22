@@ -24,7 +24,7 @@ ideas = {
 		}
 		
 		FIN_idea_finland_neutralism = {
-			picture = neutrality_idea
+			picture = authoritarianism_idea
 			allowed = {
 				always = no
 			}
@@ -48,13 +48,17 @@ ideas = {
 				ai_get_ally_desire_factor = -100
 				fascism_acceptance = 20
 				communism_acceptance = 20
-				democratic_acceptance = 20
+				socialism_acceptance = 20
+				social_democracy_acceptance = 20
+				social_liberalism_acceptance = 20
+				market_liberalism_acceptance = 20
+				social_conservatism_acceptance = 20
 				trade_opinion_factor = 0.25
 			}
 		}
 		
 		FIN_idea_finland_armed_neutrality = {
-			picture = neutrality_idea
+			picture = authoritarianism_idea
 			allowed = {
 				always = no
 			}
@@ -81,7 +85,7 @@ ideas = {
 		}
 		
 		FIN_idea_finland_busy_diplomat = {
-			picture = neutrality_idea
+			picture = authoritarianism_idea
 			allowed = {
 				always = no
 			}
@@ -99,7 +103,11 @@ ideas = {
 				political_power_gain = 0.01
 				fascism_acceptance = 10
 				communism_acceptance = 10
-				democratic_acceptance = 10
+				socialism_acceptance = 10
+				social_democracy_acceptance = 10
+				social_liberalism_acceptance = 10
+				market_liberalism_acceptance = 10
+				social_conservatism_acceptance = 10
 			}
 		}
 		

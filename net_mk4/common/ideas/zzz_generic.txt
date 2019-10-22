@@ -203,7 +203,13 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 
 			removal_cost = -1
@@ -211,8 +217,16 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 			
 			modifier = {
-				democratic_drift = 0.1
-				democratic_acceptance = 85
+				socialism_drift = 0.1
+				social_democracy_drift = 0.1
+				social_liberalism_drift = 0.1
+				market_liberalism_drift = 0.1
+				social_conservatism_drift = 0.1
+				socialism_acceptance = 85
+				social_democracy_acceptance = 85
+				social_liberalism_acceptance = 85
+				market_liberalism_acceptance = 85
+				social_conservatism_acceptance = 85
 			}
 		}
 		neutrality_influence = {
@@ -221,7 +235,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 
 			removal_cost = -1
@@ -229,8 +243,8 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				neutrality_drift = 0.1
-				neutrality_acceptance = 85
+				authoritarianism_drift = 0.1
+				authoritarianism_acceptance = 85
 			}
 		}
 		
@@ -323,7 +337,11 @@ ideas = {
 			picture = generic_pp_unity_bonus
 
 			modifier = {
-				democratic_drift = -0.02
+				socialism_drift = -0.02
+				social_democracy_drift = -0.02
+				social_liberalism_drift = -0.02
+				market_liberalism_drift = -0.02
+				social_conservatism_drift = -0.02
 			}
 		}
 	
@@ -335,7 +353,13 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 			
 			removal_cost = -1
@@ -483,7 +507,7 @@ ideas = {
 			}
 		}
 	
-		neutrality_idea = {
+		authoritarianism_idea = {
 			
 			
 			allowed = {
@@ -491,7 +515,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 
 			cancel = {
@@ -1094,7 +1118,13 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 			}
 	

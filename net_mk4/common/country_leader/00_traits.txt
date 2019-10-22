@@ -147,7 +147,7 @@ leader_traits = {
 
 	wallis_fancy_title = {
 		random = no
-		neutrality_drift = 0.05
+		authoritarianism_drift = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -214,7 +214,7 @@ leader_traits = {
 		sprite = 10
 		political_power_factor = -0.1
 		stability_factor = 0.05
-		neutrality_drift = 0.05
+		authoritarianism_drift = 0.05
 		consumer_goods_factor = -0.05
 		
 		ai_will_do = {
@@ -245,7 +245,7 @@ leader_traits = {
 
 	humble = {
 		random = no
-		neutrality_drift = 0.05
+		authoritarianism_drift = 0.05
 		consumer_goods_factor = -0.05
 		
 		ai_will_do = {
@@ -684,8 +684,16 @@ leader_traits = {
 
 	anti_democrat = {
 		random = no
-		democratic_acceptance = -50
-		democratic_drift = -0.02
+		socialism_acceptance = -50
+		social_democracy_acceptance = -50
+		social_liberalism_acceptance = -50
+		market_liberalism_acceptance = -50
+		social_conservatism_drift = -0.02
+		socialism_drift = -0.02
+		social_democracy_drift = -0.02
+		social_liberalism_drift = -0.02
+		market_liberalism_drift = -0.02
+		social_conservatism_drift = -0.02
 		stability_factor = 0.10
 
 		ai_will_do = {
@@ -833,7 +841,11 @@ leader_traits = {
 		political_power_factor = 0.05
 		communism_drift = -0.01
 		fascism_drift = -0.01
-		democratic_drift = -0.01
+		socialism_drift = -0.01
+		social_democracy_drift = -0.01
+		social_liberalism_drift = -0.01
+		market_liberalism_drift = -0.01
+		social_conservatism_drift = -0.01
 	}
 
 	disdain_for_politicians_2 = {
@@ -841,7 +853,11 @@ leader_traits = {
 		political_power_factor = 0.1
 		communism_drift = -0.02
 		fascism_drift = -0.02
-		democratic_drift = -0.02
+		socialism_drift = -0.02
+		social_democracy_drift = -0.02
+		social_liberalism_drift = -0.02
+		market_liberalism_drift = -0.02
+		social_conservatism_drift = -0.02
 	}
 
 	queen_of_the_people = {
@@ -890,7 +906,11 @@ leader_traits = {
 		random = no
 		# Boosts Democracy
 		sprite = 13
-		democratic_drift = 0.1
+		socialism_drift = 0.1
+		social_democracy_drift = 0.1
+		social_liberalism_drift = 0.1
+		market_liberalism_drift = 0.1
+		social_conservatism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 0
@@ -915,7 +935,7 @@ leader_traits = {
 		random = no
 		# Boosts Unaligned
 		sprite = 13
-		neutrality_drift = 0.1
+		authoritarianism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -930,7 +950,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		neutrality_drift = 0.1
+		authoritarianism_drift = 0.1
 		political_power_factor = 0.15
 		
 		ai_will_do = {
@@ -942,7 +962,11 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		democratic_drift = 0.1
+		socialism_drift = 0.1
+		social_democracy_drift = 0.1
+		social_liberalism_drift = 0.1
+		market_liberalism_drift = 0.1
+		social_conservatism_drift = 0.1
 		stability_factor = 0.15
 		
 		ai_will_do = {
@@ -1389,7 +1413,7 @@ leader_traits = {
 		sprite = 13
 
 		war_support_factor = 0.1
-		neutrality_drift = 0.1
+		authoritarianism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1

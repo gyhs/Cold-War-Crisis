@@ -117,7 +117,13 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 
 			removal_cost = -1

@@ -29,7 +29,7 @@ ideas = {
 			available = {
 				NOT = {
 					has_government = fascism
-					has_government = neutrality
+					has_government = authoritarianism
 					has_idea = security_major_restrictions
 					has_idea = security_police_state
 				}
@@ -40,7 +40,11 @@ ideas = {
 				modifier = {
 					factor = 10
 					OR = {
-					has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 					}
 					has_war = no
 				}
@@ -94,7 +98,7 @@ ideas = {
 							OR = {
 							has_government = fascism
 							has_government = communism
-							has_government = neutrality
+							has_government = authoritarianism
 							has_war = yes
 							}
 						}
@@ -143,13 +147,17 @@ ideas = {
 				OR = {
 					AND = {
 						OR = {
-					has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 					}
 						has_war = yes
 					}
 					has_government = fascism
 					has_government = communism
-					has_government = neutrality
+					has_government = authoritarianism
 					
 					
 				}
@@ -163,7 +171,11 @@ ideas = {
 					factor = 100
 					has_war = yes
 					OR = {
-					has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 					}
 				}
 				modifier = {
@@ -214,7 +226,7 @@ ideas = {
 				OR = { 
 					has_government = fascism
 					has_government = communism
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				NOT = { 
 					has_idea = security_liberty_first
@@ -231,7 +243,7 @@ ideas = {
 					OR = { 
 						has_government = fascism
 						has_government = communism
-						has_government = neutrality
+						has_government = authoritarianism
 					}
 				}
    			}
@@ -411,7 +423,7 @@ ideas = {
 			available = {
 				NOT = {
 					has_government = fascism
-					has_government = neutrality
+					has_government = authoritarianism
 					has_country_flag = press_state
 					has_country_flag = press_censored
 				}
@@ -448,7 +460,7 @@ ideas = {
 			available = {
 				NOT = {
 					has_government = fascism
-					has_government = neutrality
+					has_government = authoritarianism
 					has_country_flag = press_state
 				}
 			}
@@ -487,13 +499,17 @@ ideas = {
 				OR = {
 				AND = {
 					OR = {
-						has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 						}
 					has_war = yes
 					}
 				has_government = fascism
 				has_government = communism
-				has_government = neutrality
+				has_government = authoritarianism
 				}					
 			}
 			
@@ -533,7 +549,7 @@ ideas = {
 				OR = {
 					has_government = communism
 					has_government = fascism
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				NOT = { has_country_flag = press_free has_country_flag = press_regulated }
 			}

@@ -272,11 +272,47 @@ fascism_on_the_rise = {
 		complete_effect = {
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = socialism
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@democratic
+					value = party_popularity@socialism
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_democracy
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@social_democracy
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_liberalism
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@social_liberalism
+				}
+			}
+			if = {
+				limit = {
+					has_government = market_liberalism
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@market_liberalism
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_conservatism
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@social_conservatism
 				}
 			}
 			if = {
@@ -290,11 +326,11 @@ fascism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@neutrality
+					value = party_popularity@authoritarianism
 				}
 			}
 			subtract_from_variable = {
@@ -366,10 +402,14 @@ fascism_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
+            socialism < 0.9
+            social_democracy < 0.9
+            social_liberalism < 0.9
+            market_liberalism < 0.9
+            social_conservatism < 0.9
 			fascism < 0.9
-			democratic < 0.9
 			communism < 0.9
-			neutrality < 0.9
+			authoritarianism < 0.9
 		}
 
 		visible = {
@@ -401,10 +441,14 @@ fascism_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
+            socialism < 0.8
+            social_democracy < 0.8
+            social_liberalism < 0.8
+            market_liberalism < 0.8
+            social_conservatism < 0.8
 			fascism < 0.8
-			democratic < 0.8
 			communism < 0.8
-			neutrality < 0.8
+			authoritarianism < 0.8
 			has_idea_with_trait = fascist_demagogue
 		}
 
@@ -426,10 +470,32 @@ fascism_on_the_rise = {
 			add_stability = -0.010
 			if = {
 				limit = {
-					has_government = democratic
+					OR = {
+					has_government = socialism
+					has_government = social_democracy
+					has_government = social_liberalism
+					has_government = market_liberalism
+					has_government = social_conservatism
+					}
 				}
 				add_popularity = {
-					ideology = democratic
+					ideology = socialism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = social_liberalism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = market_liberalism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = social_conservatism
 					popularity = -0.1
 				}
 			}
@@ -444,10 +510,10 @@ fascism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				add_popularity = {
-					ideology = neutrality
+					ideology = authoritarianism
 					popularity = -0.1
 				}
 			}
@@ -503,14 +569,26 @@ democratic_on_the_rise = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			democratic > 0.1
+                socialism > 0.1
+                social_democracy > 0.1
+                social_liberalism > 0.1
+                market_liberalism > 0.1
+                social_conservatism > 0.1
 		}
 
 		visible = {
 			NOT = { has_country_flag = preparation_for_democratic_civil_war }
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 		
 		fire_only_once = yes
@@ -537,7 +615,15 @@ democratic_on_the_rise = {
 			}
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 
 		cancel_trigger = {
@@ -553,7 +639,11 @@ democratic_on_the_rise = {
 		days_remove = 30
 
 		modifier = {
-			democratic_drift = 0.02
+			socialism_drift = 0.02
+			social_democracy_drift = 0.02
+			social_liberalism_drift = 0.02
+			market_liberalism_drift = 0.02
+			social_conservatism_drift = 0.02
 			stability_weekly = -0.03
  			political_power_gain = -0.2
 		}
@@ -571,7 +661,15 @@ democratic_on_the_rise = {
 			has_country_flag = preparation_for_democratic_civil_war
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 
 		cancel_trigger = {
@@ -631,7 +729,15 @@ democratic_on_the_rise = {
 				NOT = { has_trait = hidden_sympathies }
 			}
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 	
 		fire_only_once = yes
@@ -663,7 +769,15 @@ democratic_on_the_rise = {
 				NOT = { has_trait = hidden_sympathies }
 			}
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 			any_army_leader = {
 				is_field_marshal = yes
 				NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
@@ -698,7 +812,15 @@ democratic_on_the_rise = {
 			has_country_flag = military_support_for_democratic_civil_war
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 	
 		fire_only_once = no
@@ -732,7 +854,15 @@ democratic_on_the_rise = {
 			has_country_flag = preparation_for_democratic_civil_war
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 	
 		fire_only_once = yes
@@ -762,7 +892,15 @@ democratic_on_the_rise = {
 			has_country_flag = preparation_for_democratic_civil_war
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 	
 		fire_only_once = yes
@@ -790,11 +928,11 @@ democratic_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@neutrality
+					value = party_popularity@authoritarianism
 				}
 			}
 			subtract_from_variable = {
@@ -815,7 +953,7 @@ democratic_on_the_rise = {
 				}
 			}
 			start_civil_war = {
-				ruling_party = democratic
+				ruling_party = social_liberalism
 				ideology = ROOT
 				size = civil_war_size_var
 				keep_unit_leaders_trigger = {
@@ -865,20 +1003,38 @@ democratic_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
+            socialism < 0.9
+            social_democracy < 0.9
+            social_liberalism < 0.9
+            market_liberalism < 0.9
+            social_conservatism < 0.9
 			fascism < 0.9
-			democratic < 0.9
 			communism < 0.9
-			neutrality < 0.9
+			authoritarianism < 0.9
 		}
 
 		visible = {
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 		
 		remove_trigger = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		}
 		
 		fire_only_once = yes
@@ -899,10 +1055,14 @@ democratic_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
+            socialism < 0.8
+            social_democracy < 0.8
+            social_liberalism < 0.8
+            market_liberalism < 0.8
+            social_conservatism < 0.8
 			fascism < 0.8
-			democratic < 0.8
 			communism < 0.8
-			neutrality < 0.8
+			authoritarianism < 0.8
 			has_idea_with_trait = democratic_reformer
 		}
 
@@ -913,7 +1073,13 @@ democratic_on_the_rise = {
 		}
 		
 		remove_trigger = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		}
 		
 		fire_only_once = yes
@@ -942,10 +1108,10 @@ democratic_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				add_popularity = {
-					ideology = neutrality
+					ideology = authoritarianism
 					popularity = -0.1
 				}
 			}
@@ -961,20 +1127,42 @@ democratic_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
-			democratic > 0.5
+                socialism > 0.5
+                social_democracy > 0.5
+                social_liberalism > 0.5
+                market_liberalism > 0.5
+                social_conservatism > 0.5
 		}
 
 		visible = {
-			NOT = { has_government = democratic }
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 			check_has_focus_tree_to_switch_to_democratic = yes
 			OR = {
-				democratic > 0.6
+                socialism > 0.6
+                social_democracy > 0.6
+                social_liberalism > 0.6
+                market_liberalism > 0.6
+                social_conservatism > 0.6
 				has_country_flag = open_up_political_discourse_democratic
 			}
 		}
 		
 		remove_trigger = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		}
 		
 		fire_only_once = yes
@@ -988,7 +1176,13 @@ democratic_on_the_rise = {
 		ai_will_do = {
 			factor = 210
 			modifier = {
-				democratic > 0.6
+            OR = {
+                socialism > 0.6
+                social_democracy > 0.6
+                social_liberalism > 0.6
+                market_liberalism > 0.6
+                social_conservatism > 0.6
+            }
 				factor = 10
 			}
 		}
@@ -1279,20 +1473,56 @@ communism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = socialism
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@democratic
+					value = party_popularity@socialism
 				}
 			}
 			if = {
 				limit = {
-					has_government = neutrality
+					has_government = social_democracy
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@neutrality
+					value = party_popularity@social_democracy
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_liberalism
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@social_liberalism
+				}
+			}
+			if = {
+				limit = {
+					has_government = market_liberalism
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@market_liberalism
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_conservatism
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@social_conservatism
+				}
+			}
+			if = {
+				limit = {
+					has_government = authoritarianism
+				}
+				set_variable = {
+					var = civil_war_size_var
+					value = party_popularity@authoritarianism
 				}
 			}
 			subtract_from_variable = {
@@ -1363,10 +1593,14 @@ communism_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
+                socialism < 0.9
+                social_democracy < 0.9
+                social_liberalism < 0.9
+                market_liberalism < 0.9
+                social_conservatism < 0.9
 			fascism < 0.9
-			democratic < 0.9
 			communism < 0.9
-			neutrality < 0.9
+			authoritarianism < 0.9
 		}
 
 		visible = {
@@ -1397,10 +1631,14 @@ communism_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
+                socialism < 0.8
+                social_democracy < 0.8
+                social_liberalism < 0.8
+                market_liberalism < 0.8
+                social_conservatism < 0.8
 			fascism < 0.8
-			democratic < 0.8
 			communism < 0.8
-			neutrality < 0.8
+			authoritarianism < 0.8
 			has_idea_with_trait = communist_revolutionary
 		}
 
@@ -1431,19 +1669,55 @@ communism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = democratic
+					has_government = socialism
 				}
 				add_popularity = {
-					ideology = democratic
+					ideology = socialism
 					popularity = -0.1
 				}
 			}
 			if = {
 				limit = {
-					has_government = neutrality
+					has_government = social_democracy
 				}
 				add_popularity = {
-					ideology = neutrality
+					ideology = social_democracy
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_liberalism
+				}
+				add_popularity = {
+					ideology = social_liberalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = market_liberalism
+				}
+				add_popularity = {
+					ideology = market_liberalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_conservatism
+				}
+				add_popularity = {
+					ideology = social_conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = authoritarianism
+				}
+				add_popularity = {
+					ideology = authoritarianism
 					popularity = -0.1
 				}
 			}
@@ -1550,15 +1824,31 @@ political_actions = {
     	icon = generic_civil_support
 
     	visible = {
-			NOT = { has_government = democratic }
+			NOT = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		}
 
 		available = {
-            democratic > 0.1
+                socialism > 0.1
+                social_democracy > 0.1
+                social_liberalism > 0.1
+                market_liberalism > 0.1
+                social_conservatism > 0.1
         }
 	
 		modifier = {
-			democratic_drift = -0.05
+			socialism_drift = -0.05
+			social_democracy_drift = -0.05
+			social_liberalism_drift = -0.05
+			market_liberalism_drift = -0.05
+			social_conservatism_drift = -0.05
 			stability_weekly = 0.007
 		}
 	
@@ -1664,22 +1954,52 @@ political_actions = {
 		icon = generic_civil_support
 
 		available = {
-			democratic < 0.2
+            OR = {
+                socialism < 0.2
+                social_democracy < 0.2
+                social_liberalism < 0.2
+                market_liberalism < 0.2
+                social_conservatism < 0.2
+            }
 		}
 
 		visible = {
-			NOT = { has_government = democratic }
-			democratic > 0
+			NOT = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
+            OR = {
+                socialism > 0
+                social_democracy > 0
+                social_liberalism > 0
+                market_liberalism > 0
+                social_conservatism > 0
+            }
 		}
 
 		remove_trigger = {
 			hidden_trigger = {
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			}
 		}
 	
 		modifier = {
-			democratic_drift = -0.02
+			socialism_drift = -0.02
+			social_democracy_drift = -0.02
+			social_liberalism_drift = -0.02
+			market_liberalism_drift = -0.02
+			social_conservatism_drift = -0.02
 		}
 	
 		days_remove = -1
@@ -1689,14 +2009,22 @@ political_actions = {
 			hidden_effect = {
 				set_temp_variable = {
 					var = ban_ideology_var
-					value = party_popularity@democratic
+					value = party_popularity@socialism
+					value = party_popularity@social_democracy
+					value = party_popularity@social_liberalism
+					value = party_popularity@market_liberalism
+					value = party_popularity@social_conservatism
 				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = -1
 				}
 				add_popularity = {
-					ideology = democratic
+					ideology = socialism
+					ideology = social_democracy
+					ideology = social_liberalism
+					ideology = market_liberalism
+					ideology = social_conservatism
 					popularity = ban_ideology_var
 				}
 				multiply_temp_variable = {
@@ -1774,8 +2102,12 @@ political_actions = {
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = 0.03
-			democratic_drift = -0.01
-			neutrality_drift = -0.01
+			socialism_drift = -0.01
+			social_democracy_drift = -0.01
+			social_liberalism_drift = -0.01
+			market_liberalism_drift = -0.01
+			social_conservatism_drift = -0.01
+			authoritarianism_drift = -0.01
 		}
 	
 		days_remove = 360
@@ -1791,14 +2123,24 @@ political_actions = {
 		icon = generic_political_discourse
 
 		visible = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		}
 		
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = -0.01
-			democratic_drift = 0.03
-			neutrality_drift = -0.01
+			socialism_drift = 0.03
+			social_democracy_drift = 0.03
+			social_liberalism_drift = 0.03
+			market_liberalism_drift = 0.03
+			social_conservatism_drift = 0.03
+			authoritarianism_drift = -0.01
 		}
 	
 		days_remove = 360
@@ -1820,8 +2162,12 @@ political_actions = {
 		modifier = {
 			communism_drift = 0.03
 			fascism_drift = -0.01
-			democratic_drift = -0.01
-			neutrality_drift = -0.01
+			socialism_drift = -0.01
+			social_democracy_drift = -0.01
+			social_liberalism_drift = -0.01
+			market_liberalism_drift = -0.01
+			social_conservatism_drift = -0.01
+			authoritarianism_drift = -0.01
 		}
 	
 		days_remove = 360
@@ -1837,14 +2183,18 @@ political_actions = {
 		icon = generic_political_discourse
 
 		visible = {
-			has_government = neutrality
+			has_government = authoritarianism
 		}
 	
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = -0.01
-			democratic_drift = -0.01
-			neutrality_drift = 0.03
+			socialism_drift = -0.01
+			social_democracy_drift = -0.01
+			social_liberalism_drift = -0.01
+			market_liberalism_drift = -0.01
+			social_conservatism_drift = -0.01
+			authoritarianism_drift = 0.03
 		}
 	
 		days_remove = 360

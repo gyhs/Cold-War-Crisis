@@ -7,7 +7,7 @@ ideas = {
 			NOT = {
 					has_government = fascism
 					has_government = communism
-					has_government = neutrality
+					has_government = authoritarianism
 					has_country_flag = closed_economy
 					has_country_flag = limited_exports
 				}
@@ -58,7 +58,13 @@ ideas = {
 				factor = 5
 				modifier = {
 					factor = 5
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				modifier = {
 					factor = 0
@@ -113,7 +119,13 @@ ideas = {
 				factor = 7
 				modifier = {
 					factor = 5
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				modifier = {
 					factor = 0
@@ -240,7 +252,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_government = fascism
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				NOT = {
 					has_country_flag = free_trade
@@ -309,7 +321,7 @@ ideas = {
 					OR = { 
 						has_government = fascism
 						has_government = communism
-						has_government = neutrality
+						has_government = authoritarianism
 						has_country_flag = tariffs_high
 						has_country_flag = closed_economy
 					}
@@ -344,14 +356,20 @@ ideas = {
 				factor = 5
 				modifier = {
 					factor = 10
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				modifier = {
 					factor = 0
 					OR = {
 						has_government = fascism
 						has_government = communism
-						has_government = neutrality
+						has_government = authoritarianism
 					}
 				}
 				modifier = {
@@ -396,12 +414,24 @@ ideas = {
 				factor = 5
 				modifier = {
 					factor = 10
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 				modifier = {
 					factor = 10
 					has_war = yes
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					NOT = { has_country_flag = fdi_regulated }
 				}
 			}
@@ -447,7 +477,7 @@ ideas = {
 					factor = 10
 					OR = {
 						has_government = fascism
-						has_government = neutrality
+						has_government = authoritarianism
 					}
 				}
 			
@@ -458,7 +488,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_government = fascism
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 				NOT = { has_country_flag = tariffs_none has_country_flag = free_trade }
 			}
@@ -550,7 +580,11 @@ ideas = {
 				modifier = {
 					factor = 0
 					OR = {
-					has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 					}
 				}
 				modifier = {
@@ -682,10 +716,22 @@ ideas = {
 				OR = {
 					AND = {
 						has_war = yes
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
 					NOT = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
 				}
 			}
@@ -753,7 +799,11 @@ ideas = {
 					factor = 5
 					threat > 0.30
 					OR = {
-						has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 					}
 				}
 			}
@@ -764,7 +814,7 @@ ideas = {
 				OR = { 
 					has_government = fascism
 					has_government = communism
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 			}
 			

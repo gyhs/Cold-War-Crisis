@@ -491,7 +491,7 @@ ideas = {
 
 			modifier = {
 				fascism_drift = 0.05
-				neutrality_drift = 0.05
+				authoritarianism_drift = 0.05
 			}
 		}
 		NS_Gen_socialism_ideologie = {
@@ -517,7 +517,11 @@ ideas = {
 			picture = chi_war_of_resistance3
 
 			modifier = {
-				democratic_drift = 0.1
+				socialism_drift = 0.1
+				social_democracy_drift = 0.1
+				social_liberalism_drift = 0.1
+				market_liberalism_drift = 0.1
+				social_conservatism_drift = 0.1
 			}
 		}
 		############################
@@ -749,7 +753,7 @@ ideas = {
 
 			modifier = {
 				fascism_drift = 0.05
-				neutrality_drift = 0.05
+				authoritarianism_drift = 0.05
 			}
 		}
 		NS_Gen_authoritarianism_republic = {
@@ -763,7 +767,7 @@ ideas = {
 
 			modifier = {
 				fascism_drift = 0.05
-				neutrality_drift = 0.05
+				authoritarianism_drift = 0.05
 			}
 		}
 ####################
@@ -1683,9 +1687,21 @@ ideas = {
 						}
 					}
 					AND = {
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 						GER = {
-							has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 						}
 					}
 				}
@@ -1729,7 +1745,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 
 			cancel = {

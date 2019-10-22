@@ -64,11 +64,11 @@ focus_tree = {
 			SOV_desire_for_reformation_level_up = yes
 			SOV_central_government_crisis_level_down = yes
 			add_popularity = {
-				ideology = democratic
+				ideology = social_democracy
 				popularity = 0.02
 			}
 			add_popularity = {
-				ideology = neutrality
+				ideology = authoritarianism
 				popularity = 0.02
 			}
 		}
@@ -139,11 +139,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic
+				ideology = social_democracy
 				popularity = 0.15
 			}
 			add_popularity = {
-				ideology = neutrality
+				ideology = authoritarianism
 				popularity = 0.05
 			}
 			add_popularity = {

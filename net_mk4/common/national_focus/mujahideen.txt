@@ -1106,7 +1106,13 @@ focus_tree = {
 				random_country = {
 					limit= {
 						original_tag = AFG
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
 						transfer_state = 267
 					#set_cosmetic_tag = NOR_reichskommissariat
@@ -1173,7 +1179,13 @@ focus_tree = {
 				random_country = {
 					limit= {
 						original_tag = AFG
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
 						transfer_state = 267
 					#set_cosmetic_tag = NOR_reichskommissariat

@@ -334,7 +334,7 @@ country_event = {
 		SOV = { country_event = { id = soviet.12 } }
 		effect_tooltip = {
 			leave_faction = yes
-			add_ideas = neutrality_idea
+			add_ideas = authoritarianism_idea
 		}
 		hidden_effect = {
 			#news_event = { id = news.203 hours = 6 }
@@ -408,7 +408,7 @@ country_event = {
 	option = {
 		name = soviet.12.a
 		leave_faction = yes
-		add_ideas = neutrality_idea
+		add_ideas = authoritarianism_idea
 		if = {
 			limit = {
 				ENG = {

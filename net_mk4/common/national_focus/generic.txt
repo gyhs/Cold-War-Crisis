@@ -38,7 +38,7 @@ focus_tree = {
 			OR = {
 				has_government = fascism
 				has_government = communism
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 		}
 		x = 5
@@ -57,9 +57,9 @@ focus_tree = {
 				OR = {
 					AND = {
 						is_historical_focus_on = yes
-						has_government = neutrality
+						has_government = authoritarianism
 					}
-					has_idea = neutrality_idea
+					has_idea = authoritarianism_idea
 				}
 			}
 		}
@@ -83,8 +83,12 @@ focus_tree = {
 		mutually_exclusive = { focus = NF_Gen_collectivist_ethos }
 		available = {
 			OR = {
-				has_government = democratic
-				has_government = neutrality
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+				has_government = authoritarianism
 			}
 		}
 		x = 11
@@ -110,7 +114,13 @@ focus_tree = {
 				NOT = {
 					any_neighbor_country = {
 						is_major = yes
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
 				}
 			}
@@ -134,7 +144,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_government = fascism
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 		}
 		x = 2
@@ -153,9 +163,9 @@ focus_tree = {
 				OR = {
 					AND = {
 						is_historical_focus_on = yes
-						has_government = neutrality
+						has_government = authoritarianism
 					}
-					has_idea = neutrality_idea
+					has_idea = authoritarianism_idea
 				}
 			}
 		}
@@ -205,9 +215,9 @@ focus_tree = {
 				OR = {
 					AND = {
 						is_historical_focus_on = yes
-						has_government = neutrality
+						has_government = authoritarianism
 					}
-					has_idea = neutrality_idea
+					has_idea = authoritarianism_idea
 				}
 			}
 		}
@@ -231,8 +241,12 @@ focus_tree = {
 		mutually_exclusive = { focus = NF_Gen_collectivist_ethos }
 		available = {
 			OR = {
-				has_government = democratic
-				has_government = neutrality
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+				has_government = authoritarianism
 			}
 		}
 		x = 14
@@ -258,7 +272,13 @@ focus_tree = {
 				NOT = {
 					any_neighbor_country = {
 						is_major = yes
-						has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 					}
 				}
 			}
@@ -288,7 +308,7 @@ focus_tree = {
 			has_idea = NS_Gen_authoritarianism_monarchy
 			OR = {
 				has_government = fascism
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 		}
 		x = 0
@@ -407,7 +427,7 @@ focus_tree = {
 			}
 			OR = {
 				has_government = fascism
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 		}
 		x = 2
@@ -479,8 +499,8 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
+				limit = { has_idea = authoritarianism_idea }
+				remove_ideas = authoritarianism_idea
 			}			
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
@@ -543,7 +563,7 @@ focus_tree = {
 			}
 			OR = {
 				has_government = fascism
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 		}
 		x = 4
@@ -613,8 +633,8 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
+				limit = { has_idea = authoritarianism_idea }
+				remove_ideas = authoritarianism_idea
 			}
 			swap_ideas = {
 				remove_idea = NS_Gen_mafia_2
@@ -802,7 +822,7 @@ focus_tree = {
 				else = {
 					OR = {
 						has_government = communism
-						has_government = neutrality
+						has_government = authoritarianism
 					}
 				}
 			}
@@ -948,7 +968,7 @@ focus_tree = {
 				else = {
 					OR = {
 						has_government = communism
-						has_government = neutrality
+						has_government = authoritarianism
 					}
 				}
 			}
@@ -1090,7 +1110,7 @@ focus_tree = {
 				else = {
 					OR = {
 						has_government = communism
-						has_government = neutrality
+						has_government = authoritarianism
 					}
 				}
 			}
@@ -1404,7 +1424,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_idea = neutrality_idea
+				has_idea = authoritarianism_idea
 			}
 		}
 
@@ -1464,8 +1484,8 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				add_ideas = neutrality_idea
+				limit = { NOT = { has_idea = authoritarianism_idea } }
+				add_ideas = authoritarianism_idea
 			}
 			add_political_power = 150
 			swap_ideas = {
@@ -1515,14 +1535,14 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_idea = neutrality_idea
+				has_idea = authoritarianism_idea
 			}
 		}
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
+				limit = { has_idea = authoritarianism_idea }
+				remove_ideas = authoritarianism_idea
 			}	
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = volunteer_corps_focus
@@ -1733,7 +1753,7 @@ focus_tree = {
 			custom_effect_tooltip = why_we_fight_effect
 			hidden_effect = {
 				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
+					limit = { NOT = { has_idea = authoritarianism_idea } }
 					set_rule = { can_create_factions = yes }
 				}			
 			}

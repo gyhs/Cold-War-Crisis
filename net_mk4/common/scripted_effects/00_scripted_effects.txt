@@ -490,7 +490,13 @@ get_best_alliance_match_democratic_effect = { #arguably a trigger, but it does s
 			all_other_country = {
 				is_faction_leader = yes
 				is_major = yes
-				has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				not = { has_war_with = ROOT }
 				set_temp_variable = { this.leader_score = num_of_factories }
 				add_to_temp_variable = { this.leader_score = num_battalions }

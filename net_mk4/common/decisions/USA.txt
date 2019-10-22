@@ -1770,7 +1770,15 @@ USA_intervention_mandate = {
 					is_on_continent = europe
 				}
 				has_added_tension_amount > 10
-				not = { has_government = democratic }
+				not = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 			}
 		}
 
@@ -1832,7 +1840,15 @@ USA_intervention_mandate = {
 					is_on_continent = asia
 				}
 				has_added_tension_amount > 10
-				not = { has_government = democratic }
+				not = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 			}
 		}
 		cost = 75
@@ -2502,7 +2518,7 @@ USA_intervention_mandate = {
 				NOT = { 
 					OR = {
 						has_government = ROOT
-						has_government = neutrality
+						has_government = authoritarianism
 					}
 				}
 				NOT = { 

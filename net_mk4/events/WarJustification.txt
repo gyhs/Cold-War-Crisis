@@ -15,7 +15,7 @@ country_event = {
 
 	trigger = {
 		has_government = fascism
-		FROM = { has_government = neutrality }
+		FROM = { has_government = authoritarianism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -41,7 +41,15 @@ country_event = {
 	
 	trigger = {
 		has_government = fascism
-		FROM = { has_government = democratic }
+		FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+		}
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 
@@ -119,7 +127,7 @@ country_event = {
 
 	trigger = {
 		has_government = communism
-		FROM = { has_government = neutrality }
+		FROM = { has_government = authoritarianism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -145,7 +153,15 @@ country_event = {
 
 	trigger = {
 		has_government = communism
-		FROM = { has_government = democratic }
+		FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -222,8 +238,14 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
-		FROM = { has_government = neutrality }
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+		FROM = { has_government = authoritarianism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -248,8 +270,22 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
-		FROM = { has_government = democratic }
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+		FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+		}
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -274,7 +310,13 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		FROM = { has_government = communism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
@@ -300,7 +342,13 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		FROM = { has_government = fascism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
@@ -326,8 +374,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = neutrality
-		FROM = { has_government = neutrality }
+		has_government = authoritarianism
+		FROM = { has_government = authoritarianism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -352,8 +400,16 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = neutrality
-		FROM = { has_government = democratic }
+		has_government = authoritarianism
+		FROM = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -378,7 +434,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = neutrality
+		has_government = authoritarianism
 		FROM = { has_government = communism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
@@ -404,7 +460,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = neutrality
+		has_government = authoritarianism
 		FROM = { has_government = fascism }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
@@ -839,11 +895,35 @@ country_event = {
 	
 	option = {
 		name = war_justification.301.a
-		trigger = { has_government = democratic }
+		trigger = { 
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		add_political_power = -30
 		add_war_support = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = socialism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = social_democracy
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = social_liberalism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = market_liberalism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = social_conservatism
 			popularity = -0.05
 		}
 	}
@@ -864,7 +944,7 @@ country_event = {
 		trigger = {
 			OR = {
 				has_government = fascism
-				has_government = neutrality
+				has_government = authoritarianism
 			}
 		}
 		add_political_power = -30

@@ -154,7 +154,7 @@ country_event = {
 		if = {
 			limit = {
 				FROM = {
-					has_government = neutrality
+					has_government = authoritarianism
 				}
 			}
 			effect_tooltip = {
@@ -163,7 +163,7 @@ country_event = {
 					days = 365
 				}
 				set_politics = {
-					ruling_party = neutrality
+					ruling_party = authoritarianism
 					elections_allowed = no
 				}
 			}
@@ -171,7 +171,13 @@ country_event = {
 		if = {
 			limit = {
 				FROM = {
-					has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 				}
 			}
 			effect_tooltip = {
@@ -180,7 +186,7 @@ country_event = {
 					days = 365
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = social_liberalism
 					elections_allowed = yes
 				}
 			}

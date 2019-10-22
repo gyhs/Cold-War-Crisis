@@ -156,7 +156,7 @@ crisis = {
 					
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = social_liberalism
 				}
 			}
 			if = {
@@ -176,7 +176,7 @@ crisis = {
 					has_government = communism
 					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = { ideology = social_liberalism popularity = 0.1}
 			}
 			if = {
 				limit = {
@@ -268,7 +268,7 @@ crisis = {
 					
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = social_liberalism
 				}
 			}
 			if = {
@@ -288,7 +288,7 @@ crisis = {
 					has_government = communism
 					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = { ideology = social_liberalism popularity = 0.1}
 			}
 			if = {
 				limit = {
@@ -424,7 +424,7 @@ crisis = {
 					
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = social_liberalism
 				}
 			}
 			if = {
@@ -444,7 +444,7 @@ crisis = {
 					has_government = communism
 					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = { ideology = social_liberalism popularity = 0.1}
 			}
 			if = {
 				limit = {
@@ -602,7 +602,7 @@ demobilization = {
 					
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = social_liberalism
 				}
 			}
 			if = {
@@ -622,7 +622,7 @@ demobilization = {
 					has_government = communism
 					
 				}
-				add_popularity = { ideology = democratic popularity = 0.1}
+				add_popularity = { ideology = social_liberalism popularity = 0.1}
 			}
 			if = {
 				limit = {
@@ -738,7 +738,7 @@ demobilization = {
 					has_stability < 0.2
 				}
 				start_civil_war = {
-					ideology = democratic
+					ideology = social_liberalism
 				}
 			}
 			if = {
@@ -760,7 +760,7 @@ demobilization = {
 				limit = {
 					has_government = communism
 				}
-				add_popularity = { ideology = democratic popularity = 0.1 }
+				add_popularity = { ideology = social_liberalism popularity = 0.1 }
 			}
 			if = {
 				limit = {

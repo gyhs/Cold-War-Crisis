@@ -6,12 +6,22 @@ is_enemy_ideology = {
 			ROOT = {
 				OR = {
 					has_government = fascism
-					has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 				}
 			}
 		}
 		AND = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			ROOT = {
 				OR = {
 					has_government = communism
@@ -23,7 +33,11 @@ is_enemy_ideology = {
 			has_government = fascism
 			ROOT = {
 				OR = {
-					has_government = democratic
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
 					has_government = communism
 				}
 			}

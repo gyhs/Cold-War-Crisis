@@ -127,7 +127,13 @@ USA_congress = {
 	USA_beat_up_opposition = {
 		icon = oppression
 		available = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 		}
 		#visible = { has_completed_focus = USA_ally_with_the_silver_shirts }
 		cost = 10
@@ -148,7 +154,13 @@ USA_congress = {
 	USA_pay_farm_subsidies = {
 		icon = ger_mefo_bills
 		available = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			OR = {
 				check_variable = { senators_support < senators_total }
 				check_variable = { representatives_support < representatives_total }
@@ -172,7 +184,13 @@ USA_congress = {
 	USA_give_tax_break = {
 		icon = ger_mefo_bills
 		available = {
-			has_government = democratic
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
 			OR = {
 				check_variable = { senators_support < senators_total }
 				check_variable = { representatives_support < representatives_total }
@@ -198,7 +216,15 @@ USA_congress = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		visible = {has_government = democratic }
+		visible = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		cost = 25
 		days_remove = 90
 		days_re_enable = 275
@@ -219,7 +245,15 @@ USA_congress = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		visible = {has_government = democratic }
+		visible = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			}
 		cost = 25
 		days_remove = 90
 		days_re_enable = 275
