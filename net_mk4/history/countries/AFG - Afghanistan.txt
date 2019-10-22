@@ -56,7 +56,7 @@ create_country_leader = {
 	desc = "POLITICS_AFG_Babrak_Karmal_DESC"
 	picture = "POLITICS_AFG_Babrak_Karmal.dds"
 	expire = "1985.1.1"
-	ideology = Marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}

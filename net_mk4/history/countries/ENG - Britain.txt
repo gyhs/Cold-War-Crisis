@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_ENG_Gordon_McLennan_DESC"
 	picture = "POLITICS_ENG_Gordon_McLennan.dds"
 	expire = "2100.3.1"
-	ideology = Marxism
+	ideology = communism_subtype_1
 	traits = {
 	}
 }

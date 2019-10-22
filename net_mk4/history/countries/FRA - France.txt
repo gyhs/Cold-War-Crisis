@@ -50,7 +50,7 @@ create_country_leader = {
 	desc = "POLITICS_FRA_Andre_Lajoinie_DESC"
 	picture = "POLITICS_FRA_Andre_Lajoinie.dds"
 	expire = "2100.3.1"
-	ideology = Marxism
+	ideology = communism_subtype_1
 	traits = {
 		
 	}

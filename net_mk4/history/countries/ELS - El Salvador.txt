@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_ELS_Salvador_Sanchez_Ceren_DESC"
 	picture = "POLITICS_ELS_Salvador_Sanchez_Ceren.dds"
 	expire = "2100.3.1"
-	ideology = Marxism
+	ideology = communism_subtype_1
 	traits = {
 	}
 }

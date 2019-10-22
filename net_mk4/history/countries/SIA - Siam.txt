@@ -54,7 +54,7 @@ create_country_leader = {
 	desc = "POLITICS_SIA_Uthai_Pimjai_DESC"
 	picture = "POLITICS_SIA_Uthai_Pimjai.dds"
 	expire = "2100.3.1"
-	ideology = Marxism
+	ideology = communism_subtype_1
 	traits = {
 	}
 }

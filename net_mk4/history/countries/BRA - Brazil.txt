@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_BRA_Luiz_Inacio_Lula_da_Silva_DESC"
 	picture = "POLITICS_BRA_Luiz_Inacio_Lula_da_Silva.dds"
 	expire = "2100.3.1"
-	ideology = Marxism
+	ideology = communism_subtype_1
 	traits = {
 	}
 }
