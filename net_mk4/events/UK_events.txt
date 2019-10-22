@@ -381,7 +381,7 @@ country_event = { #상원 의회의 성전환 허용
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #더럽군
+	option = { #흐음
 		name = NE_ENG.15.a
 		ai_chance = { factor = 1 }
 		add_political_power = -0.10
