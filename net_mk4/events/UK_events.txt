@@ -291,7 +291,7 @@ country_event = { #닐 키녹의 워싱턴 방문3/27
 		{ days = 1 id = NE_ENG.11 }
 		hidden_effect = {#마가렛 대처 모스크바
 			country_event = {
-				id = NE_ENG.11
+				id = NE_ENG.12
 				days = 2
 			}
 		}
@@ -311,15 +311,9 @@ country_event = { #닐 키녹이 워싱턴을 방문하다
 		name = NE_ENG.11.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.01
-		hidden_effect = {#마가렛 대처 모스크바
-			country_event = {
-				id = NE_ENG.11
-				days = 2
-			}
-		}
 	}
 }
-country_event = { #마가렛 대처의 모스크바 방문
+country_event = { #마가렛 대처의 모스크바 방문 3/29
 	id = NE_ENG.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.12"}
 	title = NE_ENG.12.title
@@ -335,6 +329,11 @@ country_event = { #마가렛 대처의 모스크바 방문
 		add_stability = 0.02
 		SOV = {country_event = 
 		{ days = 1 id = NE_ENG.11 }
+		hidden_effect = {#마가렛 대처 모스크바
+			country_event = {
+				id = NE_ENG.14
+				days = 2
+			}
 		}
 	}
 }
@@ -352,6 +351,22 @@ country_event = { #마가렛 대처의 모스크바 방문
 		name = NE_ENG.12.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
-		}
+	}
+}
+country_event = { #하비 프록터의 성추행 추문!
+	id = NE_ENG.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.14"}
+	title = NE_ENG.14.title
+	desc = NE_ENG.14.desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #더럽군
+		name = NE_ENG.12.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.05
+		add_political_power = -0.20
 	}
 }
