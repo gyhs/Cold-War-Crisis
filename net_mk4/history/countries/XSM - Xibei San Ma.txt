@@ -31,7 +31,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Ma Bufang"
 	desc = ""
-	picture = "GFX_portrait_xsm_ma_bufang"
+	picture = "GFX_POLITICS_xsm_ma_bufang"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -41,7 +41,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Ma Hongbin"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	POLITICS_path = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_2.dds"
 	traits = { }
 	skill = 3
 	attack_skill = 2

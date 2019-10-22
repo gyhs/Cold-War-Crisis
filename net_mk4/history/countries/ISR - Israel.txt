@@ -50,7 +50,7 @@ set_popularities = {
 create_country_leader = {
 	name = "David Ben-Gurion"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -60,7 +60,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Itzhak Gaster"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -70,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rudolf Szabó"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
 	ideology = despotism
 	traits = {
 		#
@@ -80,7 +80,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Shmuel Mikunis"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_3.dds"
 	ideology = leninism
 	traits = {
 		#

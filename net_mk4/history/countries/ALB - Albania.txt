@@ -25,7 +25,7 @@ set_convoys = 5
 create_country_leader = {
 	name = "King Zog"
 	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Portrait_Albania_King_Zog.dds"
+	picture = "POLITICS_Albania_King_Zog.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -35,7 +35,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Xhemal Aranitasi"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	POLITICS_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	traits = { }
 	skill = 2
 	attack_skill = 1

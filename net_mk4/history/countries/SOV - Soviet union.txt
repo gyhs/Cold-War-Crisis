@@ -322,7 +322,7 @@ set_autonomy = {
 create_country_leader = {
 	name = "보리스 옐친"
 	desc = "POLITICS_SOV_Boris_Yeltsin_DESC"
-	picture = "Portrait_SOV_Boris_Yeltsin.dds"
+	picture = "POLITICS_SOV_Boris_Yeltsin.dds"
 	expire = "2100.3.1"
 	ideology = socialism
 	traits = {
@@ -333,7 +333,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "미하일 고르바초프"
 	desc = "POLITICS_SOV_Mikhail_Gorbachev_DESC"
-	picture = "Portrait_SOV_Mikhail_Gorbachev.dds"
+	picture = "POLITICS_SOV_Mikhail_Gorbachev.dds"
 	expire = "2100.3.1"
 	ideology = Marxism
 	traits = {
@@ -344,7 +344,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "블라디미르 푸틴"
 	desc = "POLITICS_SOV_Vladimir_Putin_DESC"
-	picture = "Portrait_SOV_Vladimir_Putin.dds"
+	picture = "POLITICS_SOV_Vladimir_Putin.dds"
 	expire = "2100.3.1"
 	ideology = despotism
 	traits = {
@@ -355,7 +355,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "블라디미르 지리놉스키"
 	desc = "POLITICS_SOV_Vladimir_Zhirinovsky_DESC"
-	picture = "Portrait_SOV_Vladimir_Zhirinovsky.dds"
+	picture = "POLITICS_SOV_Vladimir_Zhirinovsky.dds"
 	expire = "2100.3.1"
 	ideology = fascism_ideology
 	traits = {
@@ -371,7 +371,7 @@ add_namespace = {
 create_corps_commander = {
 	name = "Georgy Zhukov"
 	id = 410
-		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+		picture = "POLITICS_Soviet_Gregory_Zhukov.dds"
 	traits = { winter_specialist armor_officer media_personality war_hero }
 	skill = 5
 
@@ -385,7 +385,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Konstantin Rokossovsky"
 	id = 402
-		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
+		picture = "POLITICS_Soviet_Konstantin_Rokossovsky.dds"
 	traits = {  armor_officer trait_cautious brilliant_strategist }
 	skill = 4
 	
@@ -398,7 +398,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Aleksandr Vasilevsky"
 	id = 407
-		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
+		picture = "POLITICS_Soviet_Aleksandr_Vasilevsky.dds"
 	traits = { armor_officer politically_connected }
 	skill = 4
 
@@ -411,7 +411,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Boris Shaposhnikov"
-		picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
+		picture = "POLITICS_Soviet_Boris_Shaposhnikov.dds"
 	traits = { trait_cautious career_officer }
 	skill = 3
 	
@@ -423,7 +423,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Nikolai Vatutin"
-		picture = "Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
+		picture = "POLITICS_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
 	traits = { infantry_officer trait_reckless }
 	skill = 3
 	
@@ -436,7 +436,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ivan Konev"
 	id = 408
-		picture = "Portrait_Soviet_Ivan_Konev.dds"
+		picture = "POLITICS_Soviet_Ivan_Konev.dds"
 	traits = { armor_officer harsh_leader politically_connected }
 	skill = 5
 
@@ -451,7 +451,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Semyon Timoshenko"
 	id = 404
-		picture = "Portrait_Soviet_Semyon_Timoshenko.dds"
+		picture = "POLITICS_Soviet_Semyon_Timoshenko.dds"
 	traits = { cavalry_officer politically_connected career_officer }
 	skill = 3
 
@@ -466,7 +466,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Kliment Voroshilov"
 	id = 405
-		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
+		picture = "POLITICS_Soviet_Kliment_Voroshilov.dds"
 	traits = { old_guard politically_connected inflexible_strategist }
 	skill = 1
 
@@ -481,7 +481,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Mikhail Tukhachevsky"
 	id = 401
-		picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+		picture = "POLITICS_Soviet_Mikhail_Tukhachevsky.dds"
 	traits = { offensive_doctrine brilliant_strategist career_officer infantry_officer trait_reckless }
 	skill = 4
 
@@ -494,7 +494,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Semyon Budyonny"
-		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
+		picture = "POLITICS_Soviet_Semyon_Budyonny.dds"
 	traits = { old_guard politically_connected inflexible_strategist }
 	skill = 1
 
@@ -507,7 +507,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Ivan Chernyakhovsky"
-		picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
+		picture = "POLITICS_Soviet_Ivan_Chernyakhovsky.dds"
 	traits = { armor_officer }
 	skill = 1 
 
@@ -520,7 +520,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Issa Pliyev"
-		picture = "Portrait_Soviet_Issa_Pliyev.dds"
+		picture = "POLITICS_Soviet_Issa_Pliyev.dds"
 	traits = { cavalry_officer }
 	skill = 1
 
@@ -533,7 +533,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Leonid Govorov"
-		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+		picture = "POLITICS_Soviet_Leonid_Govorov.dds"
 	traits = {   }
 	skill = 3
 	
@@ -545,7 +545,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Grigory Kulik"
-		picture = "Portrait_Soviet_Grigory_Kulik.dds"
+		picture = "POLITICS_Soviet_Grigory_Kulik.dds"
 	traits = { old_guard career_officer politically_connected inflexible_strategist }
 	skill = 1	
 	attack_skill = 1
@@ -556,7 +556,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Kirill Meretskov"
-		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
+		picture = "POLITICS_Soviet_Kirill_Meretskov.dds"
 	traits = { trait_reckless infantry_officer }
 	skill = 3
 	
@@ -570,7 +570,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Filipp Golikov"
-		picture = "Portrait_Soviet_Filipp_Golikov.dds"
+		picture = "POLITICS_Soviet_Filipp_Golikov.dds"
 	traits = { career_officer }
 	skill = 3
 	
@@ -582,7 +582,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Andrey Yeryomenko"
-		picture = "Portrait_Soviet_Andrey_Yeryomenko.dds"
+		picture = "POLITICS_Soviet_Andrey_Yeryomenko.dds"
 	traits = { cavalry_officer trait_reckless }
 	skill = 1 
 
@@ -595,7 +595,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Georgiy Zakharov"
-		picture = "Portrait_Soviet_Georgiy_Zakharov.dds"
+		picture = "POLITICS_Soviet_Georgiy_Zakharov.dds"
 	traits = { career_officer }
 	skill = 1 
 
@@ -608,7 +608,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Yakov Cherevichenko"
-		picture = "Portrait_Soviet_Yakov_Cherevichenko.dds"
+		picture = "POLITICS_Soviet_Yakov_Cherevichenko.dds"
 	traits = { cavalry_officer }
 	skill = 3
 	
@@ -620,7 +620,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Max Reyter"
-		picture = "Portrait_Soviet_Max_Andreyevich.dds"
+		picture = "POLITICS_Soviet_Max_Andreyevich.dds"
 	traits = { career_officer }
 	skill = 1
 
@@ -632,7 +632,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Nikandr Chibisov"
-		picture = "Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
+		picture = "POLITICS_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
 	traits = { trickster }
 	skill = 3
 
@@ -644,7 +644,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Vasily Kuznetsov"
-		picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
+		picture = "POLITICS_Soviet_Vasily_Kuznetsov.dds"
 	traits = { commando infantry_officer }
 	skill = 3
 	
@@ -656,7 +656,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Andrey Vlasov"
-		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
+		picture = "POLITICS_Soviet_Andrey_Vlasov.dds"
 	traits = { winter_specialist infantry_officer }
 	id = 412
 	skill = 3
@@ -669,7 +669,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Ivan Fedyuninsky"
-		picture = "Portrait_Soviet_Ivan_Fedyuninsky.dds"
+		picture = "POLITICS_Soviet_Ivan_Fedyuninsky.dds"
 	traits = { infantry_officer }
 	skill = 1 
 	
@@ -681,7 +681,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Maksim Purkayev"
-		picture = "Portrait_Soviet_Maksim_Purkayev.dds"
+		picture = "POLITICS_Soviet_Maksim_Purkayev.dds"
 	traits = { career_officer }
 	skill = 3
 
@@ -693,7 +693,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Kuzma Galitsky"
-		picture = "Portrait_Soviet_Kuzma_Galitsky.dds"
+		picture = "POLITICS_Soviet_Kuzma_Galitsky.dds"
 	traits = { infantry_officer }
 	skill = 1 
 
@@ -705,7 +705,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Markian Popov"
-		picture = "Portrait_Soviet_Matkian_Popov.dds"
+		picture = "POLITICS_Soviet_Matkian_Popov.dds"
 	traits = { winter_specialist infantry_officer brilliant_strategist }
 	skill = 2
 
@@ -718,7 +718,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Nikolai Berzarin"
-		picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
+		picture = "POLITICS_Soviet_Nikolai_Berzarin.dds"
 	traits = { infantry_officer }
 	skill = 3
 	
@@ -730,7 +730,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Alexander Gorbatov"
-		picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
+		picture = "POLITICS_Soviet_Alexander_Gorbatov.dds"
 	traits = { career_officer cavalry_officer }
 	skill = 3
 	
@@ -742,7 +742,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Kirill Moskalenko"
-		picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
+		picture = "POLITICS_Soviet_Kirill_Moskalenko.dds"
 	traits = {  }
 	skill = 3
 	
@@ -754,7 +754,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Dmitry Lelyushenko"
-		picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+		picture = "POLITICS_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
 	traits = {armor_officer trait_reckless  }
 	skill = 1 
 	
@@ -766,7 +766,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Andrei Grechko"
-		picture = "Portrait_Soviet_Andrei_Antonovich_Grechko.dds"
+		picture = "POLITICS_Soviet_Andrei_Antonovich_Grechko.dds"
 	traits = { cavalry_officer }
 	skill = 3
 
@@ -780,7 +780,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Rodion Malinovsky"
-		picture = "Portrait_Soviet_Rodion_Malinovsky.dds"
+		picture = "POLITICS_Soviet_Rodion_Malinovsky.dds"
 	traits = { career_officer old_guard trait_cautious politically_connected }
 	skill = 1 
 
@@ -793,7 +793,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Vasily Chuikov"
-		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
+		picture = "POLITICS_Soviet_Vasily_Chuikov.dds"
 	traits = { brilliant_strategist career_officer }
 	skill = 1
 
@@ -806,7 +806,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Filipp Oktyabrskiy"
-		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
+		picture = "POLITICS_Soviet_Filipp_Oktyabrsky.dds"
 	traits = { ground_pounder ironside }
 	skill = 2
 	attack_skill = 3
@@ -818,7 +818,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Sergey Gorshkov"
 	id = 411
-		picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
+		picture = "POLITICS_Soviet_Sergey_Gorshkov.dds"
 	traits = { navy_career_officer bold }
 	skill = 3
 	attack_skill = 3
@@ -831,7 +831,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Gordey Levchenko"
 	id = 406
-		picture = "Portrait_Soviet_Gordey_Levchenko.dds"
+		picture = "POLITICS_Soviet_Gordey_Levchenko.dds"
 	traits = { green_water_expert }
 	skill = 2
 	attack_skill = 2
@@ -843,7 +843,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Arseniy Golovko"
 	id = 409
-		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
+		picture = "POLITICS_Soviet_Arseniy_Golovko.dds"
 	traits = { arctic_water_expert spotter }
 	skill = 4
 	attack_skill = 3
@@ -855,7 +855,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Vladimir Kasatonov"
 	id = 403
-		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
+		picture = "POLITICS_Soviet_Vladimir_Kasatonov.dds"
 	traits = { seawolf }
 	skill = 2
 	attack_skill = 1
