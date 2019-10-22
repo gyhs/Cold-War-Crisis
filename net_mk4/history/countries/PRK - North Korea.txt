@@ -79,7 +79,7 @@ create_country_leader = {
 	desc = "POLITICS_PRK_Kim_Jong_il_DESC"
 	picture = "POLITICS_PRK_Kim_Jong_il.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		
 	}
@@ -89,7 +89,7 @@ create_country_leader = {
 	desc = "POLITICS_PRK_Hwang_Jang_yop_DESC"
 	picture = "POLITICS_PRK_Hwang_Jang_yop.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		
 	}
@@ -100,7 +100,7 @@ create_country_leader = {
 	desc = "POLITICS_PRK_Kim_Yong_nam_DESC"
 	picture = "POLITICS_PRK_Kim_Yong_nam.dds"
 	expire = "2100.3.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		
 	}

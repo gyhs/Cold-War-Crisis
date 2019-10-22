@@ -47,7 +47,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/POLITICS_Romania_Gheorghe_Tatarescu.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
 	picture = "POLITICS_Romania_Constantin_Parhon.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -69,7 +69,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMAND_CALINESCU_DESC"
 	picture = "gfx/leaders/ROM/POLITICS_Romania_Armand_Calinescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
@@ -80,7 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "POLITICS_Romania_Octavian_Goga.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -91,7 +91,7 @@ create_country_leader = {
 	desc = "POLITICS_ION_ANTONESCU_DESC"
 	picture = "POLITICS_Romania_Ion_Antonescu.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

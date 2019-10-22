@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_PRC_Deng_Xiaoping_DESC"
 	picture = "POLITICS_PRC_Deng_Xiaoping.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		cornered_fox
 	}
@@ -56,7 +56,7 @@ create_country_leader = {
 	desc = "POLITICS_PRC_Han_Dongfang_DESC"
 	picture = "POLITICS_PRC_Han_Dongfang.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = "POLITICS_PRC_Wu_Qu_DESC"
 	picture = "POLITICS_PRC_Wu_Qu.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 	}
 }
@@ -74,7 +74,7 @@ create_country_leader = {
 #	desc = "POLITICS_PRC_Wu_Qu_DESC"
 #	picture = "POLITICS_PRC_Wu_Qu.dds"
 #	expire = "2100.3.1"
-#	ideology = fascism_ideology
+#	ideology = fascism_subtype_1
 #	traits = {
 #	}
 #}

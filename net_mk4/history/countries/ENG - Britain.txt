@@ -49,11 +49,11 @@ set_politics = {
 
 set_popularities = {
     communism = 5
-	socialism = 5
+	social_democracy_subtype_1 = 5
 	social_democracy = 15
 	social_liberalism = 25
 	market_liberalism = 25
-	social_conservatism = 15
+	social_social_conservatism_subtype_1 = 15
 	authoritarianism = 5
 	fascism = 5
 }
@@ -73,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_ENG_Margaret_Thatcher_DESC"
 	picture = "POLITICS_ENG_Margaret_Thatcher.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
@@ -82,7 +82,7 @@ create_country_leader = {
 	desc = "POLITICS_ENG_Alan_Sked_DESC"
 	picture = "POLITICS_ENG_Alan_Sked.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 	}
 }
@@ -91,7 +91,7 @@ create_country_leader = {
 	desc = "POLITICS_ENG_John_Tyndall_DESC"
 	picture = "POLITICS_ENG_John_Tyndall.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 	}
 }

@@ -27,7 +27,7 @@ create_country_leader = {
 	name = "Dedan Ngwale"
 	picture = "gfx/leaders/Africa/POLITICS_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

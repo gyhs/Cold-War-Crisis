@@ -33,7 +33,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
 	picture = "POLITICS_Norway_Johan_Nygaardsvold.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}
@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = "POLITICS_VIDKUN_QUISLING_DESC"
 	picture = "POLITICS_Norway_Vidkun_Quisling.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -55,7 +55,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -66,7 +66,7 @@ create_country_leader = {
 	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}

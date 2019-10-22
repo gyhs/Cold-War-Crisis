@@ -31,7 +31,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
 	picture = "POLITICS_Portugal_Antonio_de_Oliveira_Salazar.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_BENTO_GONCALVES_DESC"
 	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -53,7 +53,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
 	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

@@ -27,7 +27,7 @@ create_country_leader = {
 	name = " Marcus James Hugins"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_subtype_1
 	traits = { 
 		prince_of_terror
 		

@@ -29,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "POLITICS_Denmark_Thorvald_Stauning.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}
@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = "POLITICS_FRITS_CLAUSEN_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -51,7 +51,7 @@ create_country_leader = {
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

@@ -33,7 +33,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_POLITICS_xsm_ma_bufang"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

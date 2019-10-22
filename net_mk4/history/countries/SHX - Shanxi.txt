@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_YAN XISHAN_DESC"
 	picture = "GFX_POLITICS_shanxi_POLITICS_yan_xishan"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

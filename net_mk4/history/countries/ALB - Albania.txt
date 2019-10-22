@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "POLITICS_Albania_King_Zog.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

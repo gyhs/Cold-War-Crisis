@@ -284,7 +284,7 @@ create_country_leader = {
 	desc = "POLITICS_Ronald_Reagan_DESC"
 	picture = "POLITICS_USA_Ronald_Reagan.dds"
 	expire = "1947.1.1"
-	ideology = liberalism
+	ideology = social_liberalism_subtype_1
 	traits = {
 		dislikes_germany
 	}

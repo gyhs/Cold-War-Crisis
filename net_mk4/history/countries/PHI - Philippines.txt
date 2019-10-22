@@ -26,7 +26,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
 	picture = "gfx/leaders/PHI/POLITICS_Philippines_Manuel_Luis_Quezon.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
@@ -37,7 +37,7 @@ create_country_leader = {
 	desc = "POLITICS_PEDRO_BAGUISA_DESC"
 	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}

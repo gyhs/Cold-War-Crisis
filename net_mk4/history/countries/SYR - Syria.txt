@@ -25,7 +25,7 @@ create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
 	picture = "gfx/leaders/SYR/POLITICS_Arabia_Generic_navy_1.dds"
-	ideology = liberalism
+	ideology = social_liberalism_subtype_1
 	traits = {
 		#
 	}
@@ -35,7 +35,7 @@ create_country_leader = {
 	name = "Antun Saadeh"
 	desc = ""
 	picture = "gfx/leaders/SYR/POLITICS_Arabia_Generic_land_3.dds"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -45,7 +45,7 @@ create_country_leader = {
 	name = "Ghazi bin Faisal"
 	desc = ""
 	picture = "gfx/leaders/SYR/POLITICS_Arabia_Generic_2.dds"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -55,7 +55,7 @@ create_country_leader = {
 	name = "Khalid Bakdash"
 	desc = ""
 	picture = "gfx/leaders/SYR/POLITICS_Arabia_Generic_1.dds"
-	ideology = leninism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}

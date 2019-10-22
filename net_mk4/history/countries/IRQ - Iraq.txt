@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_GHAZI_I_DESC"
 	picture = "GFX_POLITICS_iraq_ghazi"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -57,7 +57,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_fascism1.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -68,7 +68,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_navy_3.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}

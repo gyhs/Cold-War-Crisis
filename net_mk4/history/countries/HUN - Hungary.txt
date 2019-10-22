@@ -34,7 +34,7 @@ if = {
 		desc = "POLITICS_MIKLOS_HORTHY_DESC"
 		picture = "POLITICS_Hungary_Miklos_Horthy.dds"
 		expire = "1965.1.1"
-		ideology = oligarchism
+		ideology = authoritarianism_subtype_1
 		traits = {
 			fascist_sympathies
 			anti_communist
@@ -47,14 +47,14 @@ if = {
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "POLITICS_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = authoritarianism_subtype_1
 		}
 		create_country_leader = {
 			name = "Miklós Horthy"
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "POLITICS_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
-			ideology = fascism_ideology
+			ideology = fascism_subtype_1
 		}
 	}
 }
@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
 	picture = "POLITICS_Hungary_Matyas_Rakoski.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}

@@ -35,7 +35,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_subtype_1
 	traits = {
 	}
 }
@@ -45,7 +45,7 @@ create_country_leader = {
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "gfx/leaders/GER/POLITICS_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
@@ -55,7 +55,7 @@ create_country_leader = {
 #	desc = "POLITICS_WILHELM_PIECK_DESC"
 #	picture = "POLITICS_Germany_Wilhelm_Pieck.dds"
 #	expire = "1965.1.1"
-#	ideology = stalinism
+#	ideology = communism_subtype_1
 #	traits = {
 #	}
 #}
@@ -65,7 +65,7 @@ create_country_leader = {
 #	desc = "POLITICS_OTTO_WELS_DESC"
 #	picture = "POLITICS_Germany_Adolf_Hitler.dds"
 #	expire = "1939.1.16"
-#	ideology = socialism
+#	ideology = social_democracy_subtype_1
 #	traits = {
 #		exiled
 #		union_man
@@ -77,7 +77,7 @@ create_country_leader = {
 #	desc = "POLITICS_ERNST_THALMANN_DESC"
 #	picture = "POLITICS_Germany_Adolf_Hitler.dds"
 #	expire = "1956.1.1"
-#	ideology = stalinism
+#	ideology = communism_subtype_1
 #	traits = {
 #		assassination_survivor
 #		stalins_puppet

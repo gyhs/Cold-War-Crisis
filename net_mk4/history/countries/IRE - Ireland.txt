@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
 	picture = "POLITICS_Ireland_Eamon_de_Valera.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
@@ -38,7 +38,7 @@ create_country_leader = {
 	desc = "POLITICS_EOIN_ODUFFY_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = "POLITICS_JAMES_LARKIN_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -60,7 +60,7 @@ create_country_leader = {
 	desc = "POLITICS_JAMES_LARKIN_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

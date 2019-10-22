@@ -35,7 +35,7 @@ set_stability = 0.75
 #	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
 #	picture = "POLITICS_Netherlands_Dirk_Jan_de_Geer.dds"
 #	expire = "1965.1.1"
-#	ideology = conservatism
+#	ideology = social_conservatism_subtype_1
 #	traits = {
 #		#
 #	}
@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
 	picture = "GFX_POLITICS_holland_hendrikus_colijn"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		strict_austerity_adherent
 	}
@@ -57,7 +57,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
 	picture = "GFX_POLITICS_hol_anton_mussert"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		leider
 	}
@@ -68,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_LOU_DE_VISSER_DESC"
 	picture = "GFX_POLITICS_HOL_lou_de_visser"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = communism_subtype_1
 	traits = {
 		veteran_communist
 	}
@@ -79,7 +79,7 @@ create_country_leader = {
 	desc = "POLITICS_WIM_SCHERMERHORN_DESC"
 	picture = "GFX_POLITICS_hol_wim_schermerhorn"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

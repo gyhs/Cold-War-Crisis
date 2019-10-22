@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = "POLITICS_RAJ_Manohar_Joshi_DESC"
 	picture = "POLITICS_RAJ_Manohar_Joshi.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		
 	}
@@ -54,7 +54,7 @@ create_country_leader = {
 	desc = "POLITICS_RAJ_Lal_Krishna_Advani_DESC"
 	picture = "POLITICS_RAJ_Lal_Krishna_Advani.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		
 	}
@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = "POLITICS_RAJ_Rajiv_Gandhi_DESC"
 	picture = "POLITICS_RAJ_Rajiv_Gandhi.dds"
 	expire = "2100.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }

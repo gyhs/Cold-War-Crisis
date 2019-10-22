@@ -26,7 +26,7 @@ create_country_leader = {
 	desc = "ANTE_PAVELIC_DESC"
 	picture = "POLITICS_Croatia_Ante_Pavelic.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

@@ -28,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_ANANDYN_AMAR_DESC"
 	picture = GFX_POLITICS_mon_anandyn_amar
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}

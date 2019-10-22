@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_AUS_Kurt_Steyrer_DESC"
 	picture = "POLITICS_AUS_Kurt_Steyrer.dds"
 	expire = "2100.3.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		
 	}
@@ -63,7 +63,7 @@ create_country_leader = {
 	desc = "POLITICS_AUS_Kurt_Waldheim_DESC"
 	picture = "POLITICS_AUS_Kurt_Waldheim.dds"
 	expire = "2100.3.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		
 	}
@@ -74,7 +74,7 @@ create_country_leader = {
 	desc = "POLITICS_AUS_Otto_Scrinzi_DESC"
 	picture = "POLITICS_AUS_Otto_Scrinzi.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		
 	}

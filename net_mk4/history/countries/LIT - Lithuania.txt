@@ -31,7 +31,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SMETONA_DESC"
 	picture = "GFX_POLITICS_lithuania_antanas_smetona"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -53,7 +53,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

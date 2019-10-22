@@ -28,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
 	picture = "GFX_POLITICS_peru_oscar_benavides"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

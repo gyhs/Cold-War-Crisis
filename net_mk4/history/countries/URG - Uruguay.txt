@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_GABRIEL_TERRA_DESC"
 	picture = "GFX_POLITICS_uruguay_POLITICS_gabriel_terra"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_liberalism_subtype_1
 	traits = {
 		#
 	}

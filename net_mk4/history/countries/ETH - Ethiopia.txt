@@ -26,7 +26,7 @@ create_country_leader = {
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
 	picture = "POLITICS_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -37,7 +37,7 @@ create_country_leader = {
 	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
 	picture = "POLITICS_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}

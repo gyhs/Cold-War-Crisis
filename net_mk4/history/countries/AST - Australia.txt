@@ -204,7 +204,7 @@ create_country_leader = {
 	desc = "POLITICS_AST_Bob_Hawke_DESC"
 	picture = "POLITICS_AST_Bob_Hawke.dds"
 	expire = "2100.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}
@@ -215,7 +215,7 @@ create_country_leader = {
 	desc = "POLITICS_ERIC_CAMPBELL_DESC"
 	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -226,7 +226,7 @@ create_country_leader = {
 	desc = "POLITICS_RICHARD_DIXON_DESC"
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -237,7 +237,7 @@ create_country_leader = {
 	desc = "POLITICS_EARLE_PAGE_DESC"
 	picture = "GFX_AST_earle_page"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -248,7 +248,7 @@ create_country_leader = {
 	desc = ""
 	picture = "POLITICS_Australia_Rod_Hull.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

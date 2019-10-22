@@ -33,7 +33,7 @@ create_country_leader = {
 	desc = "POLITICS_IOANNIS_METAXAS_DESC"
 	picture = "POLITICS_Greece_Ioannis_Metaxas.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
 	picture = "POLITICS_Greece_Markos_Vafiadis.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -55,7 +55,7 @@ create_country_leader = {
 	desc = "POLITICS_KONSTANTINOS_TSALDARIS_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
@@ -66,7 +66,7 @@ create_country_leader = {
 	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

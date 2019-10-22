@@ -25,7 +25,7 @@ create_country_leader = {
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
 	picture = "GFX_POLITICS_men_demchugdongrub"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = fascism_subtype_1
 	traits = {
 		spirit_of_genghis
 	}

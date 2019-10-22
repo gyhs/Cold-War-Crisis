@@ -37,7 +37,7 @@ create_country_leader = {
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "POLITICS_Sweden_Per_Albin_Hansson.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}
@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_SVEN_LINDEROT_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

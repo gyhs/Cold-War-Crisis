@@ -60,7 +60,7 @@ create_country_leader = {
 	desc = "POLITICS_FRA_Francois_Mitterrand_DESC"
 	picture = "POLITICS_FRA_Francois_Mitterrand.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		
 	}
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_FRA_Jacques_Chirac_DESC"
 	picture = "POLITICS_FRA_Jacques_Chirac.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		
 	}
@@ -80,7 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_FRA_Jean_Marie_Le_Pen_DESC"
 	picture = "POLITICS_FRA_Jean_Marie_Le_Pen.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		
 	}

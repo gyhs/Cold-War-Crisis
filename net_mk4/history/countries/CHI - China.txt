@@ -55,7 +55,7 @@ create_country_leader = {
 	desc = "POLITICS_CHI_Lee_Teng_hui_DESC"
 	picture = "POLITICS_CHI_Lee_Teng_hui.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_CHI_Chiang_Ching_kuo_DESC"
 	picture = "POLITICS_CHI_Chiang_Ching_kuo.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 	}
 }
@@ -73,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_CHI_Li_Huang_DESC"
 	picture = "POLITICS_CHI_Li_Huang.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 	}
 }

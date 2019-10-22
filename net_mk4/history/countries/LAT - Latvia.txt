@@ -31,7 +31,7 @@ create_country_leader = {
 	desc = "POLITICS_KARLIS_ULMANIS_DESC"
 	picture = "GFX_POLITICS_latvia_karlis_ulmanis"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -52,7 +52,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_POLITICS_lat_fricis_menders"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}
@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_POLITICS_lat_vilis_lacis"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}

@@ -50,7 +50,7 @@ create_country_leader = {
 	desc = "POLITICS_ARG_Raul_Alfonsin_DESC"
 	picture = "POLITICS_ARG_Raul_Alfonsin.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_ARG_Carlos_Saul_Menem_DESC"
 	picture = "POLITICS_ARG_Carlos_Saul_Menem.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 	}
 }
@@ -68,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_ARG_Reynaldo_Bignone_DESC"
 	picture = "POLITICS_ARG_Reynaldo_Bignone.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 	}
 }

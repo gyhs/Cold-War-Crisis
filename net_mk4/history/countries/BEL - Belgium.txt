@@ -31,7 +31,7 @@ create_country_leader = {
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "POLITICS_Belgium_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = anarchist_communism
+	ideology = socialism_subtype_1
 	traits = {
 		#
 	}
@@ -53,7 +53,7 @@ create_country_leader = {
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

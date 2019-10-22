@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
 	picture = "GFX_POLITICS_ecuador_federico_paez"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}

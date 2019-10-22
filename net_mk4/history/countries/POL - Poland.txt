@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "POLITICS_Poland_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -53,7 +53,7 @@ create_country_leader = {
 	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
 	picture = "POLITICS_Poland_Ignacy_Moscicki.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
 	picture = "POLITICS_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_WINCENTY_WITOS_DESC"
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
@@ -86,7 +86,7 @@ create_country_leader = {
 	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
 	picture = "GFX_POL_boleslaw_piasecki"
 	expire = "1965.1.1"
-	ideology = falangism
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}

@@ -324,7 +324,7 @@ create_country_leader = {
 	desc = "POLITICS_SOV_Boris_Yeltsin_DESC"
 	picture = "POLITICS_SOV_Boris_Yeltsin.dds"
 	expire = "2100.3.1"
-	ideology = socialism
+	ideology = social_democracy_subtype_1
 	traits = {
 		
 	}
@@ -346,7 +346,7 @@ create_country_leader = {
 	desc = "POLITICS_SOV_Vladimir_Putin_DESC"
 	picture = "POLITICS_SOV_Vladimir_Putin.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		
 	}
@@ -357,7 +357,7 @@ create_country_leader = {
 	desc = "POLITICS_SOV_Vladimir_Zhirinovsky_DESC"
 	picture = "POLITICS_SOV_Vladimir_Zhirinovsky.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		
 	}

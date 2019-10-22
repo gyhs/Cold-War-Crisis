@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
 	picture = "GFX_POLITICS_costa_rica_ricardo_jiminez_oreamuno"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_liberalism_subtype_1
 	traits = {
 		#
 	}

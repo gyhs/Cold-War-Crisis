@@ -22,7 +22,7 @@ create_country_leader = {
     desc = ""
     picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_3.dds"
     expire = "1965.1.1"
-    ideology = centrism
+    ideology = authoritarianism_subtype_1
     traits = {
         #
     }
@@ -33,7 +33,7 @@ create_country_leader = {
     desc = ""
     picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
     expire = "1965.1.1"
-    ideology = fascism_ideology
+    ideology = fascism_subtype_1
     traits = {
         #
     }
@@ -44,7 +44,7 @@ create_country_leader = {
     desc = ""
     picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
     expire = "1965.1.1"
-    ideology = stalinism
+    ideology = communism_subtype_1
     traits = {
         #
     }
@@ -55,7 +55,7 @@ create_country_leader = {
     desc = ""
     picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
     expire = "1965.1.1"
-    ideology = socialism
+    ideology = social_democracy_subtype_1
     traits = {
         #
     }

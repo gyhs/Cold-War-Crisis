@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = "POLITICS_J_B_M_HERTZOG_DESC"
 	picture = "GFX_SAF_james_hertzog"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
@@ -73,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_DF_MALAN_DESC"
 	picture = "GFX_SAF_daniel_malan"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 		#
 	}
@@ -84,7 +84,7 @@ create_country_leader = {
 	desc = "POLITICS_MOSES_KOTANE_DESC"
 	picture = "GFX_SAF_moses_kotane"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
@@ -95,7 +95,7 @@ create_country_leader = {
 	desc = "POLITICS_PIXLEY_SEME_DESC"
 	picture = "gfx/leaders/Africa/POLITICS_Africa_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = "POLITICS_HKG_David_Wilson_DESC"
 	picture = "POLITICS_HKG_David_Wilson.dds"
 	expire = "2100.3.1"
-	ideology = liberalism
+	ideology = social_liberalism_subtype_1
 	traits = {
 		
 	}

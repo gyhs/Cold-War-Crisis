@@ -29,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
 	picture = "GFX_POLITICS_columbia_alfonso_lopez"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_liberalism_subtype_1
 	traits = {
 		#
 	}
@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
 	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}

@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
 	picture = "GFX_POLITICS_honduras_POLITICS_tiburcio_carias_andino"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}

@@ -50,7 +50,7 @@ create_country_leader = {
 	desc = "POLITICS_BRA_Fernando_Collor_de_Mello_DESC"
 	picture = "POLITICS_BRA_Fernando_Collor_de_Mello.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_BRA_Jose_Sarney_DESC"
 	picture = "POLITICS_BRA_Jose_Sarney.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 	}
 }
@@ -68,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_BRA_Eneas_Ferreira_Carneiro_DESC"
 	picture = "POLITICS_BRA_Eneas_Ferreira_Carneiro.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 	}
 }

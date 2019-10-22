@@ -16,7 +16,7 @@ ideologies = {
 
 	communism = {
 		types = {
-			communism_subtype = {} #generic
+			communism_subtype_1 = {} #generic
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_communism_1"
@@ -43,7 +43,7 @@ ideologies = {
 
 	socialism = {
 		types = {
-			socialism_subtype = {} #generic
+			socialism_subtype_1 = {} #generic
 
 		}
 		dynamic_faction_names = {
@@ -72,7 +72,7 @@ ideologies = {
 
 	social_democracy = {
 		types = {
-			social_democracy_subtype = {} #generic
+			social_democracy_subtype_1 = {} #generic
 
 		}
 		dynamic_faction_names = {
@@ -101,7 +101,7 @@ ideologies = {
 
 	social_liberalism = {
 		types = {
-			social_liberalism_subtype = {} #generic
+			social_liberalism_subtype_1 = {} #generic
 
 		}
 		dynamic_faction_names = {
@@ -130,7 +130,7 @@ ideologies = {
 
 	market_liberalism = {
 		types = {
-			market_liberalism_subtype = {}
+			market_liberalism_subtype_1 = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_market_liberalism_1"
@@ -157,7 +157,7 @@ ideologies = {
 
 	social_conservatism = {
 		types = {
-			social_conservatism_subtype = {} #generic
+			social_conservatism_subtype_1 = {} #generic
 
 		}
 		dynamic_faction_names = {
@@ -186,7 +186,7 @@ ideologies = {
 
 	authoritarianism = {
 		types = {
-			authoritarianism_subtype = {} #generic
+			authoritarianism_subtype_1 = {} #generic
 
 		}
 		dynamic_faction_names = {
@@ -215,7 +215,7 @@ ideologies = {
 
 	fascism = {
 		types = {
-			fascism_subtype = {} #generic
+			fascism_subtype_1 = {} #generic
 
 		}
 		dynamic_faction_names = {

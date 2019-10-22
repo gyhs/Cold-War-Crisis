@@ -69,7 +69,7 @@ create_country_leader = {
 	desc = "POLITICS_FIN_Mauno_Koivisto_DESC"
 	picture = "POLITICS_FIN_Mauno_Koivisto.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		
 	}

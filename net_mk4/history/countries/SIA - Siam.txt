@@ -63,7 +63,7 @@ create_country_leader = {
 	desc = "POLITICS_SIA_Chatichai_Choonhavan_DESC"
 	picture = "POLITICS_SIA_Chatichai_Choonhavan.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
@@ -72,7 +72,7 @@ create_country_leader = {
 	desc = "POLITICS_SIA_Suchinda_Kraprayoon_DESC"
 	picture = "POLITICS_SIA_Suchinda_Kraprayoon.dds"
 	expire = "2100.3.1"
-	ideology = despotism
+	ideology = authoritarianism_subtype_1
 	traits = {
 	}
 }
@@ -81,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_SIA_Arthit_Kamlang_ek_DESC"
 	picture = "POLITICS_SIA_Arthit_Kamlang_ek.dds"
 	expire = "2100.3.1"
-	ideology = fascism_ideology
+	ideology = fascism_subtype_1
 	traits = {
 	}
 }
