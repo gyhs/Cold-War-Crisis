@@ -331,8 +331,8 @@ country_event = { #마가렛 대처의 모스크바 방문 3/29
 		{ days = 1 id = NE_ENG.11 }
 		hidden_effect = {#마가렛 대처 모스크바
 			country_event = {
-				id = NE_ENG.14
-				days = 2
+				id = NE_ENG.12
+				days = 18
 			}
 		}
 	}
@@ -348,7 +348,7 @@ country_event = { #마가렛 대처의 모스크바 방문
 	fire_only_once = yes
 	
 	option = { #반갑군
-		name = NE_ENG.12.a
+		name = NE_ENG.13.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
 	}
@@ -364,9 +364,27 @@ country_event = { #하비 프록터의 성추행 추문!
 	fire_only_once = yes
 	
 	option = { #더럽군
-		name = NE_ENG.12.a
+		name = NE_ENG.14.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.05
 		add_political_power = -0.20
+		days = 14
+	}
+}
+country_event = { #상원 의회의 성전환 허용
+	id = NE_ENG.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.15"}
+	title = NE_ENG.15.title
+	desc = NE_ENG.15.desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #더럽군
+		name = NE_ENG.15.a
+		ai_chance = { factor = 1 }
+		add_political_power = -0.10
+		days = 
 	}
 }
