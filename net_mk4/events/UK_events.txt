@@ -371,7 +371,10 @@ country_event = { #하비 프록터의 성추행 추문!
 		add_stability = -0.05
 		add_political_power = -20
 		hidden_effect = {
+			country_event = {
+			id = NE_ENG.13
 			days = 14
+			}
 		}
 	}
 }
@@ -423,32 +426,32 @@ country_event = { #5/11 총선 전의 설문조사
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #누구를 지지하지?
+	option = { #마가렛 대처?
 		name = NE_ENG.17.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
-			days = 
+			days = 30
 		}
 	}
-	option = { #누구를 지지하지?
+	option = { #마이클 풋?
 		name = NE_ENG.17.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
-			days = 
+			days = 30
 		}
 	}
-	option = { #누구를 지지하지?
+	option = { #닐 키녹?
 		name = NE_ENG.17.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
-			days = 
+			days = 30
 		}
 	}
-	option = { #누구를 지지하지?
+	option = { #국민전선?
 		name = NE_ENG.17.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
-			days = 
+			days = 30
 		}
 	}
 }
