@@ -1055,7 +1055,11 @@ ideas = {
 			removal_cost = -1
 			picture = generic_democratic_drift_bonus
 			modifier = {
-				democratic_drift = 0.05
+				socialism_drift = 0.05
+				social_democracy_drift = 0.05
+				social_liberalism_drift = 0.05
+				market_liberalism_drift = 0.05
+				social_conservatism_drift = 0.05
 			}
 		} 
 		american_protection_defence_democratic = {
