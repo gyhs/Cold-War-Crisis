@@ -45,7 +45,7 @@ focus_tree = {
 			desc = "POLITICS_SOV_Gennady_Yanayev_DESC"
 			picture = "Portrait_SOV_Gennady_Yanayev.dds"
 			expire = "2100.1.1"
-			ideology = stalinism
+			ideology = communism_subtype_1
 			traits = {
 					}
 			}
@@ -1594,7 +1594,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -1617,7 +1617,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -1940,7 +1940,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -1978,7 +1978,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2233,7 +2233,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2250,7 +2250,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2291,7 +2291,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2310,7 +2310,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2355,7 +2355,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2376,7 +2376,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2594,7 +2594,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2611,7 +2611,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2888,7 +2888,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -2904,7 +2904,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3167,7 +3167,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3183,7 +3183,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3232,7 +3232,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3248,7 +3248,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3468,7 +3468,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3484,7 +3484,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3758,7 +3758,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -3775,7 +3775,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -4081,7 +4081,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
@@ -4105,7 +4105,7 @@ focus_tree = {
 						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
 						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
 						expire = "1965.1.1"
-						ideology = marxism
+						ideology = communism_subtype_1
 						traits = {
 						}
 					}
