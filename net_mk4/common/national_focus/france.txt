@@ -12,6 +12,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_new_era
 		icon = GFX_goal_generic_alliance
+		desc = NF_FRA_new_era_desc
 		cost = 10.00
 		x = 21
 		y = 1
@@ -24,24 +25,28 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_faf
 		icon = GFX_goal_generic_army_doctrines
+		desc = NF_FRA_faf_desc
 		cost = 10.00
 		x = 50
 		y = 1
+		
 
 	}
 	#프랑스의 산업
 	focus = {
 		id = NF_FRA_french_industry
 		icon = GFX_goal_generic_consumer_goods
+		desc = NF_FRA_french_industry_desc
 		cost = 10.00
 		x = 65
 		y = 1
-
+		
 	}
 	#독자노선
 	focus = {
 		id = NF_FRA_unilaterally_path
 		icon = GFX_focus_rom_parties_end
+		desc = NF_FRA_unilaterally_path_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_new_era
@@ -57,6 +62,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_nuclear_power
 		icon = GFX_focus_wonderweapons
+		desc = NF_FRA_nuclear_power_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_unilaterally_path
@@ -69,6 +75,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_dream_of_the_past
 		icon = GFX_focus_AST_rats_tobruk
+		desc = NF_FRA_dream_of_the_past_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_nuclear_power
@@ -84,6 +91,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_descendants_of_de_gaulle
 		icon = GFX_focus_generic_military_mission
+		desc = NF_FRA_descendants_of_de_gaulle_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_dream_of_the_past
@@ -96,6 +104,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_control_parliament 
 		icon = GFX_goal_generic_propaganda
+		desc = NF_FRA_descendants_of_de_gaulle_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_descendants_of_de_gaulle
@@ -1024,6 +1033,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_french_industry
 		}
+		completion_reward = {
+		add_research_slot = 2
+		}
 		x = 62
 		y = 2
 
@@ -1111,7 +1123,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 7
-
+		completion_reward = {
+		set_country_leader_ideology = fascism 
+		}
 	}
 	#프랑스의 새로운 전차
 	focus = {
