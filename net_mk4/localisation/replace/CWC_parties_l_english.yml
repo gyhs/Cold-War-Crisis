@@ -1,16 +1,21 @@
 ﻿l_english:
  ###이념 이름###
- communism:0 "사회주의"
- social_democrat:0 "사민주의"
- democratic:0 "자유주의"
- neutrality:0 "보수주의"
- authoritarianism:0 "권위주의"
- fascism:0 "전체주의"
- # neutrality_desc:0 "강력한 중앙권력과 제한적인 정치적 자유를 특징으로 하는 정치 형태 \n입법부, 정당, 이해집단 등에 대한 정권 차원에서의 제약을 가하며, 내란이나 저개발 등 쉽게 식별될 수 있는 사회 문제에 맞서 싸우기 위한 방편으로써 정권을 필요악으로 간주하는 경향이 있습니다. 때문에 반정권 활동이 빈번하며 정치적 적수를 찍어누르는 것으로 대응 합니다. \n행정부는 법치 보다 권력이 우선되어 정체가 모호하거나 변하기 쉽습니다."
+ #communism             공산주의
+ #socialism             사회주의
+ #social_democracy       사회민주주의
+ #social_liberalism     사회자유주의
+ #market_liberalism     시장자유주의
+ #social_conservatism   사회보수주의
+ #authoritarianism      권위주의
+ #fascism               파시즘
  ###국가별 정당###
  SOV_communism_party:0 "소련 공산당"
- SOV_democratic_party:0 "소련 민주당"
- SOV_neutrality_party:0 "통합 소련당"
+ SOV_socialism_party:0 "소련 사회주의당"
+ SOV_social_democracy_party:0 "공정 소련당"
+ SOV_social_liberalism_party:0 "소련 통일민주당'야블로코'"
+ SOV_market_liberalism_party:0 "소련 민주당"
+ SOV_social_conservatism_party:0 "인민자유당"
+ SOV_authoritarianism_party:0 "통합 소련당"
  SOV_fascism_party:0 "소련 자유민주당"
  
  AUS_communism_party:0 "오스트리아 공산당"
@@ -34,13 +39,13 @@
  DDR_fascism_party:0 "민족당"
  
  KOR_communism_party:0 "민중당"
- KOR_democratic_party:0 "민주당"
- KOR_neutrality_party:0 "민주정의당"
+ KOR_social_liberalism_party:0 "민주당"
+ KOR_authoritarianism_party:0 "민주정의당"
  KOR_fascism_party:0 "군부"
  
  PRK_communism_party:0 "조선 노동당"
- PRK_democratic_party:0 "조선 사회민주당"
- PRK_neutrality_party:0 "조국통일민주주의전선"
+ PRK_social_democracy_party:0 "조선 사회민주당"
+ PRK_authoritarianism_party:0 "조국통일민주주의전선"
  PRK_fascism_party:0 "주체파"
  
  RAJ_communism_party:0 "인도 공산당"
