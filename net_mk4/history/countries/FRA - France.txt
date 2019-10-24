@@ -26,21 +26,21 @@ set_convoys = 300
 
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = social_democracy
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	communism = 0
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 40
-	market_liberalism = 45
-	social_conservatism = 5
+	communism = 6
+	socialism = 3
+	social_democracy = 34
+	social_liberalism = 8
+	market_liberalism = 16
+	social_conservatism = 19
 	authoritarianism = 0
-	fascism = 0
+	fascism = 14
 }
 
 add_ideas = {
