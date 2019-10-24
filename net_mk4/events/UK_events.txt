@@ -434,24 +434,60 @@ country_event = { #5/11 총선 전의 설문조사
 		}
 	}
 	option = { #마이클 풋?
-		name = NE_ENG.17.a
+		name = NE_ENG.17.b
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			days = 30
 		}
 	}
 	option = { #닐 키녹?
-		name = NE_ENG.17.a
+		name = NE_ENG.17.c
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			days = 30
 		}
 	}
 	option = { #국민전선?
-		name = NE_ENG.17.a
+		name = NE_ENG.17.d
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			days = 30
+		}
+	}
+}
+country_event = { #
+	id = NE_ENG.
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG."}
+	title = NE_ENG..title
+	desc = NE_ENG..desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = NE_ENG..a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			days = 
+		}
+	}
+}
+country_event = { #
+	id = NE_ENG.
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG."}
+	title = NE_ENG..title
+	desc = NE_ENG..desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = NE_ENG..a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			days = 
 		}
 	}
 }
