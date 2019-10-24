@@ -369,7 +369,9 @@ country_event = { #상원 의회의 성전환 허용
 		ai_chance = { factor = 1 }
 		add_political_power = -10
 		hidden_effect = { 
+			country_event = {
 			days = 9
+			}
 		}
 	}
 }
@@ -388,7 +390,9 @@ country_event = { #로우갈 매복, 앤트림주에서 IRA 8명 사살
 		ai_chance = { factor = 1 }
 		add_war_support = 0.07
 		hidden_effect = {
+			country_event = {
 			days = 3
+			}
 		}
 	}
 }
@@ -406,28 +410,36 @@ country_event = { #5/11 총선 전의 설문조사
 		name = NE_ENG.17.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
+			country_event = {
 			days = 30
+			}
 		}
 	}
 	option = { #마이클 풋?
 		name = NE_ENG.17.b
 		ai_chance = { factor = 1 }
 		hidden_effect = {
+			country_event = {
 			days = 30
+			}
 		}
 	}
 	option = { #닐 키녹?
 		name = NE_ENG.17.c
 		ai_chance = { factor = 1 }
 		hidden_effect = {
+			country_event = {
 			days = 30
+			}
 		}
 	}
 	option = { #국민전선?
 		name = NE_ENG.17.d
 		ai_chance = { factor = 1 }
 		hidden_effect = {
+			country_event = {
 			days = 30
+			}
 		}
 	}
 }
