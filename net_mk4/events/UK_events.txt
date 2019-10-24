@@ -43,9 +43,9 @@ country_event = {
 	picture = 
 	fire_only_once = yes
     is_triggered_only = yes
-		trigger = {
-			tag = ENG
-		}
+	trigger = {
+		tag = ENG
+	}
 	option = {
 		name = NE_ENG.2.a
 		ai_chance = { factor = 1 }
