@@ -455,39 +455,3 @@ country_event = { #5/11 총선 전의 설문조사
 		}
 	}
 }
-country_event = { #
-	id = NE_ENG.18
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG."}
-	title = NE_ENG..title
-	desc = NE_ENG..desc
-	picture = GFX_report_event_canada_treaty
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #
-		name = NE_ENG..a
-		ai_chance = { factor = 1 }
-		hidden_effect = {
-			days = 
-		}
-	}
-}
-country_event = { #
-	id = NE_ENG.
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG."}
-	title = NE_ENG..title
-	desc = NE_ENG..desc
-	picture = 
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #
-		name = NE_ENG..a
-		ai_chance = { factor = 1 }
-		hidden_effect = {
-			days = 
-		}
-	}
-}
