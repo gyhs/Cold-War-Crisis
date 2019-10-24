@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
 	picture = "POLITICS_MUJ_Ahmad_Shah_Massoud.dds"
 	expire = "2000.1.1"
-	ideology = Centrism
+	ideology = authoritarianism_subtype_1
 	traits = {
 		#
 	}
