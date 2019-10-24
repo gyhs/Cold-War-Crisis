@@ -41,7 +41,7 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = social_conservatism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
@@ -49,11 +49,11 @@ set_politics = {
 
 set_popularities = {
     communism = 5
-	social_democracy_subtype_1 = 5
+	socialism = 5
 	social_democracy = 15
 	social_liberalism = 25
 	market_liberalism = 25
-	social_social_conservatism_subtype_1 = 15
+	social_conservatism = 15
 	authoritarianism = 5
 	fascism = 5
 }
