@@ -1,1 +1,19 @@
-﻿
+﻿add_namespace = NE_FRA
+#1987년 혼돈기
+country_event = {
+    id = NE_FRA.1
+    immediate = (log = "[GetDateText]: [Root.GetName]: event NE_FRA.1")
+    title = NE_FRA.1.title
+    desc = NE_FRA.1.desc
+    picture = 
+    trigger = {
+        tag = FRA
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = NE_FRA.1.a
+        ai_chance = { factor = 1 }
+    }
+    }
