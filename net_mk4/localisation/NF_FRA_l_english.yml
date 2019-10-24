@@ -109,7 +109,3 @@
  NF_FRA_tunisia_destiny:0 "튀니지의 운명"
  NF_FRA_break_of_the_cold_war:0 "냉전 부수기"
  NF_FRA_eliminate_the_long_enemy:0 "오랜 숙적 제거"
- #이벤트
- NE_FRA.1.desc:0 "내용"
- NE_FRA.1.title:0 "제목"
- NE_FRA.1:0 "id"
