@@ -11,7 +11,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.1"}
 	title = NE_ENG.1.title
 	desc = NE_ENG.1.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	trigger = {
 		tag = ENG
 	}
@@ -40,7 +40,7 @@ country_event = {
 	id = NE_ENG.2
 	title = NE_ENG.2.title
 	desc = NE_ENG.2.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
     is_triggered_only = yes
 	trigger = {
@@ -57,7 +57,7 @@ country_event = {
 	id = NE_ENG.3
 	title = NE_ENG.3.title
 	desc = NE_ENG.3.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
     is_triggered_only = yes
 		trigger = {
@@ -83,7 +83,7 @@ country_event = {
 	id = NE_ENG.4
 	title = NE_ENG.4.title
 	desc = NE_ENG.4.desc
-	picture =
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
     is_triggered_only = yes
 		trigger = {
@@ -110,7 +110,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.5"}
 	title = NE_ENG.5.title
 	desc = NE_ENG.5.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 		trigger = {
@@ -140,7 +140,7 @@ country_event = {
 	id = NE_ENG.6
 	title = NE_ENG.6.title
 	desc = NE_ENG.6.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -163,7 +163,7 @@ country_event = {
 	id = NE_ENG.7
 	title = NE_ENG.7.title
 	desc = NE_ENG.7.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -190,7 +190,7 @@ country_event = {
 	id = NE_ENG.8
 	title = NE_ENG.8.title
 	desc = NE_ENG.8.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -219,7 +219,7 @@ country_event = {
 	id = NE_ENG.9
 	title = NE_ENG.9.title
 	desc = NE_ENG.9.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
@@ -278,7 +278,7 @@ country_event = { #닐 키녹의 워싱턴 방문3/27
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.10"}
 	title = NE_ENG.10.title
 	desc = NE_ENG.10.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -303,7 +303,7 @@ country_event = { #닐 키녹이 워싱턴을 방문하다
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.11"}
 	title = NE_ENG.11.title
 	desc = NE_ENG.11.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -319,7 +319,7 @@ country_event = { #마가렛 대처의 모스크바 방문 3/29
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.12"}
 	title = NE_ENG.12.title
 	desc = NE_ENG.12.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -344,7 +344,7 @@ country_event = { #마가렛 대처의 모스크바 방문
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.13"}
 	title = NE_ENG.13.title
 	desc = NE_ENG.13.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -360,7 +360,7 @@ country_event = { #하비 프록터의 성추행 추문!
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.14"}
 	title = NE_ENG.14.title
 	desc = NE_ENG.14.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -383,7 +383,7 @@ country_event = { #상원 의회의 성전환 허용
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.15"}
 	title = NE_ENG.15.title
 	desc = NE_ENG.15.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -402,7 +402,7 @@ country_event = { #로우갈 매복, 앤트림주에서 IRA 8명 사살
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.16"}
 	title = NE_ENG.16.title
 	desc = NE_ENG.16.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -421,7 +421,7 @@ country_event = { #5/11 총선 전의 설문조사
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.17"}
 	title = NE_ENG.17.title
 	desc = NE_ENG.17.desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -456,11 +456,11 @@ country_event = { #5/11 총선 전의 설문조사
 	}
 }
 country_event = { #
-	id = NE_ENG.
+	id = NE_ENG.18
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG."}
 	title = NE_ENG..title
 	desc = NE_ENG..desc
-	picture = 
+	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
