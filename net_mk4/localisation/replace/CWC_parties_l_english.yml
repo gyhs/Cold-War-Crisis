@@ -37,13 +37,13 @@
  JAP_fascism_party:0 "일본을 지키는 국민회의"
  
  FRA_communism_party:0 "프랑스 공산당"
- FRA_socialism_party:0 "프랑스 민주사회주의당"
+ FRA_socialism_party:0 "노동자 투쟁"
  FRA_social_democracy_party:0 "사회당"
- FRA_social_liberalism_party:0 "프랑스 민주연합"
- FRA_market_liberalism_party:0 "프랑스 시장자유주의당"
+ FRA_social_liberalism_party:0 "좌익 급진당"
+ FRA_market_liberalism_party:0 "프랑스 민주연합"
  FRA_social_conservatism_party:0 "공화국연합"
  FRA_authoritarianism_party:0 "프랑스 보수당"
- FRA_fascism_party:0 "프랑스 자유민주당"
+ FRA_fascism_party:0 "국민연합"
  
  AUS_communism_party:0 "오스트리아 공산당"
  AUS_democratic_party:0 "오스트리아 사회민주당"
