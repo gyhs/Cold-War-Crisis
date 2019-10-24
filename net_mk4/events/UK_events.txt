@@ -1,4 +1,4 @@
-#########################
+﻿#########################
 # United Kingdom Events #
 #########################
 #        By SPiCa       #
@@ -43,9 +43,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
     is_triggered_only = yes
-	trigger = {
-		tag = ENG
-	}
 	option = {
 		name = NE_ENG.2.a
 		ai_chance = { factor = 1 }
@@ -60,9 +57,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
     is_triggered_only = yes
-		trigger = {
-			tag = ENG
-		}
 	option = {
 		name = NE_ENG.3.a
 		ai_chance = { factor = 1 }
@@ -86,9 +80,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
     is_triggered_only = yes
-		trigger = {
-			tag = ENG
-		}
 	option = {
 		name = NE_ENG.4.a
 		ai_chance = { factor = 1 }
@@ -113,9 +104,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
-		trigger = {
-			tag = ENG
-		}
 	option = {
 		name = NE_ENG.5.a
 		ai_chance = { factor = 1 }
@@ -143,9 +131,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = ENG
-	}
 	option = {
 		name = NE_ENG.6.a
 		ai_chance = { factor = 1 }
@@ -166,9 +151,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = ENG
-	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -193,9 +175,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = ENG
-	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -222,9 +201,6 @@ country_event = {
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = ENG
-	}
 	
 	mean_time_to_happen = {
 		days = 1
