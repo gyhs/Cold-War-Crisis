@@ -1034,7 +1034,7 @@ focus_tree = {
 			focus = NF_FRA_french_industry
 		}
 		completion_reward = {
-		add_research_slot = 2
+		add_research_slot = 1
 		}
 		x = 62
 		y = 2
