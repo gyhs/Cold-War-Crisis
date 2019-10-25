@@ -6,14 +6,37 @@ country_event = {
     title = NE_FRA.1.title
     desc = NE_FRA.1.desc
     picture = GFX_report_event_canada_treaty
-    trigger = {
-        tag = FRA
-    }
-
     fire_only_once = yes
 
+    trigger = {
+        date > 1987.01.05
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    
     option = {
         name = NE_FRA.1.a
         ai_chance = { factor = 1 }
     }
     }
+#클라우스 바르비의 재판
+country_event = {
+    id = NE_FRA.2
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.2"}
+    title = NE_FRA.2.title
+    desc = NE_FRA.2.desc
+    picture = GFX_report_event_ast_parliament_house
+    fire_only_once = yes
+    trigger = {
+        date > 1987.01.22
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = NE_FRA.2.a
+        ai_chance = { factor = 1 }
+        stability_factor = 0.10
+    }
+}
