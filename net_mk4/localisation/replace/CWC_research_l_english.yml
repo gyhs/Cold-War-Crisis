@@ -210,11 +210,6 @@
  NAVAL_TITLE_attack_nuclear_submarine:0 "원자력 공격잠수함"
  NAVAL_TITLE_cruise_missile_nuclear_submarine:0 "원자력 순항미사일 잠수함"
  
- 
- # 해병 폴더
- naval_marine_folder:0 "해병"
- naval_marine_folder_desc:0 "바다에서 지상으로 군사력을 투사하는 군병력."
- 
 
  mobile_support_marine_1:0 "상륙지원 작전"
  mobile_support_marine_1_desc:0 "주력군이 상륙예정인 지역에 해병 특공대가 잠입하여 미리 준비를 해둡니다."

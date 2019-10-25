@@ -884,11 +884,39 @@ guiTypes = {
 				name ="naval_techtree_bg"
 				spriteType = "GFX_naval_techtree_bg"
 				position = { x=0 y=0 }
-			}
+			}	
+
+				instantTextBoxType = {
+					name = "naval_subtitle_transport"
+					position = { x = 160 y = 90 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_TRANSPORTS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "TRANSPORTS_desc"
+				}		
+
+				instantTextBoxType = {
+					name = "naval_subtitle_marine"
+					position = { x = 230 y = 90 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_marine"
+					maxWidth = 220
+					maxHeight = 33
+					format = center
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "marine_desc"
+				}	
 				
 				instantTextBoxType = {
 					name = "naval_subtitle_amphibious_assault_carrier"
-					position = { x = 470 y = 90 }
+					position = { x = 600 y = 90 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -901,7 +929,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_carrier"
-					position = { x = 800 y = 90 }
+					position = { x = 1100 y = 90 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -914,7 +942,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_super_carrier"
-					position = { x = 1200 y = 90 }
+					position = { x = 1450 y = 190 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -960,7 +988,21 @@ guiTypes = {
 					orientation = "UPPER_LEFT"
 				}
 			}
+			gridboxtype = {
+				name = "transport_tree"
+				position = { x = 150 y = 130 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 
+			gridboxtype = {
+				name = "marines_1_tree"
+				position = { x = 150 y = 130 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 			gridboxtype = {
 				name = "tech_ship_hull_light_carrier_1_tree"
 				position = { x = 600 y = 130 }
@@ -1204,185 +1246,6 @@ guiTypes = {
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
-			}
-		}
-
-		##### NAVAL FOLDER (해병) #####
-		containerWindowType = {
-			name = "naval_marine_folder"
-			position = { x=0 y=47 }
-			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
-			drag_scroll = { left middle }
-			verticalScrollbar = "right_vertical_slider"
-			horizontalScrollbar = "bottom_horizontal_slider"
-
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_2b_border"
-			}
-
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = { width = 1400 height = 800 }
-			}
-	
-			iconType = {
-				name ="naval_techtree_bg"
-				spriteType = "GFX_naval_techtree_bg"
-				position = { x=0 y=0 }
-			}		
-
-				instantTextBoxType = {
-					name = "naval_subtitle_transport"
-					position = { x = 160 y = 110 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_TRANSPORTS"
-					maxWidth = 600
-					maxHeight = 62
-					format = left
-					Orientation = "UPPER_LEFT"
-					pdx_tooltip = "TRANSPORTS_desc"
-				}		
-
-				instantTextBoxType = {
-					name = "naval_subtitle_marine"
-					position = { x = 250 y = 110 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_marine"
-					maxWidth = 220
-					maxHeight = 33
-					format = center
-					Orientation = "UPPER_LEFT"
-					pdx_tooltip = "marine_desc"
-				}								
-
-			containerWindowType = {
-				name = "tiled_window_transparent_transparent"
-				position = { x= 0 y= 0 }
-				size = { 
-					width=1700 height=800 
-					min = { width=100%% height=100%% }
-				}
-				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_transparent_transparent"
-				}
-			}
-
-			gridboxtype = {
-				name = "transport_tree"
-				position = { x = 150 y = 150 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "marines_1_tree"
-				position = { x = 150 y = 150 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			iconType = {
-				name ="trade_interdiction_bg"
-				spriteType = "GFX_trade_interdiction_bg"
-				position = { x=675 y=33 }
-			}
-			
-			instantTextBoxType = {
-				name = "mobile_support_marine_title"
-				position = { x = 710 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_mobile_support_marine"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "mobile_support_marine_desc"
-				position = { x = 710 y = 70 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "mobile_support_marine_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			gridboxtype = {
-				name = "mobile_support_marine_1_tree"
-				position = { x=660 y=0 }
-				size = { width = 480 height = 900 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=25 }					
-				}
-			}
-			
-			iconType = {
-				name ="base_strike_bg"
-				spriteType = "GFX_base_strike_bg"
-				position = { x=1152 y=33 }
-			}	
-
-			instantTextBoxType = {
-				name = "spearhead_marine_doctrine_title"
-				position = { x = 1185 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_spearhead_marine_doctrine"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "spearhead_marine_doctrine_desc"
-				position = { x = 1195 y = 70 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "spearhead_marine_doctrine_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			gridboxtype = {
-				name = "spearhead_marine_doctrine_1_tree"
-				position = { x=1142 y=0 }
-				size = { width = 480 height = 900 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=25 }					
-				}
 			}
 		}
 
@@ -3130,16 +2993,8 @@ guiTypes = {
 			}
 
 			buttonType = {
-				name = "naval_marine_folder_tab"
-				position = { x = 770 y = 0 }
-				quadTextureSprite = "GFX_naval_marine_folder_tab"
-				frame = 1
-				clicksound = click_default
-			}
-
-			buttonType = {
 				name = "naval_doctrine_folder_tab"
-				position = { x = 850 y = 0 }
+				position = { x = 770 y = 0 }
 				quadTextureSprite = "GFX_naval_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -4478,109 +4333,6 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "techtree_naval_equipment_folder_item"
-		position = { x=-131 y=1 }
-		size = { width = 204 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=167 y=34 }
-			spriteType = "GFX_technology_medium"
-			centerposition = yes		
-			alwaystransparent = yes
-		}		
-		
-		instantTextBoxType = {
-			name = "Name"
-			position = { x = 3 y = -1 }
-			textureFile = ""
-			font = "hoi_20bs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 270
-			maxHeight = 20
-			fixedsize = yes
-			format = left
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=261 y=-18 }
-			spriteType = "GFX_tech_bonus"
-		}
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = 275 y = -18 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 50
-			maxHeight = 20
-			format = right
-		}
-
-		containerWindowType = {
-			name = "sub_technology_slot_0"
-			position = { x=282 y=10 }
-			size = { width = 35 height = 26 }
-			clipping = no
-			
-			background = {
-				name = "Background"
-				spriteType ="GFX_subtechnology_unavailable_item_bg"
-			}
-					
-			iconType = {
-				name = "picture"
-				position = { x=1 y=2 }
-				spriteType = "GFX_subtech_shbb"
-				alwaystransparent = yes
-			}
-		}		
-	}
-
-	containerWindowType = {
-		name = "techtree_naval_marine_folder_small_item" 
-		position = { x=0 y=5 }
-		size = { width = 72 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=3 y=3 }
-			spriteType = "GFX_technology_medium"
-			alwaystransparent = yes
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=3 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = 17 y = -22 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 50
-			maxHeight = 20
-			format = right
-		}
-	}
-	
-	containerWindowType = {
-		name = "techtree_naval_marine_folder_item"
 		position = { x=-131 y=1 }
 		size = { width = 204 height = 72 }
 		clipping = no

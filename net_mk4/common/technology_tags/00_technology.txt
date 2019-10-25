@@ -146,7 +146,6 @@ technology_folders = {
 	naval_capital_folder	# new folder -- naval capital ships
 	naval_submarine_folder
 	naval_equipment_folder
-	naval_marine_folder
 	industry_folder
 	land_doctrine_folder
 	naval_doctrine_folder

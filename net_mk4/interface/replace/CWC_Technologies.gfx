@@ -1046,7 +1046,30 @@ spriteTypes = {
 		name = "GFX_carrier_conversion_ca_medium"
 		texturefile = "gfx/interface/technologies/06_naval/carrier_conversion_ca.dds"
 	}
+	#------------------------------------------------------------------
 	## 대형함
+	## 해병
+	SpriteType = {
+		name = "GFX_marines_1_medium"
+		texturefile = "gfx/interface/technologies/07_naval_capital/marines_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_marines_2_medium"
+		texturefile = "gfx/interface/technologies/07_naval_capital/marines_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_marines_3_medium"
+		texturefile = "gfx/interface/technologies/07_naval_capital/marines_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_marines_4_medium"
+		texturefile = "gfx/interface/technologies/07_naval_capital/marines_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_marines_5_medium"
+		texturefile = "gfx/interface/technologies/07_naval_capital/marines_5.dds"
+	}
+	#
 	SpriteType = {
 		name = "GFX_tech_ship_hull_light_carrier_1_medium"
 		texturefile = "gfx/interface/technologies/07_naval_capital/light_carrier_1.dds"
@@ -1492,120 +1515,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_damage_control_4_medium"
 		texturefile = "gfx/interface/technologies/10_naval_equipment/damage_control_4.dds"
-	}
-	
-	##### 해병 테크
-	## 해병
-	SpriteType = {
-		name = "GFX_marines_1_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/marines_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_marines_2_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/marines_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_marines_3_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/marines_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_marines_4_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/marines_4.dds"
-	}
-	SpriteType = {
-		name = "GFX_marines_5_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/marines_5.dds"
-	}
-	
-	## 기동지원 해병
-	SpriteType = {
-		name = "GFX_mobile_support_marine_1_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_2_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_3_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_4_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_4.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_5_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_5.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_6_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_6.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_7_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_7.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_8_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_8.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_9_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_9.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_10_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_10.dds"
-	}
-	SpriteType = {
-		name = "GFX_mobile_support_marine_11_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/mobile_support_marine_11.dds"
-	}
-	## 선봉 해병대
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_1_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_2_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_3_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_4_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_4.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_5_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_5.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_6_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_6.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_7_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_7.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_8_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_8.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_9_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_9.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_10_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_10.dds"
-	}
-	SpriteType = {
-		name = "GFX_spearhead_marine_doctrine_11_medium"
-		texturefile = "gfx/interface/technologies/09_naval_marine/spearhead_marine_doctrine_11.dds"
 	}
 	
 	# 전투기
