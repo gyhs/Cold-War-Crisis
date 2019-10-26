@@ -2260,6 +2260,10 @@ spriteTypes = {
 	}
 	# Subunit Techs #
 	spriteType = {
+		name = "GFX_subtech_airborne"
+		textureFile = "gfx//interface//technologies//subtech_airborne.dds"
+	}
+	spriteType = {
 		name = "GFX_subtech_de"
 		textureFile = "gfx/interface/technologies/subtech_de.dds"
 	}

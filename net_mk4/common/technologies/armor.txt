@@ -889,11 +889,6 @@ technologies = {
 			leads_to_tech = mechanised_infantry_3
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry_2
-			research_cost_coeff = 0.75
-		}
 		sub_technologies = {
 			airborne_ifv_1
 		}
@@ -925,10 +920,6 @@ technologies = {
 		path = {
 			leads_to_tech = mechanised_infantry_4
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry_3
-			research_cost_coeff = 0.75
 		}
 		sub_technologies = {
 			airborne_ifv_2
@@ -962,12 +953,11 @@ technologies = {
 			leads_to_tech = mechanised_infantry_5
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry_4
-			research_cost_coeff = 0.75
-		}
 		sub_technologies = {
 			airborne_ifv_3
+		}
+		sub_technologies = {
+			light_airborne_3
 		}
 
 		research_cost = 3
@@ -998,12 +988,11 @@ technologies = {
 			leads_to_tech = mechanised_infantry_6
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry_5
-			research_cost_coeff = 0.75
-		}
 		sub_technologies = {
 			airborne_ifv_4
+		}
+		sub_technologies = {
+			light_airborne_4
 		}
 
 		research_cost = 3
@@ -1034,12 +1023,11 @@ technologies = {
 			leads_to_tech = mechanised_infantry_7
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry_6
-			research_cost_coeff = 0.75
-		}
 		sub_technologies = {
 			airborne_ifv_5
+		}
+		sub_technologies = {
+			light_airborne_5
 		}
 
 		research_cost = 3
@@ -1297,6 +1285,96 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
+		}
+	}
+	
+	light_airborne_3 = {
+
+		enable_equipments = {
+			light_tank_airborne_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1990
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	light_airborne_4 = {
+
+		enable_equipments = {
+			light_tank_airborne_equipment_4
+		}
+	
+		research_cost = 0.5
+		start_year = 1990
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	light_airborne_5 = {
+
+		enable_equipments = {
+			light_tank_airborne_equipment_5
+		}
+	
+		research_cost = 0.5
+		start_year = 1990
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
 		}
 	}
 	
