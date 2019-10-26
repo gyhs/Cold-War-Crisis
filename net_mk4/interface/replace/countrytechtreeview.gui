@@ -268,7 +268,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "motorised_infantry_tree"
-				position = { x = 100 y = 180 }
+				position = { x = 100 y = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -3401,7 +3401,7 @@ guiTypes = {
 				spriteType = "GFX_subtech_rocket"
 				alwaystransparent = yes
 			}
-		}		
+		}	
 		
 	}
 	
@@ -3439,7 +3439,7 @@ guiTypes = {
 			maxHeight = 20
 			format = right
 		}
-	}	
+	}
 	
 	containerWindowType = {
 		name = "techtree_armour_folder_item"
@@ -3503,7 +3503,7 @@ guiTypes = {
 			iconType = {
 				name = "picture"
 				position = { x=1 y=2 }
-				spriteType = "GFX_subtech_td"
+				spriteType = "GFX_subtech_airborne"
 				alwaystransparent = yes
 			}
 		}
@@ -3522,7 +3522,7 @@ guiTypes = {
 			iconType = {
 				name = "picture"
 				position = { x=1 y=2 }
-				spriteType = "GFX_subtech_art"
+				spriteType = "GFX_subtech_td"
 				alwaystransparent = yes
 			}
 		}
@@ -3546,6 +3546,42 @@ guiTypes = {
 			}
 		}		
 		
+	}
+
+	containerWindowType = {
+		name = "techtree_armour_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}	
+		
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
 	}
 
 	containerWindowType = {

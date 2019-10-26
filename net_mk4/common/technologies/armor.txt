@@ -556,7 +556,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = mechanised_infantry_4
-			research_cost_coeff = 0.75
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
@@ -682,7 +682,7 @@ technologies = {
 		
 		folder = {
 			name = support_folder
-			position = { x = 6 y = 20 }
+			position = { x = 0 y = 7 }
 		}
 		
 		categories = {
@@ -768,7 +768,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = armour_folder
-			position = { x = 24 y = 6 }
+			position = { x = 24 y = 4 }
 		}
 		
 		categories = {
@@ -811,7 +811,50 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = armour_folder
-			position = { x = 24 y = 10 }
+			position = { x = 24 y = 8 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	motorised_infantry_5 = {
+
+		enable_equipments = {
+			motorized_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = motorised_infantry_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = armour_folder
+			position = { x = 24 y = 12 }
 		}
 		
 		categories = {
@@ -889,9 +932,8 @@ technologies = {
 			leads_to_tech = mechanised_infantry_3
 			research_cost_coeff = 1
 		}
-
 		path = {
-			leads_to_tech = amphibious_mechanized_infantry_2
+			leads_to_tech = armored_personnel_carrier_1
 			research_cost_coeff = 0.75
 		}
 		sub_technologies = {
@@ -927,7 +969,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = amphibious_mechanized_infantry_3
+			leads_to_tech = armored_personnel_carrier_2
 			research_cost_coeff = 0.75
 		}
 		sub_technologies = {
@@ -963,11 +1005,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = amphibious_mechanized_infantry_4
+			leads_to_tech = armored_personnel_carrier_3
 			research_cost_coeff = 0.75
 		}
 		sub_technologies = {
 			airborne_ifv_3
+		}
+		sub_technologies = {
+			light_tank_3
 		}
 
 		research_cost = 3
@@ -999,11 +1044,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = amphibious_mechanized_infantry_5
+			leads_to_tech = armored_personnel_carrier_4
 			research_cost_coeff = 0.75
 		}
 		sub_technologies = {
 			airborne_ifv_4
+		}
+		sub_technologies = {
+			light_tank_4
 		}
 
 		research_cost = 3
@@ -1035,11 +1083,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = amphibious_mechanized_infantry_6
+			leads_to_tech = armored_personnel_carrier_5
 			research_cost_coeff = 0.75
 		}
 		sub_technologies = {
 			airborne_ifv_5
+		}
+		sub_technologies = {
+			light_tank_5
 		}
 
 		research_cost = 3
@@ -1074,6 +1125,10 @@ technologies = {
 			leads_to_tech = armored_personnel_carrier_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = mechanised_infantry_2
+			research_cost_coeff = 0.75
+		}
 
 		research_cost = 3
 		start_year = 1980
@@ -1102,6 +1157,10 @@ technologies = {
 		path = {
 			leads_to_tech = armored_personnel_carrier_3
 			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mechanised_infantry_3
+			research_cost_coeff = 0.75
 		}
 
 		research_cost = 3
@@ -1132,6 +1191,10 @@ technologies = {
 			leads_to_tech = armored_personnel_carrier_4
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = mechanised_infantry_4
+			research_cost_coeff = 0.75
+		}
 
 		research_cost = 3
 		start_year = 2000
@@ -1161,6 +1224,10 @@ technologies = {
 			leads_to_tech = armored_personnel_carrier_5
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = mechanised_infantry_5
+			research_cost_coeff = 0.75
+		}
 
 		research_cost = 3
 		start_year = 2005
@@ -1184,6 +1251,10 @@ technologies = {
 
 		enable_equipments = {
 			light_mechanized_equipment_5
+		}
+		path = {
+			leads_to_tech = mechanised_infantry_6
+			research_cost_coeff = 0.75
 		}
 
 		research_cost = 3
@@ -1297,6 +1368,96 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
+		}
+	}
+	
+	light_tank_4 = {
+
+		enable_equipments = {
+			light_tank_equipment_4
+		}
+	
+		research_cost = 0.5
+		start_year = 1990
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	light_tank_5 = {
+
+		enable_equipments = {
+			light_tank_equipment_5
+		}
+	
+		research_cost = 0.5
+		start_year = 1990
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	light_tank_6 = {
+
+		enable_equipments = {
+			light_tank_equipment_6
+		}
+	
+		research_cost = 0.5
+		start_year = 1990
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
 		}
 	}
 	
