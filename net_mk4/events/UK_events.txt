@@ -30,7 +30,7 @@ country_event = {
 		hidden_effect = {
             country_event = { #총선거
                 id = NE_ENG.2
-                days = 161
+                days = 156
             }
         }
     }
