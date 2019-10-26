@@ -229,5 +229,80 @@ spriteTypes = {
 		name = "GFX_focus_friend_egypt"
 		texturefile = "gfx/interface/goals/focus_friend_egypt.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_focus_british_army"
+		texturefile = "gfx/interface/goals/focus_british_army.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_british_asia"
+		texturefile = "gfx/interface/goals/focus_british_asia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_british_labour"
+		texturefile = "gfx/interface/goals/focus_british_labour.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_british_shield"
+		texturefile = "gfx/interface/goals/focus_british_shield.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_british_submission"
+		texturefile = "gfx/interface/goals/focus_british_submission.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_invesment"
+		texturefile = "gfx/interface/goals/focus_invesment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_lizzy_thumbs_down"
+		texturefile = "gfx/interface/goals/focus_lizzy_thumbs_down.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_lizzy_thumbs_up"
+		texturefile = "gfx/interface/goals/focus_lizzy_thumbs_up.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_religion_government"
+		texturefile = "gfx/interface/goals/focus_religion_government.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_soviet_intervention"
+		texturefile = "gfx/interface/goals/focus_soviet_intervention.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_soviet_vassals"
+		texturefile = "gfx/interface/goals/focus_soviet_vassals.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_trend_down"
+		texturefile = "gfx/interface/goals/focus_trend_down.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_trend_middle"
+		texturefile = "gfx/interface/goals/focus_trend_middle.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_trend_up"
+		texturefile = "gfx/interface/goals/focus_trend_up.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_unemployment_up"
+		texturefile = "gfx/interface/goals/focus_unemployment_up.dds"
+	}
 
 }

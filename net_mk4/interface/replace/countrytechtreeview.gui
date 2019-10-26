@@ -180,13 +180,6 @@ guiTypes = {
 				format = "UP"
 			}		
 
-			gridboxtype = {
-				name = "motorised_infantry_tree"
-				position = { x = 300 y = 100 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
 
 			gridboxtype = {
 				name = "tech_special_forces_tree"
@@ -273,6 +266,12 @@ guiTypes = {
 				}			
 			}
 			
+			gridboxtype = {
+				name = "motorised_infantry_tree"
+				position = { x = 100 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 			gridboxtype = {
 				name = "tech_support_tree"
 				position = { x = 100 y = 180 }
@@ -445,9 +444,16 @@ guiTypes = {
 				}
 			}
 
-				
+			####
 			gridboxtype = {
 				name = "active_protection_system_1_tree"
+				position = { x = 100 y = 100 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			###
+			gridboxtype = {
+				name = "motorised_infantry_tree"
 				position = { x = 100 y = 100 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -466,13 +472,13 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "mechanised_infantry_1_tree"
-				position = { x = 1450 y = 100 }
+				position = { x = 100 y = 100 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "amphibious_mechanized_infantry_1_tree"
-				position = { x = 1450 y = 100 }
+				position = { x = 100 y = 100 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}

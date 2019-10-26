@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		eces_1 = {
-			picture = interface/ideas/eces_1
+			picture = ecsc_idea
 			
 			allowed = {
 				always = no
