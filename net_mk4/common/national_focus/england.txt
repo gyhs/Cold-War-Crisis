@@ -287,7 +287,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_stability = 0.05
-			ENG_depression_down_tt = yes
 		}
 	}
 	focus = {
@@ -313,7 +312,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = UK_8
