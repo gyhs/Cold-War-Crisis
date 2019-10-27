@@ -19,8 +19,12 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = social_democracy
 			ideas = {
+				eces_1
 			}
 			focuses = {
+				NF_FRA_memories_of_6_8
+				NF_FRA_dream_of_the_past
+				NF_FRA_the_leader_of_europe
 			}
 		}
 		"ENG"={
