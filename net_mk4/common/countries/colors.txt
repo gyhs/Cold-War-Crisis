@@ -58,8 +58,8 @@ SPR = {
 	color_ui = rgb { 255 255 122 }
 }
 ITA = {
-	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color = rgb { 120 150 80 }
+    color_ui = rgb { 150 180 120 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
@@ -226,8 +226,8 @@ SAF = {
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 16 56 0 }
+	color_ui = rgb { 29 96 0 }
 }
 SIA = {
 	color = rgb { 171 190 152 }
