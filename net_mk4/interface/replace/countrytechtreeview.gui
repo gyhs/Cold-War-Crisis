@@ -3756,7 +3756,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "sub_technology_slot_0"
-			position = { x=138 y=7 }
+			position = { x=141 y=1 }
 			size = { width = 35 height = 26 }
 			clipping = no
 			
@@ -3771,7 +3771,26 @@ guiTypes = {
 				spriteType = "GFX_subtech_air"
 				alwaystransparent = yes
 			}
-		}		
+		}	
+
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=141 y=28 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtech_carrier_plane_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=6 y=2 }
+				spriteType = "GFX_subtech_air"
+				alwaystransparent = yes
+			}
+		}
 		
 	}
 

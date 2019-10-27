@@ -510,6 +510,8 @@ technologies = {
 		sub_technologies = {
 			cv_heavy_jet_fighter_1
 		}
+		sub_technologies = {
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -581,6 +583,8 @@ technologies = {
 		sub_technologies = {
 			cv_heavy_jet_fighter_2
 		}
+		sub_technologies = {
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -650,6 +654,8 @@ technologies = {
 		}
 		sub_technologies = {
 			cv_heavy_jet_fighter_3
+		}
+		sub_technologies = {
 		}
 		
 		ai_will_do = {
@@ -721,6 +727,8 @@ technologies = {
 		sub_technologies = {
 			cv_heavy_jet_fighter_4
 		}
+		sub_technologies = {
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -791,6 +799,8 @@ technologies = {
 		sub_technologies = {
 			cv_heavy_jet_fighter_5
 		}
+		sub_technologies = {
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -855,6 +865,8 @@ technologies = {
 		}
 		sub_technologies = {
 			cv_heavy_jet_fighter_6
+		}
+		sub_technologies = {
 		}
 		
 		ai_will_do = {
