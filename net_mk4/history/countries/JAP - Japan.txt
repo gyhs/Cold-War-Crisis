@@ -35,18 +35,18 @@ give_military_access = USA
 
 set_politics = {
 	
-	ruling_party = market_liberalism
-	last_election = "1936.1.1"
+	ruling_party = social_conservatism
+	last_election = "1986.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
 	communism = 0
 	socialism = 5
 	social_democracy = 5
 	social_liberalism = 0
-	market_liberalism = 45
-	social_conservatism = 45
+	market_liberalism = 0
+	social_conservatism = 90
 	authoritarianism = 0
 	fascism = 0
 }
@@ -66,9 +66,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kyuichi Tokuda"
+	name = "아키히토"
 	desc = "POLITICS_Hirohito_DESC"
-	picture = "GFX_POLITICS_kyuichi_tokuda"
+	picture = "NP_JAP_akihito.dds"
 	expire = "1989.1.1"
 	ideology = communism_subtype_1
 	traits = {
@@ -76,14 +76,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tetsu Katayama"
+	name = "가이후 도시키"
 	desc = "POLITICS_Hirohito_DESC"
-	picture = "GFX_POLITICS_tetsu_katayama"
+	picture = "NP_JAP_Toshiki_Kaifu.dds"
 	expire = "1989.1.1"
-	ideology = social_liberalism_subtype_1
+	ideology = social_conservatism_subtype_1
 	traits = {
 	}
 }
+
+create_country_leader = {
+	name = "도이 다카코"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "NP_JAP_akihito.dds"
+	expire = "1989.1.1"
+	ideology = communism_subtype_1
+	traits = {
+	}
+}
+
+
 
 create_corps_commander = {
 	name = "Tomoyuki Yamashita"
