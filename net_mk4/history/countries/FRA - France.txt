@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = "POLITICS_FRA_Francois_Mitterrand_DESC"
 	picture = "POLITICS_FRA_Francois_Mitterrand.dds"
 	expire = "1965.1.1"
-	ideology = social_conservatism_subtype_1
+	ideology = social_democracy_subtype_1
 	traits = {
 		
 	}
@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_FRA_Jacques_Chirac_DESC"
 	picture = "POLITICS_FRA_Jacques_Chirac.dds"
 	expire = "2100.3.1"
-	ideology = authoritarianism_subtype_1
+	ideology = social_conservatism_subtype_1
 	traits = {
 		
 	}
