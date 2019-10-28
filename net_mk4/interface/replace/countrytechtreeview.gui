@@ -1312,7 +1312,7 @@ guiTypes = {
 				
 			instantTextBoxType = {
 				name = "airtech_subtitle_fighter"
-				position = { x = 50 y = 50 }
+				position = { x = 270 y = 190 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1326,7 +1326,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_h_fighter"
-				position = { x = 270 y = 50 }
+				position = { x = 540 y = 160 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1340,7 +1340,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_light_fighter"
-				position = { x = 540 y = 180 }
+				position = { x = 940 y = 160 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4 }
@@ -1354,7 +1354,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_cas"
-				position = { x = 740 y = 180 }
+				position = { x = 40 y = 480 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4 }
@@ -1368,7 +1368,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_nav"
-				position = { x = 940 y = 180 }
+				position = { x = 1370 y = 480 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1390,7 +1390,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "heavy_jet_fighter_1_tree"
-				position = { x = 230 y = 100 }
+				position = { x = 0 y = 100 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -1398,7 +1398,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "light_fighter_1_tree"
-				position = { x = 490 y = 100 }
+				position = { x = 0 y = 100 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -1406,7 +1406,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "CAS_1_tree"
-				position = { x = 690 y = 100 }
+				position = { x = 0 y = 100 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -1414,7 +1414,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "naval_bomber_1_tree"
-				position = { x = 890 y = 100 }
+				position = { x = 0 y = 100 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -3768,7 +3768,7 @@ guiTypes = {
 			iconType = {
 				name = "picture"
 				position = { x=6 y=2 }
-				spriteType = "GFX_subtech_air"
+				spriteType = "GFX_airwing_carrier_icon"
 				alwaystransparent = yes
 			}
 		}	

@@ -326,7 +326,7 @@
  marines_5:0 "해병 장비 5"
 # Air Tech techtree labels
  AIR_TITLE_FIGHTER:0 "전투기"
- AIR_TITLE_HEAVY_FIGHTER:0 "중 전투기"
+ AIR_TITLE_HEAVY_FIGHTER:0 "공중우세 전투기"
  AIR_TITLE_light_fighter:0 "경 전투기"
  AIR_TITLE_CAS:0 "공격기"
  AIR_TITLE_NAV:0 "대잠초계기"

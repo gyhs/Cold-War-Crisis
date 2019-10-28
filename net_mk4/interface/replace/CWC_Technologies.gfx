@@ -1651,6 +1651,10 @@ spriteTypes = {
 		name = "GFX_light_fighter_4_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/light_fighter_equipment_4.dds"
 	}
+	SpriteType = {
+		name = "GFX_light_fighter_5_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/light_fighter_equipment_5.dds"
+	}
 	# 공격기
 	SpriteType = {
 		name = "GFX_CAS_1_medium"
