@@ -1,4 +1,94 @@
 technologies = {
+	##### 수송기 #####
+	
+	tech_transport_plane_1 = {
+
+		enable_equipments = {
+			transport_plane_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = tech_transport_plane_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = strategic_bomber_1
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 10 y = 0 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
+	tech_transport_plane_2 = {
+
+		enable_equipments = {
+			transport_plane_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = tech_transport_plane_3
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = air_bomber_folder
+			position = { x = 20 y = 2 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+	
 	##### 프롭식 전략폭격기 #####
 	
 	strategic_bomber_1 = {
@@ -19,7 +109,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = 2 }
 		}
 		
 		categories = {
@@ -63,7 +153,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -104,7 +194,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -145,7 +235,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
@@ -186,7 +276,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 10 }
 		}
 		
 		categories = {
@@ -227,7 +317,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 12 }
 		}
 		
 		categories = {

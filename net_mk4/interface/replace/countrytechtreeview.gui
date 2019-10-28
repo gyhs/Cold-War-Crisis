@@ -1526,6 +1526,13 @@ guiTypes = {
 					orientation = "UPPER_LEFT"
 				}
 			}	
+			gridboxtype = {
+				name = "tech_transport_plane_1_tree"
+				position = { x = 0 y = 100 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 				
 			gridboxtype = {
 				name = "strategic_bomber_1_tree"
