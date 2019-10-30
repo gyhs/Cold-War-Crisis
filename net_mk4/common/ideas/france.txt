@@ -19,5 +19,28 @@ ideas = {
                 industrial_capacity_factory = 0.10
 			}
 		}
+
+		persistent_trade_deficit_5 = {
+			picture = chi_hyper_inflation5
+			desc = persistent_trade_deficit_5_desc
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.40
+				stability_factor = -0.30
+				war_support_factor = -0.20
+				conscription = -0.20
+				consumer_goods_factor = 0.45
+			}
+		}
 	}
 }

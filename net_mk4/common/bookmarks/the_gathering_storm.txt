@@ -20,6 +20,7 @@ bookmarks = {
 			ideology = social_democracy
 			ideas = {
 				eces_1
+				persistent_trade_deficit_5
 			}
 			focuses = {
 				NF_FRA_memories_of_6_8
