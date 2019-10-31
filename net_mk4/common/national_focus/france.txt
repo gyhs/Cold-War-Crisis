@@ -51,6 +51,7 @@ focus_tree = {
 		completion_reward = {
 			leave_faction = yes
 			war_support_factor = 0.10
+			
 			#나토 탈퇴및 전쟁지지도 10%증가
 		}
 		prerequisite = {
