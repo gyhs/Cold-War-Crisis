@@ -50,7 +50,7 @@ focus_tree = {
 		cost = 10.00
 		completion_reward = {
 			leave_faction = yes
-			add_war_support_factor = 0.10
+			war_support_factor = 0.1
 
 			#나토 탈퇴및 전쟁지지도 10%증가
 		}
