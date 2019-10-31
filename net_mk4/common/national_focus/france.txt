@@ -48,6 +48,11 @@ focus_tree = {
 		icon = GFX_focus_rom_parties_end
 		desc = NF_FRA_unilaterally_path_desc
 		cost = 10.00
+		completion_reward = {
+			leave_faction = yes
+			war_support_factor = 0.10
+			#나토 탈퇴및 전쟁지지도 10%증가
+		}
 		prerequisite = {
 			focus = NF_FRA_new_era
 		}
@@ -64,6 +69,10 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		desc = NF_FRA_nuclear_power_desc
 		cost = 10.00
+		completion_reward = {
+			add_ideas = nuclear_power
+			#국가정신 핵으로 발전하는 우리 추가
+		}
 		prerequisite = {
 			focus = NF_FRA_unilaterally_path
 		}

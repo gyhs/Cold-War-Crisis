@@ -63,5 +63,23 @@ ideas = {
 				trade_opinion_factor = -0.60
 			}
 		}
+
+		nuclear_power = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
 	}
 }
