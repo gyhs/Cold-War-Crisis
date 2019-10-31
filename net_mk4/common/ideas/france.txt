@@ -60,7 +60,7 @@ ideas = {
 			modifier = {
 				trade_laws_cost_factor = 0.80
 				Economy_cost_factor = 0.80
-				trade_opinion_factor = -1
+				trade_opinion_factor = -0.60
 			}
 		}
 	}
