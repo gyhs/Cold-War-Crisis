@@ -12,6 +12,7 @@ set_technology = {
 add_ideas = {
 	eces_1
 	persistent_trade_deficit_5
+	currency_problem
 }
 
 set_convoys = 300

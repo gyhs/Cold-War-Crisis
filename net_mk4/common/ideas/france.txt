@@ -42,5 +42,26 @@ ideas = {
 				consumer_goods_factor = 0.45
 			}
 		}
+
+		currency_problem = {
+			picture = idea_generic_foreign_capital
+			desc = currency_problem_desc
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				trade_laws_cost_factor = 0.50
+				Economy_cost_factor = 0.50
+				trade_opinion_factor = 0.50
+			}
+		}
 	}
 }
