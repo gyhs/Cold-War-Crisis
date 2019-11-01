@@ -2,10 +2,14 @@ ideas = {
 
 	country = {
 		eces_1 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea eces_1"
+			}
+			
 			picture = ecsc_idea
 			
 			allowed = {
-				always = no
+				original_tag = ENG
 			}
 
 			allowed_civil_war = {
@@ -67,158 +71,6 @@ ideas = {
                 industrial_capacity_factory = -0.10
                 industrial_capacity_dockyard = -0.10
 				monthly_population = -0.10
-			}
-		}
-	}
-	country = {
-		uk_great_depression3 = {#제일 나쁜 1단계
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                consumer_goods_factor = 0.15
-                production_factory_max_efficiency_factor = -0.20
-                production_speed_buildings_factor = -0.15
-                political_power_gain = -0.20
-                industrial_capacity_factory = -0.10
-                industrial_capacity_dockyard = -0.10
-				monthly_population = -0.10
-			}
-		}
-	country = {
-		uk_great_depression4 = {#2단계
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                consumer_goods_factor = 0.10
-                production_factory_max_efficiency_factor = -0.10
-                production_speed_buildings_factor = -0.15
-                political_power_gain = -0.20
-                industrial_capacity_factory = -0.10
-                industrial_capacity_dockyard = -0.10
-				monthly_population = -0.10
-			}
-		}
-	country = {
-		uk_great_depression5 = {#3단계
-			picture = usa_great_depression_2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                consumer_goods_factor = 0.5
-                production_factory_max_efficiency_factor = -0.10
-                production_speed_buildings_factor = -0.10
-                political_power_gain = -0.10
-                industrial_capacity_factory = -0.5
-                industrial_capacity_dockyard = -0.5
-				monthly_population = -0.5
-			}
-		}
-	country = {
-		uk_great_depression6 = {#4단계
-			picture = usa_great_depression_2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                production_factory_max_efficiency_factor = -0.05
-                production_speed_buildings_factor = -0.05
-                political_power_gain = -0.10
-                industrial_capacity_factory = -0.5
-                industrial_capacity_dockyard = -0.5
-				monthly_population = -0.5
-			}
-		}
-	country = {
-		uk_great_depression7 = {#5단계
-			picture = usa_great_depression_1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                political_power_gain = -0.05
-                industrial_capacity_factory = -0.5
-                industrial_capacity_dockyard = -0.5
-			}
-		}
-	country = {
-		uk_great_depression8 = {#6단계
-			picture = usa_great_depression_1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                industrial_capacity_factory = -0.5
-                industrial_capacity_dockyard = -0.5
-			}
-		}
-	country = {
-		uk_great_depression9 = {#7단계
-			picture = usa_great_depression_2
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
 			}
 		}
 	}

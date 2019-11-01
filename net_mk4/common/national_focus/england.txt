@@ -22,7 +22,7 @@ focus_tree = {
 		completion_reward = {
 			days = 1
 			id = NE_ENG.2
-
+		}
 	}
 	focus = {
 		id = UK_5
