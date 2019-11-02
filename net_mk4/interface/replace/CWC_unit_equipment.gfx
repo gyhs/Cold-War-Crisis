@@ -849,26 +849,44 @@ spriteTypes = {
 		name = "GFX_CAS_equipment_5_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/CAS_equipment_5.dds"
 	}
+	
+	# 수송기
+	SpriteType = {
+		name = "GFX_transport_plane_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/transport_plane_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_plane_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/transport_plane_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_plane_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/transport_plane_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_plane_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/transport_plane_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_plane_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/transport_plane_equipment_5.dds"
+	}
 	# 대잠초계기
 	SpriteType = {
 		name = "GFX_nav_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/nav_bomber_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/12_air_bomber/nav_bomber_equipment_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_nav_bomber_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/nav_bomber_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/12_air_bomber/nav_bomber_equipment_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_nav_bomber_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/nav_bomber_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/12_air_bomber/nav_bomber_equipment_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_nav_bomber_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/nav_bomber_equipment_4.dds"
-	}
-	SpriteType = {
-		name = "GFX_nav_bomber_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/nav_bomber_equipment_5.dds"
+		texturefile = "gfx/interface/technologies/12_air_bomber/nav_bomber_equipment_4.dds"
 	}
 	### 전략폭격기
 	SpriteType = {
