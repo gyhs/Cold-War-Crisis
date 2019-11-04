@@ -13,7 +13,7 @@ focus_tree = {
 		id = NF_FRA_new_era
 		icon = GFX_goal_generic_alliance
 		desc = NF_FRA_new_era_desc
-		cost = 10.00
+		cost = 5.00
 		x = 21
 		y = 1
 		completion_reward = {
@@ -29,6 +29,10 @@ focus_tree = {
 		cost = 10.00
 		x = 50
 		y = 1
+		completion_reward = {
+			add_manpower = 10000
+			#1만 인력 추가
+		}
 		
 
 	}
@@ -93,6 +97,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_memories_of_6_8
 		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = the_rise_of_gaullisme
+				days = 180
+			}
+			#국가정신 드골주의의 대두 180일동안 발동
+		}
 		x = 12
 		y = 5
 
@@ -105,6 +116,10 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_dream_of_the_past
+		}
+		completion_reward = {
+			add_ideas = descendants_of_de_gaulle
+			#국가정신 드골의 후손들 추가
 		}
 		x = 11
 		y = 6
@@ -288,6 +303,10 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_unilaterally_path
+		}
+		completion_reward = {
+			add_stability = 0.1
+			#안정도 10% 증가
 		}
 		x = 26
 		y = 2

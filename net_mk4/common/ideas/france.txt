@@ -81,5 +81,38 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
+
+		descendants_of_de_gaulle = {
+			picture = yug_all_yugoslavian_regiments
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = 0.1
+				conscription = 0.05
+			}
+		}
+		the_rise_of_gaullisme = {
+			picture = yug_all_yugoslavian_regiments
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+			fascism_drift = 0.1
+			}
+		}
 	}
 }
