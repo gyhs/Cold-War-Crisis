@@ -83,7 +83,7 @@ ideas = {
 		}
 
 		descendants_of_de_gaulle = {
-			picture = yug_all_yugoslavian_regiments
+			picture = eng_imperial_conscription
 			allowed = {
 				always = no
 			}
@@ -100,7 +100,7 @@ ideas = {
 			}
 		}
 		the_rise_of_gaullisme = {
-			picture = yug_all_yugoslavian_regiments
+			picture = charles_de_gaulle
 			allowed = {
 				always = no
 			}
