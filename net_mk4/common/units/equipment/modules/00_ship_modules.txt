@@ -493,7 +493,53 @@ equipment_modules = {
 	}
 	ship_airplane_launcher_2 = {
 		category = ship_airplane_launcher
+		parent = ship_airplane_launcher_1
 		gfx = ship_airplane_launcher_2
+		
+		add_stats = {
+			surface_detection = 10
+			sub_detection = 3.5
+			build_cost_ic = 170
+		}
+		can_convert_from = {
+			module_category = ship_airplane_launcher
+			convert_cost_ic = 80
+		}
+	}
+	ship_airplane_launcher_3 = {
+		category = ship_airplane_launcher
+		parent = ship_airplane_launcher_2
+		gfx = ship_airplane_launcher_3
+		
+		add_stats = {
+			surface_detection = 10
+			sub_detection = 3.5
+			build_cost_ic = 170
+		}
+		can_convert_from = {
+			module_category = ship_airplane_launcher
+			convert_cost_ic = 80
+		}
+	}
+	ship_airplane_launcher_4 = {
+		category = ship_airplane_launcher
+		parent = ship_airplane_launcher_3
+		gfx = ship_airplane_launcher_4
+		
+		add_stats = {
+			surface_detection = 10
+			sub_detection = 3.5
+			build_cost_ic = 170
+		}
+		can_convert_from = {
+			module_category = ship_airplane_launcher
+			convert_cost_ic = 80
+		}
+	}
+	ship_airplane_launcher_5 = {
+		category = ship_airplane_launcher
+		parent = ship_airplane_launcher_4
+		gfx = ship_airplane_launcher_5
 		
 		add_stats = {
 			surface_detection = 10

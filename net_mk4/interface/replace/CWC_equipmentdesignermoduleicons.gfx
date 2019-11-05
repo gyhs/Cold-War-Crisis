@@ -20,6 +20,32 @@ spriteTypes = {
 #CWC 추가
 ### Category Icon
 
+
+#대잠헬기
+	spriteType = {
+		name = "GFX_SMI_ship_airplane_launcher"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/airplane_launcher_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_airplane_launcher_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/airplane_launcher_icn_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_airplane_launcher_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/airplane_launcher_icn_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_airplane_launcher_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/airplane_launcher_icn_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_airplane_launcher_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/airplane_launcher_icn_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_airplane_launcher_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/airplane_launcher_icn_5.dds"
+	}
 #소구경 함포
 	spriteType = {
 		name = "GFX_SMI_ship_battery_light"
