@@ -150,7 +150,7 @@ set_technology = {
 	supersonic_strategic_bomber_1 = 1
 	stealth_strategic_bomber_1 = 1
 	
-	helicopter_1 = 1
+	tech_recon_helicopter_1 = 1
 	heliborne_1 = 1
 	maritime_helicopter_1 = 1
 	

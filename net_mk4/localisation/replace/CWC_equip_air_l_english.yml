@@ -165,8 +165,7 @@
  stealth_strat_bomber_equipment_4_short:0 "스텔스 전략폭격기 4"
  stealth_strat_bomber_equipment_5_short:0 "스텔스 전략폭격기 5"
  
- helicopter_1:0 "헬기 공학"
- recon_helicopter_1:0 "정찰헬기"
+ tech_recon_helicopter_1:0 "정찰 헬기"
  attack_helicopter:0 "공격헬기"
  attack_helicopter_equipment_1:0 "공격헬기 1"
  attack_helicopter_equipment_2:0 "공격헬기 2"

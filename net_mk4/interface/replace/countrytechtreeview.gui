@@ -1617,11 +1617,11 @@ guiTypes = {
 			}	
 
 			gridboxtype = {
-				name = "helicopter_1_tree"
-				position = { x = 170 y = 0 }
-				size = { width = 200 height = 1000 }
+				name = "tech_recon_helicopter_1_tree"
+				position = { x = 0 y = 100 }
+				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
+				format = "UP"
 			}
 		}
 
@@ -3894,41 +3894,41 @@ guiTypes = {
 		
 	}
 
-	containerWindowType = {
-		name = "techtree_air_helicopter_folder_small_item" 
-		position = { x=0 y=5 }
-		size = { width = 72 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=36 y=36 }
-			spriteType = "GFX_technology_medium"
-			centerposition = yes	
-			alwaystransparent = yes
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=3 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = 17 y = -22 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 50
-			maxHeight = 20
-			format = right
-		}
-	}	
+	#containerWindowType = {
+	#	name = "techtree_air_helicopter_folder_small_item" 
+	#	position = { x=0 y=5 }
+	#	size = { width = 72 height = 72 }
+	#	clipping = no
+	#
+	#	background = {
+	#		name = "Background"
+	#		quadTextureSprite ="GFX_technology_unavailable_item_bg"
+	#	}
+	#
+	#	iconType = {
+	#		name = "Icon"
+	#		position = { x=36 y=36 }
+	#		spriteType = "GFX_technology_medium"
+	#		centerposition = yes	
+	#		alwaystransparent = yes
+	#	}
+	#	iconType = {
+	#		name = "bonus_icon"
+	#		position = { x=3 y=-22 }
+	#		spriteType = "GFX_tech_bonus"
+	#	}
+	#	instantTextBoxType = {
+	#		name = "bonus"
+	#		position = { x = 17 y = -22 }
+	#		textureFile = ""
+	#		font = "hoi_16mbs"
+	#		borderSize = {x = 4 y = 4}
+	#		text = "lol boat"
+	#		maxWidth = 50
+	#		maxHeight = 20
+	#		format = right
+	#	}
+	#}	
 
 	containerWindowType = {
 		name = "techtree_air_helicopter_folder_item"

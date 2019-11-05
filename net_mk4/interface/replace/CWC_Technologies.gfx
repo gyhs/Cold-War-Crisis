@@ -1806,8 +1806,8 @@ spriteTypes = {
 
 	# 헬기이론
 	SpriteType = {
-		name = "GFX_helicopter_1_medium"
-		texturefile = "gfx/interface/technologies/13_air_helicopter/helicopter_1.dds"
+		name = "GFX_tech_recon_helicopter_1_medium"
+		texturefile = "gfx/interface/technologies/13_air_helicopter/tech_recon_helicopter_1.dds"
 	}
 	# 정찰헬기
 	SpriteType = {
