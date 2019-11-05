@@ -1,38 +1,5 @@
 technologies = {
-
-	helicopter_1 = {
-		recon = {
-			recon = 1
-		}
-		
-		path = {
-			leads_to_tech = recon_helicopter_1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = heliborne_1
-			research_cost_coeff = 1
-		}
-
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1.5
-		start_year = 1965
-		folder = {
-			name = air_helicopter_folder
-			position = { x = 0 y = -2 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	recon_helicopter_1 = {
+	tech_recon_helicopter_1 = {
 		recon = {
 			recon = 1
 		}
@@ -41,6 +8,11 @@ technologies = {
 			leads_to_tech = attack_helicopter_1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = heliborne_1
+			research_cost_coeff = 1
+		}
+
 
 		xp_research_type = air
 		xp_research_cost = 100
@@ -49,7 +21,7 @@ technologies = {
 		start_year = 1965
 		folder = {
 			name = air_helicopter_folder
-			position = { x = -2 y = 1 }
+			position = { x = 10 y = 0 }
 		}
 		
 		categories = {
@@ -76,10 +48,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = attack_helicopter_1
-			research_cost_coeff = 1
-		}
-		path = {
 			leads_to_tech = maritime_helicopter_1
 			research_cost_coeff = 1
 		}
@@ -95,7 +63,7 @@ technologies = {
 		start_year = 1965
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 2 y = 1 }
+			position = { x = 14 y = 2 }
 		}
 		
 		categories = {
@@ -125,7 +93,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 2 y = 5 }
+			position = { x = 14 y = 4 }
 		}
 		
 		categories = {
@@ -155,7 +123,7 @@ technologies = {
 		start_year = 1975
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 2 y = 8 }
+			position = { x = 14 y = 6 }
 		}
 		
 		categories = {
@@ -185,7 +153,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 2 y = 11 }
+			position = { x = 14 y = 8 }
 		}
 		
 		categories = {
@@ -215,7 +183,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 2 y = 14 }
+			position = { x = 14 y = 10 }
 		}
 		
 		categories = {
@@ -245,7 +213,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 2 y = 17 }
+			position = { x = 14 y = 12 }
 		}
 		
 		categories = {
@@ -277,7 +245,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_helicopter_folder
-			position = { x = -4 y = 5 }
+			position = { x = 6 y = 2 }
 		}
 		
 		categories = {
@@ -310,7 +278,7 @@ technologies = {
 
 		folder = {
 			name = air_helicopter_folder
-			position = { x = -4 y = 8 }
+			position = { x = 6 y = 4 }
 		}
 		
 		categories = {
@@ -360,7 +328,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_helicopter_folder
-			position = { x = -4 y = 11 }
+			position = { x = 6 y = 6 }
 		}
 		
 		categories = {
@@ -410,7 +378,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_helicopter_folder
-			position = { x = -4 y = 14 }
+			position = { x = 6 y = 8 }
 		}
 		
 		categories = {
@@ -454,7 +422,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_helicopter_folder
-			position = { x = -4 y = 17 }
+			position = { x = 6 y = 10 }
 		}
 		
 		categories = {
@@ -498,7 +466,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 4 y = 5 }
+			position = { x = 22 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -539,7 +507,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 4 y = 8 }
+			position = { x = 22 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -573,7 +541,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 5 y = 5 }
+			position = { x = 18 y = 3 }
 		}
 		
 		categories = {
