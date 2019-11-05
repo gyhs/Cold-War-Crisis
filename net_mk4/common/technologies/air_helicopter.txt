@@ -194,36 +194,6 @@ technologies = {
 			factor = 1
 		}
 	}
-
-	heliborne_6 = {
-
-		enable_equipments = {
-			heliborne_equipment_6
-		}
-
-		path = {
-			leads_to_tech = heliborne_7
-			research_cost_coeff = 1
-		}
-		
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1.5
-		start_year = 1980
-		folder = {
-			name = air_helicopter_folder
-			position = { x = 14 y = 12 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 	attack_helicopter_1 = { # 1964 공격 헬기
 
@@ -448,6 +418,33 @@ technologies = {
 		}
 	}
 	
+	rescue_helicopter_1 = { # 의무 헬기
+
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = air_helicopter_folder
+			position = { x = 18 y = 3 }
+		}
+		
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		category_all_infantry = {
+			casualty_trickleback = 0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	maritime_helicopter_1 = { # 해상작전헬기
 	
 		enable_equipment_modules = {
@@ -495,10 +492,10 @@ technologies = {
 			ship_airplane_launcher_2
 		}
 
-		#path = {
-		#	leads_to_tech = maritime_helicopter_3
-		#	research_cost_coeff = 1
-		#}
+		path = {
+			leads_to_tech = maritime_helicopter_3
+			research_cost_coeff = 1
+		}
 		
 		xp_research_type = air
 		xp_research_cost = 100
@@ -531,8 +528,15 @@ technologies = {
 		}
 	}
 	
-	rescue_helicopter_1 = { # 의무 헬기
+	maritime_helicopter_3 = { # 해상 헬기
+		enable_equipment_modules = {
+			ship_airplane_launcher_3
+		}
 
+		path = {
+			leads_to_tech = maritime_helicopter_4
+			research_cost_coeff = 1
+		}
 		
 		xp_research_type = air
 		xp_research_cost = 100
@@ -541,20 +545,109 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_helicopter_folder
-			position = { x = 18 y = 3 }
+			position = { x = 22 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 3.5
+				OR = {
+					tag = GER
+					tag = JAP
+					tag = USA
+				}
+			}
 		}
 		
 		categories = {
-			medium_air
-			tactical_bomber
 			air_equipment
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	
+	maritime_helicopter_4 = { # 해상 헬기
+		enable_equipment_modules = {
+			ship_airplane_launcher_4
+		}
+
+		path = {
+			leads_to_tech = maritime_helicopter_5
+			research_cost_coeff = 1
 		}
 		
-		category_all_infantry = {
-			casualty_trickleback = 0.02
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = air_helicopter_folder
+			position = { x = 22 y = 8 }
 		}
+		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+			
+			modifier = {
+				factor = 3.5
+				OR = {
+					tag = GER
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			air_equipment
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	
+	maritime_helicopter_5 = { # 해상 헬기
+		enable_equipment_modules = {
+			ship_airplane_launcher_5
+		}
+
+		path = {
+			leads_to_tech = maritime_helicopter_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = air_helicopter_folder
+			position = { x = 22 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 3.5
+				OR = {
+					tag = GER
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			air_equipment
+			naval_equipment
+			cl_tech
+			ca_tech
 		}
 	}
 	
