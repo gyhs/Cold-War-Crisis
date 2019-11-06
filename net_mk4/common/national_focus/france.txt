@@ -44,7 +44,14 @@ focus_tree = {
 		cost = 10.00
 		x = 65
 		y = 1
-		
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				bonus = 1
+				uses = 2
+			}
+			#산업 보너스 100% 2회
+		}
 	}
 	#독자노선
 	focus = {
@@ -685,6 +692,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_gign
 		icon = GFX_goal_unknown
+		desc = NF_FRA_gign_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_RFA_cos
@@ -697,6 +705,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_army_air_corps
 		icon = GFX_focus_usa_escort_fighters
+		desc = NF_FRA_army_air_corps_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_RFA_cos
@@ -709,6 +718,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_1er_rpima
 		icon = GFX_focus_eng_special_air_service
+		desc = NF_FRA_1er_rpima_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_army_air_corps
@@ -721,9 +731,14 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_13e_rdp
 		icon = GFX_focus_generic_paratrooper
+		desc = NF_FRA_13e_rdp_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_army_air_corps
+		}
+		completion_reward = {
+			add_ideas = thirteene_RDR
+			#국가정신 제13용기병공수연대 추가
 		}
 		x = 42
 		y = 6
