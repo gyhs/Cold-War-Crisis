@@ -8,4 +8,8 @@ spriteTypes = {
 		name = "GFX_idea_RDR_idea"
 		texturefile = "gfx/interface/ideas/RDR_idea.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_infantry_eq_licenses"
+		texturefile = "gfx/interface/ideas/policy/general/infantry_eq_licenses.dds"
+	}
 }

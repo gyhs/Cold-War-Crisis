@@ -131,7 +131,7 @@ ideas = {
 			}
 		}
 		liquidation_of_the_past = {
-			picture = hun_treaty_of_trianon
+			picture = infantry_eq_licenses
 			allowed = {
 				always = no
 			}
