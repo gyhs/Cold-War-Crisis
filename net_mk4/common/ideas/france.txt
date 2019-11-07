@@ -131,7 +131,7 @@ ideas = {
 			}
 		}
 		liquidation_of_the_past = {
-			picture = the_war_to_end_all_wars
+			picture = hun_treaty_of_trianon
 			allowed = {
 				always = no
 			}
