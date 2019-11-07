@@ -46,7 +46,7 @@ guiTypes = {
 		iconType ={
 			name ="pol_faction_icon" #Ideology icon
 			spriteType = "GFX_pol_factions_strip"
-			position = { x= 267 y = 370 }
+			position = { x= 265 y = 370 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
@@ -408,7 +408,7 @@ guiTypes = {
 				position = { x = 98 y = 16 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 60 height = 68 }
-				max_slots = { x = 8 y = 2 }
+				max_slots = { x = 6 y = 2 }
 				format = "UPPER_LEFT"
 			}
 			gridboxtype = {
@@ -607,14 +607,14 @@ guiTypes = {
 			maxHeight = 20
 		}
 		
-		gridBoxType = {
-				name = "ideas_grid"
-				position = { x = 10 y = 40 }
-				size = { width = 255 height = 106 }
-				slotsize = { width = 70 height = 64 }
-				max_slots_horizontal = 3
-				format = "UPPER_LEFT"
-			}
+		gridboxtype = {
+			name = "ideas_grid"
+			position = { x = 1 y = 46 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 80 height = 64 }
+			max_slots = { x = 3 y = 2 }
+			format = "UPPER_LEFT"
+		}
 	}
 	
 	
