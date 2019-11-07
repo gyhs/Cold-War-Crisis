@@ -141,6 +141,12 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_descendants_of_de_gaulle
 		}
+		completion_reward = {
+			set_country_leader_ideology = fascism
+			add_stability = -0.1
+			add_war_support = 0.2
+			#지도자 파시스트로 변경 및 안정도 -10%,전쟁지지도 +20%
+		}
 		x = 10
 		y = 7
 
@@ -166,6 +172,13 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_elan_vital
+		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = liquidation_of_the_past
+				days = 180
+			}
+			#국가정신 '과거 청산' 180일 추가
 		}
 		x = 14
 		y = 7
@@ -748,6 +761,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_dombat_doctrine
 		icon = GFX_goal_generic_small_arms
+		desc = NF_FRA_dombat_doctrine_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_command_reform
@@ -761,6 +775,7 @@ focus_tree = {
 		id = NF_FRA_basic_combat_training
 		icon = GFX_focus_secret_rearmament
 		cost = 10.00
+		desc = NF_FRA_basic_combat_training_desc
 		prerequisite = {
 			focus = NF_FRA_dombat_doctrine
 		}
@@ -770,9 +785,10 @@ focus_tree = {
 	}
 	#공격은 최대의 방어다
 	focus = {
-		id = NF_FRA_attack_is_the_greatest_defense.
+		id = NF_FRA_attack_is_the_greatest_defense
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10.00
+		desc = NF_FRA_attack_is_the_greatest_defense_desc
 		prerequisite = {
 			focus = NF_FRA_basic_combat_training
 		}
@@ -792,7 +808,7 @@ focus_tree = {
 			focus = NF_FRA_basic_combat_training
 		}
 		mutually_exclusive = {
-			focus = NF_FRA_attack_is_the_greatest_defense.
+			focus = NF_FRA_attack_is_the_greatest_defense
 		}
 		x = 46
 		y = 6
@@ -1227,7 +1243,7 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		cost = 10.00
 		prerequisite = {
-			focus = NF_FRA_attack_is_the_greatest_defense.
+			focus = NF_FRA_attack_is_the_greatest_defense
 		}
 		x = 44
 		y = 7

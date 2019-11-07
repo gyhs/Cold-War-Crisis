@@ -130,5 +130,21 @@ ideas = {
 				air_paradrop_defence_factor = 0.1
 			}
 		}
+		liquidation_of_the_past = {
+			picture = the_war_to_end_all_wars
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.02
+			}
+		}
 	}
 }
