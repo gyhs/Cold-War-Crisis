@@ -4,5 +4,8 @@ spriteTypes = {
 		name = "GFX_idea_ecsc_idea"
 		texturefile = "gfx/interface/ideas/ecsc_idea.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_RDR_idea"
+		texturefile = "gfx/interface/ideas/RDR_idea.dds"
+	}
 }
