@@ -58,7 +58,7 @@ focus_tree = {
 		id = NF_FRA_unilaterally_path
 		icon = GFX_focus_rom_parties_end
 		desc = NF_FRA_unilaterally_path_desc
-		cost = 10.00
+		cost = 5.00
 		completion_reward = {
 			leave_faction = yes
 			add_war_support = 0.1
@@ -134,15 +134,23 @@ focus_tree = {
 	}
 	#의회 장악
 	focus = {
-		id = NF_FRA_control_parliament 
+		id = NF_FRA_control_parliament
 		icon = GFX_goal_generic_propaganda
 		desc = NF_FRA_control_parliament_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_descendants_of_de_gaulle
 		}
+		available = {
+			if = {
+			fascism > 0.4
+			}
+		}
+		#파시스트 40%이상 수행가능
 		completion_reward = {
-			set_country_leader_ideology = fascism
+			set_politics = {
+				ruling_party = fascism
+			}
 			add_stability = -0.1
 			add_war_support = 0.2
 			#지도자 파시스트로 변경 및 안정도 -10%,전쟁지지도 +20%
@@ -160,6 +168,10 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_dream_of_the_past
 		}
+		completion_reward = {
+			add_ideas = elan_vital
+		}
+		#국가정신 '엘랑 비탈(elan vital)'추가
 		x = 13
 		y = 6
 
@@ -196,6 +208,10 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_dream_of_the_past
 		}
+		completion_reward = {
+		add_ideas = Red_memory
+		}
+		#국가정신 '붉은 기억' 추가
 		x = 19
 		y = 5
 
@@ -317,7 +333,7 @@ focus_tree = {
 		id = NF_FRA_europe_only_one
 		icon = GFX_goal_generic_improve_relations
 		desc = NF_FRA_europe_only_one_desc
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_new_era
 		}
