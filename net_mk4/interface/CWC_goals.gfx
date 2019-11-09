@@ -305,4 +305,73 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_unemployment_up.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_tribe_disarm"
+		texturefile = "gfx/interface/goals/focus_tribe_disarm.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_taliban"
+		texturefile = "gfx/interface/goals/focus_taliban.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_taliban_amir"
+		texturefile = "gfx/interface/goals/focus_taliban_amir.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_isis"
+		texturefile = "gfx/interface/goals/focus_isis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_isis_caliph"
+		texturefile = "gfx/interface/goals/focus_isis_caliph.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_jihad"
+		texturefile = "gfx/interface/goals/focus_jihad.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_foreign_legion"
+		texturefile = "gfx/interface/goals/focus_foreign_legion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_scandinavia"
+		texturefile = "gfx/interface/goals/focus_scandinavia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_scandinavia_contact"
+		texturefile = "gfx/interface/goals/focus_scandinavia_contact.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_NATO_army"
+		texturefile = "gfx/interface/goals/focus_NATO_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_NATO"
+		texturefile = "gfx/interface/goals/focus_NATO.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_gign_dudes"
+		texturefile = "gfx/interface/goals/focus_gign_dudes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_franco_german_brigade"
+		texturefile = "gfx/interface/goals/focus_franco_german_brigade.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_helicopter_tech"
+		texturefile = "gfx/interface/goals/focus_helicopter_tech.dds"
+	}
 }
