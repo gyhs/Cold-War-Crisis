@@ -1660,11 +1660,24 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "industrial_facility_subtitle"
-					position = { x = 160 y = 30 }
+					position = { x = 180 y = 30 }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
-					text = "INDUSTRIAL_FACILITY"
+					text = "제조설비"
+					maxWidth = 200
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "INDUSTRIAL_FACILITY_desc"
+				}
+				instantTextBoxType = {
+					name = "industrial_industry_subtitle"
+					position = { x = 530 y = 130 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "산업단지 계획"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
@@ -1687,7 +1700,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_synthetic_oil"
-					position = { x = 1450 y = 30  }
+					position = { x = 1470 y = 30  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -1699,7 +1712,7 @@ guiTypes = {
 				}
 				
 			gridboxtype = {
-				name = "basic_machine_tools_tree"
+				name = "tech_machine_tools_1_tree"
 				position = { x = 20 y = 80 }
 				size = { width = 520 height = 800 }
 				slotsize = { width = 70 height = 70 }

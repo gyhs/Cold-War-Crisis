@@ -2165,74 +2165,181 @@ spriteTypes = {
 	}
 	
 
+	#======================================================================
 	### 산업
 ###------> Industry <><> <><> <><> <><> <><>
 	
+	
 	SpriteType = {
-		name = "GFX_flexible_line_a_medium"
-		texturefile = "gfx/interface/technologies/15_industry/flexible_line_a.dds"
+		name = "GFX_tech_machine_tools_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_machine_tools_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_machine_tools_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_machine_tools_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_machine_tools_3_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_machine_tools_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_machine_tools_4_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_machine_tools_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_flexible_line_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_flexible_line_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_flexible_line_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_flexible_line_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_streamlined_line_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_streamlined_line_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_streamlined_line_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_streamlined_line_2.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_streamlined_line_a_medium"
-		texturefile = "gfx/interface/technologies/15_industry/streamlined_line_a.dds"
+		name = "GFX_tech_assembly_line_production_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_assembly_line_production_1.dds"
 	}
-	
 	SpriteType = {
-		name = "GFX_streamlined_line_b_medium"
-		texturefile = "gfx/interface/technologies/15_industry/streamlined_line_b.dds"
+		name = "GFX_tech_assembly_line_production_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_assembly_line_production_2.dds"
 	}
-	
 	SpriteType = {
-		name = "GFX_streamlined_line_c_medium"
-		texturefile = "gfx/interface/technologies/15_industry/streamlined_line_c.dds"
+		name = "GFX_tech_assembly_line_production_3_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_assembly_line_production_3.dds"
 	}
-	
 	SpriteType = {
-		name = "GFX_streamlined_line_d_medium"
-		texturefile = "gfx/interface/technologies/15_industry/streamlined_line_d.dds"
+		name = "GFX_tech_assembly_line_production_4_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_assembly_line_production_4.dds"
 	}
-	
+	SpriteType = {
+		name = "GFX_tech_assembly_line_production_5_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_assembly_line_production_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_assembly_line_production_6_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_assembly_line_production_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_assembly_line_production_7_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_assembly_line_production_7.dds"
+	}
 #-<><><>
 	
 	SpriteType = {
-		name = "GFX_concentrated_industry_a_medium"
-		texturefile = "gfx/interface/technologies/15_industry/concentrated_industry_a.dds"
+		name = "GFX_tech_equipment_conversion_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_equipment_conversion_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_equipment_conversion_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_equipment_conversion_2.dds"
+	}
+	
+#-<><><>
+	SpriteType = {
+		name = "GFX_tech_basic_industry_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_basic_industry_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_basic_industry_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_basic_industry_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_basic_industry_3_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_basic_industry_3.dds"
+	}
+#-<><><>
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_3_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_4_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_5_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_5.dds"
+	}
+#-<><><>
+	SpriteType = {
+		name = "GFX_tech_dispersed_industry_1_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_dispersed_industry_2_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_dispersed_industry_3_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_dispersed_industry_4_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_dispersed_industry_5_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_5.dds"
+	}
+#-<><><>
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_6_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_7_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_8_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_8.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_concentrated_industry_9_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_concentrated_industry_9.dds"
+	}
+	
+#-<><><>
+	SpriteType = {
+		name = "GFX_tech_dispersed_industry_6_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_6.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_dispersed_industry_a_medium"
-		texturefile = "gfx/interface/technologies/15_industry/dispersed_industry_a.dds"
+		name = "GFX_tech_dispersed_industry_7_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_7.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_concentrated_industry_b_medium"
-		texturefile = "gfx/interface/technologies/15_industry/concentrated_industry_b.dds"
+		name = "GFX_tech_dispersed_industry_8_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_8.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_dispersed_industry_b_medium"
-		texturefile = "gfx/interface/technologies/15_industry/dispersed_industry_b.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_concentrated_industry_c_medium"
-		texturefile = "gfx/interface/technologies/15_industry/concentrated_industry_c.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_dispersed_industry_c_medium"
-		texturefile = "gfx/interface/technologies/15_industry/dispersed_industry_c.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_concentrated_industry_d_medium"
-		texturefile = "gfx/interface/technologies/15_industry/concentrated_industry_d.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_dispersed_industry_d_medium"
-		texturefile = "gfx/interface/technologies/15_industry/dispersed_industry_d.dds"
+		name = "GFX_tech_dispersed_industry_9_medium"
+		texturefile = "gfx/interface/technologies/15_industry/tech_dispersed_industry_9.dds"
 	}
 	
 #-<><><>
