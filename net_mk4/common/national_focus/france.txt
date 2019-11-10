@@ -435,7 +435,7 @@ focus_tree = {
 	#새로운 동료
 	focus = {
 		id = NF_FRA_new_members
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_scandinavia_contact
 		desc = NF_FRA_new_members_desc
 		cost = 10.00
 		prerequisite = {
