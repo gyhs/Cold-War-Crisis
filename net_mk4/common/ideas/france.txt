@@ -180,5 +180,22 @@ ideas = {
 				political_power_factor = 0.20
 			}
 		}
+
+		single_party = {
+			picture = jap_the_unthinkable_option
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				socialism_drift = 0.2
+			}
+		}
 	}
 }

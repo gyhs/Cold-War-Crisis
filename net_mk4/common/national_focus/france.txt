@@ -228,6 +228,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_su_contact
 		}
+		add_timed_idea = {
+			idea = single_party
+			days = 180
+		}
+		#국가정신 '하나의 당' 180일
 		x = 18
 		y = 6
 
