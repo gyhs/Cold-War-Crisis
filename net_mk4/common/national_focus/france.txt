@@ -665,7 +665,7 @@ focus_tree = {
 	#외인부대
 	focus = {
 		id = NF_FRA_foreign_legion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_foreign_legion
 		desc = NF_FRA_foreign_legion_desc
 		cost = 10.00
 		prerequisite = {
@@ -678,7 +678,7 @@ focus_tree = {
 	#NATO군 강화
 	focus = {
 		id = NF_FRA_nato_reorganization
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_focus_NATO_army
 		desc = NF_FRA_nato_reorganization_desc
 		cost = 10.00
 		prerequisite = {
@@ -691,7 +691,7 @@ focus_tree = {
 	#독불여단
 	focus = {
 		id = NF_FRA_fgb
-		icon = GFX_goal_unknown
+		icon = GFX_focus_franco_german_brigade
 		desc = NF_FRA_fgb_desc
 		cost = 10.00
 		prerequisite = {
@@ -720,7 +720,7 @@ focus_tree = {
 	#GIGN
 	focus = {
 		id = NF_FRA_gign
-		icon = GFX_goal_unknown
+		icon = GFX_focus_gign_dudes
 		desc = NF_FRA_gign_desc
 		cost = 10.00
 		prerequisite = {
@@ -1130,7 +1130,7 @@ focus_tree = {
 	#헬리콥터 개발
 	focus = {
 		id = NF_FRA_helicopter_development
-		icon = GFX_goal_unknown
+		icon = GFX_focus_helicopter_tech
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_new_aircraft_development
