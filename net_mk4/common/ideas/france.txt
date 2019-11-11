@@ -195,6 +195,46 @@ ideas = {
 
 			modifier = {
 				socialism_drift = 0.2
+				#사회주의 증가
+			}
+		}
+
+		GIGN_ = {
+			picture = GIGN_idea
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+				stability_factor = 0.10
+				#특수부대 공,방 10% / 안정성 10% 증가
+			}
+		}
+
+		student_soldier = {
+			picture = generic_communist_army
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+				socialism_drift = 0.1
+				#징병 3%/ 사회주의 증가
 			}
 		}
 	}

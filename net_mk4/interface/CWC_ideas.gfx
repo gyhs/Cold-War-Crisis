@@ -12,4 +12,9 @@ spriteTypes = {
 		name = "GFX_idea_infantry_eq_licenses"
 		texturefile = "gfx/interface/ideas/policy/general/infantry_eq_licenses.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_GIGN_idea
+		texturefile = "gfx/interface/ideas/GIGN_idea.dds"
+	}
 }

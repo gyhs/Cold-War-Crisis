@@ -228,11 +228,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_su_contact
 		}
-		add_timed_idea = {
-			idea = single_party
-			days = 180
+		completion_reward = {
+			add_timed_idea = {
+				idea = single_party
+				days = 180
+			}
+			#국가정신 '하나의 당' 180일
 		}
-		#국가정신 '하나의 당' 180일
 		x = 18
 		y = 6
 
@@ -245,6 +247,10 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_party_consolidation
+		}
+		completion_reward = {
+			add_ideas = student_soldier
+			#국가정신 '학도병'
 		}
 		x = 17
 		y = 7
@@ -579,6 +585,10 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		desc = NF_FRA_adt_desc
 		cost = 10.00
+		completion_reward = {
+			army_experience = 100
+			#육군 경험치 100
+		}
 		prerequisite = {
 			focus = NF_FRA_faf
 		}
@@ -731,6 +741,10 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_RFA_cos
 		}
+		completion_reward = {
+			add_ideas = GIGN_
+			#국가정신 'GIGN(국가헌병대)'추가
+		}
 		x = 40
 		y = 5
 
@@ -825,6 +839,7 @@ focus_tree = {
 		id = NF_FRA_breakthrough
 		icon = GFX_goal_generic_cavalry
 		cost = 10.00
+		desc = NF_FRA_breakthrough_desc
 		prerequisite = {
 			focus = NF_FRA_basic_combat_training
 		}
@@ -840,6 +855,7 @@ focus_tree = {
 		id = NF_FRA_shock_and_fear
 		icon = GFX_focus_generic_army_tanks2
 		cost = 10.00
+		desc = NF_FRA_shock_and_fear_desc
 		prerequisite = {
 			focus = NF_FRA_breakthrough
 		}
@@ -852,8 +868,13 @@ focus_tree = {
 		id = NF_FRA_mn
 		icon = GFX_goal_generic_build_navy
 		cost = 10.00
+		desc = NF_FRA_mn_desc
 		prerequisite = {
 			focus = NF_FRA_faf
+		}
+		completion_reward = {
+			navy_experience = 100
+			#해군 경험치 100
 		}
 		x = 50
 		y = 2
@@ -864,6 +885,7 @@ focus_tree = {
 		id = NF_FRA_cooperation_with_Britain
 		icon = GFX_focus_chi_british_cooperation
 		cost = 10.00
+		desc = NF_FRA_cooperation_with_Britain_desc
 		prerequisite = {
 			focus = NF_FRA_mn
 		}
@@ -879,6 +901,7 @@ focus_tree = {
 		id = NF_FRA_aircraft_carrier_development
 		icon = GFX_goal_generic_navy_carrier
 		cost = 10.00
+		desc = NF_FRA_aircraft_carrier_development_desc
 		prerequisite = {
 			focus = NF_FRA_cooperation_with_Britain
 		}
@@ -891,6 +914,7 @@ focus_tree = {
 		id = NF_FRA_securing_a_shipyard
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
+		desc = NF_FRA_securing_a_shipyard_desc
 		prerequisite = {
 			focus = NF_FRA_mn
 		}
@@ -903,6 +927,7 @@ focus_tree = {
 		id = NF_FRA_cooperation_with_west_germany
 		icon = GFX_focus_chi_mission_to_germany
 		cost = 10.00
+		desc = NF_FRA_cooperation_with_west_germany_desc
 		prerequisite = {
 			focus = NF_FRA_mn
 		}
@@ -918,6 +943,7 @@ focus_tree = {
 		id = NF_FRA_auxiliary_ship_development
 		icon = GFX_focus_generic_cruiser2
 		cost = 10.00
+		desc = NF_FRA_auxiliary_ship_development_desc
 		prerequisite = {
 			focus = NF_FRA_cooperation_with_west_germany
 			focus = NF_FRA_cooperation_with_Britain
@@ -1014,6 +1040,10 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_faf
+		}
+		completion_reward ={
+			air_experience = 100
+			#해군경험치 100
 		}
 		x = 56
 		y = 2
