@@ -1,0 +1,27 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_cwc_multiplayer"
+		textureFile = "gfx/interface/cwc_multiplayer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cwc_singleplayer"
+		textureFile = "gfx/interface/cwc_singleplayer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_cwc_new_game"
+		textureFile = "gfx/interface/cwc_new_game.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cwc_load_game"
+		textureFile = "gfx/interface/cwc_load_game.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_cwc_continue_game"
+		textureFile = "gfx/interface/cwc_continue_game.dds"
+	}
+}
