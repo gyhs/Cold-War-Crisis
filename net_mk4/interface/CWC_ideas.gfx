@@ -14,7 +14,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_GIGN_idea
+		name = "GFX_idea_GIGN_idea"
 		texturefile = "gfx/interface/ideas/GIGN_idea.dds"
 	}
 }
