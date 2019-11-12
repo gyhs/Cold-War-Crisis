@@ -31,7 +31,7 @@ idea_categories = {
 		slot = economic_mobilisation # 경제 동원령
 		slot = fdi_regulations #외국인 투자법
 		slot = taxes # 세금 정책
-		slot = immigration_policy #이민법
+		slot = education_investment_law	#교육 투자 비용
 		
 		cost = 150
 		removal_cost = 0
@@ -40,7 +40,7 @@ idea_categories = {
 	government2 = {
 		slot = security
 		slot = press_laws
-		slot = education_investment_law
+		slot = immigration_policy #이민법
 		slot = civilian_factory_level
 		slot = military_factory_level
 		slot = shipyard_level
