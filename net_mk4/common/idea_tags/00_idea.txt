@@ -26,13 +26,12 @@ idea_categories = {
 	}
 	
 	government = {
-		slot = economy
+		slot = economy		# 경제체제
+		slot = trade_laws	# 무역법
+		slot = economic_mobilisation # 경제 동원령
 		slot = fdi_regulations #외국인 투자법
-		slot = tariffs # 관세
-		slot = trade_laws
 		slot = taxes # 세금 정책
 		slot = immigration_policy #이민법
-		#bonds #채권
 		
 		cost = 150
 		removal_cost = 0

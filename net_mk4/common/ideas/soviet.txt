@@ -37,7 +37,6 @@ ideas = {
 			modifier = {
 				economy_cost_factor = 0.5
 				fdi_regulations_cost_factor = 0.5
-				tariffs_cost_factor = 0.5
 				trade_laws_cost_factor = 0.5
 				taxes_cost_factor = 0.5
 
