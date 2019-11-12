@@ -47,20 +47,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Gheorghe Tatarescu"
+	name = "니콜라에 차우셰스쿠"
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = "gfx/leaders/ROM/POLITICS_Romania_Gheorghe_Tatarescu.dds"
-	expire = "1965.1.1"
-	ideology = authoritarianism_subtype_1
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Constantin Ion Parhon"
-	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-	picture = "POLITICS_Romania_Constantin_Parhon.dds"
+	picture = "Portrait_Nicolae_Ceausescu.dds"
 	expire = "1965.1.1"
 	ideology = communism_subtype_1
 	traits = {
