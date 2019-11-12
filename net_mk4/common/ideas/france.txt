@@ -41,7 +41,9 @@ ideas = {
 				conscription = -0.20
 				consumer_goods_factor = 0.45
 			}
+			#누적되는 무역적자 (정치력 -0.4 , 징병가능인구 -20% , 소비제 45% , 안정도 -30% , 전쟁지지도 -20%)
 		}
+		
 
 		currency_problem = {
 			picture = generic_foreign_capital
@@ -62,6 +64,7 @@ ideas = {
 				Economy_cost_factor = 0.80
 				trade_opinion_factor = -0.60
 			}
+			#통화 문제 (무역 거래에의 평판 흭득치 -60% , 경제법 비용 +80% , 무역법 비용 +80%)
 		}
 
 		nuclear_power = {
@@ -235,6 +238,29 @@ ideas = {
 				conscription = 0.03
 				socialism_drift = 0.1
 				#징병 3%/ 사회주의 증가
+			}
+		}
+
+		deficit_recovery = {
+			picture = generic_political_support
+
+			desc = deficit_recovery_desc
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = -0.10
+				conscription = -0.10
+				political_power_gain = -0.10
 			}
 		}
 	}

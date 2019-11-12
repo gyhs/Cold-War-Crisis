@@ -83,7 +83,12 @@ focus_tree = {
 		cost = 10.00
 		completion_reward = {
 			add_ideas = nuclear_power
-			#국가정신 핵으로 발전하는 우리 추가
+   			remove_ideas = persistent_trade_deficit_5
+			modify_timed_idea = {
+    			idea = deficit_recovery
+    			days = 200
+			}
+			#국가정신 핵으로 발전하는 우리 추가 , 누적되는 무역적자 제거. 적자회복 200일
 		}
 		prerequisite = {
 			focus = NF_FRA_unilaterally_path
