@@ -18,6 +18,9 @@
  Soviet_economic_planning:0 "계획경제"
  Soviet_reform_economic_planning:0 "개혁된 계획경제"
  
+ economic_mobilisation:0 "경제 동원령"
+ economic_mobilisation_none:0 "경제 동원령 없음"
+ 
  press_laws:0 "언론법"
  press_free:0 "자유 언론"
  press_free_desc:0 "정치권력의 억압에서 해방된 언론은 새로운 위기에 직면하였다. 그들 스스로 제 4부를 자처하고 특권을 행사 하려고 하기 시작하였다.\n"
@@ -40,13 +43,6 @@
  fdi_banned:0 "경제 자립 정책"
  fdi_encouraged:0 "사업 장려"
  
- tariffs:0 "관세"
- tariffs_none:0 "면세"
- tariffs_low:0 "낮은 관세"
- tariffs_average:0 "평균 관세"
- tariffs_high:0 "높은 관세"
- tariffs_extreme:0 "극단적 관세"
- 
  taxes:0 "세금 정책"
  tax_minimal:0 "매우 낮은 세금"
  tax_low:0 "낮은 세금"
@@ -54,7 +50,7 @@
  tax_high:0 "높은 세금"
  tax_extreme:0 "매우 높은 세금"
  
- immigration_policy:0 "여행,이민 법"
+ immigration_policy:0 "이민 법"
  immigration_closed_borders:0 "닫힌 국경"
  immigration_closed_borders_desc:0 "해외여행 및 이민이 법적으로 금지 됨.\n"
  immigration_regulated_1:0 "엄격한 이민통제"

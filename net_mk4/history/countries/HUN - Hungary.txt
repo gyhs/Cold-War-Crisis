@@ -64,9 +64,9 @@ if = {
 }
 
 create_country_leader = {
-	name = "Mátyás Rákosi"
-	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
-	picture = "POLITICS_Hungary_Matyas_Rakoski.dds"
+	name = "카다르 야노시"
+	desc = "POLITICS_JANOS_KADAR_DESC"
+	picture = "Portrait_Janos_Kadar.dds"
 	expire = "1965.1.1"
 	ideology = communism_subtype_1
 	traits = {
