@@ -13,6 +13,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/policy/general/idea_state_capitalism.dds"
 	}
 	
+	### 경제
+	spriteType = {
+		name = "GFX_idea_economic_mobilisation_none"
+		texturefile = "gfx/interface/ideas/policy/economy/idea_economic_mobilisation_none.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_low_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/policy/economy/idea_low_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_partial_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/policy/economy/idea_partial_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_war_economy"
+		texturefile = "gfx/interface/ideas/policy/economy/idea_war_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tot_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/policy/economy/idea_tot_economic_mobilisation.dds"
+	}
+	
 	### 외국인 투자법
 	spriteType = {
 		name = "GFX_idea_fdi_encouraged"
@@ -29,28 +51,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_fdi_banned"
 		texturefile = "gfx/interface/ideas/policy/general/idea_finv_banned.dds"
-	}
-	
-	### 관세
-	spriteType = {
-		name = "GFX_idea_tariffs_none"
-		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_none.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_tariffs_low"
-		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_low.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_tariffs_average"
-		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_average.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_tariffs_high"
-		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_high.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_tariffs_extreme"
-		texturefile = "gfx/interface/ideas/policy/general/idea_tariffs_extreme.dds"
 	}
 	
 	### 세금

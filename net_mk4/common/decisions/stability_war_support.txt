@@ -501,7 +501,7 @@ demobilization = {
 				limit = {
 					has_war_support < 0.15
 				}
-				add_ideas = civilian_economy
+				add_ideas = economic_mobilisation_none
 			}
 			else_if = {
 				limit = {
