@@ -154,7 +154,6 @@ set_technology = {
 	light_fighter_1 = 1
 	CAS_1 = 1
 	naval_bomber_1 = 1
-	strategic_bomber_1 = 1
 	jet_strategic_bomber_1 = 1
 	supersonic_strategic_bomber_1 = 1
 	stealth_strategic_bomber_1 = 1
