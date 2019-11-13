@@ -83,12 +83,12 @@ focus_tree = {
 		cost = 10.00
 		completion_reward = {
 			add_ideas = nuclear_power
-   			remove_ideas = persistent_trade_deficit_5
-			modify_timed_idea = {
+   			remove_ideas = {persistent_trade_deficit_5 , currency_problem}
+			add_timed_idea = {
     			idea = deficit_recovery
     			days = 200
 			}
-			#국가정신 핵으로 발전하는 우리 추가 , 누적되는 무역적자 제거. 적자회복 200일
+			#국가정신 핵으로 발전하는 우리 추가 , 누적되는 무역적자 제거. 통화문제 제거, 적자회복 200일
 		}
 		prerequisite = {
 			focus = NF_FRA_unilaterally_path
@@ -270,6 +270,16 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_school_of_youth
 		}
+		completion_reward = {
+			create_faction = treaty_of_the_revolution
+			hidden_effect = { 
+				country_event = {
+    				id = NE_FRA.3
+    				days = 1
+				}
+			}
+		}
+		# 영구 혁명 조약 결성
 		x = 16
 		y = 8
 
@@ -285,6 +295,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_party_consolidation
+		}
+		available = {
+			if = {
+			country_exists = SOV
+			}
+		}
+		completion_reward = {
+			diplomatic_relation = {
+    			country = SOV
+    			relation = guarantee
+    			active = yes
+			}
+
 		}
 		x = 20
 		y = 6

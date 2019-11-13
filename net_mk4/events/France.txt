@@ -40,3 +40,28 @@ country_event = {
         stability_factor = 0.10
     }
 }
+#영구 혁명 조약의 등장
+news_event = {
+    id = NE_FRA.3
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3"}
+    title = NE_FRA.3.title
+    desc = NE_FRA.3.desc
+    picture = GFX_news_event_treaty
+    is_triggered_only = yes
+    major = yes
+    if = { 
+            limit = {
+                tag = FRA
+            }
+        option = NE_FRA.3.a
+    }
+    if = {
+        limit = {
+            not = {
+                tag = FRA
+            }
+        }
+        option = NE_FRA.3.b
+    }
+
+}
