@@ -1,4 +1,6 @@
-﻿version="1.8"
+version="1.8"
+name="net_mk4"
+path=	C:\Users\gyung\Documents\Paradox Interactive\Hearts of Iron IV\mod\net_mk4
 dependencies={
 	"한국어 모드(Korean Translation)"
 }
@@ -7,6 +9,5 @@ tags={
 	"Map"
 	"Fixes"
 }
-name="net_mk4"
-path="C:/Users/hs042/Documents/Paradox Interactive/Hearts of Iron IV/mod/net_mk4/"
 replace_path="map"
+
