@@ -272,12 +272,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = treaty_of_the_revolution
-			hidden_effect = { 
-				country_event = {
-    				id = NE_FRA.3.t
-    				days = 1
-				}
-			}
 		}
 		# 영구 혁명 조약 결성
 		x = 16

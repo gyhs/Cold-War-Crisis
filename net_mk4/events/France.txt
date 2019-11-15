@@ -44,25 +44,27 @@ country_event = {
 news_event = {
     id = NE_FRA.3.t
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3.t"}
-    major = yes
+    hidden = yes
     fire_only_once = yes
+    trigger = {
+        has_completed_focus = NF_FRA_treaty_of_permanent_revolution
+    }
     immediate = {
         FRA ={
             news_event = {
                 id = NE_FRA.3.f
-            }
-            
-            every_country = {
-                if = {
-                    limit = {
-                        NOT = {
-                            tag = FRA
-                        }
+            }            
+        }
+        every_country = {
+            if = {
+                limit = {
+                    NOT = {
+                        tag = FRA
                     }
-                    news_event = {
-                        days = 1
-                        id = NE_FRA.3.w
-                    }
+                }
+                news_event = {
+                    days = 1
+                    id = NE_FRA.3.w
                 }
             }
         }
@@ -74,7 +76,7 @@ news_event = {
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3.f"}
     title = NE_FRA.3.title
     desc = NE_FRA.3.desc
-    fire_only_once = yes
+    is_triggered_only = yes
     picture = GFX_news_event_treaty
     option = {
         name = NE_FRA.3.a
@@ -86,7 +88,7 @@ news_event = {
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3.w"}
     title = NE_FRA.3.title
     desc = NE_FRA.3.desc
-    fire_only_once = yes
+    is_triggered_only = yes
     picture = GFX_news_event_treaty
 
     option = {
