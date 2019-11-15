@@ -1,19 +1,21 @@
 ﻿l_english:
  ###국가메뉴 범주###
- ministers:0 "장관진"
+ minister:0 "장관진"
  military:0 "군사 정책"
  military_staff:0 "군사 참모"
  government:0 "경제"
  government2:0 "법률 & 정책"
- head_of_government:0 "정부수반"
- foreign_minister:0 "외무장관"
- economy_minister:0 "군수장관"
- security_minister:0 "치안장관"
- intel_minister:0 "첩보국장"
  decisions:0 "국가 결정"
  research_production:0 "연구진"
  nation_situation:0 "국가 상황"
  ###Laws###
+ 
+ head_of_government:0 "정부수반"
+ foreign_minister:0 "외교통상부 장관"
+ economy_minister:0 "산업통상부 장관"
+ security_minister:0 "치안장관"
+ intel_minister:0 "첩보국장"
+ defence_minister:0 "국방장관"
  
  Soviet_economic_planning:0 "계획경제"
  Soviet_reform_economic_planning:0 "개혁된 계획경제"

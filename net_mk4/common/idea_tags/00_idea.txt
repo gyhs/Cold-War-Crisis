@@ -13,13 +13,13 @@ idea_categories = {
 		cost = 0
 		removal_cost = -1
 	}
-	ministers = {
-		slot = political_advisor #head_of_government
-		slot = political_advisor #foreign_minister
-		slot = political_advisor #economy_minister
-		slot = political_advisor #security_minister
-		slot = political_advisor #intel_minister
-		slot = political_advisor
+	minister = {
+		slot = head_of_government
+		slot = foreign_minister
+		slot = economy_minister
+		slot = security_minister
+		slot = intel_minister
+		slot = defence_minister
 		
 		cost = 150
 		removal_cost = 0

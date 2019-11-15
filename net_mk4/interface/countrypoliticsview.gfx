@@ -273,8 +273,33 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_slot_political_advisor"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+		name = "GFX_idea_slot_head_of_government"
+		textureFile = "gfx/interface/ideas/minister/idea_slot_head_of_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_foreign_minister"
+		textureFile = "gfx/interface/ideas/minister/idea_slot_foreign_minister.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_economy_minister"
+		textureFile = "gfx/interface/ideas/minister/idea_slot_economy_minister.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_security_minister"
+		textureFile = "gfx/interface/ideas/minister/idea_slot_security_minister.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_intel_minister"
+		textureFile = "gfx/interface/ideas/minister/idea_slot_intel_minister.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_defence_minister"
+		textureFile = "gfx/interface/ideas/minister/idea_slot_defence_minister.dds"
 	}
 
 	spriteType = {

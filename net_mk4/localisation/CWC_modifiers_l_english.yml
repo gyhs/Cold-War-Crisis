@@ -1,4 +1,13 @@
 ﻿l_english:
+ head_of_government_cost_factor:0 "정부 수반 비용"
+ foreign_minister_cost_factor:0 "외교통상부 장관 비용"
+ economy_minister_cost_factor:0 "산업통상부 장관 비용"
+ security_minister_cost_factor:0 "치안장관 비용"
+ intel_minister_cost_factor:0 "첩보국장 비용"
+ defence_minister_cost_factor:0 "국방장관 비용"
+ 
+ economic_mobilisation_cost_factor:0 "경제 동원령 비용"
+ 
  modifier_experience_gain_light_carrier_training_factor:1 "경 항공모함 훈련 경험치 획득량"
  modifier_experience_gain_light_carrier_combat_factor:1 "경 항공모함 훈련 경험치 획득량"
  modifier_experience_gain_super_carrier_training_factor:1 "대형 항공모함 훈련 경험치 획득량"
