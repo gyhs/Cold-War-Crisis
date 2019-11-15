@@ -377,7 +377,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -399,7 +405,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -421,7 +433,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -443,7 +461,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -465,7 +489,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -487,7 +517,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -509,7 +545,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -531,7 +573,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -553,7 +601,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -575,7 +629,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -597,7 +657,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_advisor_cost_factor = 0.5
+				head_of_government_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economy_minister_cost_factor = 0.5
+				security_minister_cost_factor = 0.5
+				intel_minister_cost_factor = 0.5
+				defence_minister_cost_factor = 0.5
+				
 				trade_laws_cost_factor = 0.5
 				mobilization_laws_cost_factor = 0.5
 				economy_cost_factor = 0.5
@@ -613,7 +679,13 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_advisor_cost_factor = 0.25
+				head_of_government_cost_factor = 0.25
+				foreign_minister_cost_factor = 0.25
+				economy_minister_cost_factor = 0.25
+				security_minister_cost_factor = 0.25
+				intel_minister_cost_factor = 0.25
+				defence_minister_cost_factor = 0.25
+				
 				trade_laws_cost_factor = 0.25
 				mobilization_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
