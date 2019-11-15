@@ -125,7 +125,7 @@ country = {
 }
 
 
-political_advisor = {
+head_of_government = {
 
 	POL_roman_dmowski = {
 

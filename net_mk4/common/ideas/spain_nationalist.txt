@@ -22,7 +22,7 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+	head_of_government = {
 
 		SPA_luis_valdes_cavanillas = {
 

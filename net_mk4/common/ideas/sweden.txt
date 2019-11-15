@@ -29,7 +29,7 @@ ideas = {
 	
 	}
 
-	political_advisor = {
+	head_of_government = {
 
 		SWE_thorwald_bergquist = {
 

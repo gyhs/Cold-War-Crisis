@@ -225,7 +225,7 @@ ideas = {
 		
 	}
 
-	political_advisor = {
+	head_of_government = {
 
 		
 		FIN_ralf_torngren = {

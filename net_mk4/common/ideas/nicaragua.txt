@@ -1,7 +1,7 @@
 ideas = {
 
 
-	political_advisor = {
+	head_of_government = {
 
 		NIC_leonardo_arguello_vargas = {
 

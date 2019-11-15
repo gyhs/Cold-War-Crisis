@@ -1,6 +1,6 @@
 ideas = {
 
-	political_advisor = {
+	head_of_government = {
 
 		HON_carlos_alberto_ucles = {
 
