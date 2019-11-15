@@ -274,7 +274,7 @@ focus_tree = {
 			create_faction = treaty_of_the_revolution
 			hidden_effect = { 
 				country_event = {
-    				id = NE_FRA.3
+    				id = NE_FRA.3.t
     				days = 1
 				}
 			}
