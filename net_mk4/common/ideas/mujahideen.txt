@@ -932,7 +932,7 @@ ideas = {
 		
 	
 	}
-	political_advisor = {
+	head_of_government = {
 
 		MUJ_haji_faiz_muhammed_zikeria = {
 

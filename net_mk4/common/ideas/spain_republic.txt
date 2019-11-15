@@ -1,6 +1,6 @@
 ideas = {
 
-	political_advisor = {
+	head_of_government = {
 
 		SPR_augusto_barcia_trelles = {
 

@@ -283,7 +283,7 @@ ideas = {
 
 	}
 
-	political_advisor = {
+	head_of_government = {
 
 		NZL_a_e_davy = {
 

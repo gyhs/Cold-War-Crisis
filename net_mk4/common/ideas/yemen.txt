@@ -2,7 +2,7 @@ ideas = {
 	# MILITARY
 
 
-	political_advisor = {
+	head_of_government = {
 
 		YEM_nae_m_al_abdul = {
 

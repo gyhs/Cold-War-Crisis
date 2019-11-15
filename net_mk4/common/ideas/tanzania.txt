@@ -2,7 +2,7 @@ ideas = {
 	# MILITARY
 
 
-	political_advisor = {
+	head_of_government = {
 
 		TZN_pot = {
 

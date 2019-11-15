@@ -986,7 +986,7 @@ ideas = {
 		
 	
 	}
-	political_advisor = {
+	head_of_government = {
 
 		AFG_haji_faiz_muhammed_zikeria = {
 

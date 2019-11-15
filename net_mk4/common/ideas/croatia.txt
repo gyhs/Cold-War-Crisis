@@ -1,7 +1,7 @@
 ideas = {
 
 
-	political_advisor = {
+	head_of_government = {
 
 		CRO_ivan_subasic = {
 

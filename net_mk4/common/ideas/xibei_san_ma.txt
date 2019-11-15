@@ -1,6 +1,6 @@
 ideas = {
 
-	political_advisor = {
+	head_of_government = {
 
 		XSM_fang_jing = {
 

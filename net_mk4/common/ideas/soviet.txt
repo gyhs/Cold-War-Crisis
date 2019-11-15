@@ -1935,7 +1935,7 @@ ideas = {
 		
 		
 	}
-	political_advisor = {
+	head_of_government = {
 		
 		konstantin_rodzaevsky = {
 			

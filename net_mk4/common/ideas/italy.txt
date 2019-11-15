@@ -113,7 +113,7 @@ ideas = {
 		}
 	}
 		
-	political_advisor = {
+	head_of_government = {
 		amadeo_bordiga = {
 			
 			
