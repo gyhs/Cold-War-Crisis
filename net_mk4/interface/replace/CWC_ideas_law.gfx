@@ -1,16 +1,36 @@
 spriteTypes = {	
 	### 경제
 	spriteType = {
-		name = "GFX_idea_Soviet_economic_planning"
-		texturefile = "gfx/interface/ideas/policy/general/idea_Soviet_economic_planning.dds"
+		name = "GFX_idea_planned_economy_04"
+		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_04.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Soviet_reform_economic_planning"
-		texturefile = "gfx/interface/ideas/policy/general/idea_Soviet_reform_economic_planning.dds"
+		name = "GFX_idea_planned_economy_03"
+		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_03.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_state_capitalism"
-		texturefile = "gfx/interface/ideas/policy/general/idea_state_capitalism.dds"
+		name = "GFX_idea_planned_economy_02"
+		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_02.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_planned_economy_01"
+		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_01.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_market_economy_01"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_01.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_market_economy_02"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_02.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_market_economy_03"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_03.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_market_economy_04"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_04.dds"
 	}
 	
 	### 경제

@@ -17,8 +17,16 @@
  intel_minister:0 "첩보국장"
  defence_minister:0 "국방장관"
  
- Soviet_economic_planning:0 "계획경제"
- Soviet_reform_economic_planning:0 "개혁된 계획경제"
+ planned_economy_04:0 "계획경제 4"
+ planned_economy_03:0 "계획경제 3"
+ planned_economy_02:0 "계획경제 2"
+ planned_economy_01:0 "계획경제 1"
+ market_economy_01:0 "시장경제 1"
+ market_economy_02:0 "시장경제 2"
+ market_economy_03:0 "시장경제 3"
+ market_economy_04:0 "시장경제 4"
+ Soviet_planned_economy:0 "계획경제"
+ Soviet_reform_planned_economy:0 "개혁된 계획경제"
  
  economic_mobilisation:0 "경제 동원령"
  economic_mobilisation_none:0 "경제 동원령 없음"
