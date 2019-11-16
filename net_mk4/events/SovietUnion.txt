@@ -456,3 +456,36 @@ country_event = {
 			}
 	}
 }
+#프랑스 '소련에게 도움을 요청하다.'의 효과
+country_event = {
+	id = soviet.14
+
+    title = soviet.14.title
+
+    desc = soviet.14.desc
+
+	picture = GFX_event_gorbachev_meeting
+
+	trigger = {
+		has_completed_focus = NF_FRA_su_contact
+	}
+
+    option = {
+        name = soviet.14.ab
+		SOV ={
+			give_guarantee = FRA
+			}
+		}
+    option = {
+        name = soviet.14.cd
+		SOV ={
+			give_guarantee = FRA
+			}
+    }
+    option = {
+        name = soviet.14.ef
+		SOV ={
+			give_guarantee = FRA
+			}
+    }
+}

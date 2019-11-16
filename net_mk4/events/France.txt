@@ -95,38 +95,3 @@ news_event = {
         name = NE_FRA.5.a
     }
 }
-#'소련에 도움을 요청하다.' 트리거
-news_event = {
-    id = NE_FRA.6
-    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.6"}
-    hidden = yes
-    firex_only_once = yes
-    trigger = {
-        has_completed_focus = NF_FRA_su_contact
-    }
-    immediate = {
-        SOV = {
-            news_event = {
-                id = NE_FRA.7
-            }
-        }
-    }
-}
-#'소련에 도움을 요청하다' 소련 선택지
-every_country = {
-    id = NE_FRA.7
-    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.7"}
-    title = NE_FRA.7.title
-    desc = NE_FRA.7.desc
-    is_triggered_only = yes
-    picture = event_gorbachev_meeting
-    option = {
-        name = NE_FRA.7.a
-    }
-    option = {
-        name = NE_FRA.7.b
-    }
-    option = {
-        name = NE_FRA.7.c
-    }
-}

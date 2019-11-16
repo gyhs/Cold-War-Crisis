@@ -292,11 +292,14 @@ focus_tree = {
 		}
 		available = {
 			if = {
-			country_exists = SOV
+				country_exists = SOV
 			}
 		}
 		completion_reward = {
-			
+			add_opinion_modifier = {
+				target = FRA
+				modifier = mission_to_the_SOV
+			}
 		}
 		x = 20
 		y = 6
