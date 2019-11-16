@@ -42,17 +42,17 @@ country_event = {
 }
 #영구 혁명 조약의 등장 트리거
 news_event = {
-    id = NE_FRA.3.t
-    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3.t"}
+    id = NE_FRA.3
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3"}
     hidden = yes
-    fire_only_once = yes
+    firex_only_once = yes
     trigger = {
         has_completed_focus = NF_FRA_treaty_of_permanent_revolution
     }
     immediate = {
         FRA ={
             news_event = {
-                id = NE_FRA.3.f
+                id = NE_FRA.4
             }            
         }
         every_country = {
@@ -64,7 +64,7 @@ news_event = {
                 }
                 news_event = {
                     days = 1
-                    id = NE_FRA.3.w
+                    id = NE_FRA.5
                 }
             }
         }
@@ -72,8 +72,8 @@ news_event = {
 }
 
 news_event = {
-    id = NE_FRA.3.f
-    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3.f"}
+    id = NE_FRA.4
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.4"}
     title = NE_FRA.3.title
     desc = NE_FRA.3.desc
     is_triggered_only = yes
@@ -84,8 +84,8 @@ news_event = {
 }
 
 news_event = {
-    id = NE_FRA.3.w
-    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3.w"}
+    id = NE_FRA.5
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.5"}
     title = NE_FRA.3.title
     desc = NE_FRA.3.desc
     is_triggered_only = yes
