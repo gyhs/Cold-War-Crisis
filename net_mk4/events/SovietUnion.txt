@@ -474,6 +474,7 @@ country_event = {
         name = soviet.14.ab
 		SOV ={
 			give_guarantee = FRA
+			#독립보장
 			}
 		}
     option = {
