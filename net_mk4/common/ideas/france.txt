@@ -131,7 +131,7 @@ ideas = {
 			modifier = {
 				air_paradrop_attack_factor = 0.1
 				air_paradrop_defence_factor = 0.1
-				special_forces_min = 100
+				#공수부대 공 방 10%
 			}
 		}
 		liquidation_of_the_past = {
@@ -261,6 +261,29 @@ ideas = {
 				stability_factor = -0.10
 				conscription = -0.10
 				political_power_gain = -0.10
+				# 소비제 15% , 안정도 -10% , 징병가능인구 -10% , 정치력 희득 -0.1
+			}
+		}
+
+		revolution = {
+			picture = fourth_international
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.20
+				conscription = 0.10
+				army_morale_factor = 0.05
+				politic_power_gain = 0.2
+				#전쟁지지도 20%,징병가능인구 10%,회복력 5% , 정치력 20%
 			}
 		}
 	}

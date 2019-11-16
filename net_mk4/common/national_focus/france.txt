@@ -296,18 +296,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			diplomatic_relation = {
-    			country = SOV
-    			relation = guarantee
-    			active = yes
-			}
-
+			
 		}
 		x = 20
 		y = 6
 
 	}
-	#레볼루숑(révolution)
+	#혁명!
 	focus = {
 		id = NF_FRA_revolution
 		icon = GFX_goal_support_fourth_int
@@ -316,6 +311,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_party_consolidation
 			focus = NF_FRA_su_contact
+		}
+		completion_reward = {
+			add_ideas = revolution
 		}
 		x = 19
 		y = 7
@@ -978,6 +976,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_cruiser_development
 		icon = GFX_goal_generic_navy_battleship
+		desc = NF_FRA_cruiser_development_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_cooperation_with_west_germany
@@ -990,6 +989,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_submarine_development
 		icon = GFX_goal_generic_navy_anti_submarine
+		desc = NF_FRA_submarine_development_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_cruiser_development
@@ -1003,6 +1003,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_basic_navigation
 		icon = GFX_goal_generic_navy_doctrines_tactics
+		desc = NF_FRA_basic_navigation_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_cruiser_development
@@ -1016,6 +1017,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_aircraft_carriercentric_doctrine
 		icon = GFX_goal_generic_occupy_start_war
+		desc = NF_FRA_aircraft_carriercentric_doctrine_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_basic_navigation
@@ -1031,6 +1033,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_hitting_doctrine
 		icon = GFX_focus_rocketry
+		desc = NF_FRA_hitting_doctrine_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_basic_navigation
@@ -1046,6 +1049,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_naval_air_force
 		icon = GFX_goal_generic_air_fighter2
+		desc = NF_FRA_naval_air_force_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_hitting_doctrine
@@ -1059,6 +1063,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_adl
 		icon = GFX_goal_generic_build_airforce
+		desc = NF_FRA_adl_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_faf
@@ -1075,6 +1080,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_new_aircraft_development
 		icon = GFX_goal_generic_air_fighter
+		desc = NF_FRA_new_aircraft_development_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_adl
