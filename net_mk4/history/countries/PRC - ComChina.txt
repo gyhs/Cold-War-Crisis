@@ -42,6 +42,8 @@ set_popularities = {
 add_ideas = {
 }
 
+give_guarantee = PRK
+
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 
