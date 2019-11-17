@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 0 y = 1200 }
+	continuous_focus_position = { x = 0 y = 1100 }
 	focus = {
 		id = UK_3
 		icon = GFX_focus_generic_the_giant_wakes
@@ -70,9 +70,7 @@ focus_tree = {
 			has_country_flag = flag_UK_d
 		}
 		completion_reward = {
-			set_rule= { 
-			can_create_factions = yes 
-			}
+			create_faction = '영연방'
 		}
 	}
 	focus = {
@@ -235,6 +233,11 @@ focus_tree = {
 		available = {
 			has_country_flag = flag_UK_b
 		}
+		
+		x = 9
+		y = 1
+
+
 		completion_reward = {
 		126 = {
 			add_extra_state_shared_building_slots = 1
@@ -250,12 +253,9 @@ focus_tree = {
 				type = arms_factory
 				level = 1
 				instant_build = yes
+				}
 			}
 		}
-	}
-		x = 9
-		y = 1
-
 	}
 	focus = {
 		id = UK_21
@@ -338,7 +338,57 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-
+		
+		completion_reward = {
+			127 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			123 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			126 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			125 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			129 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			128 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = UK_26
@@ -366,6 +416,71 @@ focus_tree = {
 		x = 15
 		y = 2
 
+		completion_reward = {
+			130 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			131 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			132 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			122 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			133 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			121 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			136 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			120 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			119 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = UK_24
@@ -378,6 +493,9 @@ focus_tree = {
 		x = 14
 		y = 3
 
+		completion_reward = {
+			add_ideas = uk_national_health_service
+		}
 	}
 	focus = {
 		id = UK_25
@@ -389,6 +507,18 @@ focus_tree = {
 		x = 16
 		y = 3
 
+		completion_reward = {
+			add_resource= { 
+			type = oil 
+			amount = 8 
+			state = 862
+			}
+			add_resource= { 
+			type = oil 
+			amount = 8 
+			state = 851
+			}
+		}
 	}
 	focus = {
 		id = UK_27
@@ -415,6 +545,9 @@ focus_tree = {
 		x = 13
 		y = 4
 
+		completion_reward = {
+			remove_ideas = uk_great_depression3
+		}
 	}
 	focus = {
 		id = UK_0
