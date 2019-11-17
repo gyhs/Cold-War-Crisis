@@ -279,7 +279,6 @@ give_guarantee = MON
 give_guarantee = YUG
 give_guarantee = ALB
 give_guarantee = CUB
-give_guarantee = PRK
 
 give_military_access = MON
 
