@@ -22,10 +22,18 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= -0.10
 			}
 			
-			allowed_to_remove = {
+			
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					OR = {
+						has_government = communism
+						has_government = socialism
+						}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
@@ -51,10 +59,21 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= -0.05
 			}
 			
-			allowed_to_remove = {
+			
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					NOT= {
+						OR = {
+							has_government = social_democracy
+							has_government = social_liberalism
+							has_government = market_liberalism
+						}
+					}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
@@ -80,10 +99,19 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= -0.05
 			}
 			
-			allowed_to_remove = {
+			
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					NOT= {
+						OR = {
+							has_government = market_liberalism
+						}
+					}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
@@ -109,10 +137,19 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= -0.05
 			}
 			
-			allowed_to_remove = {
+			
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					NOT= {
+						OR = {
+							has_government = market_liberalism
+							}
+						}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
@@ -140,10 +177,21 @@ ideas = {
 				conversion_cost_civ_to_mil_factor=0.2
 			}
 			
-			allowed_to_remove = {
+			
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					NOT= {
+						OR = {
+							has_government = communism
+							has_government = socialism
+							has_government = social_democracy
+							}
+						}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
@@ -171,10 +219,20 @@ ideas = {
 				conversion_cost_civ_to_mil_factor=0.2
 			}
 			
-			allowed_to_remove = {
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					NOT= {
+						OR = {
+							has_government = communism
+							has_government = socialism
+							has_government = social_democracy
+							}
+						}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
@@ -202,10 +260,20 @@ ideas = {
 				conversion_cost_civ_to_mil_factor=0.2
 			}
 			
-			allowed_to_remove = {
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					NOT= {
+						OR = {
+							has_government = communism
+							has_government = socialism
+							has_government = social_democracy
+							}
+						}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
@@ -233,10 +301,20 @@ ideas = {
 				conversion_cost_civ_to_mil_factor=0.2
 			}
 			
-			allowed_to_remove = {
+			available = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					NOT= {
+						OR = {
+							has_government = communism
+							has_government = socialism
+							has_government = social_democracy
+							}
+						}
+					OR = {
+						#has_idea = partial_economic_mobilisation
+						#has_idea = war_economy
+						#has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
