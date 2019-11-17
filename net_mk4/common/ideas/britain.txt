@@ -114,7 +114,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-                weekly_manpower = 1.00
+                weekly_manpower = 100
 			}
 		}
 	}
