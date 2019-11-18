@@ -19,7 +19,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100 
 			#정치력 100
-			add_ideas = uk_national_health_service
 		}
 	}
 	#프랑스군
