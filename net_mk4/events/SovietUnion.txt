@@ -476,17 +476,54 @@ country_event = {
 			give_guarantee = FRA
 			#독립보장
 			}
+		FRA = {
+			news_event = {
+			id = NE_FRA.6
+			}
+		}
 		}
     option = {
         name = soviet.14.cd
 		SOV ={
 			give_guarantee = FRA
+			send_equipment = {
+    			equipment = infantry_equipment
+    			amount = 2000
+    			target = FRA
 			}
+			#독립보장 , 보병장비 2000정
+			}
+		FRA = {
+			news_event = {
+			id = NE_FRA.6
+			}
+		}
     }
     option = {
         name = soviet.14.ef
 		SOV ={
 			give_guarantee = FRA
+			send_equipment = {
+    			equipment = infantry_equipment
+    			amount = 3000
+    			target = FRA
 			}
+			send_equipment = {
+    			equipment = artillery_equipment
+    			amount = 600
+    			target = FRA
+			}
+			send_equipment = {
+    			equipment = modern_tank_equipment
+    			amount = 200
+    			target = FRA
+			}
+			#독립보장 ,보병장비 3000정,야포 600포,전차 200대
+			}
+		FRA = {
+			news_event = {
+				id = NE_FRA.6
+			}
+		}
     }
 }

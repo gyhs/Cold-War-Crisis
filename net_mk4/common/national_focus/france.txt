@@ -296,9 +296,19 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				#정권 지도자 교체 공산주의
+			}
 			add_opinion_modifier = {
 				target = FRA
 				modifier = mission_to_the_SOV
+				#소비에트가 프랑스에 대한 관계도 +50 
+			}
+			add_timed_idea = {
+				idea = sov_support
+				days = 180
+				#소련의 정권지원
 			}
 		}
 		x = 20

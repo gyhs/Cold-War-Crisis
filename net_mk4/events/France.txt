@@ -95,3 +95,16 @@ news_event = {
         name = NE_FRA.5.a
     }
 }
+#소련이 우리를 지원하다!
+news_event = {
+    id = NE_FRA.6
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.6"}
+    title = NE_FRA.6.title
+    desc = NE_FRA.6.desc
+
+    picture = GFX_event_sov_support
+
+    option = {
+        name = NE_FRA.6.a
+    }
+}

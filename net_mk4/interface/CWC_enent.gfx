@@ -9,4 +9,9 @@ spriteTypes = {
 		name = "GFX_event_gorbachev_meeting"
 		texturefile = "gfx/event_pictures/event_gorbachev_meeting.dds"
 	}
+
+	spriteType = {
+		name = "GFX_event_sov_support"
+		texturefile = "gfx/event_pictures/event_sov_support.dds"
+	}
 }

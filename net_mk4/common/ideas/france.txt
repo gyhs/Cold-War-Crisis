@@ -286,5 +286,24 @@ ideas = {
 				#전쟁지지도 20%,징병가능인구 10%,회복력 5% , 정치력 20%
 			}
 		}
+
+		sov_support = {
+			picture = hol_haven_of_tolerance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.2
+				#공산주의 증가
+			}
+		}
 	}
 }
