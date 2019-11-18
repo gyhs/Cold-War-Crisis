@@ -17,4 +17,9 @@ spriteTypes = {
 		name = "GFX_idea_GIGN_idea"
 		texturefile = "gfx/interface/ideas/GIGN_idea.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_uk_national_health_service"
+		texturefile = "gfx/interface/ideas/uk_national_health_service.dds"
+	}
 }

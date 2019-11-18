@@ -289,7 +289,7 @@ ideas = {
 
 		sov_support = {
 			picture = hol_haven_of_tolerance
-			
+
 			allowed = {
 				always = no
 			}
@@ -305,5 +305,23 @@ ideas = {
 				#공산주의 증가
 			}
 		}
-	}
+		uk_national_health_service = {
+            picture = uk_national_health_service
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                weekly_manpower = 100
+            }
+        }
+    }
+		
 }

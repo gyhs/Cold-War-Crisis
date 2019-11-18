@@ -118,4 +118,24 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+        uk_national_health_service = {
+            picture = uk_national_health_service
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                weekly_manpower = 100
+            }
+        }
+    }
 }

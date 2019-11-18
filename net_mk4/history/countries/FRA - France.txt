@@ -44,9 +44,9 @@ add_ideas = {
 #
 ###
 create_country_leader = {
-	name = "앙드레 라주엔"
-	desc = "POLITICS_FRA_Andre_Lajoinie_DESC"
-	picture = "POLITICS_FRA_Andre_Lajoinie.dds"
+	name = "조르주 마르쉐"
+	desc = "POLITICS_FRA_Georges_Marchais_DESC"
+	picture = "POLITICS_FRA_Georges_Marchais.dds"
 	expire = "2100.3.1"
 	ideology = communism_subtype_1
 	traits = {
