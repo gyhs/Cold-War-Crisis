@@ -464,11 +464,9 @@ country_event = {
 
     desc = soviet.14.desc
 
-	picture = GFX_event_gorbachev_meeting
+	is_triggered_only = yes
 
-	trigger = {
-		has_completed_focus = NF_FRA_su_contact
-	}
+	picture = GFX_event_gorbachev_meeting
 
     option = {
         name = soviet.14.ab
@@ -495,7 +493,7 @@ country_event = {
 			}
 		FRA = {
 			news_event = {
-			id = NE_FRA.6
+				id = NE_FRA.6
 			}
 		}
     }

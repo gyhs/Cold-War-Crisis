@@ -47,7 +47,7 @@ news_event = {
     hidden = yes
     firex_only_once = yes
     trigger = {
-        has_completed_focus = NF_FRA_treaty_of_permanent_revolution
+        has_focus_tree = NF_FRA_treaty_of_permanent_revolution
     }
     immediate = {
         FRA ={
@@ -101,10 +101,27 @@ news_event = {
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.6"}
     title = NE_FRA.6.title
     desc = NE_FRA.6.desc
-
+    is_triggered_only = yes
     picture = GFX_event_sov_support
 
     option = {
         name = NE_FRA.6.a
+    }
+}
+
+#소련 지원의 트리거
+news_event = {
+    id = NE_FRA.7
+    hidden = yes
+    firex_only_once = yes
+    trigger = {
+        has_focus_tree = NF_FRA_su_contact
+    }
+    immediate = {
+        SOV = {
+            news_event = { 
+                id = soviet.14
+            }
+        }
     }
 }
