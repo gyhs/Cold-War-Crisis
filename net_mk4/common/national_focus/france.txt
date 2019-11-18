@@ -266,7 +266,7 @@ focus_tree = {
 		id = NF_FRA_treaty_of_permanent_revolution
 		icon = GFX_goal_anschluss
 		desc = NF_FRA_treaty_of_permanent_revolution_desc
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_school_of_youth
 		}
@@ -364,7 +364,7 @@ focus_tree = {
 		id = NF_FRA_wp_Join
 		icon = GFX_focus_ger_great_red_menace
 		desc = NF_FRA_wp_Join_desc
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_support_for_kgb
 		}
