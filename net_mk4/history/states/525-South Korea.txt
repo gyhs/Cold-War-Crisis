@@ -6,7 +6,7 @@ state={
 	history={
 		owner = KOR
 		victory_points = {
-			7125 3 
+			7125 40
 		}
 		add_core_of = KOR
 		add_core_of = PRK
