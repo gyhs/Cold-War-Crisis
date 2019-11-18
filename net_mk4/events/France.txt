@@ -45,14 +45,18 @@ news_event = {
     id = NE_FRA.3
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.3"}
     hidden = yes
-    firex_only_once = yes
+    fire_only_once = yes
     trigger = {
-        has_focus_tree = NF_FRA_treaty_of_permanent_revolution
+        focus_progress = {
+            focus = NF_FRA_treaty_of_permanent_revolution
+            progress > 0.99
+        }
     }
     immediate = {
         FRA ={
             news_event = {
                 id = NE_FRA.4
+                days = 1
             }            
         }
         every_country = {
@@ -113,14 +117,18 @@ news_event = {
 news_event = {
     id = NE_FRA.7
     hidden = yes
-    firex_only_once = yes
+    fire_only_once = yes
     trigger = {
-        has_focus_tree = NF_FRA_su_contact
+        focus_progress = {
+            focus = NF_FRA_su_contact
+            progress > 0.99
+        }
     }
     immediate = {
         SOV = {
             news_event = { 
                 id = soviet.14
+                days = 1
             }
         }
     }
