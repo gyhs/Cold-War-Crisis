@@ -6,6 +6,11 @@
 set_technology = {
 }
 
+add_ideas = {
+	#법률
+	market_economy_04
+}
+
 set_convoys = 5
 
 set_politics = {	

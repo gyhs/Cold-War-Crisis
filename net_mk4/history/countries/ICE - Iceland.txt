@@ -4,10 +4,12 @@ oob = "ICE_1987"
 
 set_research_slots = 3
 
-add_ideas = {
+set_technology = {
 }
 
-set_technology = {
+add_ideas = {
+	#법률
+	market_economy_04
 }
 
 set_convoys = 30

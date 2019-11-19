@@ -6,6 +6,11 @@ set_research_slots = 3
 
 set_technology = {
 }
+	
+add_ideas = {
+	#법률
+	market_economy_04
+}
 
 set_politics = {	
 	ruling_party = market_liberalism

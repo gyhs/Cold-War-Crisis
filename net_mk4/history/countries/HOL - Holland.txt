@@ -9,10 +9,13 @@ set_war_support = 0
 set_technology = {
 }
 
+add_ideas = {
+	#법률
+	market_economy_04
+}
+
 set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
 
-add_ideas = {
-}
 
 set_politics = {	
 	ruling_party = market_liberalism
