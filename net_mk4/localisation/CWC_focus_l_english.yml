@@ -2,8 +2,8 @@
  available_head_of_government:0 "사용 가능한 §Y정부 수반§!:\n"
  available_foreign_minister:0 "사용 가능한 §Y외교통상부 장관§!:\n"
  available_economy_minister:0 "사용 가능한 §Y산업통상부 장관§!:\n"
- available_security_minister:0 "사용 가능한 §Y치안장관§!:\n"
- available_intel_minister:0 "사용 가능한 §Y첩보국장§!:\n"
+ available_science_minister:0 "사용 가능한 §과학기술부 장관§!:\n"
+ available_intel_minister:0 "사용 가능한 §Y첩보장관§!:\n"
  available_defence_minister:0 "사용 가능한 §Y국방장관§!:\n"
  
  available_economic_mobilisation:0 "사용 가능한 §Y경제 동원령§!:\n"

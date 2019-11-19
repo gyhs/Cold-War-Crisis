@@ -300,7 +300,7 @@ ideas = {
 		}
 	}
 	
-	security_minister = {	# 치안장관 - 국내 불만도 및 점령지 효율 등등
+	science_minister = {	# 치안장관 - 국내 불만도 및 점령지 효율 등등
 		generic_communist_revolutionary = {
 			
 			allowed = {

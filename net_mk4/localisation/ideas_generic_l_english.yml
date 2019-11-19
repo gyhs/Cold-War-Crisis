@@ -13,8 +13,8 @@
  head_of_government:0 "정부수반"
  foreign_minister:0 "외교통상부 장관"
  economy_minister:0 "산업통상부 장관"
- security_minister:0 "치안장관"
- intel_minister:0 "첩보국장"
+ science_minister:0 "과학기술부 장관"
+ intel_minister:0 "첩보장관"
  defence_minister:0 "국방장관"
  
  planned_economy_04:0 "계획경제 4"

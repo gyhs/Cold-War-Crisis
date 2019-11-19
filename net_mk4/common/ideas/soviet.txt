@@ -380,7 +380,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -408,7 +408,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -436,7 +436,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -464,7 +464,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -492,7 +492,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -520,7 +520,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -548,7 +548,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -576,7 +576,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -604,7 +604,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -632,7 +632,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -660,7 +660,7 @@ ideas = {
 				head_of_government_cost_factor = 0.5
 				foreign_minister_cost_factor = 0.5
 				economy_minister_cost_factor = 0.5
-				security_minister_cost_factor = 0.5
+				science_minister_cost_factor = 0.5
 				intel_minister_cost_factor = 0.5
 				defence_minister_cost_factor = 0.5
 				
@@ -682,7 +682,7 @@ ideas = {
 				head_of_government_cost_factor = 0.25
 				foreign_minister_cost_factor = 0.25
 				economy_minister_cost_factor = 0.25
-				security_minister_cost_factor = 0.25
+				science_minister_cost_factor = 0.25
 				intel_minister_cost_factor = 0.25
 				defence_minister_cost_factor = 0.25
 				
