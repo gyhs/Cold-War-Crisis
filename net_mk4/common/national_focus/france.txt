@@ -341,6 +341,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_su_contact
 		}
+		completion_reward = {
+			add_ideas = kgb_support
+		}
 		x = 21
 		y = 7
 
@@ -1106,6 +1109,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_attacker_development
 		icon = GFX_goal_poland_goal
+		desc = NF_FRA_attacker_development_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_new_aircraft_development
@@ -1118,6 +1122,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_aew_fighter_development
 		icon = GFX_goal_continuous_air_production
+		desc = NF_FRA_aew_fighter_development_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_new_aircraft_development
@@ -1129,6 +1134,7 @@ focus_tree = {
 	#기초항공교리
 	focus = {
 		id = NF_FRA_basic_air_warfare
+		desc = NF_FRA_basic_air_warfare_desc
 		icon = GFX_goal_generic_CAS
 		cost = 10.00
 		prerequisite = {
@@ -1144,6 +1150,7 @@ focus_tree = {
 	#전략적 파괴
 	focus = {
 		id = NF_FRA_strategic_destruction
+		desc = NF_FRA_strategic_destruction_desc
 		icon = GFX_goal_generic_air_bomber
 		cost = 10.00
 		prerequisite = {
@@ -1161,6 +1168,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_operational_integrity
 		icon = GFX_goal_generic_air_fighter
+		desc = NF_FRA_operational_integrity_desc
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_basic_air_warfare
@@ -1176,6 +1184,7 @@ focus_tree = {
 	#전장 지원
 	focus = {
 		id = NF_FRA_battlefield_support
+		desc = NF_FRA_battlefield_support_desc
 		icon = GFX_goal_generic_air_doctrine
 		cost = 10.00
 		prerequisite = {
@@ -1192,6 +1201,7 @@ focus_tree = {
 	#스텔스 기술의 응용
 	focus = {
 		id = NF_FRA_application_of_new_technology
+		desc = NF_FRA_application_of_new_technology_desc
 		icon = GFX_goal_continuous_air_production
 		cost = 10.00
 		prerequisite = {

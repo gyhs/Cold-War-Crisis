@@ -305,6 +305,31 @@ ideas = {
 				#공산주의 증가
 			}
 		}
+
+		kgb_support = {
+			picture = kgb_idea
+			desc = kgb_support_desc
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.1
+				stability_factor = 0.15
+				politic_power_gain = 0.2
+				non_core_manpower = 0.02
+				resistance_tick_auto = -2
+				enemy_partisan_effect = -0.1
+				#공산주의 증가 , 안정도 15% , 정치력 20% , 비핵심 인력 , 파르티잔 저하 , 당 저항
+			}
+		}
     }
 		
 }

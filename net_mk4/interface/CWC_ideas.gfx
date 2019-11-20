@@ -22,4 +22,9 @@ spriteTypes = {
 		name = "GFX_idea_uk_national_health_service"
 		texturefile = "gfx/interface/ideas/uk_national_health_service.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_kgb_idea"
+		texturefile = "gfx/interface/ideas/kgb_idea.dds"
+	}
 }
