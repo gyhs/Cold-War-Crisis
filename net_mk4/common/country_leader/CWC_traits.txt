@@ -1,0 +1,7 @@
+leader_traits = {
+    father_of_the_socialist_party = {
+        random = no
+        political_power_factor = 0.25
+        stability_factor = 0.10
+    }
+}
