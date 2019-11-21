@@ -20,8 +20,8 @@ add_ideas = {
 }
 
 set_politics = {	
-	ruling_party = market_liberalism
-	last_election = "1930.11.9"
+	ruling_party = social_democracy
+	last_election = "1986.6.16"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -29,9 +29,9 @@ set_politics = {
 set_popularities = {
 	communism = 0
 	socialism = 5
-	social_democracy = 5
+	social_democracy = 45
 	social_liberalism = 40
-	market_liberalism = 45
+	market_liberalism = 10
 	social_conservatism = 5
 	authoritarianism = 0
 	fascism = 0
@@ -63,11 +63,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "쿠르트 발트하임"
-	desc = "POLITICS_AUS_Kurt_Waldheim_DESC"
-	picture = "POLITICS_AUS_Kurt_Waldheim.dds"
-	expire = "2100.3.1"
-	ideology = social_conservatism_subtype_1
+	name = "프란츠 프라니츠키"
+	desc = "POLITICS_FRANZ_VRANITZKY_DESC"
+	picture = "Portrait_Franz_Vranitzky.dds"
+	expire = "1997.1.28"
+	ideology = social_democracy_subtype_1
 	traits = {
 		
 	}

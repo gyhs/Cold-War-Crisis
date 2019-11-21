@@ -64,10 +64,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Władysław Gomułka"
-	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-	picture = "POLITICS_Poland_Wladyslaw_Gomulka.dds"
-	expire = "1965.1.1"
+	name = "보이치에흐 야루젤스키"
+	desc = "POLITICS_WOJCIECH_JARUZELSKI_DESC"
+	picture = "Portrait_Wojciech_Jaruzelski.dds"
+	expire = "1990.12.22"
 	ideology = communism_subtype_1
 	traits = {
 		#

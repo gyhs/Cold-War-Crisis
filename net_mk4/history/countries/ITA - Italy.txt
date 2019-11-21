@@ -27,18 +27,18 @@ set_convoys = 200
 
 set_politics = {
 	
-	ruling_party = market_liberalism
-	last_election = "1934.3.26"
-	election_frequency = 60
+	ruling_party = social_conservatism
+	last_election = "1996.5.17"
+	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	communism = 0
 	socialism = 5
 	social_democracy = 5
-	social_liberalism = 40
-	market_liberalism = 45
-	social_conservatism = 5
+	social_liberalism = 30
+	market_liberalism = 20
+	social_conservatism = 45
 	authoritarianism = 0
 	fascism = 0
 }
@@ -54,10 +54,10 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "아민토레 판파니"
-	desc = "POLITICS_ITA_Amintore_Fanfani_DESC"
-	picture = "POLITICS_ITA_Amintore_Fanfani.dds"
-	expire = "1965.1.1"
+	name = "로마노 프로디"
+	desc = "POLITICS_ROMANO_PRODI_DESC"
+	picture = "Portrait_Romano_Prodi.dds"
+	expire = "1998.10.21"
 	ideology = social_conservatism_subtype_1
 	traits = {
 	}
