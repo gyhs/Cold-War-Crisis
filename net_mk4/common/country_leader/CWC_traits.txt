@@ -4,4 +4,15 @@ leader_traits = {
         political_power_factor = 0.25
         stability_factor = 0.10
     }
+
+    French_chauvinist = {
+        random = no
+        conscription = 0.1
+        stability_factor = -0.1
+    }
+
+    Eurocommunism = {
+        random = no
+        
+    }
 }

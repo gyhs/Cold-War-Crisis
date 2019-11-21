@@ -50,7 +50,7 @@ create_country_leader = {
 	expire = "2100.3.1"
 	ideology = communism_subtype_1
 	traits = {
-		
+		Eurocommunism
 	}
 }
 create_country_leader = {
@@ -80,7 +80,7 @@ create_country_leader = {
 	expire = "2100.3.1"
 	ideology = fascism_subtype_1
 	traits = {
-		
+		French_chauvinist
 	}
 }
 

@@ -148,10 +148,10 @@ focus_tree = {
 		}
 		available = {
 			if = {
-			fascism > 0.4
+			fascism > 0.3
 			}
 		}
-		#파시스트 40%이상 수행가능
+		#파시스트 30%이상 수행가능
 		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
@@ -1445,7 +1445,7 @@ focus_tree = {
 	#스페인
 	focus = {
 		id = NF_FRA_spain
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_friend_spain
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_making_comrades
@@ -1457,7 +1457,7 @@ focus_tree = {
 	#아일랜드
 	focus = {
 		id = NF_FRA_Ireland
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_friend_ireland
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_making_comrades
