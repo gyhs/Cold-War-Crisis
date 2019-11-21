@@ -49,29 +49,30 @@ idea_categories = {
 		removal_cost = 0
 	}
 	
-	research_production = {
-		slot = tank_manufacturer
-		slot = naval_manufacturer
-		slot = aircraft_manufacturer
-		slot = materiel_manufacturer
-		slot = industrial_concern
-		slot = theorist
-
-		cost = 150
-		removal_cost = 0
-
-	}
-	
 	military_staff = {
 		slot = army_chief 
 		slot = navy_chief 
 		slot = air_chief
-		slot = high_command
-		slot = high_command
-		slot = high_command
+		slot = infantry_equipment_manufacturer
+		slot = artillery_equipment_manufacturer
+		slot = armored_car_equipment_manufacturer
+		#high_command
 		
 		cost = 150
 		removal_cost = 0
+	}
+	
+	research_production = {
+		slot = tank_manufacturer
+		slot = naval_manufacturer
+		slot = aircraft_manufacturer	#전투기
+		slot = materiel_manufacturer	#폭격기
+		slot = industrial_concern		#헬기
+		slot = theorist					#잠수함
+
+		cost = 150
+		removal_cost = 0
+
 	}
 	
 	military = {

@@ -251,7 +251,19 @@ spriteTypes = {
 		name = "GFX_idea_slot_industrial_concern"
 		textureFile = "gfx/interface/idea_slot_industrial_concern.dds"
 	}
-
+################### 설계사 #######
+	spriteType = {
+		name = "GFX_idea_slot_infantry_equipment_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_infantry_equipment_manufacturer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_artillery_equipment_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_artillery_equipment_manufacturer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_armored_car_equipment_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_armored_car_equipment_manufacturer.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_slot_materiel_manufacturer"
 		textureFile = "gfx/interface/idea_slot_materiel_manufacturer.dds"
