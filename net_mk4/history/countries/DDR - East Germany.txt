@@ -75,9 +75,9 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "에리히 호네커"
-	desc = "POLITICS_DDR_Erich_Honecker_DESC"
-	picture = "POLITICS_DDR_Erich_Honecker.dds"
-	expire = "2100.1.1"
+	desc = "POLITICS_ERICH_HONECKER_DESC"
+	picture = "Portrait_Erich_Honecker.dds"
+	expire = "1989.10.18"
 	ideology = communism_subtype_1
 	traits = {
 	}

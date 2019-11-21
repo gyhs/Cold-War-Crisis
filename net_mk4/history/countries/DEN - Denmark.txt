@@ -15,8 +15,8 @@ add_ideas = {
 
 
 set_politics = {	
-	ruling_party = market_liberalism
-	last_election = "1935.10.22"
+	ruling_party = social_conservatism
+	last_election = "1982.12.10"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -24,10 +24,10 @@ set_politics = {
 set_popularities = {
 	communism = 0
 	socialism = 5
-	social_democracy = 5
-	social_liberalism = 40
-	market_liberalism = 45
-	social_conservatism = 5
+	social_democracy = 15
+	social_liberalism = 35
+	market_liberalism = 5
+	social_conservatism = 45
 	authoritarianism = 0
 	fascism = 0
 }
@@ -35,11 +35,11 @@ set_popularities = {
 set_convoys = 40
 
 create_country_leader = {
-	name = "Thorvald Stauning"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "POLITICS_Denmark_Thorvald_Stauning.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy_subtype_1
+	name = "포울 슐뤼테르"
+	desc = "POLITICS_POUL_SCHLUTER_DESC"
+	picture = "Portrait_Poul_Schluter.dds"
+	expire = "1993.4.3"
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}

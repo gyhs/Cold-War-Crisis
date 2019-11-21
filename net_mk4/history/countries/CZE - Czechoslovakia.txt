@@ -48,10 +48,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Klement Gottwald"
-	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "POLITICS_Czech_Klement_Gottwald.dds"
-	expire = "1965.1.1"
+	name = "구스타우 후사크"
+	desc = "POLITICS_GUSTAV_HUSAK_DESC"
+	picture = "Portrait_Gutav_Husak.dds"
+	expire = "1989.11.18"
 	ideology = communism_subtype_1
 	traits = {
 		#

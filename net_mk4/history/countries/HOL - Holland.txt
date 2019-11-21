@@ -50,13 +50,13 @@ set_stability = 0.75
 #}
 
 create_country_leader = {
-	name = "Hendrikus Colijn"
-	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "GFX_POLITICS_holland_hendrikus_colijn"
-	expire = "1965.1.1"
-	ideology = social_conservatism_subtype_1
+	name = "뤼트 뤼버르스"
+	desc = "POLITICS_RUUD_LUBBERS_DESC"
+	picture = "Portrait_Ruud_Lubbers.dds"
+	expire = "1994.8.22"
+	ideology = market_liberalism_subtype_1
 	traits = {
-		strict_austerity_adherent
+
 	}
 }
 

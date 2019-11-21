@@ -32,11 +32,11 @@ set_convoys = 80
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Hubert Pierlot"
-	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "POLITICS_Belgium_Hubert_Pierlot.dds"
-	expire = "1965.1.1"
-	ideology = social_conservatism_subtype_1
+	name = "빌프리트 마르턴스"
+	desc = "POLITICS_WILFRIED_MARTENS_DESC"
+	picture = "Portrait_Wilfried_Martens.dds"
+	expire = "1992.3.7"
+	ideology = market_liberalism_subtype_1
 	traits = {
 		#
 	}
