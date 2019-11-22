@@ -22,7 +22,6 @@ bookmarks = {
 				eces_1
 				persistent_trade_deficit_5
 				currency_problem
-				market_economy_02
 			}
 			focuses = {
 				NF_FRA_memories_of_6_8
