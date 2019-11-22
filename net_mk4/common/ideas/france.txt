@@ -39,9 +39,9 @@ ideas = {
 				stability_factor = -0.30
 				war_support_factor = -0.20
 				conscription = -0.15
-				consumer_goods_factor = 0.45
+				consumer_goods_factor = 0.30
 			}
-			#누적되는 무역적자 (정치력 -0.4 , 징병가능인구 -15% , 소비제 45% , 안정도 -30% , 전쟁지지도 -20%)
+			#누적되는 무역적자 (정치력 -0.4 , 징병가능인구 -15% , 소비제 30% , 안정도 -30% , 전쟁지지도 -20%)
 		}
 		
 
