@@ -23,7 +23,7 @@ add_ideas = {
 	NS_Gen_army_corruption_1
 	
 	#법률
-	market_economy_04
+	market_Intervention_08
 }
 
 

@@ -13,7 +13,7 @@ add_ideas = {
 	eces_1
 	persistent_trade_deficit_5
 	currency_problem
-	market_economy_02
+	market_Intervention_06
 }
 
 set_convoys = 300

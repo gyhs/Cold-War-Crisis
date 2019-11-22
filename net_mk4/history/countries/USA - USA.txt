@@ -196,7 +196,7 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
-	market_economy_03
+	market_Intervention_07
 }
 
 # DIPLOMACY

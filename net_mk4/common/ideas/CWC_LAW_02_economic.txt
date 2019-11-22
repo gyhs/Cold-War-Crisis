@@ -2,7 +2,7 @@ ideas = {
 
 	economy = {
 		law = yes
-		planned_economy_04 = {
+		market_Intervention_01 = {
 			
 			
 			cost = 150
@@ -39,7 +39,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		planned_economy_03 = {
+		market_Intervention_02 = {
 			
 			
 			cost = 150
@@ -79,7 +79,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		planned_economy_02 = {
+		market_Intervention_03 = {
 			
 			
 			cost = 150
@@ -117,7 +117,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		planned_economy_01 = {
+		market_Intervention_04 = {
 			
 			
 			cost = 150
@@ -155,7 +155,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		market_economy_01 = {
+		market_Intervention_05 = {
 			
 			
 			cost = 150
@@ -197,7 +197,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		market_economy_02 = {
+		market_Intervention_06 = {
 			
 			
 			cost = 150
@@ -238,7 +238,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		market_economy_03 = {
+		market_Intervention_07 = {
 			
 			
 			cost = 150
@@ -279,7 +279,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		market_economy_04 = {
+		market_Intervention_08 = {
 			
 			
 			cost = 150

@@ -9,7 +9,7 @@ set_technology = {
 
 add_ideas = {
 	#법률
-	market_economy_04
+	market_Intervention_08
 }
 
 set_convoys = 30

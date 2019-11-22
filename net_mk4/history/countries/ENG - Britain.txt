@@ -11,7 +11,7 @@ set_war_support = 0.3
 set_technology = {
 }
 add_ideas = {
-	market_economy_03
+	market_Intervention_07
 	uk_great_depression1
 	eces_1
 }

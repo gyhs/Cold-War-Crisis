@@ -187,7 +187,7 @@ add_ideas = {
 					##법
 					limited_exports
 					press_state
-					planned_economy_03
+					market_Intervention_02
 					security_police_state
 					fdi_banned
 					tax_extreme

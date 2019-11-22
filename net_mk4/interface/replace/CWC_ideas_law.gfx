@@ -1,36 +1,36 @@
 spriteTypes = {	
 	### 경제
 	spriteType = {
-		name = "GFX_idea_planned_economy_04"
-		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_04.dds"
+		name = "GFX_idea_market_Intervention_01"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_01.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_planned_economy_03"
-		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_03.dds"
+		name = "GFX_idea_market_Intervention_02"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_02.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_planned_economy_02"
-		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_02.dds"
+		name = "GFX_idea_market_Intervention_03"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_03.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_planned_economy_01"
-		texturefile = "gfx/interface/ideas/policy/general/idea_planned_economy_01.dds"
+		name = "GFX_idea_market_Intervention_04"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_04.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_market_economy_01"
-		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_01.dds"
+		name = "GFX_idea_market_Intervention_05"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_05.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_market_economy_02"
-		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_02.dds"
+		name = "GFX_idea_market_Intervention_06"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_06.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_market_economy_03"
-		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_03.dds"
+		name = "GFX_idea_market_Intervention_07"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_07.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_market_economy_04"
-		texturefile = "gfx/interface/ideas/policy/general/idea_market_economy_04.dds"
+		name = "GFX_idea_market_Intervention_08"
+		texturefile = "gfx/interface/ideas/policy/general/idea_market_Intervention_08.dds"
 	}
 	
 	### 경제
