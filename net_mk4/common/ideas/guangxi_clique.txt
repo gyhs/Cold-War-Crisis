@@ -83,69 +83,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		GXC_yang_hulin = {
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = GXC
-			}
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		GXC_do_liang = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = GXC
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		GXC_teng_qingshan = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = GXC
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		GXC_zha_zemin = {
-
-			picture = generic_navy_asia_2
-			
-			allowed = {
-				original_tag = GXC
-			}
-			
-			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
 	army_chief = {
 		
 		GXC_chen_jitang = {

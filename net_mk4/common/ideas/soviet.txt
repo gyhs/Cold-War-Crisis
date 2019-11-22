@@ -2084,28 +2084,6 @@ ideas = {
 			}
 		}	
 	}
-	
-	
-	high_command = {
-		
-		arseniy_golovko = {
-			#Also unit leader: 409
-			
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			traits = { navy_amphibious_assault_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
 		
 	tank_manufacturer = {
 		

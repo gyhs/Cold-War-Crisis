@@ -134,68 +134,6 @@ ideas = {
 
 	}
 
-	high_command = {
-
-		IRE_dan_mckenna = {
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = IRE
-			}
-					
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		IRE_frank_fahy = {
-
-			picture = generic_army_europe_6
-			
-			allowed = {
-				original_tag = IRE
-			}
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		IRE_michael_brennan = {
-
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = IRE
-			}
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		IRE_a_t_lawlor = {
-
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = IRE
-			}
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
 	theorist = {
 		IRE_michael_joe_costello = {
 			

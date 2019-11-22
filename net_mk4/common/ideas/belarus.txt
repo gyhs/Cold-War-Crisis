@@ -125,54 +125,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		BLR_piotr_kozlov = {
-			
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = BLR
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		BLR_alexander_akulich = {
-
-			picture = generic_army_europe_2
-			
-			allowed = {
-				original_tag = BLR
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BLR_maksim_antonyuk = {
-
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = BLR
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
-
 	theorist = {
 		BLR_aleksei_antonov = {
 			

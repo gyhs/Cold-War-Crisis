@@ -140,69 +140,6 @@ ideas = {
 			}
 		}
 	}
-
-	high_command = {
-
-		BHU_sonam_pradukha = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = BHU
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		BHU_dechen_sonam = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = BHU
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BHU_bill_collett = {
-
-			picture = generic_air_asia_3
-			
-			allowed = {
-				original_tag = BHU
-			}
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BHU_gendun_shakabpa = {
-
-			picture = generic_navy_asia_1
-			
-			allowed = {
-				original_tag = BHU
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	
 
 

@@ -87,69 +87,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		NEP_khusbu_singh = {
-
-			picture = generic_army_asia_1 #there are no pictures of women in that are suitable
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		NEP_birsha_gurung = {
-
-			picture = generic_army_asia_3 #there are no pictures of women in that are suitable
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NEP_hira_rana = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NEP_gagan_lama = {
-
-			picture = generic_navy_asia_2
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
 	army_chief = {
 		
 		NEP_mohan_rana = {

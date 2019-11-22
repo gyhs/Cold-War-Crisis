@@ -93,69 +93,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		COS_francisco_rosendo_arguello = {
-			
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = COS
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		COS_guillermo_macho_nunez = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = COS
-			}
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		COS_carlos_uribe_alpoveda = {
-
-			picture = generic_air_south_america_2
-			
-			allowed = {
-				original_tag = COS
-			}
-			
-			traits = { air_strategic_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		COS_hugo_siedler_mendoza = {
-
-			picture = generic_navy_south_america_3
-			
-			allowed = {
-				original_tag = COS
-			}
-			
-			traits = { navy_anti_submarine_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
-
 	army_chief = {
 
 		COS_hugo_montes_ramirez = {

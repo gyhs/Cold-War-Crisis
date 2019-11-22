@@ -107,69 +107,6 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 	}
-
-	high_command = {
-
-		HON_gustavo_schmidt = {
-
-			picture = generic_air_south_america_2
-			
-			allowed = {
-				original_tag = HON
-			}
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HON_neto_britto = {
-
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = HON
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HON_oswaldo_lopez_arellano = {
-
-			picture = generic_navy_south_america_3
-			
-			allowed = {
-				original_tag = HON
-			}
-			
-			traits = { navy_anti_submarine_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HON_teodore_alberto = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = HON
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 

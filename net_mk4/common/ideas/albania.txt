@@ -84,69 +84,6 @@ ideas = {
 			traits = { naval_theorist }
 		}
 	}
-
-	high_command = {
-
-		ALB_selim_moishiou = {
-
-			picture = generic_army_arab_1
-			
-			allowed = {
-				original_tag = ALB
-			}
-			
-			traits = { army_artillery_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ALB_alexander_mori = {
-
-			picture = generic_army_arab_2
-			
-			allowed = {
-				original_tag = ALB
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ALB_kristo_cajupi = {
-
-			picture = generic_army_arab_3
-			
-			allowed = {
-				original_tag = ALB
-			}
-			
-			traits = { army_concealment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ALB_halil_nergutti = {
-
-			picture = generic_navy_arab_1
-			
-			allowed = {
-				original_tag = ALB
-			}
-			
-			traits = { navy_capital_ship_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 

@@ -137,69 +137,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		NIC_manuel_roque_garcia = {
-			
-			picture = generic_army_south_america_1
-			
-			allowed = {
-				original_tag = NIC
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		NIC_manuel_corovel_kirsch = {
-
-			picture = generic_army_south_america_3
-			
-			allowed = {
-				original_tag = NIC
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NIC_bernardo_doroteo = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = NIC
-			}
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NIC_juan_pablo_esquerra = {
-
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = NIC
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
-
 	theorist = {
 		NIC_maximiliano_benito = {
 			

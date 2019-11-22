@@ -88,69 +88,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		HAI_ernst_severe = {
-
-			picture = generic_army_african_2
-			
-			allowed = {
-				original_tag = HAI
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		HAI_paul_magloire = {
-
-			picture = generic_army_african_5
-			
-			allowed = {
-				original_tag = HAI
-			}
-			
-			traits = { army_concealment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HAI_andre_dumont = {
-
-			picture = generic_army_african_3
-			
-			allowed = {
-				original_tag = HAI
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HAI_belmeau_max_pierre = {
-
-			picture = generic_air_african_2
-			
-			allowed = {
-				original_tag = HAI
-			}
-			
-			traits = { air_airborne_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
 	army_chief = {
 		
 		HAI_franck_lavaud = {

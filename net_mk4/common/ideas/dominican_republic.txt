@@ -137,69 +137,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		DOM_jesus_da_costa_ruiz = {
-			
-			picture = generic_army_south_america_2
-			
-			allowed = {
-				original_tag = DOM
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		DOM_edgar_martinez = {
-
-			picture = generic_air_south_america_3
-			
-			allowed = {
-				original_tag = DOM
-			}
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		DOM_diego_trabajo_ruiz = {
-
-			picture = generic_air_south_america_2
-			
-			allowed = {
-				original_tag = DOM
-			}
-			
-			traits = { air_strategic_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		DOM_frank_feliz_miranda = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = DOM
-			}
-			
-			traits = { navy_chief_naval_aviation_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
-
 	theorist = {
 		DOM_manuel_pena_battle = {
 			

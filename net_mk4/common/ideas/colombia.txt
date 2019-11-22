@@ -82,69 +82,6 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 	}
-
-	high_command = {
-
-		COL_guillermo_padilla_manrique = {
-
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = COL
-			}
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		COL_gabriel_paris_gordillo = {
-
-			picture = generic_army_south_america_2
-			
-			allowed = {
-				original_tag = COL
-			}
-			
-			traits = { army_concealment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		COL_enrico_diaz_carias = {
-
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = COL
-			}
-			
-			traits = { navy_carrier_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		COL_manuel_quinones = {
-
-			picture = generic_air_south_america_2
-			
-			allowed = {
-				original_tag = COL
-			}
-			
-			traits = { air_strategic_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 

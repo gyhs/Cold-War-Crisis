@@ -68,69 +68,6 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 	}
-
-	high_command = {
-
-		TAN_kechir_ool = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = TAN
-			}
-			
-			traits = { army_cavalry_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TAN_homushku_churguj_ool = {
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = TAN
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TAN_tulberdiev = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = TAN
-			}
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TAN_rugalinskij = {
-
-			picture = generic_air_asia_1
-			
-			allowed = {
-				original_tag = TAN
-			}
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 

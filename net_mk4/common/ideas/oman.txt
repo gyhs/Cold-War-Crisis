@@ -84,69 +84,6 @@ ideas = {
 			traits = { naval_theorist }
 		}
 	}
-
-	high_command = {
-
-		OMA_abdallah_ibn_timur = {
-
-			picture = generic_air_arab_1
-			
-			allowed = {
-				original_tag = OMA
-			}
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		OMA_nasser_bazzi = {
-
-			picture = generic_air_arab_2
-			
-			allowed = {
-				original_tag = OMA
-			}
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		OMA_jassim_bin_hani = {
-
-			picture = generic_army_arab_3
-			
-			allowed = {
-				original_tag = OMA
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		OMA_zahir_ibn_timur = {
-
-			picture = generic_army_arab_1
-			
-			allowed = {
-				original_tag = OMA
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 

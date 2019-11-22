@@ -174,68 +174,6 @@ ideas = {
 
 	}
 
-	high_command = {
-
-		AUS_lothar_rendulic = {
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = AUS
-			}
-		
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		AUS_viktor_seebauer = {
-
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = AUS
-			}
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		AUS_wilhelm_zehner = {
-
-			picture = generic_army_europe_4
-			
-			allowed = {
-				original_tag = AUS
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		AUS_eugen_beyer = {
-
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = AUS
-			}
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
 	theorist = {
 		AUS_otto_meixner_von_zweienstamm = {
 			

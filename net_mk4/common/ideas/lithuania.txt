@@ -67,69 +67,6 @@ theorist = {
 		traits = { air_warfare_theorist }
 	}
 }
-
-high_command = {
-
-	LIT_juoza_barzda_bradauskas = {
-
-		picture = generic_army_europe_1
-		
-		allowed = {
-			original_tag = LIT
-		}
-		
-		traits = { army_artillery_2 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	LIT_albinas_cepas = {
-
-		picture = generic_army_europe_3
-		
-		allowed = {
-			original_tag = LIT
-		}
-		
-		traits = { army_infantry_2 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	LIT_kazys_musteikis = {
-
-		picture = generic_army_europe_5
-		
-		allowed = {
-			original_tag = LIT
-		}
-		
-		traits = { army_armored_2 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	LIT_adolfas_ramanauskas = {
-
-		picture = generic_army_europe_1
-		
-		allowed = {
-			original_tag = LIT
-		}
-		
-		traits = { army_concealment_2 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-}
 	# MILITARY
 	army_chief = {
 		

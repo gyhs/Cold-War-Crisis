@@ -74,55 +74,6 @@ ideas = {
 	}
 
 
-	high_command = {
-
-		MEN_yonimitsu_kasahara = {
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = MEN
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		MEN_kyoiji_tomonaga = {
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = MEN
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		MEN_hesehn_tiemei = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = MEN
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-
 
 	theorist = {
 		MEN_hung_zhehuang = {

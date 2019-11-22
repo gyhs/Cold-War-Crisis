@@ -67,69 +67,6 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 	}
-
-	high_command = {
-
-		BRA_epaminondas_dos_santos = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = BRA
-			}
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BRA_agliberto_vieira = {
-
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = BRA
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BRA_artur_da_costa_e_silva = {
-
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = BRA
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BRA_moreira_lima = {
-
-			picture = generic_air_south_america_2
-			
-			allowed = {
-				original_tag = BRA
-			}
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 

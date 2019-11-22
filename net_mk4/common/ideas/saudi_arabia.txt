@@ -78,69 +78,6 @@ ideas = {
 			traits = { naval_theorist }
 		}
 	}
-
-	high_command = {
-
-		SAU_saud_al_saud = {
-
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = SAU
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SAU_youssef_al_bishi = {
-
-			picture = generic_army_europe_2
-			
-			allowed = {
-				original_tag = SAU
-			}
-			
-			traits = { army_armored_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SAU_faisal_saud = {
-
-			picture = generic_navy_arab_3
-			
-			allowed = {
-				original_tag = SAU
-			}
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SAU_karim_nassar = {
-
-			picture = generic_army_arab_3
-			
-			allowed = {
-				original_tag = SAU
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 

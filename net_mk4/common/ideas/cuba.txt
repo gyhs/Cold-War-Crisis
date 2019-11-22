@@ -137,69 +137,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		CUB_juan_blas_hernandez = {
-			
-			picture = generic_army_south_america_1
-			
-			allowed = {
-				original_tag = CUB
-			}
-			
-			traits = { army_concealment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		CUB_fidel_castro = {
-
-			picture = generic_army_south_america_3
-			
-			allowed = {
-				original_tag = CUB
-			}
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		CUB_enrique_c_rolas = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = CUB
-			}
-			
-			traits = { air_naval_strike_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		CUB_angel_gonzalez = {
-
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = CUB
-			}
-			
-			traits = { navy_amphibious_assault_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
-
 	theorist = {
 		CUB_eduardo_chibas = {
 			

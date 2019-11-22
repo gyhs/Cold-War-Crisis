@@ -135,69 +135,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		LUX_francois_schammel = {
-
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = LUX
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		LUX_aloyse_glodt = {
-
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = LUX
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		LUX_damien_roeser = {
-
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = LUX
-			}
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		LUX_pierre_fischbach = {
-
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = LUX
-			}
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
 	theorist = {
 
 		LUX_alex_federspiel = {

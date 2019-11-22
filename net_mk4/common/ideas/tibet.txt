@@ -87,69 +87,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		TIB_khemey_sonam_wangdi = {
-
-			picture = generic_army_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_regrouping_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		TIB_chaghoe_namgyal_dorje = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TIB_tenpa_jamyang = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TIB_jamyang_rabten = {
-
-			picture = generic_navy_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { navy_anti_submarine_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
 	army_chief = {
 		
 		TIB_lobsang_tenzin = {

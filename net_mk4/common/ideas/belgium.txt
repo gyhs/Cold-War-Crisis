@@ -160,69 +160,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		BEL_victor_van_strydonck_de_burkel = {
-			
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = BEL
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		BEL_oscar_michiels = {
-
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = BEL
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BEL_rene_lagrou = {
-
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = BEL
-			}
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BEL_yvan_gerard = {
-
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = BEL
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
-
 	theorist = {
 		BEL_jules_pire = {
 			

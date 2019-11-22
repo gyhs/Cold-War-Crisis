@@ -160,69 +160,6 @@ ideas = {
 		}
 	}
 
-	high_command = {
-
-		USB_victor_van_strydonck_de_burkel = {
-			
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = USB
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		USB_oscar_michiels = {
-
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = USB
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		USB_rene_lagrou = {
-
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = USB
-			}
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		USB_yvan_gerard = {
-
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = USB
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
-
 	theorist = {
 		USB_jules_pire = {
 			

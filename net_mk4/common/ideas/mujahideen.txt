@@ -1011,69 +1011,6 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 	}
-
-	high_command = {
-
-		MUJ_mohammed_daoud_khan = {
-
-			picture = generic_political_advisor_arab_1
-			
-			allowed = {
-				original_tag = MUJ
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		MUJ_azam_ataullah = {
-
-			picture = generic_army_arab_2
-			
-			allowed = {
-				original_tag = MUJ
-			}
-			
-			traits = { army_infantry_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		MUJ_aalem_daana = {
-
-			picture = generic_navy_arab_3
-			
-			allowed = {
-				original_tag = MUJ
-			}
-			
-			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		MUJ_hares_muzafar = {
-
-			picture = generic_army_arab_3
-			
-			allowed = {
-				original_tag = MUJ
-			}
-			
-			traits = { army_entrenchment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	# MILITARY
 	army_chief = {
 
