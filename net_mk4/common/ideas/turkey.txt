@@ -36,39 +36,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-
-	TUR_mehmet_gunaltay = {
-				
-		picture = generic_army_europe_2
-
-		allowed = {
-			original_tag = TUR
-		}
-		
-		research_bonus = {
-			land_doctrine = 0.07
-		}
-		
-		traits = { military_theorist }
-	}
-
-	TUR_refik_saydam = {
-				
-		picture = generic_political_advisor_europe_1
-
-		allowed = {
-			original_tag = TUR
-		}
-		
-		research_bonus = {
-			air_doctrine = 0.07
-		}
-		
-		traits = { air_warfare_theorist }
-	}
-}
-
 	army_chief = {
 
 		TUR_kazim_orbay = {

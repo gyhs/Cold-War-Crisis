@@ -533,7 +533,7 @@ leader_traits = {
 		partisan_effect = 0.25
 		mobilization_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
-		theorist_cost_factor = -0.25
+		defence_minister_cost_factor = -0.25
 		
 		ai_will_do = {
 			factor = 1

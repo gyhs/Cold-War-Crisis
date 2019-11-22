@@ -141,54 +141,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		PHI_benito_n_ebuen = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = PHI
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		PHI_ramon_a_alcaraz = { 
-
-			picture = generic_air_asia_3
-			
-			allowed = {
-				original_tag = PHI
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		PHI_victor_h_dizon = {
-
-			picture = generic_navy_asia_3
-			
-			allowed = {
-				original_tag = PHI
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-	}
-
 
 
 }

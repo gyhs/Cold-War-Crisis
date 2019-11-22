@@ -677,41 +677,6 @@ ideas = {
 		}
 
 	}
-
-theorist = {
-
-	AST_norman_makin = {
-				
-		picture = generic_political_advisor_europe_3
-
-		allowed = {
-			original_tag = AST
-		}
-		
-		research_bonus = {
-			naval_doctrine = 0.07
-		}
-		
-		traits = { naval_theorist }
-	}
-
-	AST_james_fairbairn = {
-				
-		picture = generic_political_advisor_europe_2
-			
-		allowed = {
-			original_tag = AST
-		}
-		
-		research_bonus = {
-			air_doctrine = 0.07
-		}
-		
-		traits = { air_warfare_theorist }
-	}
-
-	
-}
 	# MILITARY
 	army_chief = {
 

@@ -49,39 +49,6 @@ ideas = {
 			}
 		}
 	}
-
-	theorist = {
-
-		URG_vittorio_amato_masso = {
-					
-			picture = generic_political_advisor_south_america_3
-
-			allowed = {
-				original_tag = URG
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		URG_ernesto_sanchez_elizondo = {
-					
-			picture = generic_political_advisor_south_america_2
-				
-			allowed = {
-				original_tag = URG
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

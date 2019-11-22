@@ -39,55 +39,6 @@ ideas = {
 			}
 		}
 	}
-
-	theorist = {
-
-		ECU_juan_pablo_martinez_iguarte = {
-					
-			picture = generic_army_south_america_1
-
-			allowed = {
-				original_tag = ECU
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		ECU_federico_paez_chiriboaga = {
-					
-			picture = generic_air_south_america_1
-				
-			allowed = {
-				original_tag = ECU
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		ECU_hugo_endara_penaherrera = {
-					
-					
-			allowed = {
-				original_tag = ECU
-			}
-			
-			picture = generic_political_advisor_south_america_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

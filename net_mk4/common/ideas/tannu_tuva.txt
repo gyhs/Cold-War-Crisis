@@ -35,39 +35,6 @@ ideas = {
 			traits = { armaments_organizer }
 		}
 	}
-
-	theorist = {
-
-		TAN_alaverdov = {
-					
-			picture = generic_army_asia_4
-
-			allowed = {
-				original_tag = TAN
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		TAN_ruzhenko = {
-					
-			picture = generic_air_asia_1
-				
-			allowed = {
-				original_tag = TAN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

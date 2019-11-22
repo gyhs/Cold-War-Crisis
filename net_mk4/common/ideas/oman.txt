@@ -35,55 +35,6 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 	}
-
-	theorist = {
-
-		OMA_musa_al_saif = {
-					
-			picture = generic_army_arab_1
-
-			allowed = {
-				original_tag = OMA
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		OMA_fayur_kassis = {
-					
-			picture = generic_air_arab_1
-				
-			allowed = {
-				original_tag = OMA
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		OMA_abdul_rahal = {
-					
-					
-			allowed = {
-				original_tag = OMA
-			}
-			
-			picture = generic_political_advisor_arab_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

@@ -46,55 +46,6 @@ ideas = {
 			traits = { compassionate_gentleman }
 		}
 	}
-
-	theorist = {
-
-		PRU_luis_ramirez_ortiz = {
-					
-			picture = generic_army_south_america_1
-
-			allowed = {
-				original_tag = PRU
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		PRU_romulo_frias = {
-					
-			picture = generic_air_south_america_1
-				
-			allowed = {
-				original_tag = PRU
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		PRU_ernesto_scroth = {
-					
-					
-			allowed = {
-				original_tag = PRU
-			}
-			
-			picture = generic_political_advisor_south_america_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

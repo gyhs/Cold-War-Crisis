@@ -261,41 +261,6 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 	}
-	theorist = {
-
-		FIN_akseli_anttila = {
-			
-			picture = generic_army_europe_2		
-					
-			allowed = {
-				original_tag = FIN
-			}
-
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		FIN_vaino_valve = {
-					
-			picture = generic_navy_europe_2
-
-			allowed = {
-				original_tag = FIN
-			}
-			
-
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 		

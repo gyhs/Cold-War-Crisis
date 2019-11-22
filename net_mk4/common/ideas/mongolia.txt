@@ -141,54 +141,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		MON_dagva = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = MON
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		MON_ganbaatar = { 
-
-			picture = generic_navy_asia_3
-			
-			allowed = {
-				original_tag = MON
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-		MON_ulanhu = {
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = MON
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-	}
-
 
 
 }

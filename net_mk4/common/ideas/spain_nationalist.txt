@@ -60,43 +60,6 @@ ideas = {
 			traits = { war_industrialist }
 		}
 	}
-
-	theorist = {
-
-	SPA_jose_enrique_varela = {
-				
-				
-		allowed = {
-			original_tag = SPR
-			has_government = fascism
-		}
-		
-		picture = generic_army_europe_3
-		
-		research_bonus = {
-			land_doctrine = 0.07
-		}
-		
-		traits = { military_theorist }
-	}
-
-	SPA_emilio_herrera = {
-				
-				
-		allowed = {
-			original_tag = SPR
-			has_government = fascism
-		}
-		
-		picture = generic_air_europe_3
-		
-		research_bonus = {
-			air_doctrine = 0.07
-		}
-		
-		traits = { air_warfare_theorist }
-	}
-}
 	# MILITARY
 	army_chief = {
 		

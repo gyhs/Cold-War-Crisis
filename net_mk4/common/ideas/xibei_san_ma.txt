@@ -39,38 +39,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		XSM_keng_shoushan = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = XSM
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		XSM_ma_hongkui = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = XSM
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
-
 	army_chief = {
 		
 		XSM_ma_hongbin = {

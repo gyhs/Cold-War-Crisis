@@ -978,39 +978,6 @@ ideas = {
 			traits = { prince_of_terror }
 		}
 	}
-
-	theorist = {
-
-		MUJ_muhammad_amin_bughra = {
-					
-			picture = generic_political_advisor_arab_2
-
-			allowed = {
-				original_tag = MUJ
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		MUJ_renato_bardolucci = {
-					
-			picture = generic_army_europe_1
-				
-			allowed = {
-				original_tag = MUJ
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

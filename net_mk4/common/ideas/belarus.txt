@@ -124,37 +124,4 @@ ideas = {
 			}
 		}
 	}
-
-	theorist = {
-		BLR_aleksei_antonov = {
-			
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = BLR
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}	
-
-		BLR_stepan_krasovsky = {
-
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = BLR
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-	}
 }

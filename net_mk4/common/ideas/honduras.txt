@@ -57,56 +57,6 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 	}
-
-	theorist = {
-
-		HON_juan_b_valladares = {
-					
-			picture = generic_political_advisor_south_america_3
-
-			allowed = {
-				original_tag = HON
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		HON_rufio_villegas = {
-					
-					
-			allowed = {
-				original_tag = HON
-			}
-			
-			picture = generic_political_advisor_south_america_2
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-		HON_carlos_molina_dejonje = {
-					
-					
-			allowed = {
-				original_tag = HON
-			}
-			
-			picture = generic_political_advisor_south_america_1
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

@@ -60,43 +60,6 @@ ideas = {
 			}
 		}
 	}
-
-	theorist = {
-
-		SPR_nicolas_molero = {
-					
-					
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
-			}
-			
-			picture = generic_army_europe_3
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		SPR_andres_saborit_colomer = {
-					
-					
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
-			}
-			
-			picture = generic_navy_europe_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

@@ -1032,39 +1032,6 @@ ideas = {
 			traits = { prince_of_terror }
 		}
 	}
-
-	theorist = {
-
-		AFG_muhammad_amin_bughra = {
-					
-			picture = generic_political_advisor_arab_2
-
-			allowed = {
-				original_tag = AFG
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		AFG_renato_bardolucci = {
-					
-			picture = generic_army_europe_1
-				
-			allowed = {
-				original_tag = AFG
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

@@ -136,36 +136,4 @@ ideas = {
 			}
 		}
 	}
-
-	theorist = {
-		GUA_m_ydigaras_fuentes = {
-			
-			picture = generic_army_south_america_1
-
-			allowed = {
-				original_tag = GUA
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		GUA_w_tesch_orlando = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = GUA
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}	
-	}
 }

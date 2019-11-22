@@ -34,39 +34,6 @@ ideas = {
 			traits = { popular_figurehead }
 		}
 	}
-
-	theorist = {
-
-		BRA_newton_cavalcanti = {
-					
-			picture = generic_army_south_america_1
-
-			allowed = {
-				original_tag = BRA
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		BRA_eduardo_gomes = {
-					
-			picture = generic_political_advisor_south_america_1
-				
-			allowed = {
-				original_tag = BRA
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

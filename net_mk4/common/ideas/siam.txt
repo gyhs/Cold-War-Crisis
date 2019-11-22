@@ -142,54 +142,5 @@ ideas = {
 	}
 
 
-	theorist = {
-		SIA_manphya_khanphialong = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		SIA_sawat_phutianands = { 
-
-			picture = generic_navy_asia_3
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-		SIA_phra_silpasakrakorn = {
-
-			picture = generic_air_asia_3
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-	}
-
-
 
 }

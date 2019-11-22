@@ -265,6 +265,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_armored_car_equipment_manufacturer.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_slot_submarine_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_submarine_manufacturer.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_slot_materiel_manufacturer"
 		textureFile = "gfx/interface/idea_slot_materiel_manufacturer.dds"
 	}

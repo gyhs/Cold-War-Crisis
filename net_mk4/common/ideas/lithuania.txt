@@ -34,39 +34,6 @@ ideas = {
 		traits = { prince_of_terror }
 	}
 }
-
-theorist = {
-
-	LIT_jonas_cernius = {
-				
-		picture = generic_army_europe_4
-
-		allowed = {
-			original_tag = LIT
-		}
-		
-		research_bonus = {
-			land_doctrine = 0.07
-		}
-		
-		traits = { military_theorist }
-	}
-
-	LIT_vincentas_latozaite = {
-				
-		picture = generic_air_europe_1
-			
-		allowed = {
-			original_tag = LIT
-		}
-		
-		research_bonus = {
-			air_doctrine = 0.07
-		}
-		
-		traits = { air_warfare_theorist }
-	}
-}
 	# MILITARY
 	army_chief = {
 		

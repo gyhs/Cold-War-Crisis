@@ -36,55 +36,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-
-		POR_jose_norton_de_matos = {
-			
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = POR
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		POR_jose_manuel_sarmento_de_beires = {
-			
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = POR
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		POR_ortins_manuel_bettencourt = {
-
-			picture = generic_navy_europe_3
-			
-			allowed = {
-				original_tag = POR
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-	}
-
 
 
 	army_chief = {

@@ -39,54 +39,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		NEP_robert_mainwaring = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		NEP_gehendra_rana = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		NEP_h_t_s_collins = {
-					
-					
-			allowed = {
-				original_tag = NEP
-			}
-			
-			picture = generic_political_advisor_asia_3
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-
 	army_chief = {
 		
 		NEP_mohan_rana = {

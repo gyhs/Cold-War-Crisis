@@ -60,39 +60,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		
-		COS_luis_fernandez_rodriguez = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = COS
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}	
-
-		COS_tobias_picado_cortes = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = COS
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-
 	army_chief = {
 
 		COS_hugo_montes_ramirez = {

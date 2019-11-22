@@ -36,53 +36,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		GXC_yu_hanmou = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = GXC
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		GXC_bai_yeung = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = GXC
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		GXC_heng_lo = {
-
-			picture = generic_navy_asia_1
-			
-			allowed = {
-				original_tag = GXC
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-
 	army_chief = {
 		
 		GXC_chen_jitang = {

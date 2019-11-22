@@ -227,41 +227,6 @@ head_of_government = {
 	}
 }
 
-theorist = {
-
-	POL_tomislaw_lupaszko = {
-				
-				
-		allowed = {
-			original_tag = POL
-		}
-		
-		picture = generic_army_europe_6
-		
-		research_bonus = {
-			land_doctrine = 0.07
-		}
-		
-		traits = { military_theorist }
-	}
-
-	POL_wladyslaw_kalkus = {
-				
-				
-		allowed = {
-			original_tag = POL
-		}
-		
-		picture = generic_air_europe_1
-		
-		research_bonus = {
-			air_doctrine = 0.07
-		}
-		
-		traits = { air_warfare_theorist }
-	}
-}
-
 	# MILITARY
 	army_chief = {
 				

@@ -49,39 +49,6 @@ ideas = {
 			traits = { prince_of_terror }
 		}
 	}
-
-	theorist = {
-
-		COL_mauricio_soto_gomez = {
-					
-			picture = generic_navy_south_america_1
-
-			allowed = {
-				original_tag = COL
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-		COL_camilo_daza_alvarez = {
-					
-			picture = generic_air_south_america_1
-				
-			allowed = {
-				original_tag = COL
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

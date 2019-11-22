@@ -45,39 +45,6 @@ ideas = {
 			traits = { popular_figurehead }
 		}
 	}
-
-	theorist = {
-
-		SAU_sa_ad_shaddad_al_outaibi = {
-					
-			picture = generic_army_arab_1
-
-			allowed = {
-				original_tag = SAU
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		SAU_hamed_al_sabani = {
-					
-			picture = generic_navy_arab_2
-				
-			allowed = {
-				original_tag = SAU
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

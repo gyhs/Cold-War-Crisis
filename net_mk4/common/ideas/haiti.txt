@@ -40,54 +40,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		HAI_emilie_lescot = {
-
-			picture = generic_army_african_4
-			
-			allowed = {
-				original_tag = HAI
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		HAI_pascale_b_g_guillaume = { 
-
-			picture = generic_air_african_2
-			
-			allowed = {
-				original_tag = HAI
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		HAI_georges_leger = {
-					
-					
-			allowed = {
-				original_tag = HAI
-			}
-			
-			picture = generic_political_advisor_african_3
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-
 	army_chief = {
 		
 		HAI_franck_lavaud = {

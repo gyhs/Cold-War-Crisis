@@ -181,55 +181,6 @@ ideas = {
 		}
 	}
 
-
-	theorist = {
-		NOR_konrad_sundlo = {
-			
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = NOR
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		NOR_tryggve_gran = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = NOR
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		NOR_skule_storheil = {
-
-			picture = generic_navy_europe_3
-			
-			allowed = {
-				original_tag = NOR
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-	}
-
 	aircraft_manufacturer = {
 			
 		designer = yes

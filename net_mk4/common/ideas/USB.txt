@@ -160,54 +160,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		USB_jules_pire = {
-			
-			picture = generic_army_europe_6
-
-			allowed = {
-				original_tag = USB
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		USB_fritz_lob = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = USB
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		USB_georges_deffontaine = {
-
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = USB
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-	}
-
 	aircraft_manufacturer = {
 	
 		designer = yes

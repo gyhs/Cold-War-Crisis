@@ -138,53 +138,5 @@ ideas = {
 			}
 		}
 	}
-
-	theorist = {
-		YEM_sa_ud_ibn_umar = {
-			
-			picture = generic_army_arab_2
-
-			allowed = {
-				original_tag = YEM
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		YEM_yusuf_ibn_khalid = {
-
-			picture = generic_navy_arab_3
-			
-			allowed = {
-				original_tag = YEM
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}	
-
-		YEM_khalid_ibn_yusuf = {
-
-			picture = generic_air_arab_2
-			
-			allowed = {
-				original_tag = YEM
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-	}
 }
 

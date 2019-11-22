@@ -140,56 +140,6 @@ ideas = {
 			}
 		}
 	}
-	
-
-
-	theorist = {
-		BHU_tsepon_shatra = {
-
-			picture = generic_army_asia_2
-			
-			allowed = {
-				original_tag = BHU
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		BHU_chamba_wangyal = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = BHU
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		BHU_tsarong_rinpoche = {
-
-			picture = generic_navy_asia_2
-			
-			allowed = {
-				original_tag = BHU
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-	}
 
 
 

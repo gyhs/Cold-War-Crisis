@@ -40,43 +40,6 @@ ideas = {
 			traits = { compassionate_gentleman }
 		}
 	}
-
-	theorist = {
-
-		VIC_charles_huntziger = {
-					
-					
-			allowed = {
-				original_tag = FRA
-				has_government = fascism
-			}
-			
-			picture = generic_army_europe_4
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		VIC_lucien_lacaze = {
-					
-					
-			allowed = {
-				original_tag = FRA
-				has_government = fascism
-			}
-			
-			picture = generic_navy_europe_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

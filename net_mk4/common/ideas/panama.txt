@@ -38,54 +38,6 @@ ideas = {
 		}
 	}
 
-	theorist = {
-		PAN_enrique_jimenez_brin = {
-			
-			picture = generic_army_south_america_2
-
-			allowed = {
-				original_tag = PAN
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		PAN_marcos_a_gelabert = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = PAN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-
-		PAN_arturo_osborne_irraga = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = PAN
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}	
-	}
-
 	army_chief = {
 
 		PAN_enrico_fabrego_paz = {

@@ -35,55 +35,6 @@ ideas = {
 			traits = { war_industrialist }
 		}
 	}
-
-	theorist = {
-
-		ALB_qemal_komani = {
-					
-			picture = generic_army_arab_1
-
-			allowed = {
-				original_tag = ALB
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		ALB_xhelal_mitrovica = {
-					
-			picture = generic_air_arab_1
-				
-			allowed = {
-				original_tag = ALB
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		ALB_hajre_fetahu = {
-					
-					
-			allowed = {
-				original_tag = ALB
-			}
-			
-			picture = generic_political_advisor_arab_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

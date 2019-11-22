@@ -174,39 +174,6 @@ ideas = {
 
 	}
 
-	theorist = {
-		AUS_otto_meixner_von_zweienstamm = {
-			
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = AUS
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		AUS_julius_yllam = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = AUS
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-	}
-
 
 	# TECHNOLOGY
 	tank_manufacturer = {

@@ -138,57 +138,5 @@ ideas = {
 
 	}
 
-
-
-	theorist = {
-		YUN_pan_tian = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = YUN
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		YUN_zhu_hu = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = YUN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		YUN_liao_fang = {
-
-			picture = generic_navy_asia_1
-			
-			allowed = {
-				original_tag = YUN
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
-	}
-
-
-
 	
 }

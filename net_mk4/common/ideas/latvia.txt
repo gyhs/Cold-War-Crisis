@@ -35,39 +35,6 @@ ideas = {
 			traits = { smooth_talking_charmer }
 		}
 	}
-
-	theorist = {
-
-		LAT_ludvigs_ctis = {
-					
-			picture = generic_army_europe_4
-
-			allowed = {
-				original_tag = LAT
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		LAT_kornelijs_veidnieks = {
-					
-			picture = generic_air_europe_1
-				
-			allowed = {
-				original_tag = LAT
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

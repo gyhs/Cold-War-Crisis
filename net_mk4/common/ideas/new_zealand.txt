@@ -318,55 +318,6 @@ ideas = {
 			traits = { armaments_organizer }
 		}
 	}
-
-	theorist = {
-
-		NZL_keith_j_holyoake = {
-					
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = NZL
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		NZL_r_a_cochrane = {
-					
-			picture = generic_air_europe_1
-				
-			allowed = {
-				original_tag = NZL
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		NZL_arthur_dawes = {
-					
-					
-			allowed = {
-				original_tag = NZL
-			}
-			
-			picture = generic_political_advisor_europe_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
 	# MILITARY
 	army_chief = {
 

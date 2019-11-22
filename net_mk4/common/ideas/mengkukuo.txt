@@ -75,38 +75,4 @@ ideas = {
 
 
 
-	theorist = {
-		MEN_hung_zhehuang = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = MEN
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		MEN_deng_linge = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = MEN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-	}
-
-
-
 }
