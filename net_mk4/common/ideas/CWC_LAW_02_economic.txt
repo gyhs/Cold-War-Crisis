@@ -25,9 +25,12 @@ ideas = {
 			
 			available = {
 				OR = {
-					OR = {
-						has_government = communism
-						has_government = socialism
+					NOT= {
+						OR = {
+							has_government = communism
+							has_government = socialism
+							has_government = social_democracy
+							}
 						}
 					OR = {
 						#has_idea = partial_economic_mobilisation
@@ -64,11 +67,11 @@ ideas = {
 				OR = {
 					NOT= {
 						OR = {
+							has_government = communism
+							has_government = socialism
 							has_government = social_democracy
-							has_government = social_liberalism
-							has_government = market_liberalism
+							}
 						}
-					}
 					OR = {
 						#has_idea = partial_economic_mobilisation
 						#has_idea = war_economy
@@ -104,9 +107,11 @@ ideas = {
 				OR = {
 					NOT= {
 						OR = {
-							has_government = market_liberalism
+							has_government = communism
+							has_government = socialism
+							has_government = social_democracy
+							}
 						}
-					}
 					OR = {
 						#has_idea = partial_economic_mobilisation
 						#has_idea = war_economy
@@ -142,7 +147,9 @@ ideas = {
 				OR = {
 					NOT= {
 						OR = {
-							has_government = market_liberalism
+							has_government = communism
+							has_government = socialism
+							has_government = social_democracy
 							}
 						}
 					OR = {
@@ -182,9 +189,7 @@ ideas = {
 				OR = {
 					NOT= {
 						OR = {
-							has_government = communism
-							has_government = socialism
-							has_government = social_democracy
+							has_government = market_liberalism
 							}
 						}
 					OR = {
@@ -223,11 +228,9 @@ ideas = {
 				OR = {
 					NOT= {
 						OR = {
-							has_government = communism
-							has_government = socialism
-							has_government = social_democracy
-							}
+							has_government = market_liberalism
 						}
+					}
 					OR = {
 						#has_idea = partial_economic_mobilisation
 						#has_idea = war_economy
@@ -264,11 +267,11 @@ ideas = {
 				OR = {
 					NOT= {
 						OR = {
-							has_government = communism
-							has_government = socialism
 							has_government = social_democracy
-							}
+							has_government = social_liberalism
+							has_government = market_liberalism
 						}
+					}
 					OR = {
 						#has_idea = partial_economic_mobilisation
 						#has_idea = war_economy
@@ -303,12 +306,9 @@ ideas = {
 			
 			available = {
 				OR = {
-					NOT= {
-						OR = {
-							has_government = communism
-							has_government = socialism
-							has_government = social_democracy
-							}
+					OR = {
+						has_government = communism
+						has_government = socialism
 						}
 					OR = {
 						#has_idea = partial_economic_mobilisation
