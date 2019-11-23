@@ -126,6 +126,18 @@
  nuclear_weapon_nonpermission_desc:0 "핵무기는 최후의 무기 이다.\n"
  nuclear_weapon_permission:0 "핵무기 사용 허락"
  nuclear_weapon_permission_desc:0 "중요한 순간이 오고야 말았다. \n군 통수권자에게 핵발사 명령 가방이 배달 되었다. \n붉은 등이 점멸하며 명령을 기다리고 있다. \n한번 시작하면 되돌릴 수 없다.\n"
+ 
+ DEFCON:0 "전투준비태세"
+ DEFCON_5:0 "데프콘 5"
+ DEFCON_5_desc:0 "평화시\n적의 위협이 없는 안전한 상태 입니다."
+ DEFCON_4:0 "데프콘 4"
+ DEFCON_4_desc:0 "경계태세\n적과 대치하고 있으나 전쟁발발 가능성이 낮은 분쟁지역에서의 평시상태 입니다."
+ DEFCON_3:0 "데프콘 3"
+ DEFCON_3_desc:0 "준전시태세\n적의 개입이 우려되는 상황 입니다."
+ DEFCON_2:0 "데프콘 2"
+ DEFCON_2_desc:0 "전쟁임박\n적의 공격준비태세가 강화되고 그에 상응하는 전쟁 징후가 포착되었을 시 발령 됩니다."
+ DEFCON_1:0 "데프콘 1"
+ DEFCON_1_desc:0 "전시상태\n전시동원령이 선포되고 전시에 돌입하게 됩니다."
  ###################
  
  Population:0 "인구 성장률"

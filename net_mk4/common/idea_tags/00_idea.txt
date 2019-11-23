@@ -65,9 +65,9 @@ idea_categories = {
 	research_production = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
-		slot = law_submarine_manufacturer			#잠수함
-		slot = aircraft_manufacturer			#항공기
-		slot = law_heavy_aircraft_manufacturer	#중 항공기
+		slot = law_submarine_manufacturer				#잠수함
+		slot = aircraft_manufacturer					#항공기
+		slot = law_heavy_aircraft_manufacturer			#중 항공기
 		slot = law_helicopter_manufacturer				#헬기
 	
 		cost = 150
