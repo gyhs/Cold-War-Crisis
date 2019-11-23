@@ -53,9 +53,9 @@ idea_categories = {
 		slot = army_chief 
 		slot = navy_chief 
 		slot = air_chief
-		slot = infantry_equipment_manufacturer
-		slot = artillery_equipment_manufacturer
-		slot = armored_car_equipment_manufacturer
+		slot = law_infantry_equipment_manufacturer
+		slot = law_artillery_manufacturer
+		slot = law_armored_car_manufacturer
 		#high_command
 		
 		cost = 150
@@ -65,11 +65,11 @@ idea_categories = {
 	research_production = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
-		slot = submarine_manufacturer			#잠수함
+		slot = law_submarine_manufacturer			#잠수함
 		slot = aircraft_manufacturer			#항공기
-		slot = heavy_aircraft_manufacturer		#중 항공기
-		slot = industrial_concern				#헬기
-
+		slot = law_heavy_aircraft_manufacturer	#중 항공기
+		slot = law_helicopter_manufacturer				#헬기
+	
 		cost = 150
 		removal_cost = 0
 

@@ -253,20 +253,20 @@ spriteTypes = {
 	}
 ################### 설계사 #######
 	spriteType = {
-		name = "GFX_idea_slot_infantry_equipment_manufacturer"
-		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_infantry_equipment_manufacturer.dds"
+		name = "GFX_idea_slot_law_infantry_equipment_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_law_infantry_equipment_manufacturer.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_artillery_equipment_manufacturer"
-		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_artillery_equipment_manufacturer.dds"
+		name = "GFX_idea_slot_law_artillery_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_law_artillery_manufacturer.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_armored_car_equipment_manufacturer"
-		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_armored_car_equipment_manufacturer.dds"
+		name = "GFX_idea_slot_law_armored_car_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_law_armored_car_manufacturer.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_submarine_manufacturer"
-		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_submarine_manufacturer.dds"
+		name = "GFX_idea_slot_law_submarine_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_law_submarine_manufacturer.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_slot_materiel_manufacturer"
@@ -284,8 +284,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_slot_heavy_aircraft_manufacturer"
-		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_heavy_aircraft_manufacturer.dds"
+		name = "GFX_idea_slot_law_heavy_aircraft_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_law_heavy_aircraft_manufacturer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_law_helicopter_manufacturer"
+		textureFile = "gfx/interface/ideas/policy/manufacturer/idea_slot_law_helicopter_manufacturer.dds"
 	}
 
 	spriteType = {

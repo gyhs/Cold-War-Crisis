@@ -1046,9 +1046,6 @@ ideas = {
 	industrial_concern = {
 	}
 
-	materiel_manufacturer = {
-	}
-
 	army_chief = {
 		
 		generic_army_chief_off = {

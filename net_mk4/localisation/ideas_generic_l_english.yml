@@ -98,12 +98,13 @@
  female_limited_mobilization:0 "여성 제한적 징병"
  female_full_mobilization:0 "여성 평등 징병"
  
- infantry_equipment_manufacturer:0 "보병장비 설계사"
- artillery_equipment_manufacturer:0 "화포 설계사"
- armored_car_equipment_manufacturer:0 "장갑차 설계사"
- submarine_manufacturer:0 "잠수함 설계사"
+ law_infantry_equipment_manufacturer:0 "보병장비 설계사"
+ law_artillery_manufacturer:0 "화포 설계사"
+ law_armored_car_manufacturer:0 "장갑차 설계사"
+ law_submarine_manufacturer:0 "잠수함 설계사"
  aircraft_manufacturer:0 "항공기 설계사"
- heavy_aircraft_manufacturer:0 "중 항공기 설계사"
+ law_heavy_aircraft_manufacturer:0 "중 항공기 설계사"
+ law_helicopter_manufacturer:0 "헬기 설계사"
  
  training_laws:0 "군사 훈련 법"
  training_basic:0 "기초 군사 훈련"
