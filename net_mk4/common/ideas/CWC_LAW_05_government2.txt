@@ -766,8 +766,11 @@ ideas = {
 			
 			available = {	
 			}
-
+			
 			modifier = {
+				production_cost_max_ship_hull_cruiser = 5000
+				production_cost_max_ship_hull_heavy = 8000
+				production_cost_max_ship_hull_carrier = 7500
 			}
 			
 			default = yes
@@ -783,8 +786,11 @@ ideas = {
 
 			available = {	num_of_naval_factories > 15
 			}
-
+			
 			modifier = {
+				production_cost_max_ship_hull_cruiser = 5300
+				production_cost_max_ship_hull_heavy = 10000
+				production_cost_max_ship_hull_carrier = 9500
 			}
 			
 			cancel_if_invalid = no
@@ -800,6 +806,9 @@ ideas = {
 			level = 4
 			
 			modifier = {
+				production_cost_max_ship_hull_cruiser = 5700
+				production_cost_max_ship_hull_heavy = 11500
+				production_cost_max_ship_hull_carrier = 10250
 			}
 			
 			cancel_if_invalid = no
@@ -815,6 +824,9 @@ ideas = {
 			level = 4
 			
 			modifier = {
+				production_cost_max_ship_hull_cruiser = 6000
+				production_cost_max_ship_hull_heavy = 12000
+				production_cost_max_ship_hull_carrier = 10500
 			}
 			
 			cancel_if_invalid = no
@@ -829,7 +841,11 @@ ideas = {
 			removal_cost = -1
 			level = 5
 			
+			
 			modifier = {
+				production_cost_max_ship_hull_cruiser = 6500
+				production_cost_max_ship_hull_heavy = 14000
+				production_cost_max_ship_hull_carrier = 10750
 			}
 			
 			cancel_if_invalid = no
