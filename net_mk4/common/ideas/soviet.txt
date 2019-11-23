@@ -2175,31 +2175,6 @@ ideas = {
 		}
 	}
 	
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		gaz = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				motorized_equipment = 0.10
-				mot_rockets = 0.50
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
-	
 	naval_manufacturer = {
 	
 		designer = yes

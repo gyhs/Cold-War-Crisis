@@ -102,6 +102,8 @@
  artillery_equipment_manufacturer:0 "화포 설계사"
  armored_car_equipment_manufacturer:0 "장갑차 설계사"
  submarine_manufacturer:0 "잠수함 설계사"
+ aircraft_manufacturer:0 "항공기 설계사"
+ heavy_aircraft_manufacturer:0 "중 항공기 설계사"
  
  training_laws:0 "군사 훈련 법"
  training_basic:0 "기초 군사 훈련"

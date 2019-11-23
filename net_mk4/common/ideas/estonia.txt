@@ -172,26 +172,4 @@ ideas = {
 	
 		}
 	}
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		arsenal = {
-			
-			picture = generic_infantry_equipment_manufacturer_3
-
-			
-			allowed = {
-				original_tag = EST
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			# rifles and pistols
-			
-			traits = { infantry_equipment_manufacturer }
-		}
-	}
 }

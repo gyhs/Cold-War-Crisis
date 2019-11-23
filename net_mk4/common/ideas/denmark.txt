@@ -203,28 +203,4 @@ ideas = {
 			traits = { naval_manufacturer }
 		}
 	}
-
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		disa = {
-			
-			picture = generic_infantry_equipment_manufacturer_2
-
-			
-			allowed = {
-				original_tag = DEN
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			# rifles
-			
-			traits = { infantry_equipment_manufacturer }
-
-		}
-	}
 }

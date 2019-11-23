@@ -547,33 +547,6 @@ ideas = {
 		
 	}
 
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		NZL_charlton_mw = {
-
-			picture = generic_motorized_equipment_manufacturer_1
-			
-			allowed = {
-				original_TAG = NZL
-				has_dlc = "Together for Victory"
-			}
-			
-
-			
-			research_bonus = {
-				motorized_equipment = 0.10
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}	
-		
-	}	
-
 	tank_manufacturer = {
 		NZL_nz_railways = {
 

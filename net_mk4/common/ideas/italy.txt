@@ -546,60 +546,6 @@ ideas = {
 	}
 	
 	
-	
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		beretta = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-		}
-		
-		lancia = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-			
-			research_bonus = {
-				motorized_equipment = 0.10
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-		}
-		
-		breda = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			research_bonus = {
-				artillery = 0.10
-			}
-			
-			traits = { artillery_manufacturer }
-		}
-	}
-	
-	
 	aircraft_manufacturer = {	
 		
 		designer = yes

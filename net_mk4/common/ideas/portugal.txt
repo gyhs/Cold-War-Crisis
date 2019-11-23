@@ -224,32 +224,4 @@ ideas = {
 			}
 		}
 	}
-	
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		fabrica_material_guerra = {
-			
-			picture = generic_infantry_equipment_manufacturer_2
-
-			
-			allowed = {
-				original_tag = POR
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			equipment_bonus = {
-				# rifles (mauser 98k) and light artillery
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
 }
