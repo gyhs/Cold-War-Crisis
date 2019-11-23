@@ -260,44 +260,4 @@ ideas = {
 			}
 		}
 	}
-
-	industrial_concern = {
-		
-		NOR_tandbergs_radiofabrikk = {
-			
-			allowed = {
-				original_tag = NOR
-			}
-			
-			research_bonus = {
-				electronics = 0.1
-			}
-			
-			traits = { electronics_concern }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NOR_norsk_hydro = {
-
-			picture = generic_refining_concern_1
-		
-			allowed = {
-				original_tag = NOR
-			}
-			
-			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.1
-			}
-			
-			traits = { refinery_concern }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
 }

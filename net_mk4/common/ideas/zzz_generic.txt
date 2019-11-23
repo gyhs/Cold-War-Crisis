@@ -1038,13 +1038,6 @@ ideas = {
 			}
 		}
 	}
-		
-	
-
-	# TECHNOLOGY
-
-	industrial_concern = {
-	}
 
 	army_chief = {
 		

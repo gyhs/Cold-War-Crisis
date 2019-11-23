@@ -605,23 +605,6 @@ ideas = {
 		}
 	}
 	
-	industrial_concern = {
-	
-		danieli = {
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-			research_bonus = {
-				industry = 0.10
-				
-			}
-			
-			traits = { industrial_concern }
-		}		
-	}
-	
 	
 	naval_manufacturer = {
 	

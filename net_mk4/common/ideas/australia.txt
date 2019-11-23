@@ -794,52 +794,6 @@ ideas = {
 		}
 	}
 
-
-	industrial_concern = {
-
-		
-
-		bhp_steel = {
-
-			picture = generic_industrial_concern_1
-			
-			allowed = {
-				original_TAG = AST
-				has_dlc = "Together for Victory"
-			}
-			
-
-			
-			research_bonus = {
-				industry = 0.10
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-			}
-		}
-
-		AST_jack_piddington = {
-					
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
-			}
-			
-			research_bonus = {
-				electronics = 0.075
-			}
-
-			cost = 75
-			
-			traits = { electronics_developer }
-		}
-
-	}
-
 	tank_manufacturer = {
 		new_south_wales_rc = {
 			

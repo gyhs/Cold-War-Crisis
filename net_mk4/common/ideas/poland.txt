@@ -449,46 +449,4 @@ head_of_government = {
 			}
 		}
 	}
-
-	industrial_concern = {
-				
-		POL_pkp = {
-			
-			allowed = {
-				original_tag = POL
-				has_dlc = "Poland: United and Ready"
-			}
-			
-			picture = generic_industrial_concern_1
-			
-			research_bonus = {
-				industry = 0.10
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-			}
-		}
-		
-		POL_ava = {
-			
-			allowed = {
-				original_tag = POL
-				has_dlc = "Poland: United and Ready"
-			}
-			
-			picture = generic_industrial_concern_2
-			
-			research_bonus = {
-				electronics = 0.10
-			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
-			}
-		}
-		
-	}
 }

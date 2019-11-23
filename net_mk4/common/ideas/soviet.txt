@@ -2131,48 +2131,6 @@ ideas = {
 			modifier = {
 			}
 		}
-	}	
-	
-	
-	industrial_concern = {
-				
-		stalingrad_tractor_factory = {
-		
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				industry = 0.10
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-			}
-		}
-		
-		leningrad_polytechnical_institute = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				electronics = 0.10
-			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
-			}
-		}
 	}
 	
 	naval_manufacturer = {
