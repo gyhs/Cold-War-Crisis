@@ -45,7 +45,7 @@ add_ideas = {
 #
 ###
 create_country_leader = {
-	name = "조르주 마르쉐"
+	name = "조르주 마르셰"
 	desc = "POLITICS_FRA_Georges_Marchais_DESC"
 	picture = "POLITICS_FRA_Georges_Marchais.dds"
 	expire = "2100.3.1"
