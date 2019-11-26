@@ -1,3 +1,4 @@
 PRK	= "countries/North Korea.txt"
 MUJ = "countries/Mujahideen.txt"
 HKG = "countries/Hong Kong.txt"
+MAN = "countries/Isle of Mann"
