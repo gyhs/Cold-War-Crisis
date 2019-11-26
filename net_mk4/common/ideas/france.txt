@@ -330,6 +330,32 @@ ideas = {
 				#공산주의 증가 , 안정도 15% , 정치력 20% , 비핵심 인력 , 파르티잔 저하 , 당 저항
 			}
 		}
+		#진정한 혁명의 고향
+		home_of_a_real_revolution = {
+			picture = Cockade_idea
+			desc = home_of_a_real_revolution_desc
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.2
+				conscription = 0.05
+				ai_focus_aggressive_factor = 0.5
+				send_volunteers_tension = -0.20
+				send_volunteer_divisions_required = -0.25
+				politic_power_gain = 0.1
+				mobilization_laws_cost_factor = -0.3
+				#전쟁 지지도 20% , 징병가능 인구 5%, ai 공격성 증가 +50%, 외부 지원병 파견 긴장도 -20% , 지원 파견을 위한 부대 제한 25%, 정치력 10%, 징병법 수정 비용 -30%
+			}
+		}
     }
 		
 }

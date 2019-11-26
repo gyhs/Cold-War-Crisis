@@ -358,6 +358,9 @@ focus_tree = {
 			focus = NF_FRA_support_for_kgb
 			focus = NF_FRA_school_of_youth
 		}
+		completion_reward = {
+			add_ideas = home_of_a_real_revolution
+		}
 		x = 19
 		y = 8
 
@@ -370,6 +373,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_support_for_kgb
+		}
+		completion_reward = {
+			Warsaw_Pact = {add_to_faction = FRA}
 		}
 		x = 22
 		y = 8
