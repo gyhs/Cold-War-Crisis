@@ -20,7 +20,7 @@ focus_tree = {
 			has_country_flag = flag_UK_a
 		}
 		completion_reward = {
-			days = 1
+			days = 0
 			id = NE_ENG.2
 		}
 	}
