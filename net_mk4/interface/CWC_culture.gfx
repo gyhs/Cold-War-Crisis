@@ -19,6 +19,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_western_european_2d"
+		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_foreign_minister_europe_1.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_generic_captain_of_industry_western_european_2d"
 		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_political_advisor_europe_1.dds"
 	}
@@ -100,6 +105,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_foreign_minister_europe_1.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_generic_captain_of_industry_commonwealth_2d"
 		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_political_advisor_europe_1.dds"
 	}
@@ -178,6 +188,12 @@ spriteTypes = {
 		name = "GFX_idea_generic_fascist_demagogue_eastern_european_2d"
 		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_fascist_europe.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_foreign_minister_europe_1.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_idea_generic_captain_of_industry_eastern_european_2d"
 		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_political_advisor_europe_1.dds"
@@ -245,6 +261,10 @@ spriteTypes = {
 
 
 	####
+	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_europe_1"
+		texturefile = "gfx/interface/ideas/culture/europe_culture/idea_generic_foreign_minister_europe_1.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_generic_political_advisor_europe_1"
@@ -331,6 +351,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_political_advisor_india_1"
 		texturefile = "gfx/interface/ideas/culture/asia_culture/generic_political_advisor_india_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_asian_2d"
+		texturefile = "gfx/interface/ideas/culture/asia_culture/idea_generic_foreign_minister_asia.dds"
 	}
 	
 	spriteType = {
@@ -492,6 +517,12 @@ spriteTypes = {
 		name = "GFX_idea_generic_fascist_demagogue_southamerican_2d"
 		texturefile = "gfx/interface/ideas/culture/south_america_culture/idea_generic_fascist_south_america.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_south_america_1"
+		texturefile = "gfx/interface/ideas/culture/south_america_culture/idea_generic_foreign_minister_south_america_1.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_idea_generic_political_advisor_south_america_1"
 		texturefile = "gfx/interface/ideas/culture/south_america_culture/idea_generic_political_advisor_south_america_1.dds"
@@ -632,6 +663,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/culture/arab_culture/idea_generic_fascist_arab.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_arab_1"
+		texturefile = "gfx/interface/ideas/culture/arab_culture/idea_generic_foreign_minister_arab_1.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_generic_political_advisor_arab_1"
 		texturefile = "gfx/interface/ideas/culture/arab_culture/idea_generic_political_advisor_arab_1.dds"
 	}
@@ -764,6 +799,12 @@ spriteTypes = {
 		name = "GFX_idea_generic_fascist_demagogue_african_2d"
 		texturefile = "gfx/interface/ideas/culture/africa_culture/idea_generic_fascist_africa.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_foreign_minister_african_1"
+		texturefile = "gfx/interface/ideas/culture/africa_culture/idea_generic_foreign_minister_africa_1.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_idea_generic_political_advisor_african_1"
 		texturefile = "gfx/interface/ideas/culture/africa_culture/idea_generic_political_advisor_africa_1.dds"

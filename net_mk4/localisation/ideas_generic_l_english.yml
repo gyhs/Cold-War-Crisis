@@ -140,6 +140,11 @@
  DEFCON_1_desc:0 "전시상태\n전시동원령이 선포되고 전시에 돌입하게 됩니다."
  ###################
  
+ generic_foreign_minister:0 "일반 외교통상부 장관"
+ generic_foreign_minister_desc:0 "기본적인 외교 업무 지식을 갖춘 외교부 장관 입니다."
+ 
+ 
+ ###################
  Population:0 "인구 성장률"
  civilian_factory_level:0 "산업기술 수준"
  civilian_factory_level_1:0 "산업기술 기초급"
