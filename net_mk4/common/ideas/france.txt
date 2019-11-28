@@ -22,7 +22,6 @@ ideas = {
 
 		persistent_trade_deficit_5 = {
 			picture = chi_hyper_inflation5
-			desc = persistent_trade_deficit_5_desc
 
 			allowed = {
 				always = no
@@ -47,7 +46,6 @@ ideas = {
 
 		currency_problem = {
 			picture = generic_foreign_capital
-			desc = currency_problem_desc
 
 			allowed = {
 				always = no
@@ -244,8 +242,6 @@ ideas = {
 		deficit_recovery = {
 			picture = generic_political_support
 
-			desc = deficit_recovery_desc
-
 			allowed = {
 				always = no
 			}
@@ -308,7 +304,6 @@ ideas = {
 
 		kgb_support = {
 			picture = kgb_idea
-			desc = kgb_support_desc
 
 			allowed = {
 				always = no
@@ -333,7 +328,6 @@ ideas = {
 		#진정한 혁명의 고향
 		home_of_a_real_revolution = {
 			picture = Cockade_idea
-			desc = home_of_a_real_revolution_desc
 
 			allowed = {
 				always = no
