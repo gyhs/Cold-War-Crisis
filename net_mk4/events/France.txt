@@ -29,6 +29,7 @@ country_event = {
     picture = GFX_report_event_ast_parliament_house
     fire_only_once = yes
     trigger = {
+        tag = FRA
         date > 1987.01.22
     }
     mean_time_to_happen = {
