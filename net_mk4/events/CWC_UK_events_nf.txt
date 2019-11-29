@@ -1,0 +1,51 @@
+﻿#########################
+# United Kingdom Events #
+#########################
+#        By SPiCa       #
+#########################
+add_namespace = NE_ENG_NF
+
+##
+country_event = {#과거의 자치령
+	id = NE_ENG_NF.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG_NF.1"}
+	title = NE_ENG_NF.1.title
+	desc = NE_ENG_NF.1.desc
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #자치령들과 함께
+		name = NE_ENG_NF.1.a
+		ai_chance = { factor = 90 }
+		add_to_faction = CAN
+		add_to_faction = GYA
+		add_to_faction = SAF
+		add_to_faction = AST
+		add_to_faction = NZL
+		add_to_faction = FIJ
+    }
+	option = { #홀로서기
+		name = NE_ENG_NF.1.a
+		ai_chance = { factor = 1 }
+		stability = -0.05
+    }
+}
+country_event = {#
+	id = NE_ENG_NF.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG_NF.2"}
+	title = NE_ENG_NF.2.title
+	desc = NE_ENG_NF.2.desc
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = NE_ENG_NF.1.a
+		ai_chance = { factor = 1 }
+    }
+	option = { 
+		name = NE_ENG_NF.1.a
+		ai_chance = { factor = 1 }
+    }
+}
