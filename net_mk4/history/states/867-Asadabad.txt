@@ -1,0 +1,25 @@
+state={
+	id=867
+	name="STATE_867"
+
+	history={
+		owner = MUJ
+		victory_points = {
+			12831 5 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = AFG
+		add_core_of = MUJ
+
+	}
+
+	provinces={
+		5082 12831 
+	}
+	manpower=400210
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
