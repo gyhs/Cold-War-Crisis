@@ -1,0 +1,9 @@
+FRA_persistent_trade_deficit_all = {
+    remove_ideas = {
+        persistent_trade_deficit_5
+        persistent_trade_deficit_4
+        persistent_trade_deficit_3
+        persistent_trade_deficit_2
+        persistent_trade_deficit_1
+    }
+}

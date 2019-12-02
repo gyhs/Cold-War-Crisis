@@ -42,8 +42,88 @@ ideas = {
 			}
 			#누적되는 무역적자 (정치력 -0.4 , 징병가능인구 -15% , 소비제 30% , 안정도 -30% , 전쟁지지도 -20%)
 		}
-		
+		#누적되는 무역적자4
+		persistent_trade_deficit_4 = {
+			picture = chi_hyper_inflation4
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.15
+				conscription = -0.10
+				consumer_goods_factor = 0.15
+			}
+		}
+		#누적되는 무역적자3
+		persistent_trade_deficit_3 = {
+			picture = chi_hyper_inflation3
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.15
+				conscription = -0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+		#누적되는 무역적자2
+		persistent_trade_deficit_2 = {
+			picture = chi_hyper_inflation2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		persistent_trade_deficit_1 = {
+			persistent_trade_deficit_2 = {
+			picture = chi_hyper_inflation2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
 		currency_problem = {
 			picture = generic_foreign_capital
 
@@ -349,6 +429,8 @@ ideas = {
 				#전쟁 지지도 20% , 징병가능 인구 5%, 외부 지원병 파견 긴장도 -20% , 지원 파견을 위한 부대 제한 25%, 정치력 10%, 징병법 수정 비용 -30%
 			}
 		}
+		#단일 유럽 의정서
+
     }
 		
 }
