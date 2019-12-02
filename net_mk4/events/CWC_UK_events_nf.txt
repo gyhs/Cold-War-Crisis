@@ -26,7 +26,7 @@ country_event = {#과거의 자치령
 		add_to_faction = FIJ
     }
 	option = { #홀로서기
-		name = NE_ENG_NF.1.a
+		name = NE_ENG_NF.1.b
 		ai_chance = { factor = 1 }
 		stability = -0.05
     }

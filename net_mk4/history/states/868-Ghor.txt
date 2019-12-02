@@ -1,0 +1,23 @@
+state={
+	id=868
+	name="STATE_868"
+
+	history={
+		owner = MUJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = AFG
+		add_core_of = MUJ
+
+	}
+
+	provinces={
+		1995 2078 7916 7984 8053 10476 10789 10896 12769 12788 13299 
+	}
+	manpower=2602040
+	buildings_max_level_factor=1.000
+	state_category=town
+}
