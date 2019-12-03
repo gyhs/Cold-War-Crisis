@@ -109,7 +109,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {#영연방?
 				days = 0
-				id = 
+				id = NE_ENG_NF.2
 			}
 		}
 	}
@@ -919,7 +919,12 @@ focus_tree = {
 		}
 		x = 39
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus= {
+			bonus = 0.5 
+			uses = 2 
+			category = radar_tech 
+			}
 	}
 	focus = {
 		id = UK_79
@@ -1195,7 +1200,10 @@ focus_tree = {
 		cost = 10.00
 		x = 44
 		y = 0
-
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+		}
 	}
 	focus = {
 		id = UK_63
