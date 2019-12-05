@@ -389,6 +389,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_europe_only_one
 		}
+		completion_reward = {
+			FRA_persistent_trade_level_deficit_down = yes
+		}
 		x = 26
 		y = 4
 
@@ -400,6 +403,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
+		}
+		completion_reward = {
+			FRA_persistent_trade_level_deficit_down = yes
 		}
 		x = 24
 		y = 5
@@ -425,6 +431,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
+		completion_reward = {
+			FRA_persistent_trade_level_deficit_down = yes
+		}
 		x = 28
 		y = 5
 
@@ -442,6 +451,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = NF_FRA_emu_institutionalization
+		}
+		completion_reward = {
+			FRA_persistent_trade_deficit_all = yes
 		}
 		x = 26
 		y = 6
