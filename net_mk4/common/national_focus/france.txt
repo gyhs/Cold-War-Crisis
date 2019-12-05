@@ -453,7 +453,7 @@ focus_tree = {
 			focus = NF_FRA_emu_institutionalization
 		}
 		completion_reward = {
-			FRA_persistent_trade_deficit_all = yes
+			FRA_persistent_trade_level_deficit_down = yes
 		}
 		x = 26
 		y = 6
