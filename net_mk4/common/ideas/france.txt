@@ -106,8 +106,7 @@ ideas = {
 			}
 		}
 		persistent_trade_deficit_1 = {
-			persistent_trade_deficit_2 = {
-			picture = chi_hyper_inflation2
+			picture = chi_hyper_inflation1
 
 			allowed = {
 				always = no

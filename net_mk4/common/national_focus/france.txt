@@ -400,7 +400,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_emu_institutionalization
 		icon = GFX_focus_generic_treaty
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
@@ -415,9 +415,12 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_europeans
 		icon = GFX_goal_generic_national_unity
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
+		}
+		completion_reward = {
+			FRA_persistent_trade_level_deficit_down = yes
 		}
 		x = 26
 		y = 5
@@ -427,7 +430,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_eec_strengthen
 		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
@@ -453,11 +456,25 @@ focus_tree = {
 			focus = NF_FRA_emu_institutionalization
 		}
 		completion_reward = {
-			FRA_persistent_trade_level_deficit_down = yes
-		}
+			if = {
+					limit = { has_idea = persistent_trade_deficit_1 }
+				remove_ideas = persistent_trade_deficit_1
+				hidden_effect = {
+					FRA_persistent_trade_deficit_all = yes
+				}
+			}
+			if = {
+					limit = { 
+						NOT = {
+							has_idea = persistent_trade_deficit_1
+						}
+					}
+						FRA_persistent_trade_level_deficit_down = yes
+				}
+			remove_ideas = currency_problem
+			}
 		x = 26
 		y = 6
-
 	}
 	#유럽의 선구자
 	focus = {

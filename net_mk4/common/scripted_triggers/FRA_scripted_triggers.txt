@@ -1,4 +1,4 @@
-has_hyper_inflation = {
+persistent_trade_deficit_on = {
     if = {
         limit = { has_idea = persistent_trade_deficit_1 }
         has_idea = persistent_trade_deficit_1
