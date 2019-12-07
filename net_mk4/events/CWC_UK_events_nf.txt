@@ -17,7 +17,7 @@ country_event = {#과거의 자치령
 
 	option = { #자치령들과 함께
 		name = NE_ENG_NF.1.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 99 }
 		add_to_faction = CAN
 		add_to_faction = GYA
 		add_to_faction = SAF
