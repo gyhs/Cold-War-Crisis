@@ -921,9 +921,9 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_tech_bonus= {
-			bonus = 0.5 
+			bonus = 1.0 
 			uses = 2 
-			category = radar_tech 
+			category = land_doctrine
 			}
 		}
 	}
@@ -1005,7 +1005,13 @@ focus_tree = {
 		}
 		x = 49
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus= {
+			bonus = 1.0 
+			uses = 2 
+			category = naval_doctrine
+			}
+		}
 	}
 	focus = {
 		id = UK_69
@@ -1079,6 +1085,9 @@ focus_tree = {
 		prerequisite = {
 			focus = UK_71
 		}
+		mutually_exclusive = {
+			focus = UK_90
+		}
 		x = 45
 		y = 4
 
@@ -1090,9 +1099,18 @@ focus_tree = {
 		prerequisite = {
 			focus = UK_68
 		}
+		mutually_exclusive = {
+			focus = UK_93
+		}
 		x = 50
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus= {
+			bonus = 0.5 
+			uses = 2 
+			category = bc_tech
+			}
+		}
 	}
 	focus = {
 		id = UK_14
@@ -1249,6 +1267,9 @@ focus_tree = {
 		prerequisite = {
 			focus = UK_93
 		}
+		mutually_exclusive = {
+			focus = UK_74
+		}
 		x = 47
 		y = 4
 
@@ -1260,9 +1281,18 @@ focus_tree = {
 		prerequisite = {
 			focus = UK_68
 		}
+		mutually_exclusive = {
+			focus = UK_76
+		}
 		x = 48
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus= {
+			bonus = 0.5
+			uses = 1 
+			category = cv_tech
+			}
+		}
 	}
 	focus = {
 		id = UK_77
