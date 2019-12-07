@@ -1,0 +1,271 @@
+﻿###########################
+# gorbachev_faction_system Events
+###########################
+
+add_namespace = cwc
+
+# senator wants investment in their state - hidden dispatch event
+country_event = {
+	id = cwc.60
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { original_tag = USA }
+		#has_government = democratic
+	}
+
+	immediate = {
+		set_country_flag = cwc_gorbachev_faction_system_investment
+		if = {
+			limit = { has_event_target = cwc_gorbachev_faction_system_investment_state }
+			clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+		}
+		random_list = {
+			25 = {
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					
+					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					state_event = { id = cwc.61 trigger_for = controller }
+				}
+			}
+			25 = {
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					state_event = { id = cwc.62 trigger_for = controller }
+				}
+			}
+			25 = { 
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = no
+						}
+					}
+					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					state_event = { id = cwc.64 trigger_for = controller }
+				}
+			}
+			25 = {
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							free_building_slots = {
+								building = infrastructure
+								size > 0
+								include_locked = no
+							}
+						}
+					}
+					factor = 0
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					state_event = { id = cwc.63 trigger_for = controller }
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = { id = cwc.50 days = 70 random = 10 }
+		}
+	}
+}
+# senator wants investment in civilian factory
+country_event = {
+	id = cwc.61
+	title = cwc.61.t
+	desc = cwc.61.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = cwc.61.a #accept
+		ai_chance = {
+			factor = 0
+		}
+		unlock_decision_tooltip = { decision = cwc_invest_in_state_factory show_effect_tooltip = yes }
+		event_target:cwc_gorbachev_faction_system_investment_state = {
+			set_state_flag = cwc_gorbachev_faction_system_build_factory
+			set_variable = { factory_goal = industrial_complex_level }
+			add_to_variable = { factory_goal = 1 }
+		}
+	}
+	option = {
+		name = cwc.61.b #refuse
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
+		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+	}
+}
+
+# senator wants investment in military factory
+country_event = {
+	id = cwc.62
+	title = cwc.61.t
+	desc = cwc.62.desc
+	picture = GFX_report_event_tank_factory
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = cwc.62.a #accept
+		ai_chance = {
+			factor = 0
+		}
+		unlock_decision_tooltip = { decision = cwc_invest_in_state_arms_factory show_effect_tooltip = yes }
+		event_target:cwc_gorbachev_faction_system_investment_state = {
+			set_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+			set_variable = { arms_factory_goal = arms_factory_level }
+			add_to_variable = { arms_factory_goal = 1 }
+		}
+	}
+	option = {
+		name = cwc.62.b #refuse
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
+		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+	}
+}
+# senator wants investment in infrastructure
+country_event = {
+	id = cwc.63
+	title = cwc.63.t
+	desc = cwc.63.desc
+	picture = GFX_report_event_generic_train
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = cwc.63.a #accept
+		ai_chance = {
+			factor = 0
+		}
+		unlock_decision_tooltip = { decision = cwc_invest_in_state_infrastructure show_effect_tooltip = yes }
+		event_target:cwc_gorbachev_faction_system_investment_state = {
+			set_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+			set_variable = { infrastructure_goal = infrastructure_level }
+			add_to_variable = { infrastructure_goal = 1 }
+		}
+	}
+	option = {
+		name = cwc.63.b #refuse
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
+		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+	}
+}
+# senator wants investment in dockyards
+country_event = {
+	id = cwc.64
+	title = cwc.64.t
+	desc = cwc.64.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = cwc.64.a #accept
+		ai_chance = {
+			factor = 0
+		}
+		unlock_decision_tooltip = { decision = cwc_invest_in_state_dockyard show_effect_tooltip = yes }
+		event_target:cwc_gorbachev_faction_system_investment_state = {
+			set_state_flag = cwc_gorbachev_faction_system_build_dockyard
+			set_variable = { dockyard_goal = building_level@dockyard }
+			add_to_variable = { dockyard_goal = 1 }
+		}
+	}
+	option = {
+		name = cwc.64.b #refuse
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
+		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+	}
+}

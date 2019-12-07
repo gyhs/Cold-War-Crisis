@@ -1,0 +1,51 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+					NOT = { original_tag = USA }
+					NOT = { original_tag = FRA }
+				}
+				set_variable = { var = reform_support value = 40 }
+				set_variable = { var = reform_total value = 100 }
+				set_variable = { var = representatives_support value = 200 }
+				set_variable = { var = representatives_total value = 450 }
+				set_variable = { var = quorum_low value = 40 }
+				set_variable = { var = quorum_medium value = 55 }
+				set_variable = { var = quorum_high value = 70 }
+				cwc_recalc_gorbachev_faction_system_icon_frames = yes
+			}
+			every_country = {
+				limit = { 
+					original_tag = FRA
+				}
+				set_variable = { var = reform_support value = 25 }
+				set_variable = { var = reform_total value = 100 }
+				set_variable = { var = representatives_support value = 170 }
+				set_variable = { var = representatives_total value = 450 }
+				set_variable = { var = quorum_low value = 40 }
+				set_variable = { var = quorum_medium value = 55 }
+				set_variable = { var = quorum_high value = 70 }
+				cwc_recalc_gorbachev_faction_system_icon_frames = yes
+			}
+			every_country = {
+				set_temp_variable = { temp_max_man = max_manpower_k }
+				divide_temp_variable={ temp_max_man = 1000 }
+				set_variable = { max_man = temp_max_man }
+			}
+		}
+	}
+	
+	on_daily = {
+		effect = {
+			every_country = {
+				set_temp_variable = { temp_max_man = max_manpower_k }
+				divide_temp_variable={ temp_max_man = 1000 }
+				set_variable = { max_man = temp_max_man }
+				round_variable = max_man
+			}
+		}
+	}
+	
+}

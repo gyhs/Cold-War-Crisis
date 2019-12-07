@@ -1,0 +1,23 @@
+scripted_gui = {
+
+	cwc_gorbachev_faction_system_decision_ui = {
+		context_type = decision_category
+		window_name = "cwc_gorbachev_faction_system_decision_ui_window"
+
+		properties = {
+			reform_icon = {
+				frame = current_reform_icon_frame
+			}
+
+			conservative_icon = {
+				frame = current_conservative_icon_frame
+			}
+
+			military_icon = {
+				frame = current_military_icon_frame
+			}
+		}
+	}
+	
+}
+
