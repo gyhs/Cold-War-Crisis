@@ -119,4 +119,24 @@ ideas = {
             }
         }
     }
+	
+	country = {
+        uk_military_academy = {
+            picture = uk_military_academy
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+               conscription = 3.00
+            }
+        }
+    }
 }
