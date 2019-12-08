@@ -920,7 +920,7 @@ focus_tree = {
 		x = 39
 		y = 1
 		completion_reward = {
-			add_tech_bonus= {
+			add_tech_bonus = {
 			bonus = 1.0 
 			uses = 2 
 			category = land_doctrine
@@ -939,7 +939,13 @@ focus_tree = {
 		}
 		x = 38
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_light_armor
+			}
+		}
 	}
 	focus = {
 		id = UK_92
@@ -951,7 +957,13 @@ focus_tree = {
 		}
 		x = 39
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = motorized_equipment
+			}
+		}
 	}
 	focus = {
 		id = UK_82
@@ -965,7 +977,13 @@ focus_tree = {
 		}
 		x = 40
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_heavy_armor
+			}
+		}
 	}
 	focus = {
 		id = UK_83
@@ -977,7 +995,9 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
-
+		completion_reward = {
+			add_ideas = uk_military_academy
+		}
 	}
 	focus = {
 		id = UK_84
@@ -991,7 +1011,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 4
-
+		completion_reward = {
+			remove_ideas = uk_cursed_weapon
+		}
 	}
 	focus = {
 		id = UK_68
@@ -1023,7 +1045,94 @@ focus_tree = {
 		}
 		x = 44
 		y = 2
-
+		completion_reward = {
+			if = {
+				limit = { is_in_faction_with = ENG }
+		ENG ={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+						}
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = UK_70
@@ -1337,6 +1446,11 @@ focus_tree = {
 		x = 51
 		y = 3
 		completion_reward = {
+			add_tech_bonus= {
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
 			random_owned_controlled_state={
 				limit = {
 					free_building_slots = {
@@ -1382,7 +1496,33 @@ focus_tree = {
 		}
 		x = 50
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus= {
+				bonus = 1.0
+				uses = 2
+				category = naval_equipment
+			}
+			add_tech_bonus= {
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+			add_tech_bonus= {
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
+			}
+			add_tech_bonus= {
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+			}
+		}
 	}
 	focus = {
 		id = UK_94

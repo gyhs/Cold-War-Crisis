@@ -176,6 +176,7 @@ add_ideas = {
 	market_Intervention_07
 	uk_great_depression1
 	eces_1
+	uk_cursed_weapon
 }
 
 set_variable = { var = eng_gateway_to_europe_influence value = 0 }
