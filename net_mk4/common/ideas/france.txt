@@ -19,6 +19,28 @@ ideas = {
                 industrial_capacity_factory = 0.10
 			}
 		}
+		eec = {
+			picture = ecsc_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                industrial_capacity_factory = 0.15
+				stability_factor = 0.05
+				politic_power_gain = 0.05
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+			#유럽 경제 공동체 군용 공장생산량 15% , 안정도 5% , 정치력보너스 5% , 최대 공장 효율/유지 보너스 10%
+		}
 
 		persistent_trade_deficit_5 = {
 			picture = chi_hyper_inflation5
@@ -137,9 +159,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				trade_laws_cost_factor = 0.80
-				Economy_cost_factor = 0.80
-				trade_opinion_factor = -0.60
+				trade_laws_cost_factor = 0.60
+				Economy_cost_factor = 0.60
+				trade_opinion_factor = -0.40
 			}
 			#통화 문제 (무역 거래에의 평판 흭득치 -60% , 경제법 비용 +80% , 무역법 비용 +80%)
 		}

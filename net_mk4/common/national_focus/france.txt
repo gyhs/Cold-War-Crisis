@@ -295,6 +295,7 @@ focus_tree = {
 				days = 180
 				#소련의 정권지원
 			}
+			add_threat = 3
 		}
 		x = 20
 		y = 6
@@ -421,6 +422,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			FRA_persistent_trade_level_deficit_down = yes
+			add_stability = 0.1
 		}
 		x = 26
 		y = 5
@@ -436,6 +438,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			FRA_persistent_trade_level_deficit_down = yes
+			swap_ideas = {
+    			remove_idea = eces_1
+    			add_idea = eec
+			}
 		}
 		x = 28
 		y = 5
