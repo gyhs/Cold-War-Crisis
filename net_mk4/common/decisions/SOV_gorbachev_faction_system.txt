@@ -1,19 +1,23 @@
-cwc_gorbachev_faction_system = {
-	cwc_small_lobby_effort = {
+ND_SOV_gorbachev_faction_system = {
+	ND_SOV_gorbachev_faction_system_small_lobby_effort = {
 		icon = generic_political_discourse
 		available = {
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_reform_more_total_tt
+					tooltip = ND_SOV_gorbachev_faction_system_reform_more_total_tt
 					check_variable = { reform_support < reform_total }
 				}
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_represent_more_total_tt
-					check_variable = { representatives_support < representatives_total }
+					tooltip = ND_SOV_gorbachev_faction_system_conservative_more_total_tt
+					check_variable = { conservative_support < conservative_total }
+				}
+				custom_trigger_tooltip = {
+					tooltip = ND_SOV_gorbachev_faction_system_military_more_total_tt
+					check_variable = { military_support < military_total }
 				}
 			}
 			not = {
-				has_decision = cwc_medium_lobby_effort
+				has_decision = ND_SOV_gorbachev_faction_system_medium_lobby_effort
 			}
 			OR = {
 				political_power_daily > 0.3
@@ -24,15 +28,15 @@ cwc_gorbachev_faction_system = {
 		ai_will_do = {
 			factor = 10
 			modifier = {
-				cwc_gorbachev_faction_system_medium_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_medium_support_trigger = yes
 				factor = 0.5
 			}
 			modifier = {
-				cwc_gorbachev_faction_system_low_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_low_support_trigger = yes
 				factor = 0.5
 			}
 			modifier = {
-				cwc_gorbachev_faction_system_high_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_high_support_trigger = yes
 				factor = 0
 			}
 		}
@@ -41,24 +45,28 @@ cwc_gorbachev_faction_system = {
 		}
 		days_remove = 30
 		remove_effect = {
-			cwc_gorbachev_faction_system_small_support = yes
+			ND_SOV_gorbachev_faction_system_small_support = yes
 		}
 	}
-	cwc_medium_lobby_effort = {
+	ND_SOV_gorbachev_faction_system_medium_lobby_effort = {
 		icon = generic_political_discourse
 		available = {
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_reform_more_total_tt
+					tooltip = ND_SOV_gorbachev_faction_system_reform_more_total_tt
 					check_variable = { reform_support < reform_total }
 				}
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_represent_more_total_tt
-					check_variable = { representatives_support < representatives_total }
+					tooltip = ND_SOV_gorbachev_faction_system_conservative_more_total_tt
+					check_variable = { conservative_support < conservative_total }
+				}
+				custom_trigger_tooltip = {
+					tooltip = ND_SOV_gorbachev_faction_system_military_more_total_tt
+					check_variable = { military_support < military_total }
 				}
 			}
 			not = {
-				has_decision = cwc_small_lobby_effort
+				has_decision = ND_SOV_gorbachev_faction_system_small_lobby_effort
 			}
 			OR = {
 				political_power_daily > 0.75
@@ -69,15 +77,15 @@ cwc_gorbachev_faction_system = {
 		ai_will_do = {
 			factor = 10
 			modifier = {
-				cwc_gorbachev_faction_system_medium_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_medium_support_trigger = yes
 				factor = 0.5
 			}
 			modifier = {
-				cwc_gorbachev_faction_system_low_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_low_support_trigger = yes
 				factor = 0.5
 			}
 			modifier = {
-				cwc_gorbachev_faction_system_high_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_high_support_trigger = yes
 				factor = 0
 			}
 		}
@@ -86,20 +94,24 @@ cwc_gorbachev_faction_system = {
 			political_power_gain = -0.75
 		}
 		remove_effect = {
-			cwc_gorbachev_faction_system_medium_support = yes
+			ND_SOV_gorbachev_faction_system_medium_support = yes
 		}
 	}
-	cwc_special_measures = {
+	ND_SOV_gorbachev_faction_system_special_measures = {
 		icon = ger_mefo_bills
 		available = {
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_reform_more_total_tt
+					tooltip = ND_SOV_gorbachev_faction_system_reform_more_total_tt
 					check_variable = { reform_support < reform_total }
 				}
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_represent_more_total_tt
-					check_variable = { representatives_support < representatives_total }
+					tooltip = ND_SOV_gorbachev_faction_system_conservative_more_total_tt
+					check_variable = { conservative_support < conservative_total }
+				}
+				custom_trigger_tooltip = {
+					tooltip = ND_SOV_gorbachev_faction_system_military_more_total_tt
+					check_variable = { military_support < military_total }
 				}
 			}
 		}
@@ -113,21 +125,25 @@ cwc_gorbachev_faction_system = {
 		days_remove = 90
 		days_re_enable = 1
 		complete_effect = {
-			gorbachev_faction_system_small_support = yes
+			ND_SOV_gorbachev_faction_system_small_support = yes
 		}
 	}
-	cwc_beat_up_opposition = {
+	ND_SOV_gorbachev_faction_system_beat_up_opposition = {
 		icon = oppression
 		available = {
 			#has_government = democratic
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_reform_more_total_tt
+					tooltip = ND_SOV_gorbachev_faction_system_reform_more_total_tt
 					check_variable = { reform_support < reform_total }
 				}
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_represent_more_total_tt
-					check_variable = { representatives_support < representatives_total }
+					tooltip = ND_SOV_gorbachev_faction_system_conservative_more_total_tt
+					check_variable = { conservative_support < conservative_total }
+				}
+				custom_trigger_tooltip = {
+					tooltip = ND_SOV_gorbachev_faction_system_military_more_total_tt
+					check_variable = { military_support < military_total }
 				}
 			}
 		}
@@ -136,7 +152,7 @@ cwc_gorbachev_faction_system = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				cwc_gorbachev_faction_system_low_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_low_support_trigger = yes
 				factor = 0
 			}
 		}
@@ -147,21 +163,56 @@ cwc_gorbachev_faction_system = {
 				#limit = { has_government = democratic }
 				#add_popularity = { ideology = democratic popularity = -0.02 }
 			}
-			cwc_gorbachev_faction_system_small_support = yes
+			ND_SOV_gorbachev_faction_system_small_support = yes
 		}
 	}
-	cwc_give_tax_break = {
+	ND_SOV_gorbachev_faction_system_pay_farm_subsidies = {
+		icon = ger_mefo_bills
+		available = {
+            OR = {
+                has_government = socialism
+                has_government = social_democracy
+                has_government = social_liberalism
+                has_government = market_liberalism
+                has_government = social_conservatism
+            }
+			OR = {
+				check_variable = { reform_support < reform_total }
+				check_variable = { conservative_support < conservative_total }
+				check_variable = { military_support < military_total }
+			}
+		}
+		#visible = { has_completed_focus = USA_agricultural_adjustment_act }
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				ND_SOV_gorbachev_faction_system_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 90
+		modifier = { consumer_goods_factor = 0.03 }
+		remove_effect = {
+			ND_SOV_gorbachev_faction_system_small_support = yes
+		}
+	}
+	ND_SOV_gorbachev_faction_system_give_tax_break = {
 		icon = ger_mefo_bills
 		available = {
 			#has_government = democratic
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_reform_more_total_tt
+					tooltip = ND_SOV_gorbachev_faction_system_reform_more_total_tt
 					check_variable = { reform_support < reform_total }
 				}
 				custom_trigger_tooltip = {
-					tooltip = cwc_gorbachev_faction_system_represent_more_total_tt
-					check_variable = { representatives_support < representatives_total }
+					tooltip = ND_SOV_gorbachev_faction_system_conservative_more_total_tt
+					check_variable = { conservative_support < conservative_total }
+				}
+				custom_trigger_tooltip = {
+					tooltip = ND_SOV_gorbachev_faction_system_military_more_total_tt
+					check_variable = { military_support < military_total }
 				}
 			}
 		}
@@ -170,20 +221,20 @@ cwc_gorbachev_faction_system = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				cwc_gorbachev_faction_system_low_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_low_support_trigger = yes
 				factor = 0
 			}
 		}
 		days_remove = 90
 		modifier = { consumer_goods_factor = 0.03 }
 		remove_effect = {
-			cwc_gorbachev_faction_system_small_support = yes
+			ND_SOV_gorbachev_faction_system_small_support = yes
 		}
 	}
-	cwc_amend_the_budget = {
+	ND_SOV_gorbachev_faction_system_amend_the_budget = {
 		icon = ger_mefo_bills
 		available = {
-			cwc_gorbachev_faction_system_medium_support_trigger = yes
+			ND_SOV_gorbachev_faction_system_medium_support_trigger = yes
 		}
 		#visible = { has_government = democratic }
 		cost = 25
@@ -192,201 +243,201 @@ cwc_gorbachev_faction_system = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				cwc_gorbachev_faction_system_low_support_trigger = yes
+				ND_SOV_gorbachev_faction_system_low_support_trigger = yes
 				factor = 0
 			}
 		}
 		modifier = { consumer_goods_factor = -0.05 }
 		remove_effect = {
-			cwc_gorbachev_faction_system_medium_opposition = yes
+			ND_SOV_gorbachev_faction_system_medium_opposition = yes
 		}
 	}
-	cwc_invest_in_state_factory = {
+	ND_SOV_gorbachev_faction_system_invest_in_state_factory = {
 		icon = generic_construction
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = cwc_gorbachev_faction_system_invest_in_state_factory_tt
+				tooltip = ND_SOV_gorbachev_faction_system_invest_in_state_factory_tt
 				any_owned_state = {
-					has_state_flag = cwc_gorbachev_faction_system_build_factory
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 					check_variable = { factory_goal = industrial_complex_level }
 				}
 			}
 		}
 		highlight_states = {
-			has_state_flag = cwc_gorbachev_faction_system_build_factory
+			has_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 		}
 		days_mission_timeout = 360
 		is_good = no
 		activation = {
 			any_owned_state = {
-				has_state_flag = cwc_gorbachev_faction_system_build_factory
+				has_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 			}
 		}
 		timeout_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_factory
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_factory
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 				clear_variable = factory_goal
 			}
 			
-			cwc_gorbachev_faction_system_small_opposition = yes 
-			clr_country_flag = cwc_gorbachev_faction_system_investment
+			ND_SOV_gorbachev_faction_system_small_opposition = yes 
+			clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 		}
 		complete_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_factory
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_factory
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 				clear_variable = factory_goal
 			}
 			ROOT = {
-				cwc_gorbachev_faction_system_medium_support = yes 
-				clr_country_flag = cwc_gorbachev_faction_system_investment
+				ND_SOV_gorbachev_faction_system_medium_support = yes 
+				clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 			}
 			
 		}
 	}
-	cwc_invest_in_state_arms_factory = {
+	ND_SOV_gorbachev_faction_system_invest_in_state_arms_factory = {
 		icon = generic_construction
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = cwc_gorbachev_faction_system_invest_in_state_arms_factory_tt
+				tooltip = ND_SOV_gorbachev_faction_system_invest_in_state_arms_factory_tt
 				any_owned_state = {
-					has_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 					check_variable = { arms_factory_goal = arms_factory_level }
 				}
 			}
 		}
 		highlight_states = {
-			has_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+			has_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 		}
 		days_mission_timeout = 360
 		is_good = no
 		activation = {
 			any_owned_state = {
-				has_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+				has_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 			}
 		}
 		timeout_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 				clear_variable = arms_factory_goal
 			}
 			
-			cwc_gorbachev_faction_system_small_opposition = yes 
-			clr_country_flag = cwc_gorbachev_faction_system_investment
+			ND_SOV_gorbachev_faction_system_small_opposition = yes 
+			clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 		}
 		complete_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 				clear_variable = arms_factory_goal
 			}
 			ROOT = {
-				cwc_gorbachev_faction_system_medium_support = yes 
-				clr_country_flag = cwc_gorbachev_faction_system_investment
+				ND_SOV_gorbachev_faction_system_medium_support = yes 
+				clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 			}
 			
 		}
 	}
-	cwc_invest_in_state_dockyard = {
+	ND_SOV_gorbachev_faction_system_invest_in_state_dockyard = {
 		icon = generic_construction
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = cwc_gorbachev_faction_system_invest_in_dockyard_tooltip
+				tooltip = ND_SOV_gorbachev_faction_system_invest_in_dockyard_tooltip
 				any_owned_state = {
-					has_state_flag = cwc_gorbachev_faction_system_build_dockyard
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 					check_variable = { dockyard_goal = building_level@dockyard }
 				}
 			}
 		}
 		highlight_states = {
-			has_state_flag = cwc_gorbachev_faction_system_build_dockyard
+			has_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 		}
 		days_mission_timeout = 360
 		is_good = no
 		activation = {
 			any_owned_state = {
-				has_state_flag = cwc_gorbachev_faction_system_build_dockyard
+				has_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 			}
 		}
 		timeout_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_dockyard
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_dockyard
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 				clear_variable = dockyard_goal
 			}
-			cwc_gorbachev_faction_system_small_opposition = yes 
-			clr_country_flag = cwc_gorbachev_faction_system_investment
+			ND_SOV_gorbachev_faction_system_small_opposition = yes 
+			clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 		}
 		complete_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_dockyard
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_dockyard
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 				clear_variable = dockyard_goal
 			}
 			ROOT = {
-				cwc_gorbachev_faction_system_medium_support = yes 
-				clr_country_flag = cwc_gorbachev_faction_system_investment
+				ND_SOV_gorbachev_faction_system_medium_support = yes 
+				clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 			}
 		}
 	}
-	cwc_invest_in_state_infrastructure = {
+	ND_SOV_gorbachev_faction_system_invest_in_state_infrastructure = {
 		icon = generic_construction
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = cwc_gorbachev_faction_system_invest_in_state_infrastructure_tt
+				tooltip = ND_SOV_gorbachev_faction_system_invest_in_state_infrastructure_tt
 				any_owned_state = {
-					has_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 					check_variable = { infrastructure_goal = infrastructure_level }
 				}
 			}
 		}
 		highlight_states = {
-			has_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+			has_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 		}
 		days_mission_timeout = 360
 		is_good = no
 		activation = {
 			any_owned_state = {
-				has_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+				has_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 			}
 		}
 		timeout_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 				clear_variable = infrastructure_goal
 			}
 			
-			cwc_gorbachev_faction_system_small_opposition = yes 
-			clr_country_flag = cwc_gorbachev_faction_system_investment
+			ND_SOV_gorbachev_faction_system_small_opposition = yes 
+			clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 		}
 		complete_effect = {
 			random_owned_state = {
 				limit = {
-					has_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+					has_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 				}
-				clr_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+				clr_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 				clear_variable = infrastructure_goal
 			}
 			ROOT = {
-				cwc_gorbachev_faction_system_medium_support = yes 
-				clr_country_flag = cwc_gorbachev_faction_system_investment
+				ND_SOV_gorbachev_faction_system_medium_support = yes 
+				clr_country_flag = ND_SOV_gorbachev_faction_system_investment
 			}
 			
 		}

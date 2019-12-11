@@ -14,26 +14,29 @@
 #
 
 
-cwc_gorbachev_faction_system_low_support_trigger = {
+ND_SOV_gorbachev_faction_system_low_support_trigger = {
 	custom_trigger_tooltip = {
-		tooltip = cwc_gorbachev_faction_system_low_support_trigger_tt
+		tooltip = ND_SOV_gorbachev_faction_system_low_support_trigger_tt
 		check_variable = { var = reform_support value = quorum_low compare = greater_than_or_equals }
-		check_variable = { var = representatives_support value = 175 compare = greater_than_or_equals }
+		check_variable = { var = conservative_support value = 175 compare = greater_than_or_equals }
+		check_variable = { var = military_support value = 175 compare = greater_than_or_equals }
 	}
 }
 
-cwc_gorbachev_faction_system_medium_support_trigger = {
+ND_SOV_gorbachev_faction_system_medium_support_trigger = {
 	custom_trigger_tooltip = {
-		tooltip = cwc_gorbachev_faction_system_medium_support_trigger_tt
+		tooltip = ND_SOV_gorbachev_faction_system_medium_support_trigger_tt
 		check_variable = { var = reform_support value = quorum_medium compare = greater_than_or_equals }
-		check_variable = { var = representatives_support value = 220 compare = greater_than_or_equals }
+		check_variable = { var = conservative_support value = 220 compare = greater_than_or_equals }
+		check_variable = { var = military_support value = 220 compare = greater_than_or_equals }
 	}
 }
 
-cwc_gorbachev_faction_system_high_support_trigger = {
+ND_SOV_gorbachev_faction_system_high_support_trigger = {
 	custom_trigger_tooltip = {
-		tooltip = cwc_gorbachev_faction_system_high_support_trigger_tt
+		tooltip = ND_SOV_gorbachev_faction_system_high_support_trigger_tt
 		check_variable = { var = reform_support value = quorum_high compare = greater_than_or_equals }
-		check_variable = { var = representatives_support value = 265 compare = greater_than_or_equals }
+		check_variable = { var = conservative_support value = 265 compare = greater_than_or_equals }
+		check_variable = { var = military_support value = 265 compare = greater_than_or_equals }
 	}
 }

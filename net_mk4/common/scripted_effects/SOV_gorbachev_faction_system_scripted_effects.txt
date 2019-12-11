@@ -1,5 +1,5 @@
 
-cwc_gorbachev_faction_system_get_quorum = {
+ND_SOV_gorbachev_faction_system_get_quorum = {
 	set_variable = { var = quorum_low value = reform_total }
 	multiply_variable = { var = quorum_low value = 0.4 }
 	set_variable = { var = quorum_medium value = reform_total }
@@ -11,8 +11,8 @@ cwc_gorbachev_faction_system_get_quorum = {
 	round_variable = quorum_high
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_gorbachev_faction_system_small_opposition = {
-	custom_effect_tooltip = mtg_cwc_gorbachev_faction_system_small_opposition_tt
+ND_SOV_gorbachev_faction_system_small_opposition = {
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_small_opposition_tt
 	hidden_effect = {
 		cwc_reform_small_opposition = yes
 		cwc_conservative_small_opposition = yes
@@ -22,7 +22,7 @@ cwc_gorbachev_faction_system_small_opposition = {
 
 #---------------------------------------------------------------------------------
 cwc_reform_small_opposition = {
-	custom_effect_tooltip = mtg_cwc_reform_small_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -4 }
 	add_to_variable = { reform_support = temp_factor }
@@ -31,26 +31,26 @@ cwc_reform_small_opposition = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_conservative_small_opposition = {
-	custom_effect_tooltip = mtg_cwc_conservative_small_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -20 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { conservative_support = temp_factor }
+	round_variable = conservative_support
+	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_military_small_opposition = {
-	custom_effect_tooltip = mtg_cwc_military_small_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -20 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { military_support = temp_factor }
+	round_variable = military_support
+	clamp_variable = { var = military_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
 cwc_reform_small_support = {
-	custom_effect_tooltip = mtg_cwc_reform_small_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 5 }
 	add_to_variable = { reform_support = temp_factor }
@@ -59,28 +59,28 @@ cwc_reform_small_support = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_conservative_small_support = {
-	custom_effect_tooltip = mtg_cwc_conservative_small_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 25 }
 	clamp_temp_variable = { var = temp_factor max = 25 min = 10 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { conservative_support = temp_factor }
+	round_variable = conservative_support
+	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_military_small_support = {
-	custom_effect_tooltip = mtg_cwc_military_small_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 25 }
 	clamp_temp_variable = { var = temp_factor max = 25 min = 10 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { military_support = temp_factor }
+	round_variable = military_support
+	clamp_variable = { var = military_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
 cwc_reform_medium_opposition = {
-	custom_effect_tooltip = mtg_cwc_reform_medium_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -8 }
 	clamp_temp_variable = { var = temp_factor max = -3 min = -8 }
@@ -90,28 +90,28 @@ cwc_reform_medium_opposition = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_conservative_medium_opposition = {
-	custom_effect_tooltip = mtg_cwc_conservative_medium_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -40 }
 	clamp_temp_variable = { var = temp_factor max = -20 min = -40 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { conservative_support = temp_factor }
+	round_variable = conservative_support
+	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_military_medium_opposition = {
-	custom_effect_tooltip = mtg_cwc_military_medium_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -40 }
 	clamp_temp_variable = { var = temp_factor max = -20 min = -40 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { military_support = temp_factor }
+	round_variable = military_support
+	clamp_variable = { var = military_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
 cwc_reform_medium_support = {
-	custom_effect_tooltip = mtg_cwc_reform_medium_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 10 }
 	clamp_temp_variable = { var = temp_factor max = 10 min = 5 }
@@ -121,28 +121,28 @@ cwc_reform_medium_support = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_conservative_medium_support = {
-	custom_effect_tooltip = mtg_cwc_conservative_medium_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 50 }
 	clamp_temp_variable = { var = temp_factor max = 50 min = 20 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { conservative_support = temp_factor }
+	round_variable = conservative_support
+	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_military_medium_support = {
-	custom_effect_tooltip = mtg_cwc_military_medium_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 50 }
 	clamp_temp_variable = { var = temp_factor max = 50 min = 20 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { military_support = temp_factor }
+	round_variable = military_support
+	clamp_variable = { var = military_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
 cwc_reform_large_opposition = {
-	custom_effect_tooltip = mtg_cwc_reform_large_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -25 }
 	clamp_temp_variable = { var = temp_factor max = 25 min = -10 }
@@ -152,28 +152,28 @@ cwc_reform_large_opposition = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_conservative_large_opposition = {
-	custom_effect_tooltip = mtg_cwc_conservative_large_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -100 }
 	clamp_temp_variable = { var = temp_factor max = -50 min = -100 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { conservative_support = temp_factor }
+	round_variable = conservative_support
+	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_military_large_opposition = {
-	custom_effect_tooltip = mtg_cwc_military_large_opposition_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -100 }
 	clamp_temp_variable = { var = temp_factor max = -50 min = -100 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { military_support = temp_factor }
+	round_variable = military_support
+	clamp_variable = { var = military_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
 cwc_reform_large_support = {
-	custom_effect_tooltip = mtg_cwc_reform_large_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 30 }
 	clamp_temp_variable = { var = temp_factor max = 30 min = 15 }
@@ -183,28 +183,28 @@ cwc_reform_large_support = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_conservative_large_support = {
-	custom_effect_tooltip = mtg_cwc_conservative_large_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 125 }
 	clamp_temp_variable = { var = temp_factor max = 125 min = 80 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { conservative_support = temp_factor }
+	round_variable = conservative_support
+	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_military_large_support = {
-	custom_effect_tooltip = mtg_cwc_military_large_support_tt
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 125 }
 	clamp_temp_variable = { var = temp_factor max = 125 min = 80 }
-	add_to_variable = { representatives_support = temp_factor }
-	round_variable = representatives_support
-	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	add_to_variable = { military_support = temp_factor }
+	round_variable = military_support
+	clamp_variable = { var = military_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
-cwc_gorbachev_faction_system_medium_opposition = {
-	custom_effect_tooltip = mtg_cwc_gorbachev_faction_system_medium_opposition_tt
+ND_SOV_gorbachev_faction_system_medium_opposition = {
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_medium_opposition_tt
 	hidden_effect = {
 		cwc_reform_medium_opposition = yes
 		cwc_conservative_medium_opposition = yes
@@ -212,8 +212,8 @@ cwc_gorbachev_faction_system_medium_opposition = {
 		
 	}
 }
-cwc_gorbachev_faction_system_large_opposition = {
-	custom_effect_tooltip = mtg_cwc_gorbachev_faction_system_large_opposition_tt
+ND_SOV_gorbachev_faction_system_large_opposition = {
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_large_opposition_tt
 	hidden_effect = {
 		cwc_reform_large_opposition = yes
 		cwc_conservative_large_opposition = yes
@@ -221,8 +221,8 @@ cwc_gorbachev_faction_system_large_opposition = {
 		
 	}
 }
-cwc_gorbachev_faction_system_small_support = {
-	custom_effect_tooltip = mtg_cwc_gorbachev_faction_system_small_support_tt
+ND_SOV_gorbachev_faction_system_small_support = {
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_small_support_tt
 	hidden_effect = {
 		cwc_reform_small_support = yes
 		cwc_conservative_small_support = yes
@@ -230,8 +230,8 @@ cwc_gorbachev_faction_system_small_support = {
 		
 	}
 }
-cwc_gorbachev_faction_system_medium_support = {
-	custom_effect_tooltip = mtg_cwc_gorbachev_faction_system_medium_support_tt
+ND_SOV_gorbachev_faction_system_medium_support = {
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_medium_support_tt
 	hidden_effect = {
 		cwc_reform_medium_support = yes
 		cwc_conservative_medium_support = yes
@@ -239,8 +239,8 @@ cwc_gorbachev_faction_system_medium_support = {
 		
 	}
 }
-cwc_gorbachev_faction_system_large_support = {
-	custom_effect_tooltip = mtg_cwc_gorbachev_faction_system_large_support_tt
+ND_SOV_gorbachev_faction_system_large_support = {
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_large_support_tt
 	hidden_effect = {
 		cwc_reform_large_support = yes
 		cwc_conservative_large_support = yes
@@ -267,46 +267,46 @@ cwc_election_reform = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_election_conservative = {
-	set_variable = { var = representatives_for_reelection value = representatives_total } #not temp because needed for events
-	multiply_variable = { representatives_for_reelection = 0.5 }
-	multiply_variable = { representatives_for_reelection = election_factor }
-	set_variable = { representatives_support = representatives_total }
-	multiply_variable = { representatives_support = 0.5 }
-	add_to_variable = { representatives_support = representatives_for_reelection }
-	round_variable = representatives_support
-	round_variable = representatives_for_reelection
-	set_variable = { ror_loc = representatives_for_reelection }
+	set_variable = { var = conservative_for_reelection value = conservative_total } #not temp because needed for events
+	multiply_variable = { conservative_for_reelection = 0.5 }
+	multiply_variable = { conservative_for_reelection = election_factor }
+	set_variable = { conservative_support = conservative_total }
+	multiply_variable = { conservative_support = 0.5 }
+	add_to_variable = { conservative_support = conservative_for_reelection }
+	round_variable = conservative_support
+	round_variable = conservative_for_reelection
+	set_variable = { ror_loc = conservative_for_reelection }
 	if = {
 		limit = {
 			check_variable = { ror_loc < 0 }
 		}
 		multiply_variable = { ror_loc = -1 }
 	}
-	clamp_variable = { var = reform_support max = representatives_total min = 0 }
+	clamp_variable = { var = reform_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_election_military = {
-	set_variable = { var = representatives_for_reelection value = representatives_total } #not temp because needed for events
-	multiply_variable = { representatives_for_reelection = 0.5 }
-	multiply_variable = { representatives_for_reelection = election_factor }
-	set_variable = { representatives_support = representatives_total }
-	multiply_variable = { representatives_support = 0.5 }
-	add_to_variable = { representatives_support = representatives_for_reelection }
-	round_variable = representatives_support
-	round_variable = representatives_for_reelection
-	set_variable = { ror_loc = representatives_for_reelection }
+	set_variable = { var = military_for_reelection value = military_total } #not temp because needed for events
+	multiply_variable = { military_for_reelection = 0.5 }
+	multiply_variable = { military_for_reelection = election_factor }
+	set_variable = { military_support = military_total }
+	multiply_variable = { military_support = 0.5 }
+	add_to_variable = { military_support = military_for_reelection }
+	round_variable = military_support
+	round_variable = military_for_reelection
+	set_variable = { mil_loc = military_for_reelection }
 	if = {
 		limit = {
-			check_variable = { ror_loc < 0 }
+			check_variable = { mil_loc < 0 }
 		}
-		multiply_variable = { ror_loc = -1 }
+		multiply_variable = { mil_loc = -1 }
 	}
-	clamp_variable = { var = reform_support max = representatives_total min = 0 }
+	clamp_variable = { var = reform_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
-cwc_return_majority = { #for communist/fascist
-	custom_effect_tooltip = cwc_return_majority_tt
+ND_SOV_gorbachev_faction_system_return_majority = { #for communist/fascist
+	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_return_majority_tt
 	set_variable = { var = goal_value_reform value = reform_total }
 	multiply_variable = { var = goal_value_reform value = 0.7 }
 	round_variable = goal_value_reform
@@ -316,14 +316,23 @@ cwc_return_majority = { #for communist/fascist
 		}
 		set_variable = { var = reform_support value = goal_value_reform }
 	}
-	set_variable = { var = goal_value_representatives value = representatives_total }
-	multiply_variable = { var = goal_value_representatives value = 0.7 }
-	round_variable = goal_value_representatives
+	set_variable = { var = goal_value_conservative value = conservative_total }
+	multiply_variable = { var = goal_value_conservative value = 0.7 }
+	round_variable = goal_value_conservative
 	if = {
 		limit = {
-			check_variable = { var = representatives_support value = goal_value_representatives compare = less_than } #shouldn't punish player
+			check_variable = { var = conservative_support value = goal_value_conservative compare = less_than } #shouldn't punish player
 		}
-		set_variable = { var = representatives_support value = goal_value_representatives }
+		set_variable = { var = conservative_support value = goal_value_conservative }
+	}
+	set_variable = { var = goal_value_military value = military_total }
+	multiply_variable = { var = goal_value_military value = 0.7 }
+	round_variable = goal_value_military
+	if = {
+		limit = {
+			check_variable = { var = military_support value = goal_value_military compare = less_than } #shouldn't punish player
+		}
+		set_variable = { var = military_support value = goal_value_military }
 	}
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
@@ -331,9 +340,12 @@ cwc_flip_support = {
 	set_temp_variable = { reform_temp = reform_total }
 	subtract_from_temp_variable = { reform_temp = reform_support }
 	set_variable = { reform_support = reform_temp }
-	set_temp_variable = { representatives_temp = representatives_total }
-	subtract_from_temp_variable = { representatives_temp = representatives_support }
-	set_variable = { representatives_support = representatives_temp }
+	set_temp_variable = { conservative_temp = conservative_total }
+	subtract_from_temp_variable = { conservative_temp = conservative_support }
+	set_variable = { conservative_support = conservative_temp }
+	set_temp_variable = { military_temp = military_total }
+	subtract_from_temp_variable = { military_temp = military_support }
+	set_variable = { military_support = military_temp }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 cwc_recalc_gorbachev_faction_system_icon_frames = {
@@ -354,8 +366,8 @@ cwc_recalc_gorbachev_faction_system_icon_frames = {
 	}
 	set_variable = { current_reform_icon_frame = reform_temp }
 
-	set_temp_variable = { conservative_temp = representatives_support }
-	divide_temp_variable = { conservative_temp = representatives_total }
+	set_temp_variable = { conservative_temp = conservative_support }
+	divide_temp_variable = { conservative_temp = conservative_total }
 	multiply_temp_variable = { conservative_temp = 21 }
 	if = {
 		limit = { check_variable = { conservative_temp > 0 } }
@@ -370,8 +382,8 @@ cwc_recalc_gorbachev_faction_system_icon_frames = {
 	}
 	set_variable = { current_conservative_icon_frame = conservative_temp }
 
-	set_temp_variable = { military_temp = representatives_support }
-	divide_temp_variable = { military_temp = representatives_total }
+	set_temp_variable = { military_temp = military_support }
+	divide_temp_variable = { military_temp = military_total }
 	multiply_temp_variable = { military_temp = 21 }
 	if = {
 		limit = { check_variable = { military_temp > 0 } }

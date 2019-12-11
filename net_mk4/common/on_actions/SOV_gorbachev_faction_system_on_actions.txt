@@ -9,8 +9,10 @@ on_actions = {
 				}
 				set_variable = { var = reform_support value = 40 }
 				set_variable = { var = reform_total value = 100 }
-				set_variable = { var = representatives_support value = 200 }
-				set_variable = { var = representatives_total value = 450 }
+				set_variable = { var = conservative_support value = 200 }
+				set_variable = { var = conservative_total value = 450 }
+				set_variable = { var = military_support value = 200 }
+				set_variable = { var = military_total value = 450 }
 				set_variable = { var = quorum_low value = 40 }
 				set_variable = { var = quorum_medium value = 55 }
 				set_variable = { var = quorum_high value = 70 }
@@ -22,8 +24,10 @@ on_actions = {
 				}
 				set_variable = { var = reform_support value = 25 }
 				set_variable = { var = reform_total value = 100 }
-				set_variable = { var = representatives_support value = 170 }
-				set_variable = { var = representatives_total value = 450 }
+				set_variable = { var = conservative_support value = 170 }
+				set_variable = { var = conservative_total value = 450 }
+				set_variable = { var = military_support value = 170 }
+				set_variable = { var = military_total value = 450 }
 				set_variable = { var = quorum_low value = 40 }
 				set_variable = { var = quorum_medium value = 55 }
 				set_variable = { var = quorum_high value = 70 }

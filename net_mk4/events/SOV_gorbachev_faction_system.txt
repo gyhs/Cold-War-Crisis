@@ -15,10 +15,10 @@ country_event = {
 	}
 
 	immediate = {
-		set_country_flag = cwc_gorbachev_faction_system_investment
+		set_country_flag = ND_SOV_gorbachev_faction_system_investment
 		if = {
-			limit = { has_event_target = cwc_gorbachev_faction_system_investment_state }
-			clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+			limit = { has_event_target = ND_SOV_gorbachev_faction_system_investment_state }
+			clear_global_event_target = ND_SOV_gorbachev_faction_system_investment_state
 		}
 		random_list = {
 			25 = {
@@ -47,7 +47,7 @@ country_event = {
 						}
 					}
 					
-					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					save_global_event_target_as = ND_SOV_gorbachev_faction_system_investment_state
 					state_event = { id = cwc.61 trigger_for = controller }
 				}
 			}
@@ -76,7 +76,7 @@ country_event = {
 							include_locked = no
 						}
 					}
-					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					save_global_event_target_as = ND_SOV_gorbachev_faction_system_investment_state
 					state_event = { id = cwc.62 trigger_for = controller }
 				}
 			}
@@ -106,7 +106,7 @@ country_event = {
 							include_locked = no
 						}
 					}
-					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					save_global_event_target_as = ND_SOV_gorbachev_faction_system_investment_state
 					state_event = { id = cwc.64 trigger_for = controller }
 				}
 			}
@@ -134,7 +134,7 @@ country_event = {
 							include_locked = no
 						}
 					}
-					save_global_event_target_as = cwc_gorbachev_faction_system_investment_state
+					save_global_event_target_as = ND_SOV_gorbachev_faction_system_investment_state
 					state_event = { id = cwc.63 trigger_for = controller }
 				}
 			}
@@ -159,9 +159,9 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		unlock_decision_tooltip = { decision = cwc_invest_in_state_factory show_effect_tooltip = yes }
-		event_target:cwc_gorbachev_faction_system_investment_state = {
-			set_state_flag = cwc_gorbachev_faction_system_build_factory
+		unlock_decision_tooltip = { decision = ND_SOV_gorbachev_faction_system_invest_in_state_factory show_effect_tooltip = yes }
+		event_target:ND_SOV_gorbachev_faction_system_investment_state = {
+			set_state_flag = ND_SOV_gorbachev_faction_system_build_factory
 			set_variable = { factory_goal = industrial_complex_level }
 			add_to_variable = { factory_goal = 1 }
 		}
@@ -171,8 +171,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
-		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+		ROOT = { clr_country_flag = ND_SOV_gorbachev_faction_system_investment }
+		clear_global_event_target = ND_SOV_gorbachev_faction_system_investment_state
 	}
 }
 
@@ -191,9 +191,9 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		unlock_decision_tooltip = { decision = cwc_invest_in_state_arms_factory show_effect_tooltip = yes }
-		event_target:cwc_gorbachev_faction_system_investment_state = {
-			set_state_flag = cwc_gorbachev_faction_system_build_arms_factory
+		unlock_decision_tooltip = { decision = ND_SOV_gorbachev_faction_system_invest_in_state_arms_factory show_effect_tooltip = yes }
+		event_target:ND_SOV_gorbachev_faction_system_investment_state = {
+			set_state_flag = ND_SOV_gorbachev_faction_system_build_arms_factory
 			set_variable = { arms_factory_goal = arms_factory_level }
 			add_to_variable = { arms_factory_goal = 1 }
 		}
@@ -203,8 +203,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
-		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+		ROOT = { clr_country_flag = ND_SOV_gorbachev_faction_system_investment }
+		clear_global_event_target = ND_SOV_gorbachev_faction_system_investment_state
 	}
 }
 # senator wants investment in infrastructure
@@ -222,9 +222,9 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		unlock_decision_tooltip = { decision = cwc_invest_in_state_infrastructure show_effect_tooltip = yes }
-		event_target:cwc_gorbachev_faction_system_investment_state = {
-			set_state_flag = cwc_gorbachev_faction_system_build_infrastructure
+		unlock_decision_tooltip = { decision = ND_SOV_gorbachev_faction_system_invest_in_state_infrastructure show_effect_tooltip = yes }
+		event_target:ND_SOV_gorbachev_faction_system_investment_state = {
+			set_state_flag = ND_SOV_gorbachev_faction_system_build_infrastructure
 			set_variable = { infrastructure_goal = infrastructure_level }
 			add_to_variable = { infrastructure_goal = 1 }
 		}
@@ -234,8 +234,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
-		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+		ROOT = { clr_country_flag = ND_SOV_gorbachev_faction_system_investment }
+		clear_global_event_target = ND_SOV_gorbachev_faction_system_investment_state
 	}
 }
 # senator wants investment in dockyards
@@ -253,9 +253,9 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		unlock_decision_tooltip = { decision = cwc_invest_in_state_dockyard show_effect_tooltip = yes }
-		event_target:cwc_gorbachev_faction_system_investment_state = {
-			set_state_flag = cwc_gorbachev_faction_system_build_dockyard
+		unlock_decision_tooltip = { decision = ND_SOV_gorbachev_faction_system_invest_in_state_dockyard show_effect_tooltip = yes }
+		event_target:ND_SOV_gorbachev_faction_system_investment_state = {
+			set_state_flag = ND_SOV_gorbachev_faction_system_build_dockyard
 			set_variable = { dockyard_goal = building_level@dockyard }
 			add_to_variable = { dockyard_goal = 1 }
 		}
@@ -265,7 +265,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		ROOT = { clr_country_flag = cwc_gorbachev_faction_system_investment }
-		clear_global_event_target = cwc_gorbachev_faction_system_investment_state
+		ROOT = { clr_country_flag = ND_SOV_gorbachev_faction_system_investment }
+		clear_global_event_target = ND_SOV_gorbachev_faction_system_investment_state
 	}
 }
