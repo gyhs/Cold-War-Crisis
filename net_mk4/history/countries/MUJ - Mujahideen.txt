@@ -1,4 +1,4 @@
-﻿capital = 415
+﻿capital = 866
 
 oob = "MUJ_1987"
 

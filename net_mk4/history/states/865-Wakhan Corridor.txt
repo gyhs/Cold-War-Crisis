@@ -10,6 +10,8 @@ state={
 		}
 		add_core_of = AFG
 		add_core_of = MUJ
+		add_claim_by = PAK
+		add_claim_by = PRC
 
 	}
 
