@@ -14,14 +14,14 @@ ND_SOV_gorbachev_faction_system_get_quorum = {
 ND_SOV_gorbachev_faction_system_small_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_small_opposition_tt
 	hidden_effect = {
-		cwc_reform_small_opposition = yes
-		cwc_conservative_small_opposition = yes
-		cwc_military_small_opposition = yes
+		ND_SOV_gorbachev_faction_system_reform_small_opposition = yes
+		ND_SOV_gorbachev_faction_system_conservative_small_opposition = yes
+		ND_SOV_gorbachev_faction_system_military_small_opposition = yes
 	}
 }
 
 #---------------------------------------------------------------------------------
-cwc_reform_small_opposition = {
+ND_SOV_gorbachev_faction_system_reform_small_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -4 }
@@ -30,7 +30,7 @@ cwc_reform_small_opposition = {
 	clamp_variable = { var = reform_support max = reform_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_conservative_small_opposition = {
+ND_SOV_gorbachev_faction_system_conservative_small_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -20 }
@@ -39,7 +39,7 @@ cwc_conservative_small_opposition = {
 	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_military_small_opposition = {
+ND_SOV_gorbachev_faction_system_military_small_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -20 }
@@ -49,7 +49,7 @@ cwc_military_small_opposition = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
-cwc_reform_small_support = {
+ND_SOV_gorbachev_faction_system_reform_small_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 5 }
@@ -58,7 +58,7 @@ cwc_reform_small_support = {
 	clamp_variable = { var = reform_support max = reform_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_conservative_small_support = {
+ND_SOV_gorbachev_faction_system_conservative_small_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 25 }
@@ -68,7 +68,7 @@ cwc_conservative_small_support = {
 	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_military_small_support = {
+ND_SOV_gorbachev_faction_system_military_small_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 25 }
@@ -79,7 +79,7 @@ cwc_military_small_support = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
-cwc_reform_medium_opposition = {
+ND_SOV_gorbachev_faction_system_reform_medium_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -8 }
@@ -89,7 +89,7 @@ cwc_reform_medium_opposition = {
 	clamp_variable = { var = reform_support max = reform_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_conservative_medium_opposition = {
+ND_SOV_gorbachev_faction_system_conservative_medium_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -40 }
@@ -99,7 +99,7 @@ cwc_conservative_medium_opposition = {
 	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_military_medium_opposition = {
+ND_SOV_gorbachev_faction_system_military_medium_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -40 }
@@ -110,7 +110,7 @@ cwc_military_medium_opposition = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
-cwc_reform_medium_support = {
+ND_SOV_gorbachev_faction_system_reform_medium_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 10 }
@@ -120,7 +120,7 @@ cwc_reform_medium_support = {
 	clamp_variable = { var = reform_support max = reform_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_conservative_medium_support = {
+ND_SOV_gorbachev_faction_system_conservative_medium_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 50 }
@@ -130,7 +130,7 @@ cwc_conservative_medium_support = {
 	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_military_medium_support = {
+ND_SOV_gorbachev_faction_system_military_medium_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 50 }
@@ -141,7 +141,7 @@ cwc_military_medium_support = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
-cwc_reform_large_opposition = {
+ND_SOV_gorbachev_faction_system_reform_large_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -25 }
@@ -151,7 +151,7 @@ cwc_reform_large_opposition = {
 	clamp_variable = { var = reform_support max = reform_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_conservative_large_opposition = {
+ND_SOV_gorbachev_faction_system_conservative_large_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -100 }
@@ -161,7 +161,7 @@ cwc_conservative_large_opposition = {
 	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_military_large_opposition = {
+ND_SOV_gorbachev_faction_system_military_large_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -100 }
@@ -172,7 +172,7 @@ cwc_military_large_opposition = {
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 #---------------------------------------------------------------------------------
-cwc_reform_large_support = {
+ND_SOV_gorbachev_faction_system_reform_large_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_reform_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 30 }
@@ -182,7 +182,7 @@ cwc_reform_large_support = {
 	clamp_variable = { var = reform_support max = reform_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_conservative_large_support = {
+ND_SOV_gorbachev_faction_system_conservative_large_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_conservative_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 125 }
@@ -192,7 +192,7 @@ cwc_conservative_large_support = {
 	clamp_variable = { var = conservative_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
-cwc_military_large_support = {
+ND_SOV_gorbachev_faction_system_military_large_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_military_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 125 }
@@ -206,45 +206,45 @@ cwc_military_large_support = {
 ND_SOV_gorbachev_faction_system_medium_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_medium_opposition_tt
 	hidden_effect = {
-		cwc_reform_medium_opposition = yes
-		cwc_conservative_medium_opposition = yes
-		cwc_military_medium_opposition = yes
+		ND_SOV_gorbachev_faction_system_reform_medium_opposition = yes
+		ND_SOV_gorbachev_faction_system_conservative_medium_opposition = yes
+		ND_SOV_gorbachev_faction_system_military_medium_opposition = yes
 		
 	}
 }
 ND_SOV_gorbachev_faction_system_large_opposition = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_large_opposition_tt
 	hidden_effect = {
-		cwc_reform_large_opposition = yes
-		cwc_conservative_large_opposition = yes
-		cwc_military_large_opposition = yes
+		ND_SOV_gorbachev_faction_system_reform_large_opposition = yes
+		ND_SOV_gorbachev_faction_system_conservative_large_opposition = yes
+		ND_SOV_gorbachev_faction_system_military_large_opposition = yes
 		
 	}
 }
 ND_SOV_gorbachev_faction_system_small_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_small_support_tt
 	hidden_effect = {
-		cwc_reform_small_support = yes
-		cwc_conservative_small_support = yes
-		cwc_military_small_support = yes
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
+		ND_SOV_gorbachev_faction_system_military_small_support = yes
 		
 	}
 }
 ND_SOV_gorbachev_faction_system_medium_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_medium_support_tt
 	hidden_effect = {
-		cwc_reform_medium_support = yes
-		cwc_conservative_medium_support = yes
-		cwc_military_medium_support = yes
+		ND_SOV_gorbachev_faction_system_reform_medium_support = yes
+		ND_SOV_gorbachev_faction_system_conservative_medium_support = yes
+		ND_SOV_gorbachev_faction_system_military_medium_support = yes
 		
 	}
 }
 ND_SOV_gorbachev_faction_system_large_support = {
 	custom_effect_tooltip = ND_SOV_gorbachev_faction_system_large_support_tt
 	hidden_effect = {
-		cwc_reform_large_support = yes
-		cwc_conservative_large_support = yes
-		cwc_military_large_support = yes
+		ND_SOV_gorbachev_faction_system_reform_large_support = yes
+		ND_SOV_gorbachev_faction_system_conservative_large_support = yes
+		ND_SOV_gorbachev_faction_system_military_large_support = yes
 		
 	}
 }
