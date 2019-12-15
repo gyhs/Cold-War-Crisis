@@ -280,12 +280,12 @@ cwc_election_reform = {
 	add_to_variable = { reform_support = reform_for_reelection }
 	round_variable = reform_support
 	round_variable = reform_for_reelection
-	set_variable = { sen_loc = reform_for_reelection }
+	set_variable = { reform_loc = reform_for_reelection }
 	if = {
 		limit = {
-			check_variable = { sen_loc < 0 }
+			check_variable = { reform_loc < 0 }
 		}
-		multiply_variable = { sen_loc = -1 }
+		multiply_variable = { reform_loc = -1 }
 	}
 	clamp_variable = { var = reform_support max = reform_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
@@ -299,12 +299,12 @@ cwc_election_conservative = {
 	add_to_variable = { conservative_support = conservative_for_reelection }
 	round_variable = conservative_support
 	round_variable = conservative_for_reelection
-	set_variable = { ror_loc = conservative_for_reelection }
+	set_variable = { conservative_loc = conservative_for_reelection }
 	if = {
 		limit = {
-			check_variable = { ror_loc < 0 }
+			check_variable = { conservative_loc < 0 }
 		}
-		multiply_variable = { ror_loc = -1 }
+		multiply_variable = { conservative_loc = -1 }
 	}
 	clamp_variable = { var = reform_support max = conservative_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
@@ -318,12 +318,12 @@ cwc_election_military = {
 	add_to_variable = { military_support = military_for_reelection }
 	round_variable = military_support
 	round_variable = military_for_reelection
-	set_variable = { mil_loc = military_for_reelection }
+	set_variable = { military_loc = military_for_reelection }
 	if = {
 		limit = {
-			check_variable = { mil_loc < 0 }
+			check_variable = { military_loc < 0 }
 		}
-		multiply_variable = { mil_loc = -1 }
+		multiply_variable = { military_loc = -1 }
 	}
 	clamp_variable = { var = reform_support max = military_total min = 0 }
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
