@@ -60,10 +60,9 @@ ND_SOV_gorbachev_faction_system_reform_more_total_tt:0 "개혁파 지지도 §Y[
 ND_SOV_gorbachev_faction_system_conservative_more_total_tt:0 "보수파 지지도 §Y[?ROOT.conservative_total]§! 이상 필요함"
 ND_SOV_gorbachev_faction_system_military_more_total_tt:0 "군부 지지도 §Y[?ROOT.conservative_total]§! 이상 필요함"
 
-ND_SOV_gorbachev_faction_system_low_support_trigger_tt:1 "최소 §Y[?ROOT.quorum_low] 개혁파§! (현재: [?ROOT.reform_support]) 그리고 §Y174 보수파§! (현재: [?ROOT.conservative_support]), 군부§! (현재: [?ROOT.military_support])의 지지도 필요함\n"
-ND_SOV_gorbachev_faction_system_medium_support_trigger_tt:1 "최소 §Y[?ROOT.quorum_medium] 개혁파§! (현재: [?ROOT.reform_support]) 그리고 §Y218 보수파§! (현재: [?ROOT.conservative_support]), 군부§! (현재: [?ROOT.military_support])의 지지도 필요함\n"
-ND_SOV_gorbachev_faction_system_high_support_trigger_tt:1 "최소 §Y[?ROOT.quorum_high] 개혁파§! (현재: [?ROOT.reform_support]) 그리고 §Y261 보수파§! (현재: [?ROOT.conservative_support]), 군부§! (현재: [?ROOT.military_support])의 지지도 필요함\n"
-
+ND_SOV_gorbachev_faction_system_low_support_trigger_tt:1 "최소 §Y[?ROOT.reform_quorum_low] 개혁파§! (현재: [?ROOT.reform_support]), 최소 §Y[?ROOT.conservative_quorum_low] 보수파§! (현재: [?ROOT.conservative_support]) , 최소 §Y[?ROOT.military_quorum_low] 군부§! (현재: [?ROOT.military_support]) 의 지지도 필요함\n"
+ND_SOV_gorbachev_faction_system_medium_support_trigger_tt:1 "최소 §Y[?ROOT.reform_quorum_medium] 개혁파§! (현재: [?ROOT.reform_support]), 최소 §Y[?ROOT.conservative_quorum_medium] 보수파§! (현재: [?ROOT.conservative_support]) , 최소 §Y[?ROOT.military_quorum_medium] 군부§! (현재: [?ROOT.military_support]) 의 지지도 필요함\n"
+ND_SOV_gorbachev_faction_system_high_support_trigger_tt:1 "최소 §Y[?ROOT.reform_quorum_high] 개혁파§! (현재: [?ROOT.reform_support]), 최소 §Y[?ROOT.conservative_quorum_high] 보수파§! (현재: [?ROOT.conservative_support]) , 최소 §Y[?ROOT.military_quorum_high] 군부§! (현재: [?ROOT.military_support]) 의 지지도 필요함\n"
 
 
  usa.61.t:0 "[USA_congress_investment_state.GetName] 상원의원의 지원 제안"

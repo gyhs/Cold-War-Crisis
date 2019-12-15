@@ -1,14 +1,38 @@
 
-ND_SOV_gorbachev_faction_system_get_quorum = {
-	set_variable = { var = quorum_low value = reform_total }
-	multiply_variable = { var = quorum_low value = 0.4 }
-	set_variable = { var = quorum_medium value = reform_total }
-	multiply_variable = { var = quorum_medium value = 0.5 }
-	set_variable = { var = quorum_high value = reform_total }
-	multiply_variable = { var = quorum_high value = 0.6 }
-	round_variable = quorum_low 
-	round_variable = quorum_medium 
-	round_variable = quorum_high
+ND_SOV_gorbachev_faction_system_get_reform_quorum = {
+	set_variable = { var = reform_quorum_low value = reform_total }
+	multiply_variable = { var = reform_quorum_low value = 0.4 }
+	set_variable = { var = reform_quorum_medium value = reform_total }
+	multiply_variable = { var = reform_quorum_medium value = 0.5 }
+	set_variable = { var = reform_quorum_high value = reform_total }
+	multiply_variable = { var = reform_quorum_high value = 0.6 }
+	round_variable = reform_quorum_low 
+	round_variable = reform_quorum_medium 
+	round_variable = reform_quorum_high
+	cwc_recalc_gorbachev_faction_system_icon_frames = yes
+}
+ND_SOV_gorbachev_faction_system_get_conservative_quorum = {
+	set_variable = { var = conservative_quorum_low value = conservative_total }
+	multiply_variable = { var = conservative_quorum_low value = 0.4 }
+	set_variable = { var = conservative_quorum_medium value = conservative_total }
+	multiply_variable = { var = conservative_quorum_medium value = 0.5 }
+	set_variable = { var = conservative_quorum_high value = conservative_total }
+	multiply_variable = { var = conservative_quorum_high value = 0.6 }
+	round_variable = conservative_quorum_low 
+	round_variable = conservative_quorum_medium 
+	round_variable = conservative_quorum_high
+	cwc_recalc_gorbachev_faction_system_icon_frames = yes
+}
+ND_SOV_gorbachev_faction_system_get_military_quorum = {
+	set_variable = { var = military_quorum_low value = military_total }
+	multiply_variable = { var = military_quorum_low value = 0.4 }
+	set_variable = { var = military_quorum_medium value = military_total }
+	multiply_variable = { var = military_quorum_medium value = 0.5 }
+	set_variable = { var = military_quorum_high value = military_total }
+	multiply_variable = { var = military_quorum_high value = 0.6 }
+	round_variable = military_quorum_low 
+	round_variable = military_quorum_medium 
+	round_variable = military_quorum_high
 	cwc_recalc_gorbachev_faction_system_icon_frames = yes
 }
 ND_SOV_gorbachev_faction_system_small_opposition = {
