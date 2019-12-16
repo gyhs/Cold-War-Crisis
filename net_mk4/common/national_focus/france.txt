@@ -478,6 +478,7 @@ focus_tree = {
 						FRA_persistent_trade_level_deficit_down = yes
 				}
 			remove_ideas = currency_problem
+			add_ideas = Euro
 			}
 		x = 26
 		y = 6
@@ -498,7 +499,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_new_members
 		icon = GFX_focus_scandinavia_contact
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_the_leader_of_europe
 		}
@@ -510,7 +511,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_Choice_of_sweden
 		icon = GFX_focus_friend_sweden
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
@@ -522,7 +523,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_small_giant
 		icon = GFX_focus_friend_finland
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}

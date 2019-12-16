@@ -452,6 +452,29 @@ ideas = {
 		}
 		#단일 유럽 의정서
 
+		Euro = {
+			picture = euro_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				mobilization_laws_cost_factor = -0.25
+				high_command_cost_factor = -0.25
+				trade_opinion_factor = 0.5
+				consumer_goods_factor = -0.05
+				#안정도 10%,무역 비용 -25%,경제법 비용 -25%,무역에 대한 영향력 +50%,소비제 -5%
+			}
+		}
+
     }
 		
 }

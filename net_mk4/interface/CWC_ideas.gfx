@@ -32,4 +32,9 @@ spriteTypes = {
 		name = "GFX_idea_Cockade_idea"
 		texturefile = "gfx/interface/ideas/Cockade_idea.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_euro_idea"
+		texturefile = "gfx/interface/ideas/euro_idea.dds"
+	}
 }
