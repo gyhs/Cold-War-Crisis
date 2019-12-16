@@ -18,9 +18,9 @@ state={
 	}
 
 	provinces={
-		1948 2017 2062 2101 4893 4949 5020 5064 8090 12871 13262 13263 
+		4949 5020 5064 8090 13262 13263 
 	}
-	manpower=1632860
+	manpower=830800
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
 }

@@ -1,4 +1,4 @@
-cwc_gorbachev_faction_system = {
+ND_SOV_gorbachev_faction_system = {
 	icon = usa_congress
 	allowed = {
 		NOT = { original_tag = USA }
@@ -8,7 +8,7 @@ cwc_gorbachev_faction_system = {
 		original_tag = SOV
 	}
 
-	scripted_gui = cwc_gorbachev_faction_system_decision_ui	
+	scripted_gui = ND_SOV_gorbachev_faction_system_decision_ui	
 
 	priority = 85
 }

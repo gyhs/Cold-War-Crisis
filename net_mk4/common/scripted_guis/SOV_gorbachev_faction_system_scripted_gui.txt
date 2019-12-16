@@ -1,8 +1,8 @@
 scripted_gui = {
 
-	cwc_gorbachev_faction_system_decision_ui = {
+	ND_SOV_gorbachev_faction_system_decision_ui = {
 		context_type = decision_category
-		window_name = "cwc_gorbachev_faction_system_decision_ui_window"
+		window_name = "ND_SOV_gorbachev_faction_system_decision_ui_window"
 
 		properties = {
 			reform_icon = {

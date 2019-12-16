@@ -1,14 +1,11 @@
 state={
-	id=871
-	name="STATE_871"
+	id=873
+	name="STATE_873"
 
 	history={
-		owner = AFG
-		victory_points = {
-			13297 5 
-		}
+		owner = MUJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = AFG
@@ -17,9 +14,9 @@ state={
 	}
 
 	provinces={
-		13295 13297 
+		1948 2017 2062 2101 4893 12871 
 	}
-	manpower=172020
+	manpower=802060
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

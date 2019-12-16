@@ -1,0 +1,29 @@
+state={
+	id=872
+	name="STATE_872"
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			13304 3 
+		}
+		victory_points = {
+			13306 5 
+		}
+		add_core_of = AFG
+		add_core_of = MUJ
+
+	}
+
+	provinces={
+		7448 7584 10852 12248 12877 13300 13302 13303 13304 13305 13306 13307 13308 
+	}
+	manpower=2003040
+	buildings_max_level_factor=1.000
+	state_category=town
+}
