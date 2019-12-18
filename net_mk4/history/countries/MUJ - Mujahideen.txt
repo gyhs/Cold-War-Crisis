@@ -31,12 +31,6 @@ add_ideas = {
 
 add_opinion_modifier = { target = SOV modifier = JAP_anti_communist_bulwark }
 
-# DIPLOMACY /
-	declare_war_on = {
-		target = AFG
-		type = annex_everything
-	}
-
 # DIPLOMACY
 give_military_access = PAK
 give_military_access = PER

@@ -213,6 +213,8 @@ add_ideas = {
 					SOV_idea_central_asia_uprising_3
 					SOV_central_government_crisis_10
 					SOV_social_safety_nets_crisis_4
+					
+					colonial_nation
 }
 
 
@@ -281,9 +283,11 @@ give_guarantee = ALB
 give_guarantee = CUB
 
 give_military_access = MON
-
-
-# 외교
+	
+set_autonomy = {
+	target = AFG
+	autonomous_state =  autonomy_puppet
+}
 set_autonomy = {
 	target = DDR
 	autonomous_state =  autonomy_puppet
@@ -308,6 +312,12 @@ set_autonomy = {
 	target = BUL
 	autonomous_state =  autonomy_puppet
 }
+
+# 외교 /
+	declare_war_on = {
+		target = MUJ
+		type = annex_everything
+	}
 
 1979.12.27 = {
 	add_named_threat = { threat = 10 name = soviet_afghan_war } #1979.12.27.

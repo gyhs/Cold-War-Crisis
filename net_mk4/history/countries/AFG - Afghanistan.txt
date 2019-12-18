@@ -53,6 +53,11 @@ set_popularities = {
 	authoritarianism = 0
 	fascism = 0
 }
+# 외교 /
+	declare_war_on = {
+		target = MUJ
+		type = annex_everything
+	}
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
 create_country_leader = {
