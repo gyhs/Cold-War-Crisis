@@ -2256,7 +2256,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 147
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2267,7 +2267,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 148
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2278,7 +2278,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 149
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2289,7 +2289,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 150
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2300,7 +2300,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 151
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2311,7 +2311,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 152
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2322,7 +2322,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 153
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2333,7 +2333,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 154
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2344,7 +2344,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 155
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -2355,7 +2355,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 156
 		}
-		location = 7725
+		location = 10737
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
