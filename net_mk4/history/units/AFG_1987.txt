@@ -21,7 +21,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 13300
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
@@ -29,7 +29,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 7448
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
@@ -37,7 +37,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 12877
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
@@ -45,7 +45,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 10852
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
@@ -53,7 +53,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 13302
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
@@ -61,7 +61,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 4958
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
@@ -69,7 +69,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 13307
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
@@ -77,7 +77,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10737
+		location = 13308
 		division_template = "보병 여단"
 		start_experience_factor = 0.3
 	}
