@@ -226,6 +226,28 @@ create_country_leader = {
 #}
 
 create_country_leader = {
+	name = "이철승"
+	desc = "POLITICS_KOR_Lee_Chul_seung_DESC"
+	picture = "POLITICS_KOR_Lee_Chul_seung.dds"
+	expire = "2100.3.1"
+	ideology = social_conservatism_subtype_1
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "김영삼"
+	desc = "POLITICS_KOR_Kim_Yong_sam_DESC"
+	picture = "POLITICS_KOR_Kim_Yong_sam.dds"
+	expire = "2100.3.1"
+	ideology = market_liberalism_subtype_1
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "김대중"
 	desc = "POLITICS_KOR_Kim_Dae_jung_DESC"
 	picture = "POLITICS_KOR_Kim_Dae_jung.dds"
@@ -242,6 +264,28 @@ create_country_leader = {
 	picture = "POLITICS_KOR_Kim_Chul.dds"
 	expire = "2100.3.1"
 	ideology = social_democracy_subtype_1
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "백기완"
+	desc = "POLITICS_KOR_Baeck_Gi_wan_DESC"
+	picture = "POLITICS_KOR_Baeck_Gi_wan_.dds"
+	expire = "2100.3.1"
+	ideology = socialism_subtype_1
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "김일성"
+	desc = "POLITICS_KOR_Kim_Il_sung_DESC"
+	picture = "POLITICS_KOR_Kim_Il_sung.dds"
+	expire = "2100.3.1"
+	ideology = communism_subtype_1
 	traits = {
 		
 	}
