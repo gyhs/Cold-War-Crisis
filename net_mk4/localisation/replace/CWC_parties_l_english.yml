@@ -65,8 +65,12 @@
  DDR_neutrality_party:0 "독일민족민주당"
  DDR_fascism_party:0 "민족당"
  
- KOR_communism_party:0 "민중당"
- KOR_social_liberalism_party:0 "민주당"
+ KOR_communism_party:0 "조선 노동당"
+ KOR_socialism_party:0 "민중당"
+ KOR_social_democracy_party:0 "사회민주당"
+ KOR_social_liberalism_party:0 "신한민주당"
+ KOR_market_liberalism_party:0 "신한민주당"
+ KOR_social_conservatism_party:0 "신한민주당"
  KOR_authoritarianism_party:0 "민주정의당"
  KOR_fascism_party:0 "하나회"
  

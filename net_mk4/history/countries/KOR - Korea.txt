@@ -168,16 +168,6 @@ set_technology = {
 }
 
 add_ideas = {
-	Gen_cartel
-	NS_Gen_mafia_5
-	NS_Gen_government_crisis_5
-	general_hyper_inflation_3
-	#NS_Gen_rampant_of_warlord
-	NS_Gen_risk_of_famine
-	NS_Gen_incompetence_officer
-	NS_Gen_rampant_communicable_diseases_3
-	NS_Gen_landed_proprietor
-	NS_Gen_army_corruption_1
 }
 
 set_convoys = 5
@@ -187,19 +177,19 @@ give_military_access = USA
 set_politics = {
 	
 	ruling_party = authoritarianism
-	last_election = "1936.1.1"
+	last_election = "1981.2.25"
 	election_frequency = 50
 	elections_allowed = no
 }
 ###
 set_popularities = {
 	communism = 0
-	socialism = 0
-	social_democracy = 0
-	social_liberalism = 46
-	market_liberalism = 0
-	social_conservatism = 0
-	authoritarianism = 44
+	socialism = 1
+	social_democracy = 1
+	social_liberalism = 27
+	market_liberalism = 28
+	social_conservatism = 3
+	authoritarianism = 30
 	fascism = 10
 }
 
@@ -251,7 +241,7 @@ create_country_leader = {
 	desc = "POLITICS_KOR_Kim_Chul_DESC"
 	picture = "POLITICS_KOR_Kim_Chul.dds"
 	expire = "2100.3.1"
-	ideology = communism_subtype_1
+	ideology = social_democracy_subtype_1
 	traits = {
 		
 	}
