@@ -282,6 +282,15 @@ bookmarks = {
 			focuses = {
 			}
 		}
+		"KOR"={
+			minor = yes
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = authoritarianism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
 		
 
 		effect = {

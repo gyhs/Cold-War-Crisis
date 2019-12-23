@@ -4,5 +4,5 @@ tags={
 	"Gameplay"
 	"National Focuses"
 }
-name="CWC Korea focus"
+name="Cold War Crisis dev"
 supported_version="1.8.1"
