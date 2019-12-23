@@ -440,7 +440,7 @@ focus_tree = {
 			FRA_persistent_trade_level_deficit_down = yes
 			swap_ideas = {
     			remove_idea = eces_1
-    			add_idea = eec
+    			#add_idea = 
 			}
 		}
 		x = 28
@@ -478,7 +478,7 @@ focus_tree = {
 						FRA_persistent_trade_level_deficit_down = yes
 				}
 			remove_ideas = currency_problem
-			add_ideas = Euro
+			add_ideas = euro
 			}
 		x = 26
 		y = 6
