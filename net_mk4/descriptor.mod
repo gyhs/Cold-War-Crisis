@@ -4,5 +4,5 @@ tags={
 	"Gameplay"
 	"National Focuses"
 }
-name="Cold War Crisis dev"
+name="Cold War Crisis dev."
 supported_version="1.8.1"
