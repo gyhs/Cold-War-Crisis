@@ -214,7 +214,7 @@ add_ideas = {
 					SOV_central_government_crisis_10
 					SOV_social_safety_nets_crisis_4
 					
-					colonial_nation
+					NS_SOV_soviet_afghan_war
 }
 
 
@@ -224,6 +224,10 @@ add_ideas = {
 	set_country_flag = flag_SOV_moldova_administration_power_modification_nm
 	set_country_flag = flag_SOV_armenia_environmental_pollution_demonstration_nm
 	set_country_flag = flag_SOV_azerbaijan_industrial_estate_modification_nm
+	
+	set_country_flag = flag_soviet_afghan_war_mujahideen_northern
+	set_country_flag = flag_soviet_afghan_war_mujahideen_eastern
+	set_country_flag = flag_soviet_afghan_war_mujahideen_western
 
 	complete_national_focus = SOV_nationalist_movement
 	complete_national_focus = SOV_eastern_europe_nm

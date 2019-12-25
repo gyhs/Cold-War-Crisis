@@ -1,0 +1,494 @@
+@SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER = 499	#	갯수,횟수의 이상,이하 조건 걸 때 사용
+@SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT = -500	#	갯수,횟수의 이상,이하 조건 걸 때 사용
+ND_SOV_soviet_afghan_war_category = {
+
+	MAN_pacify_bandits_in_the_northern_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			#has_completed_focus = MAN_pacify_the_countryside
+			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			divisions_in_state = {
+				state = 714	
+				size > 5
+			}
+		}
+
+		highlight_states = {
+			state = 714
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 714	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = MAN_maintain_northern_control }
+			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = MAN_maintain_northern_control
+			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+		}
+	}
+
+	MAN_hunt_down_northern_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			#has_completed_focus = MAN_pacify_the_countryside
+			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+		}
+
+		cost = 0
+
+		highlight_states = {
+			state = 714
+		}
+		visible = {
+			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+		}
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 714	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = MAN_hunt_down_northern_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = MAN_maintain_northern_control
+			clr_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			if = {
+				limit = {
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_western }
+				}
+				remove_ideas = NS_SOV_soviet_afghan_war
+			}
+		}
+	}
+
+	MAN_maintain_northern_control = {
+
+		icon = generic_civil_support
+
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = MAN_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 714	
+				size < 6
+			}
+		}
+
+		highlight_states = {
+			state = 714
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = MAN_hunt_down_northern_bandits_tt
+			army_experience = 10
+			clr_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			if = {
+				limit = {
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_western }
+				}
+				remove_ideas = NS_SOV_soviet_afghan_war
+			}
+		}
+	}
+
+###  ##   ## ### ### ###  #  # 
+#   #  # #    #  #   #  # ## # 
+##  ####  #   #  ##  ###  # ## 
+#   #  #   #  #  #   #  # #  # 
+### #  # ##   #  ### #  # #  # 
+
+	MAN_pacify_bandits_in_the_eastern_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			#has_completed_focus = MAN_pacify_the_countryside
+			has_country_flag = flag_soviet_afghan_war_mujahideen_eastern
+			divisions_in_state = {
+				state = 717
+				size > 5
+			}
+		}
+
+		highlight_states = {
+			state = 717
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 717	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = MAN_maintain_eastern_control }
+			has_country_flag = flag_soviet_afghan_war_mujahideen_eastern
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = MAN_maintain_eastern_control
+			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+		}
+	}
+
+	MAN_hunt_down_eastern_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			#has_completed_focus = MAN_pacify_the_countryside
+			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = flag_soviet_afghan_war_mujahideen_eastern
+		}
+
+		visible = {
+			has_country_flag = flag_soviet_afghan_war_mujahideen_eastern
+		}
+
+		cost = 0
+
+		highlight_states = {
+			state = 717
+		}
+
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 717	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = MAN_hunt_down_eastern_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = MAN_maintain_eastern_control
+			clr_country_flag = flag_soviet_afghan_war_mujahideen_eastern
+			if = {
+				limit = {
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_western }
+				}
+				remove_ideas = NS_SOV_soviet_afghan_war
+			}
+		}
+	}
+
+	MAN_maintain_eastern_control = {
+
+		icon = generic_civil_support
+
+		available = {			
+			always = no
+		}
+
+		days_mission_timeout = MAN_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 717	
+				size < 6
+			}
+		}
+
+		highlight_states = {
+			state = 717
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = MAN_hunt_down_eastern_bandits_tt
+			army_experience = 10
+			clr_country_flag = flag_soviet_afghan_war_mujahideen_eastern
+			if = {
+				limit = {
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_western }
+				}
+				remove_ideas = NS_SOV_soviet_afghan_war
+			}
+		}
+	}
+
+#   # ###  ## ### ### ###  #  # 
+#   # #   #    #  #   #  # ## # 
+# # # ##   #   #  ##  ###  # ## 
+# # # #     #  #  #   #  # #  # 
+ # #  ### ##   #  ### #  # #  # 
+	
+	MAN_pacify_bandits_in_the_western_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			#has_completed_focus = MAN_pacify_the_countryside
+			has_country_flag = flag_soviet_afghan_war_mujahideen_western
+			divisions_in_state = {
+				state = 610	
+				size > 5
+			}
+		}
+
+		highlight_states = {
+			state = 610
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 610	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = MAN_maintain_western_control }
+			has_country_flag = flag_soviet_afghan_war_mujahideen_western
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = MAN_maintain_western_control
+			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+		}
+	}
+
+	MAN_hunt_down_western_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			#has_completed_focus = MAN_pacify_the_countryside
+			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = flag_soviet_afghan_war_mujahideen_western
+		}
+
+		cost = 0
+
+		highlight_states = {
+			state = 610
+		}
+
+		visible = {
+			has_country_flag = flag_soviet_afghan_war_mujahideen_western
+		}
+
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 610	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = MAN_hunt_down_western_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = MAN_maintain_western_control
+			clr_country_flag = flag_soviet_afghan_war_mujahideen_western
+			if = {
+				limit = {
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+				}
+				remove_ideas = NS_SOV_soviet_afghan_war
+			}
+		}
+	}
+
+	MAN_maintain_western_control = {
+
+		icon = generic_civil_support
+
+		available = {			
+			always = no
+		}
+
+		days_mission_timeout = MAN_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 610	
+				size < 6
+			}
+		}
+
+		highlight_states = {
+			state = 610
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = MAN_hunt_down_western_bandits_tt
+			army_experience = 10
+			clr_country_flag = flag_soviet_afghan_war_mujahideen_western
+			if = {
+				limit = {
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
+					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+				}
+				remove_ideas = NS_SOV_soviet_afghan_war
+			}
+		}
+	}
+
+	MAN_bandit_raids = {
+
+		icon = generic_civil_support
+
+		available = {
+			NOT = { has_idea = NS_SOV_soviet_afghan_war }
+		}
+
+		days_mission_timeout = 180
+
+		activation = {
+			has_idea = NS_SOV_soviet_afghan_war
+		}
+
+		visible = {
+			
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			random_list = {
+				25 = {
+					country_event = wtt_manchukou_bandit_sabotage.21
+				}
+				25 = {
+					country_event = wtt_manchukou_bandit_sabotage.22
+				}
+				25 = {
+					country_event = wtt_manchukou_bandit_sabotage.23
+				}
+				25 = {
+					
+				}
+			}
+		}
+	}
+}

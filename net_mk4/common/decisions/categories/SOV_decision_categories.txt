@@ -2,14 +2,13 @@ ND_SOV_soviet_afghan_war_category = {
 
 	icon = eng_organize_the_blackshirts
 
-	picture = GFX_decision_cat_picture_organize_the_blackshirts
-	
+	picture = GFX_decision_cat_picture_chi_political_support
 	allowed = {
 		tag = SOV
 	}
 
 	on_map_area = {
-		state = 267
+		state = 868
 		name = ND_SOV_soviet_afghan_war_category_map_category_name
 		zoom = 250
 	}
