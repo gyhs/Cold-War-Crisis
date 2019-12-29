@@ -10,13 +10,13 @@ ND_SOV_soviet_afghan_war_category = {
 			#has_completed_focus = MAN_pacify_the_countryside
 			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
 			divisions_in_state = {
-				state = 714	
+				state = 415	
 				size > 5
 			}
 		}
 
 		highlight_states = {
-			state = 714
+			state = 415
 		}
 
 		cost = 0
@@ -26,7 +26,7 @@ ND_SOV_soviet_afghan_war_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 714	
+					state = 415	
 					size > 5
 				}
 			}
@@ -58,7 +58,7 @@ ND_SOV_soviet_afghan_war_category = {
 		cost = 0
 
 		highlight_states = {
-			state = 714
+			state = 415
 		}
 		visible = {
 			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
@@ -72,7 +72,7 @@ ND_SOV_soviet_afghan_war_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 714	
+					state = 415	
 					size < 6
 				}
 			}
@@ -117,13 +117,13 @@ ND_SOV_soviet_afghan_war_category = {
 
 		cancel_trigger = {
 			divisions_in_state = {
-				state = 714	
+				state = 415	
 				size < 6
 			}
 		}
 
 		highlight_states = {
-			state = 714
+			state = 415
 		}
 
 		visible = {
@@ -160,13 +160,13 @@ ND_SOV_soviet_afghan_war_category = {
 			#has_completed_focus = MAN_pacify_the_countryside
 			has_country_flag = flag_soviet_afghan_war_mujahideen_eastern
 			divisions_in_state = {
-				state = 717
+				state = 867
 				size > 5
 			}
 		}
 
 		highlight_states = {
-			state = 717
+			state = 867
 		}
 
 		cost = 0
@@ -176,7 +176,7 @@ ND_SOV_soviet_afghan_war_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 717	
+					state = 867	
 					size > 5
 				}
 			}
@@ -212,7 +212,7 @@ ND_SOV_soviet_afghan_war_category = {
 		cost = 0
 
 		highlight_states = {
-			state = 717
+			state = 867
 		}
 
 		is_good = yes
@@ -224,7 +224,7 @@ ND_SOV_soviet_afghan_war_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 717	
+					state = 867	
 					size < 6
 				}
 			}
@@ -269,13 +269,13 @@ ND_SOV_soviet_afghan_war_category = {
 
 		cancel_trigger = {
 			divisions_in_state = {
-				state = 717	
+				state = 867	
 				size < 6
 			}
 		}
 
 		highlight_states = {
-			state = 717
+			state = 867
 		}
 
 		visible = {
@@ -312,13 +312,13 @@ ND_SOV_soviet_afghan_war_category = {
 			#has_completed_focus = MAN_pacify_the_countryside
 			has_country_flag = flag_soviet_afghan_war_mujahideen_western
 			divisions_in_state = {
-				state = 610	
+				state = 873	
 				size > 5
 			}
 		}
 
 		highlight_states = {
-			state = 610
+			state = 873
 		}
 
 		cost = 0
@@ -328,7 +328,7 @@ ND_SOV_soviet_afghan_war_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 610	
+					state = 873	
 					size > 5
 				}
 			}
@@ -360,7 +360,7 @@ ND_SOV_soviet_afghan_war_category = {
 		cost = 0
 
 		highlight_states = {
-			state = 610
+			state = 873
 		}
 
 		visible = {
@@ -376,7 +376,7 @@ ND_SOV_soviet_afghan_war_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 610	
+					state = 873	
 					size < 6
 				}
 			}
@@ -421,13 +421,13 @@ ND_SOV_soviet_afghan_war_category = {
 
 		cancel_trigger = {
 			divisions_in_state = {
-				state = 610	
+				state = 873	
 				size < 6
 			}
 		}
 
 		highlight_states = {
-			state = 610
+			state = 873
 		}
 
 		visible = {
