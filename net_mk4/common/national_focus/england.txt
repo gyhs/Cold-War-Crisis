@@ -138,6 +138,10 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
+		
+		available = {
+			has_country_flag = flag_UK_f
+		}
 		completion_reward = {
 			country_event = {#식민지에 투자
 				days = 0
@@ -158,7 +162,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {#세계 진출
 				days = 0
-				id = 
+				id = NE_ENG_NF.2
 			}
 		}
 	}
@@ -171,7 +175,66 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
-
+		available = {
+			has_country_flag = flag_UK_e
+		}
+		completion_reward = {
+			diplomatic_relation = { 
+				country = EGY
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = SUD
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = UGA
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = KEN
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = RWA
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = BRD
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = TZN
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = ZAM
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = ZIM
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = BOT
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = { 
+				country = NMB
+				relation = guarantee
+				active = yes
+			}
+		}
 	}
 	focus = {
 		id = UK_18
@@ -224,7 +287,12 @@ focus_tree = {
 		}
 		x = 6
 		y = 6
-
+		completion_reward = {
+			country_event = {#홍콩 반환 문제
+				days = 0
+				id = NE_ENG_NF.3
+			}
+		}
 	}
 	focus = {
 		id = UK_59
@@ -235,6 +303,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 7
+		available = {
+			has_country_flag = flag_UK_g
+		}
 		completion_reward = {
 			add_to_faction = PRC
 		}
@@ -1481,7 +1552,6 @@ focus_tree = {
 				type = dockyard
 				level = 2
 				instant_build = yes
-			}
 		}
 	}
 	focus = {

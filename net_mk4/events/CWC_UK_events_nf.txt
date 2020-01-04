@@ -31,7 +31,7 @@ country_event = {#과거의 자치령
 		stability = -0.05
     }
 }
-country_event = {#
+country_event = {#세계 진출
 	id = NE_ENG_NF.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG_NF.2"}
 	title = NE_ENG_NF.2.title
@@ -40,12 +40,33 @@ country_event = {#
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	option = { 
-		name = NE_ENG_NF.1.a
+	option = { #아프리카 진출
+		name = NE_ENG_NF.2.a
 		ai_chance = { factor = 1 }
+		set_country_flag = flag_UK_e
     }
-	option = { 
-		name = NE_ENG_NF.1.a
+	option = { #아시아 진출
+		name = NE_ENG_NF.2.b
+		ai_chance = { factor = 1 }
+		set_country_flag = flag_UK_f
+    }
+}
+country_event = {#홍콩 반환 문제
+	id = NE_ENG_NF.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG_NF.3"}
+	title = NE_ENG_NF.3.title
+	desc = NE_ENG_NF.3.desc
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #반환한다
+		name = NE_ENG_NF.3.a
+		ai_chance = { factor = 1 }
+		set_country_flag = flag_UK_g
+    }
+	option = { #그런거 없다
+		name = NE_ENG_NF.3.b
 		ai_chance = { factor = 1 }
     }
 }
