@@ -1,12 +1,9 @@
-version="1.8"
-name="net_mk4"
-path=	"mod/net_mk4"
-dependencies={
-	"한국어 모드(Korean Translation)"
-}
+version="0.0.0"
 tags={
 	"Alternative History"
-	"Map"
-	"Fixes"
+	"Gameplay"
+	"National Focuses"
 }
-replace_path="map"
+name="Cold War Crisis dev."
+supported_version="1.8.1"
+path="C:/Users/CafeAlle/Documents/Paradox Interactive/Hearts of Iron IV/mod/net_mk4"

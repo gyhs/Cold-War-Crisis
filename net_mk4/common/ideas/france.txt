@@ -163,7 +163,7 @@ ideas = {
 				Economy_cost_factor = 0.60
 				trade_opinion_factor = -0.40
 			}
-			#통화 문제 (무역 거래에의 평판 흭득치 -60% , 경제법 비용 +80% , 무역법 비용 +80%)
+			#통화 문제 (무역 거래에의 평판 흭득치 -40% , 경제법 비용 +60% , 무역법 비용 +60%)
 		}
 
 		nuclear_power = {
@@ -452,7 +452,7 @@ ideas = {
 		}
 		#단일 유럽 의정서
 
-		Euro = {
+		euro = {
 			picture = euro_idea
 
 			allowed = {
@@ -467,14 +467,31 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.1
-				mobilization_laws_cost_factor = -0.25
-				high_command_cost_factor = -0.25
-				trade_opinion_factor = 0.5
-				consumer_goods_factor = -0.05
-				#안정도 10%,무역 비용 -25%,경제법 비용 -25%,무역에 대한 영향력 +50%,소비제 -5%
+				Economy_cost_factor = 0.20
+				trade_opinion_factor = 0.6
+				consumer_goods_factor = -0.03
+				#안정도 10%,경제법 변경 비용 +20%,무역에 대한 영향력 +60%,소비제 -3%
 			}
 		}
+		#유로화
+		eec_0 = {
+			picture = EEC_idea
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+		#EEC 0단계
     }
 		
 }
