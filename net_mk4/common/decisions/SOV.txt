@@ -2,13 +2,13 @@
 @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT = -500	#	갯수,횟수의 이상,이하 조건 걸 때 사용
 ND_SOV_soviet_afghan_war_category = {
 
-	MAN_pacify_bandits_in_the_northern_countryside = {
+	ND_SOV_soviet_afghan_war_mujahidin_main_road_1_pacify = {
 
 		icon = generic_oppression
 		
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 			divisions_in_state = {
 				state = 415	
 				size > 5
@@ -33,26 +33,26 @@ ND_SOV_soviet_afghan_war_category = {
 		}
 
 		visible = {
-			NOT = { has_active_mission = MAN_maintain_northern_control }
-			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			NOT = { has_active_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_1_maintain }
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 		}
 
 		is_good = yes
 
 		complete_effect = {
-			activate_mission = MAN_maintain_northern_control
+			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_1_maintain
 			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
 		}
 	}
 
-	MAN_hunt_down_northern_bandits = {
+	ND_SOV_soviet_afghan_war_mujahidin_main_road_1_hunt_down = {
 
 		icon = generic_oppression
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
 			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
-			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 		}
 
 		cost = 0
@@ -61,7 +61,7 @@ ND_SOV_soviet_afghan_war_category = {
 			state = 415
 		}
 		visible = {
-			has_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 		}
 		is_good = yes
 
@@ -89,8 +89,8 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
-			remove_mission = MAN_maintain_northern_control
-			clr_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_1_maintain
+			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 			if = {
 				limit = {
 					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
@@ -101,7 +101,7 @@ ND_SOV_soviet_afghan_war_category = {
 		}
 	}
 
-	MAN_maintain_northern_control = {
+	ND_SOV_soviet_afghan_war_mujahidin_main_road_1_maintain = {
 
 		icon = generic_civil_support
 
@@ -135,7 +135,7 @@ ND_SOV_soviet_afghan_war_category = {
 		timeout_effect = {
 			custom_effect_tooltip = MAN_hunt_down_northern_bandits_tt
 			army_experience = 10
-			clr_country_flag = flag_soviet_afghan_war_mujahideen_northern
+			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 			if = {
 				limit = {
 					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
@@ -245,7 +245,7 @@ ND_SOV_soviet_afghan_war_category = {
 			clr_country_flag = flag_soviet_afghan_war_mujahideen_eastern
 			if = {
 				limit = {
-					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_western }
 				}
 				remove_ideas = NS_SOV_soviet_afghan_war
@@ -290,7 +290,7 @@ ND_SOV_soviet_afghan_war_category = {
 			clr_country_flag = flag_soviet_afghan_war_mujahideen_eastern
 			if = {
 				limit = {
-					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_western }
 				}
 				remove_ideas = NS_SOV_soviet_afghan_war
@@ -398,7 +398,7 @@ ND_SOV_soviet_afghan_war_category = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
-					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 				}
 				remove_ideas = NS_SOV_soviet_afghan_war
 			}
@@ -443,7 +443,7 @@ ND_SOV_soviet_afghan_war_category = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_eastern }
-					NOT = { has_country_flag = flag_soviet_afghan_war_mujahideen_northern }
+					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 				}
 				remove_ideas = NS_SOV_soviet_afghan_war
 			}

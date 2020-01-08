@@ -225,7 +225,7 @@ add_ideas = {
 	set_country_flag = flag_SOV_armenia_environmental_pollution_demonstration_nm
 	set_country_flag = flag_SOV_azerbaijan_industrial_estate_modification_nm
 	
-	set_country_flag = flag_soviet_afghan_war_mujahideen_northern
+	set_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 	set_country_flag = flag_soviet_afghan_war_mujahideen_eastern
 	set_country_flag = flag_soviet_afghan_war_mujahideen_western
 
