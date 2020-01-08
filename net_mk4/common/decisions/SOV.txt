@@ -152,7 +152,7 @@ ND_SOV_soviet_afghan_war_category = {
 #   #  #   #  #  #   #  # #  # 
 ### #  # ##   #  ### #  # #  # 
 
-	MAN_pacify_bandits_in_the_eastern_countryside = {
+	ND_SOV_soviet_afghan_war_mujahidin_main_road_2_pacify = {
 
 		icon = generic_oppression
 		
@@ -183,19 +183,19 @@ ND_SOV_soviet_afghan_war_category = {
 		}
 
 		visible = {
-			NOT = { has_active_mission = MAN_maintain_eastern_control }
+			NOT = { has_active_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_2_maintain }
 			has_country_flag = flag_soviet_afghan_war_mujahideen_eastern
 		}
 
 		is_good = yes
 
 		complete_effect = {
-			activate_mission = MAN_maintain_eastern_control
+			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_2_maintain
 			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
 		}
 	}
 
-	MAN_hunt_down_eastern_bandits = {
+	ND_SOV_soviet_afghan_war_mujahidin_main_road_2_hunt_down = {
 
 		icon = generic_oppression
 
@@ -241,7 +241,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
-			remove_mission = MAN_maintain_eastern_control
+			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_2_maintain
 			clr_country_flag = flag_soviet_afghan_war_mujahideen_eastern
 			if = {
 				limit = {
@@ -253,7 +253,7 @@ ND_SOV_soviet_afghan_war_category = {
 		}
 	}
 
-	MAN_maintain_eastern_control = {
+	ND_SOV_soviet_afghan_war_mujahidin_main_road_2_maintain = {
 
 		icon = generic_civil_support
 
