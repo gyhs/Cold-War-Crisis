@@ -2002,7 +2002,7 @@ ideas = {
 				OR = {
 					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2
-					has_country_flag = flag_soviet_afghan_war_mujahideen_western
+					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3
 				}
 			}
 

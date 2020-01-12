@@ -227,7 +227,7 @@ add_ideas = {
 	
 	set_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 	set_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2
-	set_country_flag = flag_soviet_afghan_war_mujahideen_western
+	set_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3
 
 	complete_national_focus = SOV_nationalist_movement
 	complete_national_focus = SOV_eastern_europe_nm
