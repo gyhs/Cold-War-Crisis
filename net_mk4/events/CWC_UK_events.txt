@@ -134,7 +134,7 @@ country_event = {
 	option = {
 		name = NE_ENG.6.a
 		ai_chance = { factor = 1 }
-		add_stability= -0.03
+		add_stability = -0.03
 	hidden_effect = {#파운드화의 가치
 		country_event = {
 			id = NE_ENG.7

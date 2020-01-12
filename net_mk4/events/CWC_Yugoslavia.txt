@@ -1,0 +1,901 @@
+###########################
+# Yugoslavia Events
+###########################
+# By NIKA
+###########################
+
+add_namespace = YUG
+
+country_event = { #유고슬라비아 이벤트 시작
+	id = YUG.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.1"}
+	title = YUG.1.t
+	desc = YUG.1.desc
+	#picture = 
+	is_triggered_only = yes
+	trigger = {
+		tag = YUG
+	}
+	fire_only_once = yes
+	
+	option = { #유고슬라비아 설명
+		name = YUG.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+            country_event = { #제 8차 세르비아 공산당 회기
+                id = YUG.2
+                days = 232
+            }
+        }
+	}
+}
+
+country_event = { #제 8차 세르비아 공산당 회기 1987년 9월 22일
+	id = YUG.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.2"}
+	title = YUG.2.t
+	desc = YUG.2.desc
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # 슬로보단 밀로셰비치 지지 (강경파, 역사적), 강경파 밀로셰비치의 대세르비아주의 선동
+		name = YUG.2.a
+		ai_chance = { factor = 99 }
+		political_power_factor = 50
+		hidden_effect = {
+            country_event = { #대세르비아주의 선동
+                id = YUG.3
+                days = 28
+            }
+        }
+	}
+	
+	option = { # 이반 스탐볼리치 지지 (온건파, 비 역사적), 온건파 스탐블리치의 재선과 티토주의 계승
+		name = YUG.2.b
+		ai_chance = { factor = 1 }
+		political_power_factor = -100
+		hidden_effect = {
+            country_event = { #티토주의 계승
+                id = YUG.4
+                days = 28
+            }
+        }
+	}
+}
+
+country_event = { #밀로셰비치의 대세르비아주의 선동 1987년 10월 20일
+	id = YUG.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.3"}
+	title = YUG.3.t
+	desc = YUG.3.desc
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #세르비아 만세!
+		name = YUG.3.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.03
+		war_support_factor = 0.05
+		hidden_effect = {
+            country_event = { #헌법 개정
+                id = YUG.5
+                days = 47
+            }
+        }
+	}
+}
+
+country_event = { #스탐블리치의 재선과 티토주의 계승 1987년 10월 20일################################################################################################################################################
+	id = YUG.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.4"}
+	title = YUG.4.t
+	desc = YUG.4.desc
+	#picture = 
+
+	fire_only_once = yes
+	
+	option = { #티토 만세!
+		name = YUG.4.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+		war_support_factor = -0.07
+		hidden_effect = {
+            country_event = { #
+                id = YUG.
+                days = 
+            }
+        }
+	}
+}
+
+country_event = { #1988년 1월 17일, 헌법 개정
+	id = YUG.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.5"}
+	title = YUG.5.t
+	desc = YUG.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #밀로셰비치 대통령 만세!
+		name = YUG.5.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+		hidden_effect = {
+            country_event = { #1988년 8월 7일
+                id = YUG.6
+                days = 170
+            }
+        }
+		
+	}
+}
+
+country_event = { #1988년 8월 7일 한가지 폭로
+	id = YUG.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.6"}
+	title = YUG.6.t
+	desc = YUG.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.6.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.7"}
+	title = YUG.7.t
+	desc = YUG.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.7.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.8"}
+	title = YUG.8.t
+	desc = YUG.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.8.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.9"}
+	title = YUG.9.t
+	desc = YUG.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.9.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.10"}
+	title = YUG.10.t
+	desc = YUG.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.10.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.11"}
+	title = YUG.11.t
+	desc = YUG.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.11.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.12"}
+	title = YUG.12.t
+	desc = YUG.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.12.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.13"}
+	title = YUG.13.t
+	desc = YUG.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.13.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.14"}
+	title = YUG.14.t
+	desc = YUG.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.14.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.15"}
+	title = YUG.15.t
+	desc = YUG.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.15.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.16"}
+	title = YUG.16.t
+	desc = YUG.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.16.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.17"}
+	title = YUG.17.t
+	desc = YUG.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.17.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.18"}
+	title = YUG.18.t
+	desc = YUG.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.18.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.19"}
+	title = YUG.19.t
+	desc = YUG.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.19.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.20"}
+	title = YUG.20.t
+	desc = YUG.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.20.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.21"}
+	title = YUG.21.t
+	desc = YUG.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.21.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.22"}
+	title = YUG.22.t
+	desc = YUG.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.22.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.23"}
+	title = YUG.23.t
+	desc = YUG.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.23.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.24"}
+	title = YUG.24.t
+	desc = YUG.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.24.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.25"}
+	title = YUG.25.t
+	desc = YUG.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.25.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.26"}
+	title = YUG.26.t
+	desc = YUG.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.27"}
+	title = YUG.27.t
+	desc = YUG.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.28"}
+	title = YUG.28.t
+	desc = YUG.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.29"}
+	title = YUG.29.t
+	desc = YUG.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.30"}
+	title = YUG.30.t
+	desc = YUG.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.30.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.31"}
+	title = YUG.31.t
+	desc = YUG.31.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.31.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.32"}
+	title = YUG.32.t
+	desc = YUG.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.32.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.33"}
+	title = YUG.33.t
+	desc = YUG.33.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.33.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.34"}
+	title = YUG.34.t
+	desc = YUG.34.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.34.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.35"}
+	title = YUG.35.t
+	desc = YUG.35.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.35.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.36"}
+	title = YUG.36.t
+	desc = YUG.36.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.36.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.37"}
+	title = YUG.37.t
+	desc = YUG.37.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.37.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.38"}
+	title = YUG.38.t
+	desc = YUG.38.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.38.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.39"}
+	title = YUG.39.t
+	desc = YUG.39.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.39.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.40"}
+	title = YUG.40.t
+	desc = YUG.40.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.40.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.41"}
+	title = YUG.41.t
+	desc = YUG.41.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.41.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.42"}
+	title = YUG.42.t
+	desc = YUG.42.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.42.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.43"}
+	title = YUG.43.t
+	desc = YUG.43.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.43.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.44"}
+	title = YUG.44.t
+	desc = YUG.44.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.44.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.45"}
+	title = YUG.45.t
+	desc = YUG.45.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.45.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.46"}
+	title = YUG.46.t
+	desc = YUG.46.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.46.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.47"}
+	title = YUG.47.t
+	desc = YUG.47.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.47.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.48"}
+	title = YUG.48.t
+	desc = YUG.48.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.48.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.49"}
+	title = YUG.49.t
+	desc = YUG.49.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.49.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = YUG.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.50"}
+	title = YUG.50.t
+	desc = YUG.50.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = YUG.50.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
