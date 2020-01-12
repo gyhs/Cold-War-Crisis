@@ -492,6 +492,28 @@ ideas = {
 			}
 		}
 		#EEC 0단계
+
+		wait_for_comedown = {
+			picture = ger_bulwark_against_bolshevism
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10	
+				production_speed_bunker_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+
+			}
+		}
+		#몰락 기다리기
     }
 		
 }

@@ -508,7 +508,12 @@ focus_tree = {
     			target = FIN
     			modifier = mission_to_the_FIN
 			}
+			add_opinion_modifier = {
+    			target = SWE
+    			modifier = mission_to_the_SWE
+			}
 		}
+		#핀란드 스웨덴 관계증가
 		x = 26
 		y = 8
 
@@ -521,6 +526,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
+
 		x = 25
 		y = 9
 
@@ -533,6 +539,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
+
 		x = 27
 		y = 9
 
@@ -545,9 +552,12 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_the_leader_of_europe
 		}
+		completion_reward = {
+		add_war_support = 0.2
+		}
 		x = 30
 		y = 8
-
+		#전쟁지지도 20%증가
 	}
 	#몰락을 기다리다
 	focus = {
@@ -559,6 +569,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_the_Iron_curtain_breaking
+		}
+		completion_reward = {
+			
 		}
 		x = 29
 		y = 9
@@ -574,6 +587,8 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_wait_for_comedown
+		}
+		completion_reward = {
 		}
 		x = 31
 		y = 9

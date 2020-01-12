@@ -28,3 +28,4 @@
   FRA_persistent_trade_deficit_down_tt:0 "적자 회복"
   eec_0:0 "유럽 경제 공동체(EEC)"
   Euro:0 "유로(Euro)"
+  wait_for_comedown:0 "몰락 기다리기"
