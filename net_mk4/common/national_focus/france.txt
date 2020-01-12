@@ -503,6 +503,12 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_the_leader_of_europe
 		}
+		completion_reward = {
+			add_opinion_modifier = {
+    			target = FIN
+    			modifier = mission_to_the_FIN
+			}
+		}
 		x = 26
 		y = 8
 
