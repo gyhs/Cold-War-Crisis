@@ -130,7 +130,6 @@ country_event = { #1988년 1월 17일, 헌법 개정
                 days = 170
             }
         }
-		
 	}
 }
 
@@ -144,10 +143,17 @@ country_event = { #1988년 8월 7일 한가지 폭로
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #
+	option = { #뭐? 우리는 그런 일을 한적이 없다!
 		name = YUG.6.a
 		ai_chance = { factor = 1 }
-		
+		add_stability = -0.05
+		war_support_factor = -0.05
+		hidden_effect = {
+            country_event = { #1988년 
+                id = YUG.7
+                days = 
+            }
+        }
 	}
 }
 
