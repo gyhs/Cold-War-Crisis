@@ -109,7 +109,7 @@ ND_SOV_soviet_afghan_war_category = {
 			always = no
 		}
 
-		days_mission_timeout = MAN_main_control_timer?180
+		days_mission_timeout = ND_SOV_soviet_afghan_war_mujahidin_main_road_timer?180
 
 		activation = {
 			always = no #Triggered from effect
@@ -261,7 +261,7 @@ ND_SOV_soviet_afghan_war_category = {
 			always = no
 		}
 
-		days_mission_timeout = MAN_main_control_timer?180
+		days_mission_timeout = ND_SOV_soviet_afghan_war_mujahidin_main_road_timer?180
 
 		activation = {
 			always = no #Triggered from effect
@@ -413,7 +413,7 @@ ND_SOV_soviet_afghan_war_category = {
 			always = no
 		}
 
-		days_mission_timeout = MAN_main_control_timer?180
+		days_mission_timeout = ND_SOV_soviet_afghan_war_mujahidin_main_road_timer?180
 
 		activation = {
 			always = no #Triggered from effect
@@ -450,7 +450,7 @@ ND_SOV_soviet_afghan_war_category = {
 		}
 	}
 
-	MAN_bandit_raids = {
+	ND_SOV_soviet_afghan_war_mujahidin_main_road_raids = {
 
 		icon = generic_civil_support
 
