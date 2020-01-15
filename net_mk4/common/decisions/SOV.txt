@@ -477,13 +477,13 @@ ND_SOV_soviet_afghan_war_category = {
 		timeout_effect = {
 			random_list = {
 				25 = {
-					country_event = wtt_manchukou_bandit_sabotage.21
+					country_event = NE_SOV_soviet_afghan_war.1
 				}
 				25 = {
-					country_event = wtt_manchukou_bandit_sabotage.22
+					country_event = NE_SOV_soviet_afghan_war.2
 				}
 				25 = {
-					country_event = wtt_manchukou_bandit_sabotage.23
+					country_event = NE_SOV_soviet_afghan_war.3
 				}
 				25 = {
 					
