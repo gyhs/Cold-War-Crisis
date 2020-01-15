@@ -526,7 +526,6 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-		
 		x = 25
 		y = 9
 

@@ -161,7 +161,7 @@ news_event = {
 
     option = {
         name = NE_FRA.8.a
-        CWC_FACTION_NATO = {add_to_faction = SWE}
+        NATO = {add_to_faction = SWE}
     }
     option = {
         name = NE_FRA.8.b
