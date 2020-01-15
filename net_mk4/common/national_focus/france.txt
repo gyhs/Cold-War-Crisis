@@ -526,7 +526,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-
+		custom_effect_tooltip = FRA_effeect_team_swe
 		x = 25
 		y = 9
 
@@ -539,7 +539,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-
+		custom_effect_tooltip = FRA_effeect_team_fin
 		x = 27
 		y = 9
 

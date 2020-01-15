@@ -1,0 +1,76 @@
+﻿###########################
+# SOV soviet afghan war
+###########################
+
+add_namespace = NE_SOV_soviet_afghan_war
+
+country_event = {
+	id = NE_SOV_soviet_afghan_war.1
+	title = NE_SOV_soviet_afghan_war.1.t
+	desc = NE_SOV_soviet_afghan_war.1.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = NE_SOV_soviet_afghan_war.1.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - civilian factory sabotaged
+country_event = {
+	id = NE_SOV_soviet_afghan_war.2
+	title = NE_SOV_soviet_afghan_war.2.t
+	desc = NE_SOV_soviet_afghan_war.1.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = NE_SOV_soviet_afghan_war.1.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - bridge blown
+country_event = {
+	id = NE_SOV_soviet_afghan_war.3
+	title = NE_SOV_soviet_afghan_war.3.t
+	desc = NE_SOV_soviet_afghan_war.3.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = NE_SOV_soviet_afghan_war.1.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
