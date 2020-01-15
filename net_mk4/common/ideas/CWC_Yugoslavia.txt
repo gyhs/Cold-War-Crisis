@@ -1,0 +1,99 @@
+ideas = {
+
+	country = {
+		nonalignedism = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea nonalignedism"
+			}
+			
+			picture = neutrality_idea
+			
+			allowed = {
+				original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                political_power_gain = -0.10
+				stability_factor = 0.30
+			}
+		}
+	}
+	country =
+		islamic_discrimination = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea islamic_discrimination"
+			}
+			
+			picture = idea_raj_marginalized_muslim_community_angry
+			
+			allowed = {
+				original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                war_support_factor = -0.15
+			}
+		}
+	}
+	country =
+		nationalism_yug = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea idea_chi_war_of_resistance"
+			}
+			
+			picture = idea_raj_marginalized_muslim_community_angry
+			
+			allowed = {
+				original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                war_support_factor = -0.15
+				surrender_limit = -0.30
+			}
+		}
+	}
+	country =
+		jna = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea jna"
+			}
+			
+			picture = jna
+			
+			allowed = {
+				original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			military_leader_cost_factor = -0.15
+			army_leader_cost_factor = -0.15
+			navy_leader_cost_factor = -0.15
+			}
+		}
+	}
+}
