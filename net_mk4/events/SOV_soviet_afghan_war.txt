@@ -14,10 +14,16 @@ country_event = {
 	
 	option = {
 		name = NE_SOV_soviet_afghan_war.1.a #okay
-		random_owned_state = {
+		random_state = {
 			limit = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = SOV
+				is_controlled_by = AFG
 				arms_factory > 0
+				or = {
+				state = 869
+				state = 870
+				state = 871
+				}
 			}
 			damage_building = {
 				type = arms_factory
@@ -38,10 +44,16 @@ country_event = {
 	
 	option = {
 		name = NE_SOV_soviet_afghan_war.1.a #okay
-		random_owned_state = {
+		random_state = {
 			limit = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = SOV
+				is_controlled_by = AFG
 				arms_factory > 0
+				or = {
+				state = 869
+				state = 870
+				state = 871
+				}
 			}
 			damage_building = {
 				type = industrial_complex
@@ -62,10 +74,16 @@ country_event = {
 	
 	option = {
 		name = NE_SOV_soviet_afghan_war.1.a #okay
-		random_owned_state = {
+		random_state = {
 			limit = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = SOV
+				is_controlled_by = AFG
 				arms_factory > 0
+				or = {
+				state = 869
+				state = 870
+				state = 871
+				}
 			}
 			damage_building = {
 				type = infrastructure
