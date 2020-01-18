@@ -142,23 +142,9 @@ news_event = {
     id = NE_FRA.8
     title = NE_FRA.8.title
     desc = NE_FRA.8.desc
-    picture = news_event_treaty
+    picture = GFX_report_event_canada_treaty
     is_triggered_only = yes
-    trigger = {
-        if = [
-            limit = {
-                AND = {
-                    FRA = {
-                        has_completed_focus = NF_FRA_Choice_of_sweden
-                    }
-                    tag = SWE
-                }
-            }
-        ]
-    }
-
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.8"}
-
     option = {
         name = NE_FRA.8.a
         NATO = {add_to_faction = SWE}
@@ -179,9 +165,32 @@ news_event = {
 country_event = {
     id = NE_FRA.9
     picture = report_event_ast_parliament_house
+    is_triggered_only = yes
     title = NE_FRA.9.title
     desc = NE_FRA.9.desc
     option = {
-        id = NE_FRA.9.a
+        name = NE_FRA.9.a
+    }
+}
+
+#스웨덴 나토 권유 트리거
+
+news_event = {
+    id = NE_FRA.10
+    hidden = yes
+    fire_only_once = yes
+    trigger = {        
+        focus_progress = {
+            focus = NF_FRA_Choice_of_sweden
+            progress > 0.99           
+        }          
+    }
+    immediate = {
+        SWE = {
+            news_event = {
+                id = NE_FRA.8
+                days = 1
+            }
+        }
     }
 }
