@@ -46,7 +46,7 @@
  ND_SOV_soviet_afghan_war_mujahidin_main_road_3_maintain:0 "소련-아프가니스 전쟁 주요도로 (바드기스), 군 부대 주둔"
  ND_SOV_soviet_afghan_war_mujahidin_main_road_3_maintain_desc:0 "현재 주요도로는 우리 통제하에 있습니다. 만약 이 곳에서 군 부대를 철수 시킨다면 무자헤딘의 지하조직망이 다시 살아날 것 입니다."
  
- ND_SOV_soviet_afghan_war_mujahidin_main_road_raids:0 "소련-아프가니스 전쟁 - 주요도로, 무자헤딘의 습격 임박"
+ ND_SOV_soviet_afghan_war_mujahidin_main_road_raids:0 "주요도로, 무자헤딘의 습격 임박"
  ND_SOV_soviet_afghan_war_mujahidin_main_road_raids_desc:0 "무자헤딘 지하조직들이 감시의 눈을 피해 테러를 가할 예정이라는 첩보가 들어왔습니다. 신속히 처리하지 않는다면 피해가 발생 할 것 입니다."
  
  ##
@@ -71,7 +71,7 @@
  ND_SOV_soviet_afghan_war_mujahidin_north_3_maintain:0 "소련-아프가니스 전쟁 - 북부전역 (파이자바드), 군 부대 주둔"
  ND_SOV_soviet_afghan_war_mujahidin_north_3_maintain_desc:0 "현재 북부전역은 우리 통제하에 있습니다. 만약 이 곳에서 군 부대를 철수 시킨다면 무자헤딘의 지하조직망이 다시 살아날 것 입니다."
  
- ND_SOV_soviet_afghan_war_mujahidin_north_raids:0 "소련-아프가니스 전쟁 - 북부전역, 무자헤딘의 습격 임박"
+ ND_SOV_soviet_afghan_war_mujahidin_north_raids:0 "북부전역, 무자헤딘의 습격 임박"
  ND_SOV_soviet_afghan_war_mujahidin_north_raids_desc:0 "무자헤딘 지하조직들이 감시의 눈을 피해 테러를 가할 예정이라는 첩보가 들어왔습니다. 신속히 처리하지 않는다면 피해가 발생 할 것 입니다."
  
  ##
@@ -97,6 +97,6 @@
  ND_SOV_soviet_afghan_war_mujahidin_south_3_maintain:0 "소련-아프가니스 전쟁 - 남부전역 (아사다바드), 군 부대 주둔"
  ND_SOV_soviet_afghan_war_mujahidin_south_3_maintain_desc:0 "현재 북부전역은 우리 통제하에 있습니다. 만약 이 곳에서 군 부대를 철수 시킨다면 무자헤딘의 지하조직망이 다시 살아날 것 입니다."
  
- ND_SOV_soviet_afghan_war_mujahidin_south_raids:0 "소련-아프가니스 전쟁 - 남부전역, 무자헤딘의 습격 임박"
+ ND_SOV_soviet_afghan_war_mujahidin_south_raids:0 "남부전역, 무자헤딘의 습격 임박"
  ND_SOV_soviet_afghan_war_mujahidin_south_raids_desc:0 "무자헤딘 지하조직들이 감시의 눈을 피해 테러를 가할 예정이라는 첩보가 들어왔습니다. 신속히 처리하지 않는다면 피해가 발생 할 것 입니다."
  
