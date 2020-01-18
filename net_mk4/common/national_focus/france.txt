@@ -529,6 +529,11 @@ focus_tree = {
 		custom_effect_tooltip = FRA_effeect_team_swe
 		x = 25
 		y = 9
+		
+		completion_reward = {
+			days = 0
+			id = NE_FRA.8
+		}
 
 	}
 	#작은 거인
