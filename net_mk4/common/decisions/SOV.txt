@@ -131,6 +131,8 @@ ND_SOV_soviet_afghan_war_category = {
 			state = 871
 		}
 
+		on_map_mode = map_only
+
 		visible = {
 			
 		}
