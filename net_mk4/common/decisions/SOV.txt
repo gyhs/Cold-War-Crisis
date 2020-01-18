@@ -19,6 +19,8 @@ ND_SOV_soviet_afghan_war_category = {
 			state = 871
 		}
 
+		on_map_mode = map_only
+
 		cost = 0
 
 		ai_will_do = {
@@ -60,6 +62,9 @@ ND_SOV_soviet_afghan_war_category = {
 		highlight_states = {
 			state = 871
 		}
+
+		on_map_mode = map_only
+		
 		visible = {
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 		}
@@ -169,6 +174,8 @@ ND_SOV_soviet_afghan_war_category = {
 			state = 870
 		}
 
+		on_map_mode = map_only
+
 		cost = 0
 
 		ai_will_do = {
@@ -214,6 +221,8 @@ ND_SOV_soviet_afghan_war_category = {
 		highlight_states = {
 			state = 870
 		}
+
+		on_map_mode = map_only
 
 		is_good = yes
 
@@ -321,6 +330,8 @@ ND_SOV_soviet_afghan_war_category = {
 			state = 869
 		}
 
+		on_map_mode = map_only
+
 		cost = 0
 
 		ai_will_do = {
@@ -362,6 +373,8 @@ ND_SOV_soviet_afghan_war_category = {
 		highlight_states = {
 			state = 869
 		}
+
+		on_map_mode = map_only
 
 		visible = {
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3
