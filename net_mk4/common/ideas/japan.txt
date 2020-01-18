@@ -1,0 +1,105 @@
+ideas = {
+    country = {
+
+        ########인플레이션#########
+        NS_JAP_asset_inflation_1 = {
+            picture = 
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                consumer_goods_factor = 0.05    #소비재
+                #########공장 효율##########
+                industrial_capacity_factory = 0.80     #군사 공장 효율
+                industrial_capacity_dockyard = 0.80    #조선소 효율
+                #########건설 속도##########
+                production_speed_buildings_factor = -0.20    #민간 공장 효율
+            }
+        }
+
+        NS_JAP_asset_inflation_2 = {
+            picture = 
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                consumer_goods_factor = 0.10    #소비재
+                #########공장 효율##########
+                industrial_capacity_factory = 0.60     #군사 공장 효율
+                industrial_capacity_dockyard = 0.60    #조선소 효율
+                #########건설 속도##########
+                production_speed_buildings_factor = -0.30    #민간 공장 효율
+            }
+        }
+
+            NS_JAP_asset_inflation_3 = {
+            picture = 
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                consumer_goods_factor = 0.20    #소비재
+                #########공장 효율##########
+                industrial_capacity_factory = 0.40     #군사 공장 효율
+                industrial_capacity_dockyard = 0.40    #조선소 효율
+                #########건설 속도##########
+                production_speed_buildings_factor = -0.40    #민간 공장 효율
+
+                stability_factor = -0.10    #안정도
+            }
+        }
+
+            NS_JAP_asset_inflation_4 = {
+            picture = 
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                consumer_goods_factor = 0.50    #소비재
+                #########공장 효율##########
+                industrial_capacity_factory = 0.30     #군사 공장 효율
+                industrial_capacity_dockyard = 0.30    #조선소 효율
+                #########건설 속도##########
+                production_speed_buildings_factor = -0.50    #민간 공장 효율
+
+                stability_factor = -0.10    #안정도
+            }
+        }
+
+            NS_JAP_asset_inflation_5 = {
+            picture = 
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                consumer_goods_factor = 0.75    #소비재
+                #########공장 효율##########
+                industrial_capacity_factory = 0.20     #군사 공장 효율
+                industrial_capacity_dockyard = 0.20     #조선소 효율
+                #########건설 속도##########
+                production_speed_buildings_factor = -0.60    #민간 공장 효율
+
+                stability_factor = -0.10    #안정도
+                stability_weekly = -0.02    #안정도 월별
+                communism_drift = -0.01   #공산주의 정당 지지도 1일
+                facism_drift = -0.01   #파시즘 정당 지지도 1일
+                socialism_drift = -0.01   #파시즘 정당 지지도 1일
+            }
+        }
+    }
+}
