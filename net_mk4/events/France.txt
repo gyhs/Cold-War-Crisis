@@ -147,15 +147,14 @@ news_event = {
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.8"}
     option = {
         name = NE_FRA.8.a
-        NATO = {add_to_faction = SWE}
+        add_to_faction = SWE
     }
     option = {
         name = NE_FRA.8.b
         hidden = {
-            immediate = {
-                FRA = {
+                country_event = {
                     id = NE_FRA.9
-                }
+					days = 0
             }
         }
     }
