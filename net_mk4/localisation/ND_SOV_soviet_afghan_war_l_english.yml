@@ -100,3 +100,7 @@
  ND_SOV_soviet_afghan_war_mujahidin_south_raids:0 "남부전역, 무자헤딘의 습격 임박"
  ND_SOV_soviet_afghan_war_mujahidin_south_raids_desc:0 "무자헤딘 지하조직들이 감시의 눈을 피해 테러를 가할 예정이라는 첩보가 들어왔습니다. 신속히 처리하지 않는다면 피해가 발생 할 것 입니다."
  
+ ######
+ 
+ ND_SOV_soviet_afghan_war_withdraw:0 "아프가니스탄 철수"
+ ND_SOV_soviet_afghan_war_withdraw_desc:0 "소련은 더 이상 아프가니스탄의 진창에서 허우적 거릴 수가 없었습니다. 외교적으로도 점점 고립되어 갔으며, 내부적으로도 철수여론이 급격이 커지고 있었습니다."
