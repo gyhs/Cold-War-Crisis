@@ -103,7 +103,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -150,7 +149,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -257,7 +255,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -304,7 +301,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -411,7 +407,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -458,7 +453,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -608,7 +602,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -655,7 +648,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -762,7 +754,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -809,7 +800,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -916,7 +906,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -963,7 +952,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -1113,7 +1101,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -1160,7 +1147,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -1267,7 +1253,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -1314,7 +1299,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -1421,7 +1405,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -1468,7 +1451,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2 }
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1 }
 				}
-				remove_ideas = NS_SOV_soviet_afghan_war
 			}
 		}
 	}
@@ -1514,6 +1496,50 @@ ND_SOV_soviet_afghan_war_category = {
 					
 				}
 			}
+		}
+	}
+#################
+##### 철수 요청
+	ND_SOV_soviet_afghan_war_withdraw = {
+
+		icon = generic_oppression
+		
+		available = {
+			#has_completed_focus = MAN_pacify_the_countryside
+			NOT = { has_idea = NS_SOV_soviet_afghan_war }
+			divisions_in_state = {
+				state = 868
+				state = 869
+				state = 870	
+				state = 871
+				size < 5
+			}
+		}
+
+		highlight_states = {
+			state = 873
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 873	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			has_idea = NS_SOV_soviet_afghan_war
+		}
+
+		is_good = yes
+
+		complete_effect = {
 		}
 	}
 }
