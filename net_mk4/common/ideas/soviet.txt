@@ -2003,6 +2003,14 @@ ideas = {
 					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2
 					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3
+					
+					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1
+					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_2
+					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3
+					
+					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1
+					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2
+					has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3
 				}
 			}
 
