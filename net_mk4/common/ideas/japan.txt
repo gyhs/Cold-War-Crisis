@@ -1,7 +1,6 @@
 ideas = {
     country = {
-
-        ########인플레이션#########
+        ########인플레이션#############
         NS_JAP_asset_inflation_1 = {
             picture = 
             allowed = {
@@ -38,7 +37,7 @@ ideas = {
             }
         }
 
-            NS_JAP_asset_inflation_3 = {
+        NS_JAP_asset_inflation_3 = {
             picture = 
             allowed = {
                 always = no
@@ -58,7 +57,7 @@ ideas = {
             }
         }
 
-            NS_JAP_asset_inflation_4 = {
+        NS_JAP_asset_inflation_4 = {
             picture = 
             allowed = {
                 always = no
@@ -78,7 +77,7 @@ ideas = {
             }
         }
 
-            NS_JAP_asset_inflation_5 = {
+        NS_JAP_asset_inflation_5 = {
             picture = 
             allowed = {
                 always = no
@@ -101,5 +100,7 @@ ideas = {
                 socialism_drift = -0.01   #파시즘 정당 지지도 1일
             }
         }
+        ###############################
+
     }
 }
