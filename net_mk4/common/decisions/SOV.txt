@@ -1508,29 +1508,26 @@ ND_SOV_soviet_afghan_war_category = {
 			#has_completed_focus = MAN_pacify_the_countryside
 			NOT = { has_idea = NS_SOV_soviet_afghan_war }
 			divisions_in_state = {
-				state = 868
-				state = 869
-				state = 870	
-				state = 871
+				state = 267
 				size < 5
 			}
 		}
 
 		highlight_states = {
-			state = 873
+			state = 267
 		}
 
 		cost = 0
 
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 873	
-					size > 5
-				}
-			}
+			#factor = 0
+			#modifier = {
+			#	add = 200
+			#	divisions_in_state = {
+			#		state = 267
+			#		size > 5
+			#	}
+			#}
 		}
 
 		visible = {
