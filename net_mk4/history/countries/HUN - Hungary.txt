@@ -9,6 +9,11 @@ set_war_support = 0.6
 set_technology = {
 }
 
+add_ideas = {
+	
+	NS_SOV_warsaw_pact
+}
+
 
 set_politics = {	
 	ruling_party = communism

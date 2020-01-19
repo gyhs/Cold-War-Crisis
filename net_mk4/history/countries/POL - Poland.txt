@@ -19,6 +19,8 @@ add_ideas = {
 	NS_Gen_rampant_communicable_diseases_3
 	NS_Gen_landed_proprietor
 	NS_Gen_army_corruption_1
+	
+	NS_SOV_warsaw_pact
 }
 
 set_convoys = 10

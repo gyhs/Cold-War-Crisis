@@ -5,6 +5,11 @@ oob = "CZE_1987"
 set_technology = {
 }
 
+add_ideas = {
+	
+	NS_SOV_warsaw_pact
+}
+
 set_research_slots = 3
 
 set_politics = {	

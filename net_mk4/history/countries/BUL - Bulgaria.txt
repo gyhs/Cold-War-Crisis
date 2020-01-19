@@ -5,6 +5,11 @@ oob = "BUL_1987"
 set_technology = {
 }
 
+add_ideas = {
+	
+	NS_SOV_warsaw_pact
+}
+
 set_convoys = 5
 
 
