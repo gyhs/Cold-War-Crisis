@@ -1540,6 +1540,11 @@ ND_SOV_soviet_afghan_war_category = {
 		is_good = yes
 
 		complete_effect = {
+		ND_SOV_gorbachev_faction_system_military_large_opposition
+		ND_SOV_gorbachev_faction_system_conservative_small_opposition_tt
+		ND_SOV_gorbachev_faction_system_conservative_small_opposition
+		ND_SOV_gorbachev_faction_system_reform_medium_support_tt
+		ND_SOV_gorbachev_faction_system_reform_medium_support
 		}
 	}
 }
