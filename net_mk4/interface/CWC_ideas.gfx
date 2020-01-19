@@ -42,4 +42,9 @@ spriteTypes = {
 		name = "GFX_idea_EEC_idea"
 		texturefile = "gfx/interface/ideas/EEC_idea.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_warsaw_pact_idea"
+		texturefile = "gfx/interface/ideas/warsaw_pact_idea.dds"
+	}
 }

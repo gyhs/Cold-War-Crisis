@@ -43,6 +43,24 @@ ideas = {
 			}
 
 		}
+		
+		#
+		NS_SOV_warsaw_pact = {
+			picture = warsaw_pact_idea
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			    always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				ai_get_ally_desire_factor = -2000
+				ai_call_ally_desire_factor = -2000
+				ai_join_ally_desire_factor = -2000
+			}
+		}
 
 		################################
 		##### 개혁 열망 level ####

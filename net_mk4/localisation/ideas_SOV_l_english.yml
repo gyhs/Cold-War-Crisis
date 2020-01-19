@@ -2,6 +2,8 @@
 #
  NS_SOV_soviet_afghan_war:1 "소련-아프가니스탄 전쟁"
  NS_SOV_soviet_afghan_war_desc:0 "소련–아프가니스탄 전쟁은 1979년 12월부터 지금까지 8년 이상 지속된 전쟁 입니다. '무자헤딘'이라 불리는 반군세력이 기독교 및 이슬람 국가들의 지원을 받으며 소련의 괴뢰정권인 아프가니스탄 민주공화국과 소련군의 연합군에 맞서 싸웠습니다. 아프간 전역에서 10만명에 달하는 소련군이 싸웠으나, 소련이 부담해야 할 군사적 외교적 비용은 기하급수적으로 불어났습니다."
+ NS_SOV_warsaw_pact:1 "바르샤바 조약 기구"
+ #NS_SOV_warsaw_pact_desc:1 "바르샤바 조약 기구"
  
  SOV_nm_uprising_category:0 "소비에트 연방 민족주의 봉기"
  SOV_nm_uprising_category_desc:0 "소비에트 연방 민족주의 봉기"

@@ -215,6 +215,8 @@ add_ideas = {
 					SOV_social_safety_nets_crisis_4
 					
 					NS_SOV_soviet_afghan_war
+					
+					NS_SOV_warsaw_pact
 }
 
 
