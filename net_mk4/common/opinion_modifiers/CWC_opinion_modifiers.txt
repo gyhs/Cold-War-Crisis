@@ -16,6 +16,8 @@ opinion_modifiers = {
 	mission_to_the_PAK = { value = 50 }
 	mission_to_the_SWE = { value = 50 }
 	
+	refusal_to_join_FRA = { value = -30 }
+	
 	SOV_leanings = { value = 50 }
 	
 	influential_sphere_by_SOV = { value = 10 }
