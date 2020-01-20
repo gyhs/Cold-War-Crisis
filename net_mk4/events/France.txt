@@ -170,7 +170,7 @@ country_event = {
     }
 }
 
-#거절 선택시 반응
+#스웨덴 거절 선택시 반응
 country_event = {
     id = NE_FRA.9
     picture = report_event_ast_parliament_house
@@ -200,10 +200,18 @@ country_event = {
     }
     option = {
         name = NE_FRA.10.b
+        FRA = {
+            add_opinion_modifier = {
+            target = FIN
+            modifier = refusal_of_recommendation_FRA
+            }
+        }
         hidden_effect = {
             FRA = {
-                id = NE_FRA.11
-                days = 0
+                country_event = {
+                    id = NE_FRA.11
+                    days = 0
+                }
             }
         }
     }
