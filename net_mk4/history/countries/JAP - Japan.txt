@@ -10,6 +10,7 @@ set_fuel_ratio = 1.0
 add_ideas = {
 	NS_JAP_asset_inflation_1
 	NS_JAP_narrow_rail
+	NS_JAP_peace_law
 }
 
 set_technology = {
