@@ -153,12 +153,6 @@ country_event = {
     }
     option = {
         name = NE_FRA.8.b
-        FRA = {
-            add_opinion_modifier = {
-            target = FIN
-            modifier = refusal_of_recommendation_FRA
-            }
-        }
         hidden_effect = {
             FRA = {
                 country_event = {
@@ -200,12 +194,6 @@ country_event = {
     }
     option = {
         name = NE_FRA.10.b
-        FRA = {
-            add_opinion_modifier = {
-            target = FIN
-            modifier = refusal_of_recommendation_FRA
-            }
-        }
         hidden_effect = {
             FRA = {
                 country_event = {
