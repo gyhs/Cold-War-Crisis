@@ -102,5 +102,19 @@ ideas = {
         }
         ###############################
 
+        #철도 협궤
+        NS_JAP_narrow_rail = {
+            picture = 
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                production_speed_infrastructure_factor = 0.2
+                global_building_slots_factor = -0.10
+            }
+        }
     }
 }
