@@ -558,8 +558,8 @@ focus_tree = {
 		completion_reward = {
 			FIN = {
 				country_event = {
-				days = 0
-				id = NE_FRA.10
+					days = 0
+					id = NE_FRA.10
 				}
 			}
 		}

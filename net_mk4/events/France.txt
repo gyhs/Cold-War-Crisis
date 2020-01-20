@@ -147,20 +147,16 @@ country_event = {
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.8"}
     option = {
         name = NE_FRA.8.a
-        immediate = {
-            NATO = {
-                add_to_faction = SWE
-            }
+        NATO = {
+            add_to_faction = SWE
         }
     }
     option = {
         name = NE_FRA.8.b
-        immediate ={
-            FRA = {
-                add_opinion_modifier = {
-                target = FIN
-                modifier = refusal_of_recommendation_FRA
-                }
+        FRA = {
+            add_opinion_modifier = {
+            target = FIN
+            modifier = refusal_of_recommendation_FRA
             }
         }
         hidden_effect = {
@@ -198,22 +194,12 @@ country_event = {
     picture = GFX_report_event_canada_treaty
     option = {
         name = NE_FRA.10.a
-        immediate = {
             NATO = {
                 add_to_faction = FIN
             }
-        }
     }
     option = {
         name = NE_FRA.10.b
-        immediate = {
-            FRA = {
-                add_opinion_modifier = {
-                target = FIN
-                modifier = refusal_of_recommendation_FRA
-                }
-            }
-        }
         hidden_effect = {
             FRA = {
                 id = NE_FRA.11
