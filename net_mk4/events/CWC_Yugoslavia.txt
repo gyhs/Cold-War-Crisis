@@ -349,7 +349,7 @@ country_event = { #나라 갈아타기
 			}
 		}
 	}
-	option = { #슬로바키아로 플레이
+	option = { #슬로베니아로 플레이
 		name = YUG.14.b
 		ai_chance = { factor = 1 }
 		SLV = { change_tag_from = YUG }
