@@ -100,9 +100,10 @@ ND_SOV_soviet_afghan_war_category = {
 				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
-
+			
 			army_experience = 10
 
+			ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_1_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
 			if = {
@@ -157,6 +158,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -263,6 +265,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+			ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_2_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2
 			if = {
@@ -317,6 +320,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -423,6 +427,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_3_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3
 			if = {
@@ -477,6 +482,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -626,6 +632,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_north_1_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1
 			if = {
@@ -680,6 +687,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -786,6 +794,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_north_2_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_2
 			if = {
@@ -840,6 +849,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -946,6 +956,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_north_3_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3
 			if = {
@@ -1000,6 +1011,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -1149,6 +1161,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_south_1_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1
 			if = {
@@ -1203,6 +1216,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -1309,6 +1323,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_south_2_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2
 			if = {
@@ -1363,6 +1378,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -1469,6 +1485,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 			army_experience = 10
 
+		ND_SOV_gorbachev_faction_system_reform_small_support = yes
 			remove_mission = ND_SOV_soviet_afghan_war_mujahidin_south_3_maintain
 			clr_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3
 			if = {
@@ -1523,6 +1540,7 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1 }
 				}
 			}
+		ND_SOV_gorbachev_faction_system_conservative_small_support = yes
 		}
 	}
 	
@@ -1608,11 +1626,9 @@ ND_SOV_soviet_afghan_war_category = {
 		is_good = yes
 
 		complete_effect = {
-		ND_SOV_gorbachev_faction_system_military_large_opposition
-		ND_SOV_gorbachev_faction_system_conservative_small_opposition_tt
-		ND_SOV_gorbachev_faction_system_conservative_small_opposition
-		ND_SOV_gorbachev_faction_system_reform_medium_support_tt
-		ND_SOV_gorbachev_faction_system_reform_medium_support
+		ND_SOV_gorbachev_faction_system_military_large_opposition = yes
+		ND_SOV_gorbachev_faction_system_conservative_small_opposition = yes
+		ND_SOV_gorbachev_faction_system_reform_medium_support = yes
 		}
 	}
 }
