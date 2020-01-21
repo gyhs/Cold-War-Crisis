@@ -55,8 +55,15 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			871 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            871 = {
+                    infrastructure > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		cost = 0
@@ -90,7 +97,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -206,8 +213,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_2
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			870 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            870 = {
+                    infrastructure > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		visible = {
@@ -242,7 +257,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -358,8 +373,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_3
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			869 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            869 = {
+                    infrastructure > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		cost = 0
@@ -394,7 +417,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -554,8 +577,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_1
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			872 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            872 = {
+                    industrial_complex > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		cost = 0
@@ -589,7 +620,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -705,8 +736,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_2
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			865 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            865 = {
+                    industrial_complex > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		visible = {
@@ -741,7 +780,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -857,8 +896,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_north_3
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			866 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            866 = {
+                    industrial_complex > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		cost = 0
@@ -893,7 +940,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -1053,8 +1100,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			873 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            873 = {
+                    industrial_complex > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		cost = 0
@@ -1088,7 +1143,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -1102,7 +1157,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
 			}
-			ND_SOV_gorbachev_faction_system_reform_small_support
 		}
 	}
 
@@ -1205,8 +1259,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			415 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            415 = {
+                    industrial_complex > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		visible = {
@@ -1241,7 +1303,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -1255,7 +1317,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3 }
 				}
 			}
-			ND_SOV_gorbachev_faction_system_reform_small_support
 		}
 	}
 
@@ -1358,8 +1419,16 @@ ND_SOV_soviet_afghan_war_category = {
 
 		available = {
 			#has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
+			has_equipment = { support_equipment > @SOV_soviet_afghan_war_EQUIPMENT_COST_TRIGGER }
 			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3
+			has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_main_road_1
+			867 = {
+				is_controlled_by_ROOT_or_subject = yes
+				}
+            867 = {
+                    industrial_complex > 2
+                    is_in_home_area = yes
+            }
 		}
 
 		cost = 0
@@ -1394,7 +1463,7 @@ ND_SOV_soviet_afghan_war_category = {
 			add_manpower = -1000
 			
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = support_equipment
 				amount = @SOV_soviet_afghan_war_EQUIPMENT_COST_EFFECT
 			}
 
@@ -1408,7 +1477,6 @@ ND_SOV_soviet_afghan_war_category = {
 					NOT = { has_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1 }
 				}
 			}
-			ND_SOV_gorbachev_faction_system_reform_small_support
 		}
 	}
 
