@@ -452,7 +452,7 @@ ideas = {
 		}
 		#단일 유럽 의정서
 
-		euro = {
+		EUR = {
 			picture = euro_idea
 
 			allowed = {

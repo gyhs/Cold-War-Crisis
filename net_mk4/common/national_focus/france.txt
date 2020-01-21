@@ -478,7 +478,7 @@ focus_tree = {
 						FRA_persistent_trade_level_deficit_down = yes
 				}
 			remove_ideas = currency_problem
-			add_ideas = euro
+			add_ideas = EUR
 			}
 		x = 26
 		y = 6
@@ -504,13 +504,17 @@ focus_tree = {
 			focus = NF_FRA_the_leader_of_europe
 		}
 		completion_reward = {
-			add_opinion_modifier = {
-    			target = FIN
-    			modifier = mission_to_the_FIN
+			FIN = {
+				add_opinion_modifier = {
+    				target = FRA
+    				modifier = mission_to_the_FIN
+				}
 			}
-			add_opinion_modifier = {
-    			target = SWE
-    			modifier = mission_to_the_SWE
+			SWE = {
+				add_opinion_modifier = {
+    				target = FRA
+    				modifier = mission_to_the_SWE
+				}
 			}
 		}
 		#핀란드 스웨덴 관계증가
@@ -531,8 +535,12 @@ focus_tree = {
 		y = 9
 		
 		completion_reward = {
-			days = 0
-			id = NE_FRA.8
+			SWE = {
+				country_event = {
+					id = NE_FRA.8
+					days = 0
+				}
+			}
 		}
 
 	}
@@ -547,6 +555,14 @@ focus_tree = {
 		custom_effect_tooltip = FRA_effeect_team_fin
 		x = 27
 		y = 9
+		completion_reward = {
+			FIN = {
+				country_event = {
+					days = 0
+					id = NE_FRA.10
+				}
+			}
+		}
 
 	}
 	#동유럽 문제

@@ -102,5 +102,36 @@ ideas = {
         }
         ###############################
 
+        #철도 협궤
+        NS_JAP_narrow_rail = {
+            picture = 
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                production_speed_infrastructure_factor = 0.2 #인프라 건설 속도
+                local_resources_factor = -0.1
+                production_factory_efficiency_gain_factor = -0.05
+            }
+        }
+
+        #평화헌법
+        NS_JAP_peace_law = {
+            picture = 
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+                set_rule = {
+                    can_not_declare_war = yes
+                }
+            }
+        }
     }
 }

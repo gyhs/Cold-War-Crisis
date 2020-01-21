@@ -138,7 +138,7 @@ news_event = {
 }
 
 #스웨덴에 나토 권유 이벤트
-news_event = {
+country_event = {
     id = NE_FRA.8
     title = NE_FRA.8.title
     desc = NE_FRA.8.desc
@@ -147,23 +147,28 @@ news_event = {
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.8"}
     option = {
         name = NE_FRA.8.a
-        add_to_faction = SWE
+        NATO = {
+            add_to_faction = SWE
+        }
     }
     option = {
         name = NE_FRA.8.b
-        hidden = {
+        hidden_effect = {
+            FRA = {
                 country_event = {
                     id = NE_FRA.9
-					days = 0
+				    days = 0
+                }
             }
         }
     }
 }
 
-#거절 선택시 반응
+#스웨덴 거절 선택시 반응
 country_event = {
     id = NE_FRA.9
     picture = report_event_ast_parliament_house
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.9"}
     is_triggered_only = yes
     title = NE_FRA.9.title
     desc = NE_FRA.9.desc
@@ -172,24 +177,43 @@ country_event = {
     }
 }
 
-#스웨덴 나토 권유 트리거
+#핀란드에 나토 권유 이벤트
 
-news_event = {
+country_event = {
     id = NE_FRA.10
-    hidden = yes
-    fire_only_once = yes
-    trigger = {        
-        focus_progress = {
-            focus = NF_FRA_Choice_of_sweden
-            progress > 0.99           
-        }          
+    title = NE_FRA.10.title
+    desc = NE_FRA.10.desc
+    is_triggered_only = yes
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.10"}
+    picture = GFX_report_event_canada_treaty
+    option = {
+        name = NE_FRA.10.a
+            NATO = {
+                add_to_faction = FIN
+            }
     }
-    immediate = {
-        SWE = {
-            news_event = {
-                id = NE_FRA.8
-                days = 1
+    option = {
+        name = NE_FRA.10.b
+        hidden_effect = {
+            FRA = {
+                country_event = {
+                    id = NE_FRA.11
+                    days = 0
+                }
             }
         }
+    }
+}
+
+#핀란드 거절시 프랑스 반응
+country_event = {
+    id = NE_FRA.11
+    picture = report_event_ast_parliament_house
+    immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.11"}
+    is_triggered_only = yes
+    title = NE_FRA.11.title
+    desc = NE_FRA.11.desc
+    option = {
+        name = NE_FRA.11.a
     }
 }
