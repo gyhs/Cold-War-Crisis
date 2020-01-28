@@ -1,4 +1,4 @@
-ND_SOV_nm_uprising_category = {
+ND_SOV_independence_struggle_eastern_europe_category = {
 
 	icon = eng_organize_the_blackshirts
 
@@ -13,39 +13,6 @@ ND_SOV_nm_uprising_category = {
 		name = ND_SOV_nm_uprising_category_map_category_name
 		zoom = 250
 	}
-
-	#priority = { #어느 중섬을 달성시 이 디시전을 우선하라 라는 명령어
-	#	base = 0
-	#	modifier = {
-	#		add = 10
-	#		has_completed_focus = ENG_organize_the_blackshirts
-	#	}
-	#}
-
-	visible = {
-		#has_completed_focus = ENG_organize_the_blackshirts
-		#OR = {
-		#	NOT = { has_government = fascism }
-		#	has_country_flag = won_british_civil_war
-		#	has_decision = ENG_the_mosley_plan
-		#}
-	}
-}
-SOV_nm_uprising_category = {
-	
-	icon = GFX_decision_category_infiltration
-	
-	picture = GFX_decision_cat_picture_chi_political_support
-
-	allowed = {
-		tag = SOV
-	}
-
-	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
-	#	has_completed_focus = SOV_pacify_the_countryside
-	#}
-}
-SOV_baltic_states_nm_uprising_category = {
 	
 	
 	custom_icon = {
@@ -111,6 +78,39 @@ SOV_baltic_states_nm_uprising_category = {
 			#country_exists = UKR
 		}
 	}
+
+	#priority = { #어느 중섬을 달성시 이 디시전을 우선하라 라는 명령어
+	#	base = 0
+	#	modifier = {
+	#		add = 10
+	#		has_completed_focus = ENG_organize_the_blackshirts
+	#	}
+	#}
+
+	visible = {
+		#has_completed_focus = ENG_organize_the_blackshirts
+		#OR = {
+		#	NOT = { has_government = fascism }
+		#	has_country_flag = won_british_civil_war
+		#	has_decision = ENG_the_mosley_plan
+		#}
+	}
+}
+ND_SOV_independence_struggle_kavkaz_category = {
+
+	icon = eng_organize_the_blackshirts
+
+	picture = GFX_decision_cat_picture_organize_the_blackshirts
+	
+	allowed = {
+		tag = SOV
+	}
+
+	on_map_area = {
+		state = 119
+		name = ND_SOV_nm_uprising_category_map_category_name
+		zoom = 250
+	}
 #--------------------------------------------------------
 	custom_icon = {
 		tag = GEO
@@ -138,6 +138,39 @@ SOV_baltic_states_nm_uprising_category = {
 		visible = {
 			#country_exists = ARM
 		}
+	}
+
+	#priority = { #어느 중섬을 달성시 이 디시전을 우선하라 라는 명령어
+	#	base = 0
+	#	modifier = {
+	#		add = 10
+	#		has_completed_focus = ENG_organize_the_blackshirts
+	#	}
+	#}
+
+	visible = {
+		#has_completed_focus = ENG_organize_the_blackshirts
+		#OR = {
+		#	NOT = { has_government = fascism }
+		#	has_country_flag = won_british_civil_war
+		#	has_decision = ENG_the_mosley_plan
+		#}
+	}
+}
+ND_SOV_independence_struggle_central_asia_category = {
+
+	icon = eng_organize_the_blackshirts
+
+	picture = GFX_decision_cat_picture_organize_the_blackshirts
+	
+	allowed = {
+		tag = SOV
+	}
+
+	on_map_area = {
+		state = 119
+		name = ND_SOV_nm_uprising_category_map_category_name
+		zoom = 250
 	}
 #--------------------------------------------------------
 	custom_icon = {
@@ -185,6 +218,39 @@ SOV_baltic_states_nm_uprising_category = {
 			#country_exists = TAJ
 		}
 	}
+
+	#priority = { #어느 중섬을 달성시 이 디시전을 우선하라 라는 명령어
+	#	base = 0
+	#	modifier = {
+	#		add = 10
+	#		has_completed_focus = ENG_organize_the_blackshirts
+	#	}
+	#}
+
+	visible = {
+		#has_completed_focus = ENG_organize_the_blackshirts
+		#OR = {
+		#	NOT = { has_government = fascism }
+		#	has_country_flag = won_british_civil_war
+		#	has_decision = ENG_the_mosley_plan
+		#}
+	}
+}
+SOV_nm_uprising_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		tag = SOV
+	}
+
+	#visible = { # This doesn't prevent the periodic uprising raids appearing in the section, it just stops you seeing the solution to them. I've put it in the solutions' available = {}
+	#	has_completed_focus = SOV_pacify_the_countryside
+	#}
+}
+SOV_baltic_states_nm_uprising_category = {
 	
 	icon = GFX_decision_category_infiltration
 	
