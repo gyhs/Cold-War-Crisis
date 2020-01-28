@@ -47,6 +47,145 @@ SOV_nm_uprising_category = {
 }
 SOV_baltic_states_nm_uprising_category = {
 	
+	
+	custom_icon = {
+		tag = SOV
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = SOV
+		}
+	}
+	custom_icon = {
+		tag = EST
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = EST
+		}
+	}
+	custom_icon = {
+		tag = LAT
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = LAT
+		}
+	}
+	custom_icon = {
+		tag = LIT
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = LIT
+		}
+	}
+	custom_icon = {
+		tag = BLR
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = BLR
+		}
+	}
+	custom_icon = {
+		tag = MOL
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = MOL
+		}
+	}
+	custom_icon = {
+		tag = UKR
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = UKR
+		}
+	}
+#--------------------------------------------------------
+	custom_icon = {
+		tag = GEO
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = GEO
+		}
+	}
+	custom_icon = {
+		tag = AZR
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = AZR
+		}
+	}
+	custom_icon = {
+		tag = ARM
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = ARM
+		}
+	}
+#--------------------------------------------------------
+	custom_icon = {
+		tag = KAZ
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = KAZ
+		}
+	}
+	custom_icon = {
+		tag = KYR
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = KYR
+		}
+	}
+	custom_icon = {
+		tag = UZB
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = UZB
+		}
+	}
+	custom_icon = {
+		tag = TMS
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = TMS
+		}
+	}
+	custom_icon = {
+		tag = TAJ
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			#country_exists = TAJ
+		}
+	}
+	
 	icon = GFX_decision_category_infiltration
 	
 	picture = GFX_decision_cat_picture_chi_political_support
