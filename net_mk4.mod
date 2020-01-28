@@ -6,4 +6,4 @@ tags={
 }
 name="Cold War Crisis dev."
 supported_version="1.8.1"
-path="C:/Users/CafeAlle/Documents/Paradox Interactive/Hearts of Iron IV/mod/net_mk4"
+path="mod/net_mk4"
