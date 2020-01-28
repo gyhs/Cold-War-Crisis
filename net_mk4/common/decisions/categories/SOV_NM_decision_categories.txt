@@ -18,7 +18,7 @@ ND_SOV_independence_struggle_eastern_europe_category = {
 	custom_icon = {
 		tag = SOV
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = SOV
@@ -27,7 +27,7 @@ ND_SOV_independence_struggle_eastern_europe_category = {
 	custom_icon = {
 		tag = EST
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = EST
@@ -36,7 +36,7 @@ ND_SOV_independence_struggle_eastern_europe_category = {
 	custom_icon = {
 		tag = LAT
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = LAT
@@ -45,7 +45,7 @@ ND_SOV_independence_struggle_eastern_europe_category = {
 	custom_icon = {
 		tag = LIT
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = LIT
@@ -54,7 +54,7 @@ ND_SOV_independence_struggle_eastern_europe_category = {
 	custom_icon = {
 		tag = BLR
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = BLR
@@ -63,7 +63,7 @@ ND_SOV_independence_struggle_eastern_europe_category = {
 	custom_icon = {
 		tag = MOL
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = MOL
@@ -72,7 +72,7 @@ ND_SOV_independence_struggle_eastern_europe_category = {
 	custom_icon = {
 		tag = UKR
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = UKR
@@ -115,7 +115,7 @@ ND_SOV_independence_struggle_kavkaz_category = {
 	custom_icon = {
 		tag = GEO
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = GEO
@@ -124,7 +124,7 @@ ND_SOV_independence_struggle_kavkaz_category = {
 	custom_icon = {
 		tag = AZR
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = AZR
@@ -133,7 +133,7 @@ ND_SOV_independence_struggle_kavkaz_category = {
 	custom_icon = {
 		tag = ARM
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = ARM
@@ -176,7 +176,7 @@ ND_SOV_independence_struggle_central_asia_category = {
 	custom_icon = {
 		tag = KAZ
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = KAZ
@@ -185,7 +185,7 @@ ND_SOV_independence_struggle_central_asia_category = {
 	custom_icon = {
 		tag = KYR
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = KYR
@@ -194,7 +194,7 @@ ND_SOV_independence_struggle_central_asia_category = {
 	custom_icon = {
 		tag = UZB
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = UZB
@@ -203,7 +203,7 @@ ND_SOV_independence_struggle_central_asia_category = {
 	custom_icon = {
 		tag = TMS
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = TMS
@@ -212,7 +212,7 @@ ND_SOV_independence_struggle_central_asia_category = {
 	custom_icon = {
 		tag = TAJ
 		value = eng_gateway_to_europe_icon_value
-		desc = eng_gateway_to_europe_full_influence_breakdown
+		desc = ND_SOV_independence_struggle_influence_breakdown
 
 		visible = {
 			#country_exists = TAJ
