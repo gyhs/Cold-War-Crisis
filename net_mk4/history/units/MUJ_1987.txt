@@ -295,7 +295,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 12831
+		location = 13295
 		division_template = "마수드파 전사들"
 		start_experience_factor = 0.3
 	}
@@ -303,7 +303,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 12831
+		location = 13295
 		division_template = "마수드파 전사들"
 		start_experience_factor = 0.3
 	}

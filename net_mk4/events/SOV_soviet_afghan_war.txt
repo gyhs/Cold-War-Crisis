@@ -16,8 +16,7 @@ country_event = {
 		name = NE_SOV_soviet_afghan_war.1.a #okay
 		random_state = {
 			limit = {
-				is_controlled_by = SOV
-				is_controlled_by = AFG
+				is_controlled_by_ROOT_or_subject = yes
 				arms_factory > 0
 				or = {
 				state = 869
@@ -46,9 +45,8 @@ country_event = {
 		name = NE_SOV_soviet_afghan_war.1.a #okay
 		random_state = {
 			limit = {
-				is_controlled_by = SOV
-				is_controlled_by = AFG
-				arms_factory > 0
+				is_controlled_by_ROOT_or_subject = yes
+				industrial_complex > 0
 				or = {
 				state = 869
 				state = 870
@@ -76,9 +74,8 @@ country_event = {
 		name = NE_SOV_soviet_afghan_war.1.a #okay
 		random_state = {
 			limit = {
-				is_controlled_by = SOV
-				is_controlled_by = AFG
-				arms_factory > 0
+				is_controlled_by_ROOT_or_subject = yes
+				infrastructure > 0
 				or = {
 				state = 869
 				state = 870

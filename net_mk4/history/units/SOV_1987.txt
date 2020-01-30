@@ -2300,7 +2300,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 151
 		}
-		location = 13295
+		location = 13304
 		division_template = "차량화소총사단"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7

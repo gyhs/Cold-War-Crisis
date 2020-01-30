@@ -5,7 +5,7 @@ state={
 	history={
 		owner = MUJ
 		buildings = {
-			infrastructure = 3
+			infrastructure = 0
 			industrial_complex = 2
 
 		}
