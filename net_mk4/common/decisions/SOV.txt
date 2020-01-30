@@ -45,7 +45,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_1_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -205,7 +205,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_2_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -367,7 +367,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_main_road_3_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -573,7 +573,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_north_1_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -734,7 +734,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_north_2_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -896,7 +896,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_north_3_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -1102,7 +1102,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_south_1_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -1263,7 +1263,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_south_2_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
@@ -1425,7 +1425,7 @@ ND_SOV_soviet_afghan_war_category = {
 
 		complete_effect = {
 			activate_mission = ND_SOV_soviet_afghan_war_mujahidin_south_3_maintain
-			custom_effect_tooltip = MAN_pacify_bandits_mission_explanation
+			custom_effect_tooltip = ND_SOV_soviet_afghan_war_mission_explanation
 		}
 	}
 
