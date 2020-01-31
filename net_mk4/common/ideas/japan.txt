@@ -2,7 +2,7 @@ ideas = {
     country = {
         ########인플레이션#############
         NS_JAP_asset_inflation_1 = {
-            picture = 
+            #picture = 
             allowed = {
                 always = no
             }
@@ -20,7 +20,7 @@ ideas = {
         }
 
         NS_JAP_asset_inflation_2 = {
-            picture = 
+            #picture = 
             allowed = {
                 always = no
             }
@@ -38,7 +38,7 @@ ideas = {
         }
 
         NS_JAP_asset_inflation_3 = {
-            picture = 
+            #picture = 
             allowed = {
                 always = no
             }
@@ -58,7 +58,7 @@ ideas = {
         }
 
         NS_JAP_asset_inflation_4 = {
-            picture = 
+            #picture = 
             allowed = {
                 always = no
             }
@@ -78,7 +78,7 @@ ideas = {
         }
 
         NS_JAP_asset_inflation_5 = {
-            picture = 
+            #picture = 
             allowed = {
                 always = no
             }
@@ -96,7 +96,7 @@ ideas = {
                 stability_factor = -0.10    #안정도
                 stability_weekly = -0.02    #안정도 월별
                 communism_drift = -0.01   #공산주의 정당 지지도 1일
-                facism_drift = -0.01   #파시즘 정당 지지도 1일
+                fascism_drift = -0.01   #파시즘 정당 지지도 1일
                 socialism_drift = -0.01   #파시즘 정당 지지도 1일
             }
         }
@@ -104,7 +104,7 @@ ideas = {
 
         #철도 협궤
         NS_JAP_narrow_rail = {
-            picture = 
+            #picture = 
             allowed = {
                 always = yes
             }
@@ -120,7 +120,7 @@ ideas = {
 
         #평화헌법
         NS_JAP_peace_law = {
-            picture = 
+            #picture = 
             allowed = {
                 always = yes
             }
