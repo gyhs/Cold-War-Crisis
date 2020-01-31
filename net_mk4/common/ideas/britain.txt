@@ -1,30 +1,6 @@
 ideas = {
 
 	country = {
-		eces_1 = {
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea eces_1"
-			}
-			
-			picture = ecsc_idea
-			
-			allowed = {
-				original_tag = ENG
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                political_power_gain = -0.10
-                industrial_capacity_factory = 0.10
-			}
-		}
-	}
-	country = {
 		uk_great_depression1 = {
 			picture = usa_great_depression_3
 			
