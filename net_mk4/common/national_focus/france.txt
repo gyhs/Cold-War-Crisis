@@ -78,7 +78,10 @@ focus_tree = {
 		cost = 10.00
 		completion_reward = {
 			add_ideas = nuclear_power
-   			remove_ideas = {persistent_trade_deficit_5 , currency_problem}
+   			remove_ideas = {
+				   persistent_trade_deficit_5 
+				   currency_problem
+				   }
 			add_timed_idea = {
     			idea = deficit_recovery
     			days = 200
@@ -357,7 +360,7 @@ focus_tree = {
 			focus = NF_FRA_support_for_kgb
 		}
 		completion_reward = {
-			Warsaw_Pact = {add_to_faction = FRA}
+			Warsaw_Pact = { add_to_faction = FRA }
 		}
 		x = 22
 		y = 8
@@ -401,7 +404,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_emu_institutionalization
 		icon = GFX_focus_generic_treaty
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
@@ -416,7 +419,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_europeans
 		icon = GFX_goal_generic_national_unity
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
@@ -432,7 +435,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_eec_strengthen
 		icon = GFX_goal_generic_major_alliance
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
@@ -462,21 +465,7 @@ focus_tree = {
 			focus = NF_FRA_emu_institutionalization
 		}
 		completion_reward = {
-			if = {
-					limit = { has_idea = persistent_trade_deficit_1 }
-				remove_ideas = persistent_trade_deficit_1
-				hidden_effect = {
-					FRA_persistent_trade_deficit_all = yes
-				}
-			}
-			if = {
-					limit = { 
-						NOT = {
-							has_idea = persistent_trade_deficit_1
-						}
-					}
-						FRA_persistent_trade_level_deficit_down = yes
-				}
+			FRA_persistent_trade_level_deficit_down = yes
 			remove_ideas = currency_problem
 			add_ideas = EUR
 			}
@@ -530,7 +519,6 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-		custom_effect_tooltip = FRA_effeect_team_swe
 		x = 25
 		y = 9
 		
@@ -552,7 +540,6 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-		custom_effect_tooltip = FRA_effeect_team_fin
 		x = 27
 		y = 9
 		completion_reward = {
@@ -1340,7 +1327,7 @@ focus_tree = {
 		x = 12
 		y = 7
 		completion_reward = {
-		set_country_leader_ideology = fascism 
+		set_country_leader_ideology = fascism_subtype_1
 		}
 	}
 	#프랑스의 새로운 전차

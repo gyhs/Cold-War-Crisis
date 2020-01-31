@@ -40,7 +40,7 @@ country_event = {
     option = {
         name = NE_FRA.2.a
         ai_chance = { factor = 1 }
-        stability_factor = 0.10
+        add_stability = 0.1
     }
 }
 #'영구 혁명 조약'의 등장 트리거
