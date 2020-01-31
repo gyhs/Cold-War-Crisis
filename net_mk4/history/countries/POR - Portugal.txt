@@ -9,7 +9,7 @@ set_technology = {
 
 set_convoys = 50
 set_politics = {	
-	ruling_party = authoritarianism
+	ruling_party = social_conservatism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -21,8 +21,8 @@ set_popularities = {
 	social_democracy = 5
 	social_liberalism = 5
 	market_liberalism = 5
-	social_conservatism = 5
-	authoritarianism = 50
+	social_conservatism = 50
+	authoritarianism = 5
 	fascism = 20
 }
 
