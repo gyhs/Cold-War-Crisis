@@ -14,7 +14,7 @@ set_convoys = 10
 
 
 set_politics = {	
-	ruling_party = authoritarianism
+	ruling_party = social_democracy
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = yes # none after offset 1
@@ -23,21 +23,21 @@ set_politics = {
 set_popularities = {
 	communism = 5
 	socialism = 5
-	social_democracy = 5
-	social_liberalism = 5
+	social_democracy = 50
+	social_liberalism = 10
 	market_liberalism = 5
-	social_conservatism = 5
-	authoritarianism = 50
-	fascism = 20
+	social_conservatism = 25
+	authoritarianism = 0
+	fascism = 0
 }
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Ioannis Metaxas"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
-	picture = "POLITICS_Greece_Ioannis_Metaxas.dds"
-	expire = "1965.1.1"
-	ideology = authoritarianism_subtype_1
+	name = "안드레아스 파판드레우"
+	desc = ""
+	picture = "portrait_gre_andreas_papandreou.dds"
+	expire = "2010.1.1"
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}

@@ -25,13 +25,12 @@ set_popularities = {
 
 set_convoys = 5
 
-#Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "King Zog"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "POLITICS_Albania_King_Zog.dds"
-	expire = "1965.1.1"
-	ideology = authoritarianism_subtype_1
+	name = "라미즈 알리아"
+	desc = ""
+	picture = "portrait_alb_ramiz_alia.dds"
+	expire = "2010.1.1"
+	ideology = communism_subtype_1
 	traits = {
 		#
 	}
