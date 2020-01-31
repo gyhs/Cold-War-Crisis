@@ -1016,14 +1016,14 @@ democratic_on_the_rise = {
 		visible = {
 			has_idea_with_trait = democratic_reformer
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { 
-            OR = {
-                has_government = socialism
-                has_government = social_democracy
-                has_government = social_liberalism
-                has_government = market_liberalism
-                has_government = social_conservatism
-            }
+			NOT = {
+				OR = {
+					has_government = socialism
+					has_government = social_democracy
+					has_government = social_liberalism
+					has_government = market_liberalism
+					has_government = social_conservatism
+				}
 			}
 		}
 		
@@ -1069,7 +1069,15 @@ democratic_on_the_rise = {
 		visible = {
 			has_country_flag = open_up_political_discourse_democratic
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOT = { has_government = democratic }
+			NOT = {
+				OR = {
+					has_government = socialism
+					has_government = social_democracy
+					has_government = social_liberalism
+					has_government = market_liberalism
+					has_government = social_conservatism
+				}
+			}
 		}
 		
 		remove_trigger = {
@@ -1127,22 +1135,22 @@ democratic_on_the_rise = {
 		icon = generic_political_discourse
 
 		available = {
-                socialism > 0.5
-                social_democracy > 0.5
-                social_liberalism > 0.5
-                market_liberalism > 0.5
-                social_conservatism > 0.5
+            socialism > 0.5
+            social_democracy > 0.5
+            social_liberalism > 0.5
+            market_liberalism > 0.5
+            social_conservatism > 0.5
 		}
 
 		visible = {
 			NOT = { 
-            OR = {
-                has_government = socialism
-                has_government = social_democracy
-                has_government = social_liberalism
-                has_government = market_liberalism
-                has_government = social_conservatism
-            }
+				OR = {
+					has_government = socialism
+					has_government = social_democracy
+					has_government = social_liberalism
+					has_government = market_liberalism
+					has_government = social_conservatism
+				}
 			}
 			check_has_focus_tree_to_switch_to_democratic = yes
 			OR = {
@@ -1176,13 +1184,13 @@ democratic_on_the_rise = {
 		ai_will_do = {
 			factor = 210
 			modifier = {
-            OR = {
-                socialism > 0.6
-                social_democracy > 0.6
-                social_liberalism > 0.6
-                market_liberalism > 0.6
-                social_conservatism > 0.6
-            }
+				OR = {
+					socialism > 0.6
+					social_democracy > 0.6
+					social_liberalism > 0.6
+					market_liberalism > 0.6
+					social_conservatism > 0.6
+				}
 				factor = 10
 			}
 		}
