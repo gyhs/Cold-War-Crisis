@@ -23,11 +23,11 @@ set_politics = {
 
 set_popularities = {
 	communism = 0
-	socialism = 5
-	social_democracy = 15
-	social_liberalism = 35
-	market_liberalism = 5
-	social_conservatism = 45
+	socialism = 0
+	social_democracy = 10
+	social_liberalism = 30
+	market_liberalism = 10
+	social_conservatism = 50
 	authoritarianism = 0
 	fascism = 0
 }

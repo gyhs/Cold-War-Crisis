@@ -34,7 +34,7 @@ set_politics = {
 }
 set_popularities = {
 	communism = 0
-	socialism = 5
+	socialism = 0
 	social_democracy = 5
 	social_liberalism = 30
 	market_liberalism = 20
