@@ -16,28 +16,28 @@ custom_effect_tooltip = FRA_persistent_trade_deficit_down_tt
     if = {
         limit = { has_idea = persistent_trade_deficit_2 }
         swap_ideas = {
-            remove_ideas = persistent_trade_deficit_2
+            remove_idea = persistent_trade_deficit_2
             add_idea = persistent_trade_deficit_1
         }
     }
     if = {
         limit = { has_idea = persistent_trade_deficit_3 }
         swap_ideas = {
-            remove_ideas = persistent_trade_deficit_3
+            remove_idea  = persistent_trade_deficit_3
             add_idea = persistent_trade_deficit_2
         }
     }
     if = {
         limit = { has_idea = persistent_trade_deficit_4 }
         swap_ideas = {
-            remove_ideas = persistent_trade_deficit_4
+            remove_idea = persistent_trade_deficit_4
             add_idea = persistent_trade_deficit_3
         }
     }
     if = {
         limit = { has_idea = persistent_trade_deficit_5 }
         swap_ideas = {
-            remove_ideas = persistent_trade_deficit_5
+            remove_idea = persistent_trade_deficit_5
             add_idea = persistent_trade_deficit_4
         }
     }

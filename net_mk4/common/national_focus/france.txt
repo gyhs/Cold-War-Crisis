@@ -404,7 +404,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_emu_institutionalization
 		icon = GFX_focus_generic_treaty
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
@@ -419,7 +419,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_europeans
 		icon = GFX_goal_generic_national_unity
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
@@ -435,7 +435,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_eec_strengthen
 		icon = GFX_goal_generic_major_alliance
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_sea_put_into_effect
 		}
