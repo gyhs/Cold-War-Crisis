@@ -95,9 +95,9 @@ ideas = {
 
                 stability_factor = -0.10    #안정도
                 stability_weekly = -0.02    #안정도 월별
-                communism_drift = -0.01   #공산주의 정당 지지도 1일
+                communism_drift = 0.01   #공산주의 정당 지지도 1일
                 fascism_drift = -0.01   #파시즘 정당 지지도 1일
-                socialism_drift = -0.01   #파시즘 정당 지지도 1일
+                socialism_drift = 0.01   #사회주의 정당 지지도 1일
             }
         }
         ###############################
@@ -127,10 +127,9 @@ ideas = {
             allowed_civil_war = {
                 always = yes
             }
-            modifier = {
-                set_rule = {
-                    can_not_declare_war = yes
-                }
+            
+            set_rule = {
+                can_not_declare_war = yes
             }
         }
     }
