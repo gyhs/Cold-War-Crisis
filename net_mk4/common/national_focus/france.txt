@@ -360,7 +360,7 @@ focus_tree = {
 			focus = NF_FRA_support_for_kgb
 		}
 		completion_reward = {
-			Warsaw_Pact = { add_to_faction = FRA }
+			SOV = { add_to_faction = FRA }
 		}
 		x = 22
 		y = 8

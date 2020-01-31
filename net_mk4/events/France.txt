@@ -147,7 +147,7 @@ country_event = {
     immediate = {log = "[GetDateText]: [Root.GetName]: event NE_FRA.8"}
     option = {
         name = NE_FRA.8.a
-        NATO = {
+        USA = {
             add_to_faction = SWE
         }
     }
@@ -188,7 +188,7 @@ country_event = {
     picture = GFX_report_event_canada_treaty
     option = {
         name = NE_FRA.10.a
-            NATO = {
+            USA = {
                 add_to_faction = FIN
             }
     }
