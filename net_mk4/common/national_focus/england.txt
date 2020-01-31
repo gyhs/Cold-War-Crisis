@@ -20,8 +20,10 @@ focus_tree = {
 			has_country_flag = flag_UK_a
 		}
 		completion_reward = {
+			country_event= {
 			days = 0
 			id = NE_ENG.2
+			}
 		}
 	}
 	focus = {
@@ -1531,12 +1533,6 @@ focus_tree = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = dockyard
-				level = 2
-				instant_build = yes
-			}
 		}
 			random_owned_controlled_state={
 				limit = {
@@ -1547,11 +1543,6 @@ focus_tree = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = dockyard
-				level = 2
-				instant_build = yes
 		}
 	}
 	focus = {
