@@ -1,0 +1,30 @@
+persistent_trade_deficit_on = {
+    if = {
+        limit = { has_idea = persistent_trade_deficit_1 }
+        has_idea = persistent_trade_deficit_1
+    }
+    if = {
+        limit = { has_idea = persistent_trade_deficit_2 }
+        has_idea = persistent_trade_deficit_2
+    }
+    if = {
+        limit = { has_idea = persistent_trade_deficit_3 }
+        has_idea = persistent_trade_deficit_3
+    }
+    if = {
+        limit = { has_idea = persistent_trade_deficit_4 }
+        has_idea = persistent_trade_deficit_4
+    }
+    if = {
+        limit = {
+            NOT = {
+                has_idea = persistent_trade_deficit_1
+                has_idea = persistent_trade_deficit_2
+                has_idea = persistent_trade_deficit_3
+                has_idea = persistent_trade_deficit_4
+                has_idea = persistent_trade_deficit_5
+            }
+        }
+        has_idea = persistent_trade_deficit_1
+    }
+}
