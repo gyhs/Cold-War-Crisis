@@ -31,11 +31,11 @@ set_stability = 0.75
 
 
 create_country_leader = {
-	name = "António de Oliveira Salazar"
-	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
-	picture = "POLITICS_Portugal_Antonio_de_Oliveira_Salazar.dds"
-	expire = "1965.1.1"
-	ideology = authoritarianism_subtype_1
+	name = "아니발 카바쿠 실바"
+	desc = ""
+	picture = "portrait_por_anibal_cavaco_silva.dds"
+	expire = "2010.1.1"
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}
