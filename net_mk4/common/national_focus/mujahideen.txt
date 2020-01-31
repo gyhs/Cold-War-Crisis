@@ -996,7 +996,7 @@ focus_tree = {
 				desc = "POLITICS_MUJ_Mohammed_Omar_DESC"
 				picture = "Portrait_MUJ_Mohammed_Omar.dds"
 				expire = "2010.1.1"
-				ideology = despotism
+				ideology = authoritarianism_subtype_1
 				traits = {
 				}
 			}
@@ -1122,7 +1122,7 @@ focus_tree = {
 						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
 						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
 						expire = "2020.1.1"
-						ideology = conservatism
+						ideology = social_conservatism_subtype_1
 						traits = {
 						}
 					}
@@ -1138,7 +1138,7 @@ focus_tree = {
 						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
 						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
 						expire = "2020.1.1"
-						ideology = conservatism
+						ideology = social_conservatism_subtype_1
 						traits = {
 						}
 					}
@@ -1195,7 +1195,7 @@ focus_tree = {
 						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
 						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
 						expire = "2020.1.1"
-						ideology = conservatism
+						ideology = social_conservatism_subtype_1
 						traits = {
 						}
 					}
@@ -1211,7 +1211,7 @@ focus_tree = {
 						desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
 						picture = "Portrait_MUJ_Ahmad_Shah_Massoud.dds"
 						expire = "2020.1.1"
-						ideology = conservatism
+						ideology = social_conservatism_subtype_1
 						traits = {
 						}
 					}
