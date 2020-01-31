@@ -677,11 +677,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-			#보병 무기 2번 100%
+                name = TB_FRA_infantry_weapon
+                bonus = 1.0
+                uses = 1
+                category = infantry_weapons
+            }
+			#보병 무기 1번 100%
 		}
 		x = 36
 		y = 3
