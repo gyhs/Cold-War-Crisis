@@ -11,14 +11,7 @@ FRA_persistent_trade_level_deficit_down = {
 custom_effect_tooltip = FRA_persistent_trade_deficit_down_tt
     if = {
         limit = { has_idea = persistent_trade_deficit_1 }
-        #Makes the tooltip clearer if player looks at the effect early in the game
-            effect_tooltip = {
-                swap_ideas = {
-                    remove_idea = persistent_trade_deficit_1
-                    add_idea = persistent_trade_deficit_none
-                }
-            }
-        hidden_effect = { remove_ideas = persistent_trade_deficit_1 }
+        remove_idea = persistent_trade_deficit_1
     }
     if = {
         limit = { has_idea = persistent_trade_deficit_2 }
