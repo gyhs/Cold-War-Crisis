@@ -35,7 +35,7 @@ ideas = {
 			modifier = {
                 industrial_capacity_factory = 0.15
 				stability_factor = 0.05
-				politic_power_gain = 0.05
+				political_power_gain = 0.05
 				line_change_production_efficiency_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 			}
@@ -379,7 +379,7 @@ ideas = {
 				war_support_factor = 0.20
 				conscription = 0.10
 				army_morale_factor = 0.05
-				politic_power_gain = 0.2
+				political_power_gain = 0.2
 				#전쟁지지도 20%,징병가능인구 10%,회복력 5% , 정치력 20%
 			}
 		}

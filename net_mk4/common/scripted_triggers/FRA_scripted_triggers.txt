@@ -16,10 +16,6 @@ persistent_trade_deficit_on = {
         has_idea = persistent_trade_deficit_4
     }
     if = {
-        limit = { has_idea = persistent_trade_deficit_5 }
-        has_idea = persistent_trade_deficit_5
-    }
-    if = {
         limit = {
             NOT = {
                 has_idea = persistent_trade_deficit_1

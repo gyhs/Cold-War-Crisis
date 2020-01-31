@@ -78,7 +78,10 @@ focus_tree = {
 		cost = 10.00
 		completion_reward = {
 			add_ideas = nuclear_power
-   			remove_ideas = {persistent_trade_deficit_5 , currency_problem}
+   			remove_ideas = {
+				   persistent_trade_deficit_5 
+				   currency_problem
+				   }
 			add_timed_idea = {
     			idea = deficit_recovery
     			days = 200
@@ -357,7 +360,7 @@ focus_tree = {
 			focus = NF_FRA_support_for_kgb
 		}
 		completion_reward = {
-			Warsaw_Pact = {add_to_faction = FRA}
+			Warsaw_Pact = { add_to_faction = FRA }
 		}
 		x = 22
 		y = 8
@@ -530,7 +533,6 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-		custom_effect_tooltip = FRA_effeect_team_swe
 		x = 25
 		y = 9
 		
@@ -552,7 +554,6 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_new_members
 		}
-		custom_effect_tooltip = FRA_effeect_team_fin
 		x = 27
 		y = 9
 		completion_reward = {
@@ -1340,7 +1341,7 @@ focus_tree = {
 		x = 12
 		y = 7
 		completion_reward = {
-		set_country_leader_ideology = fascism 
+		set_country_leader_ideology = fascism_subtype_1
 		}
 	}
 	#프랑스의 새로운 전차
