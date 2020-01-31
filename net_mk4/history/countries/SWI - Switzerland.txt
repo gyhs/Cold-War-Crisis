@@ -39,7 +39,7 @@ create_country_leader = {
 	name = "Federal Council"
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "POLITICS_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
+	expire = "2010.1.1"
 	ideology = social_conservatism_subtype_1
 	traits = {
 		#
@@ -47,33 +47,33 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = authoritarianism_subtype_1
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "POLITICS_Switzerland_Federal_council.dds"
+	expire = "2010.1.1"
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds" 
-	expire = "1965.1.1"
-	ideology = fascism_subtype_1
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "POLITICS_Switzerland_Federal_council.dds"
+	expire = "2010.1.1"
+	ideology = market_liberalism_subtype_1
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = communism_subtype_1
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "POLITICS_Switzerland_Federal_council.dds"
+	expire = "2010.1.1"
+	ideology = social_liberalism_subtype_1
 	traits = {
 		#
 	}

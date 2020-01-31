@@ -35,9 +35,9 @@ set_popularities = {
 
 #Pierre Dupong from 37
 create_country_leader = {
-	name = "Joseph Bech"
-	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "GFX_POLITICS_luxembourg_joseph_bech"
+	name = "자크 상테르"
+	desc = ""
+	picture = "portrait_lux_jacques_santer.dds"
 	expire = "1965.1.1"
 	ideology = social_conservatism_subtype_1
 	traits = {
