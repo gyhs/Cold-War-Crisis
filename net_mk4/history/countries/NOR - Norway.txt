@@ -16,7 +16,7 @@ set_convoys = 200		# biggest merchant marine in the world
 set_stability = 0.7
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = social_democracy
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -25,18 +25,18 @@ set_politics = {
 set_popularities = {
 	communism = 0
 	socialism = 5
-	social_democracy = 5
-	social_liberalism = 40
-	market_liberalism = 45
+	social_democracy = 45
+	social_liberalism = 5
+	market_liberalism = 40
 	social_conservatism = 5
 	authoritarianism = 0
 	fascism = 0
 }
 
 create_country_leader = {
-	name = "Johan Nygaardsvold"
-	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
-	picture = "POLITICS_Norway_Johan_Nygaardsvold.dds"
+	name = "그로 할렘 브룬틀란"
+	desc = "-"
+	picture = "portrait_nor_gro_harlem_brundtland.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype_1
 	traits = {

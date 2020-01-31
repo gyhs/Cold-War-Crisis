@@ -8,7 +8,7 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = social_democracy
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -17,9 +17,9 @@ set_politics = {
 set_popularities = {
 	communism = 0
 	socialism = 5
-	social_democracy = 5
+	social_democracy = 45
 	social_liberalism = 40
-	market_liberalism = 45
+	market_liberalism = 5
 	social_conservatism = 5
 	authoritarianism = 0
 	fascism = 0
@@ -29,11 +29,11 @@ set_convoys = 150
 set_stability = 0.5
 
 create_country_leader = {
-	name = "Manuel Azana"
-	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "POLITICS_Spain_Manuel_Azana.dds"
+	name = "펠리페 곤살레스"
+	desc = "-"
+	picture = "portrait_spr_felipe_gonzalez.dds"
 	expire = "1965.1.1"
-	ideology = social_conservatism_subtype_1
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}

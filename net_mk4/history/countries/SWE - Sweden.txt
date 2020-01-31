@@ -15,7 +15,7 @@ add_ideas = {
 }
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = social_democracy
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
@@ -25,8 +25,8 @@ set_popularities = {
 	communism = 0
 	socialism = 5
 	social_democracy = 5
-	social_liberalism = 40
-	market_liberalism = 45
+	social_liberalism = 45
+	market_liberalism = 40
 	social_conservatism = 5
 	authoritarianism = 0
 	fascism = 0
@@ -39,9 +39,9 @@ set_stability = 0.9
 
 
 create_country_leader = {
-	name = "Per Albin Hansson"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "POLITICS_Sweden_Per_Albin_Hansson.dds"
+	name = "잉바르 칼손"
+	desc = "-"
+	picture = "portrait_swe_ingvar carlsson.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype_1
 	traits = {
