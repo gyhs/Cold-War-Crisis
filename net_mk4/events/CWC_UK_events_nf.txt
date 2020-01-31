@@ -28,7 +28,7 @@ country_event = {#과거의 자치령
 	option = { #홀로서기
 		name = NE_ENG_NF.1.b
 		ai_chance = { factor = 1 }
-		stability = -0.05
+		add_stability = -0.05
     }
 }
 country_event = {#세계 진출

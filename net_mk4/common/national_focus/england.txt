@@ -1513,7 +1513,6 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
 		prerequisite = {
-			focus = UK_75
 			focus = UK_76
 		}
 		x = 51

@@ -87,7 +87,7 @@ country_event = { #밀로셰비치의 대세르비아주의 선동 1987년 10월
 	}
 }
 
-country_event = { #스탐블리치의 재선과 티토주의 계승 1987년 10월 20일################################################################################################################################################
+country_event = { #스탐블리치의 재선과 티토주의 계승 1987년 10월 20일##########
 	id = YUG.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.4"}
 	title = YUG.4.t
@@ -341,7 +341,7 @@ country_event = { #나라 갈아타기
 	option = { #젠장할!
 		name = YUG.14.a
 		ai_chance = { factor = 99 }
-		stability = -0.03
+		add_stability = -0.03
 		hidden_effect = {
 			country_event = {#1991/9/25
 				id = YUG.15
