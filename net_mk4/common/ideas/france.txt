@@ -127,8 +127,9 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		#누적되는 무역적자1
 		persistent_trade_deficit_1 = {
-			picture = chi_hyper_inflation1
+			picture = chi_hyper_inflation
 
 			allowed = {
 				always = no
