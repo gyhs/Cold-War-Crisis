@@ -69,7 +69,7 @@ bookmarks = {
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = social_democracy
 			ideas = {
 					home_of_revolution
 					SOV_power_struggles

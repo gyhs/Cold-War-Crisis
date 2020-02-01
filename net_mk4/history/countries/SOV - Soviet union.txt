@@ -265,20 +265,20 @@ add_opinion_modifier = { target = MUJ modifier = JAP_anti_communist_bulwark }
 set_convoys = 50
 
 set_politics = {	
-	ruling_party = communism
+	ruling_party = social_democracy
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	communism = 70
-	socialism = 10
-	social_democracy = 5
-	social_liberalism = 5
-	market_liberalism = 5
+	communism = 5
+	socialism = 40
+	social_democracy = 35
+	social_liberalism = 0
+	market_liberalism = 0
 	social_conservatism = 5
-	authoritarianism = 0
+	authoritarianism = 15
 	fascism = 0
 }
 
@@ -351,7 +351,7 @@ create_country_leader = {
 	desc = "POLITICS_SOV_Boris_Yeltsin_DESC"
 	picture = "POLITICS_SOV_Boris_Yeltsin.dds"
 	expire = "2100.3.1"
-	ideology = social_democracy_subtype_1
+	ideology = authoritarianism_subtype_1
 	traits = {
 		
 	}
@@ -362,7 +362,7 @@ create_country_leader = {
 	desc = "POLITICS_SOV_Mikhail_Gorbachev_DESC"
 	picture = "POLITICS_SOV_Mikhail_Gorbachev.dds"
 	expire = "2100.3.1"
-	ideology = communism_subtype_1
+	ideology = social_democracy_subtype_1
 	traits = {
 		
 	}
