@@ -20,7 +20,6 @@ news_event = { #새 연호
 
 	mean_time_to_happen = 727
 	
-	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #선택지
