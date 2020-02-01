@@ -347,16 +347,15 @@ set_autonomy = {
 	}
 
 create_country_leader = {
-	name = "보리스 옐친"
-	desc = "POLITICS_SOV_Boris_Yeltsin_DESC"
-	picture = "POLITICS_SOV_Boris_Yeltsin.dds"
+	name = "그리고리 로마노프"
+	desc = "POLITICS_SOV_Grigory_Romanov_DESC"
+	picture = "POLITICS_SOV_Grigory_Romanov.dds"
 	expire = "2100.3.1"
-	ideology = authoritarianism_subtype_1
+	ideology = communism_subtype_1
 	traits = {
 		
 	}
 }
-
 create_country_leader = {
 	name = "미하일 고르바초프"
 	desc = "POLITICS_SOV_Mikhail_Gorbachev_DESC"
@@ -367,18 +366,56 @@ create_country_leader = {
 		
 	}
 }
-
 create_country_leader = {
-	name = "블라디미르 푸틴"
-	desc = "POLITICS_SOV_Vladimir_Putin_DESC"
-	picture = "POLITICS_SOV_Vladimir_Putin.dds"
+	name = "이고르 리가초프"
+	desc = "POLITICS_SOV_Yegor_Ligachyov_DESC"
+	picture = "POLITICS_SOV_Yegor_Ligachyov.dds"
+	expire = "2100.3.1"
+	ideology = socialism_subtype_1
+	traits = {
+		
+	}
+}
+#create_country_leader = {
+#	name = "겐나디 야나예프"
+#	desc = "POLITICS_SOV_Gennady_Yanayev_DESC"
+#	picture = "POLITICS_SOV_Gennady_Yanayev.dds"
+#	expire = "2100.3.1"
+#	ideology = socialism_subtype_1
+#	traits = {
+#		
+#	}
+#}
+create_country_leader = {
+	name = "안드레이 그로미코"
+	desc = "POLITICS_SOV_Andrei_Gromyko_DESC"
+	picture = "POLITICS_SOV_Andrei_Gromyko.dds"
+	expire = "2100.3.1"
+	ideology = social_conservatism_subtype_1
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "보리스 옐친"
+	desc = "POLITICS_SOV_Boris_Yeltsin_DESC"
+	picture = "POLITICS_SOV_Boris_Yeltsin.dds"
 	expire = "2100.3.1"
 	ideology = authoritarianism_subtype_1
 	traits = {
 		
 	}
 }
-
+#create_country_leader = {
+#	name = "블라디미르 푸틴"
+#	desc = "POLITICS_SOV_Vladimir_Putin_DESC"
+#	picture = "POLITICS_SOV_Vladimir_Putin.dds"
+#	expire = "2100.3.1"
+#	ideology = authoritarianism_subtype_1
+#	traits = {
+#		
+#	}
+#}
 create_country_leader = {
 	name = "블라디미르 지리놉스키"
 	desc = "POLITICS_SOV_Vladimir_Zhirinovsky_DESC"
