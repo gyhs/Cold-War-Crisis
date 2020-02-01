@@ -1,1 +1,3 @@
-﻿
+﻿#일본 이벤트
+add_namespace = NE_JAP
+

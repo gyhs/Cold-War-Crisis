@@ -1,7 +1,7 @@
 ideas = {
     country = {
         ########인플레이션#############
-        NS_JAP_asset_inflation_1 = {
+        NS_JAP_bubble_collapse_1 = {
             #picture = 
             allowed = {
                 always = no
@@ -19,7 +19,7 @@ ideas = {
             }
         }
 
-        NS_JAP_asset_inflation_2 = {
+        NS_JAP_bubble_collapse_2 = {
             #picture = 
             allowed = {
                 always = no
@@ -37,7 +37,7 @@ ideas = {
             }
         }
 
-        NS_JAP_asset_inflation_3 = {
+        NS_JAP_bubble_collapse_3 = {
             #picture = 
             allowed = {
                 always = no
@@ -57,7 +57,7 @@ ideas = {
             }
         }
 
-        NS_JAP_asset_inflation_4 = {
+        NS_JAP_bubble_collapse_4 = {
             #picture = 
             allowed = {
                 always = no
@@ -77,7 +77,7 @@ ideas = {
             }
         }
 
-        NS_JAP_asset_inflation_5 = {
+        NS_JAP_bubble_collapse_5 = {
             #picture = 
             allowed = {
                 always = no
@@ -95,9 +95,9 @@ ideas = {
 
                 stability_factor = -0.10    #안정도
                 stability_weekly = -0.02    #안정도 월별
-                communism_drift = 0.01   #공산주의 정당 지지도 1일
-                fascism_drift = -0.01   #파시즘 정당 지지도 1일
-                socialism_drift = 0.01   #사회주의 정당 지지도 1일
+                communism_drift = 0.001   #공산주의 정당 지지도 1일
+                fascism_drift = -0.001   #파시즘 정당 지지도 1일
+                socialism_drift = 0.001   #사회주의 정당 지지도 1일
             }
         }
         ###############################
@@ -125,12 +125,10 @@ ideas = {
                 always = yes
             }
             allowed_civil_war = {
-                always = yes
+                always = no
             }
             
-            set_rule = {
-                can_not_declare_war = yes
-            }
+            can_not_declare_war = yes
         }
     }
 }

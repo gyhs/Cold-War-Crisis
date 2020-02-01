@@ -1,10 +1,10 @@
 JAP_hyper_inflation_clear_all = {
     remove_ideas = {
-        NS_JAP_asset_inflation_1
-        NS_JAP_asset_inflation_2
-        NS_JAP_asset_inflation_3
-        NS_JAP_asset_inflation_4
-        NS_JAP_asset_inflation_5
+        NS_JAP_bubble_collapse_1
+        NS_JAP_bubble_collapse_2
+        NS_JAP_bubble_collapse_3
+        NS_JAP_bubble_collapse_4
+        NS_JAP_bubble_collapse_5
     }
 }
 
@@ -13,78 +13,78 @@ JAP_hyper_inflation_level_up = {
     # level 5 not relevant. Cannot go above.
     custom_effect_tooltip = JAP_inflation_up
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_4 }
+        limit = { has_idea = NS_JAP_bubble_collapse_4 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_4
-            add_idea = NS_JAP_asset_inflation_5
+            remove_idea = NS_JAP_bubble_collapse_4
+            add_idea = NS_JAP_bubble_collapse_5
         }
     }
     else_if = {
-        limit = { has_idea = NS_JAP_asset_inflation_3 }
+        limit = { has_idea = NS_JAP_bubble_collapse_3 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_3
-            add_idea = NS_JAP_asset_inflation_4
+            remove_idea = NS_JAP_bubble_collapse_3
+            add_idea = NS_JAP_bubble_collapse_4
         }
     }
     else_if = {
-        limit = { has_idea = NS_JAP_asset_inflation_2 }
+        limit = { has_idea = NS_JAP_bubble_collapse_2 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_2
-            add_idea = NS_JAP_asset_inflation_3
+            remove_idea = NS_JAP_bubble_collapse_2
+            add_idea = NS_JAP_bubble_collapse_3
         }
     }
     else_if = {
-        limit = { has_idea = NS_JAP_asset_inflation_1 }
+        limit = { has_idea = NS_JAP_bubble_collapse_1 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_1
-            add_idea = NS_JAP_asset_inflation_2
+            remove_idea = NS_JAP_bubble_collapse_1
+            add_idea = NS_JAP_bubble_collapse_2
         }
     }
     else_if = {
-        limit = { NOT = { has_idea = NS_JAP_asset_inflation_1 } }
-        add_ideas = NS_JAP_asset_inflation_1
+        limit = { NOT = { has_idea = NS_JAP_bubble_collapse_1 } }
+        add_ideas = NS_JAP_bubble_collapse_1
     }
 }
 #Important to put LOWEST first
 JAP_hyper_inflation_level_down = {
 custom_effect_tooltip = JAP_inflation_down
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_1 }
+        limit = { has_idea = NS_JAP_bubble_collapse_1 }
         #Makes the tooltip clearer if player looks at the effect early in the game
         effect_tooltip = {
             swap_ideas = {
-                remove_idea = NS_JAP_asset_inflation_1
+                remove_idea = NS_JAP_bubble_collapse_1
                 add_idea = SOV_hyper_inflation_none
             }
         }
-        hidden_effect = { remove_ideas = NS_JAP_asset_inflation_1 }
+        hidden_effect = { remove_ideas = NS_JAP_bubble_collapse_1 }
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_2 }
+        limit = { has_idea = NS_JAP_bubble_collapse_2 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_2
-            add_idea = NS_JAP_asset_inflation_1
+            remove_idea = NS_JAP_bubble_collapse_2
+            add_idea = NS_JAP_bubble_collapse_1
         }
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_3 }
+        limit = { has_idea = NS_JAP_bubble_collapse_3 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_3
-            add_idea = NS_JAP_asset_inflation_2
+            remove_idea = NS_JAP_bubble_collapse_3
+            add_idea = NS_JAP_bubble_collapse_2
         }
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_4 }
+        limit = { has_idea = NS_JAP_bubble_collapse_4 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_4
-            add_idea = NS_JAP_asset_inflation_3
+            remove_idea = NS_JAP_bubble_collapse_4
+            add_idea = NS_JAP_bubble_collapse_3
         }
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_5 }
+        limit = { has_idea = NS_JAP_bubble_collapse_5 }
         swap_ideas = {
-            remove_idea = NS_JAP_asset_inflation_5
-            add_idea = NS_JAP_asset_inflation_4
+            remove_idea = NS_JAP_bubble_collapse_5
+            add_idea = NS_JAP_bubble_collapse_4
         }
     }
 }
