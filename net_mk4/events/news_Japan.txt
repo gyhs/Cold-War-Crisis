@@ -1,11 +1,11 @@
 #일본 뉴스
-add_namespace = NE_JAP.news
+add_namespace = news_JAP
 
 news_event = { #새 연호
-	id = NE_JAP.news.new_yeonho
-	immediate = {log = "[GetDateText]: [Root.GetName]: news NE_JAP.news.new_yeonho"}
-	title = NE_JAP.news.new_yeonho.t
-	desc = NE_JAP.news.new_yeonho.desc
+	id = news_JAP.new_yeonho
+	immediate = {log = "[GetDateText]: [Root.GetName]: news news_JAP.new_yeonho"}
+	title = news_JAP.new_yeonho.t
+	desc = news_JAP.new_yeonho.desc
 	#picture = 
 
     trigger = {
@@ -24,17 +24,17 @@ news_event = { #새 연호
 	fire_only_once = yes
 	
 	option = { #선택지
-		name = NE_JAP.news.new_yeonho.denno #천황제
+		name = news_JAP.new_yeonho.denno #천황제
         add_stability = 0.05
 		ai_chance = { factor = 1 }
 	}
 }
 
 news_event = { #버블 붕괴
-    id = NE_JAP.news.bubble_collapse
-    immediate = {log =  "[GetDateText]: [Root.GetName]: news NE_JAP.news.bubble_collapse"}
-    title = NE_JAP.news.bubble_collapse.t
-    desc = NE_JAP.news.bubble_collapse.desc
+    id = news_JAP.bubble_collapse
+    immediate = {log =  "[GetDateText]: [Root.GetName]: news news_JAP.bubble_collapse"}
+    title = news_JAP.bubble_collapse.t
+    desc = news_JAP.bubble_collapse.desc
     #picture =
 
     major = yes
@@ -45,7 +45,7 @@ news_event = { #버블 붕괴
     fire_only_once = yes
 
     option = {  #일본일때
-        name = NE_JAP.news.bubble_collapse.japan
+        name = news_JAP.bubble_collapse.japan
         trigger = {TAG = JAP}
         
         add_ideas = NS_JAP_bubble_collapse_5
@@ -53,7 +53,7 @@ news_event = { #버블 붕괴
         ai_chance = {factor = 1}
     }
     option = {  #아닐때
-        name = NE_JAP.news.bubble_collapse.notjapan
+        name = news_JAP.bubble_collapse.notjapan
         trigger = { NOT = {TAG = JAP}}
         ai_chance = {factor = 1}
     }

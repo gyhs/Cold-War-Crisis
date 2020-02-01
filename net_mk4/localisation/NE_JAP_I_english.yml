@@ -2,12 +2,3 @@
 
 
 
-#######################뉴스############################
-NE_JAP.news.new_yeonho.t:0 "새로운 연호가 발표되다"
-NE_JAP.news.new_yeonho.desc:0 ""
-NE_JAP.news.new_yeonho.denno:0 "천황폐하 만세!"
-
-NE_JAP.news.bubble_collapse.t:0 "일본 경제가 무너지다"
-NE_JAP.news.bubble_collapse.desc:0 ""
-NE_JAP.news.bubble_collapse.japan:0 "맙소사..."
-NE_JAP.news.bubble_collapse.notjapan:0 "우린 이제 어떻게 되는거지?"
