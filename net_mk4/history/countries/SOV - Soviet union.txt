@@ -272,12 +272,12 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 5
-	socialism = 40
+	communism = 40
+	socialism = 10
 	social_democracy = 35
 	social_liberalism = 0
 	market_liberalism = 0
-	social_conservatism = 5
+	social_conservatism = 0
 	authoritarianism = 15
 	fascism = 0
 }
@@ -345,13 +345,44 @@ set_autonomy = {
 1986.4.26 = {
 	add_named_threat = { threat = 3 name = chernobyl_disaster } #1986.4.26.
 	}
-
+	
+####################
 create_country_leader = {
-	name = "그리고리 로마노프"
-	desc = "POLITICS_SOV_Grigory_Romanov_DESC"
-	picture = "POLITICS_SOV_Grigory_Romanov.dds"
+	name = "이고르 리가초프"
+	desc = "POLITICS_SOV_Yegor_Ligachyov_DESC"
+	picture = "POLITICS_SOV_Yegor_Ligachyov.dds"
 	expire = "2100.3.1"
 	ideology = communism_subtype_1
+	traits = {
+		
+	}
+}
+#create_country_leader = {
+#	name = "겐나디 야나예프"
+#	desc = "POLITICS_SOV_Gennady_Yanayev_DESC"
+#	picture = "POLITICS_SOV_Gennady_Yanayev.dds"
+#	expire = "2100.3.1"
+#	ideology = communism_subtype_1
+#	traits = {
+#		
+#	}
+#}
+#create_country_leader = {
+#	name = "그리고리 로마노프"
+#	desc = "POLITICS_SOV_Grigory_Romanov_DESC"
+#	picture = "POLITICS_SOV_Grigory_Romanov.dds"
+#	expire = "2100.3.1"
+#	ideology = communism_subtype_1
+#	traits = {
+#		
+#	}
+#}
+create_country_leader = {
+	name = "안드레이 그로미코"
+	desc = "POLITICS_SOV_Andrei_Gromyko_DESC"
+	picture = "POLITICS_SOV_Andrei_Gromyko.dds"
+	expire = "1988.3.1"
+	ideology = socialism_subtype_1
 	traits = {
 		
 	}
@@ -362,36 +393,6 @@ create_country_leader = {
 	picture = "POLITICS_SOV_Mikhail_Gorbachev.dds"
 	expire = "2100.3.1"
 	ideology = social_democracy_subtype_1
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "이고르 리가초프"
-	desc = "POLITICS_SOV_Yegor_Ligachyov_DESC"
-	picture = "POLITICS_SOV_Yegor_Ligachyov.dds"
-	expire = "2100.3.1"
-	ideology = socialism_subtype_1
-	traits = {
-		
-	}
-}
-#create_country_leader = {
-#	name = "겐나디 야나예프"
-#	desc = "POLITICS_SOV_Gennady_Yanayev_DESC"
-#	picture = "POLITICS_SOV_Gennady_Yanayev.dds"
-#	expire = "2100.3.1"
-#	ideology = socialism_subtype_1
-#	traits = {
-#		
-#	}
-#}
-create_country_leader = {
-	name = "안드레이 그로미코"
-	desc = "POLITICS_SOV_Andrei_Gromyko_DESC"
-	picture = "POLITICS_SOV_Andrei_Gromyko.dds"
-	expire = "2100.3.1"
-	ideology = social_conservatism_subtype_1
 	traits = {
 		
 	}

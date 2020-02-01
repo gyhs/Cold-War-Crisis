@@ -9,12 +9,12 @@
  #authoritarianism      권위주의
  #fascism               파시즘
  ###국가별 정당###
- SOV_communism_party:0 "공산당 강경파"            #신공산당
- SOV_socialism_party:0 "공산당 보수파"            #소련 사회주의당
+ SOV_communism_party:0 "공산당 보수파"            #신공산당
+ SOV_socialism_party:0 "공산당 온건파"            #소련 사회주의당
  SOV_social_democracy_party:0 "공산당 개혁파"     #소련 공산당
  SOV_social_liberalism_party:0 "공산당 사회자유파"  #소련 통일민주당'야블로코'
  SOV_market_liberalism_party:0 "공산당 시장자유파"  #소련 민주당
- SOV_social_conservatism_party:0 "공산당 온건파"  #인민 자유당
+ SOV_social_conservatism_party:0 "공산당 사회보수파"  #인민 자유당
  SOV_authoritarianism_party:0 "공산당 자유파"     #통합소련당
  SOV_fascism_party:0 "공산당 극우파"              #소련 자유민주당
  
