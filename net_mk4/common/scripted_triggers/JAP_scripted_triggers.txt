@@ -1,34 +1,34 @@
 has_hyper_inflation = {
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_1 }
-        has_idea = NS_JAP_asset_inflation_1
+        limit = { has_idea = NS_JAP_bubble_collapse_1 }
+        has_idea = NS_JAP_bubble_collapse_1
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_2 }
-        has_idea = NS_JAP_asset_inflation_2
+        limit = { has_idea = NS_JAP_bubble_collapse_2 }
+        has_idea = NS_JAP_bubble_collapse_2
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_3 }
-        has_idea = NS_JAP_asset_inflation_3
+        limit = { has_idea = NS_JAP_bubble_collapse_3 }
+        has_idea = NS_JAP_bubble_collapse_3
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_4 }
-        has_idea = NS_JAP_asset_inflation_4
+        limit = { has_idea = NS_JAP_bubble_collapse_4 }
+        has_idea = NS_JAP_bubble_collapse_4
     }
     if = {
-        limit = { has_idea = NS_JAP_asset_inflation_5 }
-        has_idea = NS_JAP_asset_inflation_5
+        limit = { has_idea = NS_JAP_bubble_collapse_5 }
+        has_idea = NS_JAP_bubble_collapse_5
     }
     if = {
         limit = {
             NOT = {
-                has_idea = NS_JAP_asset_inflation_1
-                has_idea = NS_JAP_asset_inflation_2
-                has_idea = NS_JAP_asset_inflation_3
-                has_idea = NS_JAP_asset_inflation_4
-                has_idea = NS_JAP_asset_inflation_5
+                has_idea = NS_JAP_bubble_collapse_1
+                has_idea = NS_JAP_bubble_collapse_2
+                has_idea = NS_JAP_bubble_collapse_3
+                has_idea = NS_JAP_bubble_collapse_4
+                has_idea = NS_JAP_bubble_collapse_5
             }
         }
-        has_idea = NS_JAP_asset_inflation_1
+        has_idea = NS_JAP_bubble_collapse_1
     }
 }
