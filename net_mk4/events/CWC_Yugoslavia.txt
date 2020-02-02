@@ -7,10 +7,10 @@
 add_namespace = YUG
 
 country_event = { #유고슬라비아 이벤트 시작
-	id = YUG.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.1"}
-	title = YUG.1.t
-	desc = YUG.1.desc
+	id = NE_YUG.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.1"}
+	title = NE_YUG.1.t
+	desc = NE_YUG.1.desc
 	#picture = 
 	is_triggered_only = yes
 	trigger = {
@@ -19,11 +19,11 @@ country_event = { #유고슬라비아 이벤트 시작
 	fire_only_once = yes
 	
 	option = { #유고슬라비아 설명
-		name = YUG.1.a
+		name = NE_YUG.1.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
             country_event = { #제 8차 세르비아 공산당 회기
-                id = YUG.2
+                id = NE_YUG.2
                 days = 232
             }
         }
@@ -31,33 +31,33 @@ country_event = { #유고슬라비아 이벤트 시작
 }
 
 country_event = { #제 8차 세르비아 공산당 회기 1987년 9월 22일
-	id = YUG.2
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.2"}
-	title = YUG.2.t
-	desc = YUG.2.desc
+	id = NE_YUG.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.2"}
+	title = NE_YUG.2.t
+	desc = NE_YUG.2.desc
 	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { # 슬로보단 밀로셰비치 지지 (강경파, 역사적), 강경파 밀로셰비치의 대세르비아주의 선동
-		name = YUG.2.a
+		name = NE_YUG.2.a
 		ai_chance = { factor = 99 }
 		add_political_power = 50
 		hidden_effect = {
             country_event = { #대세르비아주의 선동
-                id = YUG.3
+                id = NE_YUG.3
                 days = 28
             }
         }
 	}
 	
 	option = { # 이반 스탐볼리치 지지 (온건파, 비 역사적), 온건파 스탐블리치의 재선과 티토주의 계승
-		name = YUG.2.b
+		name = NE_YUG.2.b
 		ai_chance = { factor = 1 }
 		add_political_power = -100
 		hidden_effect = {
             country_event = { #티토주의 계승
-                id = YUG.4
+                id = NE_YUG.4
                 days = 28
             }
         }
@@ -65,22 +65,22 @@ country_event = { #제 8차 세르비아 공산당 회기 1987년 9월 22일
 }
 
 country_event = { #밀로셰비치의 대세르비아주의 선동 1987년 10월 20일
-	id = YUG.3
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.3"}
-	title = YUG.3.t
-	desc = YUG.3.desc
+	id = NE_YUG.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.3"}
+	title = NE_YUG.3.t
+	desc = NE_YUG.3.desc
 	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #세르비아 만세!
-		name = YUG.3.a
+		name = NE_YUG.3.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.03
 		add_war_support = 0.05
 		hidden_effect = {
             country_event = { #헌법 개정
-                id = YUG.5
+                id = NE_YUG.5
                 days = 47
             }
         }
@@ -88,22 +88,22 @@ country_event = { #밀로셰비치의 대세르비아주의 선동 1987년 10월
 }
 
 country_event = { #스탐블리치의 재선과 티토주의 계승 1987년 10월 20일##########
-	id = YUG.4
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.4"}
-	title = YUG.4.t
-	desc = YUG.4.desc
+	id = NE_YUG.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.4"}
+	title = NE_YUG.4.t
+	desc = NE_YUG.4.desc
 	#picture = 
 
 	fire_only_once = yes
 	
 	option = { #티토 만세!
-		name = YUG.4.a
+		name = NE_YUG.4.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.05
 		add_war_support = -0.07
 		hidden_effect = {
             country_event = { #
-                id = YUG.
+                id = NE_YUG.
                 days = 
             }
         }
@@ -111,22 +111,22 @@ country_event = { #스탐블리치의 재선과 티토주의 계승 1987년 10�
 }
 
 country_event = { #1988년 1월 17일, 헌법 개정
-	id = YUG.5
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.5"}
-	title = YUG.5.t
-	desc = YUG.5.desc
+	id = NE_YUG.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.5"}
+	title = NE_YUG.5.t
+	desc = NE_YUG.5.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #밀로셰비치 대통령 만세!
-		name = YUG.5.a
+		name = NE_YUG.5.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
 		hidden_effect = {
             country_event = { #1988년 8월 7일
-                id = YUG.6
+                id = NE_YUG.6
                 days = 170
             }
         }
@@ -134,23 +134,23 @@ country_event = { #1988년 1월 17일, 헌법 개정
 }
 
 country_event = { #1988년 8월 7일 한가지 폭로
-	id = YUG.6
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.6"}
-	title = YUG.6.t
-	desc = YUG.6.desc
+	id = NE_YUG.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.6"}
+	title = NE_YUG.6.t
+	desc = NE_YUG.6.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #뭐? 우리는 그런 일을 한적이 없다!
-		name = YUG.6.a
+		name = NE_YUG.6.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.05
 		add_war_support = -0.05
 		hidden_effect = {
             country_event = { #1989년 11월 23일
-                id = YUG.7
+                id = NE_YUG.7
                 days = 440
             }
         }
@@ -158,23 +158,23 @@ country_event = { #1988년 8월 7일 한가지 폭로
 }
 
 country_event = { #1989년 11월 23일 #슬로베니아 사회주의 공화국의 수도인 류블라냐에서의 시위
-	id = YUG.7
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.7"}
-	title = YUG.7.t
-	desc = YUG.7.desc
+	id = NE_YUG.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.7"}
+	title = NE_YUG.7.t
+	desc = NE_YUG.7.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #좋았어....
-		name = YUG.7.a
+		name = NE_YUG.7.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.10
 		add_war_support = 0.10
 		hidden_effect = {
             country_event = { #1990년 1월 13일
-                id = YUG.8
+                id = NE_YUG.8
                 days = 50
             }
         }
@@ -182,22 +182,22 @@ country_event = { #1989년 11월 23일 #슬로베니아 사회주의 공화국�
 }
 
 country_event = { #1990년 1월 13일 제14차 유고슬라비아 공산주의자 동맹 (SKJ) 전당대회
-	id = YUG.8
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.8"}
-	title = YUG.8.t
-	desc = YUG.8.desc
+	id = NE_YUG.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.8"}
+	title = NE_YUG.8.t
+	desc = NE_YUG.8.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #야이 개자식아!
-		name = YUG.8.a
+		name = NE_YUG.8.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.10
 		hidden_effect = {
             country_event = { #
-                id = YUG.9
+                id = NE_YUG.9
                 days = 107
             }
         }
@@ -205,22 +205,22 @@ country_event = { #1990년 1월 13일 제14차 유고슬라비아 공산주의�
 }
 
 country_event = { #자유선거, 1990년 4월 1일
-	id = YUG.9
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.9"}
-	title = YUG.9.t
-	desc = YUG.9.desc
+	id = NE_YUG.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.9"}
+	title = NE_YUG.9.t
+	desc = NE_YUG.9.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #마침내 봄이 온 것인가?
-		name = YUG.9.a
+		name = NE_YUG.9.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.10
 		hidden_effect = {
             country_event = { #1991년 1월 6일
-                id = YUG.10
+                id = NE_YUG.10
                 days = 270
             }
         }
@@ -228,22 +228,22 @@ country_event = { #자유선거, 1990년 4월 1일
 }
 
 country_event = { #1991년 1월 6일, 소프트 쿠데타
-	id = YUG.10
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.10"}
-	title = YUG.10.t
-	desc = YUG.10.desc
+	id = NE_YUG.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.10"}
+	title = NE_YUG.10.t
+	desc = NE_YUG.10.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #군부는 연방 내에서 문제의 소지가 많은 충돌이 발생할 경우 이에 대처하는 군부의 작전을 스스로 결정할 것을 선언한다.
-		name = YUG.10.a
+		name = NE_YUG.10.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.03
 		hidden_effect = {
             country_event = { #1991년 6월 25일
-                id = YUG.11
+                id = NE_YUG.11
                 days = 159
             }
         }
@@ -251,43 +251,43 @@ country_event = { #1991년 1월 6일, 소프트 쿠데타
 }
 
 country_event = { #1991Y 6/15 SLV,CRO INDEPENDENCE
-	id = YUG.11
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.11"}
-	title = YUG.11.t
-	desc = YUG.11.desc
+	id = NE_YUG.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.11"}
+	title = NE_YUG.11.t
+	desc = NE_YUG.11.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	hidden = yes
 	option = { #
-		name = YUG.11.a
+		name = NE_YUG.11.a
 		ai_chance = { factor = 1 }
 		release = SLV
 		release = CRO
 		country_event = { #1991년 6월 25일
-                id = YUG.12
+                id = NE_YUG.12
                 days = 10
         }
 	}
 }
 
 country_event = { #1991/6/25 선.전.포.고
-	id = YUG.12
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.12"}
-	title = YUG.12.t
-	desc = YUG.12.desc
+	id = NE_YUG.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.12"}
+	title = NE_YUG.12.t
+	desc = NE_YUG.12.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	hidden = yes
 	option = { #슬로바키아 선전포고
-		name = YUG.12.a
+		name = NE_YUG.12.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = YUG.13
+				id = NE_YUG.13
 				days = 0
 			}
 		}
@@ -301,17 +301,17 @@ country_event = { #1991/6/25 선.전.포.고
 }
 
 country_event = { ##1991/6/25 선.전.포.고2
-	id = YUG.13
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.13"}
-	title = YUG.13.t
-	desc = YUG.13.desc
+	id = NE_YUG.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.13"}
+	title = NE_YUG.13.t
+	desc = NE_YUG.13.desc
 	#picture = 
 	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #크로아티아 선전포고
-		name = YUG.13.a
+		name = NE_YUG.13.a
 		ai_chance = { factor = 1 }
 		YUG = { 
 			declare_war_on = { 
@@ -321,7 +321,7 @@ country_event = { ##1991/6/25 선.전.포.고2
 		}
 		hidden_effect = {
 			country_event = {
-				id = YUG.14
+				id = NE_YUG.14
 				days = 0
 			}
 		}
@@ -329,44 +329,44 @@ country_event = { ##1991/6/25 선.전.포.고2
 }
 
 country_event = { #나라 갈아타기
-	id = YUG.14
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.14"}
-	title = YUG.14.t
-	desc = YUG.14.desc
+	id = NE_YUG.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.14"}
+	title = NE_YUG.14.t
+	desc = NE_YUG.14.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #젠장할!
-		name = YUG.14.a
+		name = NE_YUG.14.a
 		ai_chance = { factor = 99 }
 		add_stability = -0.03
 		hidden_effect = {
 			country_event = {#1991/9/25
-				id = YUG.15
+				id = NE_YUG.15
 				days = 90
 			}
 		}
 	}
 	option = { #슬로베니아로 플레이
-		name = YUG.14.b
+		name = NE_YUG.14.b
 		ai_chance = { factor = 1 }
 		SLV = { change_tag_from = YUG }
 		hidden_effect = {
 			country_event = {#1991/9/25
-				id = YUG.14
+				id = NE_YUG.14
 				days = 90
 			}
 		}
 	}
 	option = { #크로아티아로 플레이
-		name = YUG.14.c
+		name = NE_YUG.14.c
 		ai_chance = { factor = 1 }
 		CRO = { change_tag_from = YUG }
 		hidden_effect = {
 			country_event = {#1991/9/25
-				id = YUG.14
+				id = NE_YUG.14
 				days = 90
 			}
 		}
@@ -374,51 +374,51 @@ country_event = { #나라 갈아타기
 }
 
 country_event = { ##1991/9/25 마케도니아 독립
-	id = YUG.15
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.15"}
-	title = YUG.15.t
-	desc = YUG.15.desc
+	id = NE_YUG.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.15"}
+	title = NE_YUG.15.t
+	desc = NE_YUG.15.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.15.a
+		name = NE_YUG.15.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.16
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.16"}
-	title = YUG.16.t
-	desc = YUG.16.desc
+	id = NE_YUG.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.16"}
+	title = NE_YUG.16.t
+	desc = NE_YUG.16.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.16.a
+		name = NE_YUG.16.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.17
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.17"}
-	title = YUG.17.t
-	desc = YUG.17.desc
+	id = NE_YUG.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.17"}
+	title = NE_YUG.17.t
+	desc = NE_YUG.17.desc
 	#picture = 
 	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.17.a
+		name = NE_YUG.17.a
 		ai_chance = { factor = 1 }
 		YUG = { 
 			declare_war_on = { 
@@ -429,561 +429,561 @@ country_event = { #
 }
 
 country_event = { #
-	id = YUG.18
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.18"}
-	title = YUG.18.t
-	desc = YUG.18.desc
+	id = NE_YUG.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.18"}
+	title = NE_YUG.18.t
+	desc = NE_YUG.18.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.18.a
+		name = NE_YUG.18.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.19
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.19"}
-	title = YUG.19.t
-	desc = YUG.19.desc
+	id = NE_YUG.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.19"}
+	title = NE_YUG.19.t
+	desc = NE_YUG.19.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.19.a
+		name = NE_YUG.19.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.20
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.20"}
-	title = YUG.20.t
-	desc = YUG.20.desc
+	id = NE_YUG.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.20"}
+	title = NE_YUG.20.t
+	desc = NE_YUG.20.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.20.a
+		name = NE_YUG.20.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.21
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.21"}
-	title = YUG.21.t
-	desc = YUG.21.desc
+	id = NE_YUG.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.21"}
+	title = NE_YUG.21.t
+	desc = NE_YUG.21.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.21.a
+		name = NE_YUG.21.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.22
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.22"}
-	title = YUG.22.t
-	desc = YUG.22.desc
+	id = NE_YUG.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.22"}
+	title = NE_YUG.22.t
+	desc = NE_YUG.22.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.22.a
+		name = NE_YUG.22.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.23
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.23"}
-	title = YUG.23.t
-	desc = YUG.23.desc
+	id = NE_YUG.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.23"}
+	title = NE_YUG.23.t
+	desc = NE_YUG.23.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.23.a
+		name = NE_YUG.23.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.24
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.24"}
-	title = YUG.24.t
-	desc = YUG.24.desc
+	id = NE_YUG.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.24"}
+	title = NE_YUG.24.t
+	desc = NE_YUG.24.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.24.a
+		name = NE_YUG.24.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.25
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.25"}
-	title = YUG.25.t
-	desc = YUG.25.desc
+	id = NE_YUG.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.25"}
+	title = NE_YUG.25.t
+	desc = NE_YUG.25.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.25.a
+		name = NE_YUG.25.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.26
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.26"}
-	title = YUG.26.t
-	desc = YUG.26.desc
+	id = NE_YUG.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.26"}
+	title = NE_YUG.26.t
+	desc = NE_YUG.26.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.26.a
+		name = NE_YUG.26.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.27
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.27"}
-	title = YUG.27.t
-	desc = YUG.27.desc
+	id = NE_YUG.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.27"}
+	title = NE_YUG.27.t
+	desc = NE_YUG.27.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.27.a
+		name = NE_YUG.27.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.28
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.28"}
-	title = YUG.28.t
-	desc = YUG.28.desc
+	id = NE_YUG.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.28"}
+	title = NE_YUG.28.t
+	desc = NE_YUG.28.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.28.a
+		name = NE_YUG.28.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.29
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.29"}
-	title = YUG.29.t
-	desc = YUG.29.desc
+	id = NE_YUG.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.29"}
+	title = NE_YUG.29.t
+	desc = NE_YUG.29.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.29.a
+		name = NE_YUG.29.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.30
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.30"}
-	title = YUG.30.t
-	desc = YUG.30.desc
+	id = NE_YUG.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.30"}
+	title = NE_YUG.30.t
+	desc = NE_YUG.30.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.30.a
+		name = NE_YUG.30.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.31
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.31"}
-	title = YUG.31.t
-	desc = YUG.31.desc
+	id = NE_YUG.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.31"}
+	title = NE_YUG.31.t
+	desc = NE_YUG.31.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.31.a
+		name = NE_YUG.31.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.32
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.32"}
-	title = YUG.32.t
-	desc = YUG.32.desc
+	id = NE_YUG.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.32"}
+	title = NE_YUG.32.t
+	desc = NE_YUG.32.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.32.a
+		name = NE_YUG.32.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.33
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.33"}
-	title = YUG.33.t
-	desc = YUG.33.desc
+	id = NE_YUG.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.33"}
+	title = NE_YUG.33.t
+	desc = NE_YUG.33.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.33.a
+		name = NE_YUG.33.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.34
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.34"}
-	title = YUG.34.t
-	desc = YUG.34.desc
+	id = NE_YUG.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.34"}
+	title = NE_YUG.34.t
+	desc = NE_YUG.34.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.34.a
+		name = NE_YUG.34.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.35
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.35"}
-	title = YUG.35.t
-	desc = YUG.35.desc
+	id = NE_YUG.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.35"}
+	title = NE_YUG.35.t
+	desc = NE_YUG.35.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.35.a
+		name = NE_YUG.35.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.36
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.36"}
-	title = YUG.36.t
-	desc = YUG.36.desc
+	id = NE_YUG.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.36"}
+	title = NE_YUG.36.t
+	desc = NE_YUG.36.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.36.a
+		name = NE_YUG.36.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.37
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.37"}
-	title = YUG.37.t
-	desc = YUG.37.desc
+	id = NE_YUG.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.37"}
+	title = NE_YUG.37.t
+	desc = NE_YUG.37.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.37.a
+		name = NE_YUG.37.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.38
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.38"}
-	title = YUG.38.t
-	desc = YUG.38.desc
+	id = NE_YUG.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.38"}
+	title = NE_YUG.38.t
+	desc = NE_YUG.38.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.38.a
+		name = NE_YUG.38.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.39
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.39"}
-	title = YUG.39.t
-	desc = YUG.39.desc
+	id = NE_YUG.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.39"}
+	title = NE_YUG.39.t
+	desc = NE_YUG.39.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.39.a
+		name = NE_YUG.39.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.40
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.40"}
-	title = YUG.40.t
-	desc = YUG.40.desc
+	id = NE_YUG.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.40"}
+	title = NE_YUG.40.t
+	desc = NE_YUG.40.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.40.a
+		name = NE_YUG.40.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.41
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.41"}
-	title = YUG.41.t
-	desc = YUG.41.desc
+	id = NE_YUG.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.41"}
+	title = NE_YUG.41.t
+	desc = NE_YUG.41.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.41.a
+		name = NE_YUG.41.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.42
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.42"}
-	title = YUG.42.t
-	desc = YUG.42.desc
+	id = NE_YUG.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.42"}
+	title = NE_YUG.42.t
+	desc = NE_YUG.42.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.42.a
+		name = NE_YUG.42.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.43
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.43"}
-	title = YUG.43.t
-	desc = YUG.43.desc
+	id = NE_YUG.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.43"}
+	title = NE_YUG.43.t
+	desc = NE_YUG.43.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.43.a
+		name = NE_YUG.43.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.44
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.44"}
-	title = YUG.44.t
-	desc = YUG.44.desc
+	id = NE_YUG.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.44"}
+	title = NE_YUG.44.t
+	desc = NE_YUG.44.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.44.a
+		name = NE_YUG.44.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.45
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.45"}
-	title = YUG.45.t
-	desc = YUG.45.desc
+	id = NE_YUG.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.45"}
+	title = NE_YUG.45.t
+	desc = NE_YUG.45.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.45.a
+		name = NE_YUG.45.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.46
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.46"}
-	title = YUG.46.t
-	desc = YUG.46.desc
+	id = NE_YUG.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.46"}
+	title = NE_YUG.46.t
+	desc = NE_YUG.46.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.46.a
+		name = NE_YUG.46.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.47
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.47"}
-	title = YUG.47.t
-	desc = YUG.47.desc
+	id = NE_YUG.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.47"}
+	title = NE_YUG.47.t
+	desc = NE_YUG.47.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.47.a
+		name = NE_YUG.47.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.48
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.48"}
-	title = YUG.48.t
-	desc = YUG.48.desc
+	id = NE_YUG.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.48"}
+	title = NE_YUG.48.t
+	desc = NE_YUG.48.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.48.a
+		name = NE_YUG.48.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.49
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.49"}
-	title = YUG.49.t
-	desc = YUG.49.desc
+	id = NE_YUG.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.49"}
+	title = NE_YUG.49.t
+	desc = NE_YUG.49.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.49.a
+		name = NE_YUG.49.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = YUG.50
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG.50"}
-	title = YUG.50.t
-	desc = YUG.50.desc
+	id = NE_YUG.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_YUG.50"}
+	title = NE_YUG.50.t
+	desc = NE_YUG.50.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = YUG.50.a
+		name = NE_YUG.50.a
 		ai_chance = { factor = 1 }
 		
 	}
