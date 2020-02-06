@@ -675,15 +675,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_adt
 		}
-		completion_reward = {
-			add_tech_bonus = {
-                name = TB_FRA_infantry_weapon
-                bonus = 1.0
-                uses = 1
-                category = infantry_weapons
-            }
-			#보병 무기 1번 100%
-		}
+		#국가정신 추가예정<자국 개발> 
 		x = 36
 		y = 3
 
@@ -695,6 +687,14 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_weapons_development
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = armor
+            }
+			#기갑 1번 100%
 		}
 		x = 32
 		y = 4
@@ -708,6 +708,14 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_weapons_development
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 1.0
+                uses = 2
+                category = infantry_weapons
+            }
+			#보병 무기 2번 100%
+		}
 		x = 34
 		y = 4
 
@@ -715,10 +723,18 @@ focus_tree = {
 	#보조장비 개발
 	focus = {
 		id = NF_FRA_a.e_development
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_goal_generic_army_artillery
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_weapons_development
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 1.0
+                uses = 3
+                category = infantry_tech
+            }
+			#보조 장비(보병 기술) 3번 100%
 		}
 		x = 36
 		y = 4
@@ -727,7 +743,7 @@ focus_tree = {
 	#보병 현대화
 	focus = {
 		id = NF_FRA_Infantry_modernization
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_goal_generic_army_motorized
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_a.e_development
@@ -735,9 +751,16 @@ focus_tree = {
 		prerequisite = {
 			focus = FN_FRA_famas_Improvements
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 1.0
+                uses = 2
+                category = motorized_equipment
+            }
+			#차량화 장비 2번 100%
+		}
 		x = 35
 		y = 5
-
 	}
 	#사령부 개편
 	focus = {
