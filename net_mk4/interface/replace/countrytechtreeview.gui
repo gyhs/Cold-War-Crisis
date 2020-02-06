@@ -3255,19 +3255,20 @@ guiTypes = {
 		
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -21 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 
@@ -3306,19 +3307,20 @@ guiTypes = {
 
 		iconType = {
 			name = "bonus_icon"
-			position = { x=115 y=-22 }
+			position = { x=111 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 129 y = -22 }
+			position = { x = 111 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 		
 		
@@ -3376,19 +3378,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=115 y=-22 }
+			position = { x=111 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 129 y = -22 }
+			position = { x = 111 y = -21 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 		
 		containerWindowType = {
@@ -3432,19 +3435,20 @@ guiTypes = {
 		
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 	
@@ -3482,19 +3486,20 @@ guiTypes = {
 		
 		iconType = {
 			name = "bonus_icon"
-			position = { x=115 y=-22 }
+			position = { x=111 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 129 y = -22 }
+			position = { x = 111 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 		containerWindowType = {
 			name = "sub_technology_slot_0"
@@ -3572,7 +3577,6 @@ guiTypes = {
 			spriteType = "GFX_technology_medium"
 			alwaystransparent = yes
 		}	
-		
 		iconType = {
 			name = "bonus_icon"
 			position = { x=3 y=-22 }
@@ -3660,19 +3664,20 @@ guiTypes = {
 		
 		iconType = {
 			name = "bonus_icon"
-			position = { x=115 y=-22 }
+			position = { x=111 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 129 y = -22 }
+			position = { x = 111 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "bang bang klik"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 
@@ -3746,19 +3751,20 @@ guiTypes = {
 
 		iconType = {
 			name = "bonus_icon"
-			position = { x=115 y=-22 }
+			position = { x=111 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 129 y = -22 }
+			position = { x = 111 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 
 		containerWindowType = {
@@ -3871,19 +3877,20 @@ guiTypes = {
 
 		iconType = {
 			name = "bonus_icon"
-			position = { x=115 y=-22 }
+			position = { x=111 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 129 y = -22 }
+			position = { x = 111 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 
 		containerWindowType = {
@@ -3907,41 +3914,41 @@ guiTypes = {
 		
 	}
 
-	#containerWindowType = {
-	#	name = "techtree_air_helicopter_folder_small_item" 
-	#	position = { x=0 y=5 }
-	#	size = { width = 72 height = 72 }
-	#	clipping = no
-	#
-	#	background = {
-	#		name = "Background"
-	#		quadTextureSprite ="GFX_technology_unavailable_item_bg"
-	#	}
-	#
-	#	iconType = {
-	#		name = "Icon"
-	#		position = { x=36 y=36 }
-	#		spriteType = "GFX_technology_medium"
-	#		centerposition = yes	
-	#		alwaystransparent = yes
-	#	}
-	#	iconType = {
-	#		name = "bonus_icon"
-	#		position = { x=3 y=-22 }
-	#		spriteType = "GFX_tech_bonus"
-	#	}
-	#	instantTextBoxType = {
-	#		name = "bonus"
-	#		position = { x = 17 y = -22 }
-	#		textureFile = ""
-	#		font = "hoi_16mbs"
-	#		borderSize = {x = 4 y = 4}
-	#		text = "lol boat"
-	#		maxWidth = 50
-	#		maxHeight = 20
-	#		format = right
-	#	}
-	#}	
+	containerWindowType = {
+		name = "techtree_air_helicopter_folder_small_item" 
+		position = { x=0 y=5 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes	
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}	
 
 	containerWindowType = {
 		name = "techtree_air_helicopter_folder_item"
@@ -3977,19 +3984,20 @@ guiTypes = {
 
 		iconType = {
 			name = "bonus_icon"
-			position = { x=115 y=-22 }
+			position = { x=111 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 129 y = -22 }
+			position = { x = 111 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 
 		containerWindowType = {
@@ -4033,19 +4041,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}	
 	
@@ -4082,19 +4091,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=261 y=-18 }
+			position = { x=257 y=-18 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 275 y = -18 }
+			position = { x = 257 y = -19 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 
 		containerWindowType = {
@@ -4177,19 +4187,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}	
 	
@@ -4226,19 +4237,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=261 y=-18 }
+			position = { x=257 y=-18 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 275 y = -18 }
+			position = { x = 257 y = -19 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 
 		containerWindowType = {
@@ -4280,19 +4292,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}	
 	
@@ -4329,19 +4342,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=261 y=-18 }
+			position = { x=257 y=-18 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 275 y = -18 }
+			position = { x = 257 y = -19 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 
 		containerWindowType = {
@@ -4383,19 +4397,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 	
@@ -4432,19 +4447,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=261 y=-18 }
+			position = { x=257 y=-18 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 275 y = -18 }
+			position = { x = 257 y = -19 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 
 		containerWindowType = {
@@ -4486,19 +4502,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 
@@ -4521,19 +4538,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 
@@ -4556,19 +4574,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 
@@ -4592,19 +4611,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 
@@ -4648,19 +4668,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "bonus_icon"
-			position = { x=3 y=-22 }
+			position = { x=-1 y=-22 }
 			spriteType = "GFX_tech_bonus"
 		}
+		
 		instantTextBoxType = {
 			name = "bonus"
-			position = { x = 17 y = -22 }
+			position = { x = -1 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}
 			text = "lol boat"
-			maxWidth = 50
+			maxWidth = 80
 			maxHeight = 20
-			format = right
+			format = center
 		}
 	}
 
