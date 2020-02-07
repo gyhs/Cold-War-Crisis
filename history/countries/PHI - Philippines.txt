@@ -1,0 +1,49 @@
+﻿capital = 327
+
+oob = "PHI_1987"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 5
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "Manuel Luis Quezón"
+	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
+	picture = "gfx/leaders/PHI/POLITICS_Philippines_Manuel_Luis_Quezon.dds"
+	expire = "1965.1.1"
+	ideology = social_conservatism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pedro P. Baguisa"
+	desc = "POLITICS_PEDRO_BAGUISA_DESC"
+	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype_1
+	traits = {
+		#
+	}
+}

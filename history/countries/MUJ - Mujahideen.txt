@@ -1,0 +1,66 @@
+﻿capital = 866
+
+oob = "MUJ_1987"
+
+set_technology = {
+	infantry_weapons_0 = 1
+	infantry_weapons_1 = 1
+	
+	tech_support = 1
+	
+	infantry_at_1 = 1
+	antiair_1 = 1
+	manpads_1 = 1
+}
+add_ideas = {
+	
+	NS_MUJ_famine_3
+	NS_MUJ_rampant_communicable_diseases_2
+	NS_MUJ_incompetence_warrior_3
+	NS_MUJ_incompetence_officer
+	MUJ_idea_opium_industry_5
+	MUJ_idea_religion_influence_5
+	MUJ_idea_tribe_influence_5
+	communism_banned
+	NS_Gen_islam_idea 
+	
+	##법
+	scraping_the_barrel
+	DEFCON_1
+}
+
+add_opinion_modifier = { target = SOV modifier = JAP_anti_communist_bulwark }
+
+# DIPLOMACY
+give_military_access = PAK
+give_military_access = PER
+
+	
+set_politics = {	
+	ruling_party = authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
+}
+
+create_country_leader = {
+	name = "아흐마드 샤 마수드"
+	desc = "POLITICS_MUJ_Ahmad_Shah_Massoud"
+	picture = "POLITICS_MUJ_Ahmad_Shah_Massoud.dds"
+	expire = "2000.1.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		#
+	}
+}

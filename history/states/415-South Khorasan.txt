@@ -1,0 +1,26 @@
+
+state={
+	id=415
+	name="STATE_415"
+
+	history={
+		owner = MUJ
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			4893 1 
+		}
+		add_core_of = AFG
+		add_core_of = MUJ
+
+	}
+
+	provinces={
+		4949 5020 5064 8090 13262 13263 
+	}
+	manpower=830800
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,26 @@
+state={
+	id=831
+	name="STATE_831"
+
+
+	history=
+	{
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+		}
+
+		add_core_of = KOR
+		add_core_of = PRK
+		add_claim_by = JAP
+
+	}
+
+	provinces={
+		13265 
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	state_category = small_island
+}

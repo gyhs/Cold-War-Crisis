@@ -1,0 +1,296 @@
+﻿capital = 361
+
+oob = "USA_1987"
+
+set_research_slots = 4
+set_stability = 0.75
+set_war_support = 0
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+USA_recalc_congress_icon_frames = yes
+# Starting tech
+set_technology = {
+
+	infantry_weapons_0 = 1
+	infantry_weapons_1 = 1
+	infantry_weapons_2 = 1
+	etc_infantry_equipments_1 = 1
+	Bulletproof_vest_1 = 1
+	night_vision_1 = 1
+	support_weapons_1 = 1
+	tech_special_forces = 1
+	airborne_1 = 1
+	motorised_infantry = 1
+	
+	active_protection_system_1 = 1
+	active_protection_system_2 = 1
+	main_battle_tank_1 = 1
+	main_battle_tank_2 = 1
+	main_battle_tank_3 = 1
+	light_tank_1 = 1
+	light_tank_2 = 1
+	mechanised_infantry_1 = 1
+	mechanised_infantry_2 = 1
+	amphibious_mechanized_infantry_1 = 1
+	amphibious_mechanized_infantry_2 = 1
+	armored_personnel_carrier_1 = 1
+	airborne_ifv_1 = 1
+	
+	tech_support = 1
+	tech_recon_1 = 1
+	tech_engineers_1 = 1
+	tech_field_hospital_1 = 1
+	tech_logistics_company_1 = 1
+	tech_military_police_1 = 1
+	tech_signal_company_1 = 1
+	tech_maintenance_company_1 = 1
+	
+	artillery_1 = 1
+	spa_1 = 1
+	artillery_2 = 1
+	motorized_rocket_1 = 1
+	motorized_rocket_2 = 1
+	infantry_at_1 = 1
+	infantry_at_2 = 1
+	antitank_1 = 1
+	SPAAG_1 = 1
+	SPAAG_2 = 1
+	antiair_1 = 1
+	manpads_1 = 1
+	
+	military_basic_land_doctrine = 1
+	mission_command_doctrine = 1
+	detailed_command_doctrine = 1
+	military_improve_doctrine = 1
+	offensive_depth_doctrine = 1
+	combat_support_company_doctrine = 1
+	defensive_depth_doctrine = 1
+	support_company_org_reinforce_doctrine = 1
+	separated_arms_formation_doctrine = 1
+	offensive_maneuver_warfare_doctrine = 1
+	central_control_doctrine = 1
+	mass_fire_doctrine = 1
+	defensive_maneuver_warfare_doctrine = 1
+	forward_control_doctrine = 1
+	fire_support_doctrine = 1
+	military_advanced_land_doctrine = 1
+	
+	tech_ship_hull_light_1 = 1
+	tech_ship_hull_light_2 = 1
+	tech_ship_hull_light_3 = 1
+	tech_ship_hull_light_4 = 1
+	tech_ship_hull_cruiser_1 = 1
+	tech_ship_hull_cruiser_2 = 1
+	tech_ship_hull_cruiser_3 = 1
+	tech_ship_hull_cruiser_4 = 1
+	tech_ship_hull_heavy_1 = 1
+	tech_ship_hull_heavy_2 = 1
+	tech_ship_hull_super_heavy_1 = 1
+	tech_ship_hull_super_heavy_2 = 1
+	battleship_1 = 1
+	
+	tech_naval_depth_charge_1 = 1
+	tech_naval_depth_charge_2 = 1
+	tech_naval_depth_charge_3 = 1
+	tech_naval_depth_charge_4 = 1
+	tech_naval_depth_charge_5 = 1
+	tech_naval_smoke_1 = 1
+	tech_naval_sonar_1 = 1
+	
+	tech_ship_hull_light_carrier_1  = 1
+	tech_ship_hull_carrier_1 = 1
+	tech_ship_hull_carrier_2 = 1
+	tech_ship_hull_heavy_carrier_1 = 1
+	
+	tech_ship_hull_submarine_1 = 1
+	tech_ship_hull_cruiser_submarine_1 = 1
+	tech_ship_hull_attack_nuclear_submarine_1 = 1
+	tech_ship_hull_cruise_missile_nuclear_submarine_1 = 1
+	
+	tech_naval_submarin_aip_1 = 1
+	tech_submarin_extra_fuel_tanks_1 = 1
+	
+	tech_naval_gun = 1
+	tech_ciws_1 = 1
+	tech_missile_launcher_basic = 1
+	tech_sam_launcher_1	= 1
+	tech_sam_launcher_2 = 1
+	tech_sam_launcher_3 = 1
+	tech_sam_launcher_4 = 1
+	tech_missile_launcher_turret_1 = 1
+	tech_missile_launcher_turret_2 = 1
+	tech_missile_launcher_turret_3 = 1
+	tech_cruise_missile_launcher_1 = 1
+	tech_cruise_missile_launcher_2 = 1
+	tech_cruise_missile_launcher_3 = 1
+	tech_missile_launcher_vls_1 = 1
+	
+	tech_torpedo_launcher_1 = 1
+	tech_torpedo_launcher_2 = 1
+	tech_torpedo_launcher_3 = 1
+	tech_torpedo_launcher_4 = 1
+	tech_sub_torpedo_tube_cruise_missile_1 = 1
+	tech_submarine_cruise_missile_launcher_1 = 1
+	
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	
+	marines_1 = 1
+	
+	jet_fighter_1 = 1
+	jet_fighter_2 = 1
+	cv_jet_fighter_1 = 1
+	cv_jet_fighter_2 = 1
+	heavy_jet_fighter_1 = 1
+	heavy_jet_fighter_2 = 1
+	cv_heavy_jet_fighter_1 = 1
+	cv_heavy_jet_fighter_2 = 1
+	
+	light_fighter_1 = 1
+	CAS_1 = 1
+	naval_bomber_1 = 1
+	jet_strategic_bomber_1 = 1
+	supersonic_strategic_bomber_1 = 1
+	stealth_strategic_bomber_1 = 1
+	
+	tech_recon_helicopter_1 = 1
+	heliborne_1 = 1
+	maritime_helicopter_1 = 1
+	
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	improved_decimetric_radar = 1
+	fire_control_system_1 = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	experimental_rockets = 1
+	heavy_rocket_engine_1 = 1
+	heavy_rocket_engine_2 = 1
+	heavy_rocket_engine_3 = 1
+	ballistic_missile_1 = 1
+	missile_engineering_1 = 1
+	missile_engineering_2 = 1
+	missile_engineering_3 = 1
+	slbm_engineering_1 = 1
+	vls_engineering_1 = 1
+	jet_engines_1 = 1
+	jet_engines_2 = 1
+	
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	nukes_2 = 1
+	nuke_naval_engine_1 = 1
+}
+
+add_ideas = {
+
+	disarmed_nation
+	free_trade
+	home_of_the_free
+	market_Intervention_07
+}
+
+# DIPLOMACY
+create_faction = NATO
+add_to_faction = USA
+add_to_faction = CAN
+add_to_faction = ICE
+add_to_faction = NOR
+add_to_faction = ENG
+add_to_faction = DEN
+add_to_faction = GER
+add_to_faction = HOL
+add_to_faction = BEL
+add_to_faction = LUX
+add_to_faction = FRA
+add_to_faction = SPR
+add_to_faction = POR
+add_to_faction = ITA
+add_to_faction = GRE
+add_to_faction = TUR
+
+give_guarantee = KOR
+give_guarantee = JAP
+
+#Monroe Doctrine
+give_guarantee = CAN
+give_guarantee = MEX
+give_guarantee = CUB
+give_guarantee = HAI
+give_guarantee = DOM
+give_guarantee = GUA
+give_guarantee = HON
+give_guarantee = ELS
+give_guarantee = NIC
+give_guarantee = COS
+give_guarantee = PAN
+give_guarantee = VEN
+give_guarantee = COL
+give_guarantee = ECU
+give_guarantee = PRU
+give_guarantee = BRA
+give_guarantee = BOL
+give_guarantee = CHL
+give_guarantee = PAR
+give_guarantee = ARG
+give_guarantee = URG
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = PUE
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+
+	add_named_threat = { threat = 2 name = 1980_summer_olympics_boycott } #1980.3.21.
+	add_named_threat = { threat = 1 name = evil_empire_speech } #1983.3.8.
+	add_named_threat = { threat = 2 name = strategic_defense_initiative } #1983.3.24.
+	add_named_threat = { threat = 7 name = united_states_invasion_of_grenada } #1983.10.25.
+	add_named_threat = { threat = 5 name = able_archer } #1983.11.2.
+	add_named_threat = { threat = 2 name = iran_contra_affair } #1986.11.3.
+
+
+
+set_convoys = 400
+
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "로널드 레이건"
+	desc = "POLITICS_Ronald_Reagan_DESC"
+	picture = "POLITICS_USA_Ronald_Reagan.dds"
+	expire = "1947.1.1"
+	ideology = market_liberalism_subtype_1
+	traits = {
+		dislikes_germany
+	}
+}

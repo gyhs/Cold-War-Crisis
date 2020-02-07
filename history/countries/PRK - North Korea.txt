@@ -1,0 +1,124 @@
+﻿capital = 527 #North Korea
+
+oob = "PRK_1987"
+
+# Starting tech
+set_technology = {
+	infantry_weapons_0 = 1
+	infantry_weapons_1 = 1
+	motorised_infantry = 1
+	
+	tech_support = 1
+	
+	artillery_1 = 1
+	
+	main_battle_tank_1 = 1
+	mechanised_infantry_1 = 1
+	
+	antiair_1 = 1
+	spa_1 = 1
+	motorized_rocket_1 = 1
+	SPAAG_1 = 1
+	
+	military_basic_land_doctrine = 1
+	mission_command_doctrine = 1
+	detailed_command_doctrine = 1
+	military_improve_doctrine = 1
+	offensive_depth_doctrine = 1
+	combat_support_company_doctrine = 1
+	defensive_depth_doctrine = 1
+	support_company_org_reinforce_doctrine = 1
+	separated_arms_formation_doctrine = 1
+	offensive_maneuver_warfare_doctrine = 1
+	central_control_doctrine = 1
+	mass_fire_doctrine = 1
+	defensive_maneuver_warfare_doctrine = 1
+	forward_control_doctrine = 1
+	fire_support_doctrine = 1
+	military_advanced_land_doctrine = 1
+}
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+	
+	female_limited_mobilization 
+	scraping_the_barrel
+}
+
+set_convoys = 5
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 50
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 70
+	socialism = 10
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+add_ideas = {
+	extensive_conscription
+}
+
+
+###
+
+create_country_leader = {
+	name = "김정일"
+	desc = "POLITICS_PRK_Kim_Jong_il_DESC"
+	picture = "POLITICS_PRK_Kim_Jong_il.dds"
+	expire = "2100.3.1"
+	ideology = fascism_subtype_1
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "황장엽"
+	desc = "POLITICS_PRK_Hwang_Jang_yop_DESC"
+	picture = "POLITICS_PRK_Hwang_Jang_yop.dds"
+	expire = "2100.3.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "김영남"
+	desc = "POLITICS_PRK_Kim_Yong_nam_DESC"
+	picture = "POLITICS_PRK_Kim_Yong_nam.dds"
+	expire = "2100.3.1"
+	ideology = social_democracy_subtype_1
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "김일성"
+	desc = "POLITICS_PRK_Kim_Il_sung_DESC"
+	picture = "POLITICS_PRK_Kim_Il_sung.dds"
+	expire = "2100.3.1"
+	ideology = communism_subtype_1
+	traits = {
+		
+	}
+}

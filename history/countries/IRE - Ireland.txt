@@ -1,0 +1,88 @@
+﻿capital = 113
+
+oob = "IRE_1987"
+
+set_research_slots = 3
+
+set_technology = {
+}
+	
+add_ideas = {
+	#법률
+	market_Intervention_08
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1933.1.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "카헐 오 호하"
+	desc = ""
+	picture = "portrait_ire_charles_haughey.dds"
+	expire = "2010.1.1"
+	ideology = market_liberalism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eoin O'Duffy"
+	desc = "POLITICS_EOIN_ODUFFY_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = fascism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Larkin"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Norton"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Michael Costello"
+	portrait_path = "gfx/leaders/ENG/POLITICS_Britain_Generic_land_4.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

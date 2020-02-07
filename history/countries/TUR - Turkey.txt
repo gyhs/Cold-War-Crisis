@@ -1,0 +1,134 @@
+﻿capital = 49
+
+oob = "TUR_1987"
+
+set_research_slots = 3
+
+add_ideas = {
+}
+
+set_technology = {
+}
+
+set_politics = {	
+	ruling_party = authoritarianism
+	last_election = "1935.2.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
+}
+
+set_convoys = 20
+set_stability = 0.55
+
+# Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
+create_country_leader = {
+	name = "Ismet Inönü"
+	desc = "POLITICS_ISMET_INÖNÜ_DESC"
+	picture = "POLITICS_Turkey_Ismet_Inonu.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mustafa Kemal Atatürk"
+	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
+	picture = "gfx/leaders/TUR/POLITICS_Turkey_Mustafa_Kemal_Ataturk.dds"
+	expire = "1938.11.10"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sefik Hüsnü"
+	desc = "POLITICS_SEFIK_HUSNU_DESC"
+	picture = "gfx/leaders/TUR/POLITICS_Turkey_Sefik_Husnu.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Celâl Bayar"
+	desc = "POLITICS_CELAL_BAYAR_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_conservatism_subtype_1
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Fevzi Çakmak"
+	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Cemil Cahit Toydemir"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_1.dds"
+	traits = { desert_fox }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nazmi Solok"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_3.dds"
+	traits = { trickster }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Salih Omurtak"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_4.dds"
+	traits = {  hill_fighter }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Rauf Orbay"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_navy_1.dds"
+	traits = { bold }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
+}

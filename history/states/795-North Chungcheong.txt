@@ -1,0 +1,19 @@
+state={
+	id=795
+	name="STATE_795"
+
+	history={
+		owner = KOR
+		add_core_of = KOR
+		add_core_of = PRK
+		add_claim_by = PRK
+
+	}
+
+	provinces={
+		1100 13226 
+	}
+	manpower=1389686
+	buildings_max_level_factor=1.000
+	state_category=town
+}

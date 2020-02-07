@@ -1,0 +1,28 @@
+state={
+	id=857
+	name="STATE_857"
+
+	history={
+		owner = WES
+		add_core_of = WES
+		buildings = {
+			infrastructure = 1
+			6157 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			7979 1 
+		}
+
+	}
+
+	provinces={
+		6157 7979 13282 
+	}
+	manpower=321050
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

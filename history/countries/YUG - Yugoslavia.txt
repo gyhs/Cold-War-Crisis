@@ -1,0 +1,52 @@
+﻿capital = 107
+
+oob = "YUG_1987"
+
+set_research_slots = 3
+
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+}
+
+set_technology = {
+}
+
+set_convoys = 10
+set_politics = {	
+	ruling_party = communism
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 70
+	socialism = 10
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+set_stability = 0.6
+
+create_country_leader = {
+	name = "베젤린 주라노비치"
+	desc = "POLITICS_YUG_Veselin_Duranovic_DESC"
+	picture = "POLITICS_YUG_Veselin_Duranovic.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype_1
+	traits = {
+		#
+	}
+}

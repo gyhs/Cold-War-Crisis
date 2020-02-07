@@ -1,0 +1,100 @@
+﻿capital = 51
+
+oob = "GER_1987"
+
+set_fuel_ratio = 0.8
+
+# Starting tech
+set_technology = {
+}
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+}
+
+set_variable = { var = ger_gateway_to_europe_influence value = 0 }
+
+set_variable = { var = wehrmacht_anger value = 0 }
+set_variable = { var = ss_anger value = 0 }
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.75 
+set_war_support = 0.3
+
+#Trade
+create_import = {
+		resource = tungsten
+		factories = 1
+		exporter = SWE
+}
+
+set_politics = {	
+	ruling_party = social_conservatism
+	last_election = "1982.10.2"
+	election_frequency = 40
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+###
+
+create_country_leader = {
+	name = "마르틴 무스누그"
+	desc = "POLITICS_GER_Martin_Mussgnug_DESC"
+	picture = "POLITICS_GER_Martin_Mussgnug.dds"
+	expire = "2100.3.1"
+	ideology = fascism_subtype_1
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "프란츠 쇤후버"
+	desc = "POLITICS_GER_Franz_Schonhuber_DESC"
+	picture = "POLITICS_GER_Franz_Schonhuber.dds"
+	expire = "2100.3.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "헬무트 콜"
+	desc = "POLITICS_GER_Helmut_Kohl_DESC"
+	picture = "POLITICS_GER_Helmut_Kohl.dds"
+	expire = "2100.1.1"
+	ideology = social_conservatism_subtype_1
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "한스 요한 포겔"
+	desc = "POLITICS_GER_Hans_Jochen_Vogel_DESC"
+	picture = "POLITICS_GER_Hans_Jochen_Vogel.dds"
+	expire = "2100.3.1"
+	ideology = communism_subtype_1
+	traits = {
+		
+	}
+}
+### Ship Variants ###

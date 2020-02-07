@@ -1,0 +1,75 @@
+﻿capital = 279
+
+oob = "CHL_1987"
+
+# Starting tech
+set_technology = {
+}
+
+set_country_flag = monroe_doctrine
+
+set_convoys = 20
+
+set_convoys = 5
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1932.10.30"
+	election_frequency = 72  #but 4 years after this one in 1938.
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "Arturo Alessandri"
+	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
+	picture = "GFX_POLITICS_chile_arturo_alessandri"
+	expire = "1965.1.1"
+	ideology = social_liberalism_subtype_1
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Jorge González von Marées"
+	desc = "POLITICS_JORGE_GONZÁLEZ_VON_MARÉES_DESC"
+	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = fascism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Carlos Contreras Labarca"
+	desc = "POLITICS_CARLOS_CONTRERAS_LABARCA_DESC"
+	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_navy_1.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Escudero Oscar Otárola"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_5.dds"
+	traits = { trait_mountaineer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}

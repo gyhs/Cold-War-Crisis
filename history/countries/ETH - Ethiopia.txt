@@ -1,0 +1,59 @@
+﻿capital = 271
+
+oob = "ETH_1987"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 5
+set_politics = {	
+	ruling_party = authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
+}
+
+create_country_leader = {
+	name = "Haile Selassie"
+	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	picture = "POLITICS_Ethiopia_Haile_Selassie.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fitawrari Yeebio Woldai"
+	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
+	picture = "POLITICS_Ethiopia_Haile_Selassie.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Seyoum Mengesha"
+	portrait_path = "gfx/leaders/Africa/POLITICS_Africa_Generic_land_3.dds"
+	traits = {  desert_fox }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

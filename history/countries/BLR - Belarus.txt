@@ -1,0 +1,69 @@
+﻿capital = 206 #Minsk
+
+oob = "BLR_1987"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+}
+
+set_politics = {}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+    name = "Vasil Zacharka"
+    desc = ""
+    picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_3.dds"
+    expire = "1965.1.1"
+    ideology = authoritarianism_subtype_1
+    traits = {
+        #
+    }
+}
+
+create_country_leader = {
+    name = "Radasłaŭ Astroŭski"
+    desc = ""
+    picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_3.dds"
+    expire = "1965.1.1"
+    ideology = fascism_subtype_1
+    traits = {
+        #
+    }
+}
+
+create_country_leader = {
+    name = "Panteleimon Ponomarenko"
+    desc = ""
+    picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_1.dds"
+    expire = "1965.1.1"
+    ideology = communism_subtype_1
+    traits = {
+        #
+    }
+}
+
+create_country_leader = {
+    name = "Adam Stankievič"
+    desc = ""
+    picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_2.dds"
+    expire = "1965.1.1"
+    ideology = social_democracy_subtype_1
+    traits = {
+        #
+    }
+}
+
+
+

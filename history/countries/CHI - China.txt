@@ -1,0 +1,84 @@
+﻿capital = 524
+
+oob = "CHI_1987"
+
+set_stability = 0.2
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+}
+add_ideas = {
+	Gen_cartel
+	NS_Gen_mafia_5
+	NS_Gen_government_crisis_5
+	general_hyper_inflation_3
+	#NS_Gen_rampant_of_warlord
+	NS_Gen_risk_of_famine
+	NS_Gen_incompetence_officer
+	NS_Gen_rampant_communicable_diseases_3
+	NS_Gen_landed_proprietor
+	NS_Gen_army_corruption_1
+	
+	#법률
+	market_Intervention_08
+}
+
+save_global_event_target_as = WTT_current_china_leader
+
+set_convoys = 40
+
+set_politics = {	
+	ruling_party = authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 5
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 5
+	market_liberalism = 5
+	social_conservatism = 5
+	authoritarianism = 50
+	fascism = 20
+}
+
+###
+create_country_leader = {
+	name = "쟝펭쳰"
+	desc = "POLITICS_CHI_Chiang_Peng_chien_DESC"
+	picture = "POLITICS_CHI_Chiang_Peng_chien.dds"
+	expire = "2100.3.1"
+	ideology = communism_subtype_1
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "리덩후이"
+	desc = "POLITICS_CHI_Lee_Teng_hui_DESC"
+	picture = "POLITICS_CHI_Lee_Teng_hui.dds"
+	expire = "1965.1.1"
+	ideology = social_conservatism_subtype_1
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "장징궈"
+	desc = "POLITICS_CHI_Chiang_Ching_kuo_DESC"
+	picture = "POLITICS_CHI_Chiang_Ching_kuo.dds"
+	expire = "2100.3.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "리후앙"
+	desc = "POLITICS_CHI_Li_Huang_DESC"
+	picture = "POLITICS_CHI_Li_Huang.dds"
+	expire = "2100.3.1"
+	ideology = fascism_subtype_1
+	traits = {
+	}
+}

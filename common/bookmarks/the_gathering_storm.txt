@@ -1,0 +1,301 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1987.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SOV"
+		default = yes
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = social_democracy
+			ideas = {
+				eces_1
+				persistent_trade_deficit_5
+				currency_problem
+			}
+			focuses = {
+				NF_FRA_memories_of_6_8
+				NF_FRA_dream_of_the_past
+				NF_FRA_the_leader_of_europe
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = social_liberalism
+			ideas = {
+			uk_great_depression1
+			eces_1
+			}
+			focuses = {
+			UK_0
+			UK_1
+			UK_85
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = social_liberalism
+			ideas = {
+			}	
+			focuses = {
+			}		
+		}
+		"YUG"={
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			}	
+			focuses = {
+			}			
+		}
+		"PRC"={
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = social_democracy
+			ideas = {
+					home_of_revolution
+					SOV_power_struggles
+					SOV_hyper_inflation_1
+			}
+			focuses = {
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		"FIN"={
+			minor = yes
+			history = "FIN_GATHERING_STORM_DESC"
+			ideology = social_conservatism
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"AFG"={
+			minor = yes
+			history = "AFG_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"MUJ"={
+			minor = yes
+			history = "MUJ_GATHERING_STORM_DESC"
+			ideology = social_conservatism
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"POL"={
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"CZE"={
+			minor = yes
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"PRC"={
+			minor = yes
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"MAN"={
+			minor = yes
+			history = "MAN_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"GXC"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}		
+		"YUN"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}		
+		"SHX"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}		
+		"XSM"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}		
+		"SIK"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = market_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"KOR"={
+			minor = yes
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = authoritarianism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

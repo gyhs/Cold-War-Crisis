@@ -1,0 +1,64 @@
+﻿capital = 306
+
+oob = "COL_1987"
+
+# Starting tech
+set_technology = {
+}
+
+set_country_flag = monroe_doctrine
+
+set_convoys = 10
+
+set_convoys = 5
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "Alfonso López Pumarejo"
+	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
+	picture = "GFX_POLITICS_columbia_alfonso_lopez"
+	expire = "1965.1.1"
+	ideology = social_liberalism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mariano Ospina Pérez"
+	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
+	picture = "gfx/leaders/South America/POLITICS_South_America_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Gustavo Rojas Pinilla"
+	portrait_path = "gfx/leaders/South America/POLITICS_South_America_Generic_land_3.dds"
+	traits = {  trickster urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}

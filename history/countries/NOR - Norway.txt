@@ -1,0 +1,100 @@
+﻿capital = 110
+
+oob = "NOR_1987"
+
+set_research_slots = 3
+
+add_ideas = {
+}
+
+set_stability = 0.9
+set_war_support = 0.1
+set_technology = {
+}
+
+set_convoys = 200		# biggest merchant marine in the world
+set_stability = 0.7
+
+set_politics = {	
+	ruling_party = social_democracy
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 45
+	social_liberalism = 5
+	market_liberalism = 40
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "그로 할렘 브룬틀란"
+	desc = "-"
+	picture = "portrait_nor_gro_harlem_brundtland.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vidkun Quisling"
+	desc = "POLITICS_VIDKUN_QUISLING_DESC"
+	picture = "POLITICS_Norway_Vidkun_Quisling.dds"
+	expire = "1965.1.1"
+	ideology = fascism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Johan Ludwig Mowinckel"
+	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adam Egede-Nissen"
+	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
+	picture = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype_1
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Carl Gustav Fleischer"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_land_1.dds"
+	traits = {  trickster winter_specialist }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Elias Corneliussen"
+	portrait_path = "gfx/leaders/Europe/POLITICS_Europe_Generic_navy_2.dds"
+	traits = { navy_career_officer inshore_fighter spotter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 1
+}

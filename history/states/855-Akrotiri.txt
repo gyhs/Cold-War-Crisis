@@ -1,0 +1,26 @@
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = ENG
+		add_core_of = CYP
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			11031 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		11031 
+	}
+	manpower=1450
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}
