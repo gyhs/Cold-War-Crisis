@@ -1,0 +1,48 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+
+ND_SOV_gorbachev_faction_system_low_support_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = ND_SOV_gorbachev_faction_system_low_support_trigger_tt
+		check_variable = { var = reform_support 		value = reform_quorum_low compare = greater_than_or_equals }
+		check_variable = { var = conservative_support 	value = conservative_quorum_low compare = greater_than_or_equals }
+		check_variable = { var = military_support 		value = military_quorum_low compare = greater_than_or_equals }
+		#check_variable = { var = conservative_support value = 175 compare = greater_than_or_equals }
+		#check_variable = { var = military_support value = 175 compare = greater_than_or_equals }
+	}
+}
+
+ND_SOV_gorbachev_faction_system_medium_support_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = ND_SOV_gorbachev_faction_system_medium_support_trigger_tt
+		check_variable = { var = reform_support value = reform_quorum_medium compare = greater_than_or_equals }
+		check_variable = { var = conservative_support value = conservative_quorum_medium compare = greater_than_or_equals }
+		check_variable = { var = military_support value = military_quorum_medium compare = greater_than_or_equals }
+		#check_variable = { var = conservative_support value = 220 compare = greater_than_or_equals }
+		#check_variable = { var = military_support value = 220 compare = greater_than_or_equals }
+	}
+}
+
+ND_SOV_gorbachev_faction_system_high_support_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = ND_SOV_gorbachev_faction_system_high_support_trigger_tt
+		check_variable = { var = reform_support value = reform_quorum_high compare = greater_than_or_equals }
+		check_variable = { var = conservative_support value = conservative_quorum_high compare = greater_than_or_equals }
+		check_variable = { var = military_support value = military_quorum_high compare = greater_than_or_equals }
+		#check_variable = { var = conservative_support value = 265 compare = greater_than_or_equals }
+		#check_variable = { var = military_support value = 265 compare = greater_than_or_equals }
+	}
+}

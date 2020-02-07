@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+	### categories
+	
+	spriteType = {
+		name = "GFX_decision_category_gorbachev_faction_system"
+		texturefile = "gfx/interface/decisions/SOV/decision_category_gorbachev_faction_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_gorbachev_faction_system_reform_ui"
+		texturefile = "gfx/interface/decisions/SOV/decision_category_gorbachev_faction_system_reform_ui.dds"
+		noOfFrames = 21
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_gorbachev_faction_system_conservative_ui"
+		texturefile = "gfx/interface/decisions/SOV/decision_category_gorbachev_faction_system_conservative_ui.dds"
+		noOfFrames = 21
+	}
+	spriteType = {
+		name = "GFX_decision_category_gorbachev_faction_system_military_ui"
+		texturefile = "gfx/interface/decisions/SOV/decision_category_gorbachev_faction_system_military_ui.dds"
+		noOfFrames = 21
+	}
+
+}

@@ -1,0 +1,14 @@
+ND_SOV_gorbachev_faction_system = {
+	icon = usa_congress
+	allowed = {
+		NOT = { original_tag = USA }
+	}
+	
+	visible = {
+		original_tag = SOV
+	}
+
+	scripted_gui = ND_SOV_gorbachev_faction_system_decision_ui	
+
+	priority = 85
+}
