@@ -776,6 +776,10 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_adt
 		}
+		completion_reward = {
+			add_ideas = com_ft
+		}
+		#지상군 총 사령부
 		x = 45
 		y = 3
 

@@ -531,9 +531,30 @@ ideas = {
 
 			modifier = { 
 				research_speed_factor = 0.1
+				#연구 10%
 			}
 		}
 		#개발집중기간
     }
-		
+	
+	com_ft = {
+		picture = COM_FT
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				max_command_power = 20
+				command_power_gain_mult = 0.3
+				#지휘력 최대치 20증가,증가치 30%증가
+			}
+	}
+	#지상군 총 사령부
 }
