@@ -4,7 +4,7 @@
 # By NIKA
 ###########################
 
-add_namespace = YUG
+add_namespace = NE_YUG
 
 country_event = { #유고슬라비아 이벤트 시작
 	id = NE_YUG.1
@@ -355,7 +355,7 @@ country_event = { #나라 갈아타기
 		SLV = { change_tag_from = YUG }
 		hidden_effect = {
 			country_event = {#1991/9/25
-				id = NE_YUG.14
+				id = NE_YUG.15
 				days = 90
 			}
 		}
@@ -366,7 +366,7 @@ country_event = { #나라 갈아타기
 		CRO = { change_tag_from = YUG }
 		hidden_effect = {
 			country_event = {#1991/9/25
-				id = NE_YUG.14
+				id = NE_YUG.15
 				days = 90
 			}
 		}
@@ -383,10 +383,29 @@ country_event = { ##1991/9/25 마케도니아 독립
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #
+	option = { #이건 무리다...
 		name = NE_YUG.15.a
+		ai_chance = { factor = 99 }
+		release = MAC
+	}
+	
+	option = { #선전포고다!
+		name = NE_YUG.15.b
 		ai_chance = { factor = 1 }
-		
+		release = MAC
+		YUG = { 
+			declare_war_on = { 
+				target = MAC
+				type = annex_everything
+			}
+		}
+	}
+	
+	option = { #마케도니아 해방
+		name = NE_YUG.15.c
+		ai_chance = { factor = 1 }
+		release = MAC
+		MAC = { change_tag_from = YUG }
 	}
 }
 
