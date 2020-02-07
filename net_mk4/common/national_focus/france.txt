@@ -675,7 +675,13 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_adt
 		}
-		#국가정신 추가예정<자국 개발> 
+		completion_reward = {
+			add_timed_idea = {
+				idea = period_of_intensive_development
+				days = 200
+				#개발집중기간
+			}
+		}
 		x = 36
 		y = 3
 

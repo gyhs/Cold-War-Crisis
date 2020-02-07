@@ -515,6 +515,25 @@ ideas = {
 			}
 		}
 		#몰락 기다리기
+
+		period_of_intensive_development = {
+			picture = generic_license_production
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = { 
+				research_speed_factor = 0.1
+			}
+		}
+		#개발집중기간
     }
 		
 }
