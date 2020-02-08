@@ -19,5 +19,10 @@ spriteTypes = {
 		name = "GFX_faction_warsaw"
 		textureFile = "gfx/interface/faction/faction_warsaw.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_faction_plo"
+		textureFile = "gfx/interface/faction/faction_plo.dds"
+	}
 
 }
