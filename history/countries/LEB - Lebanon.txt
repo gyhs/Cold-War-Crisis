@@ -42,10 +42,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hashim al-Atassi"
+	name = "아민 제마옐"
 	desc = ""
-	picture = "gfx/leaders/SAU/POLITICS_Arabia_Generic_3.dds"
-	ideology = social_liberalism_subtype_1
+	picture = "portrait_lebanon_Amine_Gemayel.dds"
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}

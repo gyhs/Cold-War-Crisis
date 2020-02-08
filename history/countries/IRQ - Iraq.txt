@@ -46,9 +46,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_POLITICS_iraq_ghazi"
+	name = "사담 후세인"
+	desc = "POLITICS_SADDAM_HUSSEIN_DESC"
+	picture = "portrait_iraq_saddam_hussein.dds"
 	expire = "1965.1.1"
 	ideology = authoritarianism_subtype_1
 	traits = {

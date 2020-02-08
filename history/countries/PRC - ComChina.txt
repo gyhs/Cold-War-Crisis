@@ -51,7 +51,7 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 create_country_leader = {
 	name = "덩샤오핑"
 	desc = "POLITICS_PRC_Deng_Xiaoping_DESC"
-	picture = "POLITICS_PRC_Deng_Xiaoping.dds"
+	picture = "Portrait_PRC_Deng_Xiaoping.dds"
 	expire = "1965.1.1"
 	ideology = communism_subtype_1
 	traits = {
