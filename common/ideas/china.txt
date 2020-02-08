@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		double price system = {
+		#이중가격제 = {
 			picture =chi_hyper_inflation
 			
 			allowed = {
@@ -18,7 +18,7 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
-    		Deng Xiaoping Theory = {
+    		#덩샤오핑 이론 = {
 			picture =chi_hyper_inflation
 			
 			allowed = {
@@ -32,12 +32,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.5
-        production_speed_industrial_complex_factor=0.2
-        production_factory_max_efficiency_factor= 0.1
-        consumer_goods_factor = -0.05
-        conversion_cost_civ_to_mil_factor= -0.15
-        production_factory_max_efficiency_factor= 0.2
-				#production_speed_arms_factory_factor=  0.1
+				industrial_capacity_factory =	0.5
+        production_factory_max_efficiency_factor=	0.1
+        consumer_goods_factor =	-0.05
+        conversion_cost_civ_to_mil_factor=	0.15
+        production_speed_buildings_factor	=	0.2
+		production_speed_arms_factory_factor=	0.1
+		local_resources=	0.3
+		political_power_gain=	0.15
+		industrial_capacity_factory=	0.1
 			}
 		}
