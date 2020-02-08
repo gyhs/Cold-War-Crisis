@@ -9,16 +9,19 @@ news_event = { #새 연호
 	#picture = 
 
     trigger = {
-        OR = {
-            has_government = social_liberalism
-            has_government = market_liberalism
-            has_government = social_conservatism
-            has_government = fascism
-            has_government = authoritarianism 
+		tag = JAP
+		date > 1989.1.7
+		country_exists = JAP
+        JAP = {
+			OR = {
+				has_government = social_liberalism
+				has_government = market_liberalism
+				has_government = social_conservatism
+				has_government = fascism
+				has_government = authoritarianism
+			}
         }
     }
-
-	mean_time_to_happen = 727
 	
 	fire_only_once = yes
 	
@@ -45,7 +48,9 @@ news_event = { #버블 붕괴
 
     option = {  #일본일때
         name = news_JAP.bubble_collapse.japan
-        trigger = {TAG = JAP}
+        trigger = {
+			tag = JAP
+		}
         
         add_ideas = NS_JAP_bubble_collapse_5
 
@@ -53,7 +58,11 @@ news_event = { #버블 붕괴
     }
     option = {  #아닐때
         name = news_JAP.bubble_collapse.notjapan
-        trigger = { NOT = {TAG = JAP}}
+        trigger = {
+			NOT = {
+				tag = JAP
+			}
+		}
         ai_chance = {factor = 1}
     }
 }

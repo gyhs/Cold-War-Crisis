@@ -111,4 +111,32 @@ guiTypes = {
 			pdx_tooltip = CWC_FACTION_WARSAW
 		}
 	}
+	
+	containerWindowType = {
+		name = "country_plo"
+		position = { x=0 y = 0 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="c_plo_logo"
+			spriteType = "GFX_faction_plo"
+			position = { x= 158 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_PLO
+		}
+	}
+	
+	containerWindowType = {
+		name = "player_plo"
+		position = { x=0 y =78 }
+		size = { width = 530 height = 100%% }
+		
+		iconType = {
+			name ="p_plo_logo"
+			spriteType = "GFX_faction_plo"
+			position = { x= 19 y = 225 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = CWC_FACTION_PLO
+		}
+	}
 }

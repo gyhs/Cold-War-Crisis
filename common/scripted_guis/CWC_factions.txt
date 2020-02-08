@@ -10,6 +10,7 @@ scripted_gui = {
 		visible = {
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = LEB }
 			is_in_faction = yes
 		}
 	}
@@ -22,6 +23,7 @@ scripted_gui = {
 		visible = {
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = LEB }
 			is_in_faction = yes
 		}
 	}
@@ -83,6 +85,26 @@ scripted_gui = {
 
 		visible = {
 			is_in_faction_with = SOV
+		}
+	}
+	
+	c_plo = {
+		context_type = selected_country_context
+		window_name = "country_plo"
+		parent_window_token = selected_country_view
+
+		visible = {
+			is_in_faction_with = LEB
+		}
+	}
+	
+	p_plo = {
+		context_type = player_context
+		window_name = "player_plo"
+		parent_window_token = politics_tab
+
+		visible = {
+			is_in_faction_with = LEB
 		}
 	}
 }
