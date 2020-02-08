@@ -29,7 +29,7 @@ create_country_leader = {
 	name = "하페즈 알아사드"
 	desc = ""
 	picture = "portrait_syria_Hafez_al_Assad.dds"
-	ideology = social_liberalism_subtype_1
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}

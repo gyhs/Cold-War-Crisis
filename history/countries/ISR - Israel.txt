@@ -55,7 +55,7 @@ create_country_leader = {
 	name = "이츠하크 샤미르"
 	desc = ""
 	picture = "portrait_israel_Yitzhak_Shamir.dds"
-	ideology = social_liberalism_subtype_1
+	ideology = social_conservatism_subtype_1
 	traits = {
 		#
 	}

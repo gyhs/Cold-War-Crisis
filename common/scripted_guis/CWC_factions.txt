@@ -10,6 +10,7 @@ scripted_gui = {
 		visible = {
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = LEB }
 			is_in_faction = yes
 		}
 	}
@@ -22,6 +23,7 @@ scripted_gui = {
 		visible = {
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = LEB }
 			is_in_faction = yes
 		}
 	}
