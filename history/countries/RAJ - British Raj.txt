@@ -25,7 +25,7 @@ set_convoys = 20
 
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = social_conservatism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -36,8 +36,8 @@ set_popularities = {
 	socialism = 5
 	social_democracy = 5
 	social_liberalism = 40
-	market_liberalism = 45
-	social_conservatism = 5
+	market_liberalism = 5
+	social_conservatism = 45
 	authoritarianism = 0
 	fascism = 0
 }
@@ -67,7 +67,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "라지브 간디"
 	desc = "POLITICS_RAJ_Rajiv_Gandhi_DESC"
-	picture = "POLITICS_RAJ_Rajiv_Gandhi.dds"
+	picture = "Portrait_India_Rajiv_Gandhi.dds"
 	expire = "2100.1.1"
 	ideology = social_conservatism_subtype_1
 	traits = {

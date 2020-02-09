@@ -29,9 +29,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_POLITICS_mon_anandyn_amar
+	name = "잠빙 바트뭉흐"
+	desc = ""
+	picture = "Portrait_MON_Jambyn_Batmonkh.dds"
 	expire = "1965.1.1"
 	ideology = communism_subtype_1
 	traits = {

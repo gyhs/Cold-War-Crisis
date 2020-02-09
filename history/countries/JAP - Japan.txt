@@ -42,20 +42,6 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hirohito"
-	desc = "POLITICS_Hirohito_DESC"
-	picture = "POLITICS_Japan_Hirohito.dds"
-	expire = "1989.1.1"
-	ideology = fascism_subtype_1
-	traits = {
-		warrior_code
-		emperor_showa
-		imperial_sanction
-	}
-	id = 700 #Hirohito
-}
-
-create_country_leader = {
 	name = "아키히토"
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "NP_JAP_akihito.dds"
@@ -66,9 +52,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "가이후 도시키"
-	desc = "POLITICS_Hirohito_DESC"
-	picture = "NP_JAP_Toshiki_Kaifu.dds"
+	name = "나카소네 야스히로"
+	desc = ""
+	picture = "Portrait_JAP_Yasuhiro_Nakasone.dds"
 	expire = "1989.1.1"
 	ideology = social_conservatism_subtype_1
 	traits = {
