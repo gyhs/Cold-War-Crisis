@@ -203,7 +203,7 @@ bookmarks = {
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
-			ideology = market_liberalism
+			ideology = authoritarianism
 			ideas = {
 			}
 			focuses = {
