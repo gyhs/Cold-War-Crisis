@@ -2,6 +2,8 @@
 
 oob = "HKG_1987"
 
+set_cosmetic_tag = HKG_ENG
+
 # Starting tech
 set_technology = {
 }

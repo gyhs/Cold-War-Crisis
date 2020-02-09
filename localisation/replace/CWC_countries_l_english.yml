@@ -749,8 +749,8 @@
  HUN_authoritarianism_ADJ:1 "헝가리"
  HUN_fascism_ADJ:0 "헝가리"
  
- AFG_communism:0 "아프가니스탄"
- AFG_communism_DEF:0 "아프가니스탄"
+ AFG_communism:0 "아프가니스탄 민주 공화국"
+ AFG_communism_DEF:0 "아프가니스탄 민주 공화국"
  AFG_socialism:0 "아프가니스탄"
  AFG_socialism_DEF:0 "아프가니스탄"
  AFG_social_democracy:0 "아프가니스탄"
