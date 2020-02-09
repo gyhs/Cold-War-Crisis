@@ -11,6 +11,7 @@ add_ideas = {
 	#이중가격제
 	#덩샤오핑 이론
 	#발전하는 중국
+	NS_Gen_mafia_5
 	
 	#법률
 	market_Intervention_08
