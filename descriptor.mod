@@ -8,4 +8,4 @@ dependencies={
 	"한국어 모드(Korean Translation)"
 }
 name="Cold War Crisis dev."
-supported_version="1.8.1"
+supported_version="1.8.2"
