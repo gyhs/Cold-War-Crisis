@@ -14,7 +14,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.15
 			}
 		}
@@ -32,7 +32,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory =	0.5
+				industrial_capacity_factory =	0.3
         production_factory_max_efficiency_factor=	0.1
         consumer_goods_factor =	-0.05
         conversion_cost_civ_to_mil_factor=	0.15
