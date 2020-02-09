@@ -61,10 +61,10 @@ set_popularities = {
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
 create_country_leader = {
-	name = "바브락 카르말"
-	desc = "POLITICS_AFG_Babrak_Karmal_DESC"
-	picture = "POLITICS_AFG_Babrak_Karmal.dds"
-	expire = "1985.1.1"
+	name = "모하마드 나지불라"
+	desc = ""
+	picture = "Portrait_AFG_Mohammad_Najibullah.dds"
+	expire = "1986.11.24"
 	ideology = communism_subtype_1
 	traits = {
 		#

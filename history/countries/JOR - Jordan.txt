@@ -26,40 +26,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hashim Kheir"
+	name = "후세인 1세"
 	desc = ""
-	picture = "gfx/leaders/JOR/POLITICS_Arabia_Generic_2.dds"
-	ideology = social_conservatism_subtype_1
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Saeed Ahmadi"
-	desc = ""
-	picture = "gfx/leaders/JOR/POLITICS_Arabia_Generic_fascism1.dds"
-	ideology = fascism_subtype_1
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Abdullah bin al-Hussein"
-	desc = ""
-	picture = "gfx/leaders/JOR/POLITICS_Arabia_Generic_land_3.dds"
+	picture = "Portrait_JOR_Hussein.dds"
 	ideology = authoritarianism_subtype_1
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fu'ad Nassar"
-	desc = ""
-	picture = "gfx/leaders/JOR/POLITICS_Arabia_Generic_navy_2.dds"
-	ideology = communism_subtype_1
 	traits = {
 		#
 	}

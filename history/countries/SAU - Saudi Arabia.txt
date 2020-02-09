@@ -16,20 +16,20 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 5
-	socialism = 5
-	social_democracy = 5
-	social_liberalism = 5
-	market_liberalism = 5
-	social_conservatism = 5
-	authoritarianism = 50
-	fascism = 20
+	communism = 0
+	socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	market_liberalism = 0
+	social_conservatism = 0
+	authoritarianism = 100
+	fascism = 0
 }
 
 create_country_leader = {
-	name = "Abdulaziz Ibn Saud"
-	desc = "POLITICS_ABDULAZIZ_DESC"
-	picture = "POLITICS_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
+	name = "파드 빈 압둘 아지즈 알 사우드"
+	desc = ""
+	picture = "Portrait_SAU_Fahd.dds"
 	expire = "1965.1.1"
 	ideology = authoritarianism_subtype_1
 	traits = {

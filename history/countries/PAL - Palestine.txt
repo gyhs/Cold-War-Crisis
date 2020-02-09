@@ -8,7 +8,7 @@ set_convoys = 5
 
 
 set_politics = {	
-	ruling_party = market_liberalism
+	ruling_party = social_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -17,19 +17,19 @@ set_politics = {
 set_popularities = {
 	communism = 0
 	socialism = 5
-	social_democracy = 5
+	social_democracy = 45
 	social_liberalism = 40
-	market_liberalism = 45
+	market_liberalism = 5
 	social_conservatism = 5
 	authoritarianism = 0
 	fascism = 0
 }
 
 create_country_leader = {
-	name = "Ahmed Hilmi Pasha"
+	name = "야세르 아라파트"
 	desc = ""
-	picture = "gfx/leaders/PAL/POLITICS_Arabia_Generic_navy_1.dds"
-	ideology = social_liberalism_subtype_1
+	picture = "Portrait_PAL_Yasser_Arafat.dds"
+	ideology = social_democracy_subtype_1
 	traits = {
 		#
 	}
