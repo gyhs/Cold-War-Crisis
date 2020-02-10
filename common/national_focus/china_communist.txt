@@ -1,0 +1,48 @@
+focus_tree = {
+	id = CHI
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = NF_CHI_foreign_investor
+		icon = 
+		cost = 4.00
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = NF_CHI_exclusive industrial zone
+		icon = 
+		cost = 4.00
+		prerequisite = {
+			focus = NF_CHI_foreign_investor
+			}
+		x = 22
+		y = 0
+	}
+	focus = {
+		id = NF_CHI_EIZ 2
+		icon = 
+		cost = 4.00
+		prerequisite = {
+			focus = NF_CHI_exclusive industrial zone
+			}
+		x = 44
+		y = 0
+		}
+	focus = {
+		id = NF_CHI_EIZ 3
+		icon =
+		cost = 4.00
+		prerequisite = {
+			focus = NF_CHI_EIZ 2
+			}
+		x = 56
+		y = 0
+		
