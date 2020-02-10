@@ -16,6 +16,9 @@ add_ideas = {
 	NS_Gen_rampant_communicable_diseases_3
 	NS_Gen_landed_proprietor
 	NS_Gen_army_corruption_1
+	Deng_Xiaoping_Theory
+	double_price_system
+	developing_china
 }
 
 set_stability = 0.6
@@ -44,7 +47,7 @@ add_ideas = {
 
 give_guarantee = PRK
 
-add_opinion_modifier = { target = CHI modifier = hostile_status }
+add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 
 ###
