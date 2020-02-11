@@ -2,8 +2,198 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
-####################################################### CWC 장비###########################################
-
+####################################################### CWC 새 연구주제 ############################################
+#연구주제 목록
+    ### 보병연구 텝 ###
+    CAT_infantry 			# 모든 보병 
+        #CAT_INF_WEP_S
+        CAT_INF_WEP			#	보병 화기
+        CAT_INF_WEP_H		#	보병 중화기	(기관총,박격포)
+        CAT_INF_RIS 		#	보병 레일장비
+        CAT_INF_NW_EQP		#	보병 야간전 장비
+        CAT_INF_BPV_EQP		#	보병 방탄복
+        CAT_INF_ETC_EQP		#	보병 기타 장비	(야삽,군장 등등)
+        
+        CAT_INF_SOF			#	보병 특수부대
+        CAT_INF_SOF_EQP		#	보병 특수부대 장비
+		
+        CAT_INF_ABF			#	보병 공수부대
+        CAT_INF_ABF_EQP		#	보병 공수부대 장비
+####
+    CAT_SPT					#	모든 지원부대 연구
+        CAT_SPT_EQP			#	지원장비
+        CAT_SPT_SCT			#	정찰대
+        CAT_SPT_ENG			#	공병대
+        CAT_SPT_MP			#	헌병대
+        CAT_SPT_MNT			#	정비대
+        CAT_SPT_MED			#	의무대
+        CAT_SPT_LOG			#	보급대
+        CAT_SPT_SIG			#	통신대
+####
+    CAT_VEH					#	모든 차량 연구
+        CAT_VEH_EQP			#	차량 장비
+        CAT_VEH_APC			#	보병 수송장갑차
+        CAT_VEH_LVT			#	상륙 장갑차
+        CAT_VEH_IFV			#	보병 전투차
+        CAT_VEH_IFV_ABF		#	공수 장갑차
+        CAT_VEH_TANK_L		# 	경 전차
+        CAT_VEH_TANK_L_ABF	# 	공수 전차
+        CAT_VEH_TANK		# 	MBT 전차
+        CAT_VEH_APS			# 	능동방호체계
+####
+    CAT_FST					#	모든 화력지원 연구
+        CAT_ART				#	야포
+        CAT_ART_ETC_EQP		#	야포 관련 기술
+        CAT_SPG				#	자주포
+        CAT_MRL				#	다연장로켓차량
+        CAT_RKT				#	로켓
+        CAT_AT_RKT			#	대전차 로켓
+        CAT_ATGM			#	대전차 미사일
+        CAT_MANPADS			#	휴대용 대공 미사일
+        CAT_SAM				#	대공미사일
+        CAT_SPAAG			#	자주대공포
+####
+    CAT_SHIP				#	모든 함선 연구
+        CAT_SHIP_SMOKE			#	함선 연막
+        CAT_SHIP_SONAR			#	음파탐지기
+        CAT_SHIP_ASW_EQP		#	대잠전 장비
+        CAT_SHIP_ARMOR			#	함선 장갑 연구
+	
+    CAT_SHIP_S				#	소형 함선 연구
+        CAT_SHIP_FF			#	호위함 급
+    CAT_SHIP_M				#	표준 함선 연구
+        CAT_SHIP_DD			#	구축함 급
+    CAT_SHIP_L				#	대형 함선 연구
+        CAT_SHIP_CG			#	순양함 급
+        CAT_SHIP_CC			#	순양전함 급
+        CAT_SHIP_BB			#	전함 급
+        CAT_SHIP_CVL		#	경 항공모함 급
+        CAT_SHIP_CV			#	항공모함 급
+        CAT_SHIP_CVN		#	원자력 항공모함 급
+####
+        CAT_MRN				#	해병
+        CAT_SHIP_TRP		#	수송선
+####
+    CAT_SUB					#	모든 잠수함 연구
+        CAT_SUB_SS			#	잠수함 급
+        CAT_SUB_SS_L		#	대형 잠수함 급
+        CAT_SUB_SSN			#	공격 원자력 잠수함 급
+        CAT_SUB_SSGN		#	순항 미사일 원자력 잠수함 급
+        CAT_SUB_AIP			#	공기 불필요 추진 시스템
+        CAT_SUB_FUEL		#	추가연료 탱크
+####
+    CAT_SHIP_EQP			#	모든 함선 장비
+        CAT_SHIP_GUN_L		#	소형 함포
+        CAT_SHIP_GUN		#	표준 함포
+        CAT_SHIP_CIWS		#	근접 방어 무기 체계
+        CAT_SHIP_RAM		#	단거리 대공방어체계
+        CAT_SHIP_RIM_MR		#	중거리 대공방어체계
+        CAT_SHIP_RIM_ER		#	중장거리 대공방어체계
+        CAT_SHIP_VLS		#	수직발사 시스템
+        CAT_SHIP_CRM	#	순항 미사일
+		
+    CAT_SHIP_TORP			#	어뢰
+        CAT_SUB_TORP_VLS		#	잠수함 어뢰관 발사 순항미사일
+        CAT_SUB_VLS				#	잠수함 수직발사 시스템
+		
+    CAT_NAVAL_MINE			#	기뢰
+        CAT_NAVAL_MINE_SHIP		#	함선 기뢰
+        CAT_NAVAL_MINE_SUB		#	잠수함 기뢰
+        CAT_NAVAL_MINE_AIR		#	공중투하 기뢰
+		
+        CAT_NAVAL_DCL			#	데미지 컨트롤
+####
+    CAT_AIR						#	모든 항공기 연구
+        CAT_AIR_L				#	경 항공기
+        CAT_AIR_M				#	중형 항공기
+        CAT_AIR_H				#	중 항공기
+		
+    CAT_AIR_FTR				#	모든 전투기
+        CAT_AIR_FTR_L		#	경 전투기
+        CAT_AIR_FTR_M			#	표준 전투기
+        CAT_AIR_FTR_M_CV		#	항공모함 표준 전투기
+        CAT_AIR_FTR_ASF			#	공중우세 전투기
+        CAT_AIR_FTR_ASF_CV		#	항공모함 공중우세 전투기
+        CAT_AIR_FTR_STK			#	전폭기
+        CAT_AIR_CAS			#	공격기
+		
+    CAT_UAV					#	모든 무인기 연구
+        CAT_UAV_CAS				#	무인 공격기
+        CAT_UAV_LAND			    #	보병 무인기
+		
+####
+    CAT_BOM						#	모든 폭격기 연구
+        CAT_BOM_JET				#	제트 폭격기
+        CAT_BOM_JET_SPR			#	초음속 폭격기
+        CAT_BOM_STL				#	스텔스 폭격기
+		
+        CAT_TPA					#	수송기
+        CAT_MPA					#	대잠초계기
+        CAT_AEW					#	공중조기경보기
+####
+    CAT_HLC						#	모든 헬기 연구
+        CAT_HLC_RH				#	정찰 헬기
+        CAT_HLC_UH				#	다목적 헬기	(헬리본 수송헬기)
+        CAT_HLC_CH				#	수송 헬기	(치누크급 대형헬기)
+        CAT_HLC_MH				#	의무 헬기
+        CAT_HLC_MPA				#	대잠초계 헬기
+		
+        CAT_HLC_AH				#	공격헬기
+        CAT_HLC_AH_L			#	대형 공격헬기 (아직 미구현)
+####
+    CAT_ENG						#	모든 공학 연구
+        CAT_ENG_RADIO			#	무전기
+        CAT_ENG_RADAR			#	레이더
+        CAT_ENG_FCS			#	사격통제장치
+        CAT_ENG_ACS				#	이지스 전투 시스템
+        CAT_ENG_FCS				#	사격통제장치
+        CAT_ENG_COM				#	컴퓨터 공학
+        CAT_ENG_ECT				#	암호학
+        CAT_ENG_DCT				#	복호학
+        CAT_ENG_NUK				#	핵 물리학
+        CAT_ENG_NUK_E			#	군함 원자로
+        CAT_ENG_RKT				#	로켓엔진 공학
+        CAT_ENG_MSE				#	미사일 공학
+        CAT_ENG_MSE_SLBM		#	SLBM 공학
+        CAT_ENG_MSE_VLS			#	VLS 공학
+        CAT_ENG_JET				#	제트엔진 공학
+        CAT_ENG_BM				#	탄도미사일 공학
+####
+    CAT_IDT						#	모든 산업 연구
+        CAT_IDT_TOOL			#	생산설비
+        CAT_IDT_TOOL_ECV		#	장비변환
+        CAT_IDT_TOOL_FXL		#	유연 조립라인
+        CAT_IDT_TOOL_STL		#	간결 조립라인
+    CAT_IDT_IDP					#	산업단지
+        CAT_IDT_IDP_CCT			#	집중 산업 단지
+        CAT_IDT_IDP_DSP			#	분산 산업 단지
+        CAT_IDT_CTR				#	건설
+        CAT_IDT_CTR_EVT			#	채굴
+    CAT_IDT_OIL					#	모든 석유 연구
+        CAT_IDT_OIL_REF			#	연료 정제
+        CAT_IDT_OIL_SOE			#	합성석유
+        CAT_IDT_OIL_OPC		#	석유 정제
+        CAT_IDT_OIL_RPC			#	고무 정제
+####
+    CAT_DTL_LAND				#	모든 육군교리 연구
+        CAT_DTL_LAND_BASIC		#	육군 기초 군사학
+        CAT_DTL_LAND_MNV		#	기동전
+        CAT_DTL_LAND_SPF	#	화력우세
+        CAT_DTL_LAND_GBP	#	대전략
+        CAT_DTL_LAND_MAT		#	대규모 돌격
+####
+    CAT_DTL_NAVY			#	모든 해군교리 연구
+        CAT_DTL_NAVY_BASIC	#	해군 기초 군사학
+        CAT_DTL_NAVY_FIB		#	현존함대 교리
+        CAT_DTL_NAVY_TDI		#	통상차단 교리
+        CAT_DTL_NAVY_BSK		#	기지타격 교리
+####
+    CAT_DTL_AIR				    #	모든 공군교리 연구
+        CAT_DTL_AIR_BASIC		#	공군 기초 군사학
+        CAT_DTL_AIR_ASP			#	전략적 파괴 교리
+        CAT_DTL_AIR_BFS			#	전장 지원 교리
+        CAT_DTL_AIR_OPD			#	작전상 무결성 교리
+###################################################### CWC 구 연구주제###########################################
 	### 보병 ###
 	infantry_tech
 	motorized_equipment
