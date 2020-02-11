@@ -1,0 +1,191 @@
+﻿l_english:
+#연구주제 목록
+	### 보병연구 텝 ###
+    CAT_infantry:0 "모든 보병 연구" 			# 모든 보병 
+        #CAT_INF_WEP_S:0 "보병 소화기"
+        CAT_INF_WEP:0 "보병 화기"			#	보병 화기
+        CAT_INF_WEP_H:0 "보병 중화기"		#	보병 중화기	(기관총,박격포)
+        CAT_INF_RIS:0 "보병 레일장비" 		#	보병 레일장비
+        CAT_INF_NW_EQP:0 "보병 야간전 장비"		#	보병 야간전 장비
+        CAT_INF_BPV_EQP:0 "보병 방탄복"		#	보병 방탄복
+        CAT_INF_ETC_EQP:0 "보병 기타 장비"		#	보병 기타 장비	(야삽,군장 등등)
+        
+        CAT_INF_SOF:0 "보병 특수부대"			#	보병 특수부대
+        CAT_INF_SOF_EQP:0 "보병 특수부대 장비"		#	보병 특수부대 장비
+		
+        CAT_INF_ABF:0 "보병 공수부대"			#	보병 공수부대
+        CAT_INF_ABF_EQP:0 "보병 공수부대 장비"		#	보병 공수부대 장비
+####
+    CAT_SPT:0 "모든 지원부대 연구"					#	모든 지원부대 연구
+        CAT_SPT_EQP:0 "지원장비"			#	지원장비
+        CAT_SPT_SCT:0 "정찰대"			#	정찰대
+        CAT_SPT_ENG:0 "공병대"			#	공병대
+        CAT_SPT_MP:0 "헌병대"			#	헌병대
+        CAT_SPT_MNT:0 "정비대"			#	정비대
+        CAT_SPT_MED:0 "의무대"			#	의무대
+        CAT_SPT_LOG:0 "보급대"			#	보급대
+        CAT_SPT_SIG:0 "통신대"			#	통신대
+####
+    CAT_VEH:0 "모든 차량 연구"					#	모든 차량 연구
+        CAT_VEH_EQP:0 "차량 장비"			#	차량 장비
+        CAT_VEH_APC:0 "보병 수송장갑차"			#	보병 수송장갑차
+        CAT_VEH_LVT:0 "상륙 장갑차"			#	상륙 장갑차
+        CAT_VEH_IFV:0 "보병 전투차"			#	보병 전투차
+        CAT_VEH_IFV_ABF:0 "공수 장갑차"		#	공수 장갑차
+        CAT_VEH_TANK_L:0 "경 전차"		# 	경 전차
+        CAT_VEH_TANK_L_ABF:0 "공수 전차"	# 	공수 전차
+        CAT_VEH_TANK:0 "MBT 전차"		# 	MBT 전차
+        CAT_VEH_APS:0 "능동방호체계"			# 	능동방호체계
+####
+    CAT_FST:0 "모든 화력지원 연구"					#	모든 화력지원 연구
+        CAT_ART:0 "야포"				#	야포
+        CAT_ART_ETC_EQP:0 "야포 관련 기술"		#	야포 관련 기술
+        CAT_SPG:0 "자주포"				#	자주포
+        CAT_MRL:0 "다연장로켓차량"				#	다연장로켓차량
+        CAT_RKT:0 "로켓"				#	로켓
+        CAT_AT_RKT:0 "대전차 로켓"			#	대전차 로켓
+        CAT_ATGM:0 "대전차 미사일"			#	대전차 미사일
+        CAT_MANPADS:0 "휴대용 대공 미사일"			#	휴대용 대공 미사일
+        CAT_SAM:0 "대공미사일"				#	대공미사일
+        CAT_SPAAG:0 "자주대공포"			#	자주대공포
+####
+    CAT_SHIP:0 "모든 함선 연구"				#	모든 함선 연구
+        CAT_SHIP_SMOKE:0 "함선 연막"			#	함선 연막
+        CAT_SHIP_SONAR:0 "음파탐지기"			#	음파탐지기
+        CAT_SHIP_ASW_EQP:0 "대잠전 장비"		#	대잠전 장비
+        CAT_SHIP_ARMOR:0 "함선 장갑 연구"			#	함선 장갑 연구
+	
+    CAT_SHIP_S:0 "소형 함선 연구"				#	소형 함선 연구
+        CAT_SHIP_FF:0 "호위함 급"			#	호위함 급
+    CAT_SHIP_M:0 "표준 함선 연구"				#	표준 함선 연구
+        CAT_SHIP_DD:0 "구축함 급"			#	구축함 급
+    CAT_SHIP_L:0 "대형 함선 연구"				#	대형 함선 연구
+        CAT_SHIP_CG:0 "순양함 급"			#	순양함 급
+        CAT_SHIP_CC:0 "순양전함 급"			#	순양전함 급
+        CAT_SHIP_BB:0 "전함 급"			#	전함 급
+        CAT_SHIP_CVL:0 "경 항공모함 급"		#	경 항공모함 급
+        CAT_SHIP_CV:0 "항공모함 급"			#	항공모함 급
+        CAT_SHIP_CVN:0 "원자력 항공모함 급"		#	원자력 항공모함 급
+####
+        CAT_MRN:0 "해병"				#	해병
+        CAT_SHIP_TRP:0 "수송선"		#	수송선
+####
+    CAT_SUB:0 "모든 잠수함 연구"					#	모든 잠수함 연구
+        CAT_SUB_SS:0 "잠수함 급"			#	잠수함 급
+        CAT_SUB_SS_L:0 "대형 잠수함 급"		#	대형 잠수함 급
+        CAT_SUB_SSN:0 "공격 원자력 잠수함 급"			#	공격 원자력 잠수함 급
+        CAT_SUB_SSGN:0 "순항 미사일 원자력 잠수함 급"		#	순항 미사일 원자력 잠수함 급
+        CAT_SUB_AIP:0 "공기 불필요 추진 시스템"			#	공기 불필요 추진 시스템
+        CAT_SUB_FUEL:0 "잠수함 추가연료 탱크"		#	추가연료 탱크
+####
+    CAT_SHIP_EQP:0 "모든 함선 장비"			#	모든 함선 장비
+        CAT_SHIP_GUN_L:0 "소형 함포"		#	소형 함포
+        CAT_SHIP_GUN:0 "표준 함포"		#	표준 함포
+        CAT_SHIP_CIWS:0 "근접 방어 무기 체계"		#	근접 방어 무기 체계
+        CAT_SHIP_RAM:0 "단거리 대공방어체계"		#	단거리 대공방어체계
+        CAT_SHIP_RIM_MR:0 "중거리 대공방어체계"		#	중거리 대공방어체계
+        CAT_SHIP_RIM_ER:0 "중장거리 대공방어체계"		#	중장거리 대공방어체계
+        CAT_SHIP_VLS:0 "수직발사 시스템"		#	수직발사 시스템
+        CAT_SHIP_CRM:0 "순항 미사일"		#	순항 미사일
+		
+    CAT_SHIP_TORP:0 "모든 어뢰"			#	어뢰
+        CAT_SUB_TORP_VLS:0 "잠수함 어뢰관 발사 순항미사일"		#	잠수함 어뢰관 발사 순항미사일
+        CAT_SUB_VLS:0 "잠수함 수직발사 시스템"				#	잠수함 수직발사 시스템
+		
+    CAT_NAVAL_MINE:0 "모든 기뢰"			#	기뢰
+        CAT_NAVAL_MINE_SHIP:0 "함선 기뢰"		#	함선 기뢰
+        CAT_NAVAL_MINE_SUB:0 "잠수함 기뢰"		#	잠수함 기뢰
+        CAT_NAVAL_MINE_AIR:0 "공중투하 기뢰"		#	공중투하 기뢰
+		
+        CAT_NAVAL_DCL:0 "비상 대응"			#	데미지 컨트롤
+####
+    CAT_AIR:0 "모든 항공기 연구"						#	모든 항공기 연구
+        CAT_AIR_L:0 "경 항공기"				#	경 항공기
+        CAT_AIR_M:0 "중형 항공기"				#	중형 항공기
+        CAT_AIR_H:0 "중 항공기"				#	중 항공기
+		
+    CAT_AIR_FTR:0 "모든 전투기"				#	모든 전투기
+        CAT_AIR_FTR_L:0 "경 전투기"			#	경 전투기
+        CAT_AIR_FTR_M:0 "표준 전투기"			#	표준 전투기
+        CAT_AIR_FTR_M_CV:0 "항공모함 표준 전투기"		#	항공모함 표준 전투기
+        CAT_AIR_FTR_ASF:0 "공중우세 전투기"			#	공중우세 전투기
+        CAT_AIR_FTR_ASF_CV:0 "항공모함 공중우세 전투기"		#	항공모함 공중우세 전투기
+        CAT_AIR_FTR_STK:0 "전폭기"			#	전폭기
+        CAT_AIR_CAS:0 "공격기"				#	공격기
+		
+    CAT_UAV:0 "모든 무인기 연구"					#	모든 무인기 연구
+        CAT_UAV_CAS:0 "무인 공격기"				#	무인 공격기
+        CAT_UAV_LAND:0 "보병 무인기"			    #	보병 무인기
+		
+####
+    CAT_BOM:0 "모든 폭격기 연구"						#	모든 폭격기 연구
+        CAT_BOM_JET:0 "제트 폭격기"				#	제트 폭격기
+        CAT_BOM_JET_SPR:0 "초음속 폭격기"			#	초음속 폭격기
+        CAT_BOM_STL:0 "스텔스 폭격기"				#	스텔스 폭격기
+		
+        CAT_TPA:0 "수송기"					#	수송기
+        CAT_MPA:0 "대잠초계기"					#	대잠초계기
+        CAT_AEW:0 "공중조기경보기"					#	공중조기경보기
+####
+    CAT_HLC:0 "모든 헬기 연구"						#	모든 헬기 연구
+        CAT_HLC_RH:0 "정찰 헬기"				#	정찰 헬기
+        CAT_HLC_UH:0 "다목적 헬기"				#	다목적 헬기	(헬리본 수송헬기)
+        CAT_HLC_CH:0 "수송 헬기"				#	수송 헬기	(치누크급 대형헬기)
+        CAT_HLC_MH:0 "의무 헬기"				#	의무 헬기
+        CAT_HLC_MPA:0 "대잠초계 헬기"				#	대잠초계 헬기
+		
+        CAT_HLC_AH:0 "공격헬기"				#	공격헬기
+        CAT_HLC_AH_L:0 "대형 공격헬기"			#	대형 공격헬기 (아직 미구현)
+####
+    CAT_ENG:0 "모든 공학 연구"						#	모든 공학 연구
+        CAT_ENG_RADIO:0 "무전기"			#	무전기
+        CAT_ENG_RADAR:0 "레이더"			#	레이더
+        CAT_ENG_FCS:0 "사격통제장치"				#	사격통제장치
+        CAT_ENG_ACS:0 "이지스 전투 시스템"				#	이지스 전투 시스템
+        CAT_ENG_FCS:0 "사격통제장치"				#	사격통제장치
+        CAT_ENG_COM:0 "컴퓨터 공학"				#	컴퓨터 공학
+        CAT_ENG_ECT:0 "암호학"				#	암호학
+        CAT_ENG_DCT:0 "복호학"				#	복호학
+        CAT_ENG_NUK:0 "핵 물리학"				#	핵 물리학
+        CAT_ENG_NUK_E:0 "군함 원자로"			#	군함 원자로
+        CAT_ENG_RKT:0 "로켓엔진 공학"				#	로켓엔진 공학
+        CAT_ENG_MSE:0 "미사일 공학"				#	미사일 공학
+        CAT_ENG_MSE_SLBM:0 "SLBM 공학"		#	SLBM 공학
+        CAT_ENG_MSE_VLS:0 "VLS 공학"			#	VLS 공학
+        CAT_ENG_JET:0 "제트엔진 공학"				#	제트엔진 공학
+        CAT_ENG_BM:0 "탄도미사일 공학"				#	탄도미사일 공학
+####
+    CAT_IDT:0 "모든 산업 연구"						#	모든 산업 연구
+        CAT_IDT_TOOL:0 "생산설비"			#	생산설비
+        CAT_IDT_TOOL_ECV:0 "장비변환"		#	장비변환
+        CAT_IDT_TOOL_FXL:0 "유연 조립라인"		#	유연 조립라인
+        CAT_IDT_TOOL_STL:0 "간결 조립라인"		#	간결 조립라인
+    CAT_IDT_IDP:0 "산업단지"					#	산업단지
+        CAT_IDT_IDP_CCT:0 "집중 산업 단지"			#	집중 산업 단지
+        CAT_IDT_IDP_DSP:0 "분산 산업 단지"			#	분산 산업 단지
+        CAT_IDT_CTR:0 "건설"				#	건설
+        CAT_IDT_CTR_EVT:0 "채굴"			#	채굴
+    CAT_IDT_OIL:0 "모든 석유 연구"					#	모든 석유 연구
+        CAT_IDT_OIL_REF:0 "연료 정제"			#	연료 정제
+        CAT_IDT_OIL_SOE:0 "합성석유"			#	합성석유
+        CAT_IDT_OIL_OPC:0 "석유 정제"			#	석유 정제
+        CAT_IDT_OIL_RPC:0 "고무 정제"			#	고무 정제
+####
+    CAT_DTL_LAND:0 "모든 육군교리 연구"				#	모든 육군교리 연구
+        CAT_DTL_LAND_BASIC:0 "육군 기초 군사학"		#	육군 기초 군사학
+        CAT_DTL_LAND_MNV:0 "기동전 교리"		#	기동전
+        CAT_DTL_LAND_SPF:0 "화력우세 교리"	#	화력우세
+        CAT_DTL_LAND_GBP:0 "대전략 교리"		#	대전략
+        CAT_DTL_LAND_MAT:0 "대규모 돌격"		#	대규모 돌격
+####
+    CAT_DTL_NAVY:0 "모든 해군교리 연구"			#	모든 해군교리 연구
+        CAT_DTL_NAVY_BASIC:0 "해군 기초 군사학"	#	해군 기초 군사학
+        CAT_DTL_NAVY_FIB:0 "현존함대 교리"		#	현존함대 교리
+        CAT_DTL_NAVY_TDI:0 "통상차단 교리"		#	통상차단 교리
+        CAT_DTL_NAVY_BSK:0 "기지타격 교리"		#	기지타격 교리
+####
+    CAT_DTL_AIR:0 "모든 공군교리 연구"				    #	모든 공군교리 연구
+        CAT_DTL_AIR_BASIC:0 "공군 기초 군사학"		#	공군 기초 군사학
+        CAT_DTL_AIR_ASP:0 "전략적 파괴 교리"			#	전략적 파괴 교리
+        CAT_DTL_AIR_BFS:0 "전장 지원 교리"			#	전장 지원 교리
+        CAT_DTL_AIR_OPD:0 "작전상 무결성 교리"			#	작전상 무결성 교리
