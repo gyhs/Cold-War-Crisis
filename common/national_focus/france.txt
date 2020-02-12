@@ -678,7 +678,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = period_of_intensive_development
-				days = 200
+				days = 180
 				#개발집중기간
 			}
 		}
@@ -698,9 +698,19 @@ focus_tree = {
 			add_tech_bonus = {
                 bonus = 1.0
                 uses = 1
-                category = armor
+                category = CAT_VEH_TANK
             }
-			#기갑 1번 100%
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_VEH_APS
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_VEH_TANK_L
+			}
+			#MBT 1번 100%, APS 1번 100%, 경전차 1번 100%
 		}
 		x = 32
 		y = 4
@@ -717,10 +727,15 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
                 bonus = 1.0
-                uses = 2
-                category = infantry_weapons
+                uses = 1
+                category = CAT_INF_WEP
             }
-			#보병 무기 2번 100%
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_INF_RIS
+			}
+			#보병 화기 1번 100%, 보병 레일 장비 2번 100%
 		}
 		x = 34
 		y = 4
@@ -737,10 +752,20 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
                 bonus = 1.0
-                uses = 3
-                category = infantry_tech
+                uses = 1
+                category = CAT_INF_ETC_EQP
             }
-			#보조 장비(보병 기술) 3번 100%
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_INF_BPV_EQP
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_INF_WEP_H
+			}
+			#보조 기타 장비 1번 100%, 방탄복 1번 100%, 중화기 1번 100%
 		}
 		x = 36
 		y = 4
@@ -760,10 +785,20 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
                 bonus = 1.0
-                uses = 2
-                category = motorized_equipment
+                uses = 1
+                category = CAT_VEH_IFV
             }
-			#차량화 장비 2번 100%
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category =CAT_VEH_APC
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses =1
+				category = CAT_VEH_EQP
+			}
+			#IFV 1번 100%, APC 1번 100%,차량 장비 1번 100%
 		}
 		x = 35
 		y = 5
@@ -777,7 +812,7 @@ focus_tree = {
 			focus = NF_FRA_adt
 		}
 		completion_reward = {
-			add_ideas = com_ft
+			add_ideas = fn_com_ft
 		}
 		#지상군 총 사령부
 		x = 45
@@ -831,6 +866,19 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_command_reform
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_INF_SOF_EQP
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_INF_NW_EQP
+			}
+			# 보병 특수부대 장비 2번 100%, 야간전 장비 1번 100%
+		}
 		x = 41
 		y = 4
 
@@ -859,6 +907,19 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_RFA_cos
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_INF_ABF_EQP
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_HLC_AH
+			}
+		}
+		# 보병 공수부대 장비 2번 100% , 공격헬기 1번 100% 
 		x = 42
 		y = 5
 
@@ -899,6 +960,14 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_command_reform
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_LAND_BASIC
+			}
+			# 육군 기초 군사학 2번 100%
+		}
 		x = 45
 		y = 4
 
@@ -911,6 +980,12 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_dombat_doctrine
 		}
+		add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_LAND_BASIC
+			}
+			# 육군 기초 군사학 2번 100%
 		x = 45
 		y = 5
 
