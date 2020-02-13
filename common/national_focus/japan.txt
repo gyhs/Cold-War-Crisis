@@ -9,737 +9,403 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = NF_JAP_1990election
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 12
-		y = 11
-
-	}
-	focus = {
-		id = NF_JAP_regime_transition
-		icon = GFX_goal_generic_major_war
-		cost = 0.00
-		x = 27
-		y = 11
-
-	}
-	focus = {
-		id = NF_JAP_1990diplo_start
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10.00
-		x = 18
-		y = 4
-
-	}
-	focus = {
-		id = NF_JAP_bubbleproblem
-		icon = GFX_focus_rom_parties_end
-		cost = 10.00
-		x = 13
-		y = 0
-
-	}
-	focus = {
-		id = NF_JAP_millitary
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 38
-		y = 0
-
-	}
-	focus = {
-		id = NF_JAP_join_nato
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 18
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_join_warsawpact
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 11
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_make_own_commies
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 7
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_own_democratic
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 14
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_econo_solution
-		icon = GFX_goal_continuous_non_factory_construct
-		cost = 2.50
-		prerequisite = {
-			focus = NF_JAP_bubbleproblem
-		}
-		x = 6
-		y = 1
-
-	}
-	focus = {
-		id = NF_JAP_interestrate_up
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_econo_solution
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_interestrate_keep
-		}
-		x = 4
-		y = 2
-
-	}
-	focus = {
-		id = NF_JAP_house_restrict
-		icon = GFX_focus_usa_guarantee_the_american_dream
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_interestrate_up
-		}
-		x = 0
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_loan_restriction
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_interestrate_up
-		}
-		x = 2
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_interestrate_keep
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_econo_solution
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_interestrate_up
-		}
-		x = 8
-		y = 2
-
-	}
-	focus = {
-		id = NF_JAP_reserve_up
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_interestrate_up
-			focus = NF_JAP_interestrate_keep
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_reserve_keep
-		}
-		x = 4
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_reserve_keep
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_interestrate_keep
-			focus = NF_JAP_interestrate_up
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_reserve_up
-		}
-		x = 8
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_stock_restrict
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_reserve_keep
-			focus = NF_JAP_reserve_up
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_stock_keep
-		}
-		x = 4
-		y = 4
-
-	}
-	focus = {
-		id = NF_JAP_election_frp
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = NF_JAP_1990election
-		}
-		x = 4
-		y = 12
-
-	}
-	focus = {
-		id = NF_JAP_stock_keep
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_reserve_up
-			focus = NF_JAP_reserve_keep
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_stock_restrict
-		}
-		x = 8
-		y = 4
-
-	}
-	focus = {
-		id = NF_JAP_election_ldp
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = NF_JAP_1990election
-		}
-		x = 8
-		y = 12
-
-	}
-	focus = {
-		id = NF_JAP_infocensoring
-		icon = GFX_goal_continuous_suppression
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_interestrate_keep
-		}
-		x = 10
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_more_buildings
-		icon = GFX_focus_generic_industry_3
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_interestrate_keep
-		}
-		x = 12
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_with_usa
-		icon = GFX_focus_chi_mission_to_the_us
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_1990diplo_start
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_with_ussr
-			focus = NF_JAP_own_power
-		}
-		x = 16
-		y = 5
-
-	}
-	focus = {
-		id = NF_JAP_alone_frined_usa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_with_usa
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_along_usa
-		}
-		x = 14
-		y = 6
-
-	}
-	focus = {
-		id = NF_JAP_election_sp
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = NF_JAP_1990election
-		}
-		x = 16
-		y = 12
-
-	}
-	focus = {
-		id = NF_JAP_along_usa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_with_usa
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_alone_frined_usa
-		}
-		x = 18
-		y = 6
-
-	}
-	focus = {
-		id = NF_JAP_diplo_solution
-		icon = GFX_goal_tripartite_pact
-		cost = 2.50
-		prerequisite = {
-			focus = NF_JAP_bubbleproblem
-		}
-		x = 19
-		y = 1
-
-	}
-	focus = {
-		id = NF_JAP_bond_gold
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_diplo_solution
-		}
-		x = 19
-		y = 2
-
-	}
-	focus = {
-		id = NF_JAP_bond_ussr
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_bond_gold
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_bond_china
-			focus = NF_JAP_bond_usa
-			focus = NF_JAP_bond_uk
-			focus = NF_JAP_bond_uk
-			focus = NF_JAP_bond_france
-		}
-		x = 15
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_with_ussr
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_1990diplo_start
-		}
-		prerequisite = {
-			focus = NF_JAP_bond_ussr
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_with_usa
-			focus = NF_JAP_own_power
-		}
-		x = 9
-		y = 5
-
-	}
-	focus = {
-		id = NF_JAP_alone_friend_ussr
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_with_ussr
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_along_ussr
-		}
-		x = 7
-		y = 6
-
-	}
-	focus = {
-		id = NF_JAP_along_ussr
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_with_ussr
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_alone_friend_ussr
-		}
-		x = 11
-		y = 6
-
-	}
-	focus = {
-		id = NF_JAP_bond_china
-		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_bond_gold
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_bond_usa
-			focus = NF_JAP_bond_ussr
-			focus = NF_JAP_bond_uk
-			focus = NF_JAP_bond_uk
-			focus = NF_JAP_bond_france
-		}
-		x = 17
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_bond_france
-		icon = GFX_focus_chi_reach_out_to_france
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_bond_gold
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_bond_ussr
-			focus = NF_JAP_bond_china
-			focus = NF_JAP_bond_usa
-			focus = NF_JAP_bond_uk
-		}
-		x = 19
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_election_cp
-		icon = GFX_goal_support_communism
-		cost = 0.00
-		prerequisite = {
-			focus = NF_JAP_1990election
-		}
-		x = 20
-		y = 12
-
-	}
-	focus = {
-		id = NF_JAP_bond_uk
-		icon = GFX_focus_chi_british_cooperation
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_bond_gold
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_bond_usa
-			focus = NF_JAP_bond_china
-			focus = NF_JAP_bond_ussr
-			focus = NF_JAP_bond_ussr
-			focus = NF_JAP_bond_china
-			focus = NF_JAP_bond_usa
-			focus = NF_JAP_bond_france
-			focus = NF_JAP_bond_usa
-		}
-		x = 21
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_own_power
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_1990diplo_start
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_with_usa
-			focus = NF_JAP_with_ussr
-		}
-		x = 24
-		y = 5
-
-	}
-	focus = {
-		id = NF_JAP_defense_focus
-		icon = GFX_goal_generic_defence
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_own_power
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_2nd_Asiapublic
-		}
-		x = 22
-		y = 6
-
-	}
-	focus = {
-		id = NF_JAP_defense_up
-		icon = GFX_goal_generic_build_tank
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_defense_focus
-		}
-		x = 21
-		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_defense_ally
-		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_defense_focus
-		}
-		x = 23
-		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_defend_pact_invite_china
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_defense_ally
-		}
-		x = 22
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_defend_pact_invite_korea
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_defense_ally
-		}
-		x = 22
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_bond_usa
-		icon = GFX_focus_chi_mission_to_the_us
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_bond_gold
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_bond_china
-			focus = NF_JAP_bond_ussr
-			focus = NF_JAP_bond_uk
-			focus = NF_JAP_bond_uk
-			focus = NF_JAP_bond_france
-			focus = NF_JAP_bond_uk
-		}
-		x = 23
-		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_commies
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_regime_transition
-		}
-		x = 23
-		y = 12
-
-	}
-	focus = {
-		id = NF_JAP_defend_pact_invite_india
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_defense_ally
-		}
-		x = 24
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_defend_pact_invite_austraila
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_defense_ally
-		}
-		x = 24
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_persuade_usa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_millitary
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_ignore_usa
-		}
-		x = 27
-		y = 1
-
-	}
-	focus = {
-		id = NF_JAP_ignore_usa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_millitary
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_persuade_usa
-		}
-		x = 29
-		y = 1
-
-	}
-	focus = {
 		id = NF_JAP_remillitary
-		icon = GFX_goal_rhineland
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		x = 46
+		y = 1
+
+	}
+	focus = {
+		id = NF_JAP_infrastructure
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = NF_JAP_defended_democracy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = NF_JAP_fascism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = NF_JAP_dictate_proletariat
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = NF_JAP_mil_factory
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_JAP_persuade_usa
-			focus = NF_JAP_ignore_usa
+			focus = NF_JAP_infrastructure
 		}
-		x = 28
+		x = 3
 		y = 2
 
 	}
 	focus = {
-		id = NF_JAP_diplo_millitary
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		id = NF_JAP_mil_factory2
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_JAP_diplo_solution
+			focus = NF_JAP_mil_factory
 		}
-		prerequisite = {
-			focus = NF_JAP_remillitary
-		}
-		x = 25
+		x = 3
 		y = 3
 
 	}
 	focus = {
-		id = NF_JAP_2nd_Asiapublic
-		icon = GFX_focus_AST_war_japan
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_remillitary
-		}
-		prerequisite = {
-			focus = NF_JAP_own_power
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_defense_focus
-		}
-		x = 28
-		y = 6
-
-	}
-	focus = {
-		id = NF_JAP_dokdo_problem
+		id = NF_JAP_liberation_force
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_JAP_2nd_Asiapublic
+			focus = NF_JAP_dictate_proletariat
 		}
-		x = 27
-		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_senkaku_problem
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_2nd_Asiapublic
-		}
-		x = 29
-		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_war_with_china
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_senkaku_problem
-		}
-		x = 29
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_war_with_korea
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_dokdo_problem
-		}
-		x = 27
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_revenge_ww2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_war_with_china
-		}
-		prerequisite = {
-			focus = NF_JAP_war_with_korea
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_kuril_problem
-		}
-		x = 29
+		x = 3
 		y = 9
 
 	}
 	focus = {
-		id = NF_JAP_war_with_usa
+		id = NF_JAP_tie_with_ussr
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_JAP_revenge_ww2
+			focus = NF_JAP_liberation_force
 		}
-		x = 29
+		mutually_exclusive = {
+			focus = NF_JAP_spreading_revolution
+		}
+		x = 3
 		y = 10
 
 	}
 	focus = {
-		id = NF_JAP_facist
+		id = NF_JAP_attack_hawaii_again
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_JAP_regime_transition
+			focus = NF_JAP_tie_with_ussr
 		}
-		x = 31
+		mutually_exclusive = {
+			focus = NF_JAP_USSR_expert_share
+		}
+		x = 1
+		y = 11
+
+	}
+	focus = {
+		id = NF_JAP_USSR_expert_share
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_tie_with_ussr
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_attack_hawaii_again
+		}
+		x = 3
+		y = 11
+
+	}
+	focus = {
+		id = NF_JAP_ally_USSR
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_USSR_expert_share
+		}
+		x = 3
 		y = 12
 
 	}
 	focus = {
-		id = NF_JAP_milli_statusquo
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		id = NF_JAP_civil_factory1
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_JAP_millitary
+			focus = NF_JAP_infrastructure
 		}
-		x = 50
-		y = 1
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = NF_JAP_civil_factory2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_civil_factory1
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = NF_JAP_which_factory_focus
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_civil_factory2
+			focus = NF_JAP_mil_factory2
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = NF_JAP_spreading_revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_liberation_force
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_tie_with_ussr
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_liberate_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_spreading_revolution
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = {
+		id = NF_JAP_liberate_china
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_liberate_korea
+		}
+		x = 5
+		y = 12
+
+	}
+	focus = {
+		id = NF_JAP_eastasia_comm_tie
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_liberate_china
+		}
+		x = 5
+		y = 13
+
+	}
+	focus = {
+		id = NF_JAP_new_ports
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_infrastructure
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = NF_JAP_new_airport
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_new_ports
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = NF_JAP_purge_inner_capitalist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_dictate_proletariat
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = NF_JAP_sharing_immovables
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_purge_inner_capitalist
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_railway_privatization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_infrastructure
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = NF_JAP_edit_rail
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_railway_privatization
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = NF_JAP_forced_labor_group
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_purge_inner_capitalist
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_add_rails_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_railway_privatization
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = NF_JAP_great_purge_com
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_purge_inner_capitalist
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_social_democracy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_defended_democracy
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_market_liberalism
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = NF_JAP_hail_denno
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_fascism
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_one_citizens
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = NF_JAP_one_citizens
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_fascism
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_hail_denno
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = NF_JAP_purge_democracist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_hail_denno
+			focus = NF_JAP_one_citizens
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_purge_commies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_hail_denno
+			focus = NF_JAP_one_citizens
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_great_purge_fa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_purge_democracist
+		}
+		prerequisite = {
+			focus = NF_JAP_purge_commies
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = {
+		id = NF_JAP_market_liberalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_defended_democracy
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_social_democracy
+		}
+		x = 27
+		y = 2
 
 	}
 	focus = {
@@ -747,7 +413,6 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10.00
 		prerequisite = {
-			focus = NF_JAP_milli_statusquo
 			focus = NF_JAP_remillitary
 		}
 		x = 46
@@ -794,6 +459,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NF_JAP_guns
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_own_land_army
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_tanks
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
 		id = NF_JAP_tanks
 		icon = GFX_goal_generic_army_tanks
 		cost = 10.00
@@ -805,6 +484,62 @@ focus_tree = {
 		}
 		x = 34
 		y = 7
+
+	}
+	focus = {
+		id = NF_JAP_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_guns
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_expand_land_school
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_own_land_army
+		}
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = NF_JAP_land_more_strategier
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_expand_land_school
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = NF_JAP_land_more_generals
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_land_more_strategier
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = NF_JAP_japan_army
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_land_more_generals
+			focus = NF_JAP_entrust_korea
+		}
+		x = 38
+		y = 11
 
 	}
 	focus = {
@@ -830,6 +565,45 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NF_JAP_carrier_aircrafts
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_aircraft_carrier
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = NF_JAP_carrier_aircraft_light
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_carrier_aircrafts
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_carrier_aircraft_heavy
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = NF_JAP_carrier_aircraft_heavy
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_carrier_aircrafts
+		}
+		mutually_exclusive = {
+			focus = NF_JAP_carrier_aircraft_light
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
 		id = NF_JAP_submarine
 		icon = GFX_goal_generic_navy_submarine
 		cost = 10.00
@@ -838,6 +612,39 @@ focus_tree = {
 		}
 		x = 44
 		y = 6
+
+	}
+	focus = {
+		id = NF_JAP_submarine_engine_and_tile
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_submarine
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = NF_JAP_submarine_attack
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_submarine_engine_and_tile
+		}
+		x = 44
+		y = 8
+
+	}
+	focus = {
+		id = NF_JAP_submarine_attack_2
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_submarine_attack
+		}
+		x = 44
+		y = 9
 
 	}
 	focus = {
@@ -1211,6 +1018,45 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NF_JAP_strategy_weapon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_japan_army
+		}
+		prerequisite = {
+			focus = NF_JAP_japan_navy
+		}
+		prerequisite = {
+			focus = NF_JAP_japan_air
+		}
+		x = 46
+		y = 12
+
+	}
+	focus = {
+		id = NF_JAP_nuke
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_strategy_weapon
+		}
+		x = 45
+		y = 13
+
+	}
+	focus = {
+		id = NF_JAP_japan_icbm
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_strategy_weapon
+		}
+		x = 48
+		y = 13
+
+	}
+	focus = {
 		id = NF_JAP_strategic_bomber
 		icon = GFX_goal_generic_occupy_start_war
 		cost = 10.00
@@ -1230,29 +1076,6 @@ focus_tree = {
 		}
 		x = 70
 		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_cheap_house
-		icon = GFX_goal_generic_construction
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_house_restrict
-		}
-		x = 0
-		y = 4
-
-	}
-	focus = {
-		id = NF_JAP_recover_from_divison
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_commies
-			focus = NF_JAP_facist
-		}
-		x = 27
-		y = 13
 
 	}
 	focus = {
@@ -1278,154 +1101,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_JAP_carrier_aircrafts
-		icon = GFX_goal_generic_air_fighter2
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_aircraft_carrier
-		}
-		x = 41
-		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_expand_land_school
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_own_land_army
-		}
-		x = 38
-		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_strategy_weapon
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_japan_army
-		}
-		prerequisite = {
-			focus = NF_JAP_japan_navy
-		}
-		prerequisite = {
-			focus = NF_JAP_japan_air
-		}
-		x = 46
-		y = 12
-
-	}
-	focus = {
-		id = NF_JAP_japan_army
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_land_more_generals
-			focus = NF_JAP_entrust_korea
-		}
-		x = 38
-		y = 11
-
-	}
-	focus = {
-		id = NF_JAP_japan_icbm
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_strategy_weapon
-		}
-		x = 48
-		y = 13
-
-	}
-	focus = {
-		id = NF_JAP_carrier_aircraft_light
-		icon = GFX_goal_generic_air_fighter
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_carrier_aircrafts
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_carrier_aircraft_heavy
-		}
-		x = 40
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_carrier_aircraft_heavy
-		icon = GFX_goal_generic_air_bomber
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_carrier_aircrafts
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_carrier_aircraft_light
-		}
-		x = 42
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_submarine_attack
-		icon = GFX_goal_generic_navy_anti_submarine
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_submarine_engine_and_tile
-		}
-		x = 44
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_submarine_engine_and_tile
-		icon = GFX_goal_generic_navy_submarine
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_submarine
-		}
-		x = 44
-		y = 7
-
-	}
-	focus = {
-		id = NF_JAP_land_more_strategier
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_expand_land_school
-		}
-		x = 38
-		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_land_more_generals
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_land_more_strategier
-		}
-		x = 38
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_guns
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_own_land_army
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_tanks
-		}
-		x = 36
-		y = 7
-
-	}
-	focus = {
 		id = NF_JAP_man_supports
 		icon = GFX_goal_generic_army_artillery
 		cost = 10.00
@@ -1433,17 +1108,6 @@ focus_tree = {
 			focus = NF_JAP_man_equips
 		}
 		x = 34
-		y = 10
-
-	}
-	focus = {
-		id = NF_JAP_artillery
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_guns
-		}
-		x = 36
 		y = 10
 
 	}
@@ -1470,17 +1134,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_JAP_nuke
-		icon = GFX_focus_wonderweapons
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_strategy_weapon
-		}
-		x = 45
-		y = 13
-
-	}
-	focus = {
 		id = NF_JAP_nuke_icbm
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -1492,17 +1145,6 @@ focus_tree = {
 		}
 		x = 48
 		y = 14
-
-	}
-	focus = {
-		id = NF_JAP_submarine_attack_2
-		icon = GFX_goal_generic_wolf_pack
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_submarine_attack
-		}
-		x = 44
-		y = 9
 
 	}
 	focus = {
@@ -1528,34 +1170,6 @@ focus_tree = {
 		}
 		x = 45
 		y = 15
-
-	}
-	focus = {
-		id = NF_JAP_kuril_problem
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_war_with_korea
-		}
-		prerequisite = {
-			focus = NF_JAP_war_with_china
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_revenge_ww2
-		}
-		x = 27
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_war_with_ussr
-		icon = GFX_focus_attack_soviet
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_kuril_problem
-		}
-		x = 27
-		y = 10
 
 	}
 	focus = {
