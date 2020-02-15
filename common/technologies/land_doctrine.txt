@@ -28,6 +28,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -67,6 +68,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -106,6 +108,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -144,6 +147,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -177,6 +181,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -211,6 +216,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -247,6 +253,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -281,6 +288,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -319,6 +327,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -357,6 +366,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -395,6 +405,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -433,6 +444,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -471,6 +483,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -509,6 +522,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -547,6 +561,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -587,6 +602,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -635,6 +651,7 @@ technologies = {
 		}
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -677,6 +694,7 @@ technologies = {
 		research_cost = 4.5
 
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -734,6 +752,7 @@ technologies = {
 		research_cost = 4.5
 
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}	
@@ -803,6 +822,7 @@ technologies = {
 		research_cost = 4.5
 
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -862,6 +882,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -929,6 +950,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -990,6 +1012,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1049,6 +1072,7 @@ technologies = {
 		research_cost = 4.5
 
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1118,6 +1142,7 @@ technologies = {
 		research_cost = 4.5
 
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1179,6 +1204,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1238,6 +1264,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1288,6 +1315,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1332,6 +1360,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1386,6 +1415,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1439,6 +1469,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1480,6 +1511,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1533,6 +1565,7 @@ technologies = {
 		research_cost = 2.25
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1577,6 +1610,7 @@ technologies = {
 		research_cost = 4.5
 
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1626,6 +1660,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1675,6 +1710,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1728,6 +1764,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1783,6 +1820,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1836,6 +1874,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1895,6 +1934,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1950,6 +1990,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2005,6 +2046,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2056,6 +2098,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2104,6 +2147,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2161,6 +2205,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2214,6 +2259,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2275,6 +2321,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2326,6 +2373,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2384,6 +2432,7 @@ technologies = {
 		research_cost = 2.25
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2427,6 +2476,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2478,6 +2528,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2528,6 +2579,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2593,6 +2645,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2645,6 +2698,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2700,6 +2754,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2754,6 +2809,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2805,6 +2861,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2855,6 +2912,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2912,6 +2970,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2970,6 +3029,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3020,6 +3080,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3073,6 +3134,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3126,6 +3188,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3174,6 +3237,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3229,6 +3293,7 @@ technologies = {
 		research_cost = 2.25
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3272,6 +3337,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3321,6 +3387,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3369,6 +3436,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3439,6 +3507,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3490,6 +3559,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3545,6 +3615,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3602,6 +3673,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3668,6 +3740,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3715,6 +3788,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3775,6 +3849,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3840,6 +3915,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3886,6 +3962,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3932,6 +4009,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3975,6 +4053,7 @@ technologies = {
 		research_cost = 4.5
 		
 		categories = {
+			CAT_DTL_LAND
 			land_doctrine
 			cat_mass_assault
 		}
