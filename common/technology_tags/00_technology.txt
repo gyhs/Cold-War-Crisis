@@ -177,7 +177,7 @@ technology_categories = {
 ####
     CAT_DTL_LAND				#	모든 육군교리 연구
         CAT_DTL_LAND_BASIC		#	육군 기초 군사학
-        CAT_DTL_LAND_MNV		#	기동전
+        CAT_DTL_LAND_MBW		#	기동전
         CAT_DTL_LAND_SPF	#	화력우세
         CAT_DTL_LAND_GBP	#	대전략
         CAT_DTL_LAND_MAT		#	대규모 돌격

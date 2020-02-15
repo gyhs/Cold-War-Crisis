@@ -173,7 +173,7 @@
 ####
     CAT_DTL_LAND:0 "모든 육군교리 연구"				#	모든 육군교리 연구
         CAT_DTL_LAND_BASIC:0 "육군 기초 군사학"		#	육군 기초 군사학
-        CAT_DTL_LAND_MNV:0 "기동전 교리"		#	기동전
+        CAT_DTL_LAND_MBW:0 "기동전 교리"		#	기동전
         CAT_DTL_LAND_SPF:0 "화력우세 교리"	#	화력우세
         CAT_DTL_LAND_GBP:0 "대전략 교리"		#	대전략
         CAT_DTL_LAND_MAT:0 "대규모 돌격"		#	대규모 돌격
