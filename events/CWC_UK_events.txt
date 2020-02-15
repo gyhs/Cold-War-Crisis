@@ -25,9 +25,7 @@ country_event = {
             country_event = { #폭설 이벤트
                 id = NE_ENG.3
                 days = 14
-            }
-        }
-		hidden_effect = {
+			}
             country_event = { #총선거
                 id = NE_ENG.2
                 days = 156
@@ -396,19 +394,21 @@ country_event = { #5/11 총선 전의 설문조사
 	
 	option = { #마가렛 대처?
 		name = NE_ENG.17.a
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 9 }
 		hidden_effect = {
 			country_event = {
 			days = 30
+			id = ENG.18
 			}
 		}
 	}
 	option = { #마이클 풋?
 		name = NE_ENG.17.b
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 2 }
 		hidden_effect = {
 			country_event = {
 			days = 30
+			id = ENG.18
 			}
 		}
 	}
@@ -418,6 +418,7 @@ country_event = { #5/11 총선 전의 설문조사
 		hidden_effect = {
 			country_event = {
 			days = 30
+			id = ENG.18
 			}
 		}
 	}
@@ -427,7 +428,377 @@ country_event = { #5/11 총선 전의 설문조사
 		hidden_effect = {
 			country_event = {
 			days = 30
+			id = ENG.18
 			}
 		}
+	}
+}
+
+country_event = { #실업률이 줄어들다!6/11
+	id = ENG.18
+	immediate = {
+	log = "[GetDateText]: [Root.GetName]: event ENG.18"
+	}
+	immediate = {
+		hidden_effect = {
+			id = ENG.19
+			days = 60
+		}
+	}
+	title = ENG.18.t
+	desc = ENG.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.18.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.07
+	}
+}
+
+country_event = { #8/10 하루에 한명이 에이즈로 사망함
+	id = ENG.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.19"}
+	immediate = {
+	immediate = {
+		hidden_effect = {
+			id = ENG.20
+			days = 9
+		}
+	}
+	title = ENG.19.t
+	desc = ENG.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.19.a
+		ai_chance = { factor = 1 }
+		add_manpower = -1
+		add_political_power = -50
+	}
+}
+
+country_event = { #헝거포드 대학살8/19
+	id = ENG.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.20"}
+	immediate = {
+		hidden_effect = {
+			id = ENG.21
+			days = 33
+		}
+	}
+	title = ENG.20.t
+	desc = ENG.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #왜 그런거지?
+		name = ENG.20.a
+		ai_chance = { factor = 1 }
+		add_manpower = -16
+		add_stability = -0.07
+	}
+}
+
+country_event = { #9/22헝거포드에서 사용된 무기 금지
+	id = ENG.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.21"}
+		immediate = {
+		hidden_effect = {
+			id = ENG.22
+			days = 23
+		}
+	}
+	title = ENG.21.t
+	desc = ENG.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.21.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #10/15
+	id = ENG.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.22"}
+	title = ENG.22.t
+	desc = ENG.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.22.a
+		ai_chance = { factor = 1 }
+		add_manpower = -23
+	}
+}
+
+country_event = { #
+	id = ENG.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.23"}
+	title = ENG.23.t
+	desc = ENG.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.23.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.24"}
+	title = ENG.24.t
+	desc = ENG.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.24.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.25"}
+	title = ENG.25.t
+	desc = ENG.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.25.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.26"}
+	title = ENG.26.t
+	desc = ENG.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.27"}
+	title = ENG.27.t
+	desc = ENG.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.28"}
+	title = ENG.28.t
+	desc = ENG.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.29"}
+	title = ENG.29.t
+	desc = ENG.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.30"}
+	title = ENG.30.t
+	desc = ENG.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.30.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.31"}
+	title = ENG.31.t
+	desc = ENG.31.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.31.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.32"}
+	title = ENG.32.t
+	desc = ENG.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.32.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.33"}
+	title = ENG.33.t
+	desc = ENG.33.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.33.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.34"}
+	title = ENG.34.t
+	desc = ENG.34.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.34.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.35"}
+	title = ENG.35.t
+	desc = ENG.35.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.35.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.36"}
+	title = ENG.36.t
+	desc = ENG.36.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.36.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = ENG.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.37"}
+	title = ENG.37.t
+	desc = ENG.37.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = ENG.37.a
+		ai_chance = { factor = 1 }
+		
 	}
 }
