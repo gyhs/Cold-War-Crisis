@@ -1598,6 +1598,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1643,6 +1644,7 @@ technologies = {
 
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1693,6 +1695,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1743,6 +1746,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1797,6 +1801,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1853,6 +1858,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1907,6 +1913,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -1967,6 +1974,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2023,6 +2031,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2079,6 +2088,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2131,6 +2141,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2180,6 +2191,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2238,6 +2250,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2292,6 +2305,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2354,6 +2368,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2406,6 +2421,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_SPF
 			land_doctrine
 			cat_superior_firepower
 		}
@@ -2465,6 +2481,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2509,6 +2526,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2561,6 +2579,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2612,6 +2631,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2678,6 +2698,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2731,6 +2752,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2787,6 +2809,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2842,6 +2865,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2894,6 +2918,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -2945,6 +2970,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3003,6 +3029,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3062,6 +3089,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3113,6 +3141,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3167,6 +3196,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3221,6 +3251,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3270,6 +3301,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_GBP
 			land_doctrine
 			cat_grand_battle_plan
 		}
@@ -3326,6 +3358,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3370,6 +3403,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3420,6 +3454,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3469,6 +3504,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3540,6 +3576,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3592,6 +3629,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3648,6 +3686,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3706,6 +3745,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3773,6 +3813,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3821,6 +3862,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3882,6 +3924,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3948,6 +3991,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -3995,6 +4039,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -4042,6 +4087,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
@@ -4086,6 +4132,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MAT
 			land_doctrine
 			cat_mass_assault
 		}
