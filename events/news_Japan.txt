@@ -41,8 +41,6 @@ news_event = { #버블 붕괴
 
     major = yes
 
-    mean_time_to_happen = 30
-
     is_triggered_only = yes
     fire_only_once = yes
 
@@ -53,8 +51,6 @@ news_event = { #버블 붕괴
 		}
         
         add_ideas = NS_JAP_bubble_collapse_5
-
-        ai_chance = {factor = 1}
     }
     option = {  #아닐때
         name = news_JAP.bubble_collapse.notjapan
@@ -63,6 +59,5 @@ news_event = { #버블 붕괴
 				tag = JAP
 			}
 		}
-        ai_chance = {factor = 1}
     }
 }
