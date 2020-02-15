@@ -29,6 +29,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -69,6 +70,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -109,6 +111,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -148,6 +151,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -182,6 +186,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -217,6 +222,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -254,6 +260,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -289,6 +296,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -328,6 +336,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -367,6 +376,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -406,6 +416,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -445,6 +456,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -484,6 +496,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -523,6 +536,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -562,6 +576,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -603,6 +618,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_BASIC
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -652,6 +668,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -695,6 +712,7 @@ technologies = {
 
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -753,6 +771,7 @@ technologies = {
 
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}	
@@ -823,6 +842,7 @@ technologies = {
 
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -883,6 +903,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -951,6 +972,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1013,6 +1035,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1073,6 +1096,7 @@ technologies = {
 
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1143,6 +1167,7 @@ technologies = {
 
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1205,6 +1230,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1265,6 +1291,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1316,6 +1343,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1361,6 +1389,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1416,6 +1445,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1470,6 +1500,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
@@ -1512,6 +1543,7 @@ technologies = {
 		
 		categories = {
 			CAT_DTL_LAND
+			CAT_DTL_LAND_MBW
 			land_doctrine
 			cat_mobile_warfare
 		}
