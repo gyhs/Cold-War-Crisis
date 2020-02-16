@@ -441,8 +441,10 @@ country_event = { #실업률이 줄어들다!6/11
 	}
 	immediate = {
 		hidden_effect = {
-			id = ENG.19
-			days = 60
+			country_event = {
+				id = ENG.19
+				days = 60
+			}
 		}
 	}
 	title = ENG.18.t
