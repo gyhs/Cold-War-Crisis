@@ -49,6 +49,7 @@ news_event = { #버블 붕괴
         trigger = {
 			tag = JAP
 		}
+		ai_chance = { base = 1 }
         
         add_ideas = NS_JAP_bubble_collapse_5
     }
@@ -59,5 +60,6 @@ news_event = { #버블 붕괴
 				tag = JAP
 			}
 		}
+		ai_chance = { base = 1 }
     }
 }
