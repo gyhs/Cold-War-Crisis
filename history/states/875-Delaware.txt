@@ -1,0 +1,25 @@
+state={
+	id=875
+	name="STATE_875"
+
+	history={
+		owner = USA
+		victory_points = {
+			9786 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		9786 
+	}
+	manpower=601050
+	buildings_max_level_factor=1.000
+	state_category=town
+}
