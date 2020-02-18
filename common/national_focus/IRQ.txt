@@ -1,0 +1,1190 @@
+focus_tree = {
+	id = IRQ
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IRQ
+		}
+	}
+	default = no
+	focus = {
+		id = NF_IRQ_warfocus1
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 1.00
+		x = 28
+		y = 1
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 50000
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = light_fighter_equipment_1
+							amount = 100
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = light_tank_equipment_2
+							amount = 250
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 50000
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = anti_tank_rocket_equipment
+							amount = 50000
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = modern_tank_equipment_2
+							amount = 100
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = motorized_equipment
+							amount = 1000
+							producer = SOV
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_warfocus2
+		icon = GFX_goal_generic_CAS
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_warfocus1
+		}
+		x = 28
+		y = 2
+			completion_reward = {
+					add_ideas = IRQ_CWC_gas_gas_gas
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_lesson_of_war
+		icon = GFX_goal_generic_national_unity
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_warfocus2
+		}
+		x = 28
+		y = 3
+			available = {
+					has_war = no
+				}
+			completion_reward = {
+					add_ideas = IRQ_CWC_lesson_of_war
+					add_research_slot = 1
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 3
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_kill_yes
+		icon = GFX_focus_cze_german_puppet
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_lesson_of_war
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_kill_no
+		}
+		x = 21
+		y = 4
+			completion_reward = {
+					add_ideas = IRQ_CWC_kill_yes
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_hand_manufac
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_lesson_of_war
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_indus_manu
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = NF_IRQ_indus_manu
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_lesson_of_war
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_hand_manufac
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = NF_IRQ_kill_no
+		icon = GFX_goal_generic_major_alliance
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_lesson_of_war
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_kill_yes
+		}
+		x = 35
+		y = 4
+			completion_reward = {
+					add_ideas = IRQ_CWC_kill_no
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_repair_social
+		icon = GFX_focus_generic_self_management
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_kill_yes
+			focus = NF_IRQ_kill_no
+		}
+		x = 17
+		y = 5
+			completion_reward = {
+					add_political_power = 300
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_freedom
+		icon = GFX_goal_support_democracy
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_repair_social
+		}
+		x = 13
+		y = 6
+			completion_reward = {
+					set_politics = {
+							ruling_party = market_liberalism
+						}
+					set_stability = 0.4
+					add_popularity = {
+							ideology = market_liberalism
+							popularity = 0.8
+						}
+					remove_ideas = NS_Gen_government_crisis_5
+					add_ideas = NS_Gen_government_crisis_3
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_free_mp
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_freedom
+		}
+		x = 11
+		y = 7
+			completion_reward = {
+					remove_ideas = NS_Gen_mafia_5
+					add_ideas = NS_Gen_mafia_4
+					add_stability = 0.2
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_back_of_IRQ
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_freedom
+		}
+		x = 15
+		y = 7
+			completion_reward = {
+					general_hyper_inflation_level_down = yes
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_mil_repair
+		icon = GFX_focus_generic_military_mission
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_kill_no
+			focus = NF_IRQ_kill_yes
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = NF_IRQ_army
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mil_repair
+		}
+		x = 37
+		y = 6
+
+	}
+	focus = {
+		id = NF_IRQ_infan
+		icon = GFX_focus_usa_honor_the_confederacy
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_army
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_army_motor
+		}
+		x = 35
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_in_eq1
+		icon = GFX_goal_generic_small_arms
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_infan
+		}
+		x = 34
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_in_tec1
+		icon = GFX_goal_generic_military_sphere
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_infan
+		}
+		x = 36
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = CAT_DTL_LAND
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_army_motor
+		icon = GFX_focus_generic_license_production
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_army
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_infan
+		}
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_mo_n_tank1
+		icon = GFX_goal_generic_army_tanks
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_army_motor
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_mo_n_tank2
+		icon = GFX_goal_generic_army_tanks
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mo_n_tank1
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_mo_n_tank3
+		icon = GFX_goal_generic_army_tanks
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mo_n_tank2
+		}
+		x = 38
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_mo_n_tank_tec1
+		icon = GFX_goal_generic_army_motorized
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_army_motor
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_mo_n_tank_tec2
+		icon = GFX_goal_generic_army_motorized
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mo_n_tank_tec1
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_mo_n_tank_tec3
+		icon = GFX_goal_generic_army_motorized
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mo_n_tank_tec2
+		}
+		x = 40
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_airland_combin
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mo_n_tank3
+		}
+		prerequisite = {
+			focus = NF_IRQ_mo_n_tank_tec3
+		}
+		x = 39
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mil_repair
+		}
+		x = 45
+		y = 6
+
+	}
+	focus = {
+		id = NF_IRQ_navy_subma
+		icon = GFX_goal_generic_navy_submarine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_navy_FF
+		}
+		x = 43
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_navy_subma_eq1
+		icon = GFX_goal_generic_navy_submarine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_subma
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_navy_wolf_tec1
+		icon = GFX_goal_generic_wolf_pack
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_subma
+		}
+		x = 44
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_navy_wolf_tec2
+		icon = GFX_goal_generic_wolf_pack
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_wolf_tec1
+		}
+		x = 44
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_navy_wolf_tec3
+		icon = GFX_goal_generic_wolf_pack
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_wolf_tec2
+		}
+		x = 44
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_navy_FF
+		icon = GFX_focus_generic_cruiser2
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_navy_subma
+		}
+		x = 47
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_FF_eq1
+		icon = GFX_focus_generic_cruiser2
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_FF
+		}
+		x = 46
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_FF_eq2
+		icon = GFX_focus_generic_cruiser2
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_FF_eq1
+		}
+		x = 46
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_FF_eq3
+		icon = GFX_focus_generic_cruiser2
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_FF_eq2
+		}
+		x = 46
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_naval_tec1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_FF
+		}
+		x = 48
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_naval_tec2
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_naval_tec1
+		}
+		x = 48
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_naval_tec3
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_naval_tec2
+		}
+		x = 48
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_proce
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_FF_eq3
+		}
+		prerequisite = {
+			focus = NF_IRQ_naval_tec3
+		}
+		x = 47
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_air
+		icon = GFX_goal_generic_build_airforce
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_mil_repair
+		}
+		x = 53
+		y = 6
+
+	}
+	focus = {
+		id = NF_IRQ_point_defence_AA
+		icon = GFX_focus_hol_war_on_pacifism
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_air
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_global_defence_AA
+		}
+		x = 51
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_landAA1
+		icon = GFX_goal_generic_army_artillery
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_point_defence_AA
+		}
+		x = 50
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_airtec1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_point_defence_AA
+		}
+		x = 52
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_airtec2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_airtec1
+		}
+		x = 52
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_airtec3
+		icon = GFX_goal_generic_air_doctrine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_airtec2
+		}
+		x = 52
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_global_defence_AA
+		icon = GFX_goal_generic_air_fighter
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_air
+		}
+		mutually_exclusive = {
+			focus = NF_IRQ_point_defence_AA
+		}
+		x = 55
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_air_eq1
+		icon = GFX_goal_generic_air_fighter2
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_global_defence_AA
+		}
+		x = 54
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_air_eq2
+		icon = GFX_goal_generic_air_fighter2
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_air_eq1
+		}
+		x = 54
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_air_eq3
+		icon = GFX_goal_generic_air_fighter2
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_air_eq2
+		}
+		x = 54
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_arab_commu
+		icon = GFX_focus_ger_great_red_menace
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_repair_social
+		}
+		x = 21
+		y = 6
+			completion_reward = {
+					add_political_power = 300
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_DGS
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_arab_commu
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_national_economy
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_arab_commu
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_game_theory
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_freedom
+		}
+		x = 13
+		y = 7
+			completion_reward = {
+					remove_ideas = Gen_cartel
+					add_ideas = Gen_cartel_challenge
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_free_police
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_free_mp
+		}
+		x = 11
+		y = 8
+			completion_reward = {
+					remove_ideas = NS_Gen_mafia_4
+					add_ideas = NS_Gen_mafia_3
+					add_stability = 0.3
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_game_theory2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_game_theory
+		}
+		x = 13
+		y = 8
+			completion_reward = {
+					remove_ideas = Gen_cartel_challenge
+					add_ideas = IRQ_CWC_free_competition
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_teach_of_f
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_back_of_IRQ
+		}
+		x = 15
+		y = 8
+			completion_reward = {
+					add_ideas = IRQ_CWC_teach_of_fri
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_oil_nation
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_arab_commu
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = NF_IRQ_secret_police
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_DGS
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_eco_stand
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_oil_nation
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_5th_5year
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_national_economy
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_hospital
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_free_police
+		}
+		prerequisite = {
+			focus = NF_IRQ_game_theory2
+		}
+		prerequisite = {
+			focus = NF_IRQ_teach_of_f
+		}
+		x = 13
+		y = 9
+			completion_reward = {
+					remove_ideas = NS_Gen_rampant_communicable_diseases_3
+					add_ideas = NS_Gen_rampant_communicable_diseases_2
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_women2
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_party_of_bart
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_kuwait
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_women2
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_2nd_iran
+		icon = GFX_goal_generic_major_war
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_women
+			focus = NF_IRQ_women2
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_in_eq2
+		icon = GFX_goal_generic_small_arms
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_in_eq1
+		}
+		x = 34
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_in_tec2
+		icon = GFX_goal_generic_military_sphere
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_in_tec1
+		}
+		x = 36
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = CAT_DTL_LAND
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_in_eq3
+		icon = GFX_goal_generic_small_arms
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_in_eq2
+		}
+		x = 34
+		y = 10
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_in_tec3
+		icon = GFX_goal_generic_military_sphere
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_in_tec2
+		}
+		x = 36
+		y = 10
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = CAT_DTL_LAND
+						}
+				}
+
+	}
+	focus = {
+		id = NF_IRQ_test111
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_in_eq3
+		}
+		prerequisite = {
+			focus = NF_IRQ_in_tec3
+		}
+
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_navy_subma_eq2
+		icon = GFX_goal_generic_navy_submarine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_subma_eq1
+		}
+		x = 42
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_navy_subma_eq3
+		icon = GFX_goal_generic_navy_submarine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_subma_eq2
+		}
+		x = 42
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_test222
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_navy_subma_eq3
+			focus = NF_IRQ_navy_wolf_tec3
+		}
+		x = 43
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_landAA2
+		icon = GFX_goal_generic_army_artillery
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_landAA1
+		}
+		x = 50
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_landAA3
+		icon = GFX_goal_generic_army_artillery
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_landAA2
+		}
+		x = 50
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_airsupport
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_landAA3
+		}
+		prerequisite = {
+			focus = NF_IRQ_airtec3
+		}
+		x = 51
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_with_us
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_women
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_with_sov
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_women2
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_women
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_hospital
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_party_of_bart
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_secret_police
+		}
+		prerequisite = {
+			focus = NF_IRQ_eco_stand
+		}
+		prerequisite = {
+			focus = NF_IRQ_5th_5year
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_wc
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_with_us
+			focus = NF_IRQ_with_sov
+		}
+		x = 17
+		y = 13
+
+	}
+	focus = {
+		id = NF_IRQ_depence_war
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_kuwait
+		}
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = NF_IRQ_airtecc1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_global_defence_AA
+		}
+		x = 56
+		y = 8
+
+	}
+	focus = {
+		id = NF_IRQ_airtecc2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_airtecc1
+		}
+		x = 56
+		y = 9
+
+	}
+	focus = {
+		id = NF_IRQ_airtecc3
+		icon = GFX_goal_generic_air_doctrine
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_airtecc2
+		}
+		x = 56
+		y = 10
+
+	}
+	focus = {
+		id = NF_IRQ_airport
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_air_eq3
+		}
+		prerequisite = {
+			focus = NF_IRQ_airtecc3
+		}
+		x = 55
+		y = 11
+
+	}
+	focus = {
+		id = NF_IRQ_smg
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 1.00
+		prerequisite = {
+			focus = NF_IRQ_depence_war
+		}
+		x = 24
+		y = 13
+
+	}
+}

@@ -1,5 +1,5 @@
-﻿technologies = {
-#HOI4TGW
+technologies = {
+
 
 	military_basic_air_doctrine = {
 		
