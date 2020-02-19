@@ -153,9 +153,6 @@ technologies = {
 			air_equipment
 			jet_technology
 		}
-		sub_technologies = {
-			cv_jet_fighter_3
-		}
 		
 		ai_will_do = {
 			factor = 4
@@ -222,9 +219,6 @@ technologies = {
 			light_air
 			jet_technology
 		}
-		sub_technologies = {
-			cv_jet_fighter_4
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -260,9 +254,6 @@ technologies = {
 		categories = {
 			light_air
 			jet_technology
-		}
-		sub_technologies = {
-			cv_jet_fighter_5
 		}
 
 		ai_will_do = {
@@ -301,9 +292,6 @@ technologies = {
 			light_fighter
 			air_equipment
 			jet_technology
-		}
-		sub_technologies = {
-			cv_jet_fighter_3
 		}
 		
 		ai_will_do = {
@@ -348,7 +336,7 @@ technologies = {
 		}
 
 		dependencies = {
-			jet_engines_3 = 1
+			jet_engines_4 = 1
 		}
 		
 		xp_research_type = air
@@ -367,9 +355,6 @@ technologies = {
 			light_fighter
 			air_equipment
 			jet_technology
-		}
-		sub_technologies = {
-			cv_jet_fighter_3
 		}
 		
 		ai_will_do = {
@@ -414,7 +399,7 @@ technologies = {
 		}
 
 		dependencies = {
-			jet_engines_3 = 1
+			jet_engines_5 = 1
 		}
 		
 		xp_research_type = air
@@ -433,9 +418,6 @@ technologies = {
 			light_fighter
 			air_equipment
 			jet_technology
-		}
-		sub_technologies = {
-			cv_jet_fighter_3
 		}
 		
 		ai_will_do = {
@@ -500,9 +482,6 @@ technologies = {
 			air_equipment
 			jet_technology
 		}
-		sub_technologies = {
-			cv_jet_fighter_3
-		}
 		
 		ai_will_do = {
 			factor = 4
@@ -541,7 +520,7 @@ technologies = {
 		}
 
 		dependencies = {
-			jet_engines_3 = 1
+			jet_engines_4 = 1
 		}
 		
 		xp_research_type = air
@@ -560,9 +539,6 @@ technologies = {
 			light_fighter
 			air_equipment
 			jet_technology
-		}
-		sub_technologies = {
-			cv_jet_fighter_3
 		}
 		
 		ai_will_do = {
@@ -602,7 +578,7 @@ technologies = {
 		}
 
 		dependencies = {
-			jet_engines_3 = 1
+			jet_engines_5 = 1
 		}
 		
 		xp_research_type = air
@@ -621,9 +597,6 @@ technologies = {
 			light_fighter
 			air_equipment
 			jet_technology
-		}
-		sub_technologies = {
-			cv_jet_fighter_3
 		}
 		
 		ai_will_do = {
@@ -707,100 +680,6 @@ technologies = {
 			light_fighter
 			air_equipment
 			jet_technology
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-		}
-	}
-	cv_jet_fighter_3 = {
-
-		enable_equipments = {
-			cv_fighter_equipment_3
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1.0 #Carrier Variant
-		start_year = 1980
-		
-		categories = {
-			naval_air
-			air_equipment
-			jet_technology
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-		}
-	}
-	cv_jet_fighter_4 = {
-
-		enable_equipments = {
-			cv_fighter_equipment_4
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1.0 #Carrier Variant
-		start_year = 1990
-		
-		categories = {
-			naval_air
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-		}
-	}
-	cv_jet_fighter_5 = {
-
-		enable_equipments = {
-			cv_fighter_equipment_5
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1.0 #Carrier Variant
-		start_year = 2000
-		
-		categories = {
-			naval_air
-			air_equipment
 		}
 		
 		ai_will_do = {
@@ -938,11 +817,6 @@ technologies = {
 			air_equipment
 			cat_heavy_fighter
 		}
-		sub_technologies = {
-			cv_heavy_jet_fighter_3
-		}
-		sub_technologies = {
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -984,12 +858,6 @@ technologies = {
 			air_equipment
 			cat_heavy_fighter
 		}
-		sub_technologies = {
-			cv_heavy_jet_fighter_4
-		}
-		sub_technologies = {
-			tech_heavy_fighter_bomber_1
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1026,12 +894,6 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
-		}
-		sub_technologies = {
-			cv_heavy_jet_fighter_5
-		}
-		sub_technologies = {
-			tech_heavy_fighter_bomber_2
 		}
 		
 		ai_will_do = {
@@ -1084,165 +946,6 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	cv_heavy_jet_fighter_3 = {
-
-		enable_equipments = {
-			cv_CAS_equipment_3
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1 #Carrier Variant
-		start_year = 1980
-		
-		categories = {
-			naval_air
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	cv_heavy_jet_fighter_4 = {
-
-		enable_equipments = {
-			cv_CAS_equipment_4
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1 #Carrier Variant
-		start_year = 1990
-		
-		categories = {
-			naval_air
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	cv_heavy_jet_fighter_5 = {
-
-		enable_equipments = {
-			cv_CAS_equipment_5
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1 #Carrier Variant
-		start_year = 2000
-		
-		categories = {
-			naval_air
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	tech_heavy_fighter_bomber_1 = {
-
-		enable_equipments = {
-			heavy_fighter_bomber_equipment_1
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1.0 #Carrier Variant
-		start_year = 1960
-		
-		categories = {
-			medium_air
-			air_equipment
-			cat_heavy_fighter
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	tech_heavy_fighter_bomber_2 = {
-
-		enable_equipments = {
-			heavy_fighter_bomber_equipment_2
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1 #Carrier Variant
-		start_year = 1970
-		
-		categories = {
-			medium_air
-			air_equipment
-			cat_heavy_fighter
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	tech_heavy_fighter_bomber_3 = {
-
-		enable_equipments = {
-			heavy_fighter_bomber_equipment_3
-		}
-	
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 1 #Carrier Variant
-		start_year = 1980
-		
-		categories = {
-			medium_air
-			air_equipment
-			cat_heavy_fighter
 		}
 		
 		ai_will_do = {
