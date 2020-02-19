@@ -1435,7 +1435,7 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = CAS_2
+			leads_to_tech = tech_cas_2
 			research_cost_coeff = 1
 		}
 
@@ -1470,14 +1470,14 @@ technologies = {
 		}
 	}
 	
-	CAS_2 = {
+	tech_cas_2 = {
 
 		enable_equipments = { #
 			CAS_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = CAS_3
+			leads_to_tech = tech_cas_3
 			research_cost_coeff = 1
 		}
 
@@ -1512,7 +1512,7 @@ technologies = {
 		}
 	}
 	
-	CAS_3 = {
+	tech_cas_3 = {
 
 		enable_equipments = { #
 			CAS_equipment_3

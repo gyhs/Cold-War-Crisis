@@ -1637,7 +1637,7 @@ spriteTypes = {
 	# 경 전투기
 	SpriteType = {
 		name = "GFX_tech_light_fighter_1_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/tech_tech_light_fighter_1.dds"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_light_fighter_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_light_fighter_2_medium"
@@ -1661,16 +1661,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/11_air_techs/tech_cas_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_CAS_2_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/CAS_equipment_2.dds"
+		name = "GFX_tech_cas_2_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_cas_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_CAS_3_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/CAS_equipment_3.dds"
+		name = "GFX_tech_cas_3_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_cas_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_CAS_4_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/CAS_equipment_4.dds"
+		name = "GFX_tech_cas_4_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_cas_4.dds"
 	}
 	
 	# 수송기
