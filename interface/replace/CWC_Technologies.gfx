@@ -1637,23 +1637,23 @@ spriteTypes = {
 	# 경 전투기
 	SpriteType = {
 		name = "GFX_tech_light_fighter_1_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/tech_light_fighter_1.dds"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_tech_light_fighter_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_light_fighter_2_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/light_fighter_equipment_2.dds"
+		name = "GFX_tech_light_fighter_2_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_light_fighter_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_light_fighter_3_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/light_fighter_equipment_3.dds"
+		name = "GFX_tech_light_fighter_3_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_light_fighter_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_light_fighter_4_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/light_fighter_equipment_4.dds"
+		name = "GFX_tech_light_fighter_4_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_light_fighter_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_light_fighter_5_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/light_fighter_equipment_5.dds"
+		name = "GFX_tech_light_fighter_5_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_light_fighter_5.dds"
 	}
 	# 공격기
 	SpriteType = {

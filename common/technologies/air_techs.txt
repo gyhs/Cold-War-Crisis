@@ -1263,7 +1263,7 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = light_fighter_2
+			leads_to_tech = tech_light_fighter_2
 			research_cost_coeff = 1
 		}
 		path = {
@@ -1306,14 +1306,14 @@ technologies = {
 		}
 	}
 	
-	light_fighter_2 = {
+	tech_light_fighter_2 = {
 
 		enable_equipments = { #
 			light_fighter_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = light_fighter_3
+			leads_to_tech = tech_light_fighter_3
 			research_cost_coeff = 1
 		}
 
@@ -1348,14 +1348,14 @@ technologies = {
 		}
 	}
 	
-	light_fighter_3 = {
+	tech_light_fighter_3 = {
 
 		enable_equipments = { #
 			light_fighter_equipment_3
 		}
 	
 		path = {
-			leads_to_tech = light_fighter_4
+			leads_to_tech = tech_light_fighter_4
 			research_cost_coeff = 1
 		}
 
@@ -1390,7 +1390,7 @@ technologies = {
 		}
 	}
 	
-	light_fighter_4 = {
+	tech_light_fighter_4 = {
 
 		enable_equipments = { #
 			light_fighter_equipment_4
