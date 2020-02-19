@@ -33,7 +33,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_JAP_fascism
+		id = NF_JAP_back_to_the_past
 		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 22
@@ -46,6 +46,28 @@ focus_tree = {
 		cost = 10.00
 		x = 7
 		y = 8
+
+	}
+	focus = {
+		id = NF_JAP_liberation_force
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_dictate_proletariat
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = NF_JAP_japan_NKVD
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_liberation_force
+		}
+		x = 2
+		y = 10
 
 	}
 	focus = {
@@ -68,70 +90,6 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-
-	}
-	focus = {
-		id = NF_JAP_liberation_force
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_dictate_proletariat
-		}
-		x = 3
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_tie_with_ussr
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_liberation_force
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_spreading_revolution
-		}
-		x = 3
-		y = 10
-
-	}
-	focus = {
-		id = NF_JAP_attack_hawaii_again
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_tie_with_ussr
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_USSR_expert_share
-		}
-		x = 1
-		y = 11
-
-	}
-	focus = {
-		id = NF_JAP_USSR_expert_share
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_tie_with_ussr
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_attack_hawaii_again
-		}
-		x = 3
-		y = 11
-
-	}
-	focus = {
-		id = NF_JAP_ally_USSR
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_USSR_expert_share
-		}
-		x = 3
-		y = 12
 
 	}
 	focus = {
@@ -166,53 +124,6 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
-
-	}
-	focus = {
-		id = NF_JAP_spreading_revolution
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_liberation_force
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_tie_with_ussr
-		}
-		x = 5
-		y = 10
-
-	}
-	focus = {
-		id = NF_JAP_liberate_korea
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_spreading_revolution
-		}
-		x = 5
-		y = 11
-
-	}
-	focus = {
-		id = NF_JAP_liberate_china
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_liberate_korea
-		}
-		x = 5
-		y = 12
-
-	}
-	focus = {
-		id = NF_JAP_eastasia_comm_tie
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_liberate_china
-		}
-		x = 5
-		y = 13
 
 	}
 	focus = {
@@ -304,14 +215,49 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_JAP_great_purge_com
+		id = NF_JAP_purge_democracist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_back_to_the_past
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = NF_JAP_purge_commies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_back_to_the_past
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = NF_JAP_great_purge
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = NF_JAP_purge_inner_capitalist
+			focus = NF_JAP_purge_democracist
+			focus = NF_JAP_purge_commies
 		}
-		x = 13
+		x = 14
 		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_allegiance_pledge
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_great_purge
+		}
+		x = 14
+		y = 11
 
 	}
 	focus = {
@@ -326,72 +272,6 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
-
-	}
-	focus = {
-		id = NF_JAP_hail_denno
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_fascism
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_one_citizens
-		}
-		x = 17
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_one_citizens
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_fascism
-		}
-		mutually_exclusive = {
-			focus = NF_JAP_hail_denno
-		}
-		x = 27
-		y = 9
-
-	}
-	focus = {
-		id = NF_JAP_purge_democracist
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_hail_denno
-			focus = NF_JAP_one_citizens
-		}
-		x = 21
-		y = 10
-
-	}
-	focus = {
-		id = NF_JAP_purge_commies
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_hail_denno
-			focus = NF_JAP_one_citizens
-		}
-		x = 23
-		y = 10
-
-	}
-	focus = {
-		id = NF_JAP_great_purge_fa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_purge_democracist
-		}
-		prerequisite = {
-			focus = NF_JAP_purge_commies
-		}
-		x = 22
-		y = 11
 
 	}
 	focus = {
@@ -487,14 +367,25 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_JAP_artillery
-		icon = GFX_goal_generic_army_artillery2
+		id = NF_JAP_man_equips
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		prerequisite = {
 			focus = NF_JAP_guns
 		}
 		x = 36
-		y = 10
+		y = 8
+
+	}
+	focus = {
+		id = NF_JAP_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_man_equips
+		}
+		x = 36
+		y = 9
 
 	}
 	focus = {
@@ -1041,7 +932,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_JAP_strategy_weapon
 		}
-		x = 45
+		x = 44
 		y = 13
 
 	}
@@ -1108,7 +999,7 @@ focus_tree = {
 			focus = NF_JAP_man_equips
 		}
 		x = 34
-		y = 10
+		y = 9
 
 	}
 	focus = {
@@ -1120,17 +1011,6 @@ focus_tree = {
 		}
 		x = 34
 		y = 8
-
-	}
-	focus = {
-		id = NF_JAP_man_equips
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
-		prerequisite = {
-			focus = NF_JAP_guns
-		}
-		x = 34
-		y = 9
 
 	}
 	focus = {
@@ -1154,7 +1034,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_JAP_nuke
 		}
-		x = 45
+		x = 44
 		y = 14
 
 	}
@@ -1165,10 +1045,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_JAP_reactor
 		}
-		prerequisite = {
-			focus = NF_JAP_submarine_attack_2
-		}
-		x = 45
+		x = 44
 		y = 15
 
 	}
@@ -1182,8 +1059,41 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_JAP_nuke_icbm
 		}
-		x = 45
+		x = 44
 		y = 16
+
+	}
+	focus = {
+		id = NF_JAP_tie_with_ussr
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_liberation_force
+		}
+		x = 4
+		y = 10
+
+	}
+	focus = {
+		id = NF_JAP_USSR_expert_share
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_tie_with_ussr
+		}
+		x = 4
+		y = 11
+
+	}
+	focus = {
+		id = NF_JAP_ally_USSR
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_JAP_USSR_expert_share
+		}
+		x = 4
+		y = 12
 
 	}
 }
