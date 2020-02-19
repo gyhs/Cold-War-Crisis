@@ -969,14 +969,6 @@ technologies = {
 			leads_to_tech = tech_light_fighter_2
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = jet_fighter_1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = heavy_jet_fighter_1
-			research_cost_coeff = 1
-		}
 
 		dependencies = {
 			jet_engines_2 = 1
@@ -990,7 +982,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 16 y = 0 }
+			position = { x = 21 y = 6 }
 		}
 		
 		categories = {
@@ -1032,7 +1024,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 21 y = 6 }
+			position = { x = 21 y = 8 }
 		}
 		
 		categories = {
@@ -1064,43 +1056,6 @@ technologies = {
 
 		dependencies = {
 			jet_engines_4 = 1
-		}
-		
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 2
-		start_year = 2000
-
-		folder = {
-			name = air_techs_folder
-			position = { x = 21 y = 8 }
-		}
-		
-		categories = {
-			light_air
-			cas_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	
-	tech_light_fighter_4 = {
-
-		enable_equipments = { #
-			light_fighter_equipment_4
-		}
-
-		dependencies = {
-			jet_engines_5 = 1
 		}
 		
 		xp_research_type = air
