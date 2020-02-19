@@ -5,42 +5,23 @@
 #########################
 add_namespace = NE_ENG
 
-##Event: 1987년의 영국
-country_event = {
-	id = NE_ENG.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.1"}
-	title = NE_ENG.1.title
-	desc = NE_ENG.1.desc
-	picture = GFX_report_event_canada_treaty
-	trigger = {
-		tag = ENG
-	}
-	
-	fire_only_once = yes
+##Event: 1987년의 영국 //각 이벤트마다 날짜 트리거를 추가해서 삭제했습니다
 
-	option = {
-		name = NE_ENG.1.a
-		ai_chance = { factor = 1 }
-		hidden_effect = {
-            country_event = { #폭설 이벤트
-                id = NE_ENG.3
-                days = 14
-			}
-            country_event = { #총선거
-                id = NE_ENG.2
-                days = 156
-            }
-        }
-    }
-}
 ##Event: 1987년의 총선거
 country_event = {
 	id = NE_ENG.2
 	title = NE_ENG.2.title
 	desc = NE_ENG.2.desc
 	picture = GFX_report_event_canada_treaty
+
+    trigger = {
+		tag = ENG
+		date > 1987.6.10
+		date < 1987.6.15
+	}
+
 	fire_only_once = yes
-    is_triggered_only = yes
+
 	option = {
 		name = NE_ENG.2.a
 		ai_chance = { factor = 1 }
@@ -53,8 +34,15 @@ country_event = {
 	title = NE_ENG.3.title
 	desc = NE_ENG.3.desc
 	picture = GFX_report_event_canada_treaty
+	
+	trigger = {
+		tag = ENG
+		date > 1987.1.1
+		date < 1987.1.20
+	}
+
 	fire_only_once = yes
-    is_triggered_only = yes
+
 	option = {
 		name = NE_ENG.3.a
 		ai_chance = { factor = 1 }
@@ -441,8 +429,10 @@ country_event = { #실업률이 줄어들다!6/11
 	}
 	immediate = {
 		hidden_effect = {
-			id = ENG.19
-			days = 60
+			country_event = {
+				id = ENG.19
+				days = 60
+			}
 		}
 	}
 	title = ENG.18.t

@@ -524,6 +524,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_KOR_REFORM5
+			focus = NF_KOR_DJ7
 		}
 		x = 35
 		y = 8
@@ -603,6 +604,21 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NF_KOR_DJ7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_DJ5
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_REFORM6
+			focus = NF_KOR_DJ6
+		}
+		x = 37
+		y = 8
+
+	}
+	focus = {
 		id = NF_KOR_DJ6
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -611,20 +627,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_KOR_DJ7
-		}
-		x = 37
-		y = 8
-
-	}
-	focus = {
-		id = NF_KOR_DJ7
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_DJ5
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_DJ6
 		}
 		x = 39
 		y = 8
@@ -1113,10 +1115,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_KOR_rnrxhrjstjf
+			focus = NF_KOR_ind
+			focus = NF_KOR_economyst
+			focus = NF_KOR_jejo
 		}
-		x = 3
-		y = 10
+		x = 8
+		y = 13
 
 	}
 	focus = {
@@ -1135,10 +1139,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_KOR_rnrxhrjstjf
+			focus = NF_KOR_ind
+			focus = NF_KOR_economyst
+			focus = NF_KOR_jejo
 		}
-		x = 7
-		y = 10
+		x = 6
+		y = 13
 
 	}
 	focus = {
@@ -1148,7 +1154,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_KOR_rnrxhrjstjf
 		}
-		x = 9
+		x = 7
 		y = 10
 
 	}
@@ -1159,7 +1165,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_KOR_rnrxhrjstjf
 		}
-		x = 11
+		x = 9
 		y = 10
 
 	}
@@ -1168,13 +1174,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		cost = 4.00
 		prerequisite = {
-			focus = NF_KOR_KB
-		}
-		prerequisite = {
 			focus = NF_KOR_EW
-		}
-		prerequisite = {
-			focus = NF_KOR_NEWAIR
 		}
 		prerequisite = {
 			focus = NF_KOR_BUSANAIR
@@ -1184,6 +1184,186 @@ focus_tree = {
 		}
 		x = 7
 		y = 11
+
+	}
+	focus = {
+		id = NF_KOR_economyst
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_7th_Five_Years_Plan
+		}
+		x = 7
+		y = 12
+
+	}
+	focus = {
+		id = NF_KOR_ind
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_7th_Five_Years_Plan
+		}
+		x = 5
+		y = 12
+
+	}
+	focus = {
+		id = NF_KOR_northeconomy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_KB
+			focus = NF_KOR_NEWAIR
+		}
+		x = 7
+		y = 14
+
+	}
+	focus = {
+		id = NF_KOR_jejo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_7th_Five_Years_Plan
+		}
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = NF_KOR_neweconomyplan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_northeconomy
+		}
+		x = 7
+		y = 15
+
+	}
+	focus = {
+		id = NF_KOR_GGwjdql
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_neweconomyplan
+		}
+		x = 5
+		y = 16
+
+	}
+	focus = {
+		id = NF_KOR_shddjchs
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_neweconomyplan
+		}
+		x = 7
+		y = 16
+
+	}
+	focus = {
+		id = NF_KOR_WTO
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_neweconomyplan
+		}
+		x = 9
+		y = 16
+
+	}
+	focus = {
+		id = NF_KOR_JEJU
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_GGwjdql
+		}
+		x = 5
+		y = 17
+
+	}
+	focus = {
+		id = NF_KOR_shddjchsroqkf
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_shddjchs
+		}
+		x = 7
+		y = 17
+
+	}
+	focus = {
+		id = NF_KOR_OECD
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_WTO
+		}
+		x = 9
+		y = 17
+
+	}
+	focus = {
+		id = NF_KOR_economysi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_OECD
+		}
+		prerequisite = {
+			focus = NF_KOR_JEJU
+		}
+		prerequisite = {
+			focus = NF_KOR_shddjchsroqkf
+		}
+		x = 7
+		y = 18
+
+	}
+	focus = {
+		id = NF_KOR_gustkddbwl
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_economysi
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_xmreks
+		}
+		x = 3
+		y = 19
+
+	}
+	focus = {
+		id = NF_KOR_xmreks
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_economysi
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_gustkddbwl
+		}
+		x = 11
+		y = 19
+
+	}
+	focus = {
+		id = NF_KOR_92_President
+		icon = GFX_DOM_Call_Special_Election
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_NEWBIRTH
+			focus = NF_KOR_GWF
+			focus = NF_KOR_NODJ
+		}
+		x = 34
+		y = 10
 
 	}
 }
