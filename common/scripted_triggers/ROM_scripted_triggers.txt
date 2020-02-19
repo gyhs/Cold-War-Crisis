@@ -55,9 +55,9 @@ is_available_heavy_fighter_ROM = {
 is_available_cas_ROM = {
 	OR = {
 		AND = {
-			has_tech = CAS_1
+			has_tech = tech_cas_1
 			ROM = { 
-				NOT = { has_tech = CAS_1}
+				NOT = { has_tech = tech_cas_1}
 			}
 		}
 		AND = {
