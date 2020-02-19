@@ -1636,8 +1636,8 @@ spriteTypes = {
 	}
 	# 경 전투기
 	SpriteType = {
-		name = "GFX_light_fighter_1_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/light_fighter_equipment_1.dds"
+		name = "GFX_tech_light_fighter_1_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_light_fighter_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_light_fighter_2_medium"

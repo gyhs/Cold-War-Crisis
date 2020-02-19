@@ -1256,7 +1256,7 @@ technologies = {
 	}
 	
 	
-	light_fighter_1 = {
+	tech_light_fighter_1 = {
 
 		enable_equipments = { #
 			light_fighter_equipment_1
