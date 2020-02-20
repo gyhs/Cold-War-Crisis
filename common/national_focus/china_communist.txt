@@ -56,4 +56,43 @@ focus_tree = {
 			Completion_reward = 
 		x = 7
 		y = 20
-		
+	focus = {
+		id = NF_CHI_EIZ 5
+		icon =
+		cost = 4.00
+		prerequisite = {
+			focus = NF_CHI_EIZ 4
+			}
+			Completion_reward = 
+		x = 7
+		y = 25
+	focus = {
+		id = NF_CHI_EIZ 6
+		icon =
+		cost = 4.00
+		prerequisite = {
+			focus = NF_CHI_EIZ 5
+			}
+			Completion_reward = 
+		x = 7
+		y = 30
+	focus = {
+		id = M_Factory_1
+		icon =
+		cost = 4.00
+		prerequisite = {
+			focus = NF_CHI_EIZ 6
+			}
+			Completion_reward = 
+		x = 7
+		y = 35
+	focus = {
+		id = M_Factory_2
+		icon =
+		cost = 4.00
+		prerequisite = {
+			focus = M_Factory_1
+			}
+			Completion_reward = 
+		x = 7
+		y = 40
