@@ -291,6 +291,24 @@ bookmarks = {
 			focuses = {
 			}
 		}
+		"PER"={
+			minor = yes
+			history = "PER_GATHERING_STORM_DESC"
+			ideology = authoritarianism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"IRQ"={
+			minor = yes
+			history = "IRQ_GATHERING_STORM_DESC"
+			ideology = authoritarianism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
 		
 
 		effect = {
