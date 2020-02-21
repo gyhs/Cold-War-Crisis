@@ -827,6 +827,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_command_reform
 		}
+		completion_reward = {
+			add_ideas = foreign_legion
+		}
 		x = 38
 		y = 4
 
