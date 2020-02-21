@@ -1535,28 +1535,28 @@ spriteTypes = {
 	
 	# 전투기
 	SpriteType = {
-		name = "GFX_jet_fighter_1_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/fighter_equipment_1.dds"
+		name = "GFX_tech_fighter_1_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_fighter_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_fighter_2_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/fighter_equipment_2.dds"
+		name = "GFX_tech_fighter_2_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_fighter_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_fighter_3_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/fighter_equipment_3.dds"
+		name = "GFX_tech_fighter_3_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_fighter_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_fighter_4_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/fighter_equipment_4.dds"
+		name = "GFX_tech_fighter_4_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_fighter_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_fighter_5_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/fighter_equipment_5.dds"
+		name = "GFX_tech_fighter_5_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_fighter_5.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_fighter_6_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/fighter_equipment_6.dds"
+		name = "GFX_tech_fighter_6_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_fighter_6.dds"
 	}
 	# 함재 전투기
 	SpriteType = {

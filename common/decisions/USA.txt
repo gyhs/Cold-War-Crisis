@@ -1021,7 +1021,7 @@ USA_foreign_support = {
 				is_major = yes
 				has_war = no
 				has_government = fascism
-				has_tech = jet_fighter_1
+				has_tech = tech_fighter_1
 				not = { has_country_flag = usa_pilot_training }
 				has_country_flag = USA_foreign_support_donations_approved
 			}

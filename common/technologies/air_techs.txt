@@ -1,13 +1,13 @@
 technologies = {
 	
-	jet_fighter_1 = { #
+	tech_fighter_1 = { #
 
 		enable_equipments = {
 			fighter_equipment_1
 		}
 	
 		path = {
-			leads_to_tech = jet_fighter_2
+			leads_to_tech = tech_fighter_2
 			research_cost_coeff = 1
 		}
 
@@ -46,14 +46,14 @@ technologies = {
 		}
 	}
 	
-	jet_fighter_2 = { #
+	tech_fighter_2 = { #
 
 		enable_equipments = {
 			fighter_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = jet_fighter_3
+			leads_to_tech = tech_fighter_3
 			research_cost_coeff = 1
 		}
 		path = {
@@ -83,7 +83,7 @@ technologies = {
 			jet_technology
 		}
 		sub_technologies = {
-			cv_fighter_2
+			tech_cv_fighter_2
 		}
 		
 		ai_will_do = {
@@ -116,14 +116,14 @@ technologies = {
 		}
 	}
 	
-	jet_fighter_3 = { #
+	tech_fighter_3 = { #
 
 		enable_equipments = {
 			fighter_equipment_3
 		}
 		
 		path = {
-			leads_to_tech = jet_fighter_4
+			leads_to_tech = tech_fighter_4
 			research_cost_coeff = 1
 		}
 		
@@ -184,14 +184,14 @@ technologies = {
 		}
 	}
 	
-	jet_fighter_4 = { #
+	tech_fighter_4 = { #
 
 		enable_equipments = {
 				fighter_equipment_4
 		}
 			
 		path = {
-			leads_to_tech = jet_fighter_5
+			leads_to_tech = tech_fighter_5
 			research_cost_coeff = 1
 		}
 		
@@ -225,7 +225,7 @@ technologies = {
 		}
 	}
 	
-	jet_fighter_5 = { #
+	tech_fighter_5 = { #
 
 		enable_equipments = {
 			fighter_equipment_5
@@ -268,7 +268,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = tech_cv_cas_fighter_1
+			leads_to_tech = tech_cv_cas_fighter_3
 			research_cost_coeff = 1
 		}
 
@@ -331,7 +331,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = tech_cv_cas_fighter_2
+			leads_to_tech = tech_cv_cas_fighter_4
 			research_cost_coeff = 1
 		}
 
@@ -394,7 +394,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = tech_cv_cas_fighter_3
+			leads_to_tech = tech_cv_cas_fighter_5
 			research_cost_coeff = 1
 		}
 
@@ -450,7 +450,7 @@ technologies = {
 		}
 	}
 	
-	tech_cv_cas_fighter_1 = { #
+	tech_cv_cas_fighter_3 = { #
 
 		enable_equipments = {
 			cv_CAS_equipment_1
@@ -513,7 +513,7 @@ technologies = {
 		}
 	}
 	
-	tech_cv_cas_fighter_2 = { #
+	tech_cv_cas_fighter_4 = { #
 
 		enable_equipments = {
 			cv_CAS_equipment_2
@@ -571,7 +571,7 @@ technologies = {
 		}
 	}
 	
-	tech_cv_cas_fighter_3 = { #
+	tech_cv_cas_fighter_5 = { #
 
 		enable_equipments = {
 			cv_CAS_equipment_3
