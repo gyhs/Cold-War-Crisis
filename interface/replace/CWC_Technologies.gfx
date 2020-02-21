@@ -1586,52 +1586,52 @@ spriteTypes = {
 	
 	# 중 전투기
 	SpriteType = {
-		name = "GFX_heavy_jet_fighter_1_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/heavy_fighter_equipment_1.dds"
+		name = "GFX_tech_heavy_fighter_1_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_heavy_fighter_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_heavy_jet_fighter_2_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/heavy_fighter_equipment_2.dds"
+		name = "GFX_tech_heavy_fighter_2_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_heavy_fighter_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_heavy_jet_fighter_3_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/heavy_fighter_equipment_3.dds"
+		name = "GFX_tech_heavy_fighter_3_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_heavy_fighter_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_heavy_jet_fighter_4_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/heavy_fighter_equipment_4.dds"
+		name = "GFX_tech_heavy_fighter_4_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_heavy_fighter_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_heavy_jet_fighter_5_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/heavy_fighter_equipment_5.dds"
+		name = "GFX_tech_heavy_fighter_5_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_heavy_fighter_5.dds"
 	}
 	SpriteType = {
-		name = "GFX_heavy_jet_fighter_6_medium"
-		texturefile = "gfx/interface/technologies/11_air_techs/heavy_fighter_equipment_6.dds"
+		name = "GFX_tech_heavy_fighter_6_medium"
+		texturefile = "gfx/interface/technologies/11_air_techs/tech_heavy_fighter_6.dds"
 	}
 	# 함재 중 전투기
 	SpriteType = {
-		name = "GFX_cv_heavy_jet_fighter_1_medium"
+		name = "GFX_cv_heavy_fighter_1_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/cv_CAS_equipment_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_cv_heavy_jet_fighter_2_medium"
+		name = "GFX_cv_heavy_fighter_2_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/cv_CAS_equipment_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_cv_heavy_jet_fighter_3_medium"
+		name = "GFX_cv_heavy_fighter_3_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/cv_CAS_equipment_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_cv_heavy_jet_fighter_4_medium"
+		name = "GFX_cv_heavy_fighter_4_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/cv_CAS_equipment_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_cv_heavy_jet_fighter_5_medium"
+		name = "GFX_cv_heavy_fighter_5_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/cv_CAS_equipment_5.dds"
 	}
 	SpriteType = {
-		name = "GFX_cv_heavy_jet_fighter_6_medium"
+		name = "GFX_cv_heavy_fighter_6_medium"
 		texturefile = "gfx/interface/technologies/11_air_techs/cv_CAS_equipment_6.dds"
 	}
 	# 경 전투기

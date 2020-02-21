@@ -137,10 +137,10 @@ set_technology = {
 	jet_fighter_2 = 1
 	cv_jet_fighter_1 = 1
 	cv_jet_fighter_2 = 1
-	heavy_jet_fighter_1 = 1
-	heavy_jet_fighter_2 = 1
-	cv_heavy_jet_fighter_1 = 1
-	cv_heavy_jet_fighter_2 = 1
+	tech_heavy_fighter_1 = 1
+	tech_heavy_fighter_2 = 1
+	cv_heavy_fighter_1 = 1
+	cv_heavy_fighter_2 = 1
 	
 	tech_light_fighter_1 = 1
 	tech_cas_1 = 1
