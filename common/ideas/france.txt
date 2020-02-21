@@ -556,6 +556,7 @@ ideas = {
 				#지휘력 최대치 20증가,증가치 30%증가
 			}
 		}
+		#지상군 총 사령부
 
 		foreign_legion = {
 			picture = Foreign_Legion_idea
