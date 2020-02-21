@@ -29,21 +29,21 @@ is_available_fighter_ROM = {
 is_available_heavy_fighter_ROM = {
 	OR = {
 		AND = {
-			has_tech = heavy_fighter_1
+			has_tech = tech_heavy_fighter_1
 			ROM = { 
-				NOT = { has_tech = heavy_fighter_1}
+				NOT = { has_tech = tech_heavy_fighter_1}
 			}
 		}
 		AND = {
-			has_tech = heavy_fighter_2
+			has_tech = tech_heavy_fighter_2
 			ROM = { 
-				NOT = { has_tech = heavy_fighter_2}
+				NOT = { has_tech = tech_heavy_fighter_2}
 			}
 		}
 		AND = {
-			has_tech = heavy_fighter_3
+			has_tech = tech_heavy_fighter_3
 			ROM = { 
-				NOT = { has_tech = heavy_fighter_3}
+				NOT = { has_tech = tech_heavy_fighter_3}
 			}
 		}
 	}

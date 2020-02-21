@@ -697,14 +697,14 @@ technologies = {
 		}
 	}
 	
-	heavy_fighter_1 = { #
+	tech_heavy_fighter_1 = { #
 
 		enable_equipments = {
 			heavy_fighter_equipment_1
 		}
 	
 		path = {
-			leads_to_tech = heavy_fighter_2
+			leads_to_tech = tech_heavy_fighter_2
 			research_cost_coeff = 1
 		}
 
@@ -741,14 +741,14 @@ technologies = {
 		}
 	}
 	
-	heavy_fighter_2 = { #
+	tech_heavy_fighter_2 = { #
 
 		enable_equipments = {
 			heavy_fighter_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = heavy_fighter_3
+			leads_to_tech = tech_heavy_fighter_3
 			research_cost_coeff = 1
 		}
 
@@ -787,14 +787,14 @@ technologies = {
 		}
 	}
 	
-	heavy_fighter_3 = { #
+	tech_heavy_fighter_3 = { #
 
 		enable_equipments = {
 			heavy_fighter_equipment_3
 		}
 	
 		path = {
-			leads_to_tech = heavy_fighter_4
+			leads_to_tech = tech_heavy_fighter_4
 			research_cost_coeff = 1
 		}
 
@@ -828,14 +828,14 @@ technologies = {
 		}
 	}
 	
-	heavy_fighter_4 = { #
+	tech_heavy_fighter_4 = { #
 
 		enable_equipments = {
 			heavy_fighter_equipment_4
 		}
 	
 		path = {
-			leads_to_tech = heavy_fighter_5
+			leads_to_tech = tech_heavy_fighter_5
 			research_cost_coeff = 1
 		}
 
@@ -870,7 +870,7 @@ technologies = {
 	}
 	
 	
-	heavy_fighter_5 = { #
+	tech_heavy_fighter_5 = { #
 
 		enable_equipments = {
 			heavy_fighter_equipment_5
