@@ -53,7 +53,8 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_CHI_EIZ 3
 			}
-			Completion_reward = 
+			
+			Completion_reward = local_building_slots 0.25
 		x = 7
 		y = 4
 		
@@ -64,7 +65,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_CHI_EIZ 4
 			}
-			Completion_reward = 
+			Completion_reward = local_building_slots 0.25
 		x = 7
 		y = 5
 	focus = {
