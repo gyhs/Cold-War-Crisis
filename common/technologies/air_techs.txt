@@ -33,7 +33,7 @@ technologies = {
 			jet_technology
 		}
 		sub_technologies = {
-			cv_jet_fighter_1
+			tech_cv_fighter_1
 		}
 		
 		ai_will_do = {
@@ -83,7 +83,7 @@ technologies = {
 			jet_technology
 		}
 		sub_technologies = {
-			cv_jet_fighter_2
+			cv_fighter_2
 		}
 		
 		ai_will_do = {
@@ -128,7 +128,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = tech_cv_jet_fighter_1
+			leads_to_tech = tech_cv_fighter_3
 			research_cost_coeff = 1
 		}
 
@@ -196,7 +196,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = tech_cv_jet_fighter_2
+			leads_to_tech = tech_cv_fighter_4
 			research_cost_coeff = 1
 		}
 
@@ -232,7 +232,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = tech_cv_jet_fighter_3
+			leads_to_tech = tech_cv_fighter_5
 			research_cost_coeff = 1
 		}
 
@@ -261,7 +261,7 @@ technologies = {
 		}
 	}
 	
-	tech_cv_jet_fighter_1 = { #
+	tech_cv_fighter_3 = { #
 
 		enable_equipments = {
 			cv_fighter_equipment_1
@@ -324,7 +324,7 @@ technologies = {
 		}
 	}
 	
-	tech_cv_jet_fighter_2 = { #
+	tech_cv_fighter_4 = { #
 
 		enable_equipments = {
 			cv_fighter_equipment_2
@@ -387,7 +387,7 @@ technologies = {
 		}
 	}
 	
-	tech_cv_jet_fighter_3 = { #
+	tech_cv_fighter_5 = { #
 
 		enable_equipments = {
 			cv_fighter_equipment_3
@@ -628,7 +628,7 @@ technologies = {
 			}
 		}
 	}
-	cv_jet_fighter_1 = { 
+	tech_cv_fighter_1 = { 
 
 		enable_equipments = {
 			cv_fighter_equipment_1
@@ -662,7 +662,7 @@ technologies = {
 			}
 		}
 	}
-	cv_jet_fighter_2 = {
+	tech_cv_fighter_2 = {
 
 		enable_equipments = {
 			cv_fighter_equipment_2
