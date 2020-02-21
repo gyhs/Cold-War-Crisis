@@ -530,22 +530,22 @@ ideas = {
 			removal_cost = -1
 
 			modifier = { 
-				research_speed_factor = 0.1
-				#연구 10%
+				research_speed_factor = 0.05
+				#연구 5%
 			}
 		}
 		#개발집중기간
-    }
+    
 	
-	fn_com_ft = {
-		picture = COM_FT
+		fn_com_ft = {
+			picture = COM_FT
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-			    always = yes
+				always = yes
 			}
 
 			removal_cost = -1
@@ -555,22 +555,23 @@ ideas = {
 				command_power_gain_mult = 0.3
 				#지휘력 최대치 20증가,증가치 30%증가
 			}
-	}
-	foreign_legion = {
-		picture = Foreign_Legion_idea
-
-		allowed = {
-			always = no
 		}
 
-		allowed_civil_war = {
-			always = yes
-		}
+		foreign_legion = {
+			picture = Foreign_Legion_idea
 
-		removal_cost = -1
+			allowed = {
+				always = no
+			}
 
-		modifier = {
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
 		}
-	}
-	#외인부대
+		#외인부대
 }
