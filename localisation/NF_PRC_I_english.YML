@@ -14,3 +14,11 @@ l_english:
  NF_PRC_M_Factory: "군사공장 설치"
  NF_PRC_M_Factory 2: "군사공장 추가 설치"
  NF_PRC_M_Factory 3: "방위산업체 설립"
+ Anti-Air: "방공망 구축"
+ Military_modernization_1: "육군 현대화 정책"
+ Military_modernization_2: "방위산업체 개선"
+ Military_modernization_3: "해군 현대화 정책"
+ Military_modernization_4: "해군 방공망 개선"
+ Military_modernization_4: "Su-27 라이센스 구입"
+ Military_modernization_5: "확대된 현대화"
+ 

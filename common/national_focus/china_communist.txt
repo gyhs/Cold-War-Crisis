@@ -24,7 +24,7 @@ focus_tree = {
 			focus = NF_CHI_foreign_investor
 			}
 		x = 7
-		y = 5
+		y = 1
 	}
 	focus = {
 		id = NF_CHI_EIZ 2
@@ -34,7 +34,7 @@ focus_tree = {
 			focus = NF_CHI_exclusive_industrial_zone
 			}
 		x = 7
-		y = 10
+		y = 2
 		}
 	focus = {
 		id = NF_CHI_EIZ 3
@@ -44,7 +44,7 @@ focus_tree = {
 			focus = NF_CHI_EIZ 2
 			}
 		x = 7
-		y = 15
+		y = 3
 		
 	focus = {
 		id = NF_CHI_EIZ 4
@@ -55,7 +55,8 @@ focus_tree = {
 			}
 			Completion_reward = 
 		x = 7
-		y = 20
+		y = 4
+		
 	focus = {
 		id = NF_CHI_EIZ 5
 		icon =
@@ -65,7 +66,7 @@ focus_tree = {
 			}
 			Completion_reward = 
 		x = 7
-		y = 25
+		y = 5
 	focus = {
 		id = NF_CHI_EIZ 6
 		icon =
@@ -75,7 +76,7 @@ focus_tree = {
 			}
 			Completion_reward = 
 		x = 7
-		y = 30
+		y = 6
 	focus = {
 		id = M_Factory_1
 		icon =
@@ -85,7 +86,7 @@ focus_tree = {
 			}
 			Completion_reward = 
 		x = 7
-		y = 35
+		y = 7
 	focus = {
 		id = M_Factory_2
 		icon =
@@ -95,4 +96,4 @@ focus_tree = {
 			}
 			Completion_reward = 
 		x = 7
-		y = 40
+		y = 8

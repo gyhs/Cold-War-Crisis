@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		#이중가격제 = {
+		duble_price_system = {
 			picture =chi_hyper_inflation
 			
 			allowed = {
@@ -18,7 +18,7 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
-    		#덩샤오핑 이론 = {
+    		Deng_Xiaoping_Theory = {
 			picture =chi_hyper_inflation
 			
 			allowed = {
@@ -46,7 +46,7 @@ ideas = {
 			}
 		}
 	country = {
-		#발전하는 중국 = {
+		developing_china = {
 			picture =chi_hyper_inflation
 			
 			allowed = {
@@ -63,5 +63,23 @@ ideas = {
 				global_building_slots= 0.1
 				industrial_capacity_dockyard= 0.2
 				production_speed_infrastructure_factor= 0.1
+			}
+		}
+		country = {
+		stock_market_open = {
+			picture =chi_hyper_inflation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor	=	0.25
 			}
 		}
