@@ -62,7 +62,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = naval_bomber_1
+			leads_to_tech = tech_naval_bomber_1
 			research_cost_coeff = 1
 		}
 
@@ -223,14 +223,14 @@ technologies = {
 		}
 	}
 
-	naval_bomber_1 = { #
+	tech_naval_bomber_1 = { #
 
 		enable_equipments = {
 			nav_bomber_equipment_1
 		}
 	
 		path = {
-			leads_to_tech = naval_bomber_2
+			leads_to_tech = tech_naval_bomber_2
 			research_cost_coeff = 1
 		}
 		
@@ -260,14 +260,14 @@ technologies = {
 		}
 	}
 	
-	naval_bomber_2 = { #
+	tech_naval_bomber_2 = { #
 
 		enable_equipments = {
 			nav_bomber_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = naval_bomber_3
+			leads_to_tech = tech_naval_bomber_3
 			research_cost_coeff = 1
 		}
 		
@@ -297,14 +297,14 @@ technologies = {
 		}
 	}
 	
-	naval_bomber_3 = { #
+	tech_naval_bomber_3 = { #
 
 		enable_equipments = {
 			nav_bomber_equipment_3
 		}
 	
 		path = {
-			leads_to_tech = naval_bomber_4
+			leads_to_tech = tech_naval_bomber_4
 			research_cost_coeff = 1
 		}
 		
@@ -334,15 +334,10 @@ technologies = {
 		}
 	}
 	
-	naval_bomber_4 = { #
+	tech_naval_bomber_4 = { #
 
 		enable_equipments = {
 			nav_bomber_equipment_4
-		}
-	
-		path = {
-			leads_to_tech = naval_bomber_5
-			research_cost_coeff = 1
 		}
 		
 		dependencies = {
