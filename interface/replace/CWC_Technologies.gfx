@@ -1738,28 +1738,28 @@ spriteTypes = {
 	}
 	# 제트 전략 폭격기
 	SpriteType = {
-		name = "GFX_jet_strategic_bomber_1_medium"
-		texturefile = "gfx/interface/technologies/12_air_bomber/jet_strat_bomber_equipment_1.dds"
+		name = "GFX_tech_long_range_strategic_bomber_1_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/tech_long_range_strategic_bomber_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_strategic_bomber_2_medium"
-		texturefile = "gfx/interface/technologies/12_air_bomber/jet_strat_bomber_equipment_2.dds"
+		name = "GFX_tech_long_range_strategic_bomber_2_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/tech_long_range_strategic_bomber_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_strategic_bomber_3_medium"
-		texturefile = "gfx/interface/technologies/12_air_bomber/jet_strat_bomber_equipment_3.dds"
+		name = "GFX_tech_long_range_strategic_bomber_3_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/tech_long_range_strategic_bomber_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_strategic_bomber_4_medium"
-		texturefile = "gfx/interface/technologies/12_air_bomber/jet_strat_bomber_equipment_4.dds"
+		name = "GFX_tech_long_range_strategic_bomber_4_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/tech_long_range_strategic_bomber_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_strategic_bomber_5_medium"
-		texturefile = "gfx/interface/technologies/12_air_bomber/jet_strat_bomber_equipment_5.dds"
+		name = "GFX_tech_long_range_strategic_bomber_5_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/tech_long_range_strategic_bomber_5.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_strategic_bomber_6_medium"
-		texturefile = "gfx/interface/technologies/12_air_bomber/jet_strat_bomber_equipment_6.dds"
+		name = "GFX_tech_long_range_strategic_bomber_6_medium"
+		texturefile = "gfx/interface/technologies/12_air_bomber/tech_long_range_strategic_bomber_6.dds"
 	}
 	# 초음속 전략 폭격기
 	SpriteType = {
