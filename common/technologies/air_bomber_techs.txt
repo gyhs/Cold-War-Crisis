@@ -501,12 +501,12 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = supersonic_strategic_bomber_1
+			leads_to_tech = tech_supersonic_strategic_bomber_1
 			research_cost_coeff = 1
 		}
 		
 		path = {
-			leads_to_tech = stealth_strategic_bomber_1
+			leads_to_tech = tech_stealth_strategic_bomber_1
 			research_cost_coeff = 1
 		}
 
@@ -537,14 +537,14 @@ technologies = {
 		}
 	}
 	
-	supersonic_strategic_bomber_1 = {
+	tech_supersonic_strategic_bomber_1 = {
 
 		enable_equipments = {
 			supersonic_strat_bomber_equipment_1
 		}
 		
 		path = {
-			leads_to_tech = supersonic_strategic_bomber_2
+			leads_to_tech = tech_supersonic_strategic_bomber_2
 			research_cost_coeff = 1
 		}
 
@@ -575,14 +575,14 @@ technologies = {
 		}
 	}
 	
-	supersonic_strategic_bomber_2 = {
+	tech_supersonic_strategic_bomber_2 = {
 
 		enable_equipments = {
 			supersonic_strat_bomber_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = supersonic_strategic_bomber_3
+			leads_to_tech = tech_supersonic_strategic_bomber_3
 			research_cost_coeff = 1
 		}
 		dependencies = {
@@ -611,15 +611,10 @@ technologies = {
 		}
 	}
 	
-	supersonic_strategic_bomber_3 = {
+	tech_supersonic_strategic_bomber_3 = {
 
 		enable_equipments = {
 			supersonic_strat_bomber_equipment_3
-		}
-		
-		path = {
-			leads_to_tech = supersonic_strategic_bomber_4
-			research_cost_coeff = 1
 		}
 
 		dependencies = {
@@ -647,14 +642,14 @@ technologies = {
 		}
 	}
 	
-	stealth_strategic_bomber_1 = {
+	tech_stealth_strategic_bomber_1 = {
 
 		enable_equipments = {
 			stealth_strat_bomber_equipment_1
 		}
 		
 		path = {
-			leads_to_tech = stealth_strategic_bomber_2
+			leads_to_tech = tech_stealth_strategic_bomber_2
 			research_cost_coeff = 1
 		}
 
@@ -685,14 +680,14 @@ technologies = {
 		}
 	}
 	
-	stealth_strategic_bomber_2 = {
+	tech_stealth_strategic_bomber_2 = {
 
 		enable_equipments = {
 			stealth_strat_bomber_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = stealth_strategic_bomber_3
+			leads_to_tech = tech_stealth_strategic_bomber_3
 			research_cost_coeff = 1
 		}
 
@@ -722,14 +717,10 @@ technologies = {
 		}
 	}
 	
-	stealth_strategic_bomber_3 = {
+	tech_stealth_strategic_bomber_3 = {
 
 		enable_equipments = {
 			stealth_strat_bomber_equipment_3
-		}
-		path = {
-			leads_to_tech = stealth_strategic_bomber_4
-			research_cost_coeff = 1
 		}
 		dependencies = {
 		}
