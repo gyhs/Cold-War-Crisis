@@ -16,11 +16,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = supersonic_strategic_bomber_1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = stealth_strategic_bomber_1
+			leads_to_tech = tech_jet_strategic_bomber_1
 			research_cost_coeff = 1
 		}
 
@@ -77,7 +73,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 16 y = 2 }
+			position = { x = 16 y = 4 }
 		}
 		
 		categories = {
@@ -119,7 +115,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 16 y = 4 }
+			position = { x = 16 y = 6 }
 		}
 		
 		categories = {
@@ -161,7 +157,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 16 y = 6 }
+			position = { x = 16 y = 8 }
 		}
 		
 		categories = {
@@ -203,7 +199,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = air_bomber_folder
-			position = { x = 16 y = 8 }
+			position = { x = 16 y = 10 }
 		}
 		
 		categories = {
@@ -245,7 +241,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = air_bomber_folder
-			position = { x = 20 y = 2 }
+			position = { x = 20 y = 4 }
 		}
 		
 		categories = {
@@ -282,7 +278,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = air_bomber_folder
-			position = { x = 20 y = 4 }
+			position = { x = 20 y = 6 }
 		}
 		
 		categories = {
@@ -319,7 +315,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = air_bomber_folder
-			position = { x = 20 y = 6 }
+			position = { x = 20 y = 8 }
 		}
 		
 		categories = {
@@ -360,7 +356,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = air_bomber_folder
-			position = { x = 20 y = 8 }
+			position = { x = 20 y = 10 }
 		}
 		
 		categories = {
@@ -401,7 +397,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_bomber_folder
-			position = { x = 10 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 		
 		categories = {
@@ -430,11 +426,6 @@ technologies = {
 		enable_equipments = {
 			jet_strat_bomber_equipment_2
 		}
-	
-		path = {
-			leads_to_tech = tech_long_range_strategic_bomber_3
-			research_cost_coeff = 1
-		}
 
 		dependencies = {
 			jet_engines_2 = 1
@@ -448,7 +439,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_bomber_folder
-			position = { x = 10 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -469,6 +460,85 @@ technologies = {
 				factor = 5
 				tag = USA
 			}
+		}
+	}
+	
+	tech_jet_strategic_bomber_1 = {
+
+		enable_equipments = {
+		}
+		
+		path = {
+			leads_to_tech = tech_jet_strategic_bomber_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_1 = 1
+			experimental_rockets = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 7 y = 2 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_jet_strategic_bomber_2 = {
+
+		enable_equipments = {
+		}
+		
+		path = {
+			leads_to_tech = supersonic_strategic_bomber_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = stealth_strategic_bomber_1
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_1 = 1
+			experimental_rockets = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_bomber_folder
+			position = { x = 7 y = 4 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -496,7 +566,7 @@ technologies = {
 
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 2 }
+			position = { x = 5 y = 6 }
 		}
 		
 		categories = {
@@ -532,7 +602,7 @@ technologies = {
 
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 4 }
+			position = { x = 5 y = 8 }
 		}
 		
 		categories = {
@@ -568,77 +638,7 @@ technologies = {
 
 		folder = {
 			name = air_bomber_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		categories = {
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	supersonic_strategic_bomber_4 = {
-
-		enable_equipments = {
-			supersonic_strat_bomber_equipment_4
-		}
-		
-		path = {
-			leads_to_tech = supersonic_strategic_bomber_5
-			research_cost_coeff = 1
-		}
-		dependencies = {
-		}
-		
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 2
-		start_year = 1950
-
-		folder = {
-			name = air_bomber_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		categories = {
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	supersonic_strategic_bomber_5 = {
-
-		enable_equipments = {
-			supersonic_strat_bomber_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = supersonic_strategic_bomber_6
-			research_cost_coeff = 1
-		}
-		dependencies = {
-		}
-		
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 2
-		start_year = 1950
-
-		folder = {
-			name = air_bomber_folder
-			position = { x = 0 y = 10 }
+			position = { x = 5 y = 10 }
 		}
 		
 		categories = {
@@ -676,7 +676,7 @@ technologies = {
 
 		folder = {
 			name = air_bomber_folder
-			position = { x = 4 y = 2 }
+			position = { x = 9 y = 6 }
 		}
 		
 		categories = {
@@ -713,7 +713,7 @@ technologies = {
 
 		folder = {
 			name = air_bomber_folder
-			position = { x = 4 y = 4 }
+			position = { x = 9 y = 8 }
 		}
 		
 		categories = {
@@ -747,73 +747,7 @@ technologies = {
 
 		folder = {
 			name = air_bomber_folder
-			position = { x = 4 y = 6 }
-		}
-		
-		categories = {
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	stealth_strategic_bomber_4 = {
-
-		enable_equipments = {
-			stealth_strat_bomber_equipment_4
-		}
-		path = {
-			leads_to_tech = stealth_strategic_bomber_5
-			research_cost_coeff = 1
-		}
-		dependencies = {
-		}
-		
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 2
-		start_year = 1950
-
-		folder = {
-			name = air_bomber_folder
-			position = { x = 4 y = 8 }
-		}
-		
-		categories = {
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	stealth_strategic_bomber_5 = {
-
-		enable_equipments = {
-			stealth_strat_bomber_equipment_5
-		}
-		path = {
-			leads_to_tech = stealth_strategic_bomber_6
-			research_cost_coeff = 1
-		}
-		dependencies = {
-		}
-		
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 2
-		start_year = 1950
-
-		folder = {
-			name = air_bomber_folder
-			position = { x = 4 y = 10 }
+			position = { x = 9 y = 10 }
 		}
 		
 		categories = {
