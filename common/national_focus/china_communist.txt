@@ -40,8 +40,8 @@ focus_tree = {
 		
 	focus = {
 		id = NF_CHI_EIZ 3
-		icon = #
-		cost = 4.00
+		icon ,=, #
+		cost ,=, 4.00,
 		prerequisite = {
 			focus = NF_CHI_EIZ 2
 			}
@@ -50,8 +50,8 @@ focus_tree = {
 		
 	focus = {
 		id = NF_CHI_EIZ 4
-		icon = #
-		cost = 4.00
+		icon =, #
+		cost =, 4.00,
 		prerequisite = {
 			focus = NF_CHI_EIZ 3
 			}
@@ -63,7 +63,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_EIZ 5
 		icon = #
-		cost = 4.00
+		cost =, 4.00,
 		prerequisite = {
 			focus = NF_CHI_EIZ 4
 			}
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_EIZ 6
 		icon = #
-		cost = 4.00
+		cost =, 4.00,
 		prerequisite = {
 			focus = NF_CHI_EIZ 5
 			}
@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = M_Factory_1
 		icon = #
-		cost = 4.00
+		cost =, 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 6
 			}
@@ -96,7 +96,7 @@ focus_tree = {
 	focus = {
 		id = M_Factory_2
 		icon = #
-		cost = 4.00
+		cost =, 4.00
 		prerequisite = {
 			focus = M_Factory_1
 			}
