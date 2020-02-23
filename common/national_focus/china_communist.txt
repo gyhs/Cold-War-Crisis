@@ -20,9 +20,7 @@ focus_tree = {
 		id = NF_CHI_exclusive_industrial_zone
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-			focus = NF_CHI_foreign_investor
-			},
+		prerequisite = { focus = NF_CHI_foreign_investor },
 		x = 7
 		y = 2
 	}
@@ -31,9 +29,7 @@ focus_tree = {
 		id = NF_CHI_EIZ 2
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-			focus = NF_CHI_exclusive_industrial_zone
-			},
+		prerequisite = { focus = NF_CHI_exclusive_industrial_zone },
 		x = 7
 		y = 3
 		}
@@ -42,9 +38,7 @@ focus_tree = {
 		id = NF_CHI_EIZ 3
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-			focus = NF_CHI_EIZ 2
-			},
+		prerequisite = { focus = NF_CHI_EIZ 2 },
 		x = 7
 		y = 4
 		
@@ -52,8 +46,7 @@ focus_tree = {
 		id = NF_CHI_EIZ 4
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-		focus = NF_CHI_EIZ 3},
+		prerequisite = { focus = NF_CHI_EIZ 3 },
 			Completion_reward = 
 		x = 7
 		y = 5
@@ -62,9 +55,7 @@ focus_tree = {
 		id = NF_CHI_EIZ 5
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-			focus = NF_CHI_EIZ 4
-			},
+		prerequisite = { focus = NF_CHI_EIZ 4 },
 			Completion_reward = 
 		x = 9
 		y = 6
@@ -73,9 +64,7 @@ focus_tree = {
 		id = NF_CHI_EIZ 6
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-			focus = NF_CHI_EIZ 5
-			},
+		prerequisite = { focus = NF_CHI_EIZ 5 },
 			Completion_reward = 
 		x = 9
 		y = 7
@@ -84,9 +73,7 @@ focus_tree = {
 		id = M_Factory_1
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-			focus = NF_CHI_EIZ 6
-			},
+		prerequisite = { focus = NF_CHI_EIZ 6 },
 			Completion_reward = 
 		x = 12
 		y = 8
@@ -95,9 +82,7 @@ focus_tree = {
 		id = M_Factory_2
 		icon = #
 		cost =,,, 4.00
-		prerequisite = {
-			focus = M_Factory_1
-			},
+		prerequisite = { focus = M_Factory_1 },
 			Completion_reward = 
 		x = 12
 		y = 9
