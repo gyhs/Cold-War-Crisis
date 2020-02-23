@@ -3,19 +3,19 @@
 #########################
 #        By SPiCa       #
 #########################
-add_namespace = NE_ENG
+add_namespace = NE_NE_ENG
 
 ##Event: 1987년의 영국 //각 이벤트마다 날짜 트리거를 추가해서 삭제했습니다
 
 ##Event: 1987년의 총선거
 country_event = {
-	id = NE_ENG.2
-	title = NE_ENG.2.title
-	desc = NE_ENG.2.desc
+	id = NE_NE_ENG.2
+	title = NE_NE_ENG.2.title
+	desc = NE_NE_ENG.2.desc
 	picture = GFX_report_event_canada_treaty
 
     trigger = {
-		tag = ENG
+		tag = NE_ENG
 		date > 1987.6.10
 		date < 1987.6.15
 	}
@@ -23,20 +23,20 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = NE_ENG.2.a
+		name = NE_NE_ENG.2.a
 		ai_chance = { factor = 1 }
 		set_country_flag = flag_UK_a
 	}
 }
 ##Event: 엄청난 폭설!
 country_event = {
-	id = NE_ENG.3
-	title = NE_ENG.3.title
-	desc = NE_ENG.3.desc
+	id = NE_NE_ENG.3
+	title = NE_NE_ENG.3.title
+	desc = NE_NE_ENG.3.desc
 	picture = GFX_report_event_canada_treaty
 	
 	trigger = {
-		tag = ENG
+		tag = NE_ENG
 		date > 1987.1.1
 		date < 1987.1.20
 	}
@@ -44,7 +44,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = NE_ENG.3.a
+		name = NE_NE_ENG.3.a
 		ai_chance = { factor = 1 }
 		swap_ideas = {
 			remove_idea = uk_great_depression1
@@ -52,7 +52,7 @@ country_event = {
 		}
 		hidden_effect = {
             country_event = { #노동자들의 파업
-                id = NE_ENG.4
+                id = NE_NE_ENG.4
                 days = 2
 			}
 		}
@@ -60,14 +60,14 @@ country_event = {
 }
 ##Event: 노동자들의 파업
 country_event = {
-	id = NE_ENG.4
-	title = NE_ENG.4.title
-	desc = NE_ENG.4.desc
+	id = NE_NE_ENG.4
+	title = NE_NE_ENG.4.title
+	desc = NE_NE_ENG.4.desc
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
     is_triggered_only = yes
 	option = {
-		name = NE_ENG.4.a
+		name = NE_NE_ENG.4.a
 		ai_chance = { factor = 1 }
 		swap_ideas = {
 			remove_idea = uk_great_depression2
@@ -75,7 +75,7 @@ country_event = {
 		}
 		hidden_effect = {
             country_event = { #브리티시 항공 민영화
-                id = NE_ENG.5
+                id = NE_NE_ENG.5
                 days = 22
 			}
 		}
@@ -83,15 +83,15 @@ country_event = {
 }
 ##Event: 브리티시 항공의 민영화 #민간공장 1개 추가
 country_event = {
-	id = NE_ENG.5
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.5"}
-	title = NE_ENG.5.title
-	desc = NE_ENG.5.desc
+	id = NE_NE_ENG.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.5"}
+	title = NE_NE_ENG.5.title
+	desc = NE_NE_ENG.5.desc
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = NE_ENG.5.a
+		name = NE_NE_ENG.5.a
 		ai_chance = { factor = 1 }
 		126 = {
 			add_extra_state_shared_building_slots = 1
@@ -103,7 +103,7 @@ country_event = {
 		}
 	hidden_effect = {
 		country_event = { #나치 6명
-			id = NE_ENG.6
+			id = NE_NE_ENG.6
 			days = 13
 			}
 		}
@@ -111,19 +111,19 @@ country_event = {
 }
 ##Event: 나치 6명이 영국에 거주한다!
 country_event = {
-	id = NE_ENG.6
-	title = NE_ENG.6.title
-	desc = NE_ENG.6.desc
+	id = NE_NE_ENG.6
+	title = NE_NE_ENG.6.title
+	desc = NE_NE_ENG.6.desc
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = NE_ENG.6.a
+		name = NE_NE_ENG.6.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.03
 		hidden_effect = {#파운드화의 가치
 			country_event = {
-				id = NE_ENG.7
+				id = NE_NE_ENG.7
 				days = 11
 			}
 		}
@@ -131,19 +131,19 @@ country_event = {
 }
 ##Event: 3/6일, 파운드화 가치는 최고조
 country_event = {
-	id = NE_ENG.7
-	title = NE_ENG.7.title
-	desc = NE_ENG.7.desc
+	id = NE_NE_ENG.7
+	title = NE_NE_ENG.7.title
+	desc = NE_NE_ENG.7.desc
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = NE_ENG.7.a
+		name = NE_NE_ENG.7.a
 		ai_chance = { factor = 1 }
 	hidden_effect = {#IRA폭탄테러
 		country_event = {
-			id = NE_ENG.8
+			id = NE_NE_ENG.8
 			days = 16
 			}
 		}
@@ -151,21 +151,21 @@ country_event = {
 }
 ##Event: 3월 23일, IRA의 소행으로 추정되는 폭탄테러로 31명이 부상
 country_event = {
-	id = NE_ENG.8
-	title = NE_ENG.8.title
-	desc = NE_ENG.8.desc
+	id = NE_NE_ENG.8
+	title = NE_NE_ENG.8.title
+	desc = NE_NE_ENG.8.desc
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = NE_ENG.8.a
+		name = NE_NE_ENG.8.a
 		ai_chance = { factor = 1 }
 		add_stability= -0.05
 		add_manpower= -31
 		hidden_effect = {#IRA폭탄테러
 			country_event = {
-				id = NE_ENG.9
+				id = NE_NE_ENG.9
 				days = 4
 			}
 		}
@@ -173,15 +173,15 @@ country_event = {
 }
 ##Event: EEC에서 위치
 country_event = {
-	id = NE_ENG.9
-	title = NE_ENG.9.title
-	desc = NE_ENG.9.desc
+	id = NE_NE_ENG.9
+	title = NE_NE_ENG.9.title
+	desc = NE_NE_ENG.9.desc
 	picture = GFX_report_event_canada_treaty
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = NE_ENG.9.a
+		name = NE_NE_ENG.9.a
 		ai_chance = { factor = 1 }
 		set_country_flag = flag_UK_c
 		126 = {
@@ -202,7 +202,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = NE_ENG.9.b
+		name = NE_NE_ENG.9.b
 		ai_chance = { factor = 1 }
 		set_country_flag = flag_UK_b
 		126 = {
@@ -224,24 +224,24 @@ country_event = {
 	}
 }
 country_event = { #닐 키녹의 워싱턴 방문3/27
-	id = NE_ENG.10
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.10"}
-	title = NE_ENG.10.title
-	desc = NE_ENG.10.desc
+	id = NE_NE_ENG.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.10"}
+	title = NE_NE_ENG.10.title
+	desc = NE_NE_ENG.10.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #레이건을 만나자
-		name = NE_ENG.10.a
+		name = NE_NE_ENG.10.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
 		USA = {country_event = 
-		{ days = 1 id = NE_ENG.11 }
+		{ days = 1 id = NE_NE_ENG.11 }
 		hidden_effect = {#마가렛 대처 모스크바
 			country_event = {
-				id = NE_ENG.12
+				id = NE_NE_ENG.12
 				days = 2
 				}
 			}
@@ -249,40 +249,40 @@ country_event = { #닐 키녹의 워싱턴 방문3/27
 	}
 }
 country_event = { #닐 키녹이 워싱턴을 방문하다
-	id = NE_ENG.11
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.11"}
-	title = NE_ENG.11.title
-	desc = NE_ENG.11.desc
+	id = NE_NE_ENG.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.11"}
+	title = NE_NE_ENG.11.title
+	desc = NE_NE_ENG.11.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #반갑군
-		name = NE_ENG.11.a
+		name = NE_NE_ENG.11.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.01
 	}
 }
 country_event = { #마가렛 대처의 모스크바 방문 3/29
-	id = NE_ENG.12
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.12"}
-	title = NE_ENG.12.title
-	desc = NE_ENG.12.desc
+	id = NE_NE_ENG.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.12"}
+	title = NE_NE_ENG.12.title
+	desc = NE_NE_ENG.12.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #좋은 만남이 되길
-		name = NE_ENG.12.a
+		name = NE_NE_ENG.12.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
 		SOV = {country_event = 
-		{ days = 1 id = NE_ENG.11 }
+		{ days = 1 id = NE_NE_ENG.11 }
 		hidden_effect = {#마가렛 대처 모스크바
 			country_event = {
-				id = NE_ENG.12
+				id = NE_NE_ENG.12
 				days = 18
 				}
 			}
@@ -290,56 +290,56 @@ country_event = { #마가렛 대처의 모스크바 방문 3/29
 	}
 }
 country_event = { #마가렛 대처의 모스크바 방문
-	id = NE_ENG.13
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.13"}
-	title = NE_ENG.13.title
-	desc = NE_ENG.13.desc
+	id = NE_NE_ENG.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.13"}
+	title = NE_NE_ENG.13.title
+	desc = NE_NE_ENG.13.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #반갑군
-		name = NE_ENG.13.a
+		name = NE_NE_ENG.13.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.02
 	}
 }
 country_event = { #하비 프록터의 성추행 추문!
-	id = NE_ENG.14
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.14"}
-	title = NE_ENG.14.title
-	desc = NE_ENG.14.desc
+	id = NE_NE_ENG.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.14"}
+	title = NE_NE_ENG.14.title
+	desc = NE_NE_ENG.14.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #더럽군
-		name = NE_ENG.14.a
+		name = NE_NE_ENG.14.a
 		ai_chance = { factor = 1 }
 		add_stability = -0.05
 		add_political_power = -20
 		hidden_effect = {
 			country_event = {
-			id = NE_ENG.13
+			id = NE_NE_ENG.13
 			days = 14
 			}
 		}
 	}
 }
 country_event = { #상원 의회의 성전환 허용
-	id = NE_ENG.15
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.15"}
-	title = NE_ENG.15.title
-	desc = NE_ENG.15.desc
+	id = NE_NE_ENG.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.15"}
+	title = NE_NE_ENG.15.title
+	desc = NE_NE_ENG.15.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #흐음
-		name = NE_ENG.15.a
+		name = NE_NE_ENG.15.a
 		ai_chance = { factor = 1 }
 		add_political_power = -10
 		hidden_effect = { 
@@ -350,17 +350,17 @@ country_event = { #상원 의회의 성전환 허용
 	}
 }
 country_event = { #로우갈 매복, 앤트림주에서 IRA 8명 사살
-	id = NE_ENG.16
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.16"}
-	title = NE_ENG.16.title
-	desc = NE_ENG.16.desc
+	id = NE_NE_ENG.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.16"}
+	title = NE_NE_ENG.16.title
+	desc = NE_NE_ENG.16.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #좋았어!
-		name = NE_ENG.16.a
+		name = NE_NE_ENG.16.a
 		ai_chance = { factor = 1 }
 		add_war_support = 0.07
 		hidden_effect = {
@@ -371,103 +371,101 @@ country_event = { #로우갈 매복, 앤트림주에서 IRA 8명 사살
 	}
 }
 country_event = { #5/11 총선 전의 설문조사
-	id = NE_ENG.17
-	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.17"}
-	title = NE_ENG.17.title
-	desc = NE_ENG.17.desc
+	id = NE_NE_ENG.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.17"}
+	title = NE_NE_ENG.17.title
+	desc = NE_NE_ENG.17.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #마가렛 대처?
-		name = NE_ENG.17.a
+		name = NE_NE_ENG.17.a
 		ai_chance = { factor = 9 }
 		hidden_effect = {
 			country_event = {
 			days = 30
-			id = ENG.18
+			id = NE_ENG.18
 			}
 		}
 	}
 	option = { #마이클 풋?
-		name = NE_ENG.17.b
+		name = NE_NE_ENG.17.b
 		ai_chance = { factor = 2 }
 		hidden_effect = {
 			country_event = {
 			days = 30
-			id = ENG.18
+			id = NE_ENG.18
 			}
 		}
 	}
 	option = { #닐 키녹?
-		name = NE_ENG.17.c
+		name = NE_NE_ENG.17.c
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
 			days = 30
-			id = ENG.18
+			id = NE_ENG.18
 			}
 		}
 	}
 	option = { #국민전선?
-		name = NE_ENG.17.d
+		name = NE_NE_ENG.17.d
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
 			days = 30
-			id = ENG.18
+			id = NE_ENG.18
 			}
 		}
 	}
 }
 
 country_event = { #실업률이 줄어들다!6/11
-	id = ENG.18
-	immediate = {
-	log = "[GetDateText]: [Root.GetName]: event ENG.18"
-	}
+	id = NE_NE_ENG.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_NE_ENG.18"}
 	immediate = {
 		hidden_effect = {
 			country_event = {
-				id = ENG.19
+				id = NE_NE_ENG.19
 				days = 60
 			}
 		}
 	}
-	title = ENG.18.t
-	desc = ENG.18.desc
+	title = NE_NE_ENG.18.t
+	desc = NE_NE_ENG.18.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.18.a
+		name = NE_NE_ENG.18.a
 		ai_chance = { factor = 1 }
 		add_stability = 0.07
 	}
 }
 
 country_event = { #8/10 하루에 한명이 에이즈로 사망함
-	id = ENG.19
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.19"}
+	id = NE_ENG.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.19"}
 	immediate = {
 	immediate = {
 		hidden_effect = {
-			id = ENG.20
+			id = NE_ENG.20
 			days = 9
 		}
 	}
-	title = ENG.19.t
-	desc = ENG.19.desc
+	title = NE_ENG.19.t
+	desc = NE_ENG.19.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.19.a
+		name = NE_ENG.19.a
 		ai_chance = { factor = 1 }
 		add_manpower = -1
 		add_political_power = -50
@@ -475,23 +473,23 @@ country_event = { #8/10 하루에 한명이 에이즈로 사망함
 }
 
 country_event = { #헝거포드 대학살8/19
-	id = ENG.20
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.20"}
+	id = NE_ENG.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.20"}
 	immediate = {
 		hidden_effect = {
-			id = ENG.21
+			id = NE_ENG.21
 			days = 33
 		}
 	}
-	title = ENG.20.t
-	desc = ENG.20.desc
+	title = NE_ENG.20.t
+	desc = NE_ENG.20.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #왜 그런거지?
-		name = ENG.20.a
+		name = NE_ENG.20.a
 		ai_chance = { factor = 1 }
 		add_manpower = -16
 		add_stability = -0.07
@@ -499,295 +497,295 @@ country_event = { #헝거포드 대학살8/19
 }
 
 country_event = { #9/22헝거포드에서 사용된 무기 금지
-	id = ENG.21
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.21"}
+	id = NE_ENG.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.21"}
 		immediate = {
 		hidden_effect = {
-			id = ENG.22
+			id = NE_ENG.22
 			days = 23
 		}
 	}
-	title = ENG.21.t
-	desc = ENG.21.desc
+	title = NE_ENG.21.t
+	desc = NE_ENG.21.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.21.a
+		name = NE_ENG.21.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #10/15
-	id = ENG.22
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.22"}
-	title = ENG.22.t
-	desc = ENG.22.desc
+	id = NE_ENG.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.22"}
+	title = NE_ENG.22.t
+	desc = NE_ENG.22.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.22.a
+		name = NE_ENG.22.a
 		ai_chance = { factor = 1 }
 		add_manpower = -23
 	}
 }
 
 country_event = { #
-	id = ENG.23
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.23"}
-	title = ENG.23.t
-	desc = ENG.23.desc
+	id = NE_ENG.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.23"}
+	title = NE_ENG.23.t
+	desc = NE_ENG.23.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.23.a
+		name = NE_ENG.23.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.24
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.24"}
-	title = ENG.24.t
-	desc = ENG.24.desc
+	id = NE_ENG.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.24"}
+	title = NE_ENG.24.t
+	desc = NE_ENG.24.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.24.a
+		name = NE_ENG.24.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.25
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.25"}
-	title = ENG.25.t
-	desc = ENG.25.desc
+	id = NE_ENG.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.25"}
+	title = NE_ENG.25.t
+	desc = NE_ENG.25.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.25.a
+		name = NE_ENG.25.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.26
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.26"}
-	title = ENG.26.t
-	desc = ENG.26.desc
+	id = NE_ENG.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.26"}
+	title = NE_ENG.26.t
+	desc = NE_ENG.26.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.26.a
+		name = NE_ENG.26.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.27
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.27"}
-	title = ENG.27.t
-	desc = ENG.27.desc
+	id = NE_ENG.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.27"}
+	title = NE_ENG.27.t
+	desc = NE_ENG.27.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.27.a
+		name = NE_ENG.27.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.28
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.28"}
-	title = ENG.28.t
-	desc = ENG.28.desc
+	id = NE_ENG.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.28"}
+	title = NE_ENG.28.t
+	desc = NE_ENG.28.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.28.a
+		name = NE_ENG.28.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.29
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.29"}
-	title = ENG.29.t
-	desc = ENG.29.desc
+	id = NE_ENG.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.29"}
+	title = NE_ENG.29.t
+	desc = NE_ENG.29.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.29.a
+		name = NE_ENG.29.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.30
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.30"}
-	title = ENG.30.t
-	desc = ENG.30.desc
+	id = NE_ENG.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.30"}
+	title = NE_ENG.30.t
+	desc = NE_ENG.30.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.30.a
+		name = NE_ENG.30.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.31
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.31"}
-	title = ENG.31.t
-	desc = ENG.31.desc
+	id = NE_ENG.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.31"}
+	title = NE_ENG.31.t
+	desc = NE_ENG.31.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.31.a
+		name = NE_ENG.31.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.32
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.32"}
-	title = ENG.32.t
-	desc = ENG.32.desc
+	id = NE_ENG.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.32"}
+	title = NE_ENG.32.t
+	desc = NE_ENG.32.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.32.a
+		name = NE_ENG.32.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.33
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.33"}
-	title = ENG.33.t
-	desc = ENG.33.desc
+	id = NE_ENG.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.33"}
+	title = NE_ENG.33.t
+	desc = NE_ENG.33.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.33.a
+		name = NE_ENG.33.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.34
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.34"}
-	title = ENG.34.t
-	desc = ENG.34.desc
+	id = NE_ENG.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.34"}
+	title = NE_ENG.34.t
+	desc = NE_ENG.34.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.34.a
+		name = NE_ENG.34.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.35
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.35"}
-	title = ENG.35.t
-	desc = ENG.35.desc
+	id = NE_ENG.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.35"}
+	title = NE_ENG.35.t
+	desc = NE_ENG.35.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.35.a
+		name = NE_ENG.35.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.36
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.36"}
-	title = ENG.36.t
-	desc = ENG.36.desc
+	id = NE_ENG.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.36"}
+	title = NE_ENG.36.t
+	desc = NE_ENG.36.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.36.a
+		name = NE_ENG.36.a
 		ai_chance = { factor = 1 }
 		
 	}
 }
 
 country_event = { #
-	id = ENG.37
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ENG.37"}
-	title = ENG.37.t
-	desc = ENG.37.desc
+	id = NE_ENG.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.37"}
+	title = NE_ENG.37.t
+	desc = NE_ENG.37.desc
 	#picture = 
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = ENG.37.a
+		name = NE_ENG.37.a
 		ai_chance = { factor = 1 }
 		
 	}
