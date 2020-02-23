@@ -19,7 +19,7 @@ add_ideas = {
 	Deng_Xiaoping_Theory
 	double_price_system
 	developing_china
-}
+},
 
 set_stability = 0.6
 set_war_support = 0.7
@@ -29,7 +29,7 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
+},
 
 set_popularities = {
 	communism = 70
@@ -40,10 +40,10 @@ set_popularities = {
 	social_conservatism = 5
 	authoritarianism = 0
 	fascism = 0
-}
+},
 
 add_ideas = {
-}
+},
 
 give_guarantee = PRK
 
@@ -59,8 +59,8 @@ create_country_leader = {
 	ideology = communism_subtype_1
 	traits = {
 		cornered_fox
-	}
-}
+	},
+},
 create_country_leader = {
 	name = "한동팡"
 	desc = "POLITICS_PRC_Han_Dongfang_DESC"
@@ -68,8 +68,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = social_conservatism_subtype_1
 	traits = {
-	}
-}
+	},
+},
 create_country_leader = {
 	name = "우쿠"
 	desc = "POLITICS_PRC_Wu_Qu_DESC"
@@ -77,8 +77,8 @@ create_country_leader = {
 	expire = "2100.3.1"
 	ideology = authoritarianism_subtype_1
 	traits = {
-	}
-}
+	},
+},
 #create_country_leader = {
 #	name = "우쿠"
 #	desc = "POLITICS_PRC_Wu_Qu_DESC"
@@ -86,5 +86,5 @@ create_country_leader = {
 #	expire = "2100.3.1"
 #	ideology = fascism_subtype_1
 #	traits = {
-#	}
-#}
+#	},
+#},
