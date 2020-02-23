@@ -17,8 +17,8 @@ add_ideas = {
 	NS_Gen_landed_proprietor
 	NS_Gen_army_corruption_1
 	Deng_Xiaoping_Theory
-	double_price_system
-	developing_china
+	Double_Price_System
+	Developing_China
 },
 
 set_stability = 0.6
