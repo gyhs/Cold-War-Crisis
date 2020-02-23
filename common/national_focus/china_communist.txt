@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_foreign_investor
 		icon = #
-		cost = 1.00
+		cost = 4.00
 		x = 7
 		y = 0
 
@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_exclusive_industrial_zone
 		icon = #
-		cost = 1.00
+		cost = 4.00
 		prerequisite = {
 			focus = NF_CHI_foreign_investor
 			}
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_EIZ 2
 		icon = #
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = NF_CHI_exclusive_industrial_zone
 			}
@@ -41,7 +41,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_EIZ 3
 		icon = #
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 2
 			}
@@ -51,7 +51,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_EIZ 4
 		icon = #
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 3
 			}
@@ -63,7 +63,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_EIZ 5
 		icon = #
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 4
 			}
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = NF_CHI_EIZ 6
 		icon = #
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 5
 			}
