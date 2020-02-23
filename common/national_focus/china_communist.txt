@@ -22,7 +22,7 @@ focus_tree = {
 		cost =,,, 4.00
 		prerequisite = {
 			focus = NF_CHI_foreign_investor
-			}
+			},
 		x = 7
 		y = 2
 	}
@@ -33,7 +33,7 @@ focus_tree = {
 		cost =,,, 4.00
 		prerequisite = {
 			focus = NF_CHI_exclusive_industrial_zone
-			}
+			},
 		x = 7
 		y = 3
 		}
@@ -44,7 +44,7 @@ focus_tree = {
 		cost =,,, 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 2
-			}
+			},
 		x = 7
 		y = 4
 		
@@ -53,9 +53,7 @@ focus_tree = {
 		icon = #
 		cost =,,, 4.00
 		prerequisite = {
-			focus = NF_CHI_EIZ 3
-			}
-			
+		focus = NF_CHI_EIZ 3},
 			Completion_reward = 
 		x = 7
 		y = 5
@@ -66,7 +64,7 @@ focus_tree = {
 		cost =,,, 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 4
-			}
+			},
 			Completion_reward = 
 		x = 9
 		y = 6
@@ -77,7 +75,7 @@ focus_tree = {
 		cost =,,, 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 5
-			}
+			},
 			Completion_reward = 
 		x = 9
 		y = 7
@@ -88,7 +86,7 @@ focus_tree = {
 		cost =,,, 4.00
 		prerequisite = {
 			focus = NF_CHI_EIZ 6
-			}
+			},
 			Completion_reward = 
 		x = 12
 		y = 8
@@ -99,7 +97,7 @@ focus_tree = {
 		cost =,,, 4.00
 		prerequisite = {
 			focus = M_Factory_1
-			}
+			},
 			Completion_reward = 
 		x = 12
 		y = 9
