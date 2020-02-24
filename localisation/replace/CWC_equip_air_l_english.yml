@@ -187,7 +187,11 @@
  
  
  
- 
+  ### 국가별 명칭
+ SOV_jet_strat_bomber_equipment_1:0 "투폴레프 Tu-16"
+ SOV_jet_strat_bomber_equipment_1_short:0 "투폴레프 Tu-16"
+ SOV_strat_bomber_equipment_1:0 "투폴레프 Tu-95"
+ SOV_strat_bomber_equipment_1_short:0 "투폴레프 Tu-95"
  
  
  
