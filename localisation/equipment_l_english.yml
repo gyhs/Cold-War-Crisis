@@ -356,19 +356,6 @@
  USA_light_tank_equipment_3_desc:0 "M551 셰리든"
  ### 국가별 명칭
  
- SOV_infantry_equipment_0:0 "M1891 모신나강"
- SOV_infantry_equipment_1:0 "AK-47"
- SOV_infantry_equipment_2:0 "AK-74"
- SOV_infantry_equipment_3:0 "AK-74M"
- SOV_infantry_equipment_4:0 "AK-12"
- SOV_infantry_equipment_5:0 "AK-12M"
- SOV_infantry_equipment_0_short:0 "M1891 모신나강"
- SOV_infantry_equipment_1_short:0 "AK-47"
- SOV_infantry_equipment_2_short:0 "AK-74"
- SOV_infantry_equipment_3_short:0 "AK-74M"
- SOV_infantry_equipment_4_short:0 "AK-12"
- SOV_infantry_equipment_5_short:0 "AK-12M"
- 
  USA_infantry_equipment_0:0 "M1 개런드"
  USA_infantry_equipment_1:0 "M16A1"
  USA_infantry_equipment_2:0 "M16A2"
