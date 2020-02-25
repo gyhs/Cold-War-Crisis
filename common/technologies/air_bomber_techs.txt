@@ -237,7 +237,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = air_bomber_folder
-			position = { x = 20 y = 4 }
+			position = { x = 20 y = 6 }
 		}
 		
 		categories = {
@@ -274,7 +274,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = air_bomber_folder
-			position = { x = 20 y = 6 }
+			position = { x = 20 y = 8 }
 		}
 		
 		categories = {
@@ -297,47 +297,6 @@ technologies = {
 
 		enable_equipments = {
 			nav_bomber_equipment_3
-		}
-	
-		path = {
-			leads_to_tech = tech_naval_bomber_4
-			research_cost_coeff = 1
-		}
-		
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
-		research_cost = 2
-		start_year = 2000
-		folder = {
-			name = air_bomber_folder
-			position = { x = 20 y = 8 }
-		}
-		
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	
-	tech_naval_bomber_4 = { #
-
-		enable_equipments = {
-			nav_bomber_equipment_4
-		}
-		
-		dependencies = {
-			jet_engines_5 = 1
 		}
 		
 		xp_research_type = air
