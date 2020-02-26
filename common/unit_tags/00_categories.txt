@@ -26,4 +26,7 @@ sub_unit_categories = {
 	
 	category_cv_cas				# New category for dive bombers
 	category_special_forces
+	
+	category_scout_plane
+	category_recon
 }
