@@ -62,6 +62,16 @@ sub_units = {
 		need = { CAS_equipment = 1 }
 		categories = { category_cas }
 	}
+
+	# 관제기 #	
+	scout_plane = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { scout_plane }
+		need = { scout_plane_equipment = 1 }
+		categories = { category_scout_plane }
+	}
 	
 	# 공격헬기 #	
 	attack_helicopter = {

@@ -326,13 +326,16 @@
  marines_5:0 "해병 장비 5"
 # Air Tech techtree labels
  AIR_TITLE_FIGHTER:0 "전투기"
- AIR_TITLE_HEAVY_FIGHTER:0 "공중우세 전투기"
+ AIR_TITLE_HEAVY_FIGHTER:0 "전폭기"
  AIR_TITLE_light_fighter:0 "경 전투기"
  AIR_TITLE_CAS:0 "공격기"
  AIR_TITLE_NAV:0 "대잠초계기"
  
- AIR_TITLE_STRAT_BOMBER:0 "프롭 전략폭격기"
- AIR_TITLE_JET_STRAT_BOMBER:0 "제트 전략폭격기"
+ AIR_TITLE_transport_plane:0 "수송기"
+ AIR_TITLE_naval_bomber:0 "대잠초계기"
+ 
+ AIR_TITLE_long_range_strategic_bomber:0 "장거리 전략폭격기"
+ AIR_TITLE_jet_strategic_bomber:0 "제트 전략폭격기"
  AIR_TITLE_supersonic_strat_bomber:0 "초음속 전략폭격기"
  AIR_TITLE_stealth_strat_bomber:0 "스텔스 전략폭격기"
  
