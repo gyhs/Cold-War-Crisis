@@ -1063,7 +1063,7 @@ leader_traits = {
 	
 	prince_of_terror = {
 		sprite = 13
-		enemy_partisan_effect = -0.25
+		resistance_damage_to_garrison = -0.25
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.02
 		
@@ -1243,7 +1243,7 @@ leader_traits = {
 	
 	baron_of_terror = {
 		sprite = 13
-		enemy_partisan_effect = -0.15
+		resistance_damage_to_garrison = -0.15
 		foreign_subversive_activites = -0.15
 		non_core_manpower = 0.01
 		
@@ -1401,7 +1401,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		enemy_partisan_effect = -0.25
+		resistance_damage_to_garrison = -0.25
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.02
 		
