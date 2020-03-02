@@ -274,19 +274,18 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
+		
 		modifiers = {
-			generate_wargoal_tension = 0.3
-			join_faction_tension = 0.25
-			lend_lease_tension = 0.1
-			send_volunteers_tension = 0.15
-			guarantee_tension = 0.35
-			take_states_cost_factor = 0.25
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
 			annex_cost_factor = 0.5
-			puppet_cost_factor = 0
-			
-			ai_call_ally_desire_factor = -10
-			ai_join_ally_desire_factor = -10
-			ai_get_ally_desire_factor = -10
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
 		}
 		
 	can_host_government_in_exile = yes		
