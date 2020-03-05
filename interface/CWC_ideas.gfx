@@ -62,4 +62,9 @@ spriteTypes = {
 		name = "GFX_idea_Foreign_Legion_idea"
 		texturefile = "gfx/interface/ideas/Foreign_Legion_idea.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_1er_RPIMa_idea"
+		texturefile = "gfx/interface/ideas/1er_RPIMa_idea.dds"
+	}
 }

@@ -943,6 +943,10 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_army_air_corps
 		}
+		completion_reward = {
+			add_ideas = one_er_RPIMa
+			#국가정신 제1해양공수연대 추가
+		}
 		x = 40
 		y = 6
 
