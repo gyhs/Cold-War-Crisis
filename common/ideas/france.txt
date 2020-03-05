@@ -571,6 +571,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				non_core_manpower = 0.05
+				conscription = 0.05
+				# 비핵심 인력 5%, 징병 5%
 			}
 		}
 		#외인부대
@@ -589,6 +592,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				
 			}
 		}
 		#제1해양공수병대

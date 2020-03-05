@@ -84,9 +84,10 @@ focus_tree = {
 				   }
 			add_timed_idea = {
     			idea = deficit_recovery
-    			days = 200
+    			days = 365
 			}
-			#국가정신 핵으로 발전하는 우리 추가 , 누적되는 무역적자 제거. 통화문제 제거, 적자회복 200일
+			add_threat = 0.5
+			#국가정신 핵으로 발전하는 우리 추가 , 누적되는 무역적자 제거. 통화문제 제거, 적자회복 365일 , 세계긴장도 +0.5%
 		}
 		prerequisite = {
 			focus = NF_FRA_unilaterally_path
@@ -229,7 +230,8 @@ focus_tree = {
 				idea = single_party
 				days = 180
 			}
-			#국가정신 '하나의 당' 180일
+			add_threat = 0.5
+			#국가정신 '하나의 당' 180일 , 세계긴장도 +0.5%
 		}
 		x = 18
 		y = 6
@@ -261,8 +263,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = treaty_of_the_revolution
+			add_threat = 2
 		}
-		# 영구 혁명 조약 결성
+		# 영구 혁명 조약 결성, 세계긴장도 +2%
 		x = 16
 		y = 8
 
@@ -298,7 +301,8 @@ focus_tree = {
 				days = 180
 				#소련의 정권지원
 			}
-			add_threat = 3
+			add_threat = 0.5
+			#세계 긴장도 +0.5%
 		}
 		x = 20
 		y = 6
@@ -361,6 +365,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			SOV = { add_to_faction = FRA }
+			add_threat = 3
+			#바르샤바 조약  기구 가입 , 세계긴장도 +3%
 		}
 		x = 22
 		y = 8
