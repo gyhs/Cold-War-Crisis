@@ -325,24 +325,76 @@ technology_categories = {
 }
 
 technology_folders = {
-	infantry_folder
-	support_folder
-	armour_folder
-	artillery_folder
-	air_techs_folder		# original folder -- single engine aircraft
-	air_bomber_folder		# new folder -- twin and quad engine aircraft
-	air_helicopter_folder
-	naval_folder			# original folder -- naval screen ships
-	naval_capital_folder	# new folder -- naval capital ships
-	naval_submarine_folder
-	naval_equipment_folder
-	industry_folder
-	land_doctrine_folder
-	naval_doctrine_folder
-	air_doctrine_folder
-	electronics_folder
+	infantry_folder = {
+		ledger = army
+	}
+	support_folder = {
+		ledger = army
+	}
+	armour_folder = {
+		ledger = army
+	}
+	artillery_folder = {
+		ledger = army
+	}
+	air_techs_folder = {
+		ledger = air
+	}
+	air_bomber_folder = {
+		ledger = air
+	}
+	air_helicopter_folder = {
+		ledger = air
+	}
+	naval_folder = {
+		available = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		ledger = navy
+	}
+	naval_capital_folder = {
+		available = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		ledger = navy
+	}
+	naval_submarine_folder = {
+		available = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		ledger = navy
+	}
+	naval_equipment_folder = {
+		available = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		ledger = navy
+	}
+	#mtgnavalfolder = {
+	#	available = {
+	#		has_dlc = "Man the Guns"
+	#	}
+	#	ledger = navy
+	#}
+	land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+	electronics_folder = {
+		ledger = civilian
+	}
+	industry_folder = {
+		ledger = civilian
+	}
 	#secret_weapons_folder
-
 }
 
  
