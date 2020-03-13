@@ -348,25 +348,25 @@ technology_folders = {
 	}
 	naval_folder = {
 		available = {
-			not = { has_dlc = "Man the Guns" }
+			has_dlc = "Man the Guns"
 		}
 		ledger = navy
 	}
 	naval_capital_folder = {
 		available = {
-			not = { has_dlc = "Man the Guns" }
+			has_dlc = "Man the Guns"
 		}
 		ledger = navy
 	}
 	naval_submarine_folder = {
 		available = {
-			not = { has_dlc = "Man the Guns" }
+			has_dlc = "Man the Guns"
 		}
 		ledger = navy
 	}
 	naval_equipment_folder = {
 		available = {
-			not = { has_dlc = "Man the Guns" }
+			has_dlc = "Man the Guns"
 		}
 		ledger = navy
 	}
