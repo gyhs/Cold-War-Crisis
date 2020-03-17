@@ -5,7 +5,7 @@ tags={
 	"National Focuses"
 }
 dependencies={
-	"Korean Localization"
+	"Korean Language (Europa)"
 }
 name="Cold War Crisis dev."
 supported_version="1.9.*"
