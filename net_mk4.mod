@@ -5,10 +5,10 @@ tags={
 	"National Focuses"
 }
 dependencies={
-	"한국어 모드(Korean Translation)"
+	"Korean Language (Europa)"
 }
 name="Cold War Crisis dev."
-supported_version="1.9"
+supported_version="1.9.*"
 replace_path="history/states"
 replace_path="map"
 replace_path="map/strategicregions"

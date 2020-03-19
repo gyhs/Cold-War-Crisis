@@ -422,9 +422,8 @@ ideas = {
 				stability_factor = 0.15
 				political_power_factor = 0.2
 				non_core_manpower = 0.02
-				resistance_tick_auto = -2
-				enemy_partisan_effect = -0.1
-				#공산주의 증가 , 안정도 15% , 정치력 10% , 비핵심 인력 , 파르티잔 저하 , 당 저항
+				resistance_damage_to_garrison = -0.1
+				#공산주의 증가 , 안정도 15% , 정치력 10% , 비핵심 인력 ,  당 저항
 			}
 		}
 		#진정한 혁명의 고향
@@ -572,7 +571,29 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				non_core_manpower = 0.05
+				conscription = 0.05
+				# 비핵심 인력 5%, 징병 5%
 			}
 		}
 		#외인부대
+
+		one_er_RPIMa = {
+			picture = 1er_RPIMa_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		#제1해양공수병대
 }
