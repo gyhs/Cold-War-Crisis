@@ -1024,6 +1024,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_breakthrough
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_LAND_MNV
+			}
+			# 기동전 2번 100%
+		}
 		x = 44
 		y = 6
 
@@ -1039,6 +1047,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NF_FRA_attack_is_the_greatest_defense
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_LAND_MNV
+			}
+			# 기동전 2번 100%
+		}
 		x = 46
 		y = 6
 
@@ -1050,6 +1066,14 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_breakthrough
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_LAND_SPF
+			}
+			# 화력전 2번 100%
 		}
 		x = 46
 		y = 7
@@ -1172,6 +1196,14 @@ focus_tree = {
 			focus = NF_FRA_cruiser_development
 			focus = NF_FRA_aircraft_carrier_development
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = CAT_DTL_NAVY_BASIC
+			}
+			# 해군 기초 군사학 3번 100%
+		}
 		x = 50
 		y = 7
 
@@ -1186,6 +1218,14 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_hitting_doctrine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_NAVY_BSK
+			}
+			# 기지 타격 교리 2번 100%
 		}
 		x = 49
 		y = 8
@@ -1214,6 +1254,19 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_hitting_doctrine
 			focus = NF_FRA_aircraft_carriercentric_doctrine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_AIR_FTR_M_CV
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = CAT_AIR_FTR_ASF_CV
+			}
+			# 항공모함 표준 전투기 100% , 항공모함 공중우세 전투기 100%
 		}
 		x = 50
 		y = 9
@@ -1481,6 +1534,14 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_attack_is_the_greatest_defense
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_LAND_SPF
+			}
+			# 화력전 2번 100%
 		}
 		x = 44
 		y = 7
