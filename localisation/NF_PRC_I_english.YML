@@ -40,5 +40,9 @@ l_english:
  NF_PRC_expressway_4: "7918구상"
  NF_PRC_highway: "일반 국도 건설"
  NF_PRC_highway_2: "일반 국도 건설 박차"
-
+ NF_PRC_highway_3: "국도 완성"
+ NF_PRC_Tainanmen: "천안문 사태"
+ NF_PRC_Tainanmen_1: "마오쩌뚱으로의 회귀
+ NF_PRC_Tainanmen_2: "중지된 정치개혁"
+ 
  
