@@ -61,6 +61,10 @@ technologies = {
 			leads_to_tech = tech_naval_bomber_1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_awacs_1
+			research_cost_coeff = 1
+		}
 
 		xp_research_type = air
 		xp_research_cost = 100
@@ -313,6 +317,112 @@ technologies = {
 			naval_air
 			air_equipment
 			naval_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	tech_awacs_1 = { #
+
+		enable_equipments = {
+			scout_plane_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = tech_awacs_2
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = air_bomber_folder
+			position = { x = 23 y = 6 }
+		}
+		
+		categories = {
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	tech_awacs_2 = { #
+
+		enable_equipments = {
+			scout_plane_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = tech_awacs_3
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = air_bomber_folder
+			position = { x = 23 y = 8 }
+		}
+		
+		categories = {
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	tech_awacs_3 = { #
+
+		enable_equipments = {
+			scout_plane_equipment_3
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = air_bomber_folder
+			position = { x = 23 y = 10 }
+		}
+		
+		categories = {
+			naval_air
+			naval_bomber
+			air_equipment
 		}
 		
 		ai_will_do = {
