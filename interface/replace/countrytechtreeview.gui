@@ -814,7 +814,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 1800 height = 800 }
+				size = { width = 2000 height = 2000 }
 			}
 	
 			iconType = {
@@ -882,7 +882,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 1800 height = 800 }
+				size = { width = 2000 height = 2000 }
 			}
 	
 			iconType = {
@@ -1043,7 +1043,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 1800 height = 800 }
+				size = { width = 2000 height = 2000 }
 			}
 	
 			iconType = {
@@ -1178,7 +1178,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 1400 height = 800 }
+				size = { width = 2000 height = 2000 }
 			}
 	
 			iconType = {
@@ -1541,7 +1541,7 @@ guiTypes = {
 			gridboxtype = {
 				name = "tech_transport_plane_1_tree"
 				position = { x = 0 y = 100 }
-				size = { width = 400 height = 1000 }
+				size = { width = 350 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -1668,8 +1668,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = {
-					width = 1400 height = 800
+				size = { width = 2000 height = 2000 }
 					min = { width = 100%% height = 100%% }
 				}
 				
