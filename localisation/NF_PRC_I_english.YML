@@ -19,6 +19,7 @@ l_english:
  NF_PRC_Military_modernization_2: "방위산업체 개선"
  NF_PRC_Military_modernization_2_B: "신형 전차 개발"
  NF_PRC_Military_modernization_2_C: "89식 122mm 자주포 배치"
+ NF_PRC_Military_modernization_2_D: "L7 105mm 강선포 라이센스 구입"
  NF_PRC_Military_modernization_3: "해군 현대화 정책"
  NF_PRC_Military_modernization_3_B: "052형 구축함 개발"
  NF_PRC_Military_modernization_3_C: "장웨이급 호위함 건조"
@@ -42,7 +43,14 @@ l_english:
  NF_PRC_highway_2: "일반 국도 건설 박차"
  NF_PRC_highway_3: "국도 완성"
  NF_PRC_Tainanmen: "천안문 사태"
- NF_PRC_Tainanmen_1: "마오쩌뚱으로의 회귀
+ NF_PRC_Tainanmen_1: "마오주의으로의 회귀
  NF_PRC_Tainanmen_2: "중지된 정치개혁"
+ NF_PRC_Tainanmen_3: "장쩌민 등극"
+ NF_PRC_NEW_China: "중국의 거대한 물결"
+ NF_PRC_NEW_China_2: "날아오르는 용"
+ NF_PRC_Railway: "중국 철도 계획
+ NF_PRC_Middle_economy_zone: "중부 경제계획"
+ NF_PRC_Middle_economy_zone_2: "후난-후베이-허난-산시 성 경제특구 계획"
+ NF_PRC_Manchuria_economy: "만주 개발 계획"
  
  
