@@ -262,6 +262,11 @@
  air_bomber_folder_desc:0 "전략 폭격기들"
  air_helicopter_folder:0 "헬기"
  air_helicopter_folder_desc:0 "헬기"
+ 
+ tech_awacs_1:0 "공중조기경보통제기 초기형"
+ tech_awacs_2:0 "공중조기경보통제기 개량형"
+ tech_awacs_3:0 "공중조기경보통제기 현대형"
+ 
 # Ship tech names
  shbb_tech:0 "Heavy Battleship models"
 # Naval Tech Names and Descriptions (component techs)
