@@ -209,15 +209,6 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"PRC"={
-			minor = yes
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
