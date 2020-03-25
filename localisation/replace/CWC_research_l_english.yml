@@ -9,13 +9,6 @@
  infantry_subtitle_motorized:0 "기동보병"
  infantry_subtitle_motorized_desc:0 "보병을 차량에 태워서 급변하는 전장에 유연한 작전을 펼칠 수 있도록 해줍니다."
  
- infantry_weapons_0:0 "WW2 보병화기"
- infantry_weapons_1:0 "보병화기 1"
- infantry_weapons_2:0 "보병화기 2"
- infantry_weapons_3:0 "보병화기 3"
- infantry_weapons_4:0 "보병화기 4"
- infantry_weapons_5:0 "보병화기 5"
- 
  rail_integration_system_1:0 "레일 액세서리 시스템 1"
  rail_integration_system_2:0 "레일 액세서리 시스템 2"
  etc_infantry_equipments_1:0 "기타 보병 장비 1"
