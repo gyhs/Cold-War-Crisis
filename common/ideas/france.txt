@@ -507,10 +507,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = 0.10	
-				production_speed_bunker_factor = 0.25
-				production_speed_coastal_bunker_factor = 0.25
-
+				stability_factor = 0.10	# 핵심 지역 방어 10% 증가
+				production_speed_bunker_factor = 0.25 #요새 건설 속도 25%증가
+				production_speed_coastal_bunker_factor = 0.25 #해안 요새 건설 속도 25%증가
+				stability_factor = 0.05 #안정도 5% 증가
 			}
 		}
 		#몰락 기다리기
@@ -592,8 +592,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				amphibious_invasion = 0.10 #상륙 이동 속도 10% 증가
+				invasion_preparation = -0.2 #상륙 준비 시간 20% 단축
+				air_paradrop_attack_factor = 0.03 #공수부대 공격 3% 증가
+				air_paradrop_defence_factor = 0.03 #공수부대 방어 3% 증가
 			}
 		}
 		#제1해양공수병대
+
 }
