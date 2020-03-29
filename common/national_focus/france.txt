@@ -585,7 +585,7 @@ focus_tree = {
 			focus = NF_FRA_the_Iron_curtain_breaking
 		}
 		completion_reward = {
-			
+			add_ideas = wait_for_comedown
 		}
 		x = 29
 		y = 9
