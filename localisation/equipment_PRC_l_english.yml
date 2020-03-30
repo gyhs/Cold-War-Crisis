@@ -45,10 +45,4 @@
  PRC_manpads_equipment_2_short:0 "QW-1 뱅가드"
  PRC_manpads_equipment_3_short:0 "QW-2 뱅가드 II"
  PRC_manpads_equipment_4_short:0 "QW-3"
-<<<<<<< HEAD
- PRC_manpads_equipment_5_short:0 "FN-6"
- 
- 
-=======
- PRC_manpads_equipment_5_short:0 "FN-6"
->>>>>>> 2e500cb3b3a2507e4ef3f21de56e24c1ee6b7429
+ PRC_manpads_equipment_5_short:0 "FN-16"
