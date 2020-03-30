@@ -139,128 +139,6 @@ technologies = {
 		}
 	}
 	
-	artillery_4 = {
-
-		enable_equipments = {
-			artillery_equipment_4
-		}
-		
-		path = {
-			leads_to_tech = artillery_5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2000
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 2
-				date > "1940.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	artillery_5 = {
-
-		enable_equipments = {
-			artillery_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = artillery_6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.6"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	artillery_6 = {
-
-		enable_equipments = {
-			artillery_equipment_6
-		}
-		
-		path = {
-			leads_to_tech = artillery_7
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 0 y = 10 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.6"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
-		}
-	}
-	
 	spa_1 = {
 
 		enable_equipments = {
@@ -357,84 +235,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 6 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.6"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	spa_4 = {
-
-		enable_equipments = {
-			modern_tank_artillery_equipment_4
-		}
-		
-		path = {
-			leads_to_tech = spa_5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -3 y = 8 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.6"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	spa_5 = {
-
-		enable_equipments = {
-			modern_tank_artillery_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = spa_6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -3 y = 10 }
 		}
 		
 		categories = {
@@ -737,6 +537,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		path = {
+			leads_to_tech = antitank_engineering_3
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 2
 
 		start_year = 1990
@@ -779,76 +584,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 4 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-		
-		categories = {
-			rocketry
-			mot_rockets
-		}
-	}
-	
-	motorized_rocket_5 = {
-	
-		enable_equipments = {
-			motorized_rocket_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = motorized_rocket_6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-		
-		categories = {
-			rocketry
-			mot_rockets
-		}
-	}
-	
-	motorized_rocket_6 = {
-	
-		enable_equipments = {
-			motorized_rocket_equipment_6
-		}
-		
-		path = {
-			leads_to_tech = motorized_rocket_7
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -932,10 +667,10 @@ technologies = {
 			soft_attack = 0.15
 		}
 		
-		path = {
-			leads_to_tech = antitank_engineering_3
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = antitank_engineering_3
+		#	research_cost_coeff = 1
+		#}
 		
 		research_cost = 2
 
@@ -1115,15 +850,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = antitank_1
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = antitank_engineering_1
-			research_cost_coeff = 1
-		}
 		dependencies = {
 			experimental_rockets = 1
 		}
