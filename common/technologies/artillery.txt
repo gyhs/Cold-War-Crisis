@@ -256,6 +256,45 @@ technologies = {
 		}
 	}
 	
+	spa_4 = {
+
+		enable_equipments = {
+			modern_tank_artillery_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = spa_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2000
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	
 	artillery_engineering_1 = {
 
 		artillery = {
@@ -1016,90 +1055,6 @@ technologies = {
 		}
 	}
 	
-	infantry_at_5 = {
-	
-		enable_equipments = {
-			anti_tank_rocket_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = infantry_at_6
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 2010
-		folder = {
-			name = artillery_folder
-			position = { x = 8 y = 8 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-		}
-	}
-	
-	infantry_at_6 = {
-	
-		enable_equipments = {
-			anti_tank_rocket_equipment_6
-		}
-		
-		path = {
-			leads_to_tech = infantry_at_7
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 2010
-		folder = {
-			name = artillery_folder
-			position = { x = 8 y = 10 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-		}
-	}
-	
 	antitank_1 = {	# 1세대, 2세대 3세대 로 분류. 로켓이 초반,가난 무기면 미사일은 후반 비싼 무기.
 
 		enable_equipments = {
@@ -1321,62 +1276,6 @@ technologies = {
 		}
 	}
 	
-	antitank_5 = {
-
-		enable_equipments = {
-			anti_tank_equipment_5
-		}
-	
-		path = {
-			leads_to_tech = antitank_6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 11 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1943.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
-			}
-		}
-		
-		categories = {
-			artillery
-			cat_anti_tank
-		}
-	}
-	
 	manpads_1 = {		# 휴대용 대공 미사일은 총 4세대	https://en.wikipedia.org/wiki/Man-portable_air-defense_system
 
 		enable_equipments = {
@@ -1552,49 +1451,6 @@ technologies = {
 		}
 	}
 	
-	manpads_5 = {
-
-		enable_equipments = {
-			manpads_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = manpads_6
-			research_cost_coeff = 1
-		}
-		research_cost = 1.5
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 14 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-	
 	antiair_1 = {
 
 		enable_equipments = {
@@ -1608,11 +1464,6 @@ technologies = {
 		
 		path = {
 			leads_to_tech = antiair_2
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = manpads_1
 			research_cost_coeff = 1
 		}
 		dependencies = {
@@ -1739,64 +1590,6 @@ technologies = {
 		}
 	}
 	
-	antiair_5 = {
-
-		enable_equipments = {
-			modern_tank_aa_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = antiair_6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 17 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-	
-	antiair_6 = {
-
-		enable_equipments = {
-			modern_tank_aa_equipment_6
-		}
-		
-		path = {
-			leads_to_tech = antiair_7
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 17 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-	
 	SPAAG_1 = {
 
 		enable_equipments = {
@@ -1902,64 +1695,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 20 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-	
-	SPAAG_5 = {
-
-		enable_equipments = {
-			anti_air_equipment_5
-		}
-		
-		path = {
-			leads_to_tech = SPAAG_6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 20 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			artillery
-		}
-	}
-	
-	SPAAG_6 = {
-
-		enable_equipments = {
-			anti_air_equipment_6
-		}
-		
-		path = {
-			leads_to_tech = SPAAG_7
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-
-		start_year = 2010
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 20 y = 10 }
 		}
 		
 		ai_will_do = {
