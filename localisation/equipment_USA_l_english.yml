@@ -64,3 +64,13 @@
  USA_light_mechanized_equipment_3_desc:0 "LAV-25A1"
  USA_light_mechanized_equipment_4_desc:0 "M1128 스트라이커"
  USA_light_mechanized_equipment_5_desc:0 "M1296 드래군"
+ 
+ USA_motorized_rocket_equipment:0 "다연장로켓"
+ USA_motorized_rocket_equipment_1:0 "칼리오페 다연장로켓"
+ USA_motorized_rocket_equipment_2:0 "XM70E2"
+ USA_motorized_rocket_equipment_3:0 "M270 MLRS"
+ USA_motorized_rocket_equipment_4:0 "M270A1 MLRS"
+ USA_motorized_rocket_equipment_1_short:0 "칼리오페 다연장로켓"
+ USA_motorized_rocket_equipment_2_short:0 "XM70E2"
+ USA_motorized_rocket_equipment_3_short:0 "M270 MLRS"
+ USA_motorized_rocket_equipment_4_short:0 "M270A1 MLRS"
