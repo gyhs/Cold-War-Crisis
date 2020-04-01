@@ -90,3 +90,147 @@ focus_tree = {
 		icon = 
 		x = 15
 		y = 9
+		
+	focus = {
+		id = NF_PRC_M_Factory_3
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_M_Factory_2 },
+			Completion_reward = 
+		icon = 
+		x = 15
+		y = 10
+		
+	focus = {
+		id = NF_PRC_Anti-Air
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_M_Factory_3 },
+			Completion_reward = 
+		icon = 
+		x = 15
+		y = 11
+		
+	focus = {
+		id = NF_PRC_Military_modernization_1
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Anti-Air },
+			Completion_reward = 
+		icon = 
+		x = 15
+		y = 12
+		
+	focus = {
+		id = NF_PRC_Military_modernization_2
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_1 },
+			Completion_reward = 
+		icon = 
+		x = 16
+		y = 12
+	
+	focus = {
+		id = NF_PRC_Military_modernization_2_B
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_2 },
+			Completion_reward = 
+		icon = 
+		x = 17
+		y = 12
+		
+	focus = {
+		id = NF_PRC_Military_modernization_2_C
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_2_B },
+			Completion_reward = 
+		icon = 
+		x = 18
+		y = 12
+		
+	focus = {
+		id = NF_PRC_Military_modernization_2_D
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_2_C },
+			Completion_reward = 
+		icon = 
+		x = 19
+		y = 12
+		
+	focus = {
+		id = NF_PRC_Military_modernization_3
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_2_D },
+			Completion_reward = 
+		icon = 
+		x = 16
+		y = 13
+		
+	focus = {
+		id = NF_PRC_Military_modernization_3_B
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_3 },
+			Completion_reward = 
+		icon = 
+		x = 17
+		y = 13
+		
+	focus = {
+		id = NF_PRC_Military_modernization_3_C
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_3_B },
+			Completion_reward = 
+		icon = 
+		x = 18
+		y = 13
+		
+	focus = {
+		id = NF_PRC_Military_modernization_3_D
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_3_C },
+			Completion_reward = 
+		icon = 
+		x = 19
+		y = 13
+		
+	focus = {
+		id = NF_PRC_Military_modernization_3_E
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_3_D },
+			Completion_reward = 
+		icon = 
+		x = 20
+		y = 13
+		
+	focus = {
+		id = NF_PRC_Military_modernization_3_F
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_3_E },
+			Completion_reward = 
+		icon = 
+		x = 21
+		y = 13
+		
+	focus = {
+		id = NF_PRC_Military_modernization_4_A
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_3_F },
+			Completion_reward = 
+		icon = 
+		x = 15
+		y = 14
+		
+	focus = {
+		id = NF_PRC_Military_modernization_4_B
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_4_A },
+			Completion_reward = 
+		icon = 
+		x = 16
+		y = 14
+		
+	focus = {
+		id = NF_PRC_Military_modernization_5
+		cost = 4.00
+		prerequisite = { focus = NF_PRC_Military_modernization_4_B },
+			Completion_reward = 
+		icon = 
+		x = 17
+		y = 14
