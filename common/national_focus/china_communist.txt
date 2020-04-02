@@ -45,6 +45,7 @@ focus_tree = {
 		icon = 
 		x = 7
 		y = 4
+	}
 		
 	focus = {
 		id = NF_PRC_EIZ_4
@@ -54,7 +55,8 @@ focus_tree = {
 		icon = 
 		x = 7
 		y = 5
-		
+	}
+	
 	focus = {
 		id = NF_PRC_EIZ_5
 		cost = 4.0
@@ -63,6 +65,7 @@ focus_tree = {
 		icon = 
 		x = 9
 		y = 6
+	}
 		
 	focus = {
 		id = NF_PRC_EIZ_6
@@ -72,6 +75,7 @@ focus_tree = {
 		icon = 
 		x = 9
 		y = 7
+	}
 		
 	focus = {
 		id = NF_PRC_M_Factory_1
@@ -81,6 +85,7 @@ focus_tree = {
 		icon = 
 		x = 15
 		y = 8
+	}
 		
 	focus = {
 		id = NF_PRC_M_Factory_2
@@ -90,6 +95,7 @@ focus_tree = {
 		icon = 
 		x = 15
 		y = 9
+	}
 		
 	focus = {
 		id = NF_PRC_M_Factory_3
@@ -99,6 +105,7 @@ focus_tree = {
 		icon = 
 		x = 15
 		y = 10
+	}
 		
 	focus = {
 		id = NF_PRC_Anti-Air
@@ -108,6 +115,7 @@ focus_tree = {
 		icon = 
 		x = 15
 		y = 11
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_1
@@ -117,6 +125,7 @@ focus_tree = {
 		icon = 
 		x = 15
 		y = 12
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_2
@@ -126,6 +135,7 @@ focus_tree = {
 		icon = 
 		x = 16
 		y = 12
+	}
 	
 	focus = {
 		id = NF_PRC_Military_modernization_2_B
@@ -135,6 +145,7 @@ focus_tree = {
 		icon = 
 		x = 17
 		y = 12
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_2_C
@@ -144,6 +155,7 @@ focus_tree = {
 		icon = 
 		x = 18
 		y = 12
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_2_D
@@ -153,6 +165,7 @@ focus_tree = {
 		icon = 
 		x = 19
 		y = 12
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_3
@@ -162,6 +175,7 @@ focus_tree = {
 		icon = 
 		x = 16
 		y = 13
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_3_B
@@ -171,6 +185,7 @@ focus_tree = {
 		icon = 
 		x = 17
 		y = 13
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_3_C
@@ -180,6 +195,7 @@ focus_tree = {
 		icon = 
 		x = 18
 		y = 13
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_3_D
@@ -189,6 +205,7 @@ focus_tree = {
 		icon = 
 		x = 19
 		y = 13
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_3_E
@@ -198,6 +215,7 @@ focus_tree = {
 		icon = 
 		x = 20
 		y = 13
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_3_F
@@ -207,6 +225,7 @@ focus_tree = {
 		icon = 
 		x = 21
 		y = 13
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_4_A
@@ -216,6 +235,7 @@ focus_tree = {
 		icon = 
 		x = 15
 		y = 14
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_4_B
@@ -225,6 +245,7 @@ focus_tree = {
 		icon = 
 		x = 16
 		y = 14
+	}
 		
 	focus = {
 		id = NF_PRC_Military_modernization_5
@@ -234,3 +255,4 @@ focus_tree = {
 		icon = 
 		x = 17
 		y = 14
+	}
