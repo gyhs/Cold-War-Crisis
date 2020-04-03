@@ -599,5 +599,22 @@ ideas = {
 			}
 		}
 		#제1해양공수병대
+	war_preparation = {
+			picture = idea_chi_army_corruption3
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+		#전쟁준비
 }
