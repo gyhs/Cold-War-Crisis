@@ -157,5 +157,6 @@ l_english:
  NF_PRC_EIZ_7:0 "서부 관광특구 개발"
  NF_PRC_EIZ_8:0 "서부 경제 성장계획"
  NF_PRC_EIZ_9:0 "전세계의 공장"
->>>>>>> 15cd7c92c9a18d300e89727f8cf32d955718598a
+ NF_PRC_Inflation: "인플레이션 조정"
+ 
  
