@@ -31,3 +31,13 @@
  FRA_modern_tank_equipment_4_desc:0 "GIAT AMX-30 Brenus"
  FRA_modern_tank_equipment_5_desc:0 "Char Leclerc"
  FRA_modern_tank_equipment_6_desc:0 "Char Leclerc AZUR"
+
+ FRA_manpads_equipment:0 "휴대용 대공 미사일"
+ FRA_manpads_equipment_1:0 "MATRA/MBDA Mistral S1"
+ FRA_manpads_equipment_2:0 "MBDA Mistral M2"
+ FRA_manpads_equipment_3:0 "MBDA Mistral F3"
+ FRA_manpads_equipment_4:0 "MBDA Mistral 3"
+ FRA_manpads_equipment_1_short:0 "Mistral S1"
+ FRA_manpads_equipment_2_short:0 "Mistral M2"
+ FRA_manpads_equipment_3_short:0 "Mistral F3"
+ FRA_manpads_equipment_4_short:0 "Mistral 3"

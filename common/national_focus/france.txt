@@ -452,6 +452,7 @@ focus_tree = {
     			add_idea = eec_0
 			}
 		}
+		#결정 추가 : EEC 강화 (미완성)
 		x = 28
 		y = 5
 
@@ -585,7 +586,7 @@ focus_tree = {
 			focus = NF_FRA_the_Iron_curtain_breaking
 		}
 		completion_reward = {
-			add_ideas = wait_for_comedown
+			add_ideas = wait_for_comedown #국민정신 몰락을 기다리기 추가
 		}
 		x = 29
 		y = 9
@@ -603,6 +604,7 @@ focus_tree = {
 			focus = NF_FRA_wait_for_comedown
 		}
 		completion_reward = {
+			add_ideas = war_preparation #국가정신 전쟁준비 추가
 		}
 		x = 31
 		y = 9
