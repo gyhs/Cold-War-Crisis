@@ -74,9 +74,14 @@ l_english:
  NF_PRC_Next_Generation_Military_8:0 "093, 094형 잠수함 개발"
  NF_PRC_Next_Generation_Military_9:0 "Su-37 라이센스 구매"
  NF_PRC_Next_Generation_Military_9-1:0 "선양 J-16 개발"
+ NF_PRC_Next_Generation_Military_10:0 " 청두 J-20 개발 시작"
  NF_PRC_EIZ_7:0 "서부 관광특구 개발"
  NF_PRC_EIZ_8:0 "서부 경제 성장계획"
  NF_PRC_EIZ_9:0 "전세계의 공장"
  NF_PRC_JP_Infiltration:0 "일본 경제 침투"
  NF_PRC_USSR_Infiltration:0 "소련 내부분열 계획"
+ NF_PRC_Shale_Gas:0 "중국 셰일가스 계획"
+ NF_PRC_Shale_Gas_1:0 "중국 셰일 가스 개발"+
+ NF_PRC_Shale_Gas_2:0 "중국 수자원 계획"
+ NF_PRC_Shale_Gas_3:0 "파쇄 공법 개량"
  

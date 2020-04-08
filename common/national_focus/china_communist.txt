@@ -257,4 +257,13 @@ focus_tree = {
 		x = 17
 		y = 14
 	}
+	focus = {
+		id = NF_PRC_Political_Reform
+		cost = 10.00
+		prerequisite = { focus = NF_PRC_Military_modernization_5 }
+			Completion_reward = {}
+		icon = GFX_goal_generic_consumer_goods
+		x = 20
+		y = 7
+	}
 }
