@@ -78,21 +78,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_new_communist_party_doctrine
-		icon = GFX_focus_YUG_pan_slavic_congress
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_communist_party_conference_19th
-		}
-		
-		x = 11
-		y = 2
-		completion_reward = {
-			SOV_central_government_crisis_level_down = yes
-		}
-
-	}
-	focus = {
 		id = SOV_congress_people_deputies_1th
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
@@ -104,7 +89,7 @@ focus_tree = {
 			SOV_central_government_crisis_level_down = yes
 		}
 		
-		x = 13
+		x = 12
 		y = 2
 
 	}
@@ -112,9 +97,6 @@ focus_tree = {
 		id = SOV_congress_of_the_party_28th
 		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
-		prerequisite = {
-			focus = SOV_new_communist_party_doctrine
-		}
 		prerequisite = {
 			focus = SOV_congress_people_deputies_1th
 		}
@@ -149,6 +131,46 @@ focus_tree = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.02
+			}
+			set_party_name = { 
+				ideology = communism 
+				long_name = SOV_communism_party_reform_long 
+				name = SOV_communism_party_reform
+			}
+			set_party_name = { 
+				ideology = socialism 
+				long_name = SOV_socialism_party_reform_long 
+				name = SOV_socialism_party_reform
+			}
+			set_party_name = { 
+				ideology = social_democracy 
+				long_name = SOV_social_democracy_party_reform_long 
+				name = SOV_social_democracy_party_reform
+			}
+			set_party_name = { 
+				ideology = social_liberalism 
+				long_name = SOV_social_liberalism_party_reform_long 
+				name = SOV_social_liberalism_party_reform
+			}
+			set_party_name = { 
+				ideology = market_liberalism 
+				long_name = SOV_market_liberalism_party_reform_long 
+				name = SOV_market_liberalism_party_reform
+			}
+			set_party_name = { 
+				ideology = social_conservatism 
+				long_name = SOV_social_conservatism_party_reform_long 
+				name = SOV_social_conservatism_party_reform
+			}
+			set_party_name = { 
+				ideology = authoritarianism 
+				long_name = SOV_authoritarianism_party_reform_long 
+				name = SOV_authoritarianism_party_reform
+			}
+			set_party_name = { 
+				ideology = fascism 
+				long_name = SOV_fascism_party_reform_long 
+				name = SOV_fascism_party_reform
 			}
 			SOV_desire_for_reformation_level_up = yes
 			SOV_central_government_crisis_level_up = yes
@@ -425,7 +447,7 @@ focus_tree = {
 		
 		x = 4
 		y = 5
-
+		
 	}
 	focus = {
 		id = SOV_past_history_investigation_commission
