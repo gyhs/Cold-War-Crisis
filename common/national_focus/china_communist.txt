@@ -13,19 +13,19 @@ focus_tree = {
 		id = NF_PRC_foreign_investor
 		cost = 4.00
 		Completion_reward = {}
-		 icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_generic_consumer_goods
 		x = 7
-		y = 1
-
+		y = 2
 	}
+	
 	focus = {
 		id = NF_PRC_exclusive_industrial_zone
 		cost = 4.00
 		prerequisite = { focus = NF_PRC_foreign_investor }
 		Completion_reward = {}
-		 icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_generic_consumer_goods
 		x = 7
-		y = 2
+		y = 4
 	}
 	
 	focus = {
@@ -35,7 +35,7 @@ focus_tree = {
 		Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 7
-		y = 3
+		y = 6
 		}
 		
 	focus = {
@@ -45,7 +45,7 @@ focus_tree = {
 		Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 7
-		y = 4
+		y = 8
 	}
 		
 	focus = {
@@ -55,7 +55,7 @@ focus_tree = {
 		Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 7
-		y = 5
+		y = 10
 	}
 	
 	focus = {
@@ -65,7 +65,7 @@ focus_tree = {
 		Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 9
-		y = 6
+		y = 12
 	}
 		
 	focus = {
@@ -75,7 +75,7 @@ focus_tree = {
 		Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 9
-		y = 7
+		y = 12
 	}
 		
 	focus = {
@@ -85,7 +85,7 @@ focus_tree = {
 		Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 15
-		y = 8
+		y = 14
 	}
 		
 	focus = {
@@ -95,7 +95,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 15
-		y = 9
+		y = 14
 	}
 		
 	focus = {
@@ -105,7 +105,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 15
-		y = 10
+		y = 14
 	}
 		
 	focus = {
@@ -115,7 +115,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 15
-		y = 11
+		y = 14
 	}
 		
 	focus = {
@@ -125,7 +125,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 15
-		y = 12
+		y = 14
 	}
 		
 	focus = {
@@ -135,7 +135,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 16
-		y = 12
+		y = 16
 	}
 	
 	focus = {
@@ -145,7 +145,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 17
-		y = 12
+		y = 18
 	}
 		
 	focus = {
@@ -155,7 +155,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 18
-		y = 12
+		y = 20
 	}
 		
 	focus = {
@@ -165,7 +165,7 @@ focus_tree = {
 			Completion_reward = {}
 		icon = GFX_goal_generic_consumer_goods
 		x = 19
-		y = 12
+		y = 22
 	}
 		
 	focus = {
