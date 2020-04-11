@@ -7,6 +7,7 @@ focus_tree = {
 			tag = KOR
 		}
 	}
+	continuous_focus_position = { x = 0 y = 2000 }
 	default = no
 	focus = {
 		id = NF_KOR_6th_Five_Years_Plan
@@ -25,15 +26,25 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_KOR_UDP
-		icon = GFX_goal_ideology_market_liberal
+		id = NF_KOR_peaceunif
+		icon = GFX_goal_unknown
 		cost = 10.00
 		mutually_exclusive = {
-			focus = NF_KOR_DP
-			focus = NF_KOR_DLP
+			focus = NF_KOR_2KW
 		}
-		x = 34
-		y = 11
+		x = 55
+		y = 0
+
+	}
+	focus = {
+		id = NF_KOR_2KW
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = NF_KOR_peaceunif
+		}
+		x = 66
+		y = 0
 
 	}
 	focus = {
@@ -806,6 +817,272 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NF_KOR_fivedo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_peaceunif
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_rhkry
+		}
+		x = 53
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_JACHI
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_fivedo
+		}
+		x = 53
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_southpol
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_JACHI
+		}
+		x = 53
+		y = 3
+
+	}
+	focus = {
+		id = NF_KOR_rhkry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_peaceunif
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_fivedo
+		}
+		x = 57
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_octe
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_rhkry
+		}
+		x = 56
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_wkaowjdekd
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_rhkry
+		}
+		x = 58
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_transfivedo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_octe
+		}
+		prerequisite = {
+			focus = NF_KOR_wkaowjdekd
+		}
+		x = 57
+		y = 3
+
+	}
+	focus = {
+		id = NF_KOR_onefatherland
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_southpol
+			focus = NF_KOR_transfivedo
+		}
+		x = 55
+		y = 4
+
+	}
+	focus = {
+		id = NF_KOR_JACHI
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_fivedo
+		}
+		x = 61
+		y = 4
+
+	}
+	focus = {
+		id = NF_KOR_rhkry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_peaceunif
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_fivedo
+		}
+		x = 62
+		y = 3
+
+	}
+	focus = {
+		id = NF_KOR_MILGOV
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_2KW
+		}
+		x = 66
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_Ongun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_MILGOV
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_ganggyeong
+		}
+		x = 63
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_peacetime
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_rhkry
+			focus = NF_KOR_fivedo
+		}
+		x = 63
+		y = 4
+
+	}
+	focus = {
+		id = NF_KOR_sangcheo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_JACHI
+		}
+		prerequisite = {
+			focus = NF_KOR_wkaowjdekd
+		}
+		prerequisite = {
+			focus = NF_KOR_peacetime
+		}
+		x = 63
+		y = 5
+
+	}
+	focus = {
+		id = NF_KOR_fivedo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_peaceunif
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_rhkry
+		}
+		x = 64
+		y = 3
+
+	}
+	focus = {
+		id = NF_KOR_wkaowjdekd
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_rhkry
+		}
+		x = 65
+		y = 4
+
+	}
+	focus = {
+		id = NF_KOR_ganggyeong
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_MILGOV
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_Ongun
+		}
+		x = 69
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_anticom
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ganggyeong
+		}
+		x = 69
+		y = 3
+
+	}
+	focus = {
+		id = NF_KOR_capdoip
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_anticom
+		}
+		x = 68
+		y = 4
+
+	}
+	focus = {
+		id = NF_KOR_intchoc
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_southpol
+		}
+		prerequisite = {
+			focus = NF_KOR_capdoip
+		}
+		x = 69
+		y = 5
+
+	}
+	focus = {
+		id = NF_KOR_minjeong
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_sangcheo
+		}
+		prerequisite = {
+			focus = NF_KOR_intchoc
+		}
+		x = 66
+		y = 6
+
+	}
+	focus = {
 		id = NF_KOR_ROH2
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -1244,313 +1521,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_KOR_neweconomyplan
+		id = NF_KOR_southpol
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = NF_KOR_northeconomy
+			focus = NF_KOR_JACHI
 		}
-		x = 7
-		y = 15
-
-	}
-	focus = {
-		id = NF_KOR_GGwjdql
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_neweconomyplan
-		}
-		x = 5
-		y = 16
-
-	}
-	focus = {
-		id = NF_KOR_shddjchs
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_neweconomyplan
-		}
-		x = 7
-		y = 16
-
-	}
-	focus = {
-		id = NF_KOR_WTO
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_neweconomyplan
-		}
-		x = 9
-		y = 16
-
-	}
-	focus = {
-		id = NF_KOR_JEJU
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_GGwjdql
-		}
-		x = 5
-		y = 17
-
-	}
-	focus = {
-		id = NF_KOR_shddjchsroqkf
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_shddjchs
-		}
-		x = 7
-		y = 17
-
-	}
-	focus = {
-		id = NF_KOR_OECD
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_WTO
-		}
-		x = 9
-		y = 17
-
-	}
-	focus = {
-		id = NF_KOR_economysi
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_OECD
-		}
-		prerequisite = {
-			focus = NF_KOR_JEJU
-		}
-		prerequisite = {
-			focus = NF_KOR_shddjchsroqkf
-		}
-		x = 7
-		y = 18
-
-	}
-	focus = {
-		id = NF_KOR_gustkddbwl
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_economysi
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_xmreks
-		}
-		x = 3
-		y = 19
-
-	}
-	focus = {
-		id = NF_KOR_xmreks
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_economysi
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_gustkddbwl
-		}
-		x = 11
-		y = 19
-
-	}
-	focus = {
-		id = NF_KOR_92_President
-		icon = GFX_DOM_Call_Special_Election
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_NEWBIRTH
-			focus = NF_KOR_GWF
-			focus = NF_KOR_NODJ
-		}
-		x = 34
-		y = 10
-
-	}
-	focus = {
-		id = NF_KOR_DLP
-		icon = GFX_goal_ideology_social_conservative
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_92_President
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_UDP
-		}
-		x = 31
-		y = 11
-
-	}
-	focus = {
-		id = NF_KOR_DP
-		icon = GFX_goal_ideology_social_liberal
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_92_President
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_UDP
-		}
-		x = 37
-		y = 11
-
-	}
-	focus = {
-		id = NF_KOR_anticop
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_UDP
-			focus = NF_KOR_DLP
-		}
-		x = 33
-		y = 12
-
-	}
-	focus = {
-		id = NF_KOR_shdls
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_DLP
-		}
-		x = 31
-		y = 12
-
-	}
-	focus = {
-		id = NF_KOR_LOCAL
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_DJ
-		}
-		x = 37
-		y = 12
-
-	}
-	focus = {
-		id = NF_KOR_antibandaepa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_shdls
-		}
-		x = 31
-		y = 13
-
-	}
-	focus = {
-		id = NF_KOR_laborlaw
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_anticop
-		}
-		x = 33
-		y = 13
-
-	}
-	focus = {
-		id = NF_KOR_peopleright
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_peace
-		}
-		x = 35
-		y = 13
-
-	}
-	focus = {
-		id = NF_KOR_97President
-		icon = GFX_DOM_Call_Special_Election
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_peopleright
-			focus = NF_KOR_insa
-			focus = NF_KOR_laborlaw
-			focus = NF_KOR_antibandaepa
-		}
-		x = 34
-		y = 14
-
-	}
-	focus = {
-		id = NF_KOR_GNP
-		icon = GFX_goal_ideology_social_conservative
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_97President
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_NNP
-		}
-		x = 30
-		y = 15
-
-	}
-	focus = {
-		id = NF_KOR_NCNP
-		icon = GFX_goal_ideology_social_liberal
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_97President
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_NNP
-		}
-		x = 38
-		y = 15
-
-	}
-	focus = {
-		id = NF_KOR_NNP
-		icon = GFX_goal_ideology_market_liberal
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_97President
-		}
-		mutually_exclusive = {
-			focus = NF_KOR_GNP
-			focus = NF_KOR_NCNP
-		}
-		x = 34
-		y = 15
-
-	}
-	focus = {
-		id = NF_KOR_peace
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_DP
-			focus = NF_KOR_UDP
-		}
-		x = 35
-		y = 12
-
-	}
-	focus = {
-		id = NF_KOR_insa
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NF_KOR_LOCAL
-		}
-		x = 37
-		y = 13
+		x = 70
+		y = 4
 
 	}
 }
