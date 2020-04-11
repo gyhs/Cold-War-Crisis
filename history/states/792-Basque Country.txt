@@ -1,6 +1,6 @@
 state={
-	id=795
-	name="STATE_795"
+	id=792
+	name="STATE1_792"
 
 	history={
 		owner = KOR
@@ -11,9 +11,9 @@ state={
 	}
 
 	provinces={
-		1100 13226 
+		10110 11948 12085 13225 
 	}
-	manpower=1389686
+	manpower=3646442
 	buildings_max_level_factor=1.000
 	state_category=town
 }
