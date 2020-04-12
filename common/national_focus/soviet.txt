@@ -700,13 +700,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_private_business_allowable
 		}
+		prerequisite = {
+			focus = SOV_foreigner_joint_venture_firm
+		}
 
 		completion_reward = {
 			SOV_hyper_inflation_level_down = yes
 			SOV_oligarch_power_level_down = yes
 		}
 		
-		x = 22
+		x = 17
 		y = 3
 
 	}
@@ -723,7 +726,44 @@ focus_tree = {
 			SOV_oligarch_power_level_down = yes
 		}
 		
-		x = 22
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = NF_SOV_comecon_reform
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_private_business_allowable
+		}
+		prerequisite = {
+			focus = SOV_foreigner_joint_venture_firm
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = NF_SOV_comecon_globalization_trade
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = NF_SOV_comecon_reform
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 21
 		y = 4
 
 	}
