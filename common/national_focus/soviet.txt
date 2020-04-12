@@ -474,6 +474,12 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
+			focus = SOV_denaturalization_restore
+		}
+		prerequisite = {
+			focus = SOV_press_freedom_extension
+		}
+		prerequisite = {
 			focus = SOV_past_history_investigation_commission
 		}
 		completion_reward = {
@@ -4197,181 +4203,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 		}
-	}
-	#### 아프간 전역
-	focus = {
-		id = SOV_sinatra_doctrine_AFG_dispatch_keep
-		icon = GFX_focus_generic_combined_arms
-		cost = 10.00
-		x = 0
-		y = 11
-		prerequisite = {
-			focus = SOV_sinatra_doctrine
-		}
-		mutually_exclusive = {
-			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
-		}
-		available = {
-		}
-		completion_reward = {
-			add_stability = -0.05
-			add_named_threat = { threat = 5 name = SOV_sinatra_doctrine_AFG_dispatch_keep }
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_AFG_army_support
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		x = 0
-		y = 12
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
-		}
-		available = {
-		}
-		completion_reward = {
-			send_equipment = {
-				equipment = infantry_equipment
-				amount = 500
-				target = AFG
-			}
-			AFG={ army_experience = 100
-				
-				add_tech_bonus = {
-				name = CHI_wargaming_division
-				bonus = 0.5
-				uses = 1
-				category = land_doctrine
-				}
-				
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
-		icon = GFX_goal_generic_alliance
-		cost = 10.00
-		x = 2
-		y = 11
-		prerequisite = {
-			focus = SOV_sinatra_doctrine
-		}
-		mutually_exclusive = {
-			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
-		}
-		available = {
-		}
-		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.05
-			add_manpower = 105000
-			AFG={ delete_unit_template_and_units = { division_template = "소련 파병군" } }
-			news_event = { id = soviet.news.1 }
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_AFG_only_supplie_support
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		x = 2
-		y = 12
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
-		}
-		available = {
-		}
-		completion_reward = {
-			send_equipment = {
-				equipment = support_equipment
-				amount = 500
-				target = AFG
-			}
-			AFG={ 
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_AFG_negotiation_PRC
-		icon = GFX_goal_generic_military_deal
-		cost = 10.00
-		x = 1
-		y = 14
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_AFG_army_support
-			focus = SOV_sinatra_doctrine_AFG_only_supplie_support
-		}
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_PRC_cooperation
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
 	}
 	#### 중국 관계 개선
 	focus = {
@@ -9023,7 +8854,194 @@ focus_tree = {
 	
 	
 	
-	
+#####
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_dispatch_keep
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		x = 27
+		y = 1
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+			focus = SOV_hardliners_rebellion
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
+		}
+		available = {
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_named_threat = { threat = 5 name = SOV_sinatra_doctrine_AFG_dispatch_keep }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_army_support
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		x = 27
+		y = 3
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
+		}
+		available = {
+		}
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = AFG
+			}
+			AFG={ army_experience = 100
+				
+				add_tech_bonus = {
+				name = CHI_wargaming_division
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+				}
+				
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		x = 25
+		y = 1
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+			focus = SOV_hardliners_rebellion
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
+		}
+		available = {
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_manpower = 105000
+			AFG={ delete_unit_template_and_units = { division_template = "소련 파병군" } }
+			news_event = { id = soviet.news.1 }
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_only_supplie_support
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		x = 25
+		y = 3
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
+		}
+		available = {
+		}
+		completion_reward = {
+			send_equipment = {
+				equipment = support_equipment
+				amount = 500
+				target = AFG
+			}
+			AFG={ 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_AFG_negotiation_PRC
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 26
+		y = 4
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_AFG_army_support
+			focus = SOV_sinatra_doctrine_AFG_only_supplie_support
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_AFG_supply_route_reinforce
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		x = 26
+		y = 2
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+			focus = SOV_hardliners_rebellion
+		}
+		completion_reward = {
+		}
+
+	}
 	
 	
 	

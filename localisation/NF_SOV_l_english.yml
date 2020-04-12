@@ -125,7 +125,8 @@
  SOV_crush_oligarch_desc:0 "  "
  SOV_crush_nomenklatura:0 "노멘클라투라 분쇄"
  SOV_crush_nomenklatura_desc:0 " "
- 
+### 아프간 전역 ####
+ NF_SOV_AFG_supply_route_reinforce:0 "아프간 보급망 강화"
 ### 강경파 쿠데타 ###
  SOV_hardliners_control_press:0 "언론 통제"
  SOV_hardliners_control_press_desc:0 " "
