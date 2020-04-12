@@ -1484,7 +1484,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = armour_folder
-			position = { x = 20 y = 4 }
+			position = { x = 20 y = 6 }
 		}
 		
 		categories = {
@@ -1514,7 +1514,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = armour_folder
-			position = { x = 20 y = 6 }
+			position = { x = 20 y = 8 }
 		}
 		
 		categories = {
@@ -1544,7 +1544,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = armour_folder
-			position = { x = 20 y = 8 }
+			position = { x = 20 y = 10 }
 		}
 		
 		categories = {
@@ -1572,36 +1572,6 @@ technologies = {
 
 		research_cost = 2
 		start_year = 2000
-		folder = {
-			name = armour_folder
-			position = { x = 20 y = 10 }
-		}
-		
-		categories = {
-			motorized_equipment
-			infantry_tech
-			cat_mechanized_equipment
-			tp_tech
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-	}
-	
-	amphibious_mechanized_infantry_5 = {
-
-		enable_equipments = {
-			amphibious_mechanized_equipment_5
-		}
-
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry_6
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 2005
 		folder = {
 			name = armour_folder
 			position = { x = 20 y = 12 }
