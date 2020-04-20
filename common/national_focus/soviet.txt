@@ -774,10 +774,28 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_open_market_preparation
+		id = SOV_market_of_common_people_improvement
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_private_business_allowable
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_worker_enthusiasm_clear_all = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = SOV_ministry_finance_reinforcement
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
-		x = 18
+		x = 20
 		y = 5
 		
 		prerequisite = {
@@ -795,35 +813,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_market_of_common_people_improvement
-		icon = GFX_goal_generic_consumer_goods
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_private_business_allowable
-		}
-
-		completion_reward = {
-			SOV_hyper_inflation_level_down = yes
-			SOV_worker_enthusiasm_clear_all = yes
-			SOV_oligarch_power_level_down = yes
-		}
-		
-		x = 20
-		y = 5
-
-	}
-	focus = {
 		id = SOV_opening_market
 		icon = GFX_goal_generic_positive_trade_relations
 		cost = 10.00
 		prerequisite = {
-			focus = SOV_open_market_preparation
-		}
-		prerequisite = {
 			focus = SOV_market_of_common_people_improvement
 		}
 		prerequisite = {
-			focus = SOV_economic_reforms
+			focus = SOV_ministry_finance_reinforcement
 		}
 
 		completion_reward = {
@@ -835,27 +832,6 @@ focus_tree = {
 		}
 		
 		x = 19
-		y = 6
-
-	}
-	focus = {
-		id = SOV_corruption_practice
-		icon = GFX_focus_rom_parties_end
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_economic_reforms
-		}
-		prerequisite = {
-			focus = SOV_open_market_preparation
-		}
-
-		completion_reward = {
-			SOV_hyper_inflation_level_down = yes
-			SOV_central_government_crisis_level_down = yes
-			SOV_oligarch_power_clear_all = yes
-		}
-		
-		x = 17
 		y = 6
 
 	}
@@ -5026,10 +5002,10 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
 		icon = GFX_focus_wonderweapons
 		cost = 10.00
-		x = 11
-		y = 13
+		x = 23
+		y = 1
 		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_summit_meeting
+			focus = SOV_michael_gorbachev_reform
 		}
 		available = {
 		}
@@ -5044,10 +5020,10 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_usa_both_army_disarmament
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		x = 13
-		y = 13
+		x = 25
+		y = 1
 		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_summit_meeting
+			focus = SOV_michael_gorbachev_reform
 		}
 		available = {
 		}
@@ -5059,31 +5035,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_sinatra_doctrine_usa_relaxation
-		icon = GFX_goal_generic_improve_relations
-		cost = 10.00
-		x = 12
-		y = 12
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_summit_meeting
-		}
-		available = {
-		}
-		completion_reward = {
-			add_named_threat = { threat = -2 name = SOV_sinatra_doctrine_usa_summit_meeting }
-		}
-
-	}
-	focus = {
 		id = SOV_sinatra_doctrine_usa_trade_agreement
 		icon = GFX_focus_generic_treaty
 		cost = 10.00
-		x = 12
-		y = 14
+		x = 24
+		y = 2
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_usa_both_army_disarmament
 			focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
-			focus = SOV_sinatra_doctrine_usa_relaxation
 		}
 		available = {
 		}
@@ -5096,33 +5055,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_sinatra_doctrine_usa_reformed_faction_bureaucrat_support
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		x = 10
-		y = 16
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_vladivostok_develop
-			
-		}
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_trade_agreement
-			
-		}
-		available = {
-		}
-		completion_reward = {
-			SOV_desire_for_reformation_level_up = yes
-			SOV_central_government_crisis_level_down = yes
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_usa_attract_investment
+		id = SOV_europe_summit_meeting
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 11
-		y = 15
+		x = 23
+		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_usa_trade_agreement
 		}
@@ -5224,11 +5161,100 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_sinatra_doctrine_usa_interchange_technology
-		icon = GFX_goal_generic_scientific_exchange
+		id = SOV_common_european_home
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 13
-		y = 15
+		x = 22
+		y = 5
+		prerequisite = {
+			focus = NF_SOV_comecon_globalization_trade
+		}
+		prerequisite = {
+			focus = SOV_europe_summit_meeting
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+####
+	focus = {
+		id = NF_SOV_self_capability_enhancement
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 20
+		y = 7
+		prerequisite = {
+			focus = SOV_opening_market
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_capitalist_economic_aid_request
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_technical_capabilities_reinforcement
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 20
+		y = 8
+		prerequisite = {
+			focus = NF_SOV_self_capability_enhancement
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_capitalist_economic_aid_request
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 22
+		y = 7
+		prerequisite = {
+			focus = SOV_common_european_home
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_self_capability_enhancement
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_liquidating_insolvent_enterprise
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 22
+		y = 8
+		prerequisite = {
+			focus = NF_SOV_capitalist_economic_aid_request
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_self_capability_enhancement
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+#####
+	focus = {
+		id = SOV_warsaw_pact_organization_conference
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 25
+		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_usa_trade_agreement
 		}
@@ -5246,6 +5272,164 @@ focus_tree = {
 			uses = 1
 			category = industry
 			}
+		}
+
+	}
+	focus = {
+		id = NF_SOV_pact_phase_diplomatic_freedom
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 24
+		y = 4
+		prerequisite = {
+			focus = SOV_warsaw_pact_organization_conference
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_pact_total_diplomatic_freedom
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_pact_total_diplomatic_freedom
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 26
+		y = 4
+		prerequisite = {
+			focus = SOV_warsaw_pact_organization_conference
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_pact_phase_diplomatic_freedom
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_german_unification_conditional_recognition
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 23
+		y = 6
+		prerequisite = {
+			focus = NF_SOV_pact_phase_diplomatic_freedom
+			focus = NF_SOV_pact_total_diplomatic_freedom
+			focus = NF_SOV_fall_berlin_wall
+		}
+		prerequisite = {
+			focus = SOV_common_european_home
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_collocation_germany
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_german_unification_cancel
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_collocation_germany
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 25
+		y = 6
+		prerequisite = {
+			focus = NF_SOV_pact_phase_diplomatic_freedom
+			focus = NF_SOV_pact_total_diplomatic_freedom
+			focus = NF_SOV_fall_berlin_wall
+		}
+		prerequisite = {
+			focus = SOV_common_european_home
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_german_unification_conditional_recognition
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_german_unification_cancel
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_german_unification_cancel
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 27
+		y = 6
+		prerequisite = {
+			focus = NF_SOV_pact_phase_diplomatic_freedom
+			focus = NF_SOV_pact_total_diplomatic_freedom
+			focus = NF_SOV_fall_berlin_wall
+		}
+		prerequisite = {
+			focus = SOV_common_european_home
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_pact_total_diplomatic_freedom
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_collocation_germany
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_fall_berlin_wall
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 28
+		y = 5
+		prerequisite = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_pact_infrastructure_support
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 28
+		y = 4
+		prerequisite = {
+			focus = SOV_warsaw_pact_organization_conference
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_pact_technical_support
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 30
+		y = 4
+		prerequisite = {
+			focus = SOV_warsaw_pact_organization_conference
+		}
+		available = {
+		}
+		completion_reward = {
 		}
 
 	}
@@ -8859,7 +9043,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_dispatch_keep
 		icon = GFX_focus_generic_combined_arms
 		cost = 10.00
-		x = 27
+		x = 30
 		y = 1
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
@@ -8880,7 +9064,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_army_support
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
-		x = 27
+		x = 30
 		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
@@ -8940,7 +9124,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
 		icon = GFX_goal_generic_alliance
 		cost = 10.00
-		x = 25
+		x = 28
 		y = 1
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
@@ -8964,7 +9148,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_only_supplie_support
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
-		x = 25
+		x = 28
 		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
@@ -9016,7 +9200,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_negotiation_PRC
 		icon = GFX_goal_generic_military_deal
 		cost = 10.00
-		x = 26
+		x = 29
 		y = 4
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_AFG_army_support
@@ -9032,7 +9216,7 @@ focus_tree = {
 		id = NF_SOV_AFG_supply_route_reinforce
 		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
-		x = 26
+		x = 29
 		y = 2
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
