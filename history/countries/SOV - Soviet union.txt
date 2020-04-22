@@ -404,49 +404,49 @@ set_autonomy = {
 #벨라루스
 207 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
 96 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
 95 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
 94 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
 206 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
 241 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
 204 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
 194 = {
 	start_resistance = yes
-	set_compliance = 90
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
