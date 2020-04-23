@@ -374,4 +374,9 @@ spriteTypes = {
 		name = "GFX_focus_helicopter_tech"
 		texturefile = "gfx/interface/goals/focus_helicopter_tech.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_new_soviet_union"
+		texturefile = "gfx/interface/goals/focus_new_soviet_union.dds"
+	}
 }
