@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_neo_soviet_proclamation
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_focus_new_soviet_union
 		cost = 10.00
 		x = 11
 		y = 7
