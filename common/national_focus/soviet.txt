@@ -279,27 +279,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_economic_reforms
-		icon = GFX_focus_generic_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_multi_party_system_establish
-		}
-		prerequisite = {
-			focus = SOV_separate_office_and_party
-		}
-		prerequisite = {
-			focus = SOV_Presidential_system_establish
-		}
-		completion_reward = {
-			SOV_central_government_crisis_level_down = yes
-		}
-		
-		x = 15
-		y = 5
-
-	}
-	focus = {
 		id = SOV_congress_people_deputies_reinforce
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
@@ -311,9 +290,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_presidents_commission_reinforcement
-		}
-		prerequisite = {
-			focus = SOV_economic_reforms
 		}
 		completion_reward = {
 			remove_ideas = SOV_power_struggles
@@ -592,7 +568,7 @@ focus_tree = {
 			SOV_oligarch_power_level_up = yes
 		}
 		
-		x = 17
+		x = 14
 		y = 1
 
 	}
@@ -611,7 +587,7 @@ focus_tree = {
 			SOV_oligarch_power_level_up = yes
 		}
 		
-		x = 19
+		x = 16
 		y = 1
 
 	}
@@ -629,7 +605,7 @@ focus_tree = {
 			SOV_oligarch_power_level_down = yes
 		}
 		
-		x = 21
+		x = 18
 		y = 1
 
 	}
@@ -652,7 +628,7 @@ focus_tree = {
 			SOV_oligarch_power_level_up = yes
 		}
 		
-		x = 18
+		x = 15
 		y = 2
 
 	}
@@ -674,7 +650,7 @@ focus_tree = {
 			SOV_oligarch_power_level_up = yes
 		}
 		
-		x = 20
+		x = 17
 		y = 2
 
 	}
@@ -695,45 +671,8 @@ focus_tree = {
 			SOV_oligarch_power_level_up = yes
 		}
 		
-		x = 19
+		x = 16
 		y = 3
-
-	}
-	focus = {
-		id = SOV_price_control
-		icon = GFX_focus_generic_self_management
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_private_business_allowable
-		}
-		prerequisite = {
-			focus = SOV_foreigner_joint_venture_firm
-		}
-
-		completion_reward = {
-			SOV_hyper_inflation_level_down = yes
-			SOV_oligarch_power_level_down = yes
-		}
-		
-		x = 17
-		y = 3
-
-	}
-	focus = {
-		id = SOV_social_safety_net
-		icon = GFX_goal_tripartite_pact
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_price_control
-		}
-
-		completion_reward = {
-			SOV_hyper_inflation_level_down = yes
-			SOV_oligarch_power_level_down = yes
-		}
-		
-		x = 17
-		y = 4
 
 	}
 	focus = {
@@ -752,7 +691,7 @@ focus_tree = {
 			SOV_oligarch_power_level_down = yes
 		}
 		
-		x = 21
+		x = 18
 		y = 3
 
 	}
@@ -769,7 +708,7 @@ focus_tree = {
 			SOV_oligarch_power_level_down = yes
 		}
 		
-		x = 21
+		x = 18
 		y = 4
 
 	}
@@ -787,7 +726,7 @@ focus_tree = {
 			SOV_oligarch_power_level_down = yes
 		}
 		
-		x = 18
+		x = 15
 		y = 5
 
 	}
@@ -795,7 +734,7 @@ focus_tree = {
 		id = SOV_ministry_finance_reinforcement
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
-		x = 20
+		x = 17
 		y = 5
 		
 		prerequisite = {
@@ -831,7 +770,7 @@ focus_tree = {
 			SOV_oligarch_power_level_down = yes
 		}
 		
-		x = 19
+		x = 16
 		y = 6
 
 	}
@@ -841,7 +780,7 @@ focus_tree = {
 		id = SOV_opposition_demonstration_press 
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		cost = 10.00
-		x = 34
+		x = 38
 		y = 1
 		prerequisite = {
 			focus = SOV_hardliners_rebellion
@@ -856,7 +795,7 @@ focus_tree = {
 	focus = {
 		id = SOV_state_committee_state_emergency_up
 		icon = GFX_focus_generic_soviet_politics
-		x = 36
+		x = 40
 		y = 1
 		cost = 10.00
 		
@@ -872,7 +811,7 @@ focus_tree = {
 		id = SOV_kgb_reorganize
 		icon = GFX_focus_hun_assassinate_horthy
 		cost = 10.00
-		x = 38
+		x = 42
 		y = 1
 		
 		prerequisite = {
@@ -898,7 +837,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_kgb_reorganize
 		}
-		x = 36
+		x = 40
 		y = 2
 
 	}
@@ -911,7 +850,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_great_purge
 		}
-		x = 33
+		x = 37
 		y = 3
 
 	}
@@ -922,7 +861,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_party_leadership_reorganize
 		}
-		x = 33
+		x = 37
 		y = 4
 
 	}
@@ -933,7 +872,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_party_leadership_reorganize
 		}
-		x = 31
+		x = 35
 		y = 4
 
 	}
@@ -946,7 +885,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_great_purge
 		}
-		x = 36
+		x = 40
 		y = 3
 
 	}
@@ -957,7 +896,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_government_official_purge
 		}
-		x = 36
+		x = 40
 		y = 4
 
 	}
@@ -970,7 +909,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_great_purge
 		}
-		x = 39
+		x = 43
 		y = 3
 
 	}
@@ -981,7 +920,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_ministry_defence_purge
 		}
-		x = 39
+		x = 43
 		y = 4
 
 	}
@@ -992,7 +931,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_ministry_defence_purge
 		}
-		x = 41
+		x = 45
 		y = 4
 
 	}
@@ -1011,7 +950,7 @@ focus_tree = {
 			focus = SOV_kgb_rights_up
 			
 		}
-		x = 34
+		x = 38
 		y = 5
 
 	}
@@ -1022,7 +961,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_yanayev_faithful_party_member_change
 		}
-		x = 34
+		x = 38
 		y = 6
 
 	}
@@ -1033,7 +972,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_nomenklatura_guard
 		}
-		x = 33
+		x = 37
 		y = 7
 
 	}
@@ -1044,7 +983,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_nomenklatura_guard
 		}
-		x = 35
+		x = 39
 		y = 7
 
 	}
@@ -1058,7 +997,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_social_class_system_up
 		}
-		x = 34
+		x = 38
 		y = 8
 
 	}
@@ -1078,7 +1017,7 @@ focus_tree = {
 			focus = SOV_yanayev_faithful_party_member_change
 			
 		}
-		x = 38
+		x = 42
 		y = 5
 
 	}
@@ -1089,7 +1028,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_kgb_rights_up
 		}
-		x = 38
+		x = 42
 		y = 6
 
 	}
@@ -1100,7 +1039,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_siloviki_guard
 		}
-		x = 37
+		x = 41
 		y = 7
 
 	}
@@ -1111,7 +1050,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_siloviki_guard
 		}
-		x = 39
+		x = 43
 		y = 7
 
 	}
@@ -1125,7 +1064,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_political_commissar_up
 		}
-		x = 38
+		x = 42
 		y = 8
 
 	}
@@ -1138,7 +1077,7 @@ focus_tree = {
 			focus = SOV_siloviki_guard_nomenklatura_purge
 			focus = SOV_nomenklatura_guard_siloviki_purge
 		}
-		x = 36
+		x = 40
 		y = 9
 
 	}
@@ -1155,7 +1094,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_party_reformed_purge
 		}
-		x = 31
+		x = 35
 		y = 5
 
 	}
@@ -1169,7 +1108,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_party_reformed_purge
 		}
-		x = 32
+		x = 36
 		y = 6
 
 	}
@@ -1180,7 +1119,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_anti_soviet_people_arrest
 		}
-		x = 30
+		x = 34
 		y = 6
 
 	}
@@ -1191,7 +1130,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_gulag_reopen
 		}
-		x = 27
+		x = 31
 		y = 7
 
 	}
@@ -1202,7 +1141,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_gulag_reopen
 		}
-		x = 29
+		x = 33
 		y = 7
 
 	}
@@ -1213,7 +1152,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_scientist_gulag_reopen
 		}
-		x = 29
+		x = 33
 		y = 8
 
 	}
@@ -1224,7 +1163,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_gulag_reopen
 		}
-		x = 31
+		x = 35
 		y = 7
 
 	}
@@ -1238,7 +1177,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_kgb_strength_expand
 		}
-		x = 41
+		x = 45
 		y = 5
 
 	}
@@ -4180,780 +4119,6 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-	#### 중국 관계 개선
-	focus = {
-		id = SOV_sinatra_doctrine_relation_PRC
-		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		cost = 10.00
-		x = 5
-		y = 11
-		prerequisite = {
-			focus = SOV_sinatra_doctrine
-		}
-		available = {
-		}
-		completion_reward = {
-		PRC = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = mission_to_the_PRC
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = ROOT
-				value = 100
-			}
-		}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_PRC_cooperation
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 5
-		y = 12
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_relation_PRC
-		}
-		available = {
-		}
-		completion_reward = {
-				add_to_tech_sharing_group = sov_research
-				PRC = { add_to_tech_sharing_group = sov_research }
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_PRC_comecon_join
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 3
-		y = 13
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_PRC_cooperation
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_PRC_joint_training
-		icon = GFX_focus_generic_military_mission
-		cost = 10.00
-		x = 5
-		y = 13
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_PRC_cooperation
-		}
-		available = {
-		}
-		completion_reward = {
-		army_experience = 100
-		add_tech_bonus = {
-			name = CHI_wargaming_division
-			bonus = 0.5
-			uses = 1
-			category = land_doctrine
-			}
-		PRC = {
-		army_experience = 100
-		add_tech_bonus = {
-			name = CHI_wargaming_division
-			bonus = 0.5
-			uses = 1
-			category = land_doctrine
-			}
-		}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_far_east_siberia_develop
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		x = 6
-		y = 15
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_PRC_cooperation
-		}
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_vladivostok_develop
-		}
-		available = {
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					region = 148
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					region = 148
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					region = 148
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-	}
-	#### 한반도 관계 개선
-	focus = {
-		id = SOV_sinatra_doctrine_KOR_relation
-		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
-		x = 7
-		y = 11
-		prerequisite = {
-			focus = SOV_sinatra_doctrine
-		}
-		mutually_exclusive = {
-			focus = SOV_sinatra_doctrine_PRK_support
-		}
-		available = {
-		}
-		completion_reward = {
-			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_KOR_relation }
-		KOR = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = mission_to_the_KOR
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = ROOT
-				value = 100
-			}
-		}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_KOR_trade_agreement
-		icon = GFX_focus_generic_treaty
-		cost = 10.00
-		x = 7
-		y = 12
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_KOR_relation
-		}
-		available = {
-		}
-		completion_reward = {
-			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_KOR_trade_agreement }
-			KOR = { 
-				add_opinion_modifier = { target = SOV modifier = unholy_alliance_trade } 
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_KOR_reunification_support 
-		icon = GFX_focus_generic_treaty
-		cost = 10.00
-		x = 7
-		y = 13
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_KOR_trade_agreement
-		}
-		available = {
-		}
-		completion_reward = {
-			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_KOR_reunification_support }
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_PRK_support
-		icon = GFX_goal_generic_military_deal
-		cost = 10.00
-		x = 9
-		y = 11
-		prerequisite = {
-			focus = SOV_sinatra_doctrine
-		}
-		mutually_exclusive = {
-			focus = SOV_sinatra_doctrine_KOR_relation
-		}
-		available = {
-		}
-		completion_reward = {
-			add_named_threat = { threat = 5 name = SOV_sinatra_doctrine_PRK_support }
-		PRK = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = mission_to_the_PRK
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = ROOT
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = ROOT
-				value = 100
-			}
-		}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_PRK_support_infra
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10.00
-		x = 9
-		y = 12
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_PRK_support
-		}
-		available = {
-		}
-		completion_reward = {
-		PRK ={
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_PRK_vladivostok_ports
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10.00
-		x = 9
-		y = 13
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_PRK_support_infra
-		}
-		available = {
-		}
-		completion_reward = {
-		random_state = {
-			limit = {
-				state = 408
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = naval_base
-				level = 2
-				instant_build = yes
-			}
-		}
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_vladivostok_develop
-		icon = GFX_goal_generic_positive_trade_relations
-		cost = 10.00
-		x = 8
-		y = 14
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_KOR_trade_agreement
-			focus = SOV_sinatra_doctrine_PRK_support_infra
-		}
-		available = {
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					state = 408
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				}
-		}
-
-	}
 	#### 미국과 관계 개선
 	focus = {
 		id = SOV_sinatra_doctrine_usa_summit_meeting
@@ -5002,7 +4167,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
 		icon = GFX_focus_wonderweapons
 		cost = 10.00
-		x = 23
+		x = 20
 		y = 1
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
@@ -5020,7 +4185,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_usa_both_army_disarmament
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		x = 25
+		x = 22
 		y = 1
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
@@ -5038,7 +4203,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_usa_trade_agreement
 		icon = GFX_focus_generic_treaty
 		cost = 10.00
-		x = 24
+		x = 21
 		y = 2
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_usa_both_army_disarmament
@@ -5058,7 +4223,7 @@ focus_tree = {
 		id = SOV_europe_summit_meeting
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 23
+		x = 20
 		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_usa_trade_agreement
@@ -5164,7 +4329,7 @@ focus_tree = {
 		id = SOV_common_european_home
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 22
+		x = 19
 		y = 5
 		prerequisite = {
 			focus = NF_SOV_comecon_globalization_trade
@@ -5180,10 +4345,10 @@ focus_tree = {
 	}
 ####
 	focus = {
-		id = NF_SOV_self_capability_enhancement
+		id = NF_SOV_economic_reforms
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 20
+		x = 16
 		y = 7
 		prerequisite = {
 			focus = SOV_opening_market
@@ -5198,13 +4363,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_SOV_technical_capabilities_reinforcement
+		id = NF_SOV_self_capability_enhancement
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 20
+		x = 16
 		y = 8
 		prerequisite = {
-			focus = NF_SOV_self_capability_enhancement
+			focus = NF_SOV_economic_reforms
 		}
 		available = {
 		}
@@ -5216,7 +4381,7 @@ focus_tree = {
 		id = NF_SOV_capitalist_economic_aid_request
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 22
+		x = 18
 		y = 7
 		prerequisite = {
 			focus = SOV_common_european_home
@@ -5234,7 +4399,7 @@ focus_tree = {
 		id = NF_SOV_liquidating_insolvent_enterprise
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 22
+		x = 18
 		y = 8
 		prerequisite = {
 			focus = NF_SOV_capitalist_economic_aid_request
@@ -5248,12 +4413,46 @@ focus_tree = {
 		}
 
 	}
+	focus = {
+		id = SOV_price_control
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = NF_SOV_self_capability_enhancement
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = SOV_social_safety_net
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_price_control
+		}
+
+		completion_reward = {
+			SOV_hyper_inflation_level_down = yes
+			SOV_oligarch_power_level_down = yes
+		}
+		
+		x = 16
+		y = 10
+
+	}
 #####
 	focus = {
 		id = SOV_warsaw_pact_organization_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 25
+		x = 22
 		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_usa_trade_agreement
@@ -5279,7 +4478,7 @@ focus_tree = {
 		id = NF_SOV_pact_phase_diplomatic_freedom
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 24
+		x = 21
 		y = 4
 		prerequisite = {
 			focus = SOV_warsaw_pact_organization_conference
@@ -5297,7 +4496,7 @@ focus_tree = {
 		id = NF_SOV_pact_total_diplomatic_freedom
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 26
+		x = 23
 		y = 4
 		prerequisite = {
 			focus = SOV_warsaw_pact_organization_conference
@@ -5315,7 +4514,7 @@ focus_tree = {
 		id = NF_SOV_german_unification_conditional_recognition
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 23
+		x = 20
 		y = 6
 		prerequisite = {
 			focus = NF_SOV_pact_phase_diplomatic_freedom
@@ -5341,7 +4540,7 @@ focus_tree = {
 		id = NF_SOV_collocation_germany
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 25
+		x = 22
 		y = 6
 		prerequisite = {
 			focus = NF_SOV_pact_phase_diplomatic_freedom
@@ -5367,7 +4566,7 @@ focus_tree = {
 		id = NF_SOV_german_unification_cancel
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 27
+		x = 24
 		y = 6
 		prerequisite = {
 			focus = NF_SOV_pact_phase_diplomatic_freedom
@@ -5393,7 +4592,7 @@ focus_tree = {
 		id = NF_SOV_fall_berlin_wall
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 28
+		x = 25
 		y = 5
 		prerequisite = {
 		}
@@ -5407,7 +4606,7 @@ focus_tree = {
 		id = NF_SOV_pact_infrastructure_support
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 28
+		x = 25
 		y = 4
 		prerequisite = {
 			focus = SOV_warsaw_pact_organization_conference
@@ -5422,7 +4621,7 @@ focus_tree = {
 		id = NF_SOV_pact_technical_support
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 30
+		x = 27
 		y = 4
 		prerequisite = {
 			focus = SOV_warsaw_pact_organization_conference
@@ -9034,16 +8233,439 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	#### 한반도 관계 개선
+	focus = {
+		id = NF_SOV_KOR_88_olympic_support
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		x = 24
+		y = 2
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
+			focus = SOV_sinatra_doctrine_usa_both_army_disarmament
+		}
+		mutually_exclusive = {
+			focus = SOV_sinatra_doctrine_PRK_support
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = NF_SOV_KOR_88_olympic_support }
+		KOR = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_KOR
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = ROOT
+				value = 100
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRK_support
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		x = 26
+		y = 2
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_KOR_88_olympic_support
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = SOV_sinatra_doctrine_PRK_support }
+		PRK = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_PRK
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = ROOT
+				value = 100
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_vladivostok_develop
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		x = 28
+		y = 3
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRC_cooperation
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_KOR_trade_agreement
+			focus = SOV_sinatra_doctrine_PRK_support_infra
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					state = 408
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				}
+		}
+
+	}
 	
-	
-	
-	
+
+	focus = {
+		id = SOV_sinatra_doctrine_far_east_siberia_develop
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 28
+		y = 5
+		prerequisite = {
+			focus = NF_SOV_KOR_88_olympic_support
+			focus = SOV_sinatra_doctrine_PRK_support
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					region = 148
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					region = 148
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					region = 148
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+####### 중국 관계 개선
+	focus = {
+		id = SOV_sinatra_doctrine_relation_PRC
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		cost = 10.00
+		x = 30
+		y = 1
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+		available = {
+		}
+		completion_reward = {
+		PRC = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = mission_to_the_PRC
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = ROOT
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = ROOT
+				value = 100
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRC_cooperation
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 30
+		y = 2
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_relation_PRC
+		}
+		available = {
+		}
+		completion_reward = {
+				add_to_tech_sharing_group = sov_research
+				PRC = { add_to_tech_sharing_group = sov_research }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+		}
+
+	}
+	focus = {
+		id = SOV_sinatra_doctrine_PRC_joint_training
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		x = 30
+		y = 5
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_PRC_cooperation
+		}
+		prerequisite = {
+			focus = SOV_sinatra_doctrine_AFG_negotiation_PRC
+		}
+		available = {
+		}
+		completion_reward = {
+		army_experience = 100
+		add_tech_bonus = {
+			name = CHI_wargaming_division
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+			}
+		PRC = {
+		army_experience = 100
+		add_tech_bonus = {
+			name = CHI_wargaming_division
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+			}
+		}
+		}
+
+	}
 #####
 	focus = {
 		id = SOV_sinatra_doctrine_AFG_dispatch_keep
 		icon = GFX_focus_generic_combined_arms
 		cost = 10.00
-		x = 30
+		x = 34
 		y = 1
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
@@ -9064,7 +8686,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_army_support
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
-		x = 30
+		x = 34
 		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_AFG_dispatch_keep
@@ -9124,7 +8746,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
 		icon = GFX_goal_generic_alliance
 		cost = 10.00
-		x = 28
+		x = 32
 		y = 1
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
@@ -9148,7 +8770,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_only_supplie_support
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
-		x = 28
+		x = 32
 		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_AFG_afghan_war_withdraw
@@ -9200,7 +8822,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_AFG_negotiation_PRC
 		icon = GFX_goal_generic_military_deal
 		cost = 10.00
-		x = 29
+		x = 33
 		y = 4
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_AFG_army_support
@@ -9216,7 +8838,7 @@ focus_tree = {
 		id = NF_SOV_AFG_supply_route_reinforce
 		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
-		x = 29
+		x = 33
 		y = 2
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
