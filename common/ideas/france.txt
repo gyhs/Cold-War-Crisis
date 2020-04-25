@@ -617,4 +617,21 @@ ideas = {
 			}
 		}
 		#전쟁준비
+	Internet = {
+		picture = idea_chi_army_corruption3
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.08
+			}
+	}
 }
