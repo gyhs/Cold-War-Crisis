@@ -5145,7 +5145,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_SOV_YUG_yugoslavia_affair_intervention1
+		id = NF_SOV_yugoslavia_claim_influence
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
 		x = 20
@@ -5160,13 +5160,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_SOV_YUG_yugoslavia_affair_intervention2
+		id = NF_SOV_preventive_war_against_NATO
 		icon = GFX_focus_attack_NATO
 		cost = 10.00
 		x = 21
 		y = 10
 		prerequisite = {
-			focus = NF_SOV_YUG_yugoslavia_affair_intervention1
+			focus = NF_SOV_yugoslavia_claim_influence
 			focus = NF_SOV_pact_army_ready
 		}
 		available = {
@@ -5182,7 +5182,7 @@ focus_tree = {
 		x = 20
 		y = 11
 		prerequisite = {
-			focus = NF_SOV_YUG_yugoslavia_affair_intervention2
+			focus = NF_SOV_preventive_war_against_NATO
 		}
 		available = {
 		}
@@ -5197,7 +5197,7 @@ focus_tree = {
 		x = 22
 		y = 11
 		prerequisite = {
-			focus = NF_SOV_YUG_yugoslavia_affair_intervention2
+			focus = NF_SOV_preventive_war_against_NATO
 		}
 		available = {
 		}
