@@ -5125,7 +5125,7 @@ focus_tree = {
 ###### 유고슬라비아 문제
 	focus = {
 		id = NF_SOV_YUG_yugoslavia_affair_intervention
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_invite_yugoslavia
 		cost = 10.00
 		x = 20
 		y = 8
@@ -5161,7 +5161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_YUG_yugoslavia_affair_intervention2
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_attack_NATO
 		cost = 10.00
 		x = 21
 		y = 10

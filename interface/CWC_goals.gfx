@@ -379,4 +379,9 @@ spriteTypes = {
 		name = "GFX_focus_new_soviet_union"
 		texturefile = "gfx/interface/goals/focus_new_soviet_union.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_attack_NATO"
+		texturefile = "gfx/interface/goals/focus_attack_NATO.dds"
+	}
 }
