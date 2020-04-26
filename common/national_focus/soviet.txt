@@ -4394,50 +4394,13 @@ focus_tree = {
 	#### 시나트라 독트린
 	#### 미국과 관계 개선
 	focus = {
-		id = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
-		icon = GFX_focus_wonderweapons
-		cost = 10.00
-		x = 20
-		y = 1
-		prerequisite = {
-			focus = SOV_michael_gorbachev_reform
-		}
-		available = {
-		}
-		completion_reward = {
-			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_usa_summit_meeting }
-			add_ideas = NS_Gen_nuclear_disarmament
-			USA = { add_ideas = NS_Gen_nuclear_disarmament }
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_usa_both_army_disarmament
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
-		x = 22
-		y = 1
-		prerequisite = {
-			focus = SOV_michael_gorbachev_reform
-		}
-		available = {
-		}
-		completion_reward = {
-			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_usa_summit_meeting }
-			add_ideas = NS_Gen_army_disarmament
-			USA = { add_ideas = NS_Gen_army_disarmament }
-		}
-
-	}
-	focus = {
-		id = SOV_sinatra_doctrine_usa_trade_agreement
+		id = NF_SOV_malta_summit
 		icon = GFX_focus_generic_treaty
 		cost = 10.00
 		x = 21
-		y = 2
+		y = 1
 		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_both_army_disarmament
-			focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
+			focus = SOV_michael_gorbachev_reform
 		}
 		available = {
 		}
@@ -4450,13 +4413,31 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_europe_summit_meeting
-		icon = GFX_goal_generic_intelligence_exchange
+		id = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		x = 21
+		y = 2
+		prerequisite = {
+			focus = NF_SOV_malta_summit
+		}
+		available = {
+		}
+		completion_reward = {
+			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_usa_summit_meeting }
+			add_ideas = NS_Gen_nuclear_disarmament
+			USA = { add_ideas = NS_Gen_nuclear_disarmament }
+		}
+
+	}
+	focus = {
+		id = NF_SOV_europe_summit_meeting
+		icon = GFX_goal_generic_improve_relations
 		cost = 10.00
 		x = 20
 		y = 3
 		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_trade_agreement
+			focus = NF_SOV_malta_summit
 		}
 		available = {
 		}
@@ -4571,7 +4552,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_common_european_home
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		x = 19
 		y = 5
@@ -4579,7 +4560,7 @@ focus_tree = {
 			focus = NF_SOV_comecon_globalization_trade
 		}
 		prerequisite = {
-			focus = SOV_europe_summit_meeting
+			focus = NF_SOV_europe_summit_meeting
 		}
 		available = {
 		}
@@ -4907,12 +4888,12 @@ focus_tree = {
 #####
 	focus = {
 		id = SOV_warsaw_pact_organization_conference
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_improve_relations
 		cost = 10.00
 		x = 22
 		y = 3
 		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_trade_agreement
+			focus = NF_SOV_malta_summit
 		}
 		available = {
 		}
@@ -4933,7 +4914,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_pact_phase_diplomatic_freedom
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_military_academy
 		cost = 10.00
 		x = 21
 		y = 4
@@ -4951,7 +4932,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_pact_total_diplomatic_freedom
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		x = 23
 		y = 4
@@ -4967,6 +4948,7 @@ focus_tree = {
 		}
 
 	}
+######## 독일 통일 문제
 	focus = {
 		id = NF_SOV_german_unification_conditional_recognition
 		icon = GFX_goal_generic_intelligence_exchange
@@ -5021,7 +5003,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_german_unification_cancel
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 10.00
 		x = 24
 		y = 6
@@ -5061,7 +5043,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_GER_get_investment_guarantee
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_mex_privatisation
 		cost = 10.00
 		x = 21
 		y = 7
@@ -5093,7 +5075,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_GER_frontier_dispute
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_position_armies
 		cost = 10.00
 		x = 22
 		y = 8
@@ -5109,7 +5091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_pact_army_ready
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_manpower
 		cost = 10.00
 		x = 22
 		y = 9
@@ -5146,7 +5128,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_yugoslavia_claim_influence
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 10.00
 		x = 20
 		y = 9
@@ -5207,7 +5189,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_pact_infrastructure_support
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		x = 25
 		y = 4
@@ -5914,7 +5896,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_pact_technical_support
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		x = 27
 		y = 4
@@ -6933,8 +6915,7 @@ focus_tree = {
 		x = 24
 		y = 2
 		prerequisite = {
-			focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament
-			focus = SOV_sinatra_doctrine_usa_both_army_disarmament
+			focus = NF_SOV_malta_summit
 		}
 		mutually_exclusive = {
 			focus = SOV_sinatra_doctrine_PRK_support
