@@ -20,6 +20,22 @@ state={
 			infrastructure = 6
 			industrial_complex = 1
 
+			9497 = {
+				bunker = 5
+
+			}
+			482 = {
+				bunker = 5
+
+			}
+			3500 = {
+				bunker = 5
+
+			}
+			3561 = {
+				bunker = 5
+
+			}
 		}
 		add_core_of = GER
 		add_core_of = DDR
