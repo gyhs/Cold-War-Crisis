@@ -4783,49 +4783,17 @@ focus_tree = {
 	}
 ####
 	focus = {
-		id = NF_SOV_economic_reforms
+		id = NF_SOV_long_term_economic_reform_plan
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 16
-		y = 7
-		prerequisite = {
-			focus = SOV_opening_market
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_capitalist_economic_aid_request
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_self_capability_enhancement
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 16
+		x = 15
 		y = 8
 		prerequisite = {
-			focus = NF_SOV_economic_reforms
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_capitalist_economic_aid_request
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 18
-		y = 7
-		prerequisite = {
-			focus = NF_SOV_common_european_home
+			focus = SOV_neo_soviet_proclamation
+			focus = SOV_neo_soviet_treaty
 		}
 		mutually_exclusive = {
-			focus = NF_SOV_self_capability_enhancement
+			focus = NF_SOV_compromise_with_oligarch
 		}
 		available = {
 		}
@@ -4834,55 +4802,98 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_SOV_liquidating_insolvent_enterprise
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 18
-		y = 8
-		prerequisite = {
-			focus = NF_SOV_capitalist_economic_aid_request
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_self_capability_enhancement
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = SOV_price_control
+		id = NF_SOV_sharp_rise_price_control
 		icon = GFX_focus_generic_self_management
 		cost = 10.00
+		x = 15
+		y = 9
 		prerequisite = {
-			focus = NF_SOV_self_capability_enhancement
+			focus = NF_SOV_long_term_economic_reform_plan
 		}
 
 		completion_reward = {
 			SOV_hyper_inflation_level_down = yes
 			SOV_oligarch_power_level_down = yes
 		}
-		
-		x = 16
-		y = 9
-
 	}
 	focus = {
 		id = SOV_social_safety_net
 		icon = GFX_goal_tripartite_pact
 		cost = 10.00
+		x = 15
+		y = 10
 		prerequisite = {
-			focus = SOV_price_control
+			focus = NF_SOV_sharp_rise_price_control
 		}
 
 		completion_reward = {
 			SOV_hyper_inflation_level_down = yes
 			SOV_oligarch_power_level_down = yes
 		}
-		
-		x = 16
+	}
+	focus = {
+		id = NF_SOV_compromise_with_oligarch
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 17
+		y = 8
+		prerequisite = {
+			focus = SOV_neo_soviet_proclamation
+			focus = SOV_neo_soviet_treaty
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_long_term_economic_reform_plan
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_privatization_public_institutions
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 17
+		y = 9
+		prerequisite = {
+			focus = NF_SOV_compromise_with_oligarch
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_entrepreneurship_promotion
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 17
 		y = 10
+		prerequisite = {
+			focus = NF_SOV_privatization_public_institutions
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_dynamic_market_activation
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 16
+		y = 11
+		prerequisite = {
+			focus = SOV_social_safety_net
+			focus = NF_SOV_entrepreneurship_promotion
+		}
+		available = {
+		}
+		completion_reward = {
+		}
 
 	}
 #####
@@ -4913,8 +4924,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_SOV_pact_phase_diplomatic_freedom
-		icon = GFX_focus_generic_military_academy
+		id = NF_SOV_pact_total_diplomatic_freedom
+		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		x = 21
 		y = 4
@@ -4922,7 +4933,7 @@ focus_tree = {
 			focus = SOV_warsaw_pact_organization_conference
 		}
 		mutually_exclusive = {
-			focus = NF_SOV_pact_total_diplomatic_freedom
+			focus = NF_SOV_pact_phase_diplomatic_freedom
 		}
 		available = {
 		}
@@ -4931,8 +4942,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_SOV_pact_total_diplomatic_freedom
-		icon = GFX_goal_generic_national_unity
+		id = NF_SOV_pact_phase_diplomatic_freedom
+		icon = GFX_focus_generic_military_academy
 		cost = 10.00
 		x = 23
 		y = 4
@@ -4940,7 +4951,7 @@ focus_tree = {
 			focus = SOV_warsaw_pact_organization_conference
 		}
 		mutually_exclusive = {
-			focus = NF_SOV_pact_phase_diplomatic_freedom
+			focus = NF_SOV_pact_total_diplomatic_freedom
 		}
 		available = {
 		}
