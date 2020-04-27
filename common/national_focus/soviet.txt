@@ -4962,7 +4962,7 @@ focus_tree = {
 ######## 독일 통일 문제
 	focus = {
 		id = NF_SOV_german_unification_conditional_recognition
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_german_unification
 		cost = 10.00
 		x = 20
 		y = 6
@@ -4988,7 +4988,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_collocation_germany
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_german_no_unification
 		cost = 10.00
 		x = 22
 		y = 6
