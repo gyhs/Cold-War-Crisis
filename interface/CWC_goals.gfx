@@ -384,4 +384,12 @@ spriteTypes = {
 		name = "GFX_focus_attack_NATO"
 		texturefile = "gfx/interface/goals/focus_attack_NATO.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_german_unification"
+		texturefile = "gfx/interface/goals/focus_german_unification.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_german_no_unification"
+		texturefile = "gfx/interface/goals/focus_german_no_unification.dds"
+	}
 }
