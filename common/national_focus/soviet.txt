@@ -4745,7 +4745,7 @@ focus_tree = {
 		id = NF_SOV_long_term_economic_reform_plan
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 15
+		x = 11
 		y = 8
 		prerequisite = {
 			focus = SOV_neo_soviet_proclamation
@@ -4764,7 +4764,7 @@ focus_tree = {
 		id = NF_SOV_sharp_rise_price_control
 		icon = GFX_focus_generic_self_management
 		cost = 10.00
-		x = 15
+		x = 11
 		y = 9
 		prerequisite = {
 			focus = NF_SOV_long_term_economic_reform_plan
@@ -4779,7 +4779,7 @@ focus_tree = {
 		id = SOV_social_safety_net
 		icon = GFX_goal_tripartite_pact
 		cost = 10.00
-		x = 15
+		x = 11
 		y = 10
 		prerequisite = {
 			focus = NF_SOV_sharp_rise_price_control
@@ -4794,7 +4794,7 @@ focus_tree = {
 		id = NF_SOV_compromise_with_oligarch
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 17
+		x = 13
 		y = 8
 		prerequisite = {
 			focus = SOV_neo_soviet_proclamation
@@ -4813,7 +4813,7 @@ focus_tree = {
 		id = NF_SOV_privatization_public_institutions
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 17
+		x = 13
 		y = 9
 		prerequisite = {
 			focus = NF_SOV_compromise_with_oligarch
@@ -4828,7 +4828,7 @@ focus_tree = {
 		id = NF_SOV_entrepreneurship_promotion
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 17
+		x = 13
 		y = 10
 		prerequisite = {
 			focus = NF_SOV_privatization_public_institutions
@@ -4843,7 +4843,7 @@ focus_tree = {
 		id = NF_SOV_dynamic_market_activation
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
-		x = 16
+		x = 12
 		y = 11
 		prerequisite = {
 			focus = SOV_social_safety_net
@@ -6085,6 +6085,770 @@ focus_tree = {
 		completion_reward = {
 		}
 
+	}
+	################### 소련 산업 #####
+	focus = {
+		id = NF_SOV_industrialization_program
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = SOV_michael_gorbachev_reform
+		}
+		available = {
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+
+	focus = {
+		id = NF_SOV_rare_minerals_exploitation
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = NF_SOV_industrialization_program }
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+					factor = 1.2
+					OR = {
+						#has_completed_focus = YUG_join_comintern
+						#has_completed_focus = YUG_yugoslavian_path_to_communism
+					}
+			}
+		}
+
+		available = {
+			OR = {
+				#has_full_control_of_state = 105
+				#has_full_control_of_state = 109
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 105
+				}
+				105 = {
+					add_resource = {
+						type = tungsten
+						amount = 8
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_full_control_of_state = 109
+				}
+				109 = {
+					add_resource = {
+						type = chromium
+						amount = 8
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NF_SOV_exploit_the_pannonian_deposits
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = NF_SOV_rare_minerals_exploitation }
+		x = 0
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+					factor = 1.2
+					OR = {
+						#has_completed_focus = YUG_join_comintern
+						#has_completed_focus = YUG_yugoslavian_path_to_communism
+					}
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 45
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 45
+				}
+				45 = {
+					add_resource = {
+						type = chromium
+						amount = 8
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NF_SOV_develop_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NF_SOV_industrialization_program }
+		mutually_exclusive = { focus = NF_SOV_develop_military_industry }
+		x = 2
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+				modifier = {
+					factor = 1.2
+					OR = {
+						#has_completed_focus = NF_SOV_join_comintern
+						#has_completed_focus = NF_SOV_yugoslavian_path_to_communism
+					}
+				}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 102 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 109 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NF_SOV_develop_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NF_SOV_industrialization_program }
+		mutually_exclusive = { focus = NF_SOV_develop_civilian_industry }
+		x = 4
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 2
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NF_SOV_expand_the_university
+		icon = GFX_focus_research
+		prerequisite = { focus = NF_SOV_develop_civilian_industry focus = NF_SOV_develop_military_industry }
+		prerequisite = { focus = NF_SOV_free_discussion_expansion }
+		x = 3
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			NOT = {
+				#has_idea = NF_SOV_idea_croatian_opposition
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = NF_SOV_integrated_rail_network
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = NF_SOV_expand_the_university }
+		mutually_exclusive = { focus = NF_SOV_improve_main_rail_network }
+		x = 2
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+					factor = 1.2
+					OR = {
+						has_completed_focus = YUG_join_comintern
+						has_completed_focus = YUG_yugoslavian_path_to_communism
+					}
+				}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_SOV_improve_light_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NF_SOV_integrated_rail_network focus = NF_SOV_improve_main_rail_network }
+		x = 3
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+			modifier = {
+					factor = 1.2
+					OR = {
+						has_completed_focus = YUG_join_comintern
+						has_completed_focus = YUG_yugoslavian_path_to_communism
+					}
+				}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 104 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 106 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_SOV_develop_autonomous_republic_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NF_SOV_integrated_rail_network }
+		x = 2
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 102 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_SOV_local_self_management
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = NF_SOV_develop_autonomous_republic_industry }
+		x = 2
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+					factor = 1.2
+					OR = {
+						has_completed_focus = YUG_join_comintern
+						has_completed_focus = YUG_yugoslavian_path_to_communism
+					}
+				}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			add_ideas = YUG_idea_local_self_management
+		}
+	}
+	focus = {
+		id = NF_SOV_expand_the_local_university
+		icon = GFX_focus_research
+		prerequisite = { focus = NF_SOV_develop_autonomous_republic_industry }
+		x = 0
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			NOT = {
+				has_idea = YUG_idea_slovene_nationalism
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = NF_SOV_improve_main_rail_network
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = NF_SOV_expand_the_university }
+		mutually_exclusive = { focus = NF_SOV_integrated_rail_network }
+		x = 4
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 2
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 45
+				has_full_control_of_state = 105
+				has_full_control_of_state = 107
+				has_full_control_of_state = 108
+				has_full_control_of_state = 764
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			if = {
+				limit = { has_full_control_of_state = 45 }
+				45 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 105 }
+				105 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 107 }
+				107 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 108 }
+				108 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 764 }
+				764 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NF_SOV_russian_steel
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = NF_SOV_improve_main_rail_network }
+		x = 5
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+			has_full_control_of_state = 108
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			108 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+	}
+	focus = {
+		id = NF_SOV_expand_the_university_of_moscow
+		icon = GFX_focus_research
+		prerequisite = { focus = NF_SOV_improve_main_rail_network }
+		x = 4
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = NF_SOV_central_management
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NF_SOV_expand_the_university_of_moscow }
+		x = 4
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			add_ideas = YUG_idea_central_management
+		}
+	}
+	focus = {
+		id = NF_SOV_expand_the_volgograd_arsenals
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = NF_SOV_local_self_management focus = NF_SOV_central_management }
+		x = 3
+		y = 8
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_full_control_of_state = 104
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+
+		completion_reward = {
+			104 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	#######
