@@ -214,27 +214,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_administrative_power_overhul
-		icon = GFX_goal_generic_demand_territory
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_multi_party_system_establish
-		}
-		prerequisite = {
-			focus = SOV_separate_office_and_party
-		}
-		prerequisite = {
-			focus = SOV_Presidential_system_establish
-		}
-		completion_reward = {
-			SOV_central_government_crisis_level_down = yes
-		}
-		
-		x = 9
-		y = 5
-
-	}
-	focus = {
 		id = SOV_supreme_soviet_abolition
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 10.00
@@ -282,9 +261,6 @@ focus_tree = {
 		id = SOV_congress_people_deputies_reinforce
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
-		prerequisite = {
-			focus = SOV_administrative_power_overhul
-		}
 		prerequisite = {
 			focus = SOV_supreme_soviet_abolition
 		}
@@ -368,7 +344,7 @@ focus_tree = {
 			SOV_nomenklatura_power_level_up = yes
 		}
 		
-		x = 4
+		x = 7
 		y = 1
 
 	}
@@ -386,14 +362,16 @@ focus_tree = {
 			SOV_nomenklatura_power_level_up = yes
 		}
 		
-		x = 6
+		x = 9
 		y = 1
 
 	}
 	focus = {
-		id = SOV_denaturalization_restore
+		id = NF_SOV_free_discussion_expansion
 		icon = GFX_focus_generic_join_comintern
 		cost = 10.00
+		x = 6
+		y = 2
 		prerequisite = {
 			focus = SOV_political_crime_release
 		}
@@ -402,17 +380,21 @@ focus_tree = {
 			SOV_central_government_crisis_level_up = yes
 			SOV_nomenklatura_power_level_up = yes
 		}
-		
-		x = 3
-		y = 2
-
 	}
 	focus = {
-		id = SOV_relaxation_travel_restrictions
+		id = NF_SOV_censor_abolition
 		icon = GFX_goal_tripartite_pact
 		cost = 10.00
+		x = 9
+		y = 5
 		prerequisite = {
-			focus = SOV_denaturalization_restore
+			focus = NF_SOV_free_discussion_expansion
+		}
+		prerequisite = {
+			focus = SOV_past_history_investigation_commission
+		}
+		prerequisite = {
+			focus = SOV_press_freedom_extension
 		}
 		completion_reward = {
 			swap_ideas = { remove_idea = immigration_regulated_2 add_idea = immigration_regulated_3 }
@@ -420,9 +402,6 @@ focus_tree = {
 			SOV_desire_for_reformation_level_up = yes
 			SOV_central_government_crisis_level_up = yes
 		}
-		
-		x = 4
-		y = 5
 		
 	}
 	focus = {
@@ -441,7 +420,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		
-		x = 5
+		x = 8
 		y = 2
 
 	}
@@ -450,7 +429,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
-			focus = SOV_denaturalization_restore
+			focus = NF_SOV_free_discussion_expansion
 		}
 		prerequisite = {
 			focus = SOV_press_freedom_extension
@@ -464,7 +443,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		
-		x = 5
+		x = 8
 		y = 3
 
 	}
@@ -485,34 +464,22 @@ focus_tree = {
 			SOV_nomenklatura_power_level_up = yes
 		}
 		
-		x = 7
+		x = 10
 		y = 2
-
-	}
-	focus = {
-		id = SOV_corrupt_government_official_ban
-		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_administrative_power_overhul
-		}
-		prerequisite = {
-			focus = SOV_administrative_power_abuse_limit
-		}
-		completion_reward = {
-			SOV_desire_for_reformation_level_up = yes
-			SOV_central_government_crisis_level_down = yes
-			SOV_nomenklatura_power_level_down = yes
-		}
-		
-		x = 7
-		y = 6
 
 	}
 	focus = {
 		id = SOV_administrative_power_abuse_limit
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
+		x = 7
+		y = 5
+		prerequisite = {
+			focus = NF_SOV_free_discussion_expansion
+		}
+		prerequisite = {
+			focus = SOV_past_history_investigation_commission
+		}
 		prerequisite = {
 			focus = SOV_press_freedom_extension
 		}
@@ -521,23 +488,19 @@ focus_tree = {
 			SOV_central_government_crisis_level_up = yes
 			SOV_nomenklatura_power_level_down = yes
 		}
-		
-		x = 6
-		y = 5
 
 	}
 	focus = {
 		id = SOV_police_state_abolition
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 10.00
+		x = 8
+		y = 6
 		prerequisite = {
-			focus = SOV_relaxation_travel_restrictions
+			focus = NF_SOV_censor_abolition
 		}
 		prerequisite = {
 			focus = SOV_administrative_power_abuse_limit
-		}
-		prerequisite = {
-			focus = SOV_administrative_power_overhul
 		}
 
 		completion_reward = {
@@ -546,9 +509,6 @@ focus_tree = {
 			remove_ideas = SOV_idea_police_state_1
 			SOV_desire_for_reformation_clear_all = yes
 		}
-		
-		x = 5
-		y = 6
 
 	}
 	
@@ -1033,7 +993,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_hyper_inflation = yes
 		}
 
 		completion_reward = {
@@ -4938,6 +4897,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			end_puppet = DDR
+			end_puppet = POL
+			end_puppet = CZE
+			end_puppet = HUN
+			end_puppet = ROM
+			end_puppet = BUL
 		}
 
 	}
@@ -4983,6 +4948,193 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			GER = { annex_country = { target = DDR } 
+					set_capital = 843
+			}
+			
+			custom_effect_tooltip = NF_SOV_german_unification_conditional_recognition_tt
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			}
 		}
 
 	}
@@ -5009,6 +5161,20 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			GFR = {	leave_faction = yes
+			}
+			USA = {	diplomatic_relation = {
+					country = GER
+					relation = guarantee
+				}
+			}
+			end_puppet = DDR
+			DDR = {	leave_faction = yes
+			}
+			diplomatic_relation = {
+				country = DDR
+				relation = guarantee
+			}
 		}
 
 	}
@@ -5040,7 +5206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NF_SOV_fall_berlin_wall
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_berlin_wall_broken
 		cost = 10.00
 		x = 25
 		y = 5
