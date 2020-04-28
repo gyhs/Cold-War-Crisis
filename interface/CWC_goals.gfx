@@ -392,4 +392,8 @@ spriteTypes = {
 		name = "GFX_focus_german_no_unification"
 		texturefile = "gfx/interface/goals/focus_german_no_unification.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_berlin_wall_broken"
+		texturefile = "gfx/interface/goals/focus_berlin_wall_broken.dds"
+	}
 }
