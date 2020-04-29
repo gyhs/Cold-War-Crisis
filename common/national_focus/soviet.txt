@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = SOV_hardliners_rebellion
 		icon = GFX_focus_ger_great_red_menace
-		x = 36
+		x = 45
 		y = 0
 		cost = 10.00
 		mutually_exclusive = {
@@ -1030,7 +1030,7 @@ focus_tree = {
 		id = SOV_opposition_demonstration_press 
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		cost = 10.00
-		x = 38
+		x = 43
 		y = 1
 		prerequisite = {
 			focus = SOV_hardliners_rebellion
@@ -1045,7 +1045,7 @@ focus_tree = {
 	focus = {
 		id = SOV_state_committee_state_emergency_up
 		icon = GFX_focus_generic_soviet_politics
-		x = 40
+		x = 45
 		y = 1
 		cost = 10.00
 		
@@ -1061,7 +1061,7 @@ focus_tree = {
 		id = SOV_kgb_reorganize
 		icon = GFX_focus_hun_assassinate_horthy
 		cost = 10.00
-		x = 42
+		x = 47
 		y = 1
 		
 		prerequisite = {
@@ -1087,7 +1087,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_kgb_reorganize
 		}
-		x = 40
+		x = 45
 		y = 2
 
 	}
@@ -1100,7 +1100,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_great_purge
 		}
-		x = 37
+		x = 42
 		y = 3
 
 	}
@@ -1111,7 +1111,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_party_leadership_reorganize
 		}
-		x = 37
+		x = 42
 		y = 4
 
 	}
@@ -1122,7 +1122,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_party_leadership_reorganize
 		}
-		x = 35
+		x = 40
 		y = 4
 
 	}
@@ -1135,7 +1135,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_great_purge
 		}
-		x = 40
+		x = 45
 		y = 3
 
 	}
@@ -1146,7 +1146,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_government_official_purge
 		}
-		x = 40
+		x = 45
 		y = 4
 
 	}
@@ -1159,7 +1159,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_great_purge
 		}
-		x = 43
+		x = 48
 		y = 3
 
 	}
@@ -1170,7 +1170,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_ministry_defence_purge
 		}
-		x = 43
+		x = 48
 		y = 4
 
 	}
@@ -1181,7 +1181,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_ministry_defence_purge
 		}
-		x = 45
+		x = 50
 		y = 4
 
 	}
@@ -1200,7 +1200,7 @@ focus_tree = {
 			focus = SOV_kgb_rights_up
 			
 		}
-		x = 38
+		x = 43
 		y = 5
 
 	}
@@ -1211,7 +1211,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_yanayev_faithful_party_member_change
 		}
-		x = 38
+		x = 43
 		y = 6
 
 	}
@@ -1222,7 +1222,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_nomenklatura_guard
 		}
-		x = 37
+		x = 42
 		y = 7
 
 	}
@@ -1233,7 +1233,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_nomenklatura_guard
 		}
-		x = 39
+		x = 44
 		y = 7
 
 	}
@@ -1247,7 +1247,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_social_class_system_up
 		}
-		x = 38
+		x = 43
 		y = 8
 
 	}
@@ -1267,7 +1267,7 @@ focus_tree = {
 			focus = SOV_yanayev_faithful_party_member_change
 			
 		}
-		x = 42
+		x = 47
 		y = 5
 
 	}
@@ -1278,7 +1278,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_kgb_rights_up
 		}
-		x = 42
+		x = 47
 		y = 6
 
 	}
@@ -1289,7 +1289,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_siloviki_guard
 		}
-		x = 41
+		x = 46
 		y = 7
 
 	}
@@ -1300,7 +1300,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_siloviki_guard
 		}
-		x = 43
+		x = 48
 		y = 7
 
 	}
@@ -1314,7 +1314,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_political_commissar_up
 		}
-		x = 42
+		x = 47
 		y = 8
 
 	}
@@ -1327,7 +1327,7 @@ focus_tree = {
 			focus = SOV_siloviki_guard_nomenklatura_purge
 			focus = SOV_nomenklatura_guard_siloviki_purge
 		}
-		x = 40
+		x = 45
 		y = 9
 
 	}
@@ -1344,7 +1344,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_party_reformed_purge
 		}
-		x = 35
+		x = 40
 		y = 5
 
 	}
@@ -1358,7 +1358,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_party_reformed_purge
 		}
-		x = 36
+		x = 41
 		y = 6
 
 	}
@@ -1369,7 +1369,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_anti_soviet_people_arrest
 		}
-		x = 34
+		x = 39
 		y = 6
 
 	}
@@ -1380,7 +1380,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_gulag_reopen
 		}
-		x = 31
+		x = 36
 		y = 7
 
 	}
@@ -1391,7 +1391,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_gulag_reopen
 		}
-		x = 33
+		x = 38
 		y = 7
 
 	}
@@ -1402,7 +1402,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_scientist_gulag_reopen
 		}
-		x = 33
+		x = 38
 		y = 8
 
 	}
@@ -1413,7 +1413,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_hardliners_gulag_reopen
 		}
-		x = 35
+		x = 40
 		y = 7
 
 	}
@@ -1427,1472 +1427,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_kgb_strength_expand
 		}
-		x = 45
-		y = 5
-
-	}
-	
-	############ 민족주의 운동 ######################
-	focus = {
-		id = SOV_nationalist_movement
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 80
-		y = 0
-		completion_reward = {
-			SOV_central_government_crisis_level_down = yes
-		}
-
-	}
-	############ 서부 공화국 민족주의 운동 ########
-	
-	focus = {
-		id = SOV_eastern_europe_nm
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 60
-		y = 1
-		prerequisite = {
-			focus = SOV_nationalist_movement
-		}
-
-	}
-	#### 러시아 민족주의
-	focus = {
-		id = SOV_Russian_nm_1
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 48
-		y = 2
-		prerequisite = {
-			focus = SOV_eastern_europe_nm
-		}
-
-	}
-	focus = {
-		id = SOV_Russian_nm_2
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 47
-		y = 3
-		prerequisite = {
-			focus = SOV_Russian_nm_1
-		}
-		prerequisite = {
-			focus = SOV_outpower_intellectual
-		}
-		mutually_exclusive = {
-			focus = SOV_Russian_nm_3
-		}
-		completion_reward = {
-			SOV_central_government_crisis_level_down = yes
-		}
-
-	}
-	focus = {
-		id = SOV_Russian_nm_3
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 49
-		y = 3
-		prerequisite = {
-			focus = SOV_fail_coupdeta
-		}
-		prerequisite = {
-			focus = SOV_Russian_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_Russian_nm_2
-		}
-		completion_reward = {
-			SOV_central_government_crisis_level_up = yes
-		}
-
-	}
-	focus = {
-		id = SOV_Russian_nm_4
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 47
-		y = 4
-		prerequisite = {
-			focus = SOV_Russian_nm_2
-			focus = SOV_Russian_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_Russian_nm_5
-		}
-		completion_reward = {
-			SOV_central_government_crisis_level_down = yes
-		}
-
-	}
-	focus = {
-		id = SOV_Russian_nm_5
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 49
-		y = 4
-		prerequisite = {
-			focus = SOV_Russian_nm_2
-			focus = SOV_Russian_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_Russian_nm_4
-		}
-		completion_reward = {
-			SOV_central_government_crisis_level_up = yes
-		}
-
-	}
-	focus = {
-		id = SOV_outpower_intellectual
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 46
-		y = 2
-		available = {
-			has_completed_focus = SOV_press_freedom_extension
-		}
-
-	}
-	focus = {
-		id = SOV_fail_coupdeta
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
 		x = 50
-		y = 2
-		available = {
-		}
-
-	}
-	#### 벨라루스 민족주의
-	focus = {
-		id = SOV_belarus_nm_1
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 54
-		y = 2
-		prerequisite = {
-			focus = SOV_eastern_europe_nm
-		}
-		available = {
-			always = no
-		}
-
-
-	}
-	focus = {
-		id = SOV_belarus_nm_2
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 52
-		y = 3
-		prerequisite = {
-			focus = SOV_belarus_nm_1
-		}
-		available = {
-			has_completed_focus = SOV_past_history_investigation_commission
-		}
-		completion_reward = {
-			set_country_flag = flag_SOV_belarus_kurapaty_purge_apologize_nm
-			if = {
-				limit = { has_completed_focus = SOV_past_history_investigation_commission }
-				SOV_idea_belarus_uprising_level_up = yes
-				SOV_central_government_crisis_level_down = yes
-			}
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_3
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 54
-		y = 3
-		prerequisite = {
-			focus = SOV_belarus_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_4
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_4
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 56
-		y = 3
-		prerequisite = {
-			focus = SOV_belarus_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_3
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_5
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 51
-		y = 4
-		prerequisite = {
-			focus = SOV_belarus_nm_2
-		}
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_6
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_6
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 53
-		y = 4
-		prerequisite = {
-			focus = SOV_belarus_nm_2
-		}
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_5
-		}
-		available = {
-			has_completed_focus = SOV_purge_victim_remembrance
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_7
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 55
-		y = 4
-		prerequisite = {
-			focus = SOV_belarus_nm_3
-			focus = SOV_belarus_nm_4
-		}
-		
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_8
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_8
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 57
-		y = 4
-		prerequisite = {
-			focus = SOV_belarus_nm_3
-			focus = SOV_belarus_nm_4
-		}
-		
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_7
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_9
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 54
 		y = 5
-		prerequisite = {
-			focus = SOV_belarus_nm_5
-			focus = SOV_belarus_nm_6
-		}
-		prerequisite = {
-			focus = SOV_belarus_nm_7
-			focus = SOV_belarus_nm_8
-		}
-		completion_reward = {
-			SOV_idea_belarus_uprising_level_down = yes
-			SOV_central_government_crisis_level_down = yes
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_10
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 53
-		y = 6
-		prerequisite = {
-			focus = SOV_belarus_nm_7
-			focus = SOV_belarus_nm_8
-			focus = SOV_belarus_nm_9
-		}
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_11
-		}
-		available = {
-			always = no
-			or= {
-				not= {
-					has_completed_focus = SOV_belarus_nm_3
-					has_completed_focus = SOV_belarus_nm_5
-					has_completed_focus = SOV_belarus_nm_7
-					}
-				}
-		}
-
-	}
-	focus = {
-		id = SOV_belarus_nm_11
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 55
-		y = 6
-		prerequisite = {
-			focus = SOV_belarus_nm_7
-			focus = SOV_belarus_nm_8
-			focus = SOV_belarus_nm_9
-		}
-		mutually_exclusive = {
-			focus = SOV_belarus_nm_10
-		}
-		available = {
-			always = no
-			has_government = communism
-			controls_state = 94
-			controls_state = 95
-			controls_state = 194
-			controls_state = 204
-			controls_state = 206
-			controls_state = 207
-			controls_state = 241
-			controls_state = 788
-			controls_state = 1011
-		}
-		completion_reward = {
-			#### 벨라루스
-			if = {
-				limit = {
-					country_exists = BLR
-				}
-				hidden_effect = {
-					BLR = {
-						set_state_controller = 94
-						set_state_controller = 95
-						set_state_controller = 194
-						set_state_controller = 204
-						set_state_controller = 206
-						set_state_controller = 207
-						set_state_controller = 241
-						set_state_controller = 788
-						set_state_controller = 1011
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = BLR
-						has_government = communism
-					}
-					transfer_state = 94
-					transfer_state = 95
-					transfer_state = 194
-					transfer_state = 204
-					transfer_state = 206
-					transfer_state = 207
-					transfer_state = 241
-					transfer_state = 788
-					transfer_state = 1011
-					SOV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-			}
-			else = {
-				BLR = {
-					transfer_state = 94
-					transfer_state = 95
-					transfer_state = 194
-					transfer_state = 204
-					transfer_state = 206
-					transfer_state = 207
-					transfer_state = 241
-					transfer_state = 788
-					transfer_state = 1011
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-				set_autonomy = { target = BLR autonomy_state = autonomy_integrated_puppet }
-			}
-		}
-
-	}
-	
-	#### 우크라이나 민족주의
-	focus = {
-		id = SOV_ukraine_nm_1
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 63
-		y = 2
-		prerequisite = {
-			focus = SOV_eastern_europe_nm
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_2
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 62
-		y = 3
-		prerequisite = {
-			focus = SOV_ukraine_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_3
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_3
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 64
-		y = 3
-		prerequisite = {
-			focus = SOV_ukraine_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_2
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_4
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 66
-		y = 4
-		prerequisite = {
-			focus = SOV_ukraine_nm_2
-			focus = SOV_ukraine_nm_3
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_5
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 62
-		y = 4
-		prerequisite = {
-			focus = SOV_ukraine_nm_2
-			focus = SOV_ukraine_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_6
-		}
-		available = {
-			always = no
-			has_completed_focus = SOV_information_censorship_down
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_6
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 64
-		y = 4
-		prerequisite = {
-			focus = SOV_ukraine_nm_2
-			focus = SOV_ukraine_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_5
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_7
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 66
-		y = 6
-		prerequisite = {
-			focus = SOV_ukraine_nm_4
-		}
-		prerequisite = {
-			focus = SOV_ukraine_nm_5
-			focus = SOV_ukraine_nm_6
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_8
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 62
-		y = 5
-		prerequisite = {
-			focus = SOV_ukraine_nm_5
-			focus = SOV_ukraine_nm_6
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_9
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 64
-		y = 5
-		prerequisite = {
-			focus = SOV_ukraine_nm_4
-		}
-		prerequisite = {
-			focus = SOV_ukraine_nm_5
-			focus = SOV_ukraine_nm_6
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_10
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 62
-		y = 7
-		prerequisite = {
-			focus = SOV_ukraine_nm_8
-			focus = SOV_ukraine_nm_9
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_11
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_11
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 64
-		y = 7
-		prerequisite = {
-			focus = SOV_ukraine_nm_7
-		}
-		prerequisite = {
-			focus = SOV_ukraine_nm_8
-			focus = SOV_ukraine_nm_9
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_10
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_12
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 62
-		y = 8
-		prerequisite = {
-			focus = SOV_ukraine_nm_10
-			focus = SOV_ukraine_nm_11
-			
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_13
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_ukraine_nm_13
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 64
-		y = 8
-		prerequisite = {
-			focus = SOV_ukraine_nm_11
-			focus = SOV_ukraine_nm_10
-		}
-		mutually_exclusive = {
-			focus = SOV_ukraine_nm_12
-		}
-		available = {
-			always = no
-			has_government = communism
-			controls_state = 73
-			controls_state = 80
-			controls_state = 89
-			controls_state = 91
-			controls_state = 93
-			controls_state = 137
-			controls_state = 192
-			controls_state = 193
-			controls_state = 196
-			controls_state = 197
-			controls_state = 198
-			controls_state = 199
-			controls_state = 200
-			controls_state = 201
-			controls_state = 202
-			controls_state = 203
-			controls_state = 221
-			controls_state = 225
-			controls_state = 226
-			controls_state = 227
-			controls_state = 228
-			controls_state = 259
-			controls_state = 787
-			controls_state = 799
-		}
-		completion_reward = {
-			#### 우크라이나
-			if = {
-				limit = {
-					country_exists = UKR
-				}
-				hidden_effect = {
-					UKR = {
-						set_state_controller = 73
-						set_state_controller = 80
-						set_state_controller = 89
-						set_state_controller = 91
-						set_state_controller = 93
-						set_state_controller = 137
-						set_state_controller = 192
-						set_state_controller = 193
-						set_state_controller = 196
-						set_state_controller = 197
-						set_state_controller = 198
-						set_state_controller = 199
-						set_state_controller = 200
-						set_state_controller = 201
-						set_state_controller = 202
-						set_state_controller = 203
-						set_state_controller = 221
-						set_state_controller = 225
-						set_state_controller = 226
-						set_state_controller = 227
-						set_state_controller = 228
-						set_state_controller = 259
-						set_state_controller = 787
-						set_state_controller = 799
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = UKR
-						has_government = communism
-					}
-						transfer_state = 73
-						transfer_state = 80
-						transfer_state = 89
-						transfer_state = 91
-						transfer_state = 93
-						transfer_state = 137
-						transfer_state = 192
-						transfer_state = 193
-						transfer_state = 196
-						transfer_state = 197
-						transfer_state = 198
-						transfer_state = 199
-						transfer_state = 200
-						transfer_state = 201
-						transfer_state = 202
-						transfer_state = 203
-						transfer_state = 221
-						transfer_state = 225
-						transfer_state = 226
-						transfer_state = 227
-						transfer_state = 228
-						transfer_state = 259
-						transfer_state = 787
-						transfer_state = 799
-					SOV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-			}
-			else = {
-				UKR = {
-						transfer_state = 73
-						transfer_state = 80
-						transfer_state = 89
-						transfer_state = 91
-						transfer_state = 93
-						transfer_state = 137
-						transfer_state = 192
-						transfer_state = 193
-						transfer_state = 196
-						transfer_state = 197
-						transfer_state = 198
-						transfer_state = 199
-						transfer_state = 200
-						transfer_state = 201
-						transfer_state = 202
-						transfer_state = 203
-						transfer_state = 221
-						transfer_state = 225
-						transfer_state = 226
-						transfer_state = 227
-						transfer_state = 228
-						transfer_state = 259
-						transfer_state = 787
-						transfer_state = 799
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-				set_autonomy = { target = UKR autonomy_state = autonomy_integrated_puppet }
-			}
-		}
-
-	}
-	#### 발트 3국 민족주의
-	focus = {
-		id = SOV_baltic_states_nm_1
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 70
-		y = 2
-		prerequisite = {
-			focus = SOV_eastern_europe_nm
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_2
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 69
-		y = 3
-		prerequisite = {
-			focus = SOV_baltic_states_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_3
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_3
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 71
-		y = 3
-		prerequisite = {
-			focus = SOV_baltic_states_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_2
-		}
-		available = {
-			always = no
-			has_completed_focus = SOV_information_censorship_down
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_4
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 69
-		y = 4
-		prerequisite = {
-			focus = SOV_baltic_states_nm_2
-			focus = SOV_baltic_states_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_5
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_5
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 71
-		y = 4
-		prerequisite = {
-			focus = SOV_baltic_states_nm_2
-			focus = SOV_baltic_states_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_4
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_6
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 68
-		y = 5
-		prerequisite = {
-			focus = SOV_baltic_states_nm_4
-			focus = SOV_baltic_states_nm_5
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_7
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 70
-		y = 5
-		prerequisite = {
-			focus = SOV_baltic_states_nm_4
-			focus = SOV_baltic_states_nm_5
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_8
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 72
-		y = 5
-		prerequisite = {
-			focus = SOV_baltic_states_nm_4
-			focus = SOV_baltic_states_nm_5
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_9
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 69
-		y = 6
-		prerequisite = {
-			focus = SOV_baltic_states_nm_6
-		}
-		prerequisite = {
-			focus = SOV_baltic_states_nm_7
-			focus = SOV_baltic_states_nm_8
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_10
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_10
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 71
-		y = 6
-		prerequisite = {
-			focus = SOV_baltic_states_nm_6
-			focus = SOV_baltic_states_nm_7
-		}
-		prerequisite = {
-			focus = SOV_baltic_states_nm_8
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_9
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_baltic_states_nm_11
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 69
-		y = 7
-		prerequisite = {
-			focus = SOV_baltic_states_nm_9
-			focus = SOV_baltic_states_nm_10
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_12
-		}
-		available = {
-			always = no
-		}
-		
-	}
-	focus = {
-		id = SOV_baltic_states_nm_12
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 71
-		y = 7
-		prerequisite = {
-			focus = SOV_baltic_states_nm_9
-			focus = SOV_baltic_states_nm_10
-		}
-		mutually_exclusive = {
-			focus = SOV_baltic_states_nm_11
-		}
-		available = {
-			always = no
-			has_government = communism
-			controls_state = 13
-			controls_state = 191
-			controls_state = 995
-			controls_state = 12
-			controls_state = 190
-			controls_state = 992
-			controls_state = 993
-			controls_state = 994
-			controls_state = 11
-			controls_state = 96
-			controls_state = 188
-			controls_state = 189
-			controls_state = 830
-			controls_state = 990
-			controls_state = 991
-		}
-		completion_reward = {
-			#### 에스토니아
-			if = {
-				limit = {
-					country_exists = EST
-				}
-				hidden_effect = {
-					EST = {
-						set_state_controller = 13
-						set_state_controller = 191
-						set_state_controller = 995
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = EST
-						has_government = communism
-					}
-					transfer_state = 13
-					transfer_state = 191
-					transfer_state = 995
-					SOV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-			}
-			else = {
-				EST = {
-					transfer_state = 13
-					transfer_state = 191
-					transfer_state = 995
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-				set_autonomy = { target = EST autonomy_state = autonomy_integrated_puppet }
-			}
-			#### 라트비아
-			if = {
-				limit = {
-					country_exists = LAT
-				}
-				hidden_effect = {
-					LAT = {
-						set_state_controller = 12
-						set_state_controller = 190
-						set_state_controller = 992
-						set_state_controller = 993
-						set_state_controller = 994
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = LAT
-						has_government = communism
-					}
-					transfer_state = 12
-					transfer_state = 190
-					transfer_state = 992
-					transfer_state = 993
-					transfer_state = 994
-					SOV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-			}
-			else = {
-				LAT = {
-					transfer_state = 12
-					transfer_state = 190
-					transfer_state = 992
-					transfer_state = 993
-					transfer_state = 994
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-				set_autonomy = { target = LAT autonomy_state = autonomy_integrated_puppet }
-			}
-			#### 리투아니아
-			if = {
-				limit = {
-					country_exists = LIT
-				}
-				hidden_effect = {
-					LIT = {
-						set_state_controller = 11
-						set_state_controller = 96
-						set_state_controller = 188
-						set_state_controller = 189
-						set_state_controller = 830
-						set_state_controller = 990
-						set_state_controller = 991
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = LIT
-						has_government = communism
-					}
-					transfer_state = 11
-					transfer_state = 96
-					transfer_state = 188
-					transfer_state = 189
-					transfer_state = 830
-					transfer_state = 990
-					transfer_state = 991
-					SOV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-			}
-			else = {
-				LIT = {
-					transfer_state = 11
-					transfer_state = 96
-					transfer_state = 188
-					transfer_state = 189
-					transfer_state = 830
-					transfer_state = 990
-					transfer_state = 991
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-				set_autonomy = { target = LIT autonomy_state = autonomy_integrated_puppet }
-			}
-			
-		}
-
-	}
-	#### 몰도바 민족주의
-	focus = {
-		id = SOV_moldova_nm_1
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 75
-		y = 2
-		prerequisite = {
-			focus = SOV_eastern_europe_nm
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_2
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 74
-		y = 3
-		prerequisite = {
-			focus = SOV_moldova_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_3
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_3
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 76
-		y = 3
-		prerequisite = {
-			focus = SOV_moldova_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_2
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_4
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 74
-		y = 4
-		prerequisite = {
-			focus = SOV_moldova_nm_2
-			focus = SOV_moldova_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_5
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_5
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 76
-		y = 4
-		prerequisite = {
-			focus = SOV_moldova_nm_2
-			focus = SOV_moldova_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_4
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_6
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 74
-		y = 5
-		prerequisite = {
-			focus = SOV_moldova_nm_4
-			focus = SOV_moldova_nm_5
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_7
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_7
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 76
-		y = 5
-		prerequisite = {
-			focus = SOV_moldova_nm_4
-			focus = SOV_moldova_nm_5
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_6
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_8
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 74
-		y = 6
-		prerequisite = {
-			focus = SOV_moldova_nm_6
-			focus = SOV_moldova_nm_7
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_9
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_9
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 76
-		y = 6
-		prerequisite = {
-			focus = SOV_moldova_nm_6
-			focus = SOV_moldova_nm_7
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_8
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_10
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 74
-		y = 7
-		prerequisite = {
-			focus = SOV_moldova_nm_9
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_11
-		}
-		available = {
-			always = no
-			has_government = communism
-			controls_state = 78
-			controls_state = 790
-			controls_state = 791
-		}
-		completion_reward = {
-			#### 몰도바
-			if = {
-				limit = {
-					country_exists = MOL
-				}
-				hidden_effect = {
-					MOL = {
-						set_state_controller = 78
-						set_state_controller = 790
-						set_state_controller = 791
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = MOL
-						has_government = communism
-					}
-						transfer_state = 78
-						transfer_state = 790
-						transfer_state = 791
-					SOV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-			}
-			else = {
-				MOL = {
-						transfer_state = 78
-						transfer_state = 790
-						transfer_state = 791
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-				set_autonomy = { target = MOL autonomy_state = autonomy_integrated_puppet }
-			}
-		}
-
-	}
-	focus = {
-		id = SOV_moldova_nm_11
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 76
-		y = 7
-		prerequisite = {
-			focus = SOV_moldova_nm_9
-		}
-		mutually_exclusive = {
-			focus = SOV_moldova_nm_10
-		}
-		available = {
-			always = no
-			has_government = communism
-			controls_state = 78
-			controls_state = 791
-		}
-		completion_reward = {
-			#### 몰도바
-			if = {
-				limit = {
-					country_exists = ROM
-				}
-				hidden_effect = {
-					ROM = {
-						set_state_controller = 78
-						set_state_controller = 791
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = ROM
-					}
-						transfer_state = 78
-						transfer_state = 791
-				}
-			}
-		}
 
 	}
 	############ 캅카스 민족주의 운동 ########
@@ -4048,306 +2584,6 @@ focus_tree = {
 	}
 	
 	
-	############ 중앙 아시아 민족주의 운동 ########
-	focus = {
-		id = SOV_central_asia_nm
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 104
-		y = 1
-		prerequisite = {
-			focus = SOV_nationalist_movement
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_1
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 104
-		y = 2
-		prerequisite = {
-			focus = SOV_central_asia_nm
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_2
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 103
-		y = 3
-		prerequisite = {
-			focus = SOV_central_asia_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_3
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_3
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 105
-		y = 3
-		prerequisite = {
-			focus = SOV_central_asia_nm_1
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_2
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_4
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 102
-		y = 4
-		prerequisite = {
-			focus = SOV_central_asia_nm_2
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_5
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 105
-		y = 4
-		prerequisite = {
-			focus = SOV_central_asia_nm_2
-			focus = SOV_central_asia_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_6
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_6
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 107
-		y = 4
-		prerequisite = {
-			focus = SOV_central_asia_nm_2
-			focus = SOV_central_asia_nm_3
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_5
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_7
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 102
-		y = 6
-		prerequisite = {
-			focus = SOV_central_asia_nm_4
-			focus = SOV_central_asia_nm_6
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_8
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 104
-		y = 6
-		prerequisite = {
-			focus = SOV_central_asia_nm_4
-			focus = SOV_central_asia_nm_6
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_9
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 105
-		y = 5
-		prerequisite = {
-			focus = SOV_central_asia_nm_5
-			focus = SOV_central_asia_nm_6
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_10
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_10
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 107
-		y = 5
-		prerequisite = {
-			focus = SOV_central_asia_nm_5
-			focus = SOV_central_asia_nm_6
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_9
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_11
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 105
-		y = 7
-		prerequisite = {
-			focus = SOV_central_asia_nm_7
-		}
-		prerequisite = {
-			focus = SOV_central_asia_nm_8
-		}
-		prerequisite = {
-			focus = SOV_central_asia_nm_9
-			focus = SOV_central_asia_nm_10
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_12
-		}
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = SOV_central_asia_nm_12
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		x = 107
-		y = 7
-		prerequisite = {
-			focus = SOV_central_asia_nm_9
-			focus = SOV_central_asia_nm_10
-		}
-		mutually_exclusive = {
-			focus = SOV_central_asia_nm_11
-		}
-		available = {
-			always = no
-			has_government = communism
-			controls_state = 402
-			controls_state = 404
-			controls_state = 583
-			controls_state = 587
-			controls_state = 588
-			controls_state = 589
-			controls_state = 590
-			controls_state = 952
-			controls_state = 953
-			controls_state = 954
-		}
-		completion_reward = {
-			#### 카자흐스탄
-			if = {
-				limit = {
-					country_exists = KAZ
-				}
-				hidden_effect = {
-					KAZ = {
-						set_state_controller = 402
-						set_state_controller = 404
-						set_state_controller = 583
-						set_state_controller = 587
-						set_state_controller = 588
-						set_state_controller = 589
-						set_state_controller = 590
-						set_state_controller = 952
-						set_state_controller = 953
-						set_state_controller = 954
-					}
-				}
-				random_country = {
-					limit= {
-						original_tag = KAZ
-						has_government = communism
-					}
-						transfer_state = 402
-						transfer_state = 404
-						transfer_state = 583
-						transfer_state = 587
-						transfer_state = 588
-						transfer_state = 589
-						transfer_state = 590
-						transfer_state = 952
-						transfer_state = 953
-						transfer_state = 954
-					SOV = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-			}
-			else = {
-				KAZ = {
-						transfer_state = 402
-						transfer_state = 404
-						transfer_state = 583
-						transfer_state = 587
-						transfer_state = 588
-						transfer_state = 589
-						transfer_state = 590
-						transfer_state = 952
-						transfer_state = 953
-						transfer_state = 954
-					#set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = "Josef Terboven"
-						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism_subtype_1
-						traits = {
-						}
-					}
-				}
-				set_autonomy = { target = KAZ autonomy_state = autonomy_integrated_puppet }
-			}
-		}
-
-	}
 	
 	
 	#### 시나트라 독트린
@@ -4858,7 +3094,7 @@ focus_tree = {
 #####
 	focus = {
 		id = SOV_warsaw_pact_organization_conference
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_warsaw_pact
 		cost = 10.00
 		x = 22
 		y = 3
@@ -8244,7 +6480,7 @@ focus_tree = {
 		id = SOV_sinatra_doctrine_PRC_joint_training
 		icon = GFX_focus_generic_military_mission
 		cost = 10.00
-		x = 30
+		x = 31
 		y = 5
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_PRC_cooperation
