@@ -382,27 +382,118 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NF_SOV_censor_abolition
-		icon = GFX_goal_tripartite_pact
+		id = SOV_press_freedom_extension
+		icon = GFX_goal_support_democracy
 		cost = 10.00
-		x = 9
-		y = 5
 		prerequisite = {
-			focus = NF_SOV_free_discussion_expansion
+			focus = SOV_political_crime_release
 		}
 		prerequisite = {
-			focus = SOV_past_history_investigation_commission
-		}
-		prerequisite = {
-			focus = SOV_press_freedom_extension
+			focus = SOV_information_censorship_down
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = immigration_regulated_2 add_idea = immigration_regulated_3 }
-			swap_ideas = { remove_idea = security_major_restrictions add_idea = security_minor_restrictions }
+			swap_ideas = { remove_idea = press_censored add_idea = press_regulated }
 			SOV_desire_for_reformation_level_up = yes
 			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
 		}
 		
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = NF_SOV_one_national_language
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = NF_SOV_free_discussion_expansion
+			focus = SOV_press_freedom_extension
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_multi_national_language
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+	}
+	focus = {
+		id = NF_SOV_multi_national_language
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = NF_SOV_free_discussion_expansion
+			focus = SOV_press_freedom_extension
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_one_national_language
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+	}
+	focus = {
+		id = NF_SOV_freedom_of_religion
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		x = 6
+		y = 4
+		prerequisite = {
+			focus = NF_SOV_one_national_language
+			focus = NF_SOV_multi_national_language
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_orthodox_church_state_religion_treatment
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+	}
+	focus = {
+		id = NF_SOV_orthodox_church_state_religion_treatment
+		icon = GFX_focus_por_concordat
+		cost = 10.00
+		x = 8
+		y = 4
+		prerequisite = {
+			focus = NF_SOV_one_national_language
+			focus = NF_SOV_multi_national_language
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_freedom_of_religion
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_up = yes
+		}
+	}
+	focus = {
+		id = SOV_administrative_power_abuse_limit
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		x = 7
+		y = 5
+		prerequisite = {
+			focus = NF_SOV_freedom_of_religion
+			focus = NF_SOV_orthodox_church_state_religion_treatment
+		}
+		completion_reward = {
+			SOV_desire_for_reformation_level_up = yes
+			SOV_central_government_crisis_level_up = yes
+			SOV_nomenklatura_power_level_down = yes
+		}
+
 	}
 	focus = {
 		id = SOV_past_history_investigation_commission
@@ -420,7 +511,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		
-		x = 8
+		x = 10
 		y = 2
 
 	}
@@ -443,36 +534,15 @@ focus_tree = {
 			add_political_power = 100
 		}
 		
-		x = 8
+		x = 10
 		y = 3
 
 	}
 	focus = {
-		id = SOV_press_freedom_extension
-		icon = GFX_goal_support_democracy
+		id = NF_SOV_censor_abolition
+		icon = GFX_goal_tripartite_pact
 		cost = 10.00
-		prerequisite = {
-			focus = SOV_political_crime_release
-		}
-		prerequisite = {
-			focus = SOV_information_censorship_down
-		}
-		completion_reward = {
-			swap_ideas = { remove_idea = press_censored add_idea = press_regulated }
-			SOV_desire_for_reformation_level_up = yes
-			SOV_central_government_crisis_level_up = yes
-			SOV_nomenklatura_power_level_up = yes
-		}
-		
-		x = 10
-		y = 2
-
-	}
-	focus = {
-		id = SOV_administrative_power_abuse_limit
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		x = 7
+		x = 9
 		y = 5
 		prerequisite = {
 			focus = NF_SOV_free_discussion_expansion
@@ -484,11 +554,12 @@ focus_tree = {
 			focus = SOV_press_freedom_extension
 		}
 		completion_reward = {
+			swap_ideas = { remove_idea = immigration_regulated_2 add_idea = immigration_regulated_3 }
+			swap_ideas = { remove_idea = security_major_restrictions add_idea = security_minor_restrictions }
 			SOV_desire_for_reformation_level_up = yes
 			SOV_central_government_crisis_level_up = yes
-			SOV_nomenklatura_power_level_down = yes
 		}
-
+		
 	}
 	focus = {
 		id = SOV_police_state_abolition
@@ -4327,7 +4398,7 @@ focus_tree = {
 		id = NF_SOV_industrialization_program
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
-		x = 3
+		x = 2
 		y = 1
 		prerequisite = {
 			focus = SOV_michael_gorbachev_reform
@@ -4348,7 +4419,7 @@ focus_tree = {
 		id = NF_SOV_rare_minerals_exploitation
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = NF_SOV_industrialization_program }
-		x = 0
+		x = -1
 		y = 2
 
 		cost = 10
@@ -4412,7 +4483,7 @@ focus_tree = {
 		id = NF_SOV_exploit_the_pannonian_deposits
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = NF_SOV_rare_minerals_exploitation }
-		x = 0
+		x = -1
 		y = 3
 
 		cost = 10
@@ -4462,7 +4533,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = NF_SOV_industrialization_program }
 		mutually_exclusive = { focus = NF_SOV_develop_military_industry }
-		x = 2
+		x = 1
 		y = 2
 
 		cost = 10
@@ -4539,7 +4610,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = NF_SOV_industrialization_program }
 		mutually_exclusive = { focus = NF_SOV_develop_civilian_industry }
-		x = 4
+		x = 3
 		y = 2
 
 		cost = 10
@@ -4587,7 +4658,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = NF_SOV_develop_civilian_industry focus = NF_SOV_develop_military_industry }
 		prerequisite = { focus = NF_SOV_free_discussion_expansion }
-		x = 3
+		x = 2
 		y = 3
 
 		cost = 10
@@ -4622,7 +4693,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = NF_SOV_expand_the_university }
 		mutually_exclusive = { focus = NF_SOV_improve_main_rail_network }
-		x = 2
+		x = 1
 		y = 4
 
 		cost = 10
@@ -4670,7 +4741,7 @@ focus_tree = {
 		id = NF_SOV_improve_light_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = NF_SOV_integrated_rail_network focus = NF_SOV_improve_main_rail_network }
-		x = 3
+		x = 2
 		y = 5
 
 		cost = 10
@@ -4732,7 +4803,7 @@ focus_tree = {
 		id = NF_SOV_develop_autonomous_republic_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = NF_SOV_integrated_rail_network }
-		x = 2
+		x = 1
 		y = 6
 
 		cost = 10
@@ -4781,7 +4852,7 @@ focus_tree = {
 		id = NF_SOV_local_self_management
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = NF_SOV_develop_autonomous_republic_industry }
-		x = 2
+		x = 1
 		y = 7
 
 		cost = 10
@@ -4819,7 +4890,7 @@ focus_tree = {
 		id = NF_SOV_expand_the_local_university
 		icon = GFX_focus_research
 		prerequisite = { focus = NF_SOV_develop_autonomous_republic_industry }
-		x = 0
+		x = -1
 		y = 7
 
 		cost = 10
@@ -4853,7 +4924,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = NF_SOV_expand_the_university }
 		mutually_exclusive = { focus = NF_SOV_integrated_rail_network }
-		x = 4
+		x = 3
 		y = 4
 
 		cost = 10
@@ -4953,7 +5024,7 @@ focus_tree = {
 		id = NF_SOV_russian_steel
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = NF_SOV_improve_main_rail_network }
-		x = 5
+		x = 4
 		y = 5
 
 		cost = 10
@@ -4989,7 +5060,7 @@ focus_tree = {
 		id = NF_SOV_expand_the_university_of_moscow
 		icon = GFX_focus_research
 		prerequisite = { focus = NF_SOV_improve_main_rail_network }
-		x = 4
+		x = 3
 		y = 6
 
 		cost = 10
@@ -5021,7 +5092,7 @@ focus_tree = {
 		id = NF_SOV_central_management
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = NF_SOV_expand_the_university_of_moscow }
-		x = 4
+		x = 3
 		y = 7
 
 		cost = 10
@@ -5052,7 +5123,7 @@ focus_tree = {
 		id = NF_SOV_expand_the_volgograd_arsenals
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = NF_SOV_local_self_management focus = NF_SOV_central_management }
-		x = 3
+		x = 2
 		y = 8
 
 		cost = 10
