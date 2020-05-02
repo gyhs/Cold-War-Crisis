@@ -259,7 +259,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_congress_people_deputies_reinforce
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_por_workers_of_iberia
 		cost = 10.00
 		prerequisite = {
 			focus = SOV_supreme_soviet_abolition
@@ -344,7 +344,7 @@ focus_tree = {
 			SOV_nomenklatura_power_level_up = yes
 		}
 		
-		x = 7
+		x = 6
 		y = 1
 
 	}
@@ -362,7 +362,7 @@ focus_tree = {
 			SOV_nomenklatura_power_level_up = yes
 		}
 		
-		x = 9
+		x = 8
 		y = 1
 
 	}
@@ -370,7 +370,7 @@ focus_tree = {
 		id = NF_SOV_free_discussion_expansion
 		icon = GFX_focus_generic_join_comintern
 		cost = 10.00
-		x = 6
+		x = 5
 		y = 2
 		prerequisite = {
 			focus = SOV_political_crime_release
@@ -398,7 +398,7 @@ focus_tree = {
 			SOV_nomenklatura_power_level_up = yes
 		}
 		
-		x = 8
+		x = 7
 		y = 2
 
 	}
@@ -406,7 +406,7 @@ focus_tree = {
 		id = NF_SOV_one_national_language
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
-		x = 6
+		x = 5
 		y = 3
 		prerequisite = {
 			focus = NF_SOV_free_discussion_expansion
@@ -425,7 +425,7 @@ focus_tree = {
 		id = NF_SOV_multi_national_language
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
-		x = 8
+		x = 7
 		y = 3
 		prerequisite = {
 			focus = NF_SOV_free_discussion_expansion
@@ -444,7 +444,7 @@ focus_tree = {
 		id = NF_SOV_freedom_of_religion
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
-		x = 6
+		x = 5
 		y = 4
 		prerequisite = {
 			focus = NF_SOV_one_national_language
@@ -463,7 +463,7 @@ focus_tree = {
 		id = NF_SOV_orthodox_church_state_religion_treatment
 		icon = GFX_focus_por_concordat
 		cost = 10.00
-		x = 8
+		x = 7
 		y = 4
 		prerequisite = {
 			focus = NF_SOV_one_national_language
@@ -482,7 +482,7 @@ focus_tree = {
 		id = SOV_administrative_power_abuse_limit
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
-		x = 7
+		x = 6
 		y = 5
 		prerequisite = {
 			focus = NF_SOV_freedom_of_religion
@@ -511,7 +511,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		
-		x = 10
+		x = 9
 		y = 2
 
 	}
@@ -534,7 +534,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		
-		x = 10
+		x = 9
 		y = 3
 
 	}
@@ -542,7 +542,7 @@ focus_tree = {
 		id = NF_SOV_censor_abolition
 		icon = GFX_goal_tripartite_pact
 		cost = 10.00
-		x = 9
+		x = 8
 		y = 5
 		prerequisite = {
 			focus = NF_SOV_free_discussion_expansion
@@ -565,7 +565,7 @@ focus_tree = {
 		id = SOV_police_state_abolition
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 10.00
-		x = 8
+		x = 7
 		y = 6
 		prerequisite = {
 			focus = NF_SOV_censor_abolition
