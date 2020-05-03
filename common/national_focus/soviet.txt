@@ -304,7 +304,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_neo_soviet_treaty
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		cost = 10.00
 		x = 13
 		y = 7
@@ -4500,7 +4500,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_full_control_of_state = 45
+			has_full_control_of_state = 264
 		}
 
 		bypass = {
@@ -4516,9 +4516,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_full_control_of_state = 45
+					has_full_control_of_state = 264
 				}
-				45 = {
+				264 = {
 					add_resource = {
 						type = chromium
 						amount = 8
@@ -5034,7 +5034,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_full_control_of_state = 108
+			has_full_control_of_state = 252
 		}
 
 		bypass = {
@@ -5048,7 +5048,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			108 = {
+			252 = {
 				add_resource = {
 					type = steel
 					amount = 16
