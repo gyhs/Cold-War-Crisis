@@ -3237,7 +3237,6 @@ focus_tree = {
 		x = 20
 		y = 6
 		prerequisite = {
-			focus = NF_SOV_pact_phase_diplomatic_freedom
 			focus = NF_SOV_pact_total_diplomatic_freedom
 			focus = NF_SOV_fall_berlin_wall
 		}
@@ -3491,7 +3490,6 @@ focus_tree = {
 		y = 6
 		prerequisite = {
 			focus = NF_SOV_pact_phase_diplomatic_freedom
-			focus = NF_SOV_pact_total_diplomatic_freedom
 			focus = NF_SOV_fall_berlin_wall
 		}
 		prerequisite = {
