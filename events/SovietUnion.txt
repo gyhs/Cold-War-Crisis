@@ -44,6 +44,7 @@ country_event = {
 		
 		add_ideas = NS_Gen_nuclear_disarmament
 		SOV = { add_ideas = NS_Gen_nuclear_disarmament }
+		add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
 		news_event = { id = NE_SOV.news.2 }
 	}
 	option = { # 핵 대신 군 감축 제안
@@ -72,6 +73,7 @@ country_event = {
 		
 		add_ideas = NS_Gen_army_disarmament
 		USA = { add_ideas = NS_Gen_army_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
 		news_event = { id = NE_SOV.news.3 }
 	}
 	option = { # 회담 종료
@@ -95,6 +97,7 @@ country_event = {
 		
 		add_ideas = NS_Gen_army_disarmament
 		SOV = { add_ideas = NS_Gen_army_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
 		news_event = { id = NE_SOV.news.3 }
 	}
 	option = { # 군 대신 핵 감축 제안
@@ -123,6 +126,7 @@ country_event = {
 		
 		add_ideas = NS_Gen_nuclear_disarmament
 		USA = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
 		news_event = { id = NE_SOV.news.2 }
 	}
 	option = { # 회담 종료
@@ -148,6 +152,7 @@ country_event = {
 		add_ideas = NS_Gen_nuclear_disarmament
 		SOV = { add_ideas = NS_Gen_army_disarmament }
 		SOV = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
 		news_event = { id = NE_SOV.news.4 }
 	}
 	option = { # 회담 되돌림
@@ -176,6 +181,7 @@ country_event = {
 		
 		add_ideas = NS_Gen_nuclear_disarmament
 		USA = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
 		USA = { country_event = { id = NE_SOV.2 } }
 	}
 	option = { # 군 감축
@@ -184,6 +190,7 @@ country_event = {
 		
 		add_ideas = NS_Gen_nuclear_disarmament
 		USA = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
 		USA = { country_event = { id = NE_SOV.4 } }
 	}
 	option = { # 회담 종료

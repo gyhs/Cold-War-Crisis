@@ -2690,9 +2690,6 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_named_threat = { threat = -5 name = SOV_sinatra_doctrine_usa_summit_meeting }
-			add_ideas = NS_Gen_nuclear_disarmament
-			USA = { add_ideas = NS_Gen_nuclear_disarmament }
 			country_event = { id = NE_SOV.1 }
 		}
 
