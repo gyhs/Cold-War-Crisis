@@ -6,7 +6,7 @@ set_technology = {
 
 set_convoys = 0
 
-
+#
 set_politics = {	
 	ruling_party = authoritarianism
 	last_election = "1936.1.1"
