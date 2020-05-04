@@ -6,8 +6,8 @@
  NS_GER.news.1.c:0 "복잡한 심경이다." 
  NS_GER.news.1.d:0 "이 장벽이 허물어졌다!" 
  NS_GER.news.1.e:0 "놀랍다. 동독은 끝났는가" 
-  
-  
+
+ global_flag_fall_berlin_wall:0 "베를린 장벽 붕괴 발생"
   
   
   
