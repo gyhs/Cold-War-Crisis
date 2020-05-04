@@ -41,6 +41,9 @@ country_event = {
 	option = { # 핵 감축 승인
 		name = NE_SOV.2.a
 		ai_chance = { factor = 75 }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		SOV = { add_ideas = NS_Gen_nuclear_disarmament }
 		news_event = { id = NE_SOV.news.2 }
 	}
 	option = { # 핵 대신 군 감축 제안
@@ -66,6 +69,9 @@ country_event = {
 	option = { # 군 감축 승인
 		name = NE_SOV.3.a
 		ai_chance = { factor = 75 }
+		
+		add_ideas = NS_Gen_army_disarmament
+		USA = { add_ideas = NS_Gen_army_disarmament }
 		news_event = { id = NE_SOV.news.3 }
 	}
 	option = { # 회담 종료
@@ -86,6 +92,9 @@ country_event = {
 	option = { # 군 감축 승인
 		name = NE_SOV.4.a
 		ai_chance = { factor = 75 }
+		
+		add_ideas = NS_Gen_army_disarmament
+		SOV = { add_ideas = NS_Gen_army_disarmament }
 		news_event = { id = NE_SOV.news.3 }
 	}
 	option = { # 군 대신 핵 감축 제안
@@ -111,6 +120,9 @@ country_event = {
 	option = { # 핵 감축 승인
 		name = NE_SOV.5.a
 		ai_chance = { factor = 75 }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		USA = { add_ideas = NS_Gen_nuclear_disarmament }
 		news_event = { id = NE_SOV.news.2 }
 	}
 	option = { # 회담 종료
@@ -131,6 +143,11 @@ country_event = {
 	option = { # 핵 과 군 감축한 승인
 		name = NE_SOV.6.a
 		ai_chance = { factor = 1 }
+		
+		add_ideas = NS_Gen_army_disarmament
+		add_ideas = NS_Gen_nuclear_disarmament
+		SOV = { add_ideas = NS_Gen_army_disarmament }
+		SOV = { add_ideas = NS_Gen_nuclear_disarmament }
 		news_event = { id = NE_SOV.news.4 }
 	}
 	option = { # 회담 되돌림
@@ -156,11 +173,17 @@ country_event = {
 	option = { # 핵 감축
 		name = NE_SOV.7.a
 		ai_chance = { factor = 75 }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		USA = { add_ideas = NS_Gen_nuclear_disarmament }
 		USA = { country_event = { id = NE_SOV.2 } }
 	}
 	option = { # 군 감축
 		name = NE_SOV.7.b
 		ai_chance = { factor = 25 }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		USA = { add_ideas = NS_Gen_nuclear_disarmament }
 		USA = { country_event = { id = NE_SOV.4 } }
 	}
 	option = { # 회담 종료
