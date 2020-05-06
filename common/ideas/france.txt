@@ -474,7 +474,7 @@ ideas = {
 			}
 		}
 		#유로화
-		eec_0 = {
+		eec = {
 			picture = EEC_idea
 
 			allowed = {
@@ -488,10 +488,31 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				
+				political_power_gain = -0.05
+            	industrial_capacity_factory = 0.10
 			}
 		}
-		#EEC 0단계
+		#EEC
+		cap= {
+			picture = EEC_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			    always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.3
+				consumer_goods_factor = 0.03
+			}
+		}
+		#CAP(Common Agricultural Policy) 공동 농업 정책
+
 
 		wait_for_comedown = {
 			picture = ger_bulwark_against_bolshevism
@@ -618,7 +639,7 @@ ideas = {
 		}
 		#전쟁준비
 	Internet = {
-		picture = idea_chi_army_corruption3
+		picture = idea_usa_magic
 
 			allowed = {
 				always = no
@@ -634,4 +655,5 @@ ideas = {
 				research_speed_factor = 0.08
 			}
 	}
+	#인터넷
 }
