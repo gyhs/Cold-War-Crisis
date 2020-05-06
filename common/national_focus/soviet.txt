@@ -3162,7 +3162,7 @@ focus_tree = {
 	}
 #####
 	focus = {
-		id = SOV_warsaw_pact_organization_conference
+		id = NF_SOV_warsaw_pact_organization_conference
 		icon = GFX_focus_warsaw_pact
 		cost = 10.00
 		x = 22
@@ -3174,16 +3174,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_named_threat = { threat = -2 name = SOV_sinatra_doctrine_usa_summit_meeting }
-		add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = electronics
-			}
-		add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = industry
-			}
+			add_political_power = 100
+			add_stability = 0.02
 		}
 
 	}
@@ -3194,7 +3186,7 @@ focus_tree = {
 		x = 21
 		y = 4
 		prerequisite = {
-			focus = SOV_warsaw_pact_organization_conference
+			focus = NF_SOV_warsaw_pact_organization_conference
 		}
 		mutually_exclusive = {
 			focus = NF_SOV_pact_phase_diplomatic_freedom
@@ -3218,7 +3210,7 @@ focus_tree = {
 		x = 23
 		y = 4
 		prerequisite = {
-			focus = SOV_warsaw_pact_organization_conference
+			focus = NF_SOV_warsaw_pact_organization_conference
 		}
 		mutually_exclusive = {
 			focus = NF_SOV_pact_total_diplomatic_freedom
@@ -3226,445 +3218,15 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		}
-
-	}
-######## 독일 통일 문제
-	focus = {
-		id = NF_SOV_german_unification_conditional_recognition
-		icon = GFX_focus_german_unification
-		cost = 10.00
-		x = 20
-		y = 6
-		prerequisite = {
-			focus = NF_SOV_pact_total_diplomatic_freedom
-			focus = NF_SOV_fall_berlin_wall
-		}
-		prerequisite = {
-			focus = NF_SOV_common_european_home
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_collocation_germany
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_german_unification_cancel
-		}
-		available = {
-		}
-		completion_reward = {
-			GER = { annex_country = { target = DDR } 
-					set_capital = 843
-			}
-			
-			custom_effect_tooltip = NF_SOV_german_unification_conditional_recognition_tt
-			hidden_effect = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
+			DDR = {
+				if = {
+					limit = {
+						is_subject_of = SOV
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+					add_stability = 0.05
+					add_ideas = NS_SOV_guided_by_soviet_1
 				}
 			}
-		}
-
-	}
-	focus = {
-		id = NF_SOV_collocation_germany
-		icon = GFX_focus_german_no_unification
-		cost = 10.00
-		x = 22
-		y = 6
-		prerequisite = {
-			focus = NF_SOV_pact_phase_diplomatic_freedom
-			focus = NF_SOV_pact_total_diplomatic_freedom
-			focus = NF_SOV_fall_berlin_wall
-		}
-		prerequisite = {
-			focus = NF_SOV_common_european_home
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_german_unification_conditional_recognition
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_german_unification_cancel
-		}
-		available = {
-		}
-		completion_reward = {
-			GFR = {	leave_faction = yes
-			}
-			USA = {	diplomatic_relation = {
-					country = GER
-					relation = guarantee
-				}
-			}
-			end_puppet = DDR
-			DDR = {	leave_faction = yes
-			}
-			diplomatic_relation = {
-				country = DDR
-				relation = guarantee
-			}
-		}
-
-	}
-	focus = {
-		id = NF_SOV_german_unification_cancel
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 10.00
-		x = 24
-		y = 6
-		prerequisite = {
-			focus = NF_SOV_pact_phase_diplomatic_freedom
-			focus = NF_SOV_fall_berlin_wall
-		}
-		prerequisite = {
-			focus = NF_SOV_common_european_home
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_pact_total_diplomatic_freedom
-		}
-		mutually_exclusive = {
-			focus = NF_SOV_collocation_germany
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_fall_berlin_wall
-		icon = GFX_focus_berlin_wall_broken
-		cost = 10.00
-		x = 25
-		y = 5
-		prerequisite = {
-		}
-		available = {
-		has_global_flag = global_flag_fall_berlin_wall
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_GER_get_investment_guarantee
-		icon = GFX_focus_mex_privatisation
-		cost = 10.00
-		x = 21
-		y = 7
-		prerequisite = {
-			focus = NF_SOV_collocation_germany
-			focus = NF_SOV_german_unification_conditional_recognition
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_GER_infrastructure_development
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 23
-		y = 7
-		prerequisite = {
-			focus = NF_SOV_german_unification_cancel
-			focus = NF_SOV_collocation_germany
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_GER_frontier_dispute
-		icon = GFX_goal_generic_position_armies
-		cost = 10.00
-		x = 22
-		y = 8
-		prerequisite = {
-			focus = NF_SOV_german_unification_cancel
-			focus = NF_SOV_collocation_germany
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_pact_army_ready
-		icon = GFX_focus_generic_manpower
-		cost = 10.00
-		x = 22
-		y = 9
-		prerequisite = {
-			focus = NF_SOV_GER_frontier_dispute
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-###### 유고슬라비아 문제
-	focus = {
-		id = NF_SOV_YUG_yugoslavia_affair_intervention
-		icon = GFX_focus_invite_yugoslavia
-		cost = 10.00
-		x = 20
-		y = 8
-		prerequisite = {
-			focus = NF_SOV_german_unification_cancel
-			focus = NF_SOV_collocation_germany
-			focus = NF_SOV_german_unification_conditional_recognition
-		}
-		prerequisite = {
-			focus = SOV_neo_soviet_proclamation
-			focus = SOV_neo_soviet_treaty
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_yugoslavia_claim_influence
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10.00
-		x = 20
-		y = 9
-		prerequisite = {
-			focus = NF_SOV_YUG_yugoslavia_affair_intervention
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_preventive_war_against_NATO
-		icon = GFX_focus_attack_NATO
-		cost = 10.00
-		x = 21
-		y = 10
-		prerequisite = {
-			focus = NF_SOV_yugoslavia_claim_influence
-			focus = NF_SOV_pact_army_ready
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_YUG_yugoslavia_affair_intervention3
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 20
-		y = 11
-		prerequisite = {
-			focus = NF_SOV_preventive_war_against_NATO
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-
-	}
-	focus = {
-		id = NF_SOV_YUG_yugoslavia_affair_intervention4
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		x = 22
-		y = 11
-		prerequisite = {
-			focus = NF_SOV_preventive_war_against_NATO
-		}
-		available = {
-		}
-		completion_reward = {
 		}
 
 	}
@@ -3675,7 +3237,7 @@ focus_tree = {
 		x = 25
 		y = 4
 		prerequisite = {
-			focus = SOV_warsaw_pact_organization_conference
+			focus = NF_SOV_warsaw_pact_organization_conference
 		}
 		available = {
 		}
@@ -4382,7 +3944,528 @@ focus_tree = {
 		x = 27
 		y = 4
 		prerequisite = {
-			focus = SOV_warsaw_pact_organization_conference
+			focus = NF_SOV_warsaw_pact_organization_conference
+		}
+		available = {
+		}
+		completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+		DDR = {	
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+			}
+		POL = {	
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+			}
+		CZE = {	
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+			}
+		HUN = {	
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+			}
+		ROM = {	
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+			}
+		BUL = {	
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+			}
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+			}
+			}
+		}
+
+	}
+######## 독일 통일 문제
+	focus = {
+		id = NF_SOV_german_unification_conditional_recognition
+		icon = GFX_focus_german_unification
+		cost = 10.00
+		x = 20
+		y = 6
+		prerequisite = {
+			focus = NF_SOV_pact_total_diplomatic_freedom
+			focus = NF_SOV_fall_berlin_wall
+		}
+		prerequisite = {
+			focus = NF_SOV_common_european_home
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_collocation_germany
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_german_unification_cancel
+		}
+		available = {
+		}
+		completion_reward = {
+			GER = { annex_country = { target = DDR } 
+					set_capital = 843
+			}
+			
+			custom_effect_tooltip = NF_SOV_german_unification_conditional_recognition_tt
+			hidden_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NF_SOV_collocation_germany
+		icon = GFX_focus_german_no_unification
+		cost = 10.00
+		x = 22
+		y = 6
+		prerequisite = {
+			focus = NF_SOV_pact_phase_diplomatic_freedom
+			focus = NF_SOV_pact_total_diplomatic_freedom
+			focus = NF_SOV_fall_berlin_wall
+		}
+		prerequisite = {
+			focus = NF_SOV_common_european_home
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_german_unification_conditional_recognition
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_german_unification_cancel
+		}
+		available = {
+		}
+		completion_reward = {
+			GFR = {	leave_faction = yes
+			}
+			USA = {	diplomatic_relation = {
+					country = GER
+					relation = guarantee
+				}
+			}
+			end_puppet = DDR
+			DDR = {	leave_faction = yes
+			}
+			diplomatic_relation = {
+				country = DDR
+				relation = guarantee
+			}
+		}
+
+	}
+	focus = {
+		id = NF_SOV_german_unification_cancel
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10.00
+		x = 24
+		y = 6
+		prerequisite = {
+			focus = NF_SOV_pact_phase_diplomatic_freedom
+			focus = NF_SOV_fall_berlin_wall
+		}
+		prerequisite = {
+			focus = NF_SOV_common_european_home
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_pact_total_diplomatic_freedom
+		}
+		mutually_exclusive = {
+			focus = NF_SOV_collocation_germany
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_fall_berlin_wall
+		icon = GFX_focus_berlin_wall_broken
+		cost = 10.00
+		x = 25
+		y = 5
+		prerequisite = {
+		}
+		available = {
+		has_global_flag = global_flag_fall_berlin_wall
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_GER_get_investment_guarantee
+		icon = GFX_focus_mex_privatisation
+		cost = 10.00
+		x = 21
+		y = 7
+		prerequisite = {
+			focus = NF_SOV_collocation_germany
+			focus = NF_SOV_german_unification_conditional_recognition
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_GER_infrastructure_development
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 23
+		y = 7
+		prerequisite = {
+			focus = NF_SOV_german_unification_cancel
+			focus = NF_SOV_collocation_germany
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_GER_frontier_dispute
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		x = 22
+		y = 8
+		prerequisite = {
+			focus = NF_SOV_german_unification_cancel
+			focus = NF_SOV_collocation_germany
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_pact_army_ready
+		icon = GFX_focus_generic_manpower
+		cost = 10.00
+		x = 22
+		y = 9
+		prerequisite = {
+			focus = NF_SOV_GER_frontier_dispute
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+###### 유고슬라비아 문제
+	focus = {
+		id = NF_SOV_YUG_yugoslavia_affair_intervention
+		icon = GFX_focus_invite_yugoslavia
+		cost = 10.00
+		x = 20
+		y = 8
+		prerequisite = {
+			focus = NF_SOV_german_unification_cancel
+			focus = NF_SOV_collocation_germany
+			focus = NF_SOV_german_unification_conditional_recognition
+		}
+		prerequisite = {
+			focus = SOV_neo_soviet_proclamation
+			focus = SOV_neo_soviet_treaty
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_yugoslavia_claim_influence
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		x = 20
+		y = 9
+		prerequisite = {
+			focus = NF_SOV_YUG_yugoslavia_affair_intervention
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_preventive_war_against_NATO
+		icon = GFX_focus_attack_NATO
+		cost = 10.00
+		x = 21
+		y = 10
+		prerequisite = {
+			focus = NF_SOV_yugoslavia_claim_influence
+			focus = NF_SOV_pact_army_ready
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_YUG_yugoslavia_affair_intervention3
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 20
+		y = 11
+		prerequisite = {
+			focus = NF_SOV_preventive_war_against_NATO
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = NF_SOV_YUG_yugoslavia_affair_intervention4
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 22
+		y = 11
+		prerequisite = {
+			focus = NF_SOV_preventive_war_against_NATO
 		}
 		available = {
 		}
