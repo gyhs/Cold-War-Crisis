@@ -61,6 +61,51 @@ ideas = {
 				ai_join_ally_desire_factor = -2000
 			}
 		}
+		NS_SOV_guided_by_soviet_1 = {
+			
+			picture = eng_guided_by_britain
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+			}
+			
+			removal_cost = -1	
+
+		}
+		NS_SOV_guided_by_soviet_2 = {
+			
+			picture = eng_guided_by_britain
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				autonomy_gain = 1
+			}
+			
+			removal_cost = -1	
+
+		}
 
 		################################
 		##### 개혁 열망 level ####

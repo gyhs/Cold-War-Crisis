@@ -583,7 +583,7 @@
  NF_SOV_malta_summit:0 "몰타 회담"
  SOV_sinatra_doctrine_usa_reformed_faction_bureaucrat_support:0 "개혁파 관료 지원"
  NF_SOV_europe_summit_meeting:0 "유럽 정상회담"
- SOV_warsaw_pact_organization_conference:0 "바르샤바조약 회의"
+ NF_SOV_warsaw_pact_organization_conference:0 "바르샤바조약 회의"
  NF_SOV_pact_total_diplomatic_freedom:0 "조약국 완전한 외교자유"
  NF_SOV_pact_phase_diplomatic_freedom:0 "조약국 단계적 외교자유"
  NF_SOV_german_unification_conditional_recognition:0 "독일통일 조건부 승인"
