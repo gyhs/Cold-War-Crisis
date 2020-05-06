@@ -3227,6 +3227,51 @@ focus_tree = {
 					add_ideas = NS_SOV_guided_by_soviet_1
 				}
 			}
+			POL = {
+				if = {
+					limit = {
+						is_subject_of = SOV
+					}
+					add_stability = 0.05
+					add_ideas = NS_SOV_guided_by_soviet_1
+				}
+			}
+			CZE = {
+				if = {
+					limit = {
+						is_subject_of = SOV
+					}
+					add_stability = 0.05
+					add_ideas = NS_SOV_guided_by_soviet_1
+				}
+			}
+			HUN = {
+				if = {
+					limit = {
+						is_subject_of = SOV
+					}
+					add_stability = 0.05
+					add_ideas = NS_SOV_guided_by_soviet_1
+				}
+			}
+			ROM = {
+				if = {
+					limit = {
+						is_subject_of = SOV
+					}
+					add_stability = 0.05
+					add_ideas = NS_SOV_guided_by_soviet_1
+				}
+			}
+			BUL = {
+				if = {
+					limit = {
+						is_subject_of = SOV
+					}
+					add_stability = 0.05
+					add_ideas = NS_SOV_guided_by_soviet_1
+				}
+			}
 		}
 
 	}
@@ -4060,7 +4105,10 @@ focus_tree = {
 			GER = { annex_country = { target = DDR } 
 					set_capital = 843
 			}
-			
+			add_popularity = {
+				ideology = social_democracy
+				popularity = 0.05
+			}
 			custom_effect_tooltip = NF_SOV_german_unification_conditional_recognition_tt
 			hidden_effect = {
 			random_owned_controlled_state = {
@@ -4270,7 +4318,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			GFR = {	leave_faction = yes
+			GER = {	leave_faction = yes
 			}
 			USA = {	diplomatic_relation = {
 					country = GER
@@ -4283,6 +4331,10 @@ focus_tree = {
 			diplomatic_relation = {
 				country = DDR
 				relation = guarantee
+			}
+			add_popularity = {
+				ideology = social_democracy
+				popularity = 0.02
 			}
 		}
 
@@ -4309,6 +4361,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 100
+			add_named_threat = { threat = 5 name = threat_SOV_german_unification_cancel }
+			add_popularity = {
+				ideology = social_democracy
+				popularity = -0.05
+			}
 		}
 
 	}
