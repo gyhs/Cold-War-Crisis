@@ -517,7 +517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_purge_victim_remembrance
-		icon = GFX_goal_anschluss
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 10.00
 		prerequisite = {
 			focus = NF_SOV_free_discussion_expansion
