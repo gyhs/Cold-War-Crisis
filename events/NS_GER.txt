@@ -1,0 +1,47 @@
+﻿###########################
+# ger Events
+###########################
+
+add_namespace = NS_GER.news
+
+######################
+# 
+######################
+# 베를린 장벽 붕괴
+news_event = {
+	id = NS_GER.news.1
+	title = NS_GER.news.1.t
+	desc = NS_GER.news.1.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = NS_GER.news.1.a
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = NS_GER.news.1.b
+		trigger = { TAG = DDR }
+	}
+	option = {
+		name = NS_GER.news.1.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = NS_GER.news.1.d
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = NS_GER.news.1.e
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = DDR
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}

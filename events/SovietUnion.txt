@@ -2,215 +2,233 @@
 # Soviet Events
 ###########################
 
-add_namespace = soviet
+add_namespace = NE_SOV
 
 # 군 감축안
 country_event = {
-	id = soviet.1
-	title = soviet.1.t
-	desc = soviet.1.desc
+	id = NE_SOV.1
+	title = NE_SOV.1.t
+	desc = NE_SOV.1.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	
 	option = { # 핵 감축
-		name = soviet.1.a
+		name = NE_SOV.1.a
 		ai_chance = { factor = 75 }
-		USA = { country_event = { id = soviet.2 } }
+		USA = { country_event = { id = NE_SOV.2 } }
 	}
 	option = { # 군 감축
-		name = soviet.1.b
+		name = NE_SOV.1.b
 		ai_chance = { factor = 25 }
-		USA = { country_event = { id = soviet.4 } }
+		USA = { country_event = { id = NE_SOV.4 } }
 	}
 	option = { # 핵과 군 감축
-		name = soviet.1.c
+		name = NE_SOV.1.c
 		ai_chance = { factor = 0 }
-		USA = { country_event = { id = soviet.6 } }
+		USA = { country_event = { id = NE_SOV.6 } }
 	}
 }
 # 핵 감축안. 미국 답신
 country_event = {
-	id = soviet.2
-	title = soviet.2.t
-	desc = soviet.2.desc
+	id = NE_SOV.2
+	title = NE_SOV.2.t
+	desc = NE_SOV.2.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	
 	option = { # 핵 감축 승인
-		name = soviet.2.a
+		name = NE_SOV.2.a
 		ai_chance = { factor = 75 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament }
-		news_event = { id = soviet.news.2 }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		SOV = { add_ideas = NS_Gen_nuclear_disarmament }
+		add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		news_event = { id = NE_SOV.news.2 }
 	}
 	option = { # 핵 대신 군 감축 제안
-		name = soviet.2.b
+		name = NE_SOV.2.b
 		ai_chance = { factor = 25 }
-		SOV =	{country_event = { id = soviet.3 } }
+		SOV =	{country_event = { id = NE_SOV.3 } }
 	}
 	option = { # 회담 종료
-		name = soviet.2.c
+		name = NE_SOV.2.c
 		ai_chance = { factor = 0 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
-		news_event = { id = soviet.news.5 }
+		news_event = { id = NE_SOV.news.5 }
 	}
 }
 # 핵 감축안. 미국 회신에 소련 답신
 country_event = {
-	id = soviet.3
-	title = soviet.3.t
-	desc = soviet.3.desc
+	id = NE_SOV.3
+	title = NE_SOV.3.t
+	desc = NE_SOV.3.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	
 	option = { # 군 감축 승인
-		name = soviet.3.a
+		name = NE_SOV.3.a
 		ai_chance = { factor = 75 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_army_disarmament }
-		news_event = { id = soviet.news.3 }
+		
+		add_ideas = NS_Gen_army_disarmament
+		USA = { add_ideas = NS_Gen_army_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		news_event = { id = NE_SOV.news.3 }
 	}
 	option = { # 회담 종료
-		name = soviet.3.b
+		name = NE_SOV.3.b
 		ai_chance = { factor = 0 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
-		news_event = { id = soviet.news.5 }
+		news_event = { id = NE_SOV.news.5 }
 	}
 }
 # 군 감축안. 미국 답신
 country_event = {
-	id = soviet.4
-	title = soviet.4.t
-	desc = soviet.4.desc
+	id = NE_SOV.4
+	title = NE_SOV.4.t
+	desc = NE_SOV.4.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	
 	option = { # 군 감축 승인
-		name = soviet.4.a
+		name = NE_SOV.4.a
 		ai_chance = { factor = 75 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_army_disarmament }
-		news_event = { id = soviet.news.3 }
+		
+		add_ideas = NS_Gen_army_disarmament
+		SOV = { add_ideas = NS_Gen_army_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		news_event = { id = NE_SOV.news.3 }
 	}
 	option = { # 군 대신 핵 감축 제안
-		name = soviet.4.b
+		name = NE_SOV.4.b
 		ai_chance = { factor = 25 }
-		SOV =	{country_event = { id = soviet.5 } }
+		SOV =	{country_event = { id = NE_SOV.5 } }
 	}
 	option = { # 회담 종료
-		name = soviet.4.c
+		name = NE_SOV.4.c
 		ai_chance = { factor = 0 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
-		news_event = { id = soviet.news.5 }
+		news_event = { id = NE_SOV.news.5 }
 	}
 }
 # 군 감축안. 미국 회신에 소련 답신
 country_event = {
-	id = soviet.5
-	title = soviet.5.t
-	desc = soviet.5.desc
+	id = NE_SOV.5
+	title = NE_SOV.5.t
+	desc = NE_SOV.5.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	
 	option = { # 핵 감축 승인
-		name = soviet.5.a
+		name = NE_SOV.5.a
 		ai_chance = { factor = 75 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament }
-		news_event = { id = soviet.news.2 }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		USA = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		news_event = { id = NE_SOV.news.2 }
 	}
 	option = { # 회담 종료
-		name = soviet.5.b
+		name = NE_SOV.5.b
 		ai_chance = { factor = 0 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
-		news_event = { id = soviet.news.5 }
+		news_event = { id = NE_SOV.news.5 }
 	}
 }
 # 핵과 군 감축안. 미국 답신
 country_event = {
-	id = soviet.6
-	title = soviet.6.t
-	desc = soviet.6.desc
+	id = NE_SOV.6
+	title = NE_SOV.6.t
+	desc = NE_SOV.6.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	
 	option = { # 핵 과 군 감축한 승인
-		name = soviet.6.a
+		name = NE_SOV.6.a
 		ai_chance = { factor = 1 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_nuclear_disarmament }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_both_army_disarmament }
-		news_event = { id = soviet.news.4 }
+		
+		add_ideas = NS_Gen_army_disarmament
+		add_ideas = NS_Gen_nuclear_disarmament
+		SOV = { add_ideas = NS_Gen_army_disarmament }
+		SOV = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		news_event = { id = NE_SOV.news.4 }
 	}
 	option = { # 회담 되돌림
-		name = soviet.6.b
+		name = NE_SOV.6.b
 		ai_chance = { factor = 99 }
-		SOV = { country_event = { id = soviet.7 } }
+		SOV = { country_event = { id = NE_SOV.7 } }
 	}
 	option = { # 회담 종료
-		name = soviet.6.c
+		name = NE_SOV.6.c
 		ai_chance = { factor = 0 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
-		news_event = { id = soviet.news.5 }
+		news_event = { id = NE_SOV.news.5 }
 	}
 }
 # 핵과 군 감축안. 미국의 회신에 소련 답신
 country_event = {
-	id = soviet.7
-	title = soviet.7.t
-	desc = soviet.7.desc
+	id = NE_SOV.7
+	title = NE_SOV.7.t
+	desc = NE_SOV.7.desc
 	picture = GFX_report_event_canada_treaty
 	
 	is_triggered_only = yes
 	
 	option = { # 핵 감축
-		name = soviet.7.a
+		name = NE_SOV.7.a
 		ai_chance = { factor = 75 }
-		USA = { country_event = { id = soviet.2 } }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		USA = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		USA = { country_event = { id = NE_SOV.2 } }
 	}
 	option = { # 군 감축
-		name = soviet.7.b
+		name = NE_SOV.7.b
 		ai_chance = { factor = 25 }
-		USA = { country_event = { id = soviet.4 } }
+		
+		add_ideas = NS_Gen_nuclear_disarmament
+		USA = { add_ideas = NS_Gen_nuclear_disarmament }
+			add_named_threat = { threat = -3 name = SOV_sinatra_doctrine_usa_summit_meeting }
+		USA = { country_event = { id = NE_SOV.4 } }
 	}
 	option = { # 회담 종료
-		name = soviet.7.c
+		name = NE_SOV.7.c
 		ai_chance = { factor = 0 }
-		SOV = { complete_national_focus = SOV_sinatra_doctrine_usa_relaxation }
-		news_event = { id = soviet.news.5 }
+		news_event = { id = NE_SOV.news.5 }
 	}
 }
 
 # 핀란드 갈등 조정
 country_event = {
-	id = soviet.8
-	title = soviet.8.t
-	desc = soviet.8.desc
+	id = NE_SOV.8
+	title = NE_SOV.8.t
+	desc = NE_SOV.8.desc
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 
 	# 수락
 	option = {
-		name = soviet.8.a
+		name = NE_SOV.8.a
 		ai_chance = {
 			factor = 50
 		}
 		effect_tooltip = {
 			FIN = { add_popularity = { ideology = communism popularity = 0.2 } }
-			#add_ideas = anti_soviet_pact
+			#add_ideas = anti_NE_SOV_pact
 			add_opinion_modifier = { target = SOV modifier = influential_sphere_by_SOV }
 		}
 		set_global_flag = SOV_flag_finland_conflict_resolution
 		SOV = {
-			country_event = { id = soviet.9 }
+			country_event = { id = NE_SOV.9 }
 		}
 	}
 
 	# 거부
 	option = {
-		name = soviet.8.b
+		name = NE_SOV.8.b
 		ai_chance = {
 			#factor = 50
 			modifier = {
@@ -234,27 +252,27 @@ country_event = {
 		set_global_flag = SOV_flag_finland_conflict_resolution
 		complete_national_focus = FIN_strategy_decisions
 		SOV = {
-			country_event = { id = soviet.10 }
+			country_event = { id = NE_SOV.10 }
 		}
 	}
 }
 
 # 핀란드 갈등 조정 - 수락
 country_event = {
-	id = soviet.9
-	title = soviet.9.t
-	desc = soviet.9.desc
+	id = NE_SOV.9
+	title = NE_SOV.9.t
+	desc = NE_SOV.9.desc
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 
 	# 좋아
 	option = {
-		name = soviet.9.a
+		name = NE_SOV.9.a
 		FIN = { add_popularity = { ideology = communism popularity = 0.2 } }
-		#add_ideas = anti_soviet_pact
+		#add_ideas = anti_NE_SOV_pact
 		FIN = { 
-			#add_ideas = anti_soviet_pact
+			#add_ideas = anti_NE_SOV_pact
 			add_opinion_modifier = { target = SOV modifier = influential_sphere_by_SOV }
 			complete_national_focus = FIN_strategy_decisions
 		}
@@ -289,30 +307,30 @@ country_event = {
 
 # 핀란드 갈등 조정 - 거부
 country_event = {
-	id = soviet.10
-	title = soviet.10.t
-	desc = soviet.10.desc
+	id = NE_SOV.10
+	title = NE_SOV.10.t
+	desc = NE_SOV.10.desc
 	picture = GFX_report_event_poland_rejects
 
 	is_triggered_only = yes
 
 	# 절대 핀란드가 나토에 가입하는걸 가만두지 않겠다.
 	option = {
-		name = soviet.10.a
+		name = NE_SOV.10.a
 	}
 
 	# 그들이 원하는대로 가게 둬라.
 	option = {
-		name = soviet.10.b
+		name = NE_SOV.10.b
 	}
 }
 
 
 # 중립화냐 나토화냐 (핀란드)
 country_event = {
-	id = soviet.11
-	title = soviet.11.t
-	desc = soviet.11.desc
+	id = NE_SOV.11
+	title = NE_SOV.11.t
+	desc = NE_SOV.11.desc
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
@@ -323,7 +341,7 @@ country_event = {
 	
 	#핀란드 - 중립화를 선택
 	option = {
-		name = soviet.11.a
+		name = NE_SOV.11.a
 		ai_chance = {
 			factor = 20
 			modifier = {
@@ -331,7 +349,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		SOV = { country_event = { id = soviet.12 } }
+		SOV = { country_event = { id = NE_SOV.12 } }
 		effect_tooltip = {
 			leave_faction = yes
 			add_ideas = authoritarianism_idea
@@ -342,7 +360,7 @@ country_event = {
 	}
 	# 핀란드 - 나토를 선택
 	option = {
-		name = soviet.11.b
+		name = NE_SOV.11.b
 		ai_chance = {
 			factor = 80
 			modifier = {
@@ -360,7 +378,7 @@ country_event = {
 				}
 			}
 		}
-		SOV = { country_event = { id = soviet.13 } 
+		SOV = { country_event = { id = NE_SOV.13 } 
 			if = {
 				limit = {
 					is_in_faction_with = FIN
@@ -398,15 +416,15 @@ country_event = {
 
 # 핀란드의 중립화
 country_event = {
-	id = soviet.12
-	title = soviet.12.t
-	desc = soviet.12.desc
+	id = NE_SOV.12
+	title = NE_SOV.12.t
+	desc = NE_SOV.12.desc
 	picture = GFX_report_event_german_polish_border
 
 	is_triggered_only = yes
 	
 	option = {
-		name = soviet.12.a
+		name = NE_SOV.12.a
 		leave_faction = yes
 		add_ideas = authoritarianism_idea
 		if = {
@@ -438,16 +456,16 @@ country_event = {
 
 # 핀란드의 나토화
 country_event = {
-	id = soviet.13
-	title = soviet.13.t
-	desc = soviet.13.desc
+	id = NE_SOV.13
+	title = NE_SOV.13.t
+	desc = NE_SOV.13.desc
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
 
 	#Demand Danzig for aid
 	option = {
-		name = soviet.13.a
+		name = NE_SOV.13.a
 			SOV = {
 				create_wargoal = {
 				type = topple_government
@@ -458,18 +476,18 @@ country_event = {
 }
 #프랑스 '소련에게 도움을 요청하다.'의 효과
 country_event = {
-	id = soviet.14
+	id = NE_SOV.14
 
-    title = soviet.14.title
+    title = NE_SOV.14.title
 
-    desc = soviet.14.desc
+    desc = NE_SOV.14.desc
 
 	is_triggered_only = yes
 
 	picture = GFX_event_gorbachev_meeting
 
     option = {
-        name = soviet.14.ab
+        name = NE_SOV.14.ab
 		SOV ={
 			give_guarantee = FRA
 			#독립보장
@@ -481,7 +499,7 @@ country_event = {
 		}
 		}
     option = {
-        name = soviet.14.cd
+        name = NE_SOV.14.cd
 		SOV ={
 			give_guarantee = FRA
 			send_equipment = {
@@ -498,7 +516,7 @@ country_event = {
 		}
     }
     option = {
-        name = soviet.14.ef
+        name = NE_SOV.14.ef
 		SOV ={
 			give_guarantee = FRA
 			send_equipment = {

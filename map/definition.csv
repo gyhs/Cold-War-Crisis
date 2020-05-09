@@ -11897,7 +11897,7 @@
 11896;172;198;47;land;false;mountain;6
 11897;172;198;92;land;false;desert;7
 11898;172;201;12;land;false;mountain;7
-11899;172;201;57;land;false;hills;1
+11899;172;201;57;land;false;urban;1
 11900;172;201;162;land;true;plains;2
 11901;172;204;22;land;true;hills;1
 11902;172;204;227;land;false;forest;2
@@ -13307,3 +13307,4 @@
 13306;56;167;166;land;false;mountain;6
 13307;161;107;91;land;false;mountain;6
 13308;92;161;91;land;false;mountain;6
+13309;146;35;74;land;true;desert;7

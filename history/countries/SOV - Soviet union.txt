@@ -327,11 +327,13 @@ set_autonomy = {
 	autonomous_state =  autonomy_puppet
 }
 
+####################
 # 외교 /
 	declare_war_on = {
 		target = MUJ
 		type = annex_everything
 	}
+####################
 
 1979.12.27 = {
 	add_named_threat = { threat = 10 name = soviet_afghan_war } #1979.12.27.
@@ -345,7 +347,391 @@ set_autonomy = {
 1986.4.26 = {
 	add_named_threat = { threat = 3 name = chernobyl_disaster } #1986.4.26.
 	}
-	
+####################
+# 민족주의 봉기
+####################
+#에스토니아
+13 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+191 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#라트비아
+12 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+190 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#리투아니아
+188 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+189 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+11 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+784 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#벨라루스
+207 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+96 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+95 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+94 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+206 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+241 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+204 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+194 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+#우크라이나
+225 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+193 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+202 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+201 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+93 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+91 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+89 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+73 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+80 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+199 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+198 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+203 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+259 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+221 = {
+	start_resistance = yes
+	set_compliance = 60
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+228 = {
+	start_resistance = yes
+	set_compliance = 90
+	set_resistance = 10
+	set_garrison_strength = 1.0
+}
+227 = {
+	start_resistance = yes
+	set_compliance = 90
+	set_resistance = 10
+	set_garrison_strength = 1.0
+}
+226 = {
+	start_resistance = yes
+	set_compliance = 80
+	set_resistance = 20
+	set_garrison_strength = 1.0
+}
+197 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+192 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+196 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+200 = {
+	start_resistance = yes
+	set_compliance = 80
+	set_resistance = 20
+	set_garrison_strength = 1.0
+}
+137 = {
+	start_resistance = yes
+	set_compliance = 90
+	set_resistance = 20
+	set_garrison_strength = 1.0
+}
+766 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+#몰도바
+812 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+78 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#조지아
+823 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+231 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+829 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#아르메니아
+230 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#아제르바이잔
+229 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#카자흐스탄
+407 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+406 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+587 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+402 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+583 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+590 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+404 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+586 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+589 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+588 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#우즈베키스탄
+585 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+405 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#투르크메니스탄
+584 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#타지키스탄
+742 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+#키르기스스탄
+732 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 50
+	set_garrison_strength = 1.0
+}
+
+
 ####################
 create_country_leader = {
 	name = "이고르 리가초프"

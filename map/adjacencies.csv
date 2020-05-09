@@ -111,7 +111,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10007;10122;sea;7226;-1;-1;-1;-1;;Rhodes-Turkey
 9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
-9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
+6873;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
 10011;7110;sea;2708;4825;1219;-1;-1;;Tushima-Kyushu
 4160;1070;sea;5244;-1;-1;-1;-1;;Hainan-Strait
 1712;12147;sea;8978;-1;-1;-1;-1;;Quebec-Strait
@@ -206,4 +206,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13069;4848;impassable;-1;-1;-1;-1;-1;;Alaska
 13069;7869;impassable;-1;-1;-1;-1;-1;;Alaska
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
+7932;8791;sea;-1;-1;-1;-1;-1;KANMON_STRAIT;Kanmon Strait
+5946;6824;sea;-1;-1;-1;-1;-1;TSUGARU_STRAIT;Tsugaru Strait
+2776;2800;sea;-1;-1;-1;-1;-1;BAB_EL_MANDEB_STRAIT;Bab-el-Mandeb Strait
+2714;2737;sea;-1;-1;-1;-1;-1;KRAKATOA_STRAIT;Krakatoa Strait
 -1;-1;;-1;-1;-1;-1;-1;-1

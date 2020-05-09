@@ -22,6 +22,15 @@ state={
 
 			}
 			air_base = 3
+			
+			9294 = {
+				bunker = 5
+
+			}
+			11305 = {
+				bunker = 5
+
+			}
 		}
 		add_core_of = DDR
 		add_core_of = GER

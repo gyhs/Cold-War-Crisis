@@ -9,7 +9,6 @@ state={
 			infrastructure = 4
 
 		}
-		add_core_of = SOV
 		victory_points = {
 			10312 1
 		}

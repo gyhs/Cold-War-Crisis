@@ -8,6 +8,9 @@ state=
 	history=
 	{
 		owner = PRK
+		buildings = {
+			infrastructure = 3
+			}
 
 		add_core_of = KOR
 		add_core_of = PRK

@@ -1,0 +1,29 @@
+
+state={
+	id=880
+	name="STATE_880" #Palestine
+	manpower = 2933142
+	
+	state_category = town
+
+	history={
+	owner = ISR
+	buildings = {
+		infrastructure = 5
+		industrial_complex = 1
+		4206 = 	{
+			naval_base = 3
+				}
+		}
+		victory_points = {
+			4206 1 
+		}
+		
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+
+	provinces={
+		1065 1201 4206 7107 
+	}
+}

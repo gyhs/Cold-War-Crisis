@@ -449,10 +449,11 @@ focus_tree = {
 			FRA_persistent_trade_level_deficit_down = yes
 			swap_ideas = {
     			remove_idea = eces_1
-    			add_idea = eec_0
+    			add_idea = eec
 			}
+			activate_decision = eec_Upgrade
 		}
-		#결정 추가 : EEC 강화 (미완성)
+		#결정 추가 : EEC 강화
 		x = 28
 		y = 5
 
@@ -1155,10 +1156,18 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_auxiliary_ship_development
 		icon = GFX_focus_generic_cruiser2
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = NF_FRA_cooperation_with_west_germany
 			focus = NF_FRA_cooperation_with_Britain
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_SHIP_S
+			}
+			# 소영함선 2번 100%
 		}
 		x = 50
 		y = 5
@@ -1168,9 +1177,17 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_cruiser_development
 		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = NF_FRA_cooperation_with_west_germany
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_SHIP_CG
+			}
+			# 순양함 2번 100%
 		}
 		x = 52
 		y = 6
@@ -1180,10 +1197,18 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_submarine_development
 		icon = GFX_goal_generic_navy_anti_submarine
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = NF_FRA_cruiser_development
 			focus = NF_FRA_aircraft_carrier_development
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_SUB
+			}
+			# 잠수함 2번 100%
 		}
 		x = 50
 		y = 6
@@ -1243,6 +1268,14 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = NF_FRA_aircraft_carriercentric_doctrine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = CAT_DTL_NAVY_FIB
+			}
+			#현존 함대 2번 100%
 		}
 		x = 51
 		y = 8
@@ -1438,6 +1471,10 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_university_exchange
 		}
+		add_tech_bonus = {
+			add_ideas = Internet
+		}
+		#공학 100% 3번
 		x = 62
 		y = 3
 
@@ -1461,6 +1498,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_development_of_communication
+		}
+		completion_reward = {
+		add_research_slot = 1
 		}
 		x = 62
 		y = 5

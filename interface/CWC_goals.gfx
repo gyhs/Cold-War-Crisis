@@ -374,4 +374,30 @@ spriteTypes = {
 		name = "GFX_focus_helicopter_tech"
 		texturefile = "gfx/interface/goals/focus_helicopter_tech.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_new_soviet_union"
+		texturefile = "gfx/interface/goals/focus_new_soviet_union.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_attack_NATO"
+		texturefile = "gfx/interface/goals/focus_attack_NATO.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_german_unification"
+		texturefile = "gfx/interface/goals/focus_german_unification.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_german_no_unification"
+		texturefile = "gfx/interface/goals/focus_german_no_unification.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_berlin_wall_broken"
+		texturefile = "gfx/interface/goals/focus_berlin_wall_broken.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_warsaw_pact"
+		texturefile = "gfx/interface/goals/focus_warsaw_pact.dds"
+	}
 }
