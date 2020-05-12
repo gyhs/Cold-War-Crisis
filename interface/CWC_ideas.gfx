@@ -71,4 +71,12 @@ spriteTypes = {
 		name = "GFX_idea_idea_usa_magic"
 		texturefile = "gfx/interface/ideas/idea_usa_magic.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_NS_netwark_tcp"
+		texturefile = "gfx/interface/ideas/idea_NS_netwark_tcp.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NS_netwark_satellite"
+		texturefile = "gfx/interface/ideas/idea_NS_netwark_satellite.dds"
+	}
 }
