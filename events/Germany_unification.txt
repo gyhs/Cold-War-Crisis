@@ -95,3 +95,191 @@ country_event = {
 		ai_chance = { factor = 75 }
 	}
 }
+####
+# 소련 주도 통일 지연 합의, 미영프소 +서독,동독
+# 미국,영국,프랑스 중 하나라도 합의 성사 되지 않으면 민정경찰 루트로 변경됨.
+###
+# 소련 주도 통일 지연 합의 - 미국,영국,프랑스에게 물어보다. 
+country_event = {
+	id = NE_GER_unity.7
+	title = NE_GER_unity.7.t
+	desc = NE_GER_unity.7.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.7.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 미국 측
+country_event = {
+	id = NE_GER_unity.8
+	title = NE_GER_unity.8.t
+	desc = NE_GER_unity.8.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 승낙
+		name = NE_GER_unity.8.a
+		ai_chance = { factor = 75 }
+	}
+	
+	option = { # 거절
+		name = NE_GER_unity.8.b
+		ai_chance = { factor = 0 }
+	}
+}
+#소련 주도 통일 지연 합의 - 미국의 답신이 오다.(승낙)
+country_event = {
+	id = NE_GER_unity.9
+	title = NE_GER_unity.9.t
+	desc = NE_GER_unity.9.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.9.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 미국의 답신이 오다.(거부)
+country_event = {
+	id = NE_GER_unity.10
+	title = NE_GER_unity.10.t
+	desc = NE_GER_unity.10.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.10.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 영국 측
+country_event = {
+	id = NE_GER_unity.11
+	title = NE_GER_unity.11.t
+	desc = NE_GER_unity.11.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 승낙
+		name = NE_GER_unity.11.a
+		ai_chance = { factor = 75 }
+	}
+	
+	option = { # 거절
+		name = NE_GER_unity.11.b
+		ai_chance = { factor = 0 }
+	}
+}
+#소련 주도 통일 지연 합의 - 영국의 답신이 오다.(승낙)
+country_event = {
+	id = NE_GER_unity.12
+	title = NE_GER_unity.12.t
+	desc = NE_GER_unity.12.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.12.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 영국의 답신이 오다.(거부)
+country_event = {
+	id = NE_GER_unity.13
+	title = NE_GER_unity.13.t
+	desc = NE_GER_unity.13.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.13.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 프랑스 측
+country_event = {
+	id = NE_GER_unity.14
+	title = NE_GER_unity.14.t
+	desc = NE_GER_unity.14.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 승낙
+		name = NE_GER_unity.14.a
+		ai_chance = { factor = 75 }
+	}
+	
+	option = { # 거절
+		name = NE_GER_unity.14.b
+		ai_chance = { factor = 0 }
+	}
+}
+#소련 주도 통일 지연 합의 - 프랑스의 답신이 오다.(승낙)
+country_event = {
+	id = NE_GER_unity.15
+	title = NE_GER_unity.15.t
+	desc = NE_GER_unity.15.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.15.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 프랑스의 답신이 오다.(거부)
+country_event = {
+	id = NE_GER_unity.16
+	title = NE_GER_unity.16.t
+	desc = NE_GER_unity.16.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.16.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 협상이 깨지다.
+country_event = {
+	id = NE_GER_unity.17
+	title = NE_GER_unity.17.t
+	desc = NE_GER_unity.17.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.17.a
+		ai_chance = { factor = 75 }
+	}
+}
+#소련 주도 통일 지연 합의 - 협상에 응하다.
+country_event = {
+	id = NE_GER_unity.18
+	title = NE_GER_unity.18.t
+	desc = NE_GER_unity.18.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.18.a
+		ai_chance = { factor = 75 }
+	}
+}
+
