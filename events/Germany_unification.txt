@@ -1,0 +1,97 @@
+﻿###########################
+# GER_unity Events
+###########################
+#임시저장
+#동독에서 최초의 자유선거가 실시된 이래 동·서 독일의 통일 과정은 빠르게 진행되었다. 이에 통일 독일에 대한 국제적 지위를 결정하고 통일 독일의 영토와 군사 문제 등을 해결하기 위해 동·서 독일과 영국, 프랑스, 미국, 소련 4개국이 참여하여 2+4 회담을 실시하였다. 이 회담은 독일관련 최종해결에 관한 조약이라고도 한다.
+#
+add_namespace = NE_GER_unity
+
+# 독일 시민들의 자발적 베를린 장벽 붕괴 - 실제 역사 이벤트
+country_event = {
+	id = NE_GER_unity.1
+	title = NE_GER_unity.1.t
+	desc = NE_GER_unity.1.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.1.a
+		ai_chance = { factor = 75 }
+	}
+}
+
+# 서독 정부 주도의 통일 논의
+country_event = {
+	id = NE_GER_unity.2
+	title = NE_GER_unity.2.t
+	desc = NE_GER_unity.2.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.2.a
+		ai_chance = { factor = 75 }
+	}
+}
+
+# 동독 정부 주도의 통일 논의 - 임시 코드. 아직 계획 없음
+country_event = {
+	id = NE_GER_unity.3
+	title = NE_GER_unity.3.t
+	desc = NE_GER_unity.3.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.3.a
+		ai_chance = { factor = 75 }
+	}
+}
+
+# 소련 주도의 독일 통일 논의 - 완전통일
+country_event = {
+	id = NE_GER_unity.4
+	title = NE_GER_unity.4.t
+	desc = NE_GER_unity.4.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.4.a
+		ai_chance = { factor = 75 }
+	}
+}
+
+# 소련 주도의 독일 통일 논의 - 민정경찰
+country_event = {
+	id = NE_GER_unity.5
+	title = NE_GER_unity.5.t
+	desc = NE_GER_unity.5.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.5.a
+		ai_chance = { factor = 75 }
+	}
+}
+
+# 소련 주도의 독일 통일 논의 - 통일 지연
+country_event = {
+	id = NE_GER_unity.6
+	title = NE_GER_unity.6.t
+	desc = NE_GER_unity.6.desc
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = { # 확인
+		name = NE_GER_unity.6.a
+		ai_chance = { factor = 75 }
+	}
+}
