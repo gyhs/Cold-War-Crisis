@@ -45,3 +45,193 @@ news_event = {
 		}
 	}
 }
+# 서독 정부 주도의 통일
+news_event = {
+	id = news_GER.2
+	title = news_GER.2.t
+	desc = news_GER.2.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news_GER.2.a
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news_GER.2.b
+		trigger = { TAG = DDR }
+	}
+	option = {
+		name = news_GER.2.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news_GER.2.d
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news_GER.2.e
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = DDR
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 동독 정부 주도의 통일
+news_event = {
+	id = news_GER.3
+	title = news_GER.3.t
+	desc = news_GER.3.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news_GER.3.a
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news_GER.3.b
+		trigger = { TAG = DDR }
+	}
+	option = {
+		name = news_GER.3.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news_GER.3.d
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news_GER.3.e
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = DDR
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 독일 완전통일
+news_event = {
+	id = news_GER.4
+	title = news_GER.4.t
+	desc = news_GER.4.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news_GER.4.a
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news_GER.4.b
+		trigger = { TAG = DDR }
+	}
+	option = {
+		name = news_GER.4.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news_GER.4.d
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news_GER.4.e
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = DDR
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 독일 민정경찰 관리
+news_event = {
+	id = news_GER.5
+	title = news_GER.5.t
+	desc = news_GER.5.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news_GER.5.a
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news_GER.5.b
+		trigger = { TAG = DDR }
+	}
+	option = {
+		name = news_GER.5.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news_GER.5.d
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news_GER.5.e
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = DDR
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}
+# 독일 통일협상 실패
+news_event = {
+	id = news_GER.6
+	title = news_GER.6.t
+	desc = news_GER.6.desc
+	picture = GFX_news_event_056
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news_GER.6.a
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news_GER.6.b
+		trigger = { TAG = DDR }
+	}
+	option = {
+		name = news_GER.6.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news_GER.6.d
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news_GER.6.e
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = DDR
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+}

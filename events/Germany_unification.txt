@@ -18,6 +18,7 @@ country_event = {
 	option = { # 확인
 		name = NE_GER_unity.1.a
 		ai_chance = { factor = 75 }
+		news_event = { id = news_GER.1 }
 	}
 }
 
@@ -33,6 +34,7 @@ country_event = {
 	option = { # 확인
 		name = NE_GER_unity.2.a
 		ai_chance = { factor = 75 }
+		news_event = { id = news_GER.2 }
 	}
 }
 
