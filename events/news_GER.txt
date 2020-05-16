@@ -20,18 +20,22 @@ news_event = {
 	option = {
 		name = news_GER.1.a
 		trigger = { TAG = GER }
+		set_global_flag = global_flag_fall_berlin_wall
 	}
 	option = {
 		name = news_GER.1.b
 		trigger = { TAG = DDR }
+		set_global_flag = global_flag_fall_berlin_wall
 	}
 	option = {
 		name = news_GER.1.c
 		trigger = { TAG = SOV }
+		set_global_flag = global_flag_fall_berlin_wall
 	}
 	option = {
 		name = news_GER.1.d
 		trigger = { TAG = USA }
+		set_global_flag = global_flag_fall_berlin_wall
 	}
 	option = {
 		name = news_GER.1.e
@@ -43,6 +47,7 @@ news_event = {
 				TAG = USA
 			}
 		}
+		set_global_flag = global_flag_fall_berlin_wall
 	}
 }
 # 서독 정부 주도의 통일
@@ -237,6 +242,12 @@ news_event = {
 	}
 	desc = {
 		text = news_GER.6.desc.6
+		trigger = {
+			has_country_flag = flag_GER_unity_fra_no
+		}
+	}
+	desc = {
+		text = news_GER.6.desc.7
 		trigger = {
 			has_country_flag = flag_GER_unity_fra_no
 			has_country_flag = flag_GER_unity_usa_no
