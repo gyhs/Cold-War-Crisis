@@ -197,11 +197,51 @@ news_event = {
 		}
 	}
 }
-# 독일 통일협상 실패
+# 독일 통일협상 고의지연으로 실패
 news_event = {
 	id = news_GER.6
 	title = news_GER.6.t
-	desc = news_GER.6.desc
+	desc = {
+		text = news_GER.6.desc.1
+		trigger = {
+			has_country_flag = flag_GER_unity_usa_no
+		}
+	}
+	desc = {
+		text = news_GER.6.desc.2
+		trigger = {
+			has_country_flag = flag_GER_unity_usa_no
+			has_country_flag = flag_GER_unity_eng_no
+		}
+	}
+	desc = {
+		text = news_GER.6.desc.3
+		trigger = {
+			has_country_flag = flag_GER_unity_usa_no
+			has_country_flag = flag_GER_unity_eng_no
+			has_country_flag = flag_GER_unity_fra_no
+		}
+	}
+	desc = {
+		text = news_GER.6.desc.4
+		trigger = {
+			has_country_flag = flag_GER_unity_eng_no
+		}
+	}
+	desc = {
+		text = news_GER.6.desc.5
+		trigger = {
+			has_country_flag = flag_GER_unity_eng_no
+			has_country_flag = flag_GER_unity_fra_no
+		}
+	}
+	desc = {
+		text = news_GER.6.desc.6
+		trigger = {
+			has_country_flag = flag_GER_unity_fra_no
+			has_country_flag = flag_GER_unity_usa_no
+		}
+	}
 	picture = GFX_news_event_056
 	
 	major = yes
@@ -209,29 +249,5 @@ news_event = {
 	
 	option = {
 		name = news_GER.6.a
-		trigger = { TAG = GER }
-	}
-	option = {
-		name = news_GER.6.b
-		trigger = { TAG = DDR }
-	}
-	option = {
-		name = news_GER.6.c
-		trigger = { TAG = SOV }
-	}
-	option = {
-		name = news_GER.6.d
-		trigger = { TAG = USA }
-	}
-	option = {
-		name = news_GER.6.e
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = DDR
-				TAG = SOV
-				TAG = USA
-			}
-		}
 	}
 }
