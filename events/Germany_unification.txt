@@ -50,6 +50,7 @@ country_event = {
 	option = { # 확인
 		name = NE_GER_unity.3.a
 		ai_chance = { factor = 75 }
+		news_event = { id = news_GER.3 }
 	}
 }
 
@@ -65,6 +66,7 @@ country_event = {
 	option = { # 확인
 		name = NE_GER_unity.4.a
 		ai_chance = { factor = 75 }
+		news_event = { id = news_GER.4 }
 	}
 }
 
@@ -80,6 +82,7 @@ country_event = {
 	option = { # 확인
 		name = NE_GER_unity.5.a
 		ai_chance = { factor = 75 }
+		news_event = { id = news_GER.5 }
 	}
 }
 
@@ -127,6 +130,7 @@ country_event = {
 	option = { # 승낙
 		name = NE_GER_unity.8.a
 		ai_chance = { factor = 75 }
+		set_global_flag = flag_GER_unity_usa_no
 	}
 	
 	option = { # 거절
@@ -174,6 +178,7 @@ country_event = {
 	option = { # 승낙
 		name = NE_GER_unity.11.a
 		ai_chance = { factor = 75 }
+		set_global_flag = flag_GER_unity_eng_no
 	}
 	
 	option = { # 거절
@@ -221,6 +226,7 @@ country_event = {
 	option = { # 승낙
 		name = NE_GER_unity.14.a
 		ai_chance = { factor = 75 }
+		set_global_flag = flag_GER_unity_fra_no
 	}
 	
 	option = { # 거절
@@ -265,7 +271,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # 확인
+	option = { # 마지막으로 민정경찰 공동주둔 협상을 해본다.
 		name = NE_GER_unity.17.a
 		ai_chance = { factor = 75 }
 	}
@@ -282,6 +288,7 @@ country_event = {
 	option = { # 확인
 		name = NE_GER_unity.18.a
 		ai_chance = { factor = 75 }
+		news_event = { id = news_GER.6 }
 	}
 }
 

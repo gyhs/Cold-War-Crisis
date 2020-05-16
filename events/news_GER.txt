@@ -209,48 +209,48 @@ news_event = {
 	desc = {
 		text = news_GER.6.desc.1
 		trigger = {
-			has_country_flag = flag_GER_unity_usa_no
+			has_global_flag = flag_GER_unity_usa_no
 		}
 	}
 	desc = {
 		text = news_GER.6.desc.2
 		trigger = {
-			has_country_flag = flag_GER_unity_usa_no
-			has_country_flag = flag_GER_unity_eng_no
+			has_global_flag = flag_GER_unity_usa_no
+			has_global_flag = flag_GER_unity_eng_no
 		}
 	}
 	desc = {
 		text = news_GER.6.desc.3
 		trigger = {
-			has_country_flag = flag_GER_unity_usa_no
-			has_country_flag = flag_GER_unity_eng_no
-			has_country_flag = flag_GER_unity_fra_no
+			has_global_flag = flag_GER_unity_usa_no
+			has_global_flag = flag_GER_unity_eng_no
+			has_global_flag = flag_GER_unity_fra_no
 		}
 	}
 	desc = {
 		text = news_GER.6.desc.4
 		trigger = {
-			has_country_flag = flag_GER_unity_eng_no
+			has_global_flag = flag_GER_unity_eng_no
 		}
 	}
 	desc = {
 		text = news_GER.6.desc.5
 		trigger = {
-			has_country_flag = flag_GER_unity_eng_no
-			has_country_flag = flag_GER_unity_fra_no
+			has_global_flag = flag_GER_unity_eng_no
+			has_global_flag = flag_GER_unity_fra_no
 		}
 	}
 	desc = {
 		text = news_GER.6.desc.6
 		trigger = {
-			has_country_flag = flag_GER_unity_fra_no
+			has_global_flag = flag_GER_unity_fra_no
 		}
 	}
 	desc = {
 		text = news_GER.6.desc.7
 		trigger = {
-			has_country_flag = flag_GER_unity_fra_no
-			has_country_flag = flag_GER_unity_usa_no
+			has_global_flag = flag_GER_unity_fra_no
+			has_global_flag = flag_GER_unity_usa_no
 		}
 	}
 	picture = GFX_news_event_056
