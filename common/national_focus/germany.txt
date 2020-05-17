@@ -1,0 +1,131 @@
+focus_tree = {
+	id = GER
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	continuous_focus_position = { x = 20 y = 1000 }
+	
+	#### 공화국의 경제개선
+	focus = {
+		id = NF_GER_economic_improvement_republic
+		icon = GFX_goal_generic_military_sphere
+		x = 10
+		y = 0
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 슈타지 역량 강화
+	focus = {
+		id = NF_GER_stasi_ability_reinforce
+		icon = GFX_goal_generic_military_sphere
+		x = 8
+		y = 1
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_economic_improvement_republic
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 사관학교 훈련 강화
+	focus = {
+		id = NF_GER_military_academy_Training_reinforce
+		icon = GFX_goal_generic_military_sphere
+		x = 8
+		y = 2
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_stasi_ability_reinforce
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 인프라 개발
+	focus = {
+		id = NF_GER_infrastructure_development
+		icon = GFX_goal_generic_military_sphere
+		x = 10
+		y = 1
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_economic_improvement_republic
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 경공업 개발
+	focus = {
+		id = NF_GER_light_industry_development
+		icon = GFX_goal_generic_military_sphere
+		x = 10
+		y = 2
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_infrastructure_development
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 제 2의 급여 개혁
+	focus = {
+		id = NF_GER_second_pay_reform
+		icon = GFX_goal_generic_military_sphere
+		x = 12
+		y = 1
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_economic_improvement_republic
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+}
