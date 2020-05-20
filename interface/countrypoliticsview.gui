@@ -461,7 +461,6 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "ideas"
-			name = "ideas"
 			position = { x = 0 y = 447 }
 			size = { width=100%% height=100%% }
 			verticalScrollbar = "right_vertical_slider"
