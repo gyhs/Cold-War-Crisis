@@ -238,20 +238,7 @@ add_ideas = {
 	set_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_1
 	set_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_2
 	set_country_flag = flag_SOV_soviet_afghan_war_mujahidin_south_3
-
-	complete_national_focus = SOV_nationalist_movement
-	complete_national_focus = SOV_eastern_europe_nm
-	complete_national_focus = SOV_caucasus_nm
-	complete_national_focus = SOV_central_asia_nm
-	complete_national_focus = SOV_belarus_nm_1
-	complete_national_focus = SOV_ukraine_nm_1
-	complete_national_focus = SOV_baltic_states_nm_1
-	complete_national_focus = SOV_moldova_nm_1
-	complete_national_focus = SOV_armenia_nm_1
-	complete_national_focus = SOV_azerbaijan_nm_1
-	complete_national_focus = SOV_georgia_nm_1
-	complete_national_focus = SOV_central_asia_nm_1
-	complete_national_focus = SOV_nagorno_karabakh_nm_1
+	
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	set_country_flag = SOV_decision_ukraine_uprising
