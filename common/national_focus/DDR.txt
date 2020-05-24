@@ -12,7 +12,7 @@ focus_tree = {
 	#### 공화국의 길
 	focus = {
 		id = NF_DDR_republic_path
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_YUG_pan_slavic_congress
 		x = 10
 		y = 0
 		cost = 10.00
@@ -31,7 +31,7 @@ focus_tree = {
 	#### 글라스노스트/페레스트로이카 검열
 	focus = {
 		id = NF_DDR_glasnost_perestroika_censorship
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		x = 8
 		y = 1
 		cost = 10.00
@@ -51,7 +51,7 @@ focus_tree = {
 	#### 각료 이사회 변혁
 	focus = {
 		id = NF_DDR_council_ministers_change
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_generic_national_unity
 		x = 10
 		y = 1
 		cost = 10.00
@@ -71,7 +71,7 @@ focus_tree = {
 	#### 활발한 토론
 	focus = {
 		id = NF_DDR_council_lively_discussion
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_generic_military_academy
 		x = 12
 		y = 1
 		cost = 10.00
@@ -91,7 +91,7 @@ focus_tree = {
 	#### 카를 마르크스 대학 확충
 	focus = {
 		id = NF_DDR_karl_marx_university_expand
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_research
 		x = 13
 		y = 2
 		cost = 10.00
@@ -114,7 +114,7 @@ focus_tree = {
 	#### 중부유럽 사회주의 요새
 	focus = {
 		id = NF_DDR_central_european_socialist_fort
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_generic_join_comintern
 		x = 7
 		y = 2
 		cost = 10.00
@@ -138,7 +138,7 @@ focus_tree = {
 	#### 슈타지 근위연대 충원
 	focus = {
 		id = NF_DDR_stasi_felix_dzerzhinsky_guards_regiment_reinforce
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_demand_sudetenland
 		x = 7
 		y = 3
 		cost = 10.00
@@ -158,7 +158,7 @@ focus_tree = {
 	#### 고르바초프의 개혁 동참권유를 거부
 	focus = {
 		id = NF_DDR_refusing_join_reform
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 7
 		y = 4
 		cost = 10.00
@@ -178,7 +178,7 @@ focus_tree = {
 	#### 개혁의 물결 합류
 	focus = {
 		id = NF_DDR_joining_wave_reform
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		x = 11
 		y = 2
 		cost = 10.00
@@ -202,7 +202,7 @@ focus_tree = {
 	#### 소련 개혁파와 접선
 	focus = {
 		id = NF_DDR_contact_with_Soviet_reformists
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		x = 10
 		y = 3
 		cost = 10.00
@@ -222,7 +222,7 @@ focus_tree = {
 	#### 공화국 당 지도부 개혁
 	focus = {
 		id = NF_DDR_communist_party_leadership_reform
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_generic_propaganda
 		x = 10
 		y = 4
 		cost = 10.00
@@ -242,7 +242,7 @@ focus_tree = {
 	#### 민주사회주의 정부의 길
 	focus = {
 		id = NF_DDR_democratic_socialist_government_path
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_generic_self_management
 		x = 12
 		y = 3
 		cost = 10.00
@@ -262,7 +262,7 @@ focus_tree = {
 	#### 제도적 보장
 	focus = {
 		id = NF_DDR_institutional_guarantee
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 4
 		cost = 10.00
@@ -282,7 +282,7 @@ focus_tree = {
 	#### 호네커 지지
 	focus = {
 		id = NF_DDR_erich_honecker_support
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_mex_support_general_cedillo
 		x = 7
 		y = 5
 		cost = 10.00
@@ -303,7 +303,7 @@ focus_tree = {
 	#### 호네커 체포
 	focus = {
 		id = NF_DDR_erich_honecker_arrest
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_mex_arrest_general_cedillo
 		x = 10
 		y = 5
 		cost = 10.00
