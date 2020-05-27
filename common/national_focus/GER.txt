@@ -1,0 +1,172 @@
+focus_tree = {
+	id = GER
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	continuous_focus_position = { x = 20 y = 1000 }
+	
+	#### 사회 혼란 수습
+	focus = {
+		id = NF_GER_social_chaos_control
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 10
+		y = 0
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 테러의 물결 방파제
+	focus = {
+		id = NF_GER_wave_breakwater_of_terror
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 6
+		y = 1
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_social_chaos_control
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 적군파와 충돌
+	focus = {
+		id = NF_GER_crash_rote_armee_fraktion
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 5
+		y = 2
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_wave_breakwater_of_terror
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 적군파 잔당 소탕
+	focus = {
+		id = NF_GER_raf_residual_sweep
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 5
+		y = 3
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_crash_rote_armee_fraktion
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 네오나치와 충돌
+	focus = {
+		id = NF_GER_crash_neonazi
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 7
+		y = 2
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_wave_breakwater_of_terror
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 네오나치 단체 은신처 급습
+	focus = {
+		id = NF_GER_neonazi_group_hideout_raid
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 7
+		y = 3
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_crash_neonazi
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### GSG-9 역량 강화
+	focus = {
+		id = NF_GER_gsg_9_ability_enhancement
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 6
+		y = 4
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_raf_residual_sweep
+		}
+		prerequisite = {
+			focus = NF_GER_neonazi_group_hideout_raid
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### H&K사와 밀접한 관계
+	focus = {
+		id = NF_GER_close_relationship_with_hnk_company
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 6
+		y = 5
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_gsg_9_ability_enhancement
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
