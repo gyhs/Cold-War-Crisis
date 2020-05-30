@@ -173,6 +173,171 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	#### 독일국회 조사위원회
+	focus = {
+		id = NF_GER_investigation_committee_german_parliament
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 10
+		y = 2
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_settlement_corruption_political_world
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 정당 기부금법 강화
+	focus = {
+		id = NF_GER_party_donations_act_reinforcement
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 10
+		y = 3
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_investigation_committee_german_parliament
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 재통일로의 여정
+	focus = {
+		id = NF_GER_journey_to_reunification
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 14
+		y = 2
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_social_chaos_control
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 평화적 교류
+	focus = {
+		id = NF_GER_peaceful_exchange
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 12
+		y = 3
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_journey_to_reunification
+		}
+		mutually_exclusive = {
+			focus = NF_GER_careful_contact
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 동독 지도부와 교류
+	focus = {
+		id = NF_GER_exchanges_with_DDR_leadership
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 12
+		y = 4
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_peaceful_exchange
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 조심스러운 접촉
+	focus = {
+		id = NF_GER_careful_contact
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 16
+		y = 3
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_journey_to_reunification
+		}
+		mutually_exclusive = {
+			focus = NF_GER_peaceful_exchange
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 경계 허물기 요구
+	focus = {
+		id = NF_GER_demands_break_boundaries
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 16
+		y = 4
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_careful_contact
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 베를린 장벽 붕괴
+	focus = {
+		id = NF_GER_berlin_wall_collapse
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 14
+		y = 4
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
+	#### 독일 재통일
+	focus = {
+		id = NF_GER_german_reunification
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 14
+		y = 5
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_exchanges_with_DDR_leadership
+			focus = NF_GER_berlin_wall_collapse
+			focus = NF_GER_demands_break_boundaries
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
 	
 	
 	
