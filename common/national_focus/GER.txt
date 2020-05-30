@@ -155,6 +155,24 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	#### 정치계의 도덕적타락 수습
+	focus = {
+		id = NF_GER_settlement_corruption_political_world
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 10
+		y = 1
+		cost = 10.00
+		available = {
+		}
+		prerequisite = {
+			focus = NF_GER_social_chaos_control
+		}
+		mutually_exclusive = {
+		}
+
+		completion_reward = {
+		}
+	}
 	
 	
 	
