@@ -12,6 +12,7 @@ eec_Upgrade = {
 
         available = {
             has_political_power > 100
+            has_completed_focus = NF_FRA_eec_strengthen
         }
 
         complete_effect = {

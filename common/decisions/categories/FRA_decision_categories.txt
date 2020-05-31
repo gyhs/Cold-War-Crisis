@@ -1,0 +1,3 @@
+eec_Upgrade = {
+    icon = EEC_idea
+}
