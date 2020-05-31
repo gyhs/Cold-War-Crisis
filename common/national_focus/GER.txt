@@ -309,6 +309,7 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		available = {
+			has_global_flag = global_flag_fall_berlin_wall
 		}
 		prerequisite = {
 		}
