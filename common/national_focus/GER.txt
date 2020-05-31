@@ -12,7 +12,7 @@ focus_tree = {
 	#### 사회 혼란 수습
 	focus = {
 		id = NF_GER_social_chaos_control
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_generic_self_management
 		x = 10
 		y = 0
 		cost = 10.00
@@ -29,7 +29,7 @@ focus_tree = {
 	#### 테러의 물결 방파제
 	focus = {
 		id = NF_GER_wave_breakwater_of_terror
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_generic_coastal_fort
 		x = 6
 		y = 1
 		cost = 10.00
@@ -47,7 +47,7 @@ focus_tree = {
 	#### 적군파와 충돌
 	focus = {
 		id = NF_GER_crash_rote_armee_fraktion
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		x = 5
 		y = 2
 		cost = 10.00
@@ -65,7 +65,7 @@ focus_tree = {
 	#### 적군파 잔당 소탕
 	focus = {
 		id = NF_GER_raf_residual_sweep
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_spr_crush_the_revolution
 		x = 5
 		y = 3
 		cost = 10.00
@@ -83,7 +83,7 @@ focus_tree = {
 	#### 네오나치와 충돌
 	focus = {
 		id = NF_GER_crash_neonazi
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_ger_reichskommisariats
 		x = 7
 		y = 2
 		cost = 10.00
@@ -101,7 +101,7 @@ focus_tree = {
 	#### 네오나치 단체 은신처 급습
 	focus = {
 		id = NF_GER_neonazi_group_hideout_raid
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_focus_fra_fascist_threat
 		x = 7
 		y = 3
 		cost = 10.00
@@ -119,7 +119,7 @@ focus_tree = {
 	#### GSG-9 역량 강화
 	focus = {
 		id = NF_GER_gsg_9_ability_enhancement
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_generic_military_academy
 		x = 6
 		y = 4
 		cost = 10.00
@@ -140,7 +140,7 @@ focus_tree = {
 	#### H&K사와 밀접한 관계
 	focus = {
 		id = NF_GER_close_relationship_with_hnk_company
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_goal_generic_small_arms
 		x = 6
 		y = 5
 		cost = 10.00
@@ -158,7 +158,7 @@ focus_tree = {
 	#### 정치계의 도덕적타락 수습
 	focus = {
 		id = NF_GER_settlement_corruption_political_world
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_rom_parties_end
 		x = 10
 		y = 1
 		cost = 10.00
@@ -176,7 +176,7 @@ focus_tree = {
 	#### 독일국회 조사위원회
 	focus = {
 		id = NF_GER_investigation_committee_german_parliament
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_generic_self_management
 		x = 10
 		y = 2
 		cost = 10.00
@@ -194,7 +194,7 @@ focus_tree = {
 	#### 정당 기부금법 강화
 	focus = {
 		id = NF_GER_party_donations_act_reinforcement
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_goal_generic_neutrality_focus
 		x = 10
 		y = 3
 		cost = 10.00
@@ -212,7 +212,7 @@ focus_tree = {
 	#### 재통일로의 여정
 	focus = {
 		id = NF_GER_journey_to_reunification
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_goal_generic_major_alliance
 		x = 14
 		y = 2
 		cost = 10.00
@@ -230,7 +230,7 @@ focus_tree = {
 	#### 평화적 교류
 	focus = {
 		id = NF_GER_peaceful_exchange
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 12
 		y = 3
 		cost = 10.00
@@ -249,7 +249,7 @@ focus_tree = {
 	#### 동독 지도부와 교류
 	focus = {
 		id = NF_GER_exchanges_with_DDR_leadership
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_goal_generic_national_unity
 		x = 12
 		y = 4
 		cost = 10.00
@@ -267,7 +267,7 @@ focus_tree = {
 	#### 조심스러운 접촉
 	focus = {
 		id = NF_GER_careful_contact
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_goal_generic_improve_relations
 		x = 16
 		y = 3
 		cost = 10.00
@@ -286,7 +286,7 @@ focus_tree = {
 	#### 경계 허물기 요구
 	focus = {
 		id = NF_GER_demands_break_boundaries
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_german_no_unification
 		x = 16
 		y = 4
 		cost = 10.00
@@ -304,7 +304,7 @@ focus_tree = {
 	#### 베를린 장벽 붕괴
 	focus = {
 		id = NF_GER_berlin_wall_collapse
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_berlin_wall_broken
 		x = 14
 		y = 4
 		cost = 10.00
@@ -321,7 +321,7 @@ focus_tree = {
 	#### 독일 재통일
 	focus = {
 		id = NF_GER_german_reunification
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_german_unification
 		x = 14
 		y = 5
 		cost = 10.00
