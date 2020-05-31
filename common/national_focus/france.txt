@@ -230,8 +230,8 @@ focus_tree = {
 				idea = single_party
 				days = 180
 			}
-			add_threat = 0.5
-			#국가정신 '하나의 당' 180일 , 세계긴장도 +0.5%
+			add_threat = 5
+			#국가정신 '하나의 당' 180일 , 세계긴장도 +5%
 		}
 		x = 18
 		y = 6
@@ -263,9 +263,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = treaty_of_the_revolution
-			add_threat = 2
+			add_threat = 10
 		}
-		# 영구 혁명 조약 결성, 세계긴장도 +2%
+		# 영구 혁명 조약 결성, 세계긴장도 +10%
 		x = 16
 		y = 8
 
@@ -301,8 +301,8 @@ focus_tree = {
 				days = 180
 				#소련의 정권지원
 			}
-			add_threat = 0.5
-			#세계 긴장도 +0.5%
+			add_threat = 5
+			#세계 긴장도 +5%
 		}
 		x = 20
 		y = 6
@@ -365,8 +365,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			SOV = { add_to_faction = FRA }
-			add_threat = 3
-			#바르샤바 조약  기구 가입 , 세계긴장도 +3%
+			add_threat = 15
+			#바르샤바 조약  기구 가입 , 세계긴장도 +15%
 		}
 		x = 22
 		y = 8
@@ -451,7 +451,7 @@ focus_tree = {
     			remove_idea = eces_1
     			add_idea = eec
 			}
-			activate_decision = eec_Upgrade
+			unlock_decision_tooltip = eec_Upgrade
 		}
 		#결정 추가 : EEC 강화
 		x = 28
