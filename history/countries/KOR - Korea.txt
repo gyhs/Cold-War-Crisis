@@ -135,10 +135,8 @@ set_technology = {
 	
 	tech_light_fighter_1 = 1
 	tech_cas_1 = 1
-	tech_naval_bomber_1 = 1
-	tech_long_range_strategic_bomber_1 = 1
-	tech_supersonic_strategic_bomber_1 = 1
-	tech_stealth_strategic_bomber_1 = 1
+	
+	tech_transport_plane_1 = 1
 	
 	tech_recon_helicopter_1 = 1
 	heliborne_1 = 1
