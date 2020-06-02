@@ -332,7 +332,7 @@
  AIR_TITLE_cv_cas_fighter:0 "함재 전폭기"
  AIR_TITLE_cv_cas_fighter_desc:0 "항공모함에서 이륙하여 함선 및 지상 타격에 중점을 둔 항공기 입니다. 함재 전투기에 비해 부족한 공대공 능력을 지녔습니다."
  AIR_TITLE_light_fighter:0 "무인기"
- AIR_TITLE_light_fighter_desc:0 "무인기는 미지의 영역 입니다. 처음에는 정찰만 가능하지만 기술력이 늘어날수록 더 많은 전투장비와 항속거리를 지니게 됩니다."
+ AIR_TITLE_light_fighter_desc:0 "무인기는 미지의 영역 입니다. 처음에는 정찰만 가능하지만 기술력이 늘어날수록 더 많은 지상공격 장비와 항속거리를 지니게 됩니다."
  AIR_TITLE_CAS:0 "공격기"
  AIR_TITLE_CAS_desc:0 "오로지 지상공격에만 목적을 둔 항공기 입니다. 저공 비행을 하면서 지상의 대공포화를 견딜 수 있어야 해서 튼튼하게 만들어 졌습니다."
  
