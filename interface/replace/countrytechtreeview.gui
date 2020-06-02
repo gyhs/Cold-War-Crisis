@@ -1381,7 +1381,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_light_fighter"
-				position = { x = 1510 y = 470 }
+				position = { x = 1440 y = 410 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4 }

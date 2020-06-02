@@ -956,9 +956,12 @@ technologies = {
 			leads_to_tech = tech_light_fighter_2
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = tech_land_drone_1
+			research_cost_coeff = 1
+		}
 		dependencies = {
-			jet_engines_4 = 1
+			jet_engines_1 = 1
 		}
 		
 		xp_research_type = air
@@ -969,7 +972,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 21 y = 6 }
+			position = { x = 20 y = 5 }
 		}
 		
 		categories = {
@@ -999,9 +1002,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		dependencies = {
-			jet_engines_5 = 1
-		}
+		#dependencies = {
+		#	jet_engines_5 = 1
+		#}
 		
 		xp_research_type = air
 		xp_research_cost = 100
@@ -1011,7 +1014,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 21 y = 8 }
+			position = { x = 20 y = 8 }
 		}
 		
 		categories = {
@@ -1041,9 +1044,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		dependencies = {
-			jet_engines_6 = 1
-		}
+		#dependencies = {
+		#	jet_engines_6 = 1
+		#}
 		
 		xp_research_type = air
 		xp_research_cost = 100
@@ -1053,7 +1056,129 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 21 y = 10 }
+			position = { x = 20 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	
+	tech_land_drone_1 = {
+
+		enable_equipments = {
+		}
+	
+		path = {
+			leads_to_tech = tech_land_drone_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_1 = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1980
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 23 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	tech_land_drone_2 = {
+
+		enable_equipments = {
+		}
+	
+		path = {
+			leads_to_tech = tech_land_drone_3
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_1 = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1980
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 23 y = 8 }
+		}
+		
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	tech_land_drone_3 = {
+
+		enable_equipments = {
+		}
+	
+		path = {
+			leads_to_tech = tech_land_drone_4
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines_1 = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 2
+		start_year = 1980
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 23 y = 10 }
 		}
 		
 		categories = {

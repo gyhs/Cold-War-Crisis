@@ -351,20 +351,19 @@
  AIR_TITLE_stealth_strat_bomber:0 "스텔스 전략폭격기"
  AIR_TITLE_stealth_strat_bomber_desc:0 "초음속 전략폭격기와 다르게 스텔스를 통한 생존성을 우선한 폭격기 입니다. 비록 적은 폭장량을 지녔지만 높은 생존성으로 침투해서 폭격을 하고 귀환 합니다."
  
+ tech_land_drone_1:0 "육군 정찰드론 1"
+ tech_land_drone_1_desc:0 "보병들이 공군의 도움 없이 바로 주변을 정찰을 할 수 있게 해주는 소형 드론 입니다."
+ tech_land_drone_2:0 "육군 정찰드론 2"
+ tech_land_drone_2_desc:0 "보병들이 공군의 도움 없이 바로 주변을 정찰을 할 수 있게 해주는 소형 드론 입니다."
+ tech_land_drone_3:0 "육군 정찰드론 3"
+ tech_land_drone_3_desc:0 "보병들이 공군의 도움 없이 바로 주변을 정찰을 할 수 있게 해주는 소형 드론 입니다."
+ 
  AIR_TITLE_helicopter_theory:0 "헬기 이론"
  AIR_TITLE_recon_helicopter:0 "정찰 헬기"
  AIR_TITLE_heliborne:0 "헬기 강하병"
  AIR_TITLE_attack_helicopter:0 "공격 헬기"
  AIR_TITLE_maritime_helicopter:0 "대잠 헬기"
  AIR_TITLE_rescue_helicopter:0 "의무 헬기"
- 
- AIR_TITLE_MULTI_ROLE_FIGHTER:0 "Multi-Role Fighter"
- AIR_TITLE_LIGHT_BOMBER:0 "Light Bomber"
- AIR_TITLE_AIR_CANNON:0 "Ground Support Weapons"
- AIR_TITLE_DROP_TANKS:0 "Drop Tanks"
- AIR_TITLE_BOMBS:0 "Bombs"
- AIR_TITLE_AIR_SEARCH:0 "Air Search Equipment"
- AIR_TITLE_AIR_NAVIGATION:0 "Air Navigation Equipment"
  
  # 해군교리 폴더
  TITLE_military_basic_air_doctrine:0 "공군 기초 군사학"
