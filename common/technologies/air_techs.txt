@@ -23,7 +23,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 2 }
+			position = { x = 4 y = 0 }
 		}
 		
 		categories = {
@@ -70,7 +70,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 4 }
+			position = { x = 4 y = 2 }
 		}
 		
 		categories = {
@@ -133,7 +133,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 4 }
 		}
 		
 		categories = {
@@ -196,7 +196,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 8 }
+			position = { x = 4 y = 7 }
 		}
 		
 		categories = {
@@ -262,7 +262,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 2 }
+			position = { x = 8 y = 0 }
 		}
 		
 		categories = {
@@ -303,7 +303,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 4 }
+			position = { x = 8 y = 2 }
 		}
 		
 		categories = {
@@ -344,7 +344,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 6 }
+			position = { x = 8 y = 4 }
 		}
 		
 		categories = {
@@ -385,7 +385,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 8 }
+			position = { x = 8 y = 7 }
 		}
 		
 		categories = {
@@ -464,7 +464,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 12 y = 2 }
+			position = { x = 12 y = 0 }
 		}
 		
 		categories = {
@@ -527,7 +527,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 12 y = 4 }
+			position = { x = 12 y = 2 }
 		}
 		
 		categories = {
@@ -590,7 +590,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 12 y = 6 }
+			position = { x = 12 y = 4 }
 		}
 		
 		categories = {
@@ -653,7 +653,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 14 y = 8 }
+			position = { x = 14 y = 7 }
 		}
 		
 		categories = {
@@ -779,7 +779,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 16 y = 2 }
+			position = { x = 16 y = 0 }
 		}
 		
 		categories = {
@@ -842,7 +842,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 16 y = 4 }
+			position = { x = 16 y = 2 }
 		}
 		
 		categories = {
@@ -905,7 +905,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 16 y = 6 }
+			position = { x = 16 y = 4 }
 		}
 		
 		categories = {
@@ -972,7 +972,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 20 y = 5 }
+			position = { x = 20 y = 6 }
 		}
 		
 		categories = {
@@ -1221,7 +1221,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -1263,7 +1263,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 7 }
 		}
 		
 		categories = {

@@ -1311,7 +1311,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_cas"
-				position = { x = 40 y = 440 }
+				position = { x = 40 y = 300 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4 }
@@ -1325,7 +1325,7 @@ guiTypes = {
 				
 			instantTextBoxType = {
 				name = "airtech_subtitle_fighter"
-				position = { x = 330 y = 200 }
+				position = { x = 350 y = 60 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1339,7 +1339,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_h_fighter"
-				position = { x = 600 y = 200 }
+				position = { x = 600 y = 60 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1353,7 +1353,7 @@ guiTypes = {
 				
 			instantTextBoxType = {
 				name = "airtech_subtitle_cv_fighter"
-				position = { x = 890 y = 200 }
+				position = { x = 890 y = 60 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1367,7 +1367,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_cv_cas_fighter"
-				position = { x = 1155 y = 200 }
+				position = { x = 1160 y = 60 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1381,7 +1381,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_light_fighter"
-				position = { x = 1440 y = 410 }
+				position = { x = 1440 y = 480 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4 }

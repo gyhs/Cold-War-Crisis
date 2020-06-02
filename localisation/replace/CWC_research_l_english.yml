@@ -334,7 +334,7 @@
  AIR_TITLE_light_fighter:0 "무인기"
  AIR_TITLE_light_fighter_desc:0 "무인기는 미지의 영역 입니다. 처음에는 정찰만 가능하지만 기술력이 늘어날수록 더 많은 전투장비와 항속거리를 지니게 됩니다."
  AIR_TITLE_CAS:0 "공격기"
- AIR_TITLE_CAS_desc:0 "오로지 지상공격에만 목적을 둔 항공기 입니다. 저공 비행을 하면서 지상의 대공포화에 견딜 수 있어야 하기 때문에 튼튼하게 만들어 졌습니다."
+ AIR_TITLE_CAS_desc:0 "오로지 지상공격에만 목적을 둔 항공기 입니다. 저공 비행을 하면서 지상의 대공포화를 견딜 수 있어야 해서 튼튼하게 만들어 졌습니다."
  
  AIR_TITLE_transport_plane:0 "수송기"
  transport_plane_equipment_desc:0 "목적지까지 공수부대를 수송하며, 보급물자를 공중 투하 하기도 합니다."
