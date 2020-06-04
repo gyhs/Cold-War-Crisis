@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		
+		NS_DDR_republikflucht = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+	}
+}
