@@ -11,7 +11,13 @@ set_technology = {
 
 set_convoys = 25
 
-set_politics = {}
+set_politics = {
+	
+	ruling_party = authoritarianism
+	last_election = "1968.4.27"
+	election_frequency = 50
+	elections_allowed = no
+}
 
 set_popularities = {
 	communism = 0
