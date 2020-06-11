@@ -73,12 +73,11 @@ create_country_leader = {
 		
 	}
 }
-
 create_country_leader = {
-	name = "Sutan Sjahrir"
-	desc = ""
-	picture = "gfx/leaders/Asia/POLITICS_Asia_Generic_land_2.dds"
-	expire = "1953.3.1"
+	name = "하지 모하마드 수하르토"
+	desc = "POLITICS_INS_Suharto_DESC"
+	picture = "POLITICS_INS_Suharto.dds"
+	expire = "2100.3.1"
 	ideology = authoritarianism_subtype_1
 	traits = {
 		
