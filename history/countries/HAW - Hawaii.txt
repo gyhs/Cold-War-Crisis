@@ -1,0 +1,26 @@
+﻿capital = 629
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 20
+set_politics = {	
+	ruling_party = market_liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 5
+	social_liberalism = 40
+	market_liberalism = 45
+	social_conservatism = 5
+	authoritarianism = 0
+	fascism = 0
+}
