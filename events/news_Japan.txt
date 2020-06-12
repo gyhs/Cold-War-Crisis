@@ -1,65 +1,65 @@
 #일본 뉴스
-add_namespace = news_JAP
-
-news_event = { #새 연호
-	id = news_JAP.new_yeonho
-	immediate = {log = "[GetDateText]: [Root.GetName]: news news_JAP.new_yeonho"}
-	title = news_JAP.new_yeonho.t
-	desc = news_JAP.new_yeonho.desc
-	#picture = 
-
-    trigger = {
-		tag = JAP
-		date > 1989.1.7
-		country_exists = JAP
-        JAP = {
-			OR = {
-				has_government = social_liberalism
-				has_government = market_liberalism
-				has_government = social_conservatism
-				has_government = fascism
-				has_government = authoritarianism
-			}
-        }
-    }
-	
-	fire_only_once = yes
-	
-	option = { #선택지
-		name = news_JAP.new_yeonho.denno #천황제
-        add_stability = 0.05
-		ai_chance = { factor = 1 }
-	}
-}
-
-news_event = { #버블 붕괴
-    id = news_JAP.bubble_collapse
-    immediate = {log =  "[GetDateText]: [Root.GetName]: news news_JAP.bubble_collapse"}
-    title = news_JAP.bubble_collapse.t
-    desc = news_JAP.bubble_collapse.desc
-    #picture =
-
-    major = yes
-
-    is_triggered_only = yes
-    fire_only_once = yes
-
-    option = {  #일본일때
-        name = news_JAP.bubble_collapse.japan
-        trigger = {
-			tag = JAP
-		}
-		ai_chance = { base = 1 }
-        
-        add_ideas = NS_JAP_bubble_collapse_5
-    }
-    option = {  #아닐때
-        name = news_JAP.bubble_collapse.notjapan
-        trigger = {
-			NOT = {
-				tag = JAP
-			}
-		}
-		ai_chance = { base = 1 }
-    }
-}
+#add_namespace = news_JAP
+#
+#news_event = { #새 연호
+#	id = news_JAP.new_yeonho
+#	immediate = {log = "[GetDateText]: [Root.GetName]: news news_JAP.new_yeonho"}
+#	title = news_JAP.new_yeonho.t
+#	desc = news_JAP.new_yeonho.desc
+#	#picture = 
+#
+#    trigger = {
+#		tag = JAP
+#		date > 1989.1.7
+#		country_exists = JAP
+#        JAP = {
+#			OR = {
+#				has_government = social_liberalism
+#				has_government = market_liberalism
+#				has_government = social_conservatism
+#				has_government = fascism
+#				has_government = authoritarianism
+#			}
+#        }
+#    }
+#	
+#	fire_only_once = yes
+#	
+#	option = { #선택지
+#		name = news_JAP.new_yeonho.denno #천황제
+#        add_stability = 0.05
+#		ai_chance = { factor = 1 }
+#	}
+#}
+#
+#news_event = { #버블 붕괴
+#    id = news_JAP.bubble_collapse
+#    immediate = {log =  "[GetDateText]: [Root.GetName]: news news_JAP.bubble_collapse"}
+#    title = news_JAP.bubble_collapse.t
+#    desc = news_JAP.bubble_collapse.desc
+#    #picture =
+#
+#    major = yes
+#
+#    is_triggered_only = yes
+#    fire_only_once = yes
+#
+#    option = {  #일본일때
+#        name = news_JAP.bubble_collapse.japan
+#        trigger = {
+#			tag = JAP
+#		}
+#		ai_chance = { base = 1 }
+#        
+#        add_ideas = NS_JAP_bubble_collapse_5
+#    }
+#    option = {  #아닐때
+#        name = news_JAP.bubble_collapse.notjapan
+#        trigger = {
+#			NOT = {
+#				tag = JAP
+#			}
+#		}
+#		ai_chance = { base = 1 }
+#    }
+#}
