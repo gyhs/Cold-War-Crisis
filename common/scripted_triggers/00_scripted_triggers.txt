@@ -495,8 +495,14 @@ should_USA_invade_europe_or_africa = {
 		USA = {
 			OR = {
 				AND = {
-					has_government = democratic
-					ENG = { has_government = democratic } 
+					has_government = social_democracy
+					has_government = social_liberalism
+					has_government = market_liberalism
+					has_government = social_conservatism
+					ENG = { has_government = social_democracy } 
+					ENG = { has_government = social_liberalism } 
+					ENG = { has_government = market_liberalism } 
+					ENG = { has_government = social_conservatism } 
 					OR = {
 						GER = { has_government = fascism }
 						ITA = { has_government = fascism }
