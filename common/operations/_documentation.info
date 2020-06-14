@@ -196,10 +196,20 @@ operation_test = {
 	
 	outcome_potential = {
 		FROM = {
+			or = {
 			set_popularities = {
-				democratic = 100
+				social_democracy = 100
 			}
-			
+			set_popularities = {
+				social_liberalism = 100
+			}
+			set_popularities = {
+				market_liberalism = 100
+			}
+			set_popularities = {
+				social_conservatism = 100
+			}
+			}
 			ROOT = {
 				create_wargoal = {
 					type = annex_everything
@@ -231,8 +241,19 @@ operation_test = {
 	
 	outcome_execute = {
 		FROM = {
+			or = {
 			set_popularities = {
-				democratic = 100
+				social_democracy = 100
+			}
+			set_popularities = {
+				social_liberalism = 100
+			}
+			set_popularities = {
+				market_liberalism = 100
+			}
+			set_popularities = {
+				social_conservatism = 100
+			}
 			}
 		}
 		
