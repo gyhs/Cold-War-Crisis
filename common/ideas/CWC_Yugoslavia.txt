@@ -23,8 +23,6 @@ ideas = {
 				stability_factor = 0.30
 			}
 		}
-	}
-	country =
 		islamic_discrimination = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea islamic_discrimination"
@@ -46,8 +44,6 @@ ideas = {
                 war_support_factor = -0.15
 			}
 		}
-	}
-	country =
 		nationalism_yug = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea idea_chi_war_of_resistance"
@@ -70,8 +66,6 @@ ideas = {
 				surrender_limit = -0.30
 			}
 		}
-	}
-	country =
 		jna = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea jna"
