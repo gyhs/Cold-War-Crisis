@@ -451,7 +451,6 @@ country_event = { #8/10 하루에 한명이 에이즈로 사망함
 	id = NE_ENG.19
 	immediate = {log = "[GetDateText]: [Root.GetName]: event NE_ENG.19"}
 	immediate = {
-	immediate = {
 		hidden_effect = {
 			id = NE_ENG.20
 			days = 9

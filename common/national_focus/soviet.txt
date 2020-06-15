@@ -22,7 +22,6 @@ focus_tree = {
 			focus = SOV_hardliners_rebellion
 		}
 		completion_reward = {
-			complete_national_focus = SOV_sinatra_doctrine
 		}
 
 		
@@ -4353,7 +4352,7 @@ focus_tree = {
 			focus = NF_SOV_common_european_home
 		}
 		mutually_exclusive = {
-			focus = NF_SOV_pact_total_diplomatic_freedom
+			focus = NF_SOV_german_unification_conditional_recognition
 		}
 		mutually_exclusive = {
 			focus = NF_SOV_collocation_germany
@@ -4841,8 +4840,8 @@ focus_tree = {
 			modifier = {
 					factor = 1.2
 					OR = {
-						has_completed_focus = YUG_join_comintern
-						has_completed_focus = YUG_yugoslavian_path_to_communism
+						#has_completed_focus = YUG_join_comintern
+						#has_completed_focus = YUG_yugoslavian_path_to_communism
 					}
 				}
 		}
@@ -4889,8 +4888,8 @@ focus_tree = {
 			modifier = {
 					factor = 1.2
 					OR = {
-						has_completed_focus = YUG_join_comintern
-						has_completed_focus = YUG_yugoslavian_path_to_communism
+						#has_completed_focus = YUG_join_comintern
+						#has_completed_focus = YUG_yugoslavian_path_to_communism
 					}
 				}
 		}
@@ -5000,8 +4999,8 @@ focus_tree = {
 			modifier = {
 					factor = 1.2
 					OR = {
-						has_completed_focus = YUG_join_comintern
-						has_completed_focus = YUG_yugoslavian_path_to_communism
+						#has_completed_focus = YUG_join_comintern
+						#has_completed_focus = YUG_yugoslavian_path_to_communism
 					}
 				}
 		}
@@ -5021,7 +5020,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_ideas = YUG_idea_local_self_management
 		}
 	}
 	focus = {
@@ -5254,7 +5252,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_ideas = YUG_idea_central_management
 		}
 	}
 	focus = {
@@ -5303,9 +5300,6 @@ focus_tree = {
 		cost = 10.00
 		x = 24
 		y = 12
-		prerequisite = {
-			focus = SOV_sinatra_doctrine
-		}
 		prerequisite = {
 			focus = SOV_yanayev_doctrine_warning_to_NATO
 		}
@@ -5491,9 +5485,6 @@ focus_tree = {
 		x = 22
 		y = 13
 		prerequisite = {
-			focus = SOV_sinatra_doctrine_warsaw_pact_emergency_credit_support
-		}
-		prerequisite = {
 			focus = SOV_sinatra_doctrine_finland_conflict_resolution
 		}
 		available = {
@@ -5527,9 +5518,6 @@ focus_tree = {
 		x = 55
 		y = 10
 		cost = 10.00
-		mutually_exclusive = {
-			focus = SOV_sinatra_doctrine
-		}
 		available = {
 			has_focus_tree = SOV_hardliners_rebellion
 		}
@@ -5860,9 +5848,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = SOV_yanayev_doctrine
-		}
-		mutually_exclusive = {
-			focus = SOV_yanayev_doctrine_CZE_industry_support
 		}
 		completion_reward = {
 		}
@@ -6392,10 +6377,6 @@ focus_tree = {
 		y = 3
 		prerequisite = {
 			focus = SOV_sinatra_doctrine_PRC_cooperation
-		}
-		prerequisite = {
-			focus = SOV_sinatra_doctrine_KOR_trade_agreement
-			focus = SOV_sinatra_doctrine_PRK_support_infra
 		}
 		available = {
 		}
