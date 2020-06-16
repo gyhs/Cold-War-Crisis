@@ -1783,7 +1783,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 17 y = 6 }
+			position = { x = 20 y = 6 }
 		}
 		
 		start_year = 1944
@@ -1809,7 +1809,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 17 y = 8 }
+			position = { x = 20 y = 8 }
 		}
 		
 		start_year = 1944
@@ -1840,7 +1840,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 17 y = 10 }
+			position = { x = 20 y = 10 }
 		}
 		
 		start_year = 1944
@@ -1861,7 +1861,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 16 y = 12 }
+			position = { x = 19 y = 12 }
 		}
 		
 		start_year = 1944
@@ -1882,7 +1882,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 18 y = 12 }
+			position = { x = 21 y = 12 }
 		}
 		
 		start_year = 1944
@@ -1908,7 +1908,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 20 y = 6 }
+			position = { x = 17 y = 6 }
 		}
 		
 		start_year = 1944
@@ -1940,7 +1940,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 20 y = 8 }
+			position = { x = 17 y = 8 }
 		}
 		
 		start_year = 1944
@@ -1972,7 +1972,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 20 y = 10 }
+			position = { x = 17 y = 10 }
 		}
 		
 		start_year = 1944
@@ -2004,7 +2004,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 20 y = 12 }
+			position = { x = 17 y = 12 }
 		}
 		
 		start_year = 1944
@@ -2036,7 +2036,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 20 y = 14 }
+			position = { x = 17 y = 14 }
 		}
 		
 		start_year = 1944
@@ -2063,7 +2063,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 20 y = 16 }
+			position = { x = 17 y = 16 }
 		}
 		
 		start_year = 1944
