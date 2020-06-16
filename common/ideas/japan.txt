@@ -128,7 +128,7 @@ ideas = {
                 always = no
             }
             
-            set_rule = {
+            rule = {
                 can_not_declare_war = yes
             }
         }
