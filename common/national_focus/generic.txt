@@ -238,7 +238,6 @@ focus_tree = {
 		id = NF_Gen_liberalism_ideologie
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = NF_Gen_liberty_ethos }
-		mutually_exclusive = { focus = NF_Gen_collectivist_ethos }
 		available = {
 			OR = {
                 has_government = socialism
@@ -1411,6 +1410,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = NF_Gen_liberalism_ideologie }
 		mutually_exclusive = { focus = neutrality_focus }
+		mutually_exclusive = { focus = interventionism_focus }
 		x = 12
 		y = 3
 		cost = 10
@@ -1465,6 +1465,7 @@ focus_tree = {
 		id = neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = NF_Gen_liberalism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_constitutional_monarchy }
 		mutually_exclusive = { focus = interventionism_focus }
 		x = 14
 		y = 3
@@ -1521,6 +1522,7 @@ focus_tree = {
 		id = interventionism_focus
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = NF_Gen_liberalism_ideologie }
+		mutually_exclusive = { focus = NF_Gen_constitutional_monarchy }
 		mutually_exclusive = { focus = neutrality_focus }
 		x = 16
 		y = 3
