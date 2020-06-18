@@ -2213,7 +2213,6 @@ available_if_capitulated = yes
  prerequisite = {focus = NF_USA_active_intervention	
 				focus = NF_USA_strategic_intervention
 				}
- mutually_exclusive = { focus = NF_USA_kor_june_struggle_sideline } 
  relative_position_id = NF_USA_japan_calls_open_market
 ai_will_do = { 
  factor = 1
