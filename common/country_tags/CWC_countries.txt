@@ -1,3 +1,4 @@
 PRK	= "countries/North Korea.txt"
+NKO = "countries/Frunze North Korea.txt"
 MUJ = "countries/Mujahideen.txt"
 HKG = "countries/Hong Kong.txt"
