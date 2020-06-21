@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 20 y = 1500 }
 	focus = {
 		id = NF_KOR_6Dem
 		icon = GFX_focus_generic_the_giant_wakes
