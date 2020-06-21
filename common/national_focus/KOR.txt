@@ -7,7 +7,6 @@ focus_tree = {
 			tag = KOR
 		}
 	}
-	continuous_focus_position = { x = 20 y = 2000 }
 	default = no
 	focus = {
 		id = NF_KOR_6Dem
@@ -21,7 +20,15 @@ focus_tree = {
 		id = NF_KOR_6thEc
 		icon = GFX_goal_unknown
 		cost = 10.00
-		x = 20
+		x = 28
+		y = 0
+
+	}
+	focus = {
+		id = NF_KOR_Jeonreok
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 45
 		y = 0
 
 	}
@@ -162,7 +169,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_KOR_YS4
+		id = NF_KOR_Dem4
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -221,11 +228,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_KOR_Dem4
+		id = NF_KOR_YS4
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Dem1
+		}
+		prerequisite = {
 			focus = NF_KOR_Dem2
 		}
 		x = 14
@@ -238,6 +247,8 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Dem1
+		}
+		prerequisite = {
 			focus = NF_KOR_Dem2
 		}
 		x = 12
@@ -250,6 +261,8 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Dem2
+		}
+		prerequisite = {
 			focus = NF_KOR_Dem1
 		}
 		x = 16
@@ -262,9 +275,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Dem3
-		}
-		prerequisite = {
-			focus = NF_KOR_Dem4
 		}
 		prerequisite = {
 			focus = NF_KOR_Dem5
@@ -315,6 +325,375 @@ focus_tree = {
 		}
 		x = 18
 		y = 9
+
+	}
+	focus = {
+		id = NF_KOR_Market
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_6thEc
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_M1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Market
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_Socialdev
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_6thEc
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_S1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Socialdev
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_S2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Socialdev
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_S3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Socialdev
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_S4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Socialdev
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_S5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Socialdev
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_Reworki
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_6thEc
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_I1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Reworki
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_Economyreform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_M1
+		}
+		prerequisite = {
+			focus = NF_KOR_S1
+		}
+		prerequisite = {
+			focus = NF_KOR_S2
+		}
+		prerequisite = {
+			focus = NF_KOR_S3
+		}
+		prerequisite = {
+			focus = NF_KOR_S4
+		}
+		prerequisite = {
+			focus = NF_KOR_S5
+		}
+		prerequisite = {
+			focus = NF_KOR_I1
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = NF_KOR_radicale
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Economyreform
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_ongun
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = NF_KOR_ED1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_radicale
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = NF_KOR_ED3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_radicale
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = NF_KOR_ongun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Economyreform
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_radicale
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = NF_KOR_Economyopen
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ongun
+			focus = NF_KOR_radicale
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = NF_KOR_EO1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Economyopen
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_EO2
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = NF_KOR_EO2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Economyopen
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_EO1
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = NF_KOR_Budongsan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ongun
+			focus = NF_KOR_radicale
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = NF_KOR_B1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Budongsan
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_B2
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = NF_KOR_B2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Budongsan
+		}
+		mutually_exclusive = {
+			focus = NF_KOR_B1
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = {
+		id = NF_KOR_Makehouse
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_B2
+			focus = NF_KOR_B1
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = NF_KOR_ROKARMY
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Jeonreok
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_K1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ROKARMY
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_K200
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ROKARMY
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_K55
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ROKARMY
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_NAVY
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Jeonreok
+		}
+		x = 45
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_209
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_NAVY
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_AIRFORCE
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Jeonreok
+		}
+		x = 50
+		y = 1
+
+	}
+	focus = {
+		id = NF_KOR_UH60
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_AIRFORCE
+		}
+		x = 49
+		y = 2
 
 	}
 	focus = {
@@ -436,12 +815,128 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
+			focus = NF_KOR_Dem4
+		}
+		prerequisite = {
 			focus = NF_KOR_Dem6
-			focus = NF_KOR_YS4
+		}
+		prerequisite = {
 			focus = NF_KOR_DJ4
 		}
 		x = 14
 		y = 10
+
+	}
+	focus = {
+		id = NF_KOR_ED2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_radicale
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = NF_KOR_ED4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ED1
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = NF_KOR_ED5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ED2
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = NF_KOR_ED6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ED3
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = NF_KOR_WTO
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_EO2
+			focus = NF_KOR_EO1
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = NF_KOR_ED7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ED4
+		}
+		prerequisite = {
+			focus = NF_KOR_ED5
+		}
+		prerequisite = {
+			focus = NF_KOR_ED6
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = NF_KOR_ED8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_ED7
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = NF_KOR_ERF
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_Makehouse
+		}
+		prerequisite = {
+			focus = NF_KOR_WTO
+		}
+		prerequisite = {
+			focus = NF_KOR_ED8
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = NF_KOR_KF16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NF_KOR_AIRFORCE
+		}
+		x = 51
+		y = 2
 
 	}
 }
