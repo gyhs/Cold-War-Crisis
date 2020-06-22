@@ -179,7 +179,7 @@ focus_tree = {
 	#과거 청산
 	focus = {
 		id = NF_FRA_liquidation_of_the_past
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_elan_vital
@@ -198,7 +198,7 @@ focus_tree = {
 	#6.8혁명의 기억
 	focus = {
 		id = NF_FRA_memories_of_6_8
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_focus_fra_revolution_utmost
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_nuclear_power
@@ -881,7 +881,7 @@ focus_tree = {
 	#특수작전사령부 개설
 	focus = {
 		id = NF_RFA_cos
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_command_reform
@@ -1452,7 +1452,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_university_exchange
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = NF_FRA_french_industry
 		}
@@ -1467,12 +1467,12 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_computer_dissemination
 		icon = GFX_focus_research
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = NF_FRA_university_exchange
 		}
 		add_tech_bonus = {
-			add_ideas = Internet
+			add_ideas = Personal_Computer
 		}
 		#공학 100% 3번
 		x = 62
@@ -1483,9 +1483,12 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_development_of_communication
 		icon = GFX_goal_generic_radar
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = NF_FRA_computer_dissemination
+		}
+		completion_reward = {
+			add_ideas = Internet
 		}
 		x = 62
 		y = 4
@@ -1495,7 +1498,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_international_telecommunications_regulation
 		icon = GFX_goal_continuous_research
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = NF_FRA_development_of_communication
 		}
@@ -1722,7 +1725,7 @@ focus_tree = {
 	#알제리의 복종
 	focus = {
 		id = NF_FRA_algerian_puppet_state
-		icon = GFX_focus_cze_german_puppet
+		icon = GFX_focus_CZE_german_puppet
 		cost = 10.00
 		prerequisite = {
 			focus = NF_FRA_land_of_the_past

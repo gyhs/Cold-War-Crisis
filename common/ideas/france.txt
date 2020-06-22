@@ -639,7 +639,26 @@ ideas = {
 		}
 		#전쟁준비
 	Internet = {
-		picture = idea_usa_magic
+		picture = idea_NS_netwark_satellite
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.01
+				research_speed_factor = 0.05
+			}
+	}
+	#인터넷
+	Personal_Computer = {
+		picture = idea_NS_netwark_tcp
 
 			allowed = {
 				always = no
@@ -655,5 +674,4 @@ ideas = {
 				research_speed_factor = 0.08
 			}
 	}
-	#인터넷
 }
