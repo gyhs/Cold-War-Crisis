@@ -110,17 +110,17 @@ on_actions = {
         }
 
 	#Not run on a specific country.
-	on_startup = {
-		effect = {
-			ENG = {
-        	country_event = { id = NE_ENG.1 }
-			country_event = {
-					id = NE_ENG.1
-					days = 2
-				}
-        	}
-		}
-	}
+	#on_startup = {
+	#	effect = {
+	#		ENG = {
+    #    	country_event = { id = NE_ENG.1 }
+	#		country_event = {
+	#				id = NE_ENG.1
+	#				days = 2
+	#			}
+    #    	}
+	#	}
+	#}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {

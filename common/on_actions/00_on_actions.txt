@@ -1437,8 +1437,35 @@ on_actions = {
 			}
 		}
 	}
-
-	# Scope is the country owner of the PotF, FROM is the country of the killer
-	on_pride_of_the_fleet_sunk = {
+	
+	# root country that invades
+	# scope state that is invaded
+	# from scope state that the invasion started
+	# on_naval_invasion = {
+	# 	effect = {
+	# 	}
+	# }
+	
+	
+	# root country that paradrops
+	# scope state that is paradroped into
+	# from scope state that the paradrop started
+	on_paradrop = {
+	    effect = {
+		    set_country_flag = has_paradropped_flag
+		}
+	}
+	on_ruling_party_change = { 
+		# temp var old_ideology_token is available for effects
+		effect = {
+			every_controlled_state = {
+				limit = {
+					has_resistance = yes
+				}
+				set_temp_variable = { new_compliance = compliance }
+				multiply_temp_variable = { new_compliance = 0.5 }
+				set_compliance = new_compliance
+			}
+		}
 	}
 }
