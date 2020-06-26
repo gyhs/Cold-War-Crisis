@@ -1509,7 +1509,6 @@ focus_tree = {
 		x = 85
 		y = 1
 		prerequisite = {
-			focus = SOV_nationalist_movement
 		}
 		available = {
 			always = no
