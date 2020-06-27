@@ -1031,7 +1031,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
-				category = CAT_DTL_LAND_MNV
+				category = CAT_DTL_LAND_MBW
 			}
 			# 기동전 2번 100%
 		}
@@ -1054,7 +1054,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
-				category = CAT_DTL_LAND_MNV
+				category = CAT_DTL_LAND_MBW
 			}
 			# 기동전 2번 100%
 		}
