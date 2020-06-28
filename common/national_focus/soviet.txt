@@ -5036,7 +5036,7 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				has_idea = YUG_idea_slovene_nationalism
+				#has_idea = YUG_idea_slovene_nationalism
 			}
 		}
 
