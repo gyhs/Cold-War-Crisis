@@ -321,6 +321,7 @@ technology_categories = {
 	asw_tech
 	naval_minesweeping
 	naval_minelaying
+	cat_scout_plane
 
 }
 
