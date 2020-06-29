@@ -1467,7 +1467,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_computer_dissemination
 		icon = GFX_focus_research
-		cost = 6.00
+		cost = 7.00
 		prerequisite = {
 			focus = NF_FRA_university_exchange
 		}
@@ -1483,7 +1483,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_development_of_communication
 		icon = GFX_goal_generic_radar
-		cost = 6.00
+		cost = 7.00
 		prerequisite = {
 			focus = NF_FRA_computer_dissemination
 		}
