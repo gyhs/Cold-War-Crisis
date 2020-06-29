@@ -1676,6 +1676,26 @@ focus_tree = {
 		prerequisite = {
 			focus = FN_FRA_arms_export
 		}
+		completion_reward = {
+			16 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#파리 군수 2개, 슬롯 2개
+			24 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#샹트르 군수 2개, 슬롯 2개
+		}
 		x = 66
 		y = 4
 
