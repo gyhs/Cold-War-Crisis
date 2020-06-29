@@ -38,7 +38,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_french_industry
 		icon = GFX_goal_generic_consumer_goods
-		cost = 10.00
+		cost = 6.00
 		x = 65
 		y = 1
 		completion_reward = {
@@ -1533,6 +1533,26 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_promotion_of_the_cultural_industry
 		}
+		completion_reward = {
+			30 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#루아르 민간공장 2개,슬롯 2개 추가
+			33 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#상투르-쉬르 민간공장 2개,슬롯 2개 추가
+		}
 		x = 64
 		y = 3
 
@@ -1544,6 +1564,26 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = {
 			focus = FN_FRA_industrial_revival
+		}
+		completion_reward = {
+			27 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#브루고뉴 민간공장 2개,슬롯 2개 추가
+			26 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#오페르뉴 민간공장 2개,슬롯 2개 추가
 		}
 		x = 64
 		y = 4
@@ -1600,9 +1640,29 @@ focus_tree = {
 	focus = {
 		id = FN_FRA_arms_export
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = NF_FRA_promotion_of_the_cultural_industry
+		}
+		completion_reward = {
+			20 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#론 군수 2개,슬롯 2개 (생테 티엔 조병창 위치)
+			26 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			#오베르뉴 군수 2개, 슬롯 2개 (GIAT 위치)
 		}
 		x = 66
 		y = 3
@@ -1612,7 +1672,7 @@ focus_tree = {
 	focus = {
 		id = FN_FRA_military_development
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = FN_FRA_arms_export
 		}
