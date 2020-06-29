@@ -1471,10 +1471,10 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_university_exchange
 		}
-		add_tech_bonus = {
+		completion_reward = {
 			add_ideas = Personal_Computer
 		}
-		#공학 100% 3번
+		#국가 정신 : PC
 		x = 62
 		y = 3
 
@@ -1490,6 +1490,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = Internet
 		}
+		#국가 정신 : 인터넷
 		x = 62
 		y = 4
 
@@ -1503,7 +1504,7 @@ focus_tree = {
 			focus = NF_FRA_development_of_communication
 		}
 		completion_reward = {
-		add_research_slot = 1
+			add_research_slot = 1
 		}
 		x = 62
 		y = 5
@@ -1513,9 +1514,12 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_promotion_of_the_cultural_industry
 		icon = GFX_goal_generic_production2
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = NF_FRA_french_industry
+		}
+		completion_reward = {
+			add_ideas = cultural_promotion
 		}
 		x = 65
 		y = 2
@@ -1525,7 +1529,7 @@ focus_tree = {
 	focus = {
 		id = FN_FRA_industrial_revival
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = NF_FRA_promotion_of_the_cultural_industry
 		}
@@ -1537,7 +1541,7 @@ focus_tree = {
 	focus = {
 		id = NF_FRA_industrial_modernization
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = FN_FRA_industrial_revival
 		}

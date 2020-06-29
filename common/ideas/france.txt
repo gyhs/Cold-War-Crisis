@@ -674,4 +674,24 @@ ideas = {
 				research_speed_factor = 0.08
 			}
 	}
+	#PC
+	cultural_promotion = {
+		picture = GFX_idea_new_deal
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = 0.1
+			#안정도 10%
+		}
+	}
+	#문화 진흥
 }
