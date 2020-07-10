@@ -694,4 +694,25 @@ ideas = {
 		}
 	}
 	#문화 진흥
+	cultural_revival = {
+		picture = GFX_idea_new_deal
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			consumer_goods_factor = 0.02
+			production_factory_max_efficiency_factor = 0.08
+			stability_factor = 0.1
+			#소비제 +2%, 공장 효율성 +8% 증가, 안정도 10%
+		}
+	}
+
 }

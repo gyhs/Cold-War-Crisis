@@ -1711,6 +1711,12 @@ focus_tree = {
 		prerequisite = {
 			focus = FN_FRA_military_development
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = cultural_promotion
+				add_idea = cultural_revival
+			}
+		}
 		x = 65
 		y = 5
 
