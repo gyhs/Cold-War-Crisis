@@ -709,10 +709,10 @@ ideas = {
 
 		modifier = {
 			consumer_goods_factor = 0.02
-			production_factory_max_efficiency_factor = 0.08
+			production_factory_max_efficiency_factor = 0.15
 			stability_factor = 0.1
-			#소비제 +2%, 공장 효율성 +8% 증가, 안정도 10%
+			#소비제 +2%, 공장 효율 한계 +15% 증가, 안정도 10%
 		}
 	}
-
+	#문화 부흥
 }
