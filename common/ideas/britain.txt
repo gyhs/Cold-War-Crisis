@@ -1,138 +1,31 @@
 ideas = {
 
 	country = {
-		uk_great_depression1 = {
-			picture = usa_great_depression_3
+		ENG_british_disease = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_british_disease"}
 			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
+			picture = idea_usa_great_depression_3
 			
 			modifier = {
-                consumer_goods_factor = 0.10
+                consumer_goods_factor = 0.20
                 production_factory_max_efficiency_factor = -0.15
                 production_speed_buildings_factor = -0.15
                 political_power_gain = -0.20
-                industrial_capacity_factory = -0.10
-                industrial_capacity_dockyard = -0.10
-				monthly_population = -0.10
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+				monthly_population = -0.50
 			}
 		}
-	}
-	country = {
-		uk_great_depression2 = {
-			picture = usa_great_depression_3
+		
+		ENG_equilibrium = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_equilibrium"}
 			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
+			picture = neutrality_idea
 			
 			modifier = {
-                consumer_goods_factor = 0.10
-                production_factory_max_efficiency_factor = -0.20
-                production_speed_buildings_factor = -0.15
-                political_power_gain = -0.20
-                industrial_capacity_factory = -0.10
-                industrial_capacity_dockyard = -0.10
-				monthly_population = -0.10
+				join_faction_tension = 0.50
+				stability_factor = 0.05
 			}
 		}
 	}
-	country = {
-		uk_great_depression3 = {
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                consumer_goods_factor = 0.10
-                production_factory_max_efficiency_factor = -0.20
-                production_speed_buildings_factor = -0.15
-                political_power_gain = -0.25
-                industrial_capacity_factory = -0.10
-                industrial_capacity_dockyard = -0.10
-				monthly_population = -0.10
-			}
-		}
-	}
-
-	country = {
-        uk_national_health_service = {
-            picture = uk_national_health_service
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-                weekly_manpower = 100
-            }
-        }
-    }
-	
-	country = {
-        uk_military_academy = {
-            picture = uk_military_academy
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-               conscription = 0.03
-            }
-        }
-    }
-	country = {
-        uk_cursed_weapon = {
-            picture = uk_cursed_weapon
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-               army_attack_factor = -0.20
-			   army_defence_factor = -0.20
-            }
-        }
-    }
 }
