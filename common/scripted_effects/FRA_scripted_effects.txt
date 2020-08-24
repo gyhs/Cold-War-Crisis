@@ -42,3 +42,19 @@ custom_effect_tooltip = FRA_persistent_trade_deficit_down_tt
         }
     }
 }
+FRA_cold_war_overcome_ideas = {
+    if = {
+        limit = { has_idea = war_preparation }
+        swap_ideas = {
+            remove_idea = war_preparation
+            add_idea = better_safe_than_sorry
+        }
+    }
+    if = {
+        limit = { has_idea = wait_for_comedown }
+        swap_ideas = {
+            remove_idea = wait_for_comedown
+            add_idea = impenetrable
+        }
+    }
+}

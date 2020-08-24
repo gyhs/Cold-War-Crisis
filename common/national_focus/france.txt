@@ -588,6 +588,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = wait_for_comedown #국민정신 몰락을 기다리기 추가
+			add_manpower = 300000 #300K 인력추가
 		}
 		x = 29
 		y = 9
@@ -606,6 +607,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = war_preparation #국가정신 전쟁준비 추가
+			add_manpower = 250000 #250K 인력추가
 		}
 		x = 31
 		y = 9
@@ -619,6 +621,9 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_FRA_the_Iron_curtain_breaking
 			focus = NF_FRA_wait_for_comedown
+		}
+		completion_reward = {
+			FRA_cold_war_overcome_ideas = yes
 		}
 		x = 30
 		y = 10

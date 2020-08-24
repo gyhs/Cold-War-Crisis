@@ -531,7 +531,8 @@ ideas = {
 				stability_factor = 0.10	# 핵심 지역 방어 10% 증가
 				production_speed_bunker_factor = 0.25 #요새 건설 속도 25%증가
 				production_speed_coastal_bunker_factor = 0.25 #해안 요새 건설 속도 25%증가
-				stability_factor = 0.05 #안정도 5% 증가
+				stability_factor = 0.5 #안정도 5% 증가
+				ai_focus_defense_factor = 0.5 #AI 방어적 50%
 			}
 		}
 		#몰락 기다리기
@@ -634,7 +635,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				
+				war_support_factor = 0.1 #전쟁지지도 10%
+				special_forces_cap = 0.03 #특수부대 비율 3%증가
+				ai_focus_aggressive_factor = 0.5 #AI 공격적 50%
+				training_time_factor = -0.1 #훈련시간 -10%
+				experience_gain_army = 0.05 #매일 0.05 육군경험치
 			}
 		}
 		#전쟁준비
@@ -715,4 +720,52 @@ ideas = {
 		}
 	}
 	#문화 부흥
+	better_safe_than_sorry = {
+		picture = idea_chi_army_corruption3
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		modifier = {
+			war_support_factor = 0.1 #전쟁지지도 10%
+			special_forces_cap = 0.03 #특수부대 비율 3%증가
+			ai_focus_aggressive_factor = 0.5 #AI 공격적 50%
+			training_time_factor = -0.1 #훈련시간 -10%
+			experience_gain_army = 0.05 #매일 0.05 육군경험치
+			offensive_war_stability_factor = 0.4 #공격전쟁의 안정도 패널티 40% 감소
+			mobilization_speed = 0.1 #동원속도 10%
+		}
+	}
+	#유비무환
+	impenetrable = {
+		picture = idea_chi_army_corruption3
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		modifier = {
+			stability_factor = 0.10	# 핵심 지역 방어 10% 증가
+			production_speed_bunker_factor = 0.5 #요새 건설 속도 50%증가
+			production_speed_coastal_bunker_factor = 0.5 #해안 요새 건설 속도 50%증가
+			stability_factor = 0.10 #안정도 10% 증가
+			ai_focus_defense_factor = 0.5 #AI 방어적 50%
+			surrender_limit = 0.5 #항복 한계선 50%증가
+			defensive_war_stability_factor = 0.4 # 방어전쟁의 안정도 패널티 40% 감소
+			max_dig_in = 1 #최대참호 +1
+			dig_in_speed = 0.50 #참호 속도 50%증가
+		}
+	}
+	#철옹성
 }
