@@ -78,3 +78,8 @@ l_english:
  NF_KOR_209:0 "209급 잠수함 건조"
  NF_KOR_UH60:0 "UH-60 헬기 도입"
  NF_KOR_KF16:0 "KF-16 전투기 기술도입 생산"
+ NF_KOR_HANACON:0 "하나회를 길들이다"
+ NF_KOR_ADM:0 "행정쇄신"
+ NF_KOR_ECOADM:0 "경제행정규제 최소화"
+ NF_KOR_EDUPLUS:0 "교육예산 증대"
+ NF_KOR_NEWSCHOOL:0 "학교 신설"

@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_6Dem
 		icon = GFX_focus_generic_the_giant_wakes
-		cost = 5.00
+		cost = 2.00
 		x = 9
 		y = 0
 
@@ -35,7 +35,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_629
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = NF_KOR_6Dem
 		}
@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_87President
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0.00
 		prerequisite = {
 			focus = NF_KOR_6REP
 		}
@@ -68,7 +68,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_Conwin
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0.00
 		prerequisite = {
 			focus = NF_KOR_87President
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_87Roh
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0.00
 		prerequisite = {
 			focus = NF_KOR_Conwin
 		}
@@ -96,7 +96,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_JP
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0.00
 		prerequisite = {
 			focus = NF_KOR_Conwin
 		}
@@ -110,7 +110,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_demwin
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0.00
 		prerequisite = {
 			focus = NF_KOR_87President
 		}
@@ -124,7 +124,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_YS
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0.00
 		prerequisite = {
 			focus = NF_KOR_demwin
 		}
@@ -147,7 +147,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_KOR_YS2
+		id = NF_KOR_ADM
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -158,14 +158,25 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_KOR_YS3
+		id = NF_KOR_ECOADM
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = NF_KOR_YS2
+			focus = NF_KOR_ADM
 		}
 		x = 10
 		y = 8
+
+	}
+	focus = {
+		id = NF_KOR_NEWSCHOOL
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = NF_KOR_ECOADM
+		}
+		x = 10
+		y = 9
 
 	}
 	focus = {
@@ -173,16 +184,16 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = NF_KOR_YS3
+			focus = NF_KOR_NEWSCHOOL
 		}
 		x = 10
-		y = 9
+		y = 10
 
 	}
 	focus = {
 		id = NF_KOR_DJ
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0.00
 		prerequisite = {
 			focus = NF_KOR_demwin
 		}
@@ -270,16 +281,19 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NF_KOR_Dem6
+		id = NF_KOR_YS2
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = NF_KOR_Dem3
+			focus = NF_KOR_YS4
 		}
 		prerequisite = {
 			focus = NF_KOR_Dem5
 		}
-		x = 14
+		prerequisite = {
+			focus = NF_KOR_Dem3
+		}
+		x = 15
 		y = 9
 
 	}
@@ -325,6 +339,17 @@ focus_tree = {
 		}
 		x = 18
 		y = 9
+
+	}
+	focus = {
+		id = NF_KOR_EDUPLUS
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = NF_KOR_DJ4
+		}
+		x = 18
+		y = 10
 
 	}
 	focus = {
@@ -611,7 +636,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_ROKARMY
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Jeonreok
 		}
@@ -622,7 +647,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_K1
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_ROKARMY
 		}
@@ -633,7 +658,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_K200
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_ROKARMY
 		}
@@ -644,7 +669,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_K55
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_ROKARMY
 		}
@@ -655,7 +680,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_NAVY
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Jeonreok
 		}
@@ -666,7 +691,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_209
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_NAVY
 		}
@@ -677,7 +702,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_AIRFORCE
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Jeonreok
 		}
@@ -688,7 +713,7 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_UH60
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_AIRFORCE
 		}
@@ -750,7 +775,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NF_KOR_threeparty
 		}
-		x = 2
+		x = 1
 		y = 9
 
 	}
@@ -801,19 +826,51 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_NODJ
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_edu
 			focus = NF_KOR_smellpark
+			focus = NF_KOR_HANACON
 		}
 		x = 4
 		y = 10
 
 	}
 	focus = {
-		id = NF_KOR_NewKorea
+		id = NF_KOR_YS3
 		icon = GFX_goal_unknown
 		cost = 5.00
+		prerequisite = {
+			focus = NF_KOR_Dem3
+		}
+		prerequisite = {
+			focus = NF_KOR_YS4
+		}
+		prerequisite = {
+			focus = NF_KOR_Dem5
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = NF_KOR_Dem6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = NF_KOR_YS2
+		}
+		prerequisite = {
+			focus = NF_KOR_YS3
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = NF_KOR_NewKorea
+		icon = GFX_goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_Dem4
 		}
@@ -821,10 +878,10 @@ focus_tree = {
 			focus = NF_KOR_Dem6
 		}
 		prerequisite = {
-			focus = NF_KOR_DJ4
+			focus = NF_KOR_EDUPLUS
 		}
 		x = 14
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -920,12 +977,23 @@ focus_tree = {
 	focus = {
 		id = NF_KOR_KF16
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = NF_KOR_AIRFORCE
 		}
 		x = 51
 		y = 2
+
+	}
+	focus = {
+		id = NF_KOR_HANACON
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = NF_KOR_threeparty
+		}
+		x = 3
+		y = 9
 
 	}
 }
