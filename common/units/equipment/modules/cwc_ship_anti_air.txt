@@ -1,10 +1,10 @@
 equipment_modules = {
-#ship_anti_air
+#ship_anti_air						ciws 중간 방어력 지원, 낮은 대공
 ##
-#ship_missile_launcher_turret
+#ship_missile_launcher_turret		미사일 대함&대공 겸용, 낮은 방어력 지원, 높은 대공
 ##
-#ship_anti_air_missile_mr
-#ship_anti_air_missile_er
+#ship_anti_air_missile_mr			포탑 못다는 곳에 설치, 낮은 방어력 지원, 높은 대공,
+#ship_anti_air_missile_er			단거리 방공, 중간 방어력 지원, 중간 대공.
 ##
 #아래 모듈은 게임이 너무 복잡해질 것을 우려해서 인게임에서 사용하지 않음
 #ship_anti_air_missile_mr_2x1
